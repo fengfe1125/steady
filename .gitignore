@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Common local tooling
+.venv/
+venv/
+node_modules/
+dist/
+build/
+
+# Editor settings
+.idea/
+.vscode/
