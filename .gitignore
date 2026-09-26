@@ -12,7 +12,27 @@ venv/
 node_modules/
 dist/
 build/
+.build/
+.swiftpm/
+DerivedData/
+*.xcresult
 
 # Editor settings
 .idea/
 .vscode/
+
+# Local cloud config (generated from .env.local; public values only)
+Steady/CloudConfig.plist
+.supabase/
+supabase/.temp/
+.build
+
+DerivedDataDevice/
+__pycache__/
+
+# Encrypted exports if a local backup directory is selected
+.backups/
+backups/
+# Xcode user-specific state
+**/xcuserdata/
+*.xcuserstate

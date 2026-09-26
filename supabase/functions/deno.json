@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@2.57.4",
+    "zod": "npm:zod@4.1.12",
+    "jose": "npm:jose@6.1.0"
+  },
+  "compilerOptions": { "strict": true },
+  "tasks": { "test": "deno test --allow-env --allow-read _shared/" }
+}
