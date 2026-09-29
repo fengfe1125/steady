@@ -2,18 +2,16 @@ import SwiftUI
 import Charts
 import SteadyCore
 
-enum TrendMetric: String, CaseIterable, Identifiable {
-    case weight = "体重", sleep = "睡眠", steps = "步数", active = "运动"
-    var id: String { rawValue }
-    var unit: String { switch self { case .weight: "kg"; case .sleep: "小时"; case .steps: "步"; case .active: "分钟" } }
-    func value(_ s: DailySummary) -> Double? {
-        switch self { case .weight: s.weightKG; case .sleep: s.sleepMinutes.map { Double($0) / 60 }; case .steps: s.steps.map(Double.init); case .active: s.activeMinutes.map(Double.init) }
-    }
-}
 struct TrendsView: View {
     @Bindable var model: AppModel
     @State private var days = 7
-    @State private var metric = TrendMetric.weight
+    @State private var metric = TrendMetric.steps
+    private var window: TrendWindow {
+        var calendar = Calendar.current
+        if model.isDemo { calendar.timeZone = TimeZone(identifier: "Asia/Shanghai")! }
+        let reference = model.isDemo ? (model.summaries.map(\.date).max() ?? Date()) : Date()
+        return TrendWindow(summaries: model.summaries, days: days, reference: reference, calendar: calendar)
+    }
     var body: some View {
         JournalPage {
             ModeBadge(isDemo: model.isDemo)
@@ -21,24 +19,90 @@ struct TrendsView: View {
             Picker("指标", selection: $metric) { ForEach(TrendMetric.allCases) { Text($0.rawValue).tag($0) } }.pickerStyle(.segmented)
             JournalCard {
                 Text("\(metric.rawValue) · \(metric.unit)").font(.headline)
-                Chart {
-                    ForEach(Array(model.summaries.suffix(days))) { summary in
-                        if let value = metric.value(summary) {
-                            PointMark(x: .value("日期", summary.date), y: .value(metric.rawValue, value))
-                                .accessibilityLabel(summary.dayKey).accessibilityValue("\(value.formatted(.number.precision(.fractionLength(1))))\(metric.unit)")
+                if window.points(for: metric).isEmpty {
+                    ContentUnavailableView("这段时间暂无记录", systemImage: "chart.xyaxis.line")
+                } else {
+                    Chart {
+                        ForEach(window.points(for: metric)) { summary in
+                            if let value = metric.value(summary) {
+                                LineMark(x: .value("日期", summary.date), y: .value(metric.rawValue, value))
+                                    .interpolationMethod(.linear).accessibilityHidden(true)
+                                PointMark(x: .value("日期", summary.date), y: .value(metric.rawValue, value))
+                                    .accessibilityLabel(summary.dayKey)
+                                    .accessibilityValue("\(value.formatted(.number.precision(.fractionLength(1))))\(metric.unit)")
+                            }
                         }
                     }
-                }.chartYScale(domain: .automatic(includesZero: metric != .weight))
+                    .chartXAxis {
+                        AxisMarks(values: .automatic(desiredCount: 3)) { _ in
+                            AxisGridLine(); AxisTick()
+                            AxisValueLabel(format: .dateTime.month(.twoDigits).day(.twoDigits))
+                        }
+                    }
+                    .chartXScale(domain: window.start...window.end)
+                    .chartYScale(domain: .automatic(includesZero: metric != .weight))
                     .frame(height: 230)
-                Text("有效记录 \(model.summaries.suffix(days).compactMap { metric.value($0) }.count) / \(days)天").font(.subheadline)
-                Text("仅显示有效记录；缺失值留空，不连线推测。体重纵轴不从零开始。").font(.caption).foregroundStyle(.secondary)
+                }
+                Text("有效记录 \(window.points(for: metric).count) / \(days)天").font(.subheadline)
+                Text("连线连接已有记录，空缺日期没有测量值").font(.caption).foregroundStyle(.secondary)
+                if metric == .weight { Text("体重纵轴不从零开始").font(.caption).foregroundStyle(.secondary) }
+            }
+            NavigationLink("查看每天的健康记录") {
+                HealthHistoryView(summaries: model.summaries, isDemo: model.isDemo)
             }
             NavigationLink("历史日报") { HistoryView(model: model) }
             JournalCard {
                 Text("数据来源").font(.headline)
                 Text(model.isDemo ? "固定30天样例：2026年8月23日–9月21日。时区 Asia/Shanghai。尚未读取苹果健康。" : "来自苹果健康的最近30天摘要。缺失不计为零，睡眠按醒来日期归档，运动分钟采用 Apple 运动时间。")
             }
-        }.navigationTitle("看见小小变化")
+        }.journalSurface().navigationTitle("看见小小变化")
+    }
+}
+
+private struct HealthHistoryView: View {
+    let summaries: [DailySummary]
+    let isDemo: Bool
+
+    var body: some View {
+        List {
+            Section(isDemo ? "演示记录" : "本机保存的苹果健康摘要") {
+                ForEach(Array(summaries.reversed())) { summary in
+                    NavigationLink {
+                        HealthDayView(summary: summary, isDemo: isDemo)
+                    } label: {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(summary.dayKey).font(.headline)
+                            Text(summary.steps.map { "\($0.formatted()) 步" } ?? "步数暂无记录")
+                                .font(.subheadline).foregroundStyle(.secondary)
+                        }
+                    }
+                }
+            }
+        }
+        .journalSurface().navigationTitle("逐日健康记录")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+private struct HealthDayView: View {
+    let summary: DailySummary
+    let isDemo: Bool
+
+    var body: some View {
+        Form {
+            Section(summary.dayKey) {
+                LabeledContent("步数", value: summary.steps.map { "\($0.formatted()) 步" } ?? "暂无记录")
+                LabeledContent("睡眠", value: summary.sleepMinutes.map { "\($0 / 60) 小时 \($0 % 60) 分" } ?? "暂无记录")
+                LabeledContent("运动分钟", value: summary.activeMinutes.map { "\($0) 分钟" } ?? "暂无记录")
+                LabeledContent("体重", value: summary.weightKG.map { String(format: "%.1f kg", $0) } ?? "暂无记录")
+            }
+            Section {
+                Text(isDemo ? "来源：本地虚构样例。" : "来源：苹果健康。本页展示保存在本机的摘要；缺失指标不当作零。")
+                    .font(.footnote).foregroundStyle(.secondary)
+            }
+        }
+        .journalSurface().navigationTitle("健康记录")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -48,10 +112,13 @@ struct CoachView: View {
         List {
             Section { ModeBadge(isDemo: model.isDemo); Text(model.isDemo ? "这里是演示教练，回答来自固定模板，不会判断你的真实身体状态。" : "根据你选择分享的摘要解释变化。AI 可能出错，不能替代医疗判断。").font(.subheadline) }
             Section {
+                JournalWelcome(title: "想聊什么\n我在这里", expression: .curious, presentation: .half)
+                    .listRowInsets(EdgeInsets()).listRowBackground(Color.clear)
                 Button("开始新会话") { model.openChat() }
                 PlanLauncher(model: model, title: "生成训练草案")
             }
             Section("会话记录") {
+                if model.journal.conversations.isEmpty { Text("还没有会话 想聊的时候我们再开始").foregroundStyle(.secondary) }
                 ForEach(model.journal.conversations) { chat in
                     Button { model.openChat(id: chat.id) } label: {
                         VStack(alignment: .leading, spacing: 4) {
@@ -61,7 +128,7 @@ struct CoachView: View {
                     }
                 }
             }
-        }.navigationTitle("你的教练")
+        }.journalSurface().navigationTitle("你的教练")
     }
 }
 
@@ -104,7 +171,7 @@ struct ChatView: View {
             .onChange(of: model.conversation?.messages.count) { _, _ in
                 if let id = model.conversation?.messages.last?.id { withAnimation { proxy.scrollTo(id, anchor: .bottom) } }
             }
-        }.navigationTitle("关于今天的状态").navigationBarTitleDisplayMode(.inline)
+        }.journalSurface().navigationTitle("关于今天的状态").navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .topBarTrailing) { PlanLauncher(model: model, title: "训练草案") }; ToolbarItemGroup(placement: .keyboard) { Spacer(); Button("收起键盘") { composerFocused = false } } }
             .onDisappear { if model.busy == "演示教练正在回复" || model.busy == "教练正在回复" { model.cancel() } }
     }

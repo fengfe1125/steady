@@ -21,6 +21,35 @@ import SteadyCore
     Issue.record("Request did not finish")
 }
 
+private actor HealthConnectionStub: HealthDataService {
+    private(set) var authorizationRequests = 0
+    private(set) var reads = 0
+    func requestAuthorization() async throws { authorizationRequests += 1 }
+    func summaries(from: Date, through: Date) async throws -> [DailySummary] {
+        reads += 1
+        try await Task.sleep(for: .milliseconds(50))
+        let calendar = Calendar.current
+        let day = calendar.startOfDay(for: through)
+        return [DailySummary(metadata: RecordMetadata(source: .healthKit),
+                             dayKey: HealthAggregation.dayKey(day, calendar: calendar),
+                             timeZoneID: calendar.timeZone.identifier, date: day,
+                             weightKG: nil, sleepMinutes: nil, steps: 1234, activeMinutes: nil)]
+    }
+}
+
+@Test @MainActor func healthConnectionWaitsForFirstReadBeforeReportingSuccess() async throws {
+    let store = try DeviceRepository(inMemory: true)
+    let health = HealthConnectionStub()
+    let model = try AppModel(health: health, planStore: store, journalStore: store, liveStore: store)
+    model.connectHealth()
+    try await awaitIdle(model)
+    #expect(await health.authorizationRequests == 1)
+    #expect(await health.reads == 1)
+    #expect(model.journal.preferences.healthRead)
+    #expect(model.today?.steps == 1234)
+    #expect(model.notice?.contains("本机现有最近30天中 1 天的健康摘要") == true)
+}
+
 @Test @MainActor func failedConfirmationDoesNotDismissResumedDraft() async throws {
     let model = try AppModel(planStore: FailingPlans(), journalStore: MemoryJournal())
     let plan = try await DemoCoachService(delay: .zero).planDraft(preferences: UserPreferences(), scenario: .normal)
@@ -105,4 +134,16 @@ private struct SignedInAuth: AuthService {
     #expect(sync.calls == 2)
     #expect(model.syncState == .idle)
     #expect(try store.load().notes["2026-09-25"] == "离线待同步")
+}
+
+@Test @MainActor func privacySavePreservesNewerTrainingAndConsentValues() throws {
+    let model = try AppModel(planStore: LocalPlanRepository(inMemory: true), journalStore: MemoryJournal())
+    let original = model.journal.preferences
+    var edited = original; edited.aiProcessing = !original.aiProcessing
+    var newer = original; newer.goal = "updated elsewhere"; newer.cloudSync = true
+    #expect(model.savePreferences(newer))
+    #expect(model.applyPrivacyPreferences(edited, original: original))
+    #expect(model.journal.preferences.goal == "updated elsewhere")
+    #expect(model.journal.preferences.cloudSync)
+    #expect(model.journal.preferences.aiProcessing == edited.aiProcessing)
 }

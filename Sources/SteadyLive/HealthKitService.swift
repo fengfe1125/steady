@@ -6,11 +6,14 @@ import SteadyCore
 public actor HealthKitService: HealthDataService {
     private let health = HKHealthStore()
     private let repository: DeviceRepository
+    private var rereadAfterAuthorization = false
     private let types: [HKSampleType] = [HKQuantityType(.bodyMass), HKCategoryType(.sleepAnalysis), HKQuantityType(.stepCount), HKQuantityType(.appleExerciseTime)]
     public init(repository: DeviceRepository) { self.repository = repository }
     public func requestAuthorization() async throws {
         guard HKHealthStore.isHealthDataAvailable() else { throw ServiceError.invalidInput("这台设备不支持苹果健康。") }
         try await health.requestAuthorization(toShare: [], read: Set(types))
+        // A previous empty read may have advanced anchors while access was unavailable.
+        rereadAfterAuthorization = true
     }
     private struct Cache: Codable {
         var origin: Date
@@ -22,7 +25,7 @@ public actor HealthKitService: HealthDataService {
         guard HKHealthStore.isHealthDataAvailable() else { return [] }
         let epoch = await repository.epoch
         var calendar = Calendar(identifier: .gregorian); calendar.timeZone = .current
-        let saved = try await repository.readHealthCache()
+        let saved = rereadAfterAuthorization ? nil : try await repository.readHealthCache()
         var cache = saved.flatMap { try? WireCodec.decoder().decode(Cache.self, from: $0) }
             ?? Cache(origin: calendar.startOfDay(for: from), timezone: calendar.timeZone.identifier)
         if cache.timezone != calendar.timeZone.identifier { cache = Cache(origin: calendar.startOfDay(for: from), timezone: calendar.timeZone.identifier) }
@@ -77,6 +80,7 @@ public actor HealthKitService: HealthDataService {
         // Persist results before advancing anchors: a failed write will cause changes to be replayed.
         let all = try await repository.saveSummaries(summaries)
         try await repository.writeHealthCache(WireCodec.encoder().encode(cache))
+        rereadAfterAuthorization = false
         return all
     }
     private func samples(type: HKSampleType, start: Date, end: Date) async throws -> [HKSample] {
@@ -90,7 +94,9 @@ public actor HealthKitService: HealthDataService {
     private func sum(type: HKQuantityType, unit: HKUnit, start: Date, end: Date) async throws -> (value: Double?, sources: [String]) {
         try await withCheckedThrowingContinuation { continuation in
             let query = HKStatisticsQuery(quantityType: type, quantitySamplePredicate: HKQuery.predicateForSamples(withStart: start, end: end, options: .strictStartDate), options: .cumulativeSum) { _, statistics, error in
-                if let error { continuation.resume(throwing: error) }
+                if let healthError = error as? HKError, healthError.code == .errorNoData {
+                    continuation.resume(returning: (nil, []))
+                } else if let error { continuation.resume(throwing: error) }
                 else { continuation.resume(returning: (statistics?.sumQuantity()?.doubleValue(for: unit), statistics?.sources?.map(\.name).sorted() ?? [])) }
             }
             health.execute(query)
