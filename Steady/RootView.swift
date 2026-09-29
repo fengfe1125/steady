@@ -9,7 +9,7 @@ struct RootView: View {
                 TabView(selection: $model.selectedTab) {
                     Tab("今天", systemImage: "sun.max", value: 0) { NavigationStack { TodayView(model: model) } }
                     Tab("趋势", systemImage: "chart.xyaxis.line", value: 1) { NavigationStack { TrendsView(model: model) } }
-                    Tab("教练", systemImage: "bubble.left.and.bubble.right", value: 2) { NavigationStack { CoachView(model: model) } }
+                    Tab(value: 2) { NavigationStack { CoachView(model: model) } } label: { Label { Text("教练") } icon: { Image(uiImage: JournalIcons.exercise) } }
                     Tab("计划", systemImage: "calendar", value: 3) { NavigationStack { PlansView(model: model) } }
                 }
             } else { OnboardingView(model: model) }
@@ -55,6 +55,16 @@ struct TodayView: View {
     @Bindable var model: AppModel
     @State private var settings = false
     @State private var note = false
+    @Environment(\.dynamicTypeSize) private var typeSize
+    private var todaysWorkout: (plan: TrainingPlan, session: WorkoutSession)? {
+        var calendar = Calendar.current
+        if model.isDemo { calendar.timeZone = TimeZone(identifier: "Asia/Shanghai")! }
+        let reference = model.isDemo ? (model.today?.date ?? Date()) : Date()
+        return model.confirmedPlans.flatMap { plan in
+            plan.sessions.filter { calendar.isDate($0.scheduledAt, inSameDayAs: reference) }
+                .map { (plan: plan, session: $0) }
+        }.sorted { $0.session.scheduledAt < $1.session.scheduledAt }.first
+    }
     var body: some View {
         JournalPage {
             Text(model.isDemo ? "2026年9月21日 · 固定样例日期" : Date().formatted(date: .long, time: .omitted)).font(.subheadline).foregroundStyle(.secondary)
@@ -62,44 +72,45 @@ struct TodayView: View {
             if model.isDemo && model.scenario != .normal {
                 Label("当前场景：\(model.scenario.rawValue)", systemImage: "info.circle").font(.subheadline)
             }
-            JournalCard {
-                Text("身体摘要").font(.subheadline).foregroundStyle(.secondary)
-                Text("先记录，再了解自己").font(.title2.weight(.semibold))
-                Text(model.isDemo ? "每一天的小变化，都值得温柔地看见。样例不是你的真实健康记录。" : "把健康记录和每天的感受放在一起，按自己的节奏慢慢来。")
-                    .font(.subheadline).foregroundStyle(.secondary)
-            }
+            JournalWelcome(title: "小小的变化\n都值得被看见", subtitle: "按自己的节奏 慢慢来", expression: .happy)
             if let today = model.today {
-                JournalCard {
-                    Text("睡眠与活动").font(.headline)
-                    LabeledContent("睡眠", value: today.sleepMinutes.map { "\($0 / 60)小时\($0 % 60)分" } ?? "暂无记录")
-                    LabeledContent("步数", value: today.steps.map { "\($0.formatted())步" } ?? "暂无记录")
-                    LabeledContent("运动分钟", value: today.activeMinutes.map { "\($0)分钟" } ?? "暂无记录")
-                    LabeledContent("体重", value: today.weightKG.map { String(format: "%.1f kg", $0) } ?? "暂无记录")
-                    Text(model.isDemo ? "来源：本地虚构样例 · 缺失指标不计为零" : "来源：苹果健康 · 缺失指标不计为零").font(.caption).foregroundStyle(.secondary)
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), alignment: .top), count: typeSize.isAccessibilitySize ? 1 : 2), spacing: 12) {
+                    SummaryMetric(title: "睡眠", value: today.sleepMinutes.map { "\($0 / 60)时\($0 % 60)分" } ?? "暂无记录", detail: "昨晚的睡眠")
+                    SummaryMetric(title: "步数", value: today.steps.map { $0.formatted() } ?? "暂无记录", detail: "步 · 当天记录")
+                    SummaryMetric(title: "运动", value: today.activeMinutes.map(String.init) ?? "暂无记录", detail: "分钟 · Apple 运动")
+                    SummaryMetric(title: "体重", value: today.weightKG.map { String(format: "%.1f", $0) } ?? "暂无记录", detail: "kg · 当天记录")
                 }
+                Text(model.isDemo ? "来源：本地虚构样例 · 缺失指标不计为零" : "来源：苹果健康 · 缺失指标不计为零").font(.caption).foregroundStyle(.secondary)
             } else { Text("暂无可用数据，可在设置中连接苹果健康。") }
-            if !model.isDemo && !model.journal.preferences.healthRead { Button("连接苹果健康") { model.connectHealth() } }
+            if !model.isDemo {
+                Button(model.journal.preferences.healthRead ? "重新读取苹果健康" : "连接苹果健康") { model.connectHealth() }
+                    .disabled(model.busy != nil)
+                    .accessibilityIdentifier("connectHealth")
+            }
+            RequestStatus(model: model)
             JournalCard {
                 Text("今日训练").font(.headline)
-                if let plan = model.confirmedPlans.first, let session = plan.sessions.first {
-                    NavigationLink { WorkoutView(model: model, planID: plan.id, sessionID: session.id) } label: {
-                        Label("\(session.title) · \(session.minutes)分钟", systemImage: "figure.walk")
+                if let workout = todaysWorkout {
+                    NavigationLink { WorkoutView(model: model, planID: workout.plan.id, sessionID: workout.session.id) } label: {
+                        Label("\(workout.session.title) · \(workout.session.minutes)分钟", systemImage: "figure.walk")
                     }
                 } else {
                     Text("今天还没有确认的安排").foregroundStyle(.secondary)
                     PlanLauncher(model: model, title: "安排训练")
                 }
             }
-            RequestStatus(model: model)
             PrimaryAction(title: model.isDemo ? "生成演示报告" : "生成今日日报") { model.generateReport() }
                 .disabled(model.busy != nil || model.today == nil).accessibilityIdentifier("generateReport")
             NavigationLink("查看已有日报") { HistoryView(model: model) }
-            Button("补记感受") { note = true }.accessibilityIdentifier("addNote")
+            JournalCard {
+                Text("今天感觉怎么样").font(JournalFonts.handwriting(27))
+                Button("补记感受", systemImage: "pencil.line") { note = true }.accessibilityIdentifier("addNote")
+            }
             if let text = model.today.flatMap({ model.journal.notes[$0.dayKey] }), !text.isEmpty {
                 JournalCard { Text("今日补记").font(.headline); Text(text) }
             }
         }
-        .navigationTitle("今天，慢慢来")
+        .journalSurface().navigationTitle("今天，慢慢来")
         .toolbar { ToolbarItem(placement: .topBarTrailing) {
             Button("设置", systemImage: "gearshape") { settings = true }.accessibilityIdentifier("settings")
         } }
@@ -119,12 +130,12 @@ struct NoteView: View {
                 Text(model.journal.preferences.cloudSync ? "补记将随记录同步；不会自动发送给 AI。" : "仅保存在这台设备，不发送给 AI。").font(.footnote)
                 if let error = model.error { Text(error).foregroundStyle(.red) }
             }
-            .navigationTitle("补记感受").navigationBarTitleDisplayMode(.inline)
+            .journalSurface().navigationTitle("补记感受").navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 CloseSheet()
                 ToolbarItem(placement: .confirmationAction) {
                     Button("保存", systemImage: "checkmark") { if model.saveNote(note) { dismiss() } }
-                        .buttonStyle(.borderedProminent).accessibilityIdentifier("saveNote")
+                        .journalPrimaryButton().accessibilityIdentifier("saveNote")
                 }
             }
             .onAppear { note = model.today.flatMap { model.journal.notes[$0.dayKey] } ?? "" }
@@ -153,8 +164,8 @@ struct ReportView: View {
                 if model.activeConversationID == nil { model.prepareChat() }
                 showConversation = model.activeConversationID != nil
             }
-                .buttonStyle(.borderedProminent).accessibilityIdentifier("askCoach")
-        }.navigationTitle("今日身体记录").navigationBarTitleDisplayMode(.inline)
+                .journalPrimaryButton().accessibilityIdentifier("askCoach")
+        }.journalSurface().navigationTitle("今日身体记录").navigationBarTitleDisplayMode(.inline)
             .navigationDestination(isPresented: $showConversation) { ChatView(model: model) }
     }
 }
@@ -172,6 +183,19 @@ struct HistoryView: View {
                     }
                 }
             }
-        }.navigationTitle("历史日报")
+        }.journalSurface().navigationTitle("历史日报")
+    }
+}
+
+private struct SummaryMetric: View {
+    let title: String
+    let value: String
+    let detail: String
+    var body: some View {
+        JournalCard {
+            Text(title).font(.subheadline).foregroundStyle(SteadyTheme.secondary)
+            Text(value).font(.title2.weight(.medium)).monospacedDigit().foregroundStyle(SteadyTheme.primary)
+            Text(detail).font(.caption).foregroundStyle(SteadyTheme.secondary)
+        }.accessibilityElement(children: .combine)
     }
 }

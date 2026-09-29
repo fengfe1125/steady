@@ -15,8 +15,8 @@ let package = Package(
         // The iOS App still has one App target and compiles this file normally.
         .target(name: "SteadyAppState", dependencies: ["SteadyCore"], path: "Steady",
             exclude: ["Assets.xcassets", "Steady.entitlements", "DesignSystem.swift", "Plans.swift", "RootView.swift",
-                      "SettingsOnboarding.swift", "SteadyApp.swift", "TrendsCoach.swift"],
-            sources: ["AppModel.swift"]),
+                      "SettingsOnboarding.swift", "SteadyApp.swift", "TrendsCoach.swift", "SproutView.swift", "AccountViews.swift", "UIReviewView.swift", "Fonts", "CloudConfig.plist"],
+            sources: ["AppModel.swift", "TrendData.swift"]),
         .testTarget(name: "SteadyAppStateTests", dependencies: ["SteadyAppState", "SteadyCore"])
     ]
 )

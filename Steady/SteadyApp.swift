@@ -7,8 +7,26 @@ import SteadyLive
     @State private var startupError: String?
     @Environment(\.scenePhase) private var scenePhase
     init() {
+        JournalFonts.register()
         do {
             let arguments = ProcessInfo.processInfo.arguments
+            #if DEBUG && targetEnvironment(simulator)
+            if let index = arguments.firstIndex(of: "--ui-preview"), arguments.indices.contains(index + 1) {
+                let screen = arguments[index + 1]
+                let model: AppModel
+                if ["login", "account", "settings"].contains(screen) {
+                    let store = try DeviceRepository(inMemory: true)
+                    model = try AppModel(planStore: store, journalStore: store, liveStore: store)
+                } else {
+                    model = try AppModel(planStore: LocalPlanRepository(inMemory: true), journalStore: LocalJournalRepository(inMemory: true))
+                }
+                var preferences = model.journal.preferences; preferences.onboardingComplete = true
+                _ = model.savePreferences(preferences)
+                model.selectedTab = ["today": 0, "trends": 1, "coach": 2, "plans": 3][screen] ?? 0
+                _model = State(initialValue: model)
+                return
+            }
+            #endif
             let demo = arguments.contains("--demo") || arguments.contains("--ui-testing-reset")
             let model: AppModel
             if demo {
@@ -38,7 +56,7 @@ import SteadyLive
     var body: some Scene {
         WindowGroup {
             if let model {
-                RootView(model: model).environment(\.locale, Locale(identifier: "zh_CN"))
+                appContent(model).environment(\.locale, Locale(identifier: "zh_CN"))
                     .task { await model.observeAuth() }
                     .task {
                         for await online in Connectivity().updates() { if online { model.scheduleSync() } }
@@ -49,4 +67,15 @@ import SteadyLive
             }
         }
     }
+    @ViewBuilder private func appContent(_ model: AppModel) -> some View {
+        #if DEBUG && targetEnvironment(simulator)
+        let args = ProcessInfo.processInfo.arguments
+        if let index = args.firstIndex(of: "--ui-preview"), args.indices.contains(index + 1) {
+            UIReviewView(model: model, screen: args[index + 1])
+        } else { RootView(model: model) }
+        #else
+        RootView(model: model)
+        #endif
+    }
+
 }

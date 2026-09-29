@@ -150,12 +150,25 @@ import SteadyCore
         if request { connectHealth() }
         return true
     }
+    @discardableResult func applyPrivacyPreferences(_ edited: UserPreferences, original: UserPreferences) -> Bool {
+        var next = journal.preferences
+        if edited.healthRead != original.healthRead { next.healthRead = edited.healthRead }
+        if edited.cloudSync != original.cloudSync { next.cloudSync = edited.cloudSync }
+        if edited.aiProcessing != original.aiProcessing { next.aiProcessing = edited.aiProcessing }
+        return applyPreferences(next)
+    }
     func connectHealth() {
         begin("正在请求健康读取") { [self] in
             try await health.requestAuthorization()
             try Task.checkCancellation()
             var prefs = journal.preferences; prefs.healthRead = true
-            if savePreferences(prefs) { notice = "系统已处理授权请求；没有可用数据时可到苹果健康检查权限。" }
+            guard savePreferences(prefs) else { return }
+            await load()
+            guard error == nil else { return }
+            let daysWithData = summaries.filter { $0.weightKG != nil || $0.sleepMinutes != nil || $0.steps != nil || $0.activeMinutes != nil }.count
+            notice = daysWithData > 0
+                ? "本机现有最近30天中 \(daysWithData) 天的健康摘要。"
+                : "系统已处理授权请求，但尚未读到记录。请在「健康」App → 头像 → 隐私 → App 中检查 Steady 的读取权限。"
         }
     }
     func signOut() {
@@ -201,11 +214,8 @@ import SteadyCore
     }
     @discardableResult func savePreferences(_ preferences: UserPreferences) -> Bool {
         if !isDemo && ((!preferences.aiProcessing && journal.preferences.aiProcessing) || (!preferences.healthRead && journal.preferences.healthRead)) { cancel() }
-        let shouldRead = !isDemo && preferences.healthRead != journal.preferences.healthRead
         var next = journal; next.preferences = preferences; next.preferences.metadata.updatedAt = Date()
-        let saved = saveJournal(next)
-        if saved && shouldRead { Task { await load() } }
-        return saved
+        return saveJournal(next)
     }
     @discardableResult func saveNote(_ note: String) -> Bool {
         guard let today else { return false }
@@ -262,10 +272,12 @@ import SteadyCore
             try activate(await auth.state())
         }
     }
-    func sendEmailCode(_ email: String, deleting: Bool = false) {
+    func sendEmailCode(_ email: String, deleting: Bool = false, onSent: (@MainActor () -> Void)? = nil) {
         begin("正在发送验证码") { [self] in
             try await auth.sendCode(email: email, deleting: deleting)
+            try Task.checkCancellation()
             notice = deleting ? "验证码已发送至账户邮箱，请输入后确认删除。" : "验证码已发送，请查看邮箱。"
+            onSent?()
         }
     }
     func verifyEmailCode(_ email: String, code: String) {
