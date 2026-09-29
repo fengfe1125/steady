@@ -25,6 +25,7 @@ import SteadyCore
     @ObservationIgnored let liveStore: DeviceRepository?
     @ObservationIgnored private var syncTask: Task<Void, Never>?
     @ObservationIgnored private var loading = false
+    @ObservationIgnored private var loadWaiters: [CheckedContinuation<Void, Never>] = []
     @ObservationIgnored private var retryAttempt = 0
     @ObservationIgnored private var request: Task<Void, Never>?
     @ObservationIgnored private var requestID: UUID?
@@ -56,32 +57,64 @@ import SteadyCore
     var confirmedPlans: [TrainingPlan] { plans.filter { $0.status == .confirmed } }
     var conversation: Conversation? { journal.conversations.first { $0.id == activeConversationID } }
 
+    private func acquireLoad() async throws {
+        while loading {
+            await withCheckedContinuation { loadWaiters.append($0) }
+            try Task.checkCancellation()
+        }
+        try Task.checkCancellation()
+        loading = true
+    }
+    private func releaseLoad() {
+        loading = false
+        let waiters = loadWaiters; loadWaiters.removeAll()
+        for waiter in waiters { waiter.resume() }
+    }
     func load() async {
         guard !loading else { return }
-        loading = true; defer { loading = false }
         do {
-            try activate(await auth.state())
-            syncState = await sync.state()
-            if isDemo {
-                summaries = try await (health as? DemoHealthDataService ?? DemoHealthDataService()).summaries(scenario: scenario)
-                if !journal.seeded, let today {
-                    let report = try await DemoCoachService(delay: .zero).report(for: today, history: summaries, scenario: .normal)
-                    var next = journal; next.reports = [report]; next.seeded = true
-                    try journalStore.save(next); journal = next
-                }
-            } else {
-                try reloadLocal()
-                if journal.preferences.healthRead {
-                    let epoch = liveStore?.epoch
-                    let now = Date(), start = Calendar.current.date(byAdding: .day, value: -29, to: Date())!
-                    let values = try await health.summaries(from: start, through: now)
-                    guard liveStore?.epoch == epoch, journal.preferences.healthRead else { return }
-                    summaries = Array(values.suffix(30))
-                }
-                ensureToday()
-                scheduleSync()
+            try await acquireLoad()
+            defer { releaseLoad() }
+            try await reload()
+        } catch is CancellationError {} catch {
+            guard !Task.isCancelled else { return }
+            self.error = error.localizedDescription; ensureToday()
+        }
+    }
+    private func reload() async throws {
+        let accountState = await auth.state()
+        try Task.checkCancellation()
+        try activate(accountState)
+        try Task.checkCancellation()
+        let epoch = liveStore?.epoch
+        let currentSyncState = await sync.state()
+        try Task.checkCancellation()
+        guard liveStore?.epoch == epoch else { throw CancellationError() }
+        syncState = currentSyncState
+        if isDemo {
+            let values = try await (health as? DemoHealthDataService ?? DemoHealthDataService()).summaries(scenario: scenario)
+            try Task.checkCancellation()
+            summaries = values
+            if !journal.seeded, let today {
+                let report = try await DemoCoachService(delay: .zero).report(for: today, history: summaries, scenario: .normal)
+                try Task.checkCancellation()
+                var next = journal; next.reports = [report]; next.seeded = true
+                try journalStore.save(next); journal = next
             }
-        } catch is CancellationError {} catch { self.error = error.localizedDescription; ensureToday() }
+        } else {
+            try reloadLocal()
+            defer {
+                if !Task.isCancelled, liveStore?.epoch == epoch { ensureToday() }
+            }
+            if journal.preferences.healthRead {
+                let now = Date(), start = Calendar.current.date(byAdding: .day, value: -29, to: Date())!
+                let values = try await health.summaries(from: start, through: now)
+                try Task.checkCancellation()
+                guard liveStore?.epoch == epoch, journal.preferences.healthRead else { throw CancellationError() }
+                summaries = Array(values.suffix(30))
+            }
+            scheduleSync()
+        }
     }
     private func ensureToday() {
         guard !isDemo else { return }
@@ -159,12 +192,15 @@ import SteadyCore
     }
     func connectHealth() {
         begin("正在请求健康读取") { [self] in
+            // Finish earlier reads before authorization resets HealthKit's incremental cache.
+            try await acquireLoad()
+            defer { releaseLoad() }
             try await health.requestAuthorization()
             try Task.checkCancellation()
             var prefs = journal.preferences; prefs.healthRead = true
             guard savePreferences(prefs) else { return }
-            await load()
-            guard error == nil else { return }
+            try await reload()
+            try Task.checkCancellation()
             let daysWithData = summaries.filter { $0.weightKG != nil || $0.sleepMinutes != nil || $0.steps != nil || $0.activeMinutes != nil }.count
             notice = daysWithData > 0
                 ? "本机现有最近30天中 \(daysWithData) 天的健康摘要。"
