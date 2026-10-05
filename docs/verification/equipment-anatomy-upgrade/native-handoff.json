@@ -1,0 +1,380 @@
+[
+  {
+    "id": "dumbbell-goblet-squat",
+    "title": "哑铃高脚杯深蹲",
+    "resource": "GobletSquatArtwork.html",
+    "specFile": "dumbbell-goblet-squat.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 两手托上端铃头下方\n② 手指包稳，铃靠胸前\n③ 整脚踩稳，膝随脚尖\n\n红色 · 主要发力：股四头肌、臀大肌\n浅红 · 协同：腹直肌、竖脊肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：整脚踩稳，铃靠胸前\n\n右图 · 错误示范：脚跟抬起，重心前冲\n\n调整方法：减小下蹲幅度，重新踩稳整个脚底，铃靠近胸前。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "quads",
+      "glute.max"
+    ],
+    "secondary": [
+      "abs",
+      "erectors"
+    ],
+    "sourceURLs": [
+      "https://www.acefitness.org/resources/everyone/exercise-library/362/goblet-squat/"
+    ],
+    "machineReference": "ACE free-weight exercise"
+  },
+  {
+    "id": "lat-pulldown",
+    "title": "高位下拉",
+    "resource": "LatPulldownArtwork.html",
+    "specFile": "lat-pulldown.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2600,
+      "returnStart": 3100,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 正握，四指包住\n② 拇指绕另一侧\n③ 压腿垫贴大腿\n\n红色 · 主要发力：背阔肌\n浅红 · 协同：肱二头肌、斜方肌下束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：横杆下拉到前胸\n\n右图 · 错误示范：横杆拉到颈后\n\n调整方法：横杆保持在头前；下拉到前胸，肩膀远离耳朵。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "lats"
+    ],
+    "secondary": [
+      "biceps",
+      "trap.lower"
+    ],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/VSL/VSL026BP-Pulldown-Seated-Row-CHS.pdf"
+    ],
+    "machineReference": "Precor Vitality VSL026BP"
+  },
+  {
+    "id": "preacher-biceps-curl",
+    "title": "器械弯举",
+    "resource": "BicepsCurlArtwork.html",
+    "specFile": "preacher-biceps-curl.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 上臂贴垫，肘对轴\n② 四指拇指都环握\n③ 不抬肘，不折腕\n\n红色 · 主要发力：肱二头肌\n浅红 · 协同：肱肌、肱桡肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：上臂贴垫，只弯肘\n\n右图 · 错误示范：抬肩抬肘，离开托垫\n\n调整方法：减轻阻力，把上臂放回垫面，让肘部大致对准转轴。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "biceps"
+    ],
+    "secondary": [
+      "brachialis",
+      "brachioradialis"
+    ],
+    "sourceURLs": [
+      "https://www.precor.com/en-US/products/RSL0204"
+    ],
+    "machineReference": "Precor Resolute RSL0204"
+  },
+  {
+    "id": "seated-abdominal-crunch",
+    "title": "坐姿器械卷腹",
+    "resource": "AbdominalCrunchArtwork.html",
+    "specFile": "seated-abdominal-crunch.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 肩贴双垫，不压脖子\n② 环握，手只帮助稳定\n③ 臀留座椅，脚踩脚踏\n\n红色 · 主要发力：腹直肌\n浅红 · 协同：腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：胸口向骨盆卷近\n\n右图 · 错误示范：只低头，躯干没卷动\n\n调整方法：头颈随上身；让胸口靠近骨盆，别靠拉握把低头。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "abs"
+    ],
+    "secondary": [
+      "obliques"
+    ],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/VSL/VSL014BP-Abdominal-NA.pdf"
+    ],
+    "machineReference": "Precor Vitality VSL014BP"
+  },
+  {
+    "id": "seated-cable-row",
+    "title": "坐姿划船",
+    "resource": "CableRowArtwork.html",
+    "specFile": "seated-cable-row.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2700,
+      "returnStart": 3200,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 掌心相对，环握两侧\n② 手腕不折\n③ 钢索居中，脚踩脚踏\n\n红色 · 主要发力：背阔肌、斜方肌中束\n浅红 · 协同：菱形肌、肱二头肌、三角肌后束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：上身稳，肘向后\n\n右图 · 错误示范：大幅后仰借力\n\n调整方法：减轻阻力，稳住腰背；让肘向后带动握把。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "lats",
+      "trap.mid"
+    ],
+    "secondary": [
+      "rhomboid",
+      "biceps",
+      "deltoid.post"
+    ],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/VSL/VSL026BP-Pulldown-Seated-Row-CHS.pdf"
+    ],
+    "machineReference": "Precor Vitality VSL026BP"
+  },
+  {
+    "id": "seated-chest-press",
+    "title": "坐姿推胸",
+    "resource": "ChestPressArtwork.html",
+    "specFile": "seated-chest-press.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 四指绕握把\n② 拇指也环抱\n③ 手腕顺直\n\n红色 · 主要发力：胸大肌\n浅红 · 协同：三角肌前束、肱三头肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：手腕与前臂顺直\n\n右图 · 错误示范：折腕推，握把压手腕\n\n调整方法：重新环握，手腕顺直；减轻阻力再推。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "pec"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "triceps"
+    ],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/VSL/VSL001BP-Chest-Press-NA.pdf"
+    ],
+    "machineReference": "Precor Vitality VSL001BP"
+  },
+  {
+    "id": "seated-dumbbell-shoulder-press",
+    "title": "坐姿哑铃推肩",
+    "resource": "DumbbellShoulderPressArtwork.html",
+    "specFile": "seated-dumbbell-shoulder-press.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 环握中间手柄\n② 手腕顺直，前臂承托\n③ 背臀贴靠，双脚踩稳\n\n红色 · 主要发力：三角肌前束、三角肌中束\n浅红 · 协同：肱三头肌、前锯肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：背臀贴靠，平稳上推\n\n右图 · 错误示范：拱腰离开靠背\n\n调整方法：减轻重量，背臀贴靠，在能稳住腰背的范围推举。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "deltoid.ant",
+      "deltoid.lat"
+    ],
+    "secondary": [
+      "triceps",
+      "serratus"
+    ],
+    "sourceURLs": [
+      "https://www.acefitness.org/resources/everyone/exercise-library/45/seated-overhead-press/"
+    ],
+    "machineReference": "ACE free-weight exercise"
+  },
+  {
+    "id": "seated-hip-abduction",
+    "title": "坐姿髋外展",
+    "resource": "HipAbductionArtwork.html",
+    "specFile": "seated-hip-abduction.mjs",
+    "view": "front",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 先确认外展模式与起点\n② 垫贴外侧，脚踩脚杆\n③ 背臀贴靠，平稳向外\n\n红色 · 主要发力：臀中肌\n浅红 · 协同：阔筋膜张肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：垫在大腿外侧\n\n右图 · 错误示范：垫放内侧，模式用错\n\n调整方法：先按机身说明确认外展模式；垫贴大腿外侧。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "glute.med"
+    ],
+    "secondary": [
+      "tfl"
+    ],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/VSL/VSL008BP-Inner-Outer-Thigh-NA.pdf"
+    ],
+    "machineReference": "Precor Vitality VSL008BP"
+  },
+  {
+    "id": "seated-leg-curl",
+    "title": "坐姿腿弯举",
+    "resource": "LegCurlArtwork.html",
+    "specFile": "seated-leg-curl.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 膝盖对准转轴\n② 上垫固定，下垫托后侧\n③ 握上方竖把，背臀贴靠\n\n红色 · 主要发力：腘绳肌\n浅红 · 协同：腓肠肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：上垫贴腿，下垫托后侧\n\n右图 · 错误示范：上垫悬空，下垫在前侧\n\n调整方法：重调两块垫的位置；大腿固定，后侧小腿贴下滚垫。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "hamstrings"
+    ],
+    "secondary": [
+      "gastrocnemius"
+    ],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/RSL/RSL0619-Seated-Leg-Curl-NA.pdf"
+    ],
+    "machineReference": "Precor Resolute RSL0619"
+  },
+  {
+    "id": "seated-leg-extension",
+    "title": "坐姿腿屈伸",
+    "resource": "LegExtensionArtwork.html",
+    "specFile": "seated-leg-extension.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 膝盖对准转轴\n② 滚垫在脚踝上方前侧\n③ 背臀贴靠，手轻握\n\n红色 · 主要发力：股四头肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：滚垫贴小腿前侧\n\n右图 · 错误示范：滚垫压到脚背\n\n调整方法：重调滚垫，让它贴脚踝上方的小腿前侧。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "quads"
+    ],
+    "secondary": [],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/VSL/VSL005BP-Leg-Extension-NA.pdf"
+    ],
+    "machineReference": "Precor Vitality VSL005BP"
+  },
+  {
+    "id": "seated-leg-press",
+    "title": "坐姿腿举",
+    "resource": "LegPressArtwork.html",
+    "specFile": "seated-leg-press.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 700,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 整脚贴板，脚跟不抬\n② 膝盖随脚尖，不锁死\n③ 背臀贴靠，手轻握\n\n红色 · 主要发力：股四头肌、臀大肌\n浅红 · 协同：腘绳肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：脚跟与前脚掌贴板\n\n右图 · 错误示范：脚跟抬起，只蹬前掌\n\n调整方法：减小幅度，整个脚底重新贴稳踏板。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "quads",
+      "glute.max"
+    ],
+    "secondary": [
+      "hamstrings"
+    ],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/VSL/VSL010BP-Leg-Press-Calf-Extension-NA.pdf"
+    ],
+    "machineReference": "Precor Vitality VSL010BP"
+  },
+  {
+    "id": "seated-pec-fly",
+    "title": "蝴蝶机夹胸",
+    "resource": "PecFlyArtwork.html",
+    "specFile": "seated-pec-fly.mjs",
+    "view": "front",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 调座高，背臀贴垫\n② 掌心相对，环握竖把\n③ 肘微屈，向胸前合拢\n\n红色 · 主要发力：胸大肌\n浅红 · 协同：三角肌前束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：肘微屈，适度打开\n\n右图 · 错误示范：锁肘，打开过远\n\n调整方法：重新调起始位置，保留小幅弯肘，在舒适范围内合拢。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "pec"
+    ],
+    "secondary": [
+      "deltoid.ant"
+    ],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/VSL/VSL015BP-Rear-Delt-Pec-Fly-NA.pdf"
+    ],
+    "machineReference": "Precor Vitality VSL015BP"
+  },
+  {
+    "id": "seated-shoulder-press",
+    "title": "坐姿器械推肩",
+    "resource": "ShoulderPressArtwork.html",
+    "specFile": "seated-shoulder-press.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 四指与拇指环抱\n② 手腕顺直，前臂承托\n③ 调座高，背脚稳住\n\n红色 · 主要发力：三角肌前束、三角肌中束\n浅红 · 协同：肱三头肌、前锯肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：腰背自然，背臀贴靠\n\n右图 · 错误示范：拱腰离开靠背\n\n调整方法：减轻阻力，背臀贴靠；在能稳住腰背的范围推举。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "deltoid.ant",
+      "deltoid.lat"
+    ],
+    "secondary": [
+      "triceps",
+      "serratus"
+    ],
+    "sourceURLs": [
+      "https://static.precor.com/sell-sheet/all/VSL/VSL012BP-Shoulder-Press-NA.pdf"
+    ],
+    "machineReference": "Precor Vitality VSL012BP"
+  },
+  {
+    "id": "single-arm-dumbbell-row",
+    "title": "单臂哑铃划船",
+    "resource": "DumbbellRowArtwork.html",
+    "specFile": "single-arm-dumbbell-row.mjs",
+    "view": "side",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "detailExplanation": "图中编号\n① 环握中柄，掌心向身体\n② 手腕顺直，肘向髋后\n③ 同侧手膝撑凳，右脚踩地\n\n红色 · 主要发力：背阔肌\n浅红 · 协同：菱形肌、斜方肌中束、肱二头肌、三角肌后束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+    "mistakeExplanation": "左图 · 正确示范：背髋稳，肘靠近身体\n\n右图 · 错误示范：耸肩，挺腰甩起来\n\n调整方法：减轻重量，稳住支撑手和膝，让肘向后，背髋不跟着晃。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+    "primary": [
+      "lats@near"
+    ],
+    "secondary": [
+      "rhomboid",
+      "trap.mid",
+      "biceps@near",
+      "deltoid.post@near"
+    ],
+    "sourceURLs": [
+      "https://www.acefitness.org/resources/everyone/exercise-library/126/single-arm-row/"
+    ],
+    "machineReference": "ACE free-weight exercise"
+  }
+]
