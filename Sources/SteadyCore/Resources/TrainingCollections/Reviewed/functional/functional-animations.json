@@ -1,0 +1,918 @@
+{
+  "schemaVersion": 1,
+  "animationModel": "原创关节驱动 SVG；renderer 使用每课专属关键姿势函数，进度 0–1 控制姿势移动；非视频截帧动画。",
+  "durationSeconds": 6,
+  "runtimeTimingMilliseconds": {
+    "effortStart": 600,
+    "effortEnd": 2800,
+    "returnStart": 3300,
+    "returnEnd": 6000,
+    "duration": 6000
+  },
+  "playbackModes": [
+    "motion",
+    "detail",
+    "mistakes"
+  ],
+  "animations": [
+    {
+      "lessonID": "functional-warmup-frog",
+      "resource": "functional-warmup-frog.html",
+      "artwork": "frog-forearm",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "以前臂和膝盖支撑，宽跪稳定。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "髋后移并配合骨盆前倾。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "停在后移末端，保持骨盆前倾。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "髋向前回位并配合骨盆后倾。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "01:41",
+          "keyPoint": "宽跪前臂支撑起始姿势；内嵌字幕可见。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "01:55–02:02",
+          "keyPoint": "口播说明后移配骨盆前倾、前移配骨盆后倾。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "02:26",
+          "keyPoint": "侧向支撑位置。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "① 双膝宽跪、始终贴垫。② 前臂和肘贴垫承重。③ 髋向后移时骨盆小幅前倾，回到前方时后倾。图以斜侧视角展开双腿，虚线表示起始位；红色斜线为内收肌牵拉，浅红为腹部稳定。",
+      "mistakeExplanation": "左图 · 正确示范：髋移动，支点稳定\n\n右图 · 错误示范：只弓背，不移髋\n\n调整方法：回到双膝和前臂支撑，减小幅度，让髋部前后移动；不要只折腰背。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "腹直肌",
+        "腹外斜肌"
+      ],
+      "stretchMuscles": [
+        "内收肌群"
+      ]
+    },
+    {
+      "lessonID": "functional-warmup-supported-frog",
+      "resource": "functional-warmup-supported-frog.html",
+      "artwork": "frog-internal-rotation",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "前臂和双膝支撑，髋部轻微后倾。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "保持双膝不动，两侧脚同时小幅抬起。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "末端短暂停留，自然呼吸。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "双脚慢慢落回垫面。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "02:12–02:24",
+          "keyPoint": "口播提示双腿向上。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "03:17–03:43",
+          "keyPoint": "口播称两侧一起、幅度小；单侧效率较低，双侧处方依据这段口播。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "03:26–03:41",
+          "keyPoint": "对照起始与动作画面；03:41静帧只看清一脚抬起，另一侧被遮挡，不能单独作为双侧画面证据。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "① 两侧膝部持续贴垫并对地用力。② 脚和小腿一起小幅抬起，膝位不变，这是髋内旋的变化。③ 骨盆保持可控，不用单侧大幅翻起代替。红色标示参与内旋的臀中肌区，浅红是腹部稳定，内收肌以斜线标牵拉；仅示意小幅度，不规定训练节奏。",
+      "mistakeExplanation": "左图 · 正确示范：双脚小抬，膝不动\n\n右图 · 错误示范：单侧抬脚幅度太大\n\n调整方法：降低抬脚高度，两侧同时小幅抬起；双膝持续向垫施力，保持骨盆稳定。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "臀中肌"
+      ],
+      "secondaryMuscles": [
+        "腹直肌",
+        "腹外斜肌"
+      ],
+      "stretchMuscles": [
+        "内收肌群"
+      ]
+    },
+    {
+      "lessonID": "functional-warmup-lunge-control",
+      "resource": "functional-warmup-lunge-control.html",
+      "artwork": "warmup-lunge-control",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "站成前后分腿，保持后脚尖朝前。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "躯干稳定，开始小步侧移。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在可控范围停一下，可轻摆手臂。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "沿原路回到起点后再换侧。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "05:11",
+          "keyPoint": "弓步姿势及后腿提示字幕。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "05:26",
+          "keyPoint": "弓步画面和髋外旋字幕。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "05:56",
+          "keyPoint": "字幕可读“摆动的过程中躯干是不要动”。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "06:11",
+          "keyPoint": "另一弓步方向画面。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 前后分腿，两脚分轨\n② 小步侧移，不抢上身\n③ 双臂轻摆，不大甩\n\n红色 · 主要发力：臀中肌\n浅红 · 协同：股四头肌、腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：小步侧走，躯干稳定\n\n右图 · 错误示范：上身侧倒抢先走\n\n调整方法：缩小侧移和摆臂幅度，保持前后脚关系与脚尖朝前，等支撑稳定再迈下一小步。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "臀中肌"
+      ],
+      "secondaryMuscles": [
+        "股四头肌",
+        "腹外斜肌"
+      ]
+    },
+    {
+      "lessonID": "functional-warmup-supported-rotation",
+      "resource": "functional-warmup-supported-rotation.html",
+      "artwork": "warmup-supported-rotation",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "扶凳、单脚支撑，髋向后并前倾。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "保持自由腿向后伸，身体缓慢转开。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "转到可控制幅度，保持支撑，不要用弯腰代替转体。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "回正后再向另一方向转动，眼睛跟随手指。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "07:11",
+          "keyPoint": "单腿站立并手扶固定支撑的起始姿势。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "07:41",
+          "keyPoint": "支撑下躯干倾转。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "07:56",
+          "keyPoint": "回正/站立位置。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "08:41",
+          "keyPoint": "字幕提示不要弯腰；向左、向右旋转字幕分别见08:56、09:11。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "① 支撑手始终轻扶稳固凳面。② 唯一支撑脚踩稳，膝髋微屈。③ 抬起腿和身体一同转开、回正。胸廓、骨盆和抬腿在斜侧投影中绕躯干长轴转动，绿色弧线标方向；红色为臀中肌、腹外斜肌，浅红为支撑腿后侧和腹部稳定。骨盆可随动作自然转动，因此图中不把骨盆锁死。",
+      "mistakeExplanation": "左图 · 正确示范：扶稳，髋胸一起转\n\n右图 · 错误示范：只弓腰增加幅度\n\n调整方法：保持扶手和支撑脚不动，缩小转体范围，让身体与抬腿受控转开；不要用弓腰代替旋转。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "臀中肌",
+        "腹外斜肌"
+      ],
+      "secondaryMuscles": [
+        "腘绳肌",
+        "腹直肌"
+      ]
+    },
+    {
+      "lessonID": "functional-single-leg-hip-thrust",
+      "resource": "functional-single-leg-hip-thrust.html",
+      "artwork": "single-leg-hip-thrust",
+      "durationSeconds": 6,
+      "runtimeTimingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 1600,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000,
+        "phaseTimeline": [
+          {
+            "phase": "setup",
+            "start": 0,
+            "end": 600
+          },
+          {
+            "phase": "load",
+            "start": 600,
+            "end": 1600
+          },
+          {
+            "phase": "jump",
+            "start": 1600,
+            "end": 1900
+          },
+          {
+            "phase": "flight",
+            "start": 1900,
+            "end": 2250
+          },
+          {
+            "phase": "land",
+            "start": 2250,
+            "end": 2600
+          },
+          {
+            "phase": "hold",
+            "start": 2600,
+            "end": 3500
+          },
+          {
+            "phase": "return",
+            "start": 3500,
+            "end": 6000
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "单腿起始支撑",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "肩背靠凳，单脚踩地，自由腿屈膝抬起。"
+        },
+        {
+          "title": "单腿低位加载",
+          "startSeconds": 0.6,
+          "endSeconds": 1.6,
+          "instruction": "在低位保持单脚支撑，准备伸髋跳起。"
+        },
+        {
+          "title": "支撑脚跳起",
+          "startSeconds": 1.6,
+          "endSeconds": 1.9,
+          "instruction": "伸髋跳起，唯一支撑脚离地。"
+        },
+        {
+          "title": "短暂腾空",
+          "startSeconds": 1.9,
+          "endSeconds": 2.25,
+          "instruction": "短暂腾空，自由腿保持抬膝。"
+        },
+        {
+          "title": "唯一支撑脚落地",
+          "startSeconds": 2.25,
+          "endSeconds": 2.6,
+          "instruction": "唯一支撑脚轻落地，自由腿不落地。"
+        },
+        {
+          "title": "高位停稳",
+          "startSeconds": 2.6,
+          "endSeconds": 3.5,
+          "instruction": "髋在高位停稳，只由支撑脚接地。"
+        },
+        {
+          "title": "单腿慢降",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "保持单脚支撑慢慢降髋，自由腿继续抬起。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "12:25–12:54",
+          "keyPoint": "source确认髋下沉后跳起，先落地停稳，再慢慢下；可降低跳幅或不跳。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 上背肩胛下缘压凳\n② 落地先停稳，再慢降\n③ 自由腿保持抬起\n\n红色 · 主要发力：臀大肌\n浅红 · 协同：腘绳肌、股四头肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：落地高位先停稳\n\n右图 · 错误示范：落地立刻塌髋\n\n调整方法：降低跳幅，支撑脚落地后先在高位停稳，再缓慢降髋；自由腿继续抬起。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "臀大肌"
+      ],
+      "secondaryMuscles": [
+        "腘绳肌",
+        "股四头肌",
+        "腹直肌"
+      ]
+    },
+    {
+      "lessonID": "functional-dumbbell-lunge-press",
+      "resource": "functional-dumbbell-lunge-press.html",
+      "artwork": "dumbbell-lunge-press",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双脚站稳，双手各握一只哑铃，先垂在身体两侧。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "双铃由体侧提向肩前，配合迈步下沉继续向上推举。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在弓步末端停稳，控制躯干和举起的双铃。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "双铃回经肩前降至体侧，收步站稳；完成后再换边。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "14:45",
+          "keyPoint": "双哑铃在肩前架位。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "14:40–15:00",
+          "keyPoint": "连续片段确认前弓步时双臂过顶推举后回站。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "15:25",
+          "keyPoint": "弓步底部与躯干中立字幕。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "15:55",
+          "keyPoint": "站姿/返回阶段。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 握杆在掌内，两铃分开\n② 前脚全掌，后脚前掌\n③ 肋骨骨盆收稳再推\n\n红色 · 主要发力：股四头肌、臀大肌、三角肌前束\n浅红 · 协同：肱三头肌、腹直肌、腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：收稳躯干再过顶\n\n右图 · 错误示范：推举时拱腰借力\n\n调整方法：减轻双铃重量，收住肋骨和骨盆；两膝弯曲下沉，保持躯干后再控制推举。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "股四头肌",
+        "臀大肌",
+        "三角肌前束"
+      ],
+      "secondaryMuscles": [
+        "肱三头肌",
+        "腹直肌",
+        "腹外斜肌"
+      ]
+    },
+    {
+      "lessonID": "functional-seated-dumbbell-press",
+      "resource": "functional-seated-dumbbell-press.html",
+      "artwork": "seated-dumbbell-press",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "腿垫固定大腿、双脚向前踩地，保持后仰并在肩前持铃。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "维持后仰，单臂向上推举并配合躯干旋转。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "控制推举顶位、躯干和独立哑铃。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "哑铃回到肩前，躯干回正；完成后再换侧。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "23:08–23:18",
+          "keyPoint": "字幕及画面提示腿部固定、双脚前放，后仰后加旋转并单侧推举。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "23:00–24:05",
+          "keyPoint": "source连续核对确认单哑铃单臂过顶推举，器械提供座椅和腿垫支撑。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "① 一只独立哑铃握在工作手内；没有连接钢索。② 固定垫压住大腿，臀部坐垫，双脚前放踩地。③ 核心维持后仰，单臂向上推举时躯干受控旋转。红色为前三角肌、肱三头肌和腹外斜肌，浅红为稳定肌。机器显示座位、腿垫、支架、配重与闲置拉索，动作是单臂哑铃推举。",
+      "mistakeExplanation": "左图 · 正确示范：固定双腿，控制后仰\n\n右图 · 错误示范：用折腰代替控制\n\n调整方法：先卡稳大腿并让双脚前放踩地，再减轻哑铃和旋转幅度，以腹部控制后仰，避免过度折腰。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "三角肌前束",
+        "肱三头肌",
+        "腹外斜肌"
+      ],
+      "secondaryMuscles": [
+        "腹直肌",
+        "臀中肌"
+      ]
+    },
+    {
+      "lessonID": "functional-dumbbell-romanian-deadlift",
+      "resource": "functional-dumbbell-romanian-deadlift.html",
+      "artwork": "dumbbell-rdl",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双脚并排站稳，膝微屈。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "髋向后移动并前倾，哑铃贴腿下行。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在舒适幅度停顿，双脚保持稳定。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "髋向前伸展回站，哑铃贴腿回位。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "18:25",
+          "keyPoint": "髋铰链底部位置。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "18:35",
+          "keyPoint": "站立持铃姿势。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "18:55",
+          "keyPoint": "字幕提示收紧腹部。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "19:05",
+          "keyPoint": "髋铰链动作姿势。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "18:30",
+          "keyPoint": "站立准备，双脚并排持铃。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "18:30.5",
+          "keyPoint": "下放中段，髋后移、躯干前倾。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "18:31",
+          "keyPoint": "下放末端，膝微屈，双铃靠近小腿。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "18:31.5",
+          "keyPoint": "髋伸展起身的还原阶段。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 向后送髋，膝微屈\n② 双铃贴腿，握杆在掌内\n③ 腰背自然长线\n\n红色 · 主要发力：臀大肌、腘绳肌\n浅红 · 协同：竖脊肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：髋折叠，腰背自然\n\n右图 · 错误示范：下放时弓起腰背\n\n调整方法：减小下放深度，保持腹部稳定与腰背自然长线；由髋向后移动，双铃沿腿下降。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "臀大肌",
+        "腘绳肌"
+      ],
+      "secondaryMuscles": [
+        "竖脊肌",
+        "腹直肌"
+      ]
+    },
+    {
+      "lessonID": "functional-alternating-lunge",
+      "resource": "functional-alternating-lunge.html",
+      "artwork": "alternating-lunge",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "选择自重或适合的轻负重。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "交替向前迈步并控制下沉。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "稳定停顿，保持自然呼吸。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "蹬地回站并换侧。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "20:05",
+          "keyPoint": "双哑铃站姿附近画面。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "20:25",
+          "keyPoint": "弓步底部画面。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "20:35",
+          "keyPoint": "字幕称可选择不用重量。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "20:55",
+          "keyPoint": "字幕强调自重也有难度。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        },
+        {
+          "videoTime": "21:45",
+          "keyPoint": "出现动作变式，具体名称未确认。",
+          "origin": "source-reviewed",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 前脚全掌稳定支撑\n② 两膝弯曲，后膝不触地\n③ 回站后换腿，不急着加重\n\n红色 · 主要发力：股四头肌、臀大肌\n浅红 · 协同：臀中肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：分轨，屈膝下沉\n\n右图 · 错误示范：过度前倾、失稳\n\n调整方法：回到徒手、双臂放低的版本，缩小步幅与下沉深度；先控制住两脚支撑，再交替换腿。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "股四头肌",
+        "臀大肌"
+      ],
+      "secondaryMuscles": [
+        "臀中肌",
+        "腹直肌"
+      ]
+    },
+    {
+      "lessonID": "functional-cooldown-walk",
+      "resource": "functional-cooldown-walk.html",
+      "artwork": "cooldown-walk",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "选平坦路线。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "轻松继续走动。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "逐渐减速并放松双臂。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "呼吸平稳后结束。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": null,
+          "keyPoint": "根据 American Heart Association 的逐步冷身建议；无原视频时间点。",
+          "origin": "supplemental",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 一脚踩稳，另一脚小步走\n② 肩放松，双臂自然反摆\n③ 自然呼吸，逐渐减速\n\n浅红 · 协同：髂腰肌、股直肌、腓肠肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：小步轻走，肩臂放松\n\n右图 · 错误示范：大步猛甩双臂\n\n调整方法：缩小步幅和摆臂幅度，缓慢降低步速，让呼吸逐渐平稳。本课为 AHA 冷身资料补充。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "髂腰肌",
+        "股直肌",
+        "腓肠肌"
+      ]
+    },
+    {
+      "lessonID": "functional-cooldown-calf-stretch",
+      "resource": "functional-cooldown-calf-stretch.html",
+      "artwork": "cooldown-calf-stretch",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "扶稳支撑物并前后站好。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "后膝伸直、足跟贴地，身体轻微前移。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "每侧舒适保持 15–20 秒。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "缓慢退回并换侧。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": null,
+          "keyPoint": "依据 NHS 小腿拉伸步骤及 AHA 冷身建议；无原视频时间点。",
+          "origin": "supplemental",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 双掌轻扶稳固墙面\n② 后膝伸直，不反复弹动\n③ 后足跟持续贴地\n\n红色斜线 · 拉伸部位：腓肠肌\n浅红 · 协同：腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：后膝伸直，足跟贴地\n\n右图 · 错误示范：后膝弯曲、足跟抬起\n\n调整方法：减小前移幅度，让后膝伸直、足跟重新贴地；舒适保持后缓慢退出，按课程提示换侧。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "腹直肌"
+      ],
+      "stretchMuscles": [
+        "腓肠肌"
+      ]
+    },
+    {
+      "lessonID": "functional-cooldown-hamstring-stretch",
+      "resource": "functional-cooldown-hamstring-stretch.html",
+      "artwork": "cooldown-hamstring-stretch",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备姿势",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "头背骨盆贴垫，一脚踩地并屈膝。"
+        },
+        {
+          "title": "动作移动",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "抬起另一侧大腿，双手托住膝下方的腿后侧。"
+        },
+        {
+          "title": "末端停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "缓慢伸直抬起腿，在舒适范围保持。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "保持支撑脚踩垫，慢慢放下并换侧。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": null,
+          "keyPoint": "依据 NHS 大腿后侧拉伸步骤；无原视频时间点。",
+          "origin": "supplemental",
+          "sourceReport": "../content/source-report.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 双手托膝下后侧，不压膝\n② 另一脚屈膝踩垫\n③ 头背骨盆有垫支撑\n\n红色斜线 · 拉伸部位：腘绳肌\n浅红 · 协同：腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：托腿后，另一脚踩垫\n\n右图 · 错误示范：支撑脚离垫失去支点\n\n调整方法：把另一只脚放回垫面，头背和骨盆保持贴垫；双手托住抬腿膝下后侧，在舒适幅度内缓慢伸腿。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "腹直肌"
+      ],
+      "stretchMuscles": [
+        "腘绳肌"
+      ]
+    }
+  ],
+  "pending": [],
+  "collectionID": "functional-lower-limb",
+  "timeUnit": "seconds"
+}

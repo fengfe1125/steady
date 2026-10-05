@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>原生图解 runtime 验收</title>
+<style>
+body{margin:0;padding:18px;color:#2c4633;background:#f6f8f2;font:14px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+h1{font-size:20px;margin:0 0 10px}button,select{font:inherit;padding:9px 12px;margin:4px;border:1px solid #bacbb5;border-radius:10px;background:#fdfef9;color:#2c4633}
+button:disabled{opacity:.5}p{line-height:1.6}iframe{display:block;border:0;width:min(400px,100%);aspect-ratio:1;background:#eff2e9;border-radius:18px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;max-width:1000px}#progress{font-weight:600}
+</style></head><body>
+<h1>原生图解 runtime 验收</h1>
+<p>一次只载入一课。默认暂停；记录浅色两个 1× 循环和一个 0.5× 循环、深色一个 1× 循环，以及暂停、实际几何接缝和两种主题的细节／错误图解。</p>
+<select id="lesson" aria-label="待验收课程"></select>
+<button id="one" disabled>采样所选课程</button><button id="all" disabled>按顺序采样全部</button>
+<button id="stop" disabled>停止</button><button id="export" disabled>保存本地验收证据</button>
+<p id="progress" role="status">正在读取采样清单</p>
+<p id="saved" role="status"></p>
+<iframe id="runtimeFrame" title="当前课程图解"></iframe>
+<details><summary>保存补充证据</summary><textarea id="evidenceData" aria-label="补充证据数据"></textarea><button id="saveEvidence">保存补充证据</button></details>
+<pre id="report" aria-label="验收结果"></pre>
+<script type="module" src="runtime-audit.mjs"></script>
+</body></html>

@@ -1,0 +1,1306 @@
+{
+  "id": "tanchengyi-chest",
+  "title": "胸部训练",
+  "subtitle": "热身 · 四个主动作 · 基础替代",
+  "author": "谭成义",
+  "sourceTitle": "私教系列之胸部教学 · 第三期",
+  "sourceURL": "https://www.douyin.com/video/7650309381392785073",
+  "durationSeconds": 2304.1,
+  "overview": "按顺序学习滚轴T位与Y位抬臂、胸廓支撑准备与可选膝离地进阶、Y字推举、弹力带绕肩，再学习四个胸部主动作。另补充轻活动、轻负重试推和墙壁俯卧撑。",
+  "equipment": "泡沫轴、弹力带、双杠或辅助器械、片载平推/上斜推胸器械、低位双滑轮与靠背长凳、稳固墙面。",
+  "trainingNote": "本合集是动作学习与选择库。入门先选1–2个能稳定控制的正式动作，逐步增加训练量。Y位20次、弹力带2组15次、双杠4组分别标注；标为“补充”的组次与间歇是App练习起点。",
+  "sections": [
+    {
+      "id": "chest-warmup",
+      "title": "热身阶段",
+      "caption": "先升温，再做舒服的肩部活动和轻负重试推；滚轴两种版本属于可选同系列练法。",
+      "lessons": [
+        {
+          "id": "chest-warmup-march",
+          "title": "轻松踏步",
+          "summary": "先用轻松全身活动提升体温，再进入肩部活动和轻负重推胸。",
+          "equipment": "平整地面；也可在跑步机上轻松走路",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "补充建议：连续3–5分钟；随后肩部活动与试推一起组成约5–10分钟热身。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "站稳",
+              "detail": "双脚自然分开，周围留出摆臂和踏步空间。"
+            },
+            {
+              "title": "选轻松强度",
+              "detail": "从能轻松说完整句子的速度开始，不急着加速。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "自然站立",
+              "detail": "头、躯干和骨盆保持自然排列，双肩放松。"
+            },
+            {
+              "title": "左脚轻抬",
+              "detail": "一侧脚轻轻离地，另一脚稳稳支撑；手臂自然配合。"
+            },
+            {
+              "title": "交替落地",
+              "detail": "抬起的脚轻落地，把重心平稳交给另一侧。"
+            },
+            {
+              "title": "换侧继续",
+              "detail": "另一侧脚轻抬后落地，左右交替保持轻松节奏。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "逐渐升温",
+              "detail": "活动应让身体逐渐暖起来，保留充足精力做后续训练。"
+            },
+            {
+              "title": "脚步轻",
+              "detail": "脚轻落地，膝盖不用抬很高。"
+            },
+            {
+              "title": "呼吸自然",
+              "detail": "能舒适说话，避免热身阶段就喘得很厉害。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "一开始跑跳",
+              "detail": "补充检查：突然用很高强度跑跳，容易先消耗训练精力。"
+            },
+            {
+              "title": "身体晃动",
+              "detail": "补充检查：摆臂和踏步幅度过大，身体前后甩动。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "来源",
+              "detail": "ACE建议先做5–10分钟渐进热身；本课的3–5分钟踏步是其中的轻活动部分。"
+            },
+            {
+              "title": "替代方式",
+              "detail": "可换成同样轻松的快走或单车，不要求必须原地踏步。"
+            }
+          ],
+          "checks": [
+            "脚下空间充足",
+            "能舒适说话",
+            "肩部放松，身体平稳"
+          ],
+          "references": [
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ]
+        },
+        {
+          "id": "chest-warmup-roller-t",
+          "title": "滚轴俯卧T位抬臂",
+          "summary": "俯卧胸骨接触横放滚轴，双臂T位、拇指向上；控制抬臂，脊柱保持稳定。",
+          "equipment": "瑜伽垫、泡沫轴",
+          "origin": "video",
+          "videoRange": {
+            "start": 70,
+            "end": 126
+          },
+          "dosage": "补充起点：1组 × 6–8次可控抬臂，休息30–45秒。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "滚轴摆位",
+              "detail": "把泡沫轴横放在垫上，上胸/胸骨区域轻轻接触轴。"
+            },
+            {
+              "title": "T位展开",
+              "detail": "俯卧展开双臂，拇指向上，头颈保持舒适位置。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "俯卧T位准备",
+              "detail": "胸骨接触横放滚轴，膝盖承托，双臂向两侧展开，拇指向上。"
+            },
+            {
+              "title": "控制抬臂",
+              "detail": "肩胛和肩部带动双臂抬离垫面，保持T位，不同时抬胸或顶腰。"
+            },
+            {
+              "title": "可控位置停留",
+              "detail": "在能稳定控制的位置短暂停留，脊柱和骨盆不跟着抬起。"
+            },
+            {
+              "title": "缓慢落回",
+              "detail": "双臂有控制地回到较低位置，胸骨保持滚轴接触。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "胸骨接触轴",
+              "detail": "滚轴横放在胸骨下方，躯干和膝部稳住。"
+            },
+            {
+              "title": "只动肩部",
+              "detail": "只动肩、脊柱不动；不要用抬胸和顶腰代替抬臂。"
+            },
+            {
+              "title": "拇指朝上",
+              "detail": "拇指向上摆位，手臂保留舒适的近伸直状态。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "放错轴的位置",
+              "detail": "补充检查：把轴移到脖子或腹部，会偏离正确摆位。"
+            },
+            {
+              "title": "腰部硬顶",
+              "detail": "补充检查：胸廓打不开时用腰部过度反弓代偿。"
+            },
+            {
+              "title": "强忍压迫",
+              "detail": "补充检查：为了完成次数硬压胸骨，忽视明显不适。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "可选练法",
+              "detail": "滚轴压胸是特定的热身练法；压迫不舒服时可跳过，采用轻活动和轻负重试推。"
+            },
+            {
+              "title": "用量与呼吸",
+              "detail": "6–8次与30–45秒休息是App练习起点；自然呼吸，不长时间憋气。"
+            }
+          ],
+          "checks": [
+            "胸骨接触横放滚轴",
+            "拇指向上，肩颈没有挤紧",
+            "胸骨和肩部没有疼痛"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ]
+        },
+        {
+          "id": "chest-warmup-roller-y",
+          "title": "滚轴俯卧Y位抬臂",
+          "summary": "推荐的Y位：双臂向斜前方近伸直，控制抬起和回落，胸骨继续接触滚轴。",
+          "equipment": "瑜伽垫、泡沫轴",
+          "origin": "video",
+          "videoRange": {
+            "start": 126,
+            "end": 146
+          },
+          "dosage": "示范为20次。补充入门可先1组6–8次，休息30–45秒；按动作控制调整。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "滚轴摆位",
+              "detail": "把泡沫轴横放在垫上，上胸/胸骨区域轻轻接触轴。"
+            },
+            {
+              "title": "摆成Y位",
+              "detail": "双臂向斜前方展开成Y，拇指向上，手臂保持舒适的近伸直状态。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "俯卧Y位准备",
+              "detail": "胸骨接触滚轴，膝盖承托，双臂向斜前方近伸直成Y。"
+            },
+            {
+              "title": "Y位抬臂",
+              "detail": "肩部带动双臂抬离垫面，手臂方向保持Y位，脊柱和骨盆不动。"
+            },
+            {
+              "title": "保持控制",
+              "detail": "停在能控制的位置，不以抬胸、顶腰或耸肩换取高度。"
+            },
+            {
+              "title": "缓慢回落",
+              "detail": "双臂沿原路缓慢落回，仍保留胸骨和滚轴的接触。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "胸骨接触轴",
+              "detail": "滚轴横放在胸骨下方，躯干和膝部稳住。"
+            },
+            {
+              "title": "只动肩部",
+              "detail": "只动肩、脊柱不动；不要用抬胸和顶腰代替抬臂。"
+            },
+            {
+              "title": "拇指朝上",
+              "detail": "拇指向上摆位，手臂保留舒适的近伸直状态。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "放错轴的位置",
+              "detail": "补充检查：把轴移到脖子或腹部，会偏离正确摆位。"
+            },
+            {
+              "title": "腰部硬顶",
+              "detail": "补充检查：胸廓打不开时用腰部过度反弓代偿。"
+            },
+            {
+              "title": "强忍压迫",
+              "detail": "补充检查：为了完成次数硬压胸骨，忽视明显不适。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "可选练法",
+              "detail": "滚轴压胸是特定的热身练法；压迫不舒服时可跳过，采用轻活动和轻负重试推。"
+            },
+            {
+              "title": "入门用量",
+              "detail": "20次只对应02:23这处Y位抬臂提示，不套给T位、支撑呼吸或后来的Y字推举。入门6–8次与间歇是App调整。"
+            }
+          ],
+          "checks": [
+            "胸骨接触横放滚轴",
+            "双臂斜前方Y位，躯干没有跟着抬起",
+            "胸骨和肩部没有疼痛"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ]
+        },
+        {
+          "id": "chest-warmup-roller-support",
+          "title": "滚轴胸廓活动 · 支撑进阶",
+          "summary": "同一滚轴练习的手掌支撑变化。胸骨仍接触轴，胸廓小幅打开后回落。",
+          "equipment": "瑜伽垫、泡沫轴",
+          "origin": "video",
+          "videoRange": {
+            "start": 146,
+            "end": 266
+          },
+          "dosage": "可选补充起点：1组 × 3–5次小幅活动；休息30–45秒。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "沿用胸骨接触",
+              "detail": "俯卧，胸骨接触横放泡沫轴，骨盆和下肢保持稳定。"
+            },
+            {
+              "title": "手掌支撑",
+              "detail": "双手放在肩旁地面，肘屈，手掌稳定撑地。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备支撑",
+              "detail": "手掌撑地，胸骨保留与滚轴的接触。"
+            },
+            {
+              "title": "小幅抬胸",
+              "detail": "胸廓轻轻打开，头和上胸随之略抬；不把整个身体推离轴。"
+            },
+            {
+              "title": "保持接触",
+              "detail": "在舒服范围短暂停留，手掌、下肢与滚轴提供支撑。"
+            },
+            {
+              "title": "控制回落",
+              "detail": "缓慢回到低位，骨盆不前后滑动，滚轴不大幅滚走。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "与T位同系列",
+              "detail": "这是滚轴胸廓活动的支撑变化，不是另一种沿背部滚轴按摩。"
+            },
+            {
+              "title": "胸骨仍接触",
+              "detail": "抬起的是胸廓的一小部分，接触点留在滚轴。"
+            },
+            {
+              "title": "手掌稳定",
+              "detail": "肘有控制地支撑，避免突然用力把身体弹起。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "整个人撑离轴",
+              "detail": "补充检查：做成完整俯卧撑，失去胸骨与轴的接触。"
+            },
+            {
+              "title": "滚轴大幅移动",
+              "detail": "补充检查：让滚轴沿身体长距离滚动。"
+            },
+            {
+              "title": "腰椎代偿",
+              "detail": "补充检查：用腰部过伸替代小幅胸廓活动。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "难度选择",
+              "detail": "这是可选进阶；入门者可先尝试T位，或直接用轻活动和轻负重推胸热身。"
+            },
+            {
+              "title": "范围与用量",
+              "detail": "只做舒服的小范围，次数和间歇为App补充起点；胸骨或肩部不适就停止此练法。"
+            }
+          ],
+          "checks": [
+            "手掌稳定撑地",
+            "胸骨仍接触滚轴",
+            "骨盆稳住，腰部没有硬顶"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ]
+        },
+        {
+          "id": "chest-warmup-roller-knee-lift",
+          "title": "滚轴膝离地支撑 · 可选进阶",
+          "summary": "抬起膝盖可以增加难度，胸骨仍由滚轴承托；本条先保留手掌支撑练习，不作为必做热身。",
+          "equipment": "瑜伽垫、泡沫轴",
+          "origin": "video",
+          "videoRange": {
+            "start": 201,
+            "end": 206
+          },
+          "dosage": "补充可选起点：1组 × 3–5次轻抬膝后放回，休息30–45秒。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "先掌握基础",
+              "detail": "先熟悉胸骨接触滚轴的基础摆位，压迫不舒服时跳过本进阶。"
+            },
+            {
+              "title": "掌、膝和脚下准备",
+              "detail": "双手撑地、膝盖承托，脚下准备支撑；滚轴仍横放在胸骨下。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "膝部承托准备",
+              "detail": "双手撑地，胸骨接触横放滚轴，膝盖先保留地面承托。"
+            },
+            {
+              "title": "轻抬膝盖",
+              "detail": "保持脚下与手掌支撑，轻轻抬膝离地，不把胸骨推离滚轴。"
+            },
+            {
+              "title": "短暂稳住",
+              "detail": "只在舒服范围短暂停留，身体整体稳定，不顶腰或硬压胸口。"
+            },
+            {
+              "title": "控制放回膝盖",
+              "detail": "膝盖缓慢回到承托位置，放松后再决定是否继续。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "进阶方向",
+              "detail": "抬膝是为了增加难度，不是“屈膝减负”。"
+            },
+            {
+              "title": "胸骨仍有承托",
+              "detail": "脚下支撑与膝离地时，胸骨保持接触滚轴，双手先不离地。"
+            },
+            {
+              "title": "先练支撑",
+              "detail": "熟悉支撑后，可结合独立T/Y位课继续抬臂。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "把身体推离轴",
+              "detail": "补充检查：抬膝时用双手把胸骨整个推开，失去滚轴承托。"
+            },
+            {
+              "title": "顶腰换高度",
+              "detail": "补充检查：为了抬膝用腰部大幅反弓，身体不能保持整体控制。"
+            },
+            {
+              "title": "强忍压迫",
+              "detail": "补充检查：胸口明显不舒服仍硬撑，不愿放回膝盖。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "可选进阶",
+              "detail": "基础摆位能稳定完成后再选择；压迫不舒服时跳过滚轴练法，采用轻活动和轻负重试推。"
+            },
+            {
+              "title": "练习安排",
+              "detail": "3–5次和30–45秒休息为App建议的起点。手臂练习在T/Y课中学习。"
+            }
+          ],
+          "checks": [
+            "胸骨仍接触横放滚轴",
+            "膝盖轻离地时手掌和脚下稳定",
+            "胸口没有明显压迫不适"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ]
+        },
+        {
+          "id": "chest-warmup-roller-y-press",
+          "title": "滚轴俯卧Y字推举",
+          "summary": "胸骨仍由滚轴承托，从屈肘W位向头前方伸臂成Y，再屈肘返回；与近伸直Y位抬臂分开学习。",
+          "equipment": "瑜伽垫、泡沫轴",
+          "origin": "video",
+          "videoRange": {
+            "start": 266,
+            "end": 300
+          },
+          "dosage": "补充起点：1组 × 6–8次可控推举，休息30–45秒。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "滚轴摆位",
+              "detail": "把泡沫轴横放在垫上，上胸/胸骨区域轻轻接触轴。"
+            },
+            {
+              "title": "屈肘准备",
+              "detail": "双臂在身体两侧屈肘，前臂朝头部方向，胸骨继续接触横放滚轴。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "屈肘W位准备",
+              "detail": "胸骨贴滚轴，双膝和下肢稳住，双臂向两侧屈肘成W位。"
+            },
+            {
+              "title": "伸臂成Y",
+              "detail": "双手沿斜前方伸出，肘逐渐伸展成Y，躯干不随手臂抬离轴。"
+            },
+            {
+              "title": "末端保持控制",
+              "detail": "停在舒服的Y位，肩部不向耳朵挤，不为伸远而顶腰。"
+            },
+            {
+              "title": "屈肘返回",
+              "detail": "双手沿原路收回，肘重新弯曲，回到W位准备下一次。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "胸廓稳定",
+              "detail": "在滚轴胸廓准备上加入Y字推举，胸骨仍接触轴。"
+            },
+            {
+              "title": "区别两种Y",
+              "detail": "这里主要是伸肘与屈肘的往返；02:10的Y位抬臂保持手臂近伸直。"
+            },
+            {
+              "title": "肩部可控",
+              "detail": "在舒服范围中活动肩肘，不用腰部代偿。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "放错轴的位置",
+              "detail": "补充检查：把轴移到脖子或腹部，会偏离正确摆位。"
+            },
+            {
+              "title": "腰部硬顶",
+              "detail": "补充检查：胸廓打不开时用腰部过度反弓代偿。"
+            },
+            {
+              "title": "强忍压迫",
+              "detail": "补充检查：为了完成次数硬压胸骨，忽视明显不适。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "可选练法",
+              "detail": "滚轴压胸是特定的热身练法；压迫不舒服时可跳过，采用轻活动和轻负重试推。"
+            },
+            {
+              "title": "用量是补充",
+              "detail": "本动作6–8次、30–45秒休息是App的练习起点；20次的提示属于前面的Y位抬臂。"
+            }
+          ],
+          "checks": [
+            "胸骨接触横放滚轴",
+            "W位和Y位切换时胸骨仍贴轴",
+            "胸骨和肩部没有疼痛"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ]
+        },
+        {
+          "id": "chest-warmup-band",
+          "title": "宽握弹力带肩环绕",
+          "summary": "从眼/口前的舒适高度，经头顶绕到肩附近后方，再原路回；全程保留带子张力，不降到腰背低位。",
+          "equipment": "轻阻力弹力带",
+          "origin": "video",
+          "videoRange": {
+            "start": 303,
+            "end": 400
+          },
+          "dosage": "2组 × 每组15次。休息30–45秒为补充起点；不适或失去控制时减少次数和幅度。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "宽握",
+              "detail": "双手抓住弹力带，握距比肩宽，按自己的活动范围调整。"
+            },
+            {
+              "title": "站稳",
+              "detail": "双脚踩稳，骨盆和躯干保持自然位置。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "脸前高度准备",
+              "detail": "双手宽握，从眼睛或嘴巴前方的舒适高度开始，带子保持轻张力。"
+            },
+            {
+              "title": "经过头顶",
+              "detail": "双手有控制地向上绕过头顶，躯干和骨盆不跟着后仰。"
+            },
+            {
+              "title": "肩后附近控制",
+              "detail": "终点只到本人能控制的肩附近后方，不继续降到腰背低位。"
+            },
+            {
+              "title": "保持张力返回",
+              "detail": "带子不松掉，沿同一路径经过头顶回到脸前高度，不甩动。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "范围够用",
+              "detail": "起点在脸前，终点在肩附近后方；到不了该位置时可以提前结束。"
+            },
+            {
+              "title": "始终有张力",
+              "detail": "弹力带保持张力，往返时不要完全松掉。"
+            },
+            {
+              "title": "不顶腰",
+              "detail": "不要通过顶腰扩大幅度，保持躯干稳定。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "窄握硬绕",
+              "detail": "补充检查：握距太窄，肩部活动受限还强行绕过。"
+            },
+            {
+              "title": "塌腰仰身",
+              "detail": "补充检查：为了把带绕到背后，过度挺腰或向后仰。"
+            },
+            {
+              "title": "快速甩带",
+              "detail": "补充检查：用速度和惯性绕过卡住的范围。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "组次",
+              "detail": "两组、每组15次；30–45秒间歇是App补充。"
+            },
+            {
+              "title": "按能力调整",
+              "detail": "可放宽握距、减少次数或提前结束范围；不强迫绕到腰背低位，也不强忍肩部不适。"
+            }
+          ],
+          "checks": [
+            "握距足够宽",
+            "绕肩时身体保持稳定",
+            "肩部没有疼痛或卡住感"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ]
+        },
+        {
+          "id": "chest-warmup-press",
+          "title": "轻负重推胸试练",
+          "summary": "正式训练前，用明显轻于工作重量的阻力确认座椅、握把和可控幅度。",
+          "equipment": "坐姿推胸器械",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "补充起点：1–2组 × 8–10次轻松试推；组间休息45–60秒。保留充分余力。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "先调座位",
+              "detail": "让握把在胸前的舒服位置，背靠垫、双脚踩稳。"
+            },
+            {
+              "title": "选轻重量",
+              "detail": "从空载或很轻的阻力开始，试推不应接近力竭。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "坐稳准备",
+              "detail": "背部贴靠垫，握住把手，手腕自然顺直。"
+            },
+            {
+              "title": "轻松向前推",
+              "detail": "沿器械轨迹缓慢前推，观察双侧肩肘是否舒服。"
+            },
+            {
+              "title": "末端控制",
+              "detail": "接近伸肘时控制住，不硬锁肘，不耸肩。"
+            },
+            {
+              "title": "缓慢回位",
+              "detail": "有控制地返回胸前起点，确认全程都能稳住。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "排练动作",
+              "detail": "先熟悉轨迹和幅度，再考虑增加工作重量。"
+            },
+            {
+              "title": "试推留余力",
+              "detail": "做完应感觉仍能轻松继续，而不是热身就耗尽力量。"
+            },
+            {
+              "title": "每次调节后确认",
+              "detail": "换器械或调整座位后，重新用轻阻力验证。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "直接上工作重量",
+              "detail": "补充检查：跳过座椅和幅度检查，用大重量试错。"
+            },
+            {
+              "title": "热身做到力竭",
+              "detail": "补充检查：试推组已经疲劳变形，影响正式组。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "来源与安排",
+              "detail": "参考ACE渐进热身和NSCA低于正式强度的专项排练原则；具体组次和休息为App起点。"
+            },
+            {
+              "title": "呼吸",
+              "detail": "试推时自然呼吸，推时缓慢呼气、回程吸气；不需要长时间屏息。"
+            }
+          ],
+          "checks": [
+            "座位和握把位置舒服",
+            "双脚踩稳，背部贴靠",
+            "轻阻力能完成全程控制"
+          ],
+          "references": [
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chest-main",
+      "title": "胸部正式动作",
+      "caption": "按顺序学习；选择自己能稳定掌握的动作训练。",
+      "lessons": [
+        {
+          "id": "chest-parallel-bar-dip",
+          "title": "双杠臂屈伸",
+          "summary": "带前倾的双杠动作。双手固定，胸口向前下方移动，再有控制地推回。",
+          "equipment": "双杠；入门可用辅助器械或教练保护",
+          "origin": "video",
+          "videoRange": {
+            "start": 433,
+            "end": 884
+          },
+          "dosage": "共4组。补充入门可先2组 × 6–8次辅助版本，休息120–180秒。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "先安排辅助",
+              "detail": "可以由教练辅助躯干。先确认能稳定支撑，必要时使用辅助器械。"
+            },
+            {
+              "title": "握稳并前倾",
+              "detail": "双手握平行把手，身体有控制地前倾，屈膝、双腿交叠。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "上方支撑",
+              "detail": "双手握稳双杠，肘接近伸直但不硬锁，保持屈髋前倾。"
+            },
+            {
+              "title": "控制下降",
+              "detail": "肘向后屈，胸口向前下方移动，双手位置不变。"
+            },
+            {
+              "title": "底部控制",
+              "detail": "停在自己可控的深度，避免肩部被拉到不舒服的位置。"
+            },
+            {
+              "title": "向下推杠回升",
+              "detail": "向下推双杠，让身体回升，前倾保持稳定，不借摆腿弹起。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "身体有前倾",
+              "detail": "保持重心和挺胸前倾，身体不完全直立。"
+            },
+            {
+              "title": "双手固定",
+              "detail": "人体上下移动，双杠和双手的支撑位置保持稳定。"
+            },
+            {
+              "title": "持续控制",
+              "detail": "下降和推回都保持控制，顶部不追求硬锁肘。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "身体过直",
+              "detail": "身体过直会改变受力，偏离胸部动作。"
+            },
+            {
+              "title": "摆腿借力",
+              "detail": "补充检查：腿和躯干大幅摆动，用惯性推回。"
+            },
+            {
+              "title": "下沉过深",
+              "detail": "补充检查：为了追求深度，下降到肩部无法稳定的位置。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "入门组数",
+              "detail": "共四组；入门两组、6–8次和120–180秒间歇是App调整。不能稳定完成时优先辅助版或器械推胸。"
+            },
+            {
+              "title": "用量与呼吸",
+              "detail": "2组6–8次与间歇是App的辅助版起点。保留余力，下降吸气、推回呼气；失去控制就结束该组。"
+            }
+          ],
+          "checks": [
+            "双手握稳，身体没有大幅晃动",
+            "前倾和屈膝位置能维持",
+            "肩部舒服，下降深度可控"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            },
+            {
+              "title": "ACE · 俯卧撑难度进阶",
+              "url": "https://www.acefitness.org/resources/pros/expert-articles/7265/perfecting-the-push-up-for-all-levels/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            }
+          ]
+        },
+        {
+          "id": "chest-flat-press",
+          "title": "片载坐姿平推",
+          "summary": "坐姿、背靠垫，推两个独立器械臂向前。握把靠近胸前起步，回程保持控制。",
+          "equipment": "片载坐姿推胸器械；两侧独立运动臂",
+          "origin": "video",
+          "videoRange": {
+            "start": 884,
+            "end": 1285
+          },
+          "dosage": "补充起点：2组 × 8–12次；组间休息120秒，可按恢复延长。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "调好座位",
+              "detail": "让起始握把处在舒服的胸前位置，双脚踩稳脚垫或地面。"
+            },
+            {
+              "title": "握住原生把手",
+              "detail": "背部贴靠垫，双手握住器械把手，按器械结构选择舒服握法。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "胸前起点",
+              "detail": "肘屈，把手在胸前，背和脚下稳住，肩部不向前挤。"
+            },
+            {
+              "title": "沿轨迹前推",
+              "detail": "推动两侧独立器械臂向前，手腕保持控制，胸廓稳定。"
+            },
+            {
+              "title": "末端控制",
+              "detail": "接近伸肘时停在可控位置，不把肩膀顶出靠垫。"
+            },
+            {
+              "title": "缓慢返回",
+              "detail": "沿器械轨迹回到舒服的胸前起点，不让运动臂弹回。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "两侧独立",
+              "detail": "这是杠铃片加载的两个独立运动臂，左右都需要控制。"
+            },
+            {
+              "title": "支撑持续",
+              "detail": "背部贴靠垫，双脚踩稳，身体不随推举前后甩动。"
+            },
+            {
+              "title": "胸廓与肩部",
+              "detail": "先吸气准备胸廓，同时注意肩部和幅度控制。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "耸肩前顶",
+              "detail": "补充检查：向前推时肩部耸起或过度前移，失去靠垫支撑。"
+            },
+            {
+              "title": "回程过大",
+              "detail": "补充检查：把肘和肩拉到无法控制的很深位置。"
+            },
+            {
+              "title": "负重弹回",
+              "detail": "补充检查：回程太快，器械臂回撞起始位置。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "次数与间歇",
+              "detail": "2组8–12次参考一般力量训练起点；120秒是App的恢复安排，状态未恢复时可以延长。"
+            },
+            {
+              "title": "呼吸与握法",
+              "detail": "入门者可自然呼吸，推时缓慢呼气、回程吸气，采用可控的闭合握法；这属于补充，不把屏息或特殊握法设为必要条件。"
+            }
+          ],
+          "checks": [
+            "手腕自然顺直，把手没有滑动",
+            "背部仍贴靠，双脚仍稳",
+            "两侧都能缓慢回到起点"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "NHS · 力量训练的组数与次数",
+              "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            }
+          ]
+        },
+        {
+          "id": "chest-incline-machine-press",
+          "title": "片载上斜推胸",
+          "summary": "在上斜推胸器械上，背靠垫，沿器械轨迹向前上方推，再缓慢回位。",
+          "equipment": "片载上斜推胸器械",
+          "origin": "video",
+          "videoRange": {
+            "start": 1285,
+            "end": 1710
+          },
+          "dosage": "补充起点：2组 × 8–12次；组间休息120秒，可按恢复延长。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "坐靠垫",
+              "detail": "背部、头部在舒服位置贴靠器械垫，双脚踩稳。"
+            },
+            {
+              "title": "轻重量确认起点",
+              "detail": "先用轻阻力确认握把起点与肩部舒服，左右两侧保持可控。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "上胸前准备",
+              "detail": "握住独立把手，肘屈，肩部稳住，身体贴靠垫。"
+            },
+            {
+              "title": "向前上方推",
+              "detail": "沿器械导向推举，手与前臂保持控制，不抬肩找高度。"
+            },
+            {
+              "title": "末端控制",
+              "detail": "接近伸肘时控制住，头背继续贴靠，不硬锁肘。"
+            },
+            {
+              "title": "缓慢回到起点",
+              "detail": "沿同一路径回位，肩肘不要被负重拉向过深的后方。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "按器械轨迹",
+              "detail": "这是上斜推胸器械，不替换成哑铃或杠铃变式。"
+            },
+            {
+              "title": "角度不写死",
+              "detail": "靠背角度按器械结构和舒服姿势调节。"
+            },
+            {
+              "title": "轻负重学控制",
+              "detail": "先确认肩部和回程范围，再逐步增加阻力。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "耸肩推举",
+              "detail": "补充检查：把肩膀抬起来抢高度，失去肩部控制。"
+            },
+            {
+              "title": "头背离垫",
+              "detail": "补充检查：用躯干前后晃动推动负重。"
+            },
+            {
+              "title": "回程过深",
+              "detail": "补充检查：为了拉伸强行把肘和肩向后带得过远。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "可替代平推",
+              "detail": "入门可先从平推或上斜中选一个会控制的推类动作，不要求同一天叠加所有动作。"
+            },
+            {
+              "title": "次数与呼吸",
+              "detail": "组次和间歇为App补充起点；推时缓慢呼气、回程吸气，避免长时间屏息。"
+            }
+          ],
+          "checks": [
+            "脚下、背部和头部支撑稳定",
+            "向前上方推时肩膀不耸",
+            "回程仍能控制肩肘"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "NHS · 力量训练的组数与次数",
+              "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            }
+          ]
+        },
+        {
+          "id": "chest-seated-cable-fly",
+          "title": "坐姿低位绳索夹胸",
+          "summary": "靠背坐姿，低位滑轮连接D把。肘保留微屈，双手沿向前上方弧线收至上胸前。",
+          "equipment": "双侧低位滑轮、独立D把、有靠背长凳",
+          "origin": "video",
+          "videoRange": {
+            "start": 1710,
+            "end": 1988
+          },
+          "dosage": "补充起点：2组 × 8–12次；组间休息90–120秒。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "摆好长凳与滑轮",
+              "detail": "采用靠背坐姿，两侧钢索从低位滑轮斜向上连到握把。"
+            },
+            {
+              "title": "坐稳并微屈肘",
+              "detail": "双脚踩稳，背靠垫，掌心相对握D把，肘保留小幅弯曲。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "肩线附近打开",
+              "detail": "双臂在肩线附近或略低的舒服位置展开，肘仍微屈。"
+            },
+            {
+              "title": "向前上方收合",
+              "detail": "带动双臂沿弧线内收，把手在上胸前靠近，肘的弯度大致保持。"
+            },
+            {
+              "title": "收合处控制",
+              "detail": "胸部保持主动控制，不耸肩，也不把两个把手用力撞在一起。"
+            },
+            {
+              "title": "缓慢展开返回",
+              "detail": "沿弧线缓慢打开，停在肩舒服且还能稳住的位置，身体保持靠垫支撑。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "低滑轮坐姿",
+              "detail": "实际钢索从下方斜向上走，不画成高位滑轮或站姿变式。"
+            },
+            {
+              "title": "肘保持微屈",
+              "detail": "开合主要由肩部带动，肘不反复大幅弯伸。"
+            },
+            {
+              "title": "上胸前收合",
+              "detail": "双手向前上方靠近，躯干不靠后仰或摆动借力。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "反复卷肘",
+              "detail": "补充检查：开合时把肘弯成很大的角度，变成屈肘拉把。"
+            },
+            {
+              "title": "肩部前顶",
+              "detail": "补充检查：末端用耸肩和肩前移代替胸部控制。"
+            },
+            {
+              "title": "腰背借力",
+              "detail": "补充检查：后仰或反弓腰部，把把手甩到前方。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "幅度优先",
+              "detail": "重量以能保持微屈肘和舒服打开范围为准，不强求很大的后展幅度。"
+            },
+            {
+              "title": "用量与呼吸",
+              "detail": "组次与90–120秒间歇是App练习起点；合拢时呼气、展开时吸气，按恢复调整。"
+            }
+          ],
+          "checks": [
+            "低位钢索走线与凳子位置合适",
+            "肘只微屈，开合时弯度变化不大",
+            "背靠垫、脚踩稳，肩部舒服"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "NHS · 力量训练的组数与次数",
+              "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chest-basics",
+      "title": "基础胸部替代",
+      "caption": "没有器械或暂时难以完成双杠时，从容易控制的支撑高度开始。",
+      "lessons": [
+        {
+          "id": "chest-wall-push-up",
+          "title": "墙壁俯卧撑",
+          "summary": "基础胸部入门替代。手掌固定在墙上，身体整体靠近墙面，再把墙推开。",
+          "equipment": "稳固墙面、防滑地面",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "补充起点：2组 × 6–8次；组间休息60秒。动作稳定后逐渐增加次数。",
+          "frames": [],
+          "preparation": [
+            {
+              "title": "站在墙前",
+              "detail": "从约一臂距离开始，双脚自然分开，脚底保持稳定。"
+            },
+            {
+              "title": "放好手掌",
+              "detail": "手掌放在接近肩高的位置，略宽于肩，手指朝上。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "支撑准备",
+              "detail": "手掌贴墙，肘接近伸直，躯干、骨盆和下肢保持自然直线。"
+            },
+            {
+              "title": "缓慢靠近墙",
+              "detail": "屈肘，身体作为整体靠近墙，脚下不移动。"
+            },
+            {
+              "title": "近墙控制",
+              "detail": "到达舒服且能控制的位置，头颈自然，腰部不塌。"
+            },
+            {
+              "title": "推墙回到起点",
+              "detail": "通过手掌推墙回升，躯干整体返回，不突然锁肘。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "身体整体移动",
+              "detail": "Mayo Clinic强调墙面俯卧撑的背部稳定和控制节奏。"
+            },
+            {
+              "title": "手掌固定",
+              "detail": "固定手脚作为支撑，动作来自屈肘和伸肘。"
+            },
+            {
+              "title": "容易调整",
+              "detail": "站近一点降低难度，能控制后再小步增加离墙距离。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "塌腰",
+              "detail": "补充检查：胸先靠近墙，骨盆却留在后方或腰部反弓。"
+            },
+            {
+              "title": "抬头顶墙",
+              "detail": "补充检查：为了够到墙面把脖子伸出去。"
+            },
+            {
+              "title": "弹起锁肘",
+              "detail": "补充检查：推回太快，顶部把肘硬顶直。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "来源与用量",
+              "detail": "墙面变式的姿势依据Mayo Clinic；2组6–8次、休息60秒是结合ACE入门俯卧撑示例调整的App起点。"
+            },
+            {
+              "title": "进阶选择",
+              "detail": "先把墙面动作做稳定；之后可用稳固较高支撑面逐步降低高度。推时呼气、靠近墙时吸气。"
+            }
+          ],
+          "checks": [
+            "手掌和双脚稳固",
+            "躯干整体移动，腰部没有塌",
+            "能缓慢推回，肩腕舒服"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 墙面俯卧撑姿势",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/modified-pushup/vid-20084674"
+            },
+            {
+              "title": "ACE · 俯卧撑难度进阶",
+              "url": "https://www.acefitness.org/resources/pros/expert-articles/7265/perfecting-the-push-up-for-all-levels/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "谭成义 · 私教系列之胸部教学",
+      "url": "https://www.douyin.com/video/7650309381392785073"
+    },
+    {
+      "title": "ACE · 动态热身与课程准备",
+      "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+    },
+    {
+      "title": "ACSM · 2026 抗阻训练更新",
+      "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+    },
+    {
+      "title": "NHS · 力量训练的组数与次数",
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/"
+    },
+    {
+      "title": "Mayo Clinic · 墙面俯卧撑姿势",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/modified-pushup/vid-20084674"
+    },
+    {
+      "title": "ACE · 俯卧撑难度进阶",
+      "url": "https://www.acefitness.org/resources/pros/expert-articles/7265/perfecting-the-push-up-for-all-levels/"
+    },
+    {
+      "title": "NSCA · 抗阻训练中的恢复与安排",
+      "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+    }
+  ]
+}

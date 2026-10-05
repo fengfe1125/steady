@@ -1,0 +1,740 @@
+{
+  "collectionID": "tanchengyi-shoulders",
+  "animations": [
+    {
+      "lessonID": "shoulders-light-warmup",
+      "resource": "shoulders-lightCardio.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "轻松踏步",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "交替小幅抬脚、轻柔落地，手臂随脚步自然摆动。"
+        },
+        {
+          "title": "进入节奏",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "由慢到稍快，保持能轻松说话的速度。"
+        },
+        {
+          "title": "维持轻松",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "身体稍微变暖即可，热身不需要练到疲劳。"
+        },
+        {
+          "title": "平缓结束",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "逐渐放慢脚步，站稳后进入肩部活动。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "supplemental",
+          "verifiedPoints": [
+            "轻松交替踏步",
+            "低强度整体升温"
+          ],
+          "files": [],
+          "verification": "ACE 一般动态热身建议；踏步编排为原创补充",
+          "references": [
+            {
+              "title": "ACE · 训练前的动态热身",
+              "url": "https://www.acefitness.org/resources/everyone/blog/5779/the-common-mistakes-people-make-when-warming-up/"
+            }
+          ]
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 肩膀放松\n② 手臂随脚步自然摆\n③ 小步、轻落地\n\n浅红 · 协同：髂腰肌、股直肌、腓肠肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肩放松，自然轻摆\n\n右图 · 错误示范：耸肩、猛甩手\n\n调整方法：放松肩部，让双臂随脚步自然轻摆。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "髂腰肌",
+        "股直肌",
+        "腓肠肌"
+      ]
+    },
+    {
+      "lessonID": "shoulders-band-pass-through",
+      "resource": "shoulders-bandPassThrough.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "肩前准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双手宽握，手臂在肩前附近，让弹力带保持轻微张力。"
+        },
+        {
+          "title": "平稳过顶",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "手臂带着弹力带向上经过头顶，沿舒适轨迹继续向后。"
+        },
+        {
+          "title": "肩后控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "到肩后能控制的位置，保持带子绷紧；不继续放得很低、让带子松掉。"
+        },
+        {
+          "title": "原路返回",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "沿同一轨迹经过头顶回到肩前，全程控制弹力带。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "宽握弹力带并保持张力",
+            "肩前、过顶、肩后再原路返回",
+            "不放得很低让带子松掉",
+            "00:58 字幕与口播转写核对一组20次"
+          ],
+          "files": [
+            "evidence/frames/band_path_front_0048s.jpg",
+            "evidence/frames/band_path_back_0050s.jpg",
+            "evidence/frames/band_tension_0054s.jpg",
+            "evidence/frames/band_dose_0058s.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 8,
+          "endSeconds": 159
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 宽握，手臂接近伸直\n② 不挺腰\n③ 不伸脖子\n\n浅红 · 协同：三角肌、斜方肌中束、斜方肌下束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肩后可控范围\n\n右图 · 错误示范：放得太低、挺腰借幅度\n\n调整方法：回到肩前和肩后附近的可控范围，稳定腰背，保持轻微张力。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "三角肌",
+        "斜方肌中束",
+        "斜方肌下束"
+      ]
+    },
+    {
+      "lessonID": "shoulders-trx-y",
+      "resource": "shoulders-trxY.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "屈肘张力位",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "身体后倾，屈肘握带，双手在胸前方；双脚稳定，悬吊带带着张力。"
+        },
+        {
+          "title": "展开到 Y 字",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "双手向上、向外展开，手臂逐渐接近伸直；身体随拉起变得较直立，不另做挺腰动作。"
+        },
+        {
+          "title": "控制顶位",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "到能控制的 Y 字位，肘部接近伸直而不硬锁；脚部继续支撑，躯干稳定。"
+        },
+        {
+          "title": "张力中还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "控制收回双手、肘部回弯，身体再次后倾；不完全放到底或卸掉带子张力。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "脚踩地、屈肘握带后倾准备",
+            "双手向上外展开到近直臂 Y 字，身体较直立",
+            "控制回到屈肘后倾位，底部不完全松掉张力",
+            "固定悬吊带示意，锚点/绳长尺寸不是原片实测"
+          ],
+          "files": [
+            "evidence/frames/trx_y_raise_01.jpg",
+            "evidence/frames/trx_y_raise_02.jpg",
+            "evidence/frames/trx_y_raise_prep_bent_elbow_0213s.jpg",
+            "evidence/frames/trx_y_raise_peak_0214s.jpg",
+            "evidence/frames/trx_y_raise_controlled_return_0216s.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 188,
+          "endSeconds": 225
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 展开到 Y，肘接近伸直\n② 躯干收稳，不塌腰\n③ 双脚稳定，身体随拉起变直立\n\n红色 · 主要发力：斜方肌下束、三角肌后束\n浅红 · 协同：菱形肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：躯干收稳成一条线\n\n右图 · 错误示范：塌腰后仰\n\n调整方法：收稳躯干，先把站位调得容易一些。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "斜方肌下束",
+        "三角肌后束"
+      ],
+      "secondaryMuscles": [
+        "菱形肌"
+      ]
+    },
+    {
+      "lessonID": "shoulders-prone-scapular-lift",
+      "resource": "shoulders-proneScapularLift.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "俯卧准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双臂侧展、肘部弯曲，保持胸腹有支撑。"
+        },
+        {
+          "title": "肩部带动抬臂",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "小幅抬起手臂和肘部，让肩胛参与活动。"
+        },
+        {
+          "title": "上身保持稳定",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "保持腰背不后仰，不为了抬高而抬起整个躯干。"
+        },
+        {
+          "title": "轻轻放回",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "控制手臂回到地面附近，再做下一次。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "泡沫轴支撑胸腹、俯卧屈肘展开",
+            "小幅抬肩臂，躯干保持",
+            "后仰脊柱是错误示范",
+            "292–293秒胸旁低位屈肘手撑仅作静态姿势对照，没有完整周期"
+          ],
+          "files": [
+            "evidence/frames/trx_floor_and_variants_02.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 276,
+          "endSeconds": 294
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 肘和手小幅离地\n② 胸腹有支撑，躯干不动\n③ 头颈自然\n\n红色 · 主要发力：斜方肌中束、斜方肌下束\n浅红 · 协同：菱形肌、三角肌后束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：只动肩部，躯干不动\n\n右图 · 错误示范：抬手时大幅挺腰\n\n调整方法：减少抬臂幅度，让胸腹继续有支撑。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "斜方肌中束",
+        "斜方肌下束"
+      ],
+      "secondaryMuscles": [
+        "菱形肌",
+        "三角肌后束"
+      ]
+    },
+    {
+      "lessonID": "shoulders-trx-w",
+      "resource": "shoulders-trxW.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "握带站稳",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双手握稳，双脚稳定落地，在悬吊带支撑中保持身体稳定。"
+        },
+        {
+          "title": "保持屈肘 W",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "上臂展开、肘部约弯成直角，前臂朝上，双手在头部两侧保持张力。"
+        },
+        {
+          "title": "稳定腰背",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "维持 W 字姿势，躯干收稳，不用塌腰或后仰脊柱拉高双手。"
+        },
+        {
+          "title": "按站位调难度",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "脚位向前移动可增加难度；先在容易控制的站位学会保持，再考虑调整。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "上臂展开、约直角屈肘、前臂朝上的 W 字保持",
+            "脚位前移调难度，随后重新稳定保持",
+            "未确认完整外旋往复，动画采用固定姿势的分步提示",
+            "名称按形态描述，锚点/绳长尺寸不是原片实测"
+          ],
+          "files": [
+            "evidence/frames/trx_floor_and_variants_03.jpg",
+            "evidence/frames/trx_w_setup_0300s.jpg",
+            "evidence/frames/trx_w_hold_0312s.jpg",
+            "evidence/frames/trx_w_hold_0324s.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 300,
+          "endSeconds": 324
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 上臂展开，屈肘约直角\n② 前臂朝上，手在头两侧\n③ 腰背稳定\n\n红色 · 主要发力：三角肌后束、斜方肌中束\n浅红 · 协同：菱形肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：腰背稳定保持 W\n\n右图 · 错误示范：塌腰或后仰脊柱\n\n调整方法：先把站位调得容易一些，让腰背稳定后再保持姿势。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "三角肌后束",
+        "斜方肌中束"
+      ],
+      "secondaryMuscles": [
+        "菱形肌"
+      ]
+    },
+    {
+      "lessonID": "shoulders-bent-extension",
+      "resource": "shoulders-bentOverExtension.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "悬垂准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "保持髋部折叠、上身前倾，持铃臂在肩下方，先稳住肩胛。"
+        },
+        {
+          "title": "上臂向髋后",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "沿较短行程把上臂带向髋部后方，不向两侧大幅张开。"
+        },
+        {
+          "title": "收紧停顿",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "到可控终点短暂停顿，肩部保持下沉，上身留在原位。"
+        },
+        {
+          "title": "缓缓下垂",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "控制哑铃回到肩下方，不借抬身或甩臂完成下一次。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "单侧持铃、髋折叠",
+            "先稳肩胛再小幅肩伸",
+            "上臂向髋后，非两侧飞鸟",
+            "对握/内旋位/正手术语分开，不把模糊掌向强行等同",
+            "两组对握加两组正手只记录原片学员示例"
+          ],
+          "files": [
+            "evidence/frames/shoulder_extension_setup_01.jpg",
+            "evidence/frames/shoulder_extension_detail_01.jpg",
+            "evidence/frames/shoulder_extension_internal_rotation_0466s.jpg",
+            "evidence/frames/shoulder_extension_neutral_sets_0566s.jpg",
+            "evidence/frames/shoulder_extension_overhand_sets_0782s.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 384,
+          "endSeconds": 841
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 先稳肩胛，肩下沉\n② 上臂小幅向髋后\n③ 髋折叠，膝微松\n\n红色 · 主要发力：三角肌后束\n浅红 · 协同：背阔肌、肱三头肌长头\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肩下沉，上臂向髋后\n\n右图 · 错误示范：耸肩、翘肩\n\n调整方法：减轻重量，重新让肩部保持下沉。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "三角肌后束"
+      ],
+      "secondaryMuscles": [
+        "背阔肌",
+        "肱三头肌长头"
+      ]
+    },
+    {
+      "lessonID": "shoulders-machine-reverse-fly",
+      "resource": "shoulders-seatedReverseFly.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "坐直握稳",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "座高适配握把，双手横握，手臂在身前肩高附近准备。"
+        },
+        {
+          "title": "水平打开",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "双臂沿水平轨迹向外打开，把重点放在肩部后侧。"
+        },
+        {
+          "title": "保持可控幅度",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "到能控制的终点，避免继续上抬或硬拉到身后。"
+        },
+        {
+          "title": "慢慢合回",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "控制运动臂回到身前，保持躯干和手肘弯度稳定。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "近直立/略前倾坐姿，横向握把",
+            "近直臂水平向外延展，不以夹背为主要动作",
+            "调座高避免肩部上提、手肘不掉",
+            "脚前移减少上身晃动",
+            "原片没有强制胸贴垫姿势"
+          ],
+          "files": [
+            "evidence/frames/reverse_fly_setup_01.jpg",
+            "evidence/frames/reverse_fly_reps_02.jpg",
+            "evidence/frames/reverse_fly_cues_01.jpg",
+            "evidence/frames/reverse_fly_cues_02.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 842,
+          "endSeconds": 1291
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 肘微屈，手臂向两侧打开\n② 肩下沉，不耸肩\n③ 胸贴垫，臀坐稳\n\n红色 · 主要发力：三角肌后束\n浅红 · 协同：斜方肌中束、菱形肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肩下沉，握柄位置固定\n\n右图 · 错误示范：耸肩、颈肩紧张\n\n调整方法：调好座高，握住固定路径的把手；肩部放松下沉，必要时减轻阻力。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "三角肌后束"
+      ],
+      "secondaryMuscles": [
+        "斜方肌中束",
+        "菱形肌"
+      ]
+    },
+    {
+      "lessonID": "shoulders-dumbbell-press",
+      "resource": "shoulders-seatedPress.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "肩旁握稳",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "背与臀部稳定贴靠，双脚踩稳，双手持铃在肩旁准备。"
+        },
+        {
+          "title": "平稳上推",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "把哑铃向上推，肘和前臂沿可控轨迹上移。"
+        },
+        {
+          "title": "保留肘弯",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "到能控制的位置，仍保留肘弯和张力，不硬推直肘；双铃留出间距。"
+        },
+        {
+          "title": "控制下降",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "控制降到仍有张力的肩旁位置，不追求最低点；腰背和脚位保持原样。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "双铃推举，倾斜靠背支撑",
+            "下背和脚位稳定，手腕由前臂承重",
+            "多数人不硬推直肘、不放松到顶峰，保留张力",
+            "上下幅度按可控程度调整",
+            "姿势和吸气准备、连贯动作；没有确认每次呼气时点"
+          ],
+          "files": [
+            "evidence/frames/press_setup_01.jpg",
+            "evidence/frames/press_cycle_03.jpg",
+            "evidence/frames/press_breath_setup_1650s.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 1291,
+          "endSeconds": 1776
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 保留肘弯，不硬推直\n② 两铃留出间距\n③ 背和臀贴靠，双脚踩稳\n\n红色 · 主要发力：三角肌前束、三角肌中束\n浅红 · 协同：肱三头肌、斜方肌上束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：保留肘弯，两铃有间距\n\n右图 · 错误示范：硬推直肘、肩部上提\n\n调整方法：保留肘弯、让肩部自然运动，把幅度收回到能维持张力的位置。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "三角肌前束",
+        "三角肌中束"
+      ],
+      "secondaryMuscles": [
+        "肱三头肌",
+        "斜方肌上束"
+      ]
+    },
+    {
+      "lessonID": "shoulders-single-dumbbell-press",
+      "resource": "shoulders-seatedSinglePress.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "坐稳放铃",
+          "startSeconds": 0,
+          "endSeconds": 0.64,
+          "instruction": "哑铃放在大腿靠近膝的位置，手握稳，另一侧脚有支撑。"
+        },
+        {
+          "title": "起铃到肩旁",
+          "startSeconds": 0.64,
+          "endSeconds": 1.92,
+          "instruction": "同侧腿小幅辅助，把铃带到肩旁；稳定下来后再向上推。"
+        },
+        {
+          "title": "单侧推举",
+          "startSeconds": 1.92,
+          "endSeconds": 5.76,
+          "instruction": "一次控制这一侧向上推，躯干不扭转，不让另一侧一起上推。"
+        },
+        {
+          "title": "回位与放回",
+          "startSeconds": 5.76,
+          "endSeconds": 8,
+          "instruction": "先控制下降到肩旁，再由腿接住放回大腿位置，全程手不松铃。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "同侧大腿近膝放铃",
+            "腿辅助送至肩旁",
+            "一次一侧推举并控制还原接铃"
+          ],
+          "files": [
+            "evidence/frames/press_single_arm_variant_02.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 1776,
+          "endSeconds": 1867
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 640,
+        "effortEnd": 1920,
+        "returnStart": 5760,
+        "returnEnd": 7700,
+        "duration": 8000
+      },
+      "detailExplanation": "图中编号\n① 铃放同侧大腿近膝\n② 到肩旁先稳住再推\n③ 躯干不扭转、不侧倒\n\n红色 · 主要发力：三角肌前束、三角肌中束\n浅红 · 协同：肱三头肌、腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：躯干稳定，只推这一侧\n\n右图 · 错误示范：身体随重量侧倒\n\n调整方法：铃到肩旁后先稳住身体，再控制推举；必要时减轻重量。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "三角肌前束",
+        "三角肌中束"
+      ],
+      "secondaryMuscles": [
+        "肱三头肌",
+        "腹外斜肌"
+      ]
+    },
+    {
+      "lessonID": "shoulders-lateral-raise",
+      "resource": "shoulders-lateralRaise.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "两侧准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "站稳，哑铃在两侧，上身稳定，肘部保留轻微弯曲。"
+        },
+        {
+          "title": "略向前抬起",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "双臂向身体两侧、略向前抬，保持手肘关系可控。"
+        },
+        {
+          "title": "可控高度",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "到个人舒适、可控的高度，手臂向外伸展，上身不顶腰；不必追求固定高度。"
+        },
+        {
+          "title": "缓缓落下",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "控制哑铃回到两侧，躯干不摇摆，不靠反弹接下一次。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "两侧略向前抬臂",
+            "躯干稳定、不靠顶腰，可略前倾",
+            "手臂向外、全程可控，高度按个人能力",
+            "吸气准备；没有确认每次呼气时点"
+          ],
+          "files": [
+            "evidence/frames/lateral_raise_main_01.jpg",
+            "evidence/frames/lateral_raise_hand_cue_01.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 1870,
+          "endSeconds": 2072
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 肘微屈、略高于手腕\n② 肩下沉，不耸肩\n③ 躯干稳定不摇摆\n\n红色 · 主要发力：三角肌中束\n浅红 · 协同：三角肌前束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肩下沉，抬到肩高附近\n\n右图 · 错误示范：猛抬肩、耸肩\n\n调整方法：手腕保持自然，肩肘手协调，必要时降低幅度。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "三角肌中束"
+      ],
+      "secondaryMuscles": [
+        "三角肌前束"
+      ]
+    },
+    {
+      "lessonID": "shoulders-front-raise",
+      "resource": "shoulders-frontRaise.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "低位对握",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "掌心相对，双铃在大腿前准备，上身稳定。"
+        },
+        {
+          "title": "向前抬起",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "双臂沿身体前方平稳抬起，保持轻微肘弯，不再屈肘把铃卷起。"
+        },
+        {
+          "title": "可控高度",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "抬到个人能控制的高度，示意图展示肩高附近；保持向前，不改成侧平举。"
+        },
+        {
+          "title": "回到低位",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "沿原路径慢慢落回大腿前，保持完整、可控的起始位置。"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "video",
+          "verifiedPoints": [
+            "掌心相对的双铃主示范",
+            "大腿前低位起始，不从腹部高位启动",
+            "向前可控抬起、原路控制返回，不再屈肘卷铃",
+            "对握/正手/反握讲解对照，反握不是默认练习",
+            "本段把正手称为内旋位，不反推肩伸段术语",
+            "吸气准备；没有确认每次呼气时点"
+          ],
+          "files": [
+            "evidence/frames/front_raise_demo_01.jpg",
+            "evidence/frames/front_raise_path_01.jpg",
+            "evidence/frames/front_raise_return_02.jpg",
+            "evidence/frames/front_raise_grip_underhand_2156s.jpg",
+            "evidence/frames/front_raise_grip_options_2168s.jpg",
+            "evidence/frames/front_raise_overhand_internal_rotation_2180s.jpg",
+            "evidence/frames/front_raise_source_sets_2240s.jpg"
+          ],
+          "verification": "全时间轴每2秒抽帧已逐图目视，动作周期另核对逐秒序列和可读字幕；完整Whisper口播草稿已完成并交叉核对。不是全片连续播放或独立人耳听写，精确角度和呼气时点未确认。",
+          "startSeconds": 2072,
+          "endSeconds": 2346
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 肘微屈\n② 肩下沉，不耸肩\n③ 躯干不后仰\n\n红色 · 主要发力：三角肌前束\n浅红 · 协同：胸大肌上部、三角肌中束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：躯干稳定，向前抬\n\n右图 · 错误示范：身体后仰借力\n\n调整方法：稳定躯干，保持身体前方的路径。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "三角肌前束"
+      ],
+      "secondaryMuscles": [
+        "胸大肌上部",
+        "三角肌中束"
+      ]
+    }
+  ],
+  "timeUnit": "seconds"
+}

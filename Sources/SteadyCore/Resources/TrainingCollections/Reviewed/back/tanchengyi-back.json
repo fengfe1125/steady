@@ -1,0 +1,772 @@
+{
+  "id": "tanchengyi-back",
+  "title": "背部训练",
+  "subtitle": "先稳定躯干，再控制每一次拉与放",
+  "author": "谭成义（原视频参考）",
+  "sourceTitle": "私教跟练系列 · 背部训练",
+  "sourceURL": "https://www.douyin.com/video/7647176615788911793",
+  "durationSeconds": 2951.366667,
+  "overview": "按顺序整理肩胛准备、直臂适应、四项正式动作与最后的中背补充；使用原创动画逐步讲解。",
+  "equipment": "泡沫轴、软垫、长凳、可调凳、钢索训练架与独立把手",
+  "trainingNote": "先学会姿势，再逐步增加负荷。所有写有“补充建议”的组次、次数、休息和热身时长都是练习起点。首次可从每项1组开始，能保持动作质量再增加。",
+  "sections": [
+    {
+      "id": "warmup",
+      "title": "热身与肩胛准备",
+      "caption": "先轻有氧，再做跪姿准备动作。健腹轮比较保留在泡沫轴说明内。",
+      "lessons": [
+        {
+          "id": "back-walking",
+          "title": "轻有氧热身",
+          "summary": "先轻松走动或慢骑，让身体逐渐进入训练状态。",
+          "equipment": "步行区域或自行车",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "补充建议：5–10分钟，轻松开始，再逐渐加快。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "开始",
+              "detail": "选择能轻松说话的速度，站稳后再开始走动。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "左脚承重",
+              "detail": "左脚落地承重，右脚开始向前迈；右臂从前方自然回摆，肩颈放松。"
+            },
+            {
+              "title": "右脚迈出",
+              "detail": "右脚继续向前并落地，左臂自然向前；步幅轻松，身体平稳换重心。"
+            },
+            {
+              "title": "右脚承重",
+              "detail": "右脚落地承重，左脚开始向前迈；左臂从前方自然回摆，肩颈放松。"
+            },
+            {
+              "title": "左脚迈出",
+              "detail": "左脚继续向前并落地，右臂自然向前；脚步左右交替，接着重复这一轮。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "强度",
+              "detail": "本项来自补充热身安排。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "一开始过快",
+              "detail": "从慢速开始，逐步增加速度。"
+            }
+          ],
+          "supplements": [],
+          "checks": [
+            "能轻松说话",
+            "肩颈放松",
+            "已逐渐变暖"
+          ],
+          "references": [
+            {
+              "title": "AHA · 热身与放松",
+              "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/warm-up-cool-down"
+            },
+            {
+              "title": "NSCA · 动态热身",
+              "url": "https://www.nsca.com/education/articles/kinetic-select/introduction-to-dynamic-warm-up/"
+            }
+          ]
+        },
+        {
+          "id": "back-roller",
+          "title": "跪姿泡沫轴肩胛前推",
+          "summary": "膝盖着地、小臂支撑，用肩胛带动小幅前推与回位。",
+          "equipment": "泡沫轴、软垫",
+          "origin": "video",
+          "videoRange": {
+            "start": 116,
+            "end": 428
+          },
+          "dosage": "补充建议：先做1组6–8次，小幅、受控。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "跪姿支撑",
+              "detail": "双膝放在垫上，小臂放到泡沫轴上，手指自然展开。"
+            },
+            {
+              "title": "固定重心",
+              "detail": "先找到略向前的稳定支撑位，保持骨盆和躯干位置。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "起始",
+              "detail": "双膝着地，小臂支撑泡沫轴，躯干保持稳定。"
+            },
+            {
+              "title": "前推",
+              "detail": "肩胛向前顶起，带动泡沫轴小幅前滚。"
+            },
+            {
+              "title": "检查",
+              "detail": "确认髋部和整个身体没有一起前后滑动。"
+            },
+            {
+              "title": "回位",
+              "detail": "控制肩部与小臂回到起始支撑，继续保持身体位置。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "支撑点",
+              "detail": "膝盖和小臂承重，手指展开。"
+            },
+            {
+              "title": "运动位置",
+              "detail": "强调肩部和肩胛活动，躯干重心保持稳定。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "整个人滑动",
+              "detail": "髋部随泡沫轴前后移动，会改变本项教学重点。"
+            },
+            {
+              "title": "膝盖离地",
+              "detail": "先保留跪姿基底，避免转成无膝支撑的动作。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "建议值",
+              "detail": "6–8次是学习起点。"
+            },
+            {
+              "title": "健腹轮对照",
+              "detail": "健腹轮只作比较，不另设推进深度或必做组次。"
+            }
+          ],
+          "checks": [
+            "膝盖着地",
+            "小臂有支撑",
+            "髋部稳定",
+            "前推与回位受控"
+          ],
+          "references": []
+        },
+        {
+          "id": "back-bench-support",
+          "title": "凳支撑跪姿肘屈伸",
+          "summary": "肘部支撑在凳垫，前臂小幅屈伸，同时保持肩胛与躯干控制。",
+          "equipment": "长凳、软垫",
+          "origin": "video",
+          "videoRange": {
+            "start": 428,
+            "end": 494
+          },
+          "dosage": "补充建议：1组4–6次；肩不舒服时缩小幅度或短时静态支撑。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "布置支撑",
+              "detail": "跪在垫上，将双肘/前臂近肘处支撑于稳固凳垫。"
+            },
+            {
+              "title": "起始幅度",
+              "detail": "双手张开，从舒适的小范围开始。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "肘部支撑",
+              "detail": "双膝着地，肘部留在凳垫上，身体先稳定。"
+            },
+            {
+              "title": "屈肘",
+              "detail": "前臂向上转动，双手靠近头部；肘支点保持。"
+            },
+            {
+              "title": "保持",
+              "detail": "肩胛与躯干受控，按舒适范围停留。"
+            },
+            {
+              "title": "伸回",
+              "detail": "前臂缓慢向前伸回，保持肘部支撑。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "真实变式",
+              "detail": "本项是凳支撑的跪姿练习，前臂可以转动；不增加器械负重。"
+            },
+            {
+              "title": "调整",
+              "detail": "肩部不舒服时可以减小动作或做静态支撑；重心后移是进阶提示。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "肘部离垫",
+              "detail": "先保留肘部的固定支点。"
+            },
+            {
+              "title": "强求幅度",
+              "detail": "肩部不舒服时改用小幅或静态方式。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "建议值",
+              "detail": "4–6次是补充学习建议；静态替代可先短时保持。"
+            }
+          ],
+          "checks": [
+            "肘部有支撑",
+            "前臂受控转动",
+            "肩部舒适",
+            "身体没有塌下"
+          ],
+          "references": []
+        }
+      ]
+    },
+    {
+      "id": "transition",
+      "title": "进入正式训练",
+      "caption": "直臂下压是适应动作；首次正式划船前，可另用轻负荷预演。",
+      "lessons": [
+        {
+          "id": "back-straight-arm",
+          "title": "直臂下压 · 适应",
+          "summary": "从激活进入正式训练前，先练高位钢索的受控下压。",
+          "equipment": "高位钢索、长直杆",
+          "origin": "video",
+          "videoRange": {
+            "start": 494,
+            "end": 688
+          },
+          "dosage": "补充建议：轻负荷1组8–12次；先找稳定的路径。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "站稳",
+              "detail": "站在高位钢索前，双脚支撑稳定，双手握长直杆。"
+            },
+            {
+              "title": "准备",
+              "detail": "自然吸气准备，保持躯干张力和肘部的小弯曲。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "高位起始",
+              "detail": "双手在身体前上方，肘部保持轻微弯曲。"
+            },
+            {
+              "title": "下压",
+              "detail": "用肩部运动将附件带向身体前下方，肘角大体保持。"
+            },
+            {
+              "title": "检查",
+              "detail": "确认没有后仰、挺胸或把动作变成反复屈伸肘。"
+            },
+            {
+              "title": "回位",
+              "detail": "控制附件回到前上方，保持躯干稳定。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "训练分期",
+              "detail": "它属于激活与正式动作之间的适应动作。"
+            },
+            {
+              "title": "器械",
+              "detail": "双手持长直杆，肘角大体保持，从前上方压向髋/大腿前再返回。"
+            },
+            {
+              "title": "身体控制",
+              "detail": "准备时先建立稳定支撑，再进行下压，避免后仰。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "后仰借力",
+              "detail": "保持身体角度，缩小重量或幅度以便控制。"
+            },
+            {
+              "title": "肘角反复改变",
+              "detail": "保持直臂下压的肩部轨迹。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "轻负荷预演",
+              "detail": "轻负荷是补充准备建议。"
+            },
+            {
+              "title": "呼吸",
+              "detail": "完整呼吸配对未核实；建议自然呼吸，避免过度屏气。"
+            }
+          ],
+          "checks": [
+            "双脚支撑",
+            "肘角受控",
+            "身体角度稳定",
+            "回程仍有控制"
+          ],
+          "references": []
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "title": "正式动作",
+      "caption": "先保持躯干稳定，再做肩部与手臂运动。单手动作两侧都学习。",
+      "lessons": [
+        {
+          "id": "back-one-arm-row",
+          "title": "单手绳索划船",
+          "summary": "第一个正式动作：单手拉回，躯干保持稳定，避免侧屈。",
+          "equipment": "钢索、单手把手、长凳",
+          "origin": "video",
+          "videoRange": {
+            "start": 688,
+            "end": 1132
+          },
+          "dosage": "补充建议：每侧1–2组×8–12次，组间约2分钟；先轻负荷预演。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "坐稳",
+              "detail": "面向钢索坐在凳上，双脚支撑，单手持把手。"
+            },
+            {
+              "title": "手腕",
+              "detail": "选择自然握向，手腕与前臂保持受控。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "前伸起始",
+              "detail": "单手持把手向前伸，坐姿和躯干保持稳定。"
+            },
+            {
+              "title": "向后拉",
+              "detail": "肘沿身侧向后带动，手柄拉向可控制的身侧位置。"
+            },
+            {
+              "title": "收紧",
+              "detail": "保持动作质量，不用侧屈制造额外距离。"
+            },
+            {
+              "title": "受控回位",
+              "detail": "手臂慢慢伸回，保持躯干和肩部控制。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "动作重点",
+              "detail": "多次纠正侧屈，要求回程保持控制，把每次动作做好。"
+            },
+            {
+              "title": "换侧",
+              "detail": "完成一侧后换到另一侧，保留同样的稳定要求。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "身体侧倒",
+              "detail": "拉回时保持身体居中。"
+            },
+            {
+              "title": "回程突然放松",
+              "detail": "控制伸回，不让钢索牵着身体走。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "建议值",
+              "detail": "组次与休息是 App 建议的练习起点。"
+            },
+            {
+              "title": "器械示意",
+              "detail": "线缆出口的准确高度及非工作手的固定支撑点未确认；动画只示意拉向身体侧，非工作手自然放在身侧，不作为必须撑腿的要求。"
+            },
+            {
+              "title": "呼吸",
+              "detail": "成对口令未核实；可自然呼吸，发力呼气与回位吸气作为补充提示。"
+            }
+          ],
+          "checks": [
+            "双脚支撑",
+            "身体不侧屈",
+            "手腕受控",
+            "回程没有松掉"
+          ],
+          "references": []
+        },
+        {
+          "id": "back-neutral-pulldown",
+          "title": "对握高位钢索下拉",
+          "summary": "两手握同一对握附件，从高位向下拉，保持躯干稳定。",
+          "equipment": "单根高位钢索、对握附件、坐垫",
+          "origin": "video",
+          "videoRange": {
+            "start": 1132,
+            "end": 1753
+          },
+          "dosage": "补充建议：1–2组×8–12次，组间约2分钟。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "对握附件",
+              "detail": "坐稳后，两手握住同一框架附件两端的握点。"
+            },
+            {
+              "title": "自然握向",
+              "detail": "采用自然相对握向，略作调整，不强迫前臂旋到极端。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "高位起始",
+              "detail": "坐稳、双脚支撑，两手握同一附件的两端，在高位准备。"
+            },
+            {
+              "title": "肘向下",
+              "detail": "双肘沿身体两侧向下带动整个附件，不追求把手拉得过低。"
+            },
+            {
+              "title": "检查",
+              "detail": "保持肩部受控和身体角度，避免后仰把重量压下。"
+            },
+            {
+              "title": "伸回高位",
+              "detail": "控制伸臂，将整个附件送回高位，保持肩颈与躯干控制。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "器械说明",
+              "detail": "单根高位钢索从中央连接同一框架，两手握两端。"
+            },
+            {
+              "title": "握向",
+              "detail": "稍作外旋即可，过度外旋可能受前臂活动限制。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "后仰",
+              "detail": "保持原有坐姿角度，先减少重量。"
+            },
+            {
+              "title": "强扭前臂",
+              "detail": "选舒适握向，不追求极端旋转。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "建议值",
+              "detail": "剂量和完整呼吸配对未核实；建议值用于学习起步。"
+            }
+          ],
+          "checks": [
+            "两手握同一附件两端",
+            "双脚支撑",
+            "躯干角度稳定",
+            "上下都受控"
+          ],
+          "references": []
+        },
+        {
+          "id": "back-seated-row",
+          "title": "坐姿低位钢索划船",
+          "summary": "并握中立 V 把手，受控回拉，保持身体和肩胛稳定。",
+          "equipment": "低位钢索、中立 V 把手、凳/脚踏支撑",
+          "origin": "video",
+          "videoRange": {
+            "start": 1753,
+            "end": 2101
+          },
+          "dosage": "补充建议：1–2组×8–12次，组间约2分钟。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "脚部支撑",
+              "detail": "坐稳后双脚蹬住支撑，膝部保留舒适弯曲。"
+            },
+            {
+              "title": "握把",
+              "detail": "双手并排握住竖向中立 V 把手，手腕自然。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "稳定起始",
+              "detail": "双脚蹬稳，双手向前持把手，先固定躯干角度。"
+            },
+            {
+              "title": "适度回拉",
+              "detail": "肘部向后带动，将把手拉向身体前侧的可控位置。"
+            },
+            {
+              "title": "受控收紧",
+              "detail": "保持肩胛稳定，保留适中的回拉幅度。"
+            },
+            {
+              "title": "伸出去",
+              "detail": "控制手臂前伸，身体角度保持，继续完成下一次。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "肩胛",
+              "detail": "避免过多后缩，动作主要由肩部与手臂完成。"
+            },
+            {
+              "title": "躯干",
+              "detail": "从侧面看身体位置保持稳定，不用后仰增加距离。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "大幅夹背",
+              "detail": "不要额外加入夸张的后缩。"
+            },
+            {
+              "title": "后仰借力",
+              "detail": "保持坐姿角度，先选择能控制的负荷。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "建议值",
+              "detail": "组次与休息为 App 建议的练习起点。"
+            },
+            {
+              "title": "呼吸",
+              "detail": "拉之前先吸气准备。"
+            }
+          ],
+          "checks": [
+            "双脚蹬稳",
+            "并排竖向握把",
+            "身体不后仰",
+            "回拉与前伸受控"
+          ],
+          "references": []
+        },
+        {
+          "id": "back-bent-arm-pulldown",
+          "title": "坐地单手高位钢索下压（屈肘）",
+          "summary": "第四个正式动作：非工作手握出线侧立柱，保持屈肘姿态，用肩部带动上臂下压。",
+          "equipment": "高位钢索、单手把手、出线侧立柱、地面软垫",
+          "origin": "video",
+          "videoRange": {
+            "start": 2101,
+            "end": 2580
+          },
+          "dosage": "补充建议：每侧1–2组×8–12次，组间约2分钟；先小范围学习。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "坐地扶柱",
+              "detail": "面向钢索坐在地面，屈膝；非工作手握出线滑轮下方的同一立柱，支撑在身体前侧，先坐稳。"
+            },
+            {
+              "title": "屈肘握把",
+              "detail": "单手高位持把手，保持受控的屈肘姿势和舒适的略外旋握向。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "高位准备",
+              "detail": "非工作手握出线滑轮下方的同一立柱，工作手高位持把手、屈肘，先把躯干摆正。"
+            },
+            {
+              "title": "向侧下压",
+              "detail": "保持出线侧同柱支撑，肩部带动工作臂向侧下方运动，肘腕姿态受控。"
+            },
+            {
+              "title": "短暂停顿",
+              "detail": "在可控制的位置收紧，不用侧弯或后仰追求更深终点。"
+            },
+            {
+              "title": "回到高位",
+              "detail": "控制回程，保持同柱支撑和握向，避免拉放时随意内外旋前臂。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "同一个动作",
+              "detail": "35–43分钟为同一项动作的讲解、带练和换侧，不另拆一张重复卡。"
+            },
+            {
+              "title": "支撑",
+              "detail": "非工作手扶握出线滑轮下方的同一立柱，位于身体前侧；下压与回程保持支撑位置。"
+            },
+            {
+              "title": "身体稳定",
+              "detail": "避免侧屈、旋转和后仰；先调好姿势再拉。"
+            },
+            {
+              "title": "终点",
+              "detail": "不用追求向下的幅度，先完成受控路径。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "侧屈/旋转",
+              "detail": "保持身体居中，以能稳定完成的范围为准。"
+            },
+            {
+              "title": "前臂乱转",
+              "detail": "拉放过程中保留已选的手腕与前臂姿态。"
+            },
+            {
+              "title": "一味压深",
+              "detail": "终点以姿势可控为界。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "建议值",
+              "detail": "图中屈肘角度和行程为示意，按自己能控制的幅度练习。"
+            }
+          ],
+          "checks": [
+            "非工作手握出线侧同一立柱",
+            "身体先摆正",
+            "屈肘姿态受控",
+            "不侧屈或后倒",
+            "回程握向稳定"
+          ],
+          "references": []
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "中背补充",
+      "caption": "最后加上胸口支撑的肩胛后缩，作为本次最后一个动作。",
+      "lessons": [
+        {
+          "id": "back-supported-scapula",
+          "title": "胸口支撑肩胛后缩",
+          "summary": "最后的中背补充：胸口贴垫，双独立把手做受控的小幅肩胛后缩。",
+          "equipment": "双钢索、独立把手、可调凳/靠垫",
+          "origin": "video",
+          "videoRange": {
+            "start": 2580,
+            "end": 2868
+          },
+          "dosage": "补充建议：1–2组×8–12次，组间1–2分钟；收紧时短暂停顿。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "胸口贴垫",
+              "detail": "将靠垫调整为接近直立的支撑位，坐稳、胸口贴住。"
+            },
+            {
+              "title": "双手持把",
+              "detail": "两手各持一个独立把手，肘部屈曲，保持双手在身体前方的可控位置。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "贴垫起始",
+              "detail": "坐稳，胸口贴垫，躯干保持位置。"
+            },
+            {
+              "title": "肩胛后缩",
+              "detail": "控制肩胛向后收，肘角与手臂姿态大体保持。"
+            },
+            {
+              "title": "小停顿",
+              "detail": "收紧时稍作停顿，不耸肩、不顶肩。"
+            },
+            {
+              "title": "受控回位",
+              "detail": "肩胛控制回到起始位置，胸口继续贴垫。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "动作重点",
+              "detail": "先做受控的小幅后缩，再逐步改善幅度；不要用挺胸制造距离。"
+            },
+            {
+              "title": "呼吸准备",
+              "detail": "吸气时不要挺胸，保持躯干稳定。"
+            },
+            {
+              "title": "动作身份",
+              "detail": "作为最后的中背补充，采用姿势描述名称。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "胸口离垫",
+              "detail": "持续保留胸部支撑。"
+            },
+            {
+              "title": "大幅拉肘或外展",
+              "detail": "动作重点放在受控肩胛后缩，避免扩大成另一种运动。"
+            },
+            {
+              "title": "耸肩顶肩",
+              "detail": "保持肩颈受控，不向耳朵方向顶起。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "建议值",
+              "detail": "组次、休息、停顿时长和图中手柄高度为示意，按自己的情况调整。"
+            }
+          ],
+          "checks": [
+            "胸口贴垫",
+            "身体位置稳定",
+            "屈肘姿态保持",
+            "收紧有小停顿"
+          ],
+          "references": []
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "谭成义 · 背部私教跟练原视频",
+      "url": "https://www.douyin.com/video/7647176615788911793"
+    },
+    {
+      "title": "AHA · 热身与放松",
+      "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/warm-up-cool-down"
+    },
+    {
+      "title": "NSCA · 动态热身",
+      "url": "https://www.nsca.com/education/articles/kinetic-select/introduction-to-dynamic-warm-up/"
+    },
+    {
+      "title": "AHA · 抗阻训练一般建议",
+      "url": "https://professional.heart.org/en/science-news/resistance-exercise-training-in-individuals-with-and-without-cardiovascular-disease-2023-update/top-things-to-know"
+    },
+    {
+      "title": "NSCA · 组间休息",
+      "url": "https://www.nsca.com/contentassets/fb8a7be6eb174934bb8844703c4de4cc/ptq-10.1.3-how-to-manipulate-rest-intervals-to-maixmize-strength-training-effectiveness.pdf"
+    }
+  ]
+}

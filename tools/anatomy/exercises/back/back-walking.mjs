@@ -1,0 +1,27 @@
+import {reviewed, walkPose} from './geometry.js';
+const grounded = x => ({x, y: -14});
+const lifted = x => ({x, y: -28});
+export default reviewed({motionGuide: false, 
+  id: 'back-walking', title: '轻有氧热身 · 轻松走步', view: 'side',
+  poses: {
+    leftSupport: walkPose(grounded(-24), grounded(24), {near: {sh: 20, el: 22}, far: {sh: -16, el: 20}}),
+    rightSwing: walkPose(lifted(0), grounded(0), {near: {sh: 0, el: 22}, far: {sh: 4, el: 20}}),
+    rightSupport: walkPose(grounded(24), grounded(-24), {near: {sh: -16, el: 20}, far: {sh: 20, el: 22}}),
+    leftSwing: walkPose(grounded(0), lifted(0), {near: {sh: 4, el: 20}, far: {sh: 0, el: 22}}),
+    start: {from: 'leftSupport'}, peak: {from: 'rightSupport'}
+  },
+  track: {keys: [{t: 0, pose: 'leftSupport'}, {t: 2200, pose: 'rightSwing'}, {t: 4700, pose: 'rightSupport'},
+    {t: 7200, pose: 'leftSwing'}, {t: 9700, pose: 'leftSupport'}]},
+  muscles: {secondary: ['glute.max', 'quads.rf', 'hamstrings', 'gastrocnemius']},
+  labels: [{muscle: 'quads.rf', at: 'tr', text: '轻松走步', sub: '臀腿与小腿轻度参与'}],
+  guide: {joint: 'legs.near.A', a: 'leftSupport', b: 'rightSwing', offset: [0, 12]},
+  detail: {pose: 'rightSwing', ghost: 'leftSupport', legend: 'bl',
+    arrows: [{joint: 'legs.near.A', a: 'leftSupport', b: 'rightSwing', offset: [0, 12]}],
+    callouts: [{n: 1, at: 'legs.far.A', text: '一脚落地承重', dx: -30, dy: -16},
+      {n: 2, at: 'legs.near.K', text: '小步交替迈出', dx: 22}, {n: 3, at: 'shoulder', text: '肩松，手臂自然摆', dx: 25, dy: -18}]},
+  mistake: {good: 'rightSwing', goodText: '小步、肩颈放松', text: '耸肩、甩臂过大',
+    fix: '先降低速度和步幅，放松肩颈，双臂随脚步轻摆。',
+    pose: {scapE: 12, arms: {near: {sh: -48, el: 18}, far: {sh: 65, el: 20}}},
+    marks: [{at: 'shoulder', type: 'circle'}, {at: 'arms.far.H', type: 'arrow', dx: -24, dy: 20}],
+    muscles: {primary: ['trap.upper'], secondary: ['quads.rf', 'gastrocnemius']}}
+});

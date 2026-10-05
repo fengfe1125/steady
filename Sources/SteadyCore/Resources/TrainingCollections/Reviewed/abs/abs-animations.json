@@ -1,0 +1,550 @@
+{
+  "collectionID": "tanchengyi-abs",
+  "version": 1,
+  "timeUnit": "seconds",
+  "animations": [
+    {
+      "lessonID": "abs-warmup-marching",
+      "resource": "abs-warmup-marching.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "站直，双脚自然分开，目视前方，双肩放松。"
+        },
+        {
+          "title": "左侧踏步",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "左脚轻轻离地抬膝，右脚稳稳支撑；手臂自然配合，再轻放左脚。"
+        },
+        {
+          "title": "换侧站稳",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "左脚放稳，双脚短暂停稳，准备抬右脚。"
+        },
+        {
+          "title": "右侧踏步",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "右脚轻轻离地抬膝，左脚稳稳支撑；轻放右脚后继续左右交替。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "videoRange": null,
+          "checkedPoints": [
+            "双脚自然分开，膝盖放松，给前后摆臂留出空间。",
+            "脚步轻落地，身体不要大幅前后晃。",
+            "自然呼吸，能舒适说话。",
+            "完整6秒周期先左脚起落、再右脚起落；每次抬脚另一脚仍支撑地面。"
+          ],
+          "status": "primary-reference-checked"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：站直轻抬膝\n\n右图 · 错误示范：仰身晃动，抬得过高\n\n调整方法：减小抬膝幅度，站直，先落稳一脚再换侧。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "髂腰肌"
+      ],
+      "secondaryMuscles": [
+        "股四头肌",
+        "臀中肌",
+        "腹直肌"
+      ],
+      "detailExplanation": "图中编号\n① 站直，肩颈放松\n② 轻抬膝，落稳后换侧\n③ 另一脚持续踩地\n\n红色 · 主要发力：髂腰肌\n浅红 · 协同：股四头肌、臀中肌、腹直肌（稳定躯干）\n虚线人形：双脚落地起始姿势 · 绿色箭头：抬膝方向\n图示左侧抬步后落地，右侧抬步后落地，循环衔接时双脚已站稳。"
+    },
+    {
+      "lessonID": "abs-warmup-cat-cow",
+      "resource": "abs-warmup-cat-cow.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "四点跪姿，背部轻柔展开，头部随脊柱自然延伸。"
+        },
+        {
+          "title": "弓背",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "缓缓呼气，让背部轻轻向上拱，头部随脊柱自然收回。"
+        },
+        {
+          "title": "停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在舒适范围内停一下，手和膝保持原位。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "缓慢吸气，让背部轻柔展开，回到舒适的准备位置；不猛抬头、不挤压腰部。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "videoRange": null,
+          "checkedPoints": [
+            "双手在肩下，双膝在髋下；手掌和膝盖都稳稳支撑。",
+            "手掌与膝盖不随躯干移动。",
+            "用能自然呼吸的幅度活动。"
+          ],
+          "status": "primary-reference-checked"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：背部轻柔展开\n\n右图 · 错误示范：塌腰并猛抬头\n\n调整方法：减少展开幅度，手膝保持原位，头颈随脊柱自然移动。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "腹直肌"
+      ],
+      "secondaryMuscles": [
+        "竖脊肌"
+      ],
+      "detailExplanation": "图中编号\n① 手掌撑地，肩下附近\n② 双膝落垫，髋下附近\n③ 呼气轻弓背，头随脊柱\n\n红色 · 主要发力：腹直肌\n浅红 · 协同：竖脊肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向"
+    },
+    {
+      "lessonID": "abs-warmup-pelvic-tilt",
+      "resource": "abs-warmup-pelvic-tilt.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "头、肩背和臀部有支撑，膝盖自然弯曲。"
+        },
+        {
+          "title": "收紧",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "缓缓呼气，轻轻收紧腹部，让腰部更接近垫面。"
+        },
+        {
+          "title": "停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "短暂停留，臀部不抬起，腿和脚不挪动。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "吸气时缓缓放松，回到原来的自然腰弧。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "videoRange": null,
+          "checkedPoints": [
+            "背部朝下躺在垫上，两脚平放，膝盖与脚的方向一致。",
+            "这是小幅骨盆控制，不是把臀部抬起的桥式动作。",
+            "呼气轻收紧，吸气放松，不憋气。"
+          ],
+          "status": "primary-reference-checked"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：小幅收腹，臀不抬\n\n右图 · 错误示范：抬臀做成臀桥\n\n调整方法：把臀部放回垫面，轻收腹，只改变腰部与垫面的间隙。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "腹直肌"
+      ],
+      "secondaryMuscles": [
+        "腹外斜肌"
+      ],
+      "detailExplanation": "图中编号\n① 呼气收腹，腰弧变小\n② 臀部一直留在垫上\n③ 屈膝，双脚平放\n\n红色 · 主要发力：腹直肌\n浅红 · 协同：腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向"
+    },
+    {
+      "lessonID": "abs-hanging-leg-raise",
+      "resource": "abs-hanging-leg-raise.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "握稳横杠，身体悬垂，先让腿停在身体下方。"
+        },
+        {
+          "title": "上收",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "按画面中的屈膝示范，双膝向腹部方向上收。"
+        },
+        {
+          "title": "停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在能控制的位置停一下，观察腹部与骨盆的变化。"
+        },
+        {
+          "title": "回落",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "缓缓放下双腿，回到仍能控制身体的低位，再开始下一次。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 67,
+            "end": 200
+          },
+          "checkedPoints": [
+            "双手握稳身体两侧的高位握把，双臂向上承重，身体保持悬垂。",
+            "原片在这一段反复讲腹直肌的发力，不只比较腿抬得多高。",
+            "原片比较吐气收肋与吸气后绷腹两种发力感受；先学习能够控制的呼吸与腹部收缩。"
+          ],
+          "status": "key-poses-and-captions-cross-checked-sampled-video"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：稳住悬垂，屈膝上收\n\n右图 · 错误示范：后仰摆腿借力\n\n调整方法：先让身体停稳，缩小抬膝范围，再慢慢回落。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "腹直肌"
+      ],
+      "secondaryMuscles": [
+        "腹外斜肌",
+        "髂腰肌",
+        "背阔肌"
+      ],
+      "detailExplanation": "图中编号\n① 双手握稳固定横杠\n② 收腹带动骨盆轻卷\n③ 屈膝上收，慢放回\n\n红色 · 主要发力：腹直肌\n浅红 · 协同：腹外斜肌、髂腰肌、背阔肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向"
+    },
+    {
+      "lessonID": "abs-sling-knee-raise",
+      "resource": "abs-sling-knee-raise.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "将双臂放入对应吊带，肘部有承托，双手握稳高位握把。"
+        },
+        {
+          "title": "上收",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "以接近伸膝的方式，让双腿缓缓向前上方上收，保持两侧支撑。"
+        },
+        {
+          "title": "停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在能够稳住的位置停一下，不把全身甩到前面。"
+        },
+        {
+          "title": "回落",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "保持吊带和双手支撑，控制双腿缓缓回到仍能稳住的低位。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 200,
+            "end": 240
+          },
+          "checkedPoints": [
+            "双臂放入两侧悬挂吊带，在肘部附近获得承托；双手握住上方握把。",
+            "吊带在肘部附近承托双臂；这与只用手悬垂、前臂垫式举腿机的支撑方式不同。",
+            "原片强调吐气收紧核心后更容易稳住身体；吊带帮助承重，举腿仍需自己控制。"
+          ],
+          "status": "key-poses-and-captions-cross-checked-sampled-video"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：双侧承托，躯干稳定\n\n右图 · 错误示范：后仰把身体甩出去\n\n调整方法：先稳住两侧吊带和握把，减小举腿幅度；吊带不代替握稳。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "腹直肌"
+      ],
+      "secondaryMuscles": [
+        "腹外斜肌",
+        "髂腰肌",
+        "背阔肌"
+      ],
+      "detailExplanation": "图中编号\n① 两侧吊带承托肘附近\n② 双手仍握高位握把\n③ 近伸膝上举，不甩腿\n\n红色 · 主要发力：腹直肌\n浅红 · 协同：腹外斜肌、髂腰肌、背阔肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向"
+    },
+    {
+      "lessonID": "abs-supported-knee-raise",
+      "resource": "abs-supported-knee-raise.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "背部靠近背垫，肘部落在垫上，前臂朝前上方，双手握住竖把。"
+        },
+        {
+          "title": "上收",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "保持前臂支撑，按接近伸膝的示范把双腿向前上方举起，感受腹部收缩。"
+        },
+        {
+          "title": "停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在可控制的位置停一下，保留骨盆轻轻向后卷起的感觉。"
+        },
+        {
+          "title": "回落",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "缓缓将腿放回仍能控制的低位，避免完全放到底后失去腹部张力。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 240,
+            "end": 413
+          },
+          "checkedPoints": [
+            "背部靠近背垫，肘部和靠近肘的一段前臂压稳两侧软垫；前臂朝前上方，双手握住竖把。",
+            "肘部与靠近肘的一段前臂持续压稳软垫，双手握住竖把，肩膀不要耸起。",
+            "原片提示保持骨盆后倾的感觉，下放不要到底；不用甩腿带动上身。"
+          ],
+          "status": "key-poses-and-captions-cross-checked-sampled-video"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：肩下沉，肘部压稳垫\n\n右图 · 错误示范：耸肩，肘部失去承托\n\n调整方法：调整前臂垫和握把，肩离耳朵；先缩小举腿幅度。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "腹直肌"
+      ],
+      "secondaryMuscles": [
+        "腹外斜肌",
+        "髂腰肌"
+      ],
+      "detailExplanation": "图中编号\n① 肘与近端前臂压稳垫\n② 前臂向上，握住竖把\n③ 背靠垫，保留轻卷骨盆\n\n红色 · 主要发力：腹直肌\n浅红 · 协同：腹外斜肌、髂腰肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向"
+    },
+    {
+      "lessonID": "abs-supine-crunch",
+      "resource": "abs-supine-crunch.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "仰卧屈膝，双脚留在垫上，手轻放在头侧。"
+        },
+        {
+          "title": "卷起",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "由腹部收缩带动肩背小幅卷起，肘的方向朝上，不用向前猛冲。"
+        },
+        {
+          "title": "停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在短程卷起的位置停一下，臀部和双脚继续有支撑。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "缓缓回到低位，保持腹部控制，不完全放松或突然下落。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 413,
+            "end": 638
+          },
+          "checkedPoints": [
+            "双脚踩地、膝盖弯曲；画面展示手放头侧的位置。",
+            "原片要求不要起得太多、下放不要到底，在可控制的中间行程练习。",
+            "手轻托头侧；肘随肩背朝上移动，避免向前或向下抢动作。"
+          ],
+          "status": "key-poses-and-captions-cross-checked-sampled-video"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：上背卷起，颈部自然\n\n右图 · 错误示范：只卷头颈，拉头抢动作\n\n调整方法：手轻放头侧，先从腹部收缩开始，减小幅度并让肩背一起卷起。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "腹直肌"
+      ],
+      "secondaryMuscles": [
+        "腹外斜肌"
+      ],
+      "detailExplanation": "图中编号\n① 腹部带动上背短程卷起\n② 手轻托头侧，不拉颈\n③ 双脚和臀部保持支撑\n\n红色 · 主要发力：腹直肌\n浅红 · 协同：腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向"
+    },
+    {
+      "lessonID": "abs-side-biased-crunch",
+      "resource": "abs-side-biased-crunch.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "仰卧屈膝，双脚和臀部保持支撑，手轻放头侧。"
+        },
+        {
+          "title": "偏向卷起",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "小幅卷起肩背，让胸廓轻向目标侧偏向；身体仍保持仰卧支撑。"
+        },
+        {
+          "title": "停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在上背小幅离垫的位置停一下，双脚和臀部不挪动。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "缓缓回到低位，保持脚和臀部支撑，再开始下一次。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 513,
+            "end": 552
+          },
+          "checkedPoints": [
+            "保持仰卧屈膝、双脚踩地，手在头侧轻托；准备向目标侧小幅卷起。",
+            "这是原片普通卷腹中的轻微旋转与侧偏变式，肘的方向仍朝上。",
+            "保持仰卧屈膝支撑，用小幅卷起观察胸廓方向，避免大幅转身。"
+          ],
+          "status": "key-poses-and-captions-cross-checked-sampled-video"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：短程卷起，轻微偏向\n\n右图 · 错误示范：侧偏过大，靠扭身完成\n\n调整方法：先回到仰卧支撑，减小偏向和卷起幅度；脚和骨盆保持原位。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "腹外斜肌",
+        "腹直肌"
+      ],
+      "secondaryMuscles": [],
+      "detailExplanation": "图中编号\n① 近侧肩背短程抬离垫，胸廓轻向目标侧\n② 骨盆留在垫上，不跟着翻转\n③ 屈膝、双脚踩稳\n\n侧视图：靠近你的一侧为示范目标侧。抬肩时这一侧比普通卷腹多抬起一点，双脚与骨盆的位置不变。\n红色 · 主要发力：目标侧腹外斜肌、腹直肌\n虚线人形：仰卧起始姿势。换侧时镜像练习。"
+    },
+    {
+      "lessonID": "abs-kneeling-ab-wheel",
+      "resource": "abs-kneeling-ab-wheel.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双膝落垫，两手握轮轴，主动撑稳肩带，臀部保持在可控制的位置。"
+        },
+        {
+          "title": "前滚",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "保持肩胛和躯干的支撑，让轮子缓缓前滚，先用小幅度。"
+        },
+        {
+          "title": "停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在能够控制并收回的位置停一下，膝盖仍是地面支撑点。"
+        },
+        {
+          "title": "回收",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "把轮子缓缓收回到仍有支撑张力的位置，不将臀部完全坐回脚跟。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 728,
+            "end": 1007.9
+          },
+          "checkedPoints": [
+            "双膝跪垫，双手握住轮轴两侧；轮子接触地面，先用双手撑稳肩带。",
+            "原片要求只做能维持姿势的前滚范围，小幅度也可以。",
+            "双手持续撑住轮轴，前滚时肩带保持主动支撑，避免肩胛明显后缩或塌落。",
+            "原片示范臀部稍后移可降低难度；找到仍能维持支撑的位置，不完全松掉。"
+          ],
+          "status": "key-poses-and-captions-cross-checked-sampled-video"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：躯干收稳，能慢收回\n\n右图 · 错误示范：塌腰换取更远距离\n\n调整方法：缩短前滚范围，撑稳肩带和腹部；只到自己能缓慢收回的位置。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "腹直肌"
+      ],
+      "secondaryMuscles": [
+        "腹外斜肌",
+        "背阔肌",
+        "前锯肌"
+      ],
+      "detailExplanation": "图中编号\n① 双膝固定落垫\n② 握住轮轴，手臂接近伸直\n③ 撑稳躯干，只滚可控范围\n\n红色 · 主要发力：腹直肌\n浅红 · 协同：腹外斜肌、背阔肌、前锯肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向"
+    },
+    {
+      "lessonID": "abs-prone-abdominal-stretch",
+      "resource": "abs-prone-abdominal-stretch.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "俯卧，双腿伸向后方，双手放在上身两侧。"
+        },
+        {
+          "title": "抬胸",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "手掌稳稳撑住，轻轻抬起胸部，保留舒适范围。"
+        },
+        {
+          "title": "停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "骨盆和双腿仍留在垫上，自然呼吸，在舒适的抬胸姿势停一下。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "缓缓弯回手肘，让胸部回到垫面。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 638,
+            "end": 728
+          },
+          "checkedPoints": [
+            "俯卧，双腿向后延伸，双手放在上身两侧撑地。",
+            "手掌撑稳，胸部缓缓抬起；原片在卷腹后安排这段拉伸。",
+            "原片先吸气再开始伸展；保持自己能自然呼吸的舒适幅度。"
+          ],
+          "status": "key-poses-and-captions-cross-checked-sampled-video"
+        }
+      ],
+      "mistakeExplanation": "左图 · 正确示范：轻柔抬胸，骨盆留垫\n\n右图 · 错误示范：顶起骨盆，腰部挤压\n\n调整方法：把骨盆放回垫面，减小抬胸幅度；有腰部不适就停止。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "肱三头肌"
+      ],
+      "stretchMuscles": [
+        "腹直肌",
+        "腹外斜肌"
+      ],
+      "detailExplanation": "图中编号\n① 双掌撑稳，肘逐渐展开\n② 骨盆和腿留在垫面\n③ 舒适抬胸，腹部轻牵拉\n\n红色斜线 · 拉伸部位：腹直肌、腹外斜肌\n浅红 · 协同：肱三头肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向"
+    }
+  ]
+}

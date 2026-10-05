@@ -1,0 +1,967 @@
+{
+  "collectionID": "tanchengyi-chest",
+  "version": 3,
+  "timeUnit": "seconds",
+  "dependencies": [
+    "steady-anatomy.js"
+  ],
+  "playback": {
+    "bridge": "window.setLessonState",
+    "timeUnit": "milliseconds",
+    "timing": {
+      "effortStart": 600,
+      "effortEnd": 2800,
+      "returnStart": 3300,
+      "returnEnd": 5700,
+      "duration": 6000
+    },
+    "note": "Each HTML loads steady-anatomy.js and owns its fixed-canvas runtime. Native commands and progress use milliseconds; run one runtime only."
+  },
+  "animations": [
+    {
+      "lessonID": "chest-warmup-march",
+      "resource": "chest-light-march.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "自然站立",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "头、躯干和骨盆保持自然排列，双肩放松。"
+        },
+        {
+          "title": "左脚轻抬",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "一侧脚轻轻离地，另一脚稳稳支撑；手臂自然配合。"
+        },
+        {
+          "title": "交替落地",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "抬起的脚轻落地，把重心平稳交给另一侧。"
+        },
+        {
+          "title": "换侧继续",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "另一侧脚轻抬后落地，左右交替保持轻松节奏。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "videoRange": null,
+          "keyframeSeconds": [],
+          "checkedPoints": [
+            "连续左右交替踏步",
+            "至少一脚落地",
+            "轻松低强度"
+          ],
+          "references": [
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ],
+          "status": "supplemental-original-animation"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 小幅抬脚，轻轻落地\n② 手臂随对侧脚步轻摆\n③ 肩部放松，呼吸自然\n\n浅红 · 协同：髂腰肌、股直肌、腓肠肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：小步轻摆，身体平稳\n\n右图 · 错误示范：猛抬膝、甩臂后仰\n\n调整方法：降低抬膝和摆臂幅度，保持可以轻松说话的速度。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "髂腰肌",
+        "股直肌",
+        "腓肠肌"
+      ]
+    },
+    {
+      "lessonID": "chest-warmup-roller-t",
+      "resource": "chest-roller-t-opening.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "俯卧T位准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "胸骨接触横放滚轴，膝盖承托，双臂向两侧展开，拇指向上。"
+        },
+        {
+          "title": "控制抬臂",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "肩胛和肩部带动双臂抬离垫面，保持T位，不同时抬胸或顶腰。"
+        },
+        {
+          "title": "可控位置停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在能稳定控制的位置短暂停留，脊柱和骨盆不跟着抬起。"
+        },
+        {
+          "title": "缓慢落回",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "双臂有控制地回到较低位置，胸骨保持滚轴接触。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 70,
+            "end": 126
+          },
+          "keyframeSeconds": [
+            81,
+            85,
+            124
+          ],
+          "checkedPoints": [
+            "胸骨接触横放滚轴，T位拇指朝上",
+            "双臂抬起/回落，脊柱保持稳定，膝部承托"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ],
+          "status": "visual-cycle-and-selected-burned-subtitles-checked; tiny-ASR-only-cues-not-prescribed"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 胸骨压在横放滚轴上\n② T位抬臂，拇指向上\n③ 脊柱和骨盆保持稳定\n\n俯视图：头在右侧，人趴在垫上，滚轴横放在胸骨下。手臂抬起时，垫上的影子会向外移开。\n红色 · 主要发力：斜方肌中束、三角肌后束\n浅红 · 协同：菱形肌、斜方肌下束",
+      "mistakeExplanation": "左图 · 正确示范：滚轴横放在胸骨下\n\n右图 · 错误示范：滚轴压在腹部\n\n调整方法：把滚轴移回胸骨下方，胸骨接触轴后再抬臂；压迫不舒服时跳过这项。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "斜方肌中束",
+        "三角肌后束"
+      ],
+      "secondaryMuscles": [
+        "菱形肌",
+        "斜方肌下束"
+      ]
+    },
+    {
+      "lessonID": "chest-warmup-roller-y",
+      "resource": "chest-roller-y-raise.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "俯卧Y位准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "胸骨接触滚轴，膝盖承托，双臂向斜前方近伸直成Y。"
+        },
+        {
+          "title": "Y位抬臂",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "肩部带动双臂抬离垫面，手臂方向保持Y位，脊柱和骨盆不动。"
+        },
+        {
+          "title": "保持控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "停在能控制的位置，不以抬胸、顶腰或耸肩换取高度。"
+        },
+        {
+          "title": "缓慢回落",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "双臂沿原路缓慢落回，仍保留胸骨和滚轴的接触。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 126,
+            "end": 146
+          },
+          "keyframeSeconds": [
+            129,
+            134,
+            142
+          ],
+          "checkedPoints": [
+            "02:10明确Y位，双臂斜前方近伸直",
+            "只动肩，脊柱不动",
+            "02:23明确20次，组数未知"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ],
+          "status": "visual-cycle-and-selected-burned-subtitles-checked; tiny-ASR-only-cues-not-prescribed"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 胸骨压在横放滚轴上\n② Y位近伸直，肩部抬臂\n③ 脊柱和骨盆保持稳定\n\n俯视图：头在右侧，人趴在垫上，滚轴横放在胸骨下。手臂抬起时，垫上的影子会向外移开。\n红色 · 主要发力：斜方肌下束、三角肌后束\n浅红 · 协同：菱形肌、斜方肌中束",
+      "mistakeExplanation": "左图 · 正确示范：滚轴横放在胸骨下\n\n右图 · 错误示范：滚轴压在腹部\n\n调整方法：把滚轴移回胸骨下方，胸骨接触轴后再抬臂；压迫不舒服时跳过这项。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "斜方肌下束",
+        "三角肌后束"
+      ],
+      "secondaryMuscles": [
+        "菱形肌",
+        "斜方肌中束"
+      ]
+    },
+    {
+      "lessonID": "chest-warmup-roller-support",
+      "resource": "chest-roller-supported-opening.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备支撑",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "手掌撑地，胸骨保留与滚轴的接触。"
+        },
+        {
+          "title": "小幅抬胸",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "胸廓轻轻打开，头和上胸随之略抬；不把整个身体推离轴。"
+        },
+        {
+          "title": "保持接触",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在舒服范围短暂停留，手掌、下肢与滚轴提供支撑。"
+        },
+        {
+          "title": "控制回落",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "缓慢回到低位，骨盆不前后滑动，滚轴不大幅滚走。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 146,
+            "end": 266
+          },
+          "keyframeSeconds": [
+            186,
+            191,
+            196
+          ],
+          "checkedPoints": [
+            "双手撑地、肘屈",
+            "胸骨保留滚轴接触",
+            "低位→小幅抬胸→控制回落"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ],
+          "status": "visual-cycle-and-selected-burned-subtitles-checked; tiny-ASR-only-cues-not-prescribed"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 手掌留在垫面\n② 胸骨不离滚轴\n③ 胸廓小幅打开\n\n红色斜线 · 拉伸部位：胸大肌上部\n浅红 · 协同：竖脊肌、肱三头肌、前锯肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：胸廓小幅打开\n\n右图 · 错误示范：腰部反弓代替胸廓活动\n\n调整方法：减少抬胸幅度，保持手掌和滚轴承托，避免用腰部硬顶。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "竖脊肌",
+        "肱三头肌",
+        "前锯肌"
+      ],
+      "stretchMuscles": [
+        "胸大肌上部"
+      ]
+    },
+    {
+      "lessonID": "chest-warmup-roller-knee-lift",
+      "resource": "chest-roller-knee-lift.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "膝部承托准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双手撑地，胸骨接触横放滚轴，膝盖先保留地面承托。"
+        },
+        {
+          "title": "轻抬膝盖",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "保持脚下与手掌支撑，轻轻抬膝离地，不把胸骨推离滚轴。"
+        },
+        {
+          "title": "短暂稳住",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "只在舒服范围短暂停留，身体整体稳定，不顶腰或硬压胸口。"
+        },
+        {
+          "title": "控制放回膝盖",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "膝盖缓慢回到承托位置，放松后再决定是否继续。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 201,
+            "end": 206
+          },
+          "keyframeSeconds": [
+            201,
+            202,
+            203,
+            205
+          ],
+          "checkedPoints": [
+            "03:21增加难度，03:22字幕明确把膝盖抬起来",
+            "胸骨由滚轴承托，先在手掌和脚下支撑中抬膝",
+            "03:23随后释放手臂练习，已在独立T/Y课示范；本条只练支撑"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ],
+          "status": "selected-burned-subtitle-and-pose-checked; knee-return-is-teaching-simplification"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 膝盖轻离垫，缓慢放回\n② 双掌和脚下保持支撑\n③ 胸骨继续由滚轴承托\n\n红色 · 主要发力：腹直肌、腹外斜肌\n浅红 · 协同：肱三头肌、前锯肌、股直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：膝轻离垫，躯干稳住\n\n右图 · 错误示范：抬膝时腰部反弓\n\n调整方法：把膝盖放回，重新稳住胸骨、手掌和脚下，先练很小的离地幅度。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "腹直肌",
+        "腹外斜肌"
+      ],
+      "secondaryMuscles": [
+        "肱三头肌",
+        "前锯肌",
+        "股直肌"
+      ]
+    },
+    {
+      "lessonID": "chest-warmup-roller-y-press",
+      "resource": "chest-roller-y-press.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "屈肘W位准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "胸骨贴滚轴，双膝和下肢稳住，双臂向两侧屈肘成W位。"
+        },
+        {
+          "title": "伸臂成Y",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "双手沿斜前方伸出，肘逐渐伸展成Y，躯干不随手臂抬离轴。"
+        },
+        {
+          "title": "末端保持控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "停在舒服的Y位，肩部不向耳朵挤，不为伸远而顶腰。"
+        },
+        {
+          "title": "屈肘返回",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "双手沿原路收回，肘重新弯曲，回到W位准备下一次。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 266,
+            "end": 300
+          },
+          "keyframeSeconds": [
+            268,
+            269,
+            271,
+            272,
+            274,
+            282
+          ],
+          "checkedPoints": [
+            "04:28–04:29教练示范伸肘Y与屈肘W",
+            "学员胸骨由横放滚轴承托",
+            "伸肘/屈肘往返，与近伸直Y位抬臂不同"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ],
+          "status": "visual-cycle-and-selected-burned-subtitles-checked; tiny-ASR-only-cues-not-prescribed"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 胸骨压在横放滚轴上\n② 由屈肘W伸成Y\n③ 脊柱和骨盆保持稳定\n\n红色 · 主要发力：斜方肌下束、三角肌后束\n浅红 · 协同：斜方肌中束、前锯肌、肱三头肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：滚轴横放在胸骨下\n\n右图 · 错误示范：滚轴压在腹部\n\n调整方法：把滚轴移回胸骨下方，胸骨接触轴后再抬臂；压迫不舒服时跳过这项。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "斜方肌下束",
+        "三角肌后束"
+      ],
+      "secondaryMuscles": [
+        "斜方肌中束",
+        "前锯肌",
+        "肱三头肌"
+      ]
+    },
+    {
+      "lessonID": "chest-warmup-band",
+      "resource": "chest-band-shoulder-circle.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "脸前高度准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双手宽握，从眼睛或嘴巴前方的舒适高度开始，带子保持轻张力。"
+        },
+        {
+          "title": "经过头顶",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "双手有控制地向上绕过头顶，躯干和骨盆不跟着后仰。"
+        },
+        {
+          "title": "肩后附近控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "终点只到本人能控制的肩附近后方，不继续降到腰背低位。"
+        },
+        {
+          "title": "保持张力返回",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "带子不松掉，沿同一路径经过头顶回到脸前高度，不甩动。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 303,
+            "end": 400
+          },
+          "keyframeSeconds": [
+            320,
+            329,
+            334,
+            344,
+            355,
+            357
+          ],
+          "checkedPoints": [
+            "脸前起点，经头顶至肩附近后方，不降低至腰背",
+            "保持弹力带张力、不顶腰",
+            "05:55两组，05:57每组15次"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            }
+          ],
+          "status": "visual-cycle-and-selected-burned-subtitles-checked; tiny-ASR-only-cues-not-prescribed"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 到肩后附近即可\n② 保持宽握，不后仰顶腰\n③ 始终有张力，缓慢返回\n\n红色斜线 · 拉伸部位：胸大肌上部\n浅红 · 协同：三角肌、斜方肌中束、斜方肌下束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肩后可控范围\n\n右图 · 错误示范：放到腰后，顶腰硬绕\n\n调整方法：把终点收回到肩附近后方，扩大握距并保持轻张力，身体稳住。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "三角肌",
+        "斜方肌中束",
+        "斜方肌下束"
+      ],
+      "stretchMuscles": [
+        "胸大肌上部"
+      ]
+    },
+    {
+      "lessonID": "chest-warmup-press",
+      "resource": "chest-warmup-press.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "坐稳准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "背部贴靠垫，握住把手，手腕自然顺直。"
+        },
+        {
+          "title": "轻松向前推",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "沿器械轨迹缓慢前推，观察双侧肩肘是否舒服。"
+        },
+        {
+          "title": "末端控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "接近伸肘时控制住，不硬锁肘，不耸肩。"
+        },
+        {
+          "title": "缓慢回位",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "有控制地返回胸前起点，确认全程都能稳住。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "videoRange": null,
+          "keyframeSeconds": [],
+          "checkedPoints": [
+            "轻于正式组的专项排练",
+            "稳定背部与脚下支撑",
+            "推胸器械轨迹"
+          ],
+          "references": [
+            {
+              "title": "ACE · 动态热身与课程准备",
+              "url": "https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            }
+          ],
+          "status": "supplemental-original-animation"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 原生握把，手腕顺直\n② 背部持续贴靠垫\n③ 双脚稳住，回程受控\n\n浅红 · 协同：胸大肌、三角肌前束、肱三头肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：背贴靠，控制前推\n\n右图 · 错误示范：肩前顶，身体离垫\n\n调整方法：减轻阻力，坐稳贴靠垫并放松肩颈，两侧机臂受控回位。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "胸大肌",
+        "三角肌前束",
+        "肱三头肌"
+      ]
+    },
+    {
+      "lessonID": "chest-parallel-bar-dip",
+      "resource": "chest-parallel-bar-dip.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "上方支撑",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双手握稳双杠，肘接近伸直但不硬锁，保持屈髋前倾。"
+        },
+        {
+          "title": "控制下降",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "肘向后屈，胸口向前下方移动，双手位置不变。"
+        },
+        {
+          "title": "底部控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "停在自己可控的深度，避免肩部被拉到不舒服的位置。"
+        },
+        {
+          "title": "向下推杠回升",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "向下推双杠，让身体回升，前倾保持稳定，不借摆腿弹起。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 433,
+            "end": 884
+          },
+          "keyframeSeconds": [
+            593,
+            603,
+            608,
+            585
+          ],
+          "checkedPoints": [
+            "双手固定中立握双杠",
+            "屈髋前倾，膝屈双腿交叠",
+            "下降、底部控制、推回",
+            "原片有教练躯干辅助",
+            "09:45字幕明确四组，每组次数未知"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            },
+            {
+              "title": "ACE · 俯卧撑难度进阶",
+              "url": "https://www.acefitness.org/resources/pros/expert-articles/7265/perfecting-the-push-up-for-all-levels/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            }
+          ],
+          "status": "visual-cycle-and-selected-burned-subtitles-checked; tiny-ASR-only-cues-not-prescribed"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 双手固定，中立握杠\n② 屈髋前倾，控制下沉\n③ 屈膝并拢，不摆腿借力\n\n红色 · 主要发力：胸大肌中下部\n浅红 · 协同：肱三头肌、三角肌前束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：下降到肩部可控深度\n\n右图 · 错误示范：追深度，肩部过度后伸\n\n调整方法：缩小下降幅度，保持前倾和双手固定；需要时先使用辅助。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "胸大肌中下部"
+      ],
+      "secondaryMuscles": [
+        "肱三头肌",
+        "三角肌前束"
+      ]
+    },
+    {
+      "lessonID": "chest-flat-press",
+      "resource": "chest-flat-press.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "胸前起点",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "肘屈，把手在胸前，背和脚下稳住，肩部不向前挤。"
+        },
+        {
+          "title": "沿轨迹前推",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "推动两侧独立器械臂向前，手腕保持控制，胸廓稳定。"
+        },
+        {
+          "title": "末端控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "接近伸肘时停在可控位置，不把肩膀顶出靠垫。"
+        },
+        {
+          "title": "缓慢返回",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "沿器械轨迹回到舒服的胸前起点，不让运动臂弹回。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 884,
+            "end": 1285
+          },
+          "keyframeSeconds": [
+            1035,
+            1040,
+            1045
+          ],
+          "checkedPoints": [
+            "坐姿片载双独立器械臂",
+            "肩背贴靠、脚踩稳",
+            "胸前起点向前推",
+            "保持回程控制"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "NHS · 力量训练的组数与次数",
+              "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            }
+          ],
+          "status": "visual-cycle-and-selected-burned-subtitles-checked; tiny-ASR-only-cues-not-prescribed"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 原生握把，手腕顺直\n② 背部持续贴靠垫\n③ 双脚稳住，回程受控\n\n红色 · 主要发力：胸大肌中下部\n浅红 · 协同：三角肌前束、肱三头肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：背贴靠，控制前推\n\n右图 · 错误示范：肩前顶，身体离垫\n\n调整方法：减轻阻力，坐稳贴靠垫并放松肩颈，两侧机臂受控回位。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "胸大肌中下部"
+      ],
+      "secondaryMuscles": [
+        "三角肌前束",
+        "肱三头肌"
+      ]
+    },
+    {
+      "lessonID": "chest-incline-machine-press",
+      "resource": "chest-incline-press.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "上胸前准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "握住独立把手，肘屈，肩部稳住，身体贴靠垫。"
+        },
+        {
+          "title": "向前上方推",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "沿器械导向推举，手与前臂保持控制，不抬肩找高度。"
+        },
+        {
+          "title": "末端控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "接近伸肘时控制住，头背继续贴靠，不硬锁肘。"
+        },
+        {
+          "title": "缓慢回到起点",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "沿同一路径回位，肩肘不要被负重拉向过深的后方。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 1285,
+            "end": 1710
+          },
+          "keyframeSeconds": [
+            1535,
+            1540
+          ],
+          "checkedPoints": [
+            "白色片载上斜器械",
+            "向前上方推举",
+            "背头贴靠、双脚稳定",
+            "没有可读角度刻度"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "NHS · 力量训练的组数与次数",
+              "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            }
+          ],
+          "status": "visual-cycle-and-selected-burned-subtitles-checked; tiny-ASR-only-cues-not-prescribed"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 原生握把，手腕顺直\n② 头背继续贴靠垫\n③ 双脚稳住，回程受控\n\n红色 · 主要发力：胸大肌上部\n浅红 · 协同：三角肌前束、肱三头肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：头背贴靠，向前上推\n\n右图 · 错误示范：耸肩、头背离垫\n\n调整方法：减轻阻力，让头背贴靠，沿器械轨迹推；肩膀不抢高度。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "胸大肌上部"
+      ],
+      "secondaryMuscles": [
+        "三角肌前束",
+        "肱三头肌"
+      ]
+    },
+    {
+      "lessonID": "chest-seated-cable-fly",
+      "resource": "chest-seated-cable-fly.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "肩线附近打开",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双臂在肩线附近或略低的舒服位置展开，肘仍微屈。"
+        },
+        {
+          "title": "向前上方收合",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "带动双臂沿弧线内收，把手在上胸前靠近，肘的弯度大致保持。"
+        },
+        {
+          "title": "收合处控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "胸部保持主动控制，不耸肩，也不把两个把手用力撞在一起。"
+        },
+        {
+          "title": "缓慢展开返回",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "沿弧线缓慢打开，停在肩舒服且还能稳住的位置，身体保持靠垫支撑。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "video",
+          "videoRange": {
+            "start": 1710,
+            "end": 1988
+          },
+          "keyframeSeconds": [
+            1920,
+            1925,
+            1930
+          ],
+          "checkedPoints": [
+            "低位钢索斜向上连接D把",
+            "有靠背长凳的坐姿",
+            "掌心相对、肘保留微屈",
+            "肩线附近打开至上胸前收合"
+          ],
+          "references": [
+            {
+              "title": "谭成义 · 私教系列之胸部教学",
+              "url": "https://www.douyin.com/video/7650309381392785073"
+            },
+            {
+              "title": "NHS · 力量训练的组数与次数",
+              "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            },
+            {
+              "title": "NSCA · 抗阻训练中的恢复与安排",
+              "url": "https://www.nsca.com/education/articles/ptq/time-efficient-training/"
+            }
+          ],
+          "status": "visual-cycle-and-selected-burned-subtitles-checked; tiny-ASR-only-cues-not-prescribed"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 肘保留微屈，弯度不变\n② D把向上胸前靠近\n③ 靠背坐稳，低位钢索\n\n红色 · 主要发力：胸大肌上部、胸大肌中下部\n浅红 · 协同：三角肌前束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：微屈肘，由肩带动开合\n\n右图 · 错误示范：反复大幅卷肘拉把\n\n调整方法：保持轻微肘弯，减轻重量，由肩部带动双臂开合，躯干继续贴靠。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "胸大肌上部",
+        "胸大肌中下部"
+      ],
+      "secondaryMuscles": [
+        "三角肌前束"
+      ]
+    },
+    {
+      "lessonID": "chest-wall-push-up",
+      "resource": "chest-wall-push-up.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "支撑准备",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "手掌贴墙，肘接近伸直，躯干、骨盆和下肢保持自然直线。"
+        },
+        {
+          "title": "缓慢靠近墙",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "屈肘，身体作为整体靠近墙，脚下不移动。"
+        },
+        {
+          "title": "近墙控制",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "到达舒服且能控制的位置，头颈自然，腰部不塌。"
+        },
+        {
+          "title": "推墙回到起点",
+          "startSeconds": 3.3,
+          "endSeconds": 6,
+          "instruction": "通过手掌推墙回升，躯干整体返回，不突然锁肘。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "videoRange": null,
+          "keyframeSeconds": [],
+          "checkedPoints": [
+            "手掌贴墙约肩高",
+            "躯干整体靠近墙并推回",
+            "背部稳定、控制节奏"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 墙面俯卧撑姿势",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/modified-pushup/vid-20084674"
+            },
+            {
+              "title": "ACE · 俯卧撑难度进阶",
+              "url": "https://www.acefitness.org/resources/pros/expert-articles/7265/perfecting-the-push-up-for-all-levels/"
+            },
+            {
+              "title": "ACSM · 2026 抗阻训练更新",
+              "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+            }
+          ],
+          "status": "supplemental-original-animation"
+        }
+      ],
+      "detailExplanation": "图中编号\n① 掌面贴墙，手指向上\n② 躯干整体靠墙和推回\n③ 脚下固定，缓慢屈伸肘\n\n红色 · 主要发力：胸大肌\n浅红 · 协同：肱三头肌、前锯肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：身体整体移动\n\n右图 · 错误示范：塌腰，胸口单独前探\n\n调整方法：先站近墙面降低难度，稳住腰腹，保持头、躯干和骨盆自然排列。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "胸大肌"
+      ],
+      "secondaryMuscles": [
+        "肱三头肌",
+        "前锯肌",
+        "腹直肌"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1032 @@
+{
+  "id": "tanchengyi-shoulders",
+  "title": "肩部训练",
+  "subtitle": "先热身，再分步学会肩部动作",
+  "author": "谭成义",
+  "sourceTitle": "私教系列之肩部教学",
+  "sourceURL": "https://v.douyin.com/sZcJIz3F-Mw/",
+  "durationSeconds": 2386.6,
+  "overview": "从肩部热身与肩胛激活开始，学习后束、推举、中束和前束动作。逐步拆解准备、动作与控制，单侧起铃单独讲解，W 字保持按姿势分步学习。",
+  "equipment": "轻阻力弹力带、悬吊带、地垫/泡沫轴、哑铃、反飞鸟器械、可调靠背凳",
+  "trainingNote": "这是一套动作教学合集。地面激活是替代方式，可在悬吊带与地面替代中按条件选择，不必全部做完；正式组次和重量按个人训练计划安排。整体升温、练习编排和疼痛提醒标为补充。",
+  "sections": [
+    {
+      "id": "warmup",
+      "title": "热身与肩胛激活",
+      "caption": "先整体升温，再活动肩关节；悬吊带与地面激活可按条件选择。",
+      "lessons": [
+        {
+          "id": "shoulders-light-warmup",
+          "title": "轻松踏步升温",
+          "summary": "先让全身暖起来，再进入肩部活动。这一小段为补充建议。",
+          "equipment": "无",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "轻松踏步约 2–3 分钟，为教学编排建议；ACE 提供的是一般热身的 1–3 分钟范围。",
+          "frames": [],
+          "illustration": "walking",
+          "preparation": [
+            {
+              "title": "站稳",
+              "detail": "双脚自然分开，膝盖放松，躯干自然直立。"
+            },
+            {
+              "title": "双臂放松",
+              "detail": "双臂自然下垂，手腕放松，不持器械。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "轻松踏步",
+              "detail": "交替小幅抬脚、轻柔落地，手臂随脚步自然摆动。"
+            },
+            {
+              "title": "进入节奏",
+              "detail": "由慢到稍快，保持能轻松说话的速度。"
+            },
+            {
+              "title": "维持轻松",
+              "detail": "身体稍微变暖即可，热身不需要练到疲劳。"
+            },
+            {
+              "title": "平缓结束",
+              "detail": "逐渐放慢脚步，站稳后进入肩部活动。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "小步、轻落地",
+              "detail": "脚步小而自然，不靠跳跃或冲刺提高强度。"
+            },
+            {
+              "title": "肩部放松",
+              "detail": "手臂自然摆，不猛甩手，也不把肩膀顶到耳朵旁。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "耸肩、猛甩手",
+              "detail": "放松肩部，让双臂随脚步自然轻摆。"
+            },
+            {
+              "title": "一开始就冲刺",
+              "detail": "先慢走或小步踏步，再轻轻提速。"
+            },
+            {
+              "title": "热身练到疲劳",
+              "detail": "保持轻松，把精力留给后面的动作。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "来源与编排",
+              "detail": "整体升温参考 ACE 的一般动态热身建议；2–3 分钟是本合集的教学安排，之后按顺序学习肩部活动和激活。"
+            }
+          ],
+          "checks": [
+            "我能轻松说话",
+            "双脚落地稳定",
+            "肩膀和手臂没有不适"
+          ],
+          "references": [
+            {
+              "title": "ACE · 训练前的动态热身",
+              "url": "https://www.acefitness.org/resources/everyone/blog/5779/the-common-mistakes-people-make-when-warming-up/"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-band-pass-through",
+          "title": "弹力带过顶绕环",
+          "summary": "宽握弹力带，从肩前经过头顶带到肩后，再沿原路回来。",
+          "equipment": "轻阻力弹力带",
+          "origin": "video",
+          "videoRange": {
+            "start": 8,
+            "end": 159
+          },
+          "dosage": "一组可做 20 次；本合集不规定必须完成的总组数，先学习持续张力与可控轨迹。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "站稳、宽握",
+              "detail": "双脚站稳，双手宽握带子，在肩高附近的身前拉出轻微张力。"
+            },
+            {
+              "title": "握距留出余量",
+              "detail": "手距足够宽，让手臂能平稳经过头顶；握紧带子，不用指尖勾住。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "肩前准备",
+              "detail": "双手宽握，手臂在肩前附近，让弹力带保持轻微张力。"
+            },
+            {
+              "title": "平稳过顶",
+              "detail": "手臂带着弹力带向上经过头顶，沿舒适轨迹继续向后。"
+            },
+            {
+              "title": "肩后控制",
+              "detail": "到肩后能控制的位置，保持带子绷紧；不继续放得很低、让带子松掉。"
+            },
+            {
+              "title": "原路返回",
+              "detail": "沿同一轨迹经过头顶回到肩前，全程控制弹力带。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "全程有张力",
+              "detail": "带子跟着双手移动，不突然松掉或弹回。"
+            },
+            {
+              "title": "活动肩关节",
+              "detail": "上身保持稳定，不靠挺腰、伸脖子把手臂带过去。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "放得太低、带子松垮",
+              "detail": "回到肩前和肩后附近的可控范围，保持轻微张力。"
+            },
+            {
+              "title": "窄握硬拉到身后",
+              "detail": "放宽握距或缩小幅度，先让过顶路径平顺。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "双手握带稳定",
+            "经过头顶时没有卡顿",
+            "上身保持稳定"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-trx-y",
+          "title": "TRX Y 字抬臂激活",
+          "summary": "屈肘握带、身体后倾准备，向上外展开到近直臂 Y 字，再带着张力还原。",
+          "equipment": "安全固定的悬吊带",
+          "origin": "video",
+          "videoRange": {
+            "start": 163,
+            "end": 264
+          },
+          "dosage": "先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "握住两只把手",
+              "detail": "面向固定点，双手握稳把手；采用前后错开的站位，双脚稳定落地。"
+            },
+            {
+              "title": "屈肘带张力",
+              "detail": "双手在胸前方、肘部弯曲，身体轻轻后倾；收稳躯干，不塌腰，先选容易控制的站位。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "屈肘张力位",
+              "detail": "身体后倾，屈肘握带，双手在胸前方；双脚稳定，悬吊带带着张力。"
+            },
+            {
+              "title": "展开到 Y 字",
+              "detail": "双手向上、向外展开，手臂逐渐接近伸直；身体随拉起变得较直立，不另做挺腰动作。"
+            },
+            {
+              "title": "控制顶位",
+              "detail": "到能控制的 Y 字位，肘部接近伸直而不硬锁；脚部继续支撑，躯干稳定。"
+            },
+            {
+              "title": "张力中还原",
+              "detail": "控制收回双手、肘部回弯，身体再次后倾；不完全放到底或卸掉带子张力。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "准备与顶位分开",
+              "detail": "准备和回程会屈肘，展开到 Y 字时才接近直臂；不把顶位要求当成全程要求。"
+            },
+            {
+              "title": "身体随悬吊移动",
+              "detail": "抬臂时身体以脚部支撑向较直立的位置移动，回程再后倾；腰背保持稳定。"
+            },
+            {
+              "title": "脚位决定难度",
+              "detail": "脚向前移动可以增加难度；先用能控制的站位学会动作。"
+            },
+            {
+              "title": "底部不全松",
+              "detail": "握带和身体支撑始终连贯，还原时也控制住。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "塌腰后仰",
+              "detail": "收稳躯干，先把站位调得容易一些。"
+            },
+            {
+              "title": "底部完全卸力",
+              "detail": "回程放慢，保持悬吊带和手臂有张力。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "固定点可靠、把手握稳",
+            "双脚踩稳",
+            "后倾时腰背稳定"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-prone-scapular-lift",
+          "title": "俯卧肩胛抬臂",
+          "summary": "在地面用肩部带动抬臂，躯干保持安静；这是激活的替代方式。",
+          "equipment": "地垫；可用泡沫轴支撑",
+          "origin": "video",
+          "videoRange": {
+            "start": 264,
+            "end": 294
+          },
+          "dosage": "可替代悬吊带的激活方式；先少量、轻松试做，不需要和所有激活动作一起做完。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "俯卧支撑",
+              "detail": "在地面俯卧，胸腹保持支撑，双臂向两侧展开并屈肘。"
+            },
+            {
+              "title": "肩部活动、躯干不动",
+              "detail": "保持头、腰背和躯干稳定，不通过后仰脊柱抬高身体。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "俯卧准备",
+              "detail": "双臂侧展、肘部弯曲，保持胸腹有支撑。"
+            },
+            {
+              "title": "肩部带动抬臂",
+              "detail": "小幅抬起手臂和肘部，让肩胛参与活动。"
+            },
+            {
+              "title": "上身保持稳定",
+              "detail": "保持腰背不后仰，不为了抬高而抬起整个躯干。"
+            },
+            {
+              "title": "轻轻放回",
+              "detail": "控制手臂回到地面附近，再做下一次。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "只动肩部",
+              "detail": "躯干不动，把活动放在肩部。"
+            },
+            {
+              "title": "幅度小、可控",
+              "detail": "抬臂高度以能保持躯干稳定为准。"
+            },
+            {
+              "title": "胸旁手撑的姿势对照",
+              "detail": "也可以双掌在胸两旁按地、低位屈肘支撑，躯干不动、只动肩部。这只作为姿势对照，不是完整的俯卧撑教学。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "抬手时大幅挺腰",
+              "detail": "减少抬臂幅度，让胸腹继续有支撑。"
+            },
+            {
+              "title": "用脖子后仰带动",
+              "detail": "头颈保持自然，肩部缓慢活动。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "俯卧支撑稳定",
+            "抬臂时腰背没有后仰",
+            "肩部活动舒适"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-trx-w",
+          "title": "TRX 屈肘 W 字保持",
+          "summary": "上臂展开、肘部弯曲，前臂朝上，在悬吊支撑中学习 W 字保持姿势。",
+          "equipment": "安全固定的悬吊带",
+          "origin": "video",
+          "videoRange": {
+            "start": 298,
+            "end": 334
+          },
+          "dosage": "可以通过保持姿势与调整脚位改变难度；本合集不规定必须保持多久。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "稳握、稳站",
+              "detail": "双手握稳把手，双脚稳定落地；选择能平稳保持姿势的站位。"
+            },
+            {
+              "title": "建立 W 字位",
+              "detail": "上臂向两侧展开，肘部约弯成直角，前臂朝上、双手在头部两侧；腰背稳定。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "握带站稳",
+              "detail": "双手握稳，双脚稳定落地，在悬吊带支撑中保持身体稳定。"
+            },
+            {
+              "title": "保持屈肘 W",
+              "detail": "上臂展开、肘部约弯成直角，前臂朝上，双手在头部两侧保持张力。"
+            },
+            {
+              "title": "稳定腰背",
+              "detail": "维持 W 字姿势，躯干收稳，不用塌腰或后仰脊柱拉高双手。"
+            },
+            {
+              "title": "按站位调难度",
+              "detail": "脚位向前移动可增加难度；先在容易控制的站位学会保持，再考虑调整。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "保持位教学",
+              "detail": "这一段清楚展示屈肘 W 位保持和脚位调整，未确认完整的手臂旋转往复；先按已看到的姿势学习。"
+            },
+            {
+              "title": "与 Y 字区分",
+              "detail": "Y 顶位手臂接近伸直，W 保持位屈肘、前臂朝上；W 是按可见形态命名。"
+            },
+            {
+              "title": "调站位、保稳定",
+              "detail": "脚位调整后重新稳住身体；不要一边迈步一边猛拉把手。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "塌腰或后仰脊柱",
+              "detail": "先把站位调得容易一些，让腰背稳定后再保持姿势。"
+            },
+            {
+              "title": "猛拉把手",
+              "detail": "握稳并保持张力，不靠突然拉扯提高难度。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "双手握稳、双脚稳定",
+            "屈肘 W 位能平稳保持",
+            "腰背没有塌陷"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "title": "正式动作与起铃教学",
+      "caption": "按顺序学习：后束、推举、中束、前束。先用轻重量掌握轨迹。",
+      "lessons": [
+        {
+          "id": "shoulders-bent-extension",
+          "title": "俯身哑铃肩伸",
+          "summary": "先稳住肩胛，再把上臂小幅带向髋后，学习后束发力。",
+          "equipment": "一只轻哑铃",
+          "origin": "video",
+          "videoRange": {
+            "start": 384,
+            "end": 841
+          },
+          "dosage": "可以先做两组对握、再做两组正手；你的正式组次与重量按个人训练计划安排。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "髋部折叠",
+              "detail": "双脚踩稳，膝盖微松，从髋部向前折叠，保持躯干前倾。"
+            },
+            {
+              "title": "持铃下垂",
+              "detail": "工作侧手臂持一只哑铃，在肩部下方自然下垂；另一侧不跟着同步动作。"
+            },
+            {
+              "title": "先稳肩胛",
+              "detail": "肩部保持下沉和稳定，不耸肩，也不抬起躯干。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "悬垂准备",
+              "detail": "保持髋部折叠、上身前倾，持铃臂在肩下方，先稳住肩胛。"
+            },
+            {
+              "title": "上臂向髋后",
+              "detail": "沿较短行程把上臂带向髋部后方，不向两侧大幅张开。"
+            },
+            {
+              "title": "收紧停顿",
+              "detail": "到可控终点短暂停顿，肩部保持下沉，上身留在原位。"
+            },
+            {
+              "title": "缓缓下垂",
+              "detail": "控制哑铃回到肩下方，不借抬身或甩臂完成下一次。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "先稳定，再肩伸",
+              "detail": "先让肩胛稳定，再让上臂向后移动，后束已经参与发力。"
+            },
+            {
+              "title": "行程不求大",
+              "detail": "保持短而可控的动作，不把肩膀向上翻。"
+            },
+            {
+              "title": "终点短暂停留",
+              "detail": "收紧时停一瞬，回程也保持控制。"
+            },
+            {
+              "title": "握法与内旋对照",
+              "detail": "以对握为主，另可尝试内旋位和正手握。握法与上臂旋转的描述分开理解；先保持肩胛稳定和小幅肩伸，再对照体会。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "耸肩、翘肩",
+              "detail": "减轻重量，重新让肩部保持下沉。"
+            },
+            {
+              "title": "做成反飞鸟或甩铃",
+              "detail": "让工作臂朝髋后小幅移动，躯干保持原来的前倾。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "双脚踩稳、髋部折叠",
+            "工作侧肩胛稳定",
+            "哑铃向髋后移动且全程可控"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-machine-reverse-fly",
+          "title": "坐姿器械反飞鸟",
+          "summary": "稳住坐姿、把肩和握把调到合适高度，再把手臂水平向外打开。",
+          "equipment": "反向夹胸/反飞鸟器械",
+          "origin": "video",
+          "videoRange": {
+            "start": 842,
+            "end": 1291
+          },
+          "dosage": "先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "调座高",
+              "detail": "面向器械坐稳，让肩和握把的高度适配；不要为了握住把手而上提肩膀。"
+            },
+            {
+              "title": "横握、轻屈肘",
+              "detail": "双手握住横向把手，手臂接近伸直但保留轻微肘弯，手腕保持自然。"
+            },
+            {
+              "title": "稳住上身",
+              "detail": "躯干接近直立或略微前倾，双脚有支撑；脚向前放可以减少身体晃动。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "坐直握稳",
+              "detail": "座高适配握把，双手横握，手臂在身前肩高附近准备。"
+            },
+            {
+              "title": "水平打开",
+              "detail": "双臂沿水平轨迹向外打开，把重点放在肩部后侧。"
+            },
+            {
+              "title": "保持可控幅度",
+              "detail": "到能控制的终点，避免继续上抬或硬拉到身后。"
+            },
+            {
+              "title": "慢慢合回",
+              "detail": "控制运动臂回到身前，保持躯干和手肘弯度稳定。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "向外延展",
+              "detail": "手臂水平向外延展，不向头顶抬，也不把主动夹背作为主要动作。"
+            },
+            {
+              "title": "座高与肩位",
+              "detail": "肩部不应为了够握把而上提，先调座椅。"
+            },
+            {
+              "title": "保持手肘形态",
+              "detail": "示范手臂接近伸直，肘部保留轻弯；肘部留在肩高附近，疲劳时不要下垂。"
+            },
+            {
+              "title": "先稳定再打开",
+              "detail": "加大幅度不好控制时，用吸气准备和固定躯干重新建立稳定，再调整打开幅度。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "座椅不合适、肩上提",
+              "detail": "先调座高，再确认手臂能在肩高附近水平打开。"
+            },
+            {
+              "title": "上抬或过度向身后拉",
+              "detail": "收回到能控制的水平路径，必要时减轻阻力。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "座高适合、肩膀不耸起",
+            "双手握稳、肘弯度可控",
+            "运动方向是水平向外"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-dumbbell-press",
+          "title": "坐姿双铃推肩",
+          "summary": "靠稳斜凳、稳住下背，让哑铃向上推，再控制回到肩旁。",
+          "equipment": "两只哑铃、可调靠背凳",
+          "origin": "video",
+          "videoRange": {
+            "start": 1291,
+            "end": 1776
+          },
+          "dosage": "先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "靠背与脚位",
+              "detail": "根据自己的肩部活动选择靠背角度，背和臀部有支撑，双脚踩稳。"
+            },
+            {
+              "title": "肩旁准备",
+              "detail": "哑铃留在肩旁，手腕与前臂保持稳定，不让腕部折下。"
+            },
+            {
+              "title": "先稳下背",
+              "detail": "推举前建立躯干稳定，腰部不因为上推而加大后仰。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "肩旁握稳",
+              "detail": "背与臀部稳定贴靠，双脚踩稳，双手持铃在肩旁准备。"
+            },
+            {
+              "title": "平稳上推",
+              "detail": "把哑铃向上推，肘和前臂沿可控轨迹上移。"
+            },
+            {
+              "title": "保留肘弯",
+              "detail": "到能控制的位置，仍保留肘弯和张力，不硬推直肘；双铃留出间距。"
+            },
+            {
+              "title": "控制下降",
+              "detail": "控制降到仍有张力的肩旁位置，不追求最低点；腰背和脚位保持原样。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "凳角度因人调整",
+              "detail": "靠背角度需要结合个人能力，不能只按固定数字坐。"
+            },
+            {
+              "title": "下背稳定",
+              "detail": "上推不能靠加大腰部后仰来完成。"
+            },
+            {
+              "title": "手腕支撑",
+              "detail": "手腕保持在前臂承重的位置，不松折；有轻微内扣感即可，不需要强拧手腕。"
+            },
+            {
+              "title": "幅度与张力",
+              "detail": "多数人不用推直、不做顶峰，通过可控幅度维持张力；不要硬追最高点和最低点。"
+            },
+            {
+              "title": "吸气准备与连贯动作",
+              "detail": "先调整好姿势和吸气准备，再连贯完成动作。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "腰背越推越拱",
+              "detail": "减轻重量或调整靠背，重新建立躯干支撑。"
+            },
+            {
+              "title": "腕折、乱碰铃",
+              "detail": "稳住手腕和前臂，双铃保持间距。"
+            },
+            {
+              "title": "硬推直肘或降得过低",
+              "detail": "把幅度收回到能维持张力的位置，上下都保留控制。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "靠背、臀部和双脚有稳定支撑",
+            "手腕和前臂顺直",
+            "上下推举时腰背稳定"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-single-dumbbell-press",
+          "title": "单侧起铃与推肩",
+          "summary": "先用同侧腿辅助把哑铃带到肩旁，再完成单侧推举与放回。",
+          "equipment": "一只哑铃、可调靠背凳",
+          "origin": "video",
+          "videoRange": {
+            "start": 1776,
+            "end": 1867
+          },
+          "dosage": "先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "铃放近膝位置",
+              "detail": "坐稳，把哑铃放在同侧大腿靠近膝盖的位置，手始终抓稳哑铃。"
+            },
+            {
+              "title": "准备腿部辅助",
+              "detail": "靠背和另一侧脚位保持支撑，只用小幅同侧膝腿动作辅助起铃。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "坐稳放铃",
+              "detail": "哑铃放在大腿靠近膝的位置，手握稳，另一侧脚有支撑。"
+            },
+            {
+              "title": "起铃到肩旁",
+              "detail": "同侧腿小幅辅助，把铃带到肩旁；稳定下来后再向上推。"
+            },
+            {
+              "title": "单侧推举",
+              "detail": "一次控制这一侧向上推，躯干不扭转，不让另一侧一起上推。"
+            },
+            {
+              "title": "回位与放回",
+              "detail": "先控制下降到肩旁，再由腿接住放回大腿位置，全程手不松铃。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "腿帮助起铃",
+              "detail": "用膝腿辅助启动，避免只靠手臂从低位硬提。"
+            },
+            {
+              "title": "不要放在大腿根",
+              "detail": "起铃时铃靠近膝的位置，手始终握住。"
+            },
+            {
+              "title": "单侧稳定",
+              "detail": "一侧一侧学启动和控制，身体不能随重量向侧面扭。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "从大腿根硬提",
+              "detail": "先把铃移到靠近膝的位置，再做小幅辅助。"
+            },
+            {
+              "title": "起铃后立即猛推",
+              "detail": "铃到肩旁后先稳住身体，再控制推举。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "铃靠近膝、手握稳",
+            "另一侧脚有支撑",
+            "起铃、推举、放回全程可控"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-lateral-raise",
+          "title": "哑铃侧平举",
+          "summary": "双臂向两侧略向前抬起，躯干稳定，肩肘手保持协调。",
+          "equipment": "两只轻哑铃",
+          "origin": "video",
+          "videoRange": {
+            "start": 1870,
+            "end": 2072
+          },
+          "dosage": "先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "站稳持铃",
+              "detail": "双脚自然分开，膝盖放松，哑铃在身体两侧准备；上身稳定，可略微前倾。"
+            },
+            {
+              "title": "肩肘腕协调",
+              "detail": "肩部放松，肘部保留轻微弯曲，手腕自然，不强拧手腕。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "两侧准备",
+              "detail": "站稳，哑铃在两侧，上身稳定，肘部保留轻微弯曲。"
+            },
+            {
+              "title": "略向前抬起",
+              "detail": "双臂向身体两侧、略向前抬，保持手肘关系可控。"
+            },
+            {
+              "title": "可控高度",
+              "detail": "到个人舒适、可控的高度，手臂向外伸展，上身不顶腰；不必追求固定高度。"
+            },
+            {
+              "title": "缓缓落下",
+              "detail": "控制哑铃回到两侧，躯干不摇摆，不靠反弹接下一次。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "不是向身后抬",
+              "detail": "路径放在身体前侧一些，让手臂向外、向远。"
+            },
+            {
+              "title": "躯干稳定",
+              "detail": "不靠脊柱或腰部后仰把重量甩起来。"
+            },
+            {
+              "title": "个体调整",
+              "detail": "握法、抬臂位置和幅度结合自己的控制能力；重量太大时路径容易缩短。"
+            },
+            {
+              "title": "吸气准备",
+              "detail": "躯干稳定的关键是先吸气，把姿势固定，再连贯完成动作。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "顶腰、摆身体",
+              "detail": "先减轻重量，稳定上身，再平稳抬臂。"
+            },
+            {
+              "title": "硬拧腕、猛抬肩",
+              "detail": "手腕保持自然，肩肘手协调，必要时降低幅度。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "上身保持稳定",
+            "双臂向两侧略向前抬",
+            "哑铃上下都能控制"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-front-raise",
+          "title": "对握哑铃前平举",
+          "summary": "掌心相对，双铃从大腿前向身体前方抬起，再控制回到低位。",
+          "equipment": "两只轻哑铃",
+          "origin": "video",
+          "videoRange": {
+            "start": 2072,
+            "end": 2346
+          },
+          "dosage": "先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "对握",
+              "detail": "双手掌心相对握稳双铃，手腕保持自然。"
+            },
+            {
+              "title": "从大腿前准备",
+              "detail": "站稳，让哑铃处于大腿前附近的低位，不先提到腹部再开始。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "低位对握",
+              "detail": "掌心相对，双铃在大腿前准备，上身稳定。"
+            },
+            {
+              "title": "向前抬起",
+              "detail": "双臂沿身体前方平稳抬起，保持轻微肘弯，不再屈肘把铃卷起。"
+            },
+            {
+              "title": "可控高度",
+              "detail": "抬到个人能控制的高度，示意图展示肩高附近；保持向前，不改成侧平举。"
+            },
+            {
+              "title": "回到低位",
+              "detail": "沿原路径慢慢落回大腿前，保持完整、可控的起始位置。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "对握与正手",
+              "detail": "对握是掌心相对；正手是抬起时掌心朝下。以对握为主，正手作前束对照；本段将正手称为内旋位。"
+            },
+            {
+              "title": "反握的讲解对照",
+              "detail": "反握是抬起时掌心朝上。教练说明反握容易让肱二头肌参与，不作为多数人的首选；先学习主示范。"
+            },
+            {
+              "title": "低位起始",
+              "detail": "回到大腿前再抬，不从腹部高位缩短前段行程。"
+            },
+            {
+              "title": "方向与节奏",
+              "detail": "手臂朝前、躯干稳定，不后仰借力，不耸肩；上举和还原都平顺。"
+            },
+            {
+              "title": "吸气准备",
+              "detail": "开始前先吸气、稳定躯干，再连续做动作。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "从腹部高位开始",
+              "detail": "先把铃放回大腿前的低位，再控制抬起。"
+            },
+            {
+              "title": "摇身或改成侧举",
+              "detail": "稳定躯干，保持身体前方的路径。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "练习编排 · 编辑补充",
+              "detail": "先用轻重量熟悉动作；动画的慢速与停顿用于学习，正式组次、节奏和重量按你的训练计划安排。"
+            },
+            {
+              "title": "疼痛提醒 · AAOS 补充",
+              "detail": "练习中不应忍着疼痛继续；出现疼痛先停止，并向医生或物理治疗师询问。"
+            }
+          ],
+          "checks": [
+            "双手掌心相对",
+            "起点在大腿前低位",
+            "哑铃沿前方平稳抬落"
+          ],
+          "references": [
+            {
+              "title": "AAOS · 肩部练习的疼痛提醒",
+              "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "ACE · 训练前的动态热身",
+      "url": "https://www.acefitness.org/resources/everyone/blog/5779/the-common-mistakes-people-make-when-warming-up/"
+    },
+    {
+      "title": "AAOS · 肩部练习的疼痛提醒",
+      "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2024-rotator-cuff-and-shoulder-conditioning-program.pdf"
+    }
+  ]
+}

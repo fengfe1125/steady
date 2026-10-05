@@ -1,0 +1,65 @@
+.teaching-panels{--teaching-bg:#eef2ed;--teaching-card:#f8f8f3;--teaching-ink:#263b35;--teaching-muted:#596f67;--teaching-border:#c6d3ca;--teaching-good:#236f60;--teaching-error:#a84e43;display:block;margin:12px 0 16px;color:var(--teaching-ink)}
+.teaching-panels .teaching-attribution{margin:0 0 10px;color:var(--teaching-muted);font-size:13px;line-height:1.45}
+.teaching-panels .teaching-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
+.teaching-panels .teaching-grid--detail{grid-template-columns:minmax(0,1fr)}
+.teaching-panels .teaching-card{min-width:0;overflow:hidden;border:1px solid var(--teaching-border);border-radius:14px;background:var(--teaching-card);padding:10px}
+.teaching-panels .teaching-card__title{display:flex;align-items:center;gap:8px;margin:0 0 6px}
+.teaching-panels .teaching-card__title h3{margin:0;font-size:15px;line-height:1.35;font-weight:700;color:var(--teaching-ink)}
+.teaching-panels .teaching-card__tag{flex:0 0 auto;border-radius:999px;padding:3px 8px;background:#deebe4;color:var(--teaching-good);font-size:11px;font-weight:700}
+.teaching-panels .teaching-card--error{border-color:#d8aaa2}
+.teaching-panels .teaching-card--error .teaching-card__tag{background:#f4e2de;color:var(--teaching-error)}
+.teaching-panels .teaching-svg{display:block;width:100%;height:auto;aspect-ratio:26/19;border-radius:10px;background:var(--teaching-bg)}
+.teaching-panels .teaching-svg .ground,.teaching-panels .teaching-svg .tick{stroke:#60736b}
+.teaching-panels .teaching-svg .contact-shadow{fill:#43574f;opacity:.22}
+.teaching-panels .teaching-svg .limb path{stroke:#226c60;stroke-linecap:round;fill:none}
+.teaching-panels .teaching-svg *{vector-effect:non-scaling-stroke}
+.teaching-panels .teaching-svg .limb.far path{stroke:#8ab7a4}
+.teaching-panels .teaching-svg .limb circle{fill:#e7aa78;stroke:#8a573f;stroke-width:1.5}
+.teaching-panels .teaching-svg .body path{stroke:#347f70;stroke-width:30;stroke-linecap:round;fill:none}
+.teaching-panels .teaching-svg .body ellipse{fill:#e5ad80;stroke:#8a573f;stroke-width:1.5}
+.teaching-panels .teaching-svg .body circle{fill:#db9e70;stroke:#8a573f;stroke-width:1.5}
+.teaching-panels .teaching-svg .body .face{stroke:#784f3c;stroke-width:2}
+.teaching-panels .teaching-svg .pelvis-axis{stroke:#ef7867;stroke-width:4;stroke-linecap:round}
+.teaching-panels .teaching-svg .equipment{fill:#df8a40;stroke:#87501e;stroke-width:3}
+.teaching-panels .teaching-svg .equipment .bench,.teaching-panels .teaching-svg .equipment .seat{fill:#b65c47;stroke:#70372c;stroke-width:3}
+.teaching-panels .teaching-svg .equipment .thigh-pad{fill:none;stroke:#53616c;stroke-width:14;stroke-linecap:round}
+.teaching-panels .teaching-svg .equipment .db{fill:#36434b;stroke:#162329;stroke-width:2}
+.teaching-panels .teaching-svg .equipment .db-handle{stroke:#a7b0af;stroke-width:4}
+.teaching-panels .teaching-svg .equipment .machine{fill:none;stroke:#53616c;stroke-width:11;stroke-linecap:round}
+.teaching-panels .teaching-svg .equipment .pivot{fill:#f3c65d;stroke:#685735;stroke-width:3}
+.teaching-panels .teaching-svg .equipment .gripbar{stroke:#293b43;stroke-width:10;stroke-linecap:round}
+.teaching-panels .teaching-svg .equipment .wall{fill:none;stroke:#829092;stroke-width:6}
+.teaching-panels .teaching-svg .mat-plane{fill:#cbd6ce;stroke:#87968b;stroke-width:2;fill-opacity:.55}
+.teaching-panels .teaching-svg .forearm-contact{stroke:#226c60;stroke-width:8;stroke-linecap:round;opacity:.85}
+.teaching-panels .teaching-svg .hand{stroke:#226c60;stroke-width:3;stroke-linecap:round;fill:none}
+.teaching-panels .teaching-svg .grip-hand{fill:#e5ad80;stroke:#8a573f;stroke-width:1.5}
+.teaching-panels .teaching-svg .support-thumb{fill:none;stroke:#8a573f;stroke-width:2.5;stroke-linecap:round}
+.teaching-panels .teaching-svg .shoe{fill:#bc6658;stroke:#633d3a;stroke-width:2;stroke-linejoin:round}
+.teaching-panels .teaching-svg .shoe-sole{stroke:#f1c887;stroke-width:2;stroke-linecap:round}
+.teaching-panels .teaching-svg .guide{stroke:#93a19b;stroke-width:1.5;stroke-dasharray:5 5;fill:none}
+.teaching-panels .teaching-svg .arrow{stroke:#ed9446;stroke-width:3;fill:none}
+.teaching-panels .teaching-svg .brace{stroke:#ef7867;stroke-width:3;stroke-dasharray:4 4}
+.teaching-panels .teaching-svg .teaching-contact-leader{fill:none;stroke:#375c51;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
+.teaching-panels .teaching-svg .teaching-contact-point{fill:#fff8dc;stroke:#c75d32;stroke-width:3}
+.teaching-panels .teaching-svg .teaching-marker-badge{fill:#b5502d;stroke:#fff8dc;stroke-width:2}
+.teaching-panels .teaching-svg .teaching-marker-number{font-family:system-ui,sans-serif;font-size:20px;font-weight:800;fill:#fff;stroke:none;text-anchor:middle;dominant-baseline:central}
+.teaching-panels ol.teaching-marker-legend{list-style:none}
+.teaching-panels .teaching-card__support,.teaching-panels .teaching-card__copy{margin:7px 1px 0;font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+.teaching-panels .teaching-card__markers{margin:7px 1px 0;color:var(--teaching-muted);font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+.teaching-panels .teaching-card__support{font-weight:700;color:var(--teaching-good)}
+.teaching-panels .teaching-card--error .teaching-card__support{color:var(--teaching-muted)}
+.teaching-panels .teaching-card__copy{color:var(--teaching-ink)}
+html[data-dark="true"] .teaching-panels{--teaching-bg:#20332e;--teaching-card:#1a2925;--teaching-ink:#edf3ee;--teaching-muted:#bacac3;--teaching-border:#435a52;--teaching-good:#a1dfc8;--teaching-error:#f0aaa0}
+html[data-dark="true"] .teaching-panels .teaching-card__tag{background:#29493f;color:#a1dfc8}
+html[data-dark="true"] .teaching-panels .teaching-card--error .teaching-card__tag{background:#4a302d;color:#f0aaa0}
+html[data-dark="true"] .teaching-panels .teaching-svg .ground,html[data-dark="true"] .teaching-panels .teaching-svg .tick{stroke:#658078}
+html[data-dark="true"] .teaching-panels .teaching-svg .body path{stroke:#83c1aa}
+html[data-dark="true"] .teaching-panels .teaching-svg .limb path{stroke:#a1dfc8}
+html[data-dark="true"] .teaching-panels .teaching-svg .limb.far path{stroke:#83b4a2}
+html[data-dark="true"] .teaching-panels .teaching-svg .forearm-contact,html[data-dark="true"] .teaching-panels .teaching-svg .hand{stroke:#a1dfc8}
+html[data-dark="true"] .teaching-panels .teaching-svg .equipment .db{fill:#71837c;stroke:#d3e3db}
+html[data-dark="true"] .teaching-panels .teaching-svg .equipment .db-handle{stroke:#d3e3db}
+html[data-dark="true"] .teaching-panels .teaching-svg .teaching-contact-leader{stroke:#d9e9df}
+html[data-dark="true"] .teaching-panels .teaching-svg .teaching-contact-point{fill:#fff8dc;stroke:#ffad72}
+html[data-dark="true"] .teaching-panels .teaching-svg .teaching-marker-badge{fill:#aa4e37;stroke:#fff8dc}
+@media(max-width:560px){.teaching-panels .teaching-grid{grid-template-columns:minmax(0,1fr)}.teaching-panels .teaching-card{padding:9px}.teaching-panels .teaching-card__title h3{font-size:14px}.teaching-panels .teaching-svg{max-height:64vw}}

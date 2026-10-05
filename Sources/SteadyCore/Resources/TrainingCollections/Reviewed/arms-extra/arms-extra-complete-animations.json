@@ -1,0 +1,637 @@
+{
+  "version": 1,
+  "collectionID": "tanchengyi-arms-extra",
+  "animations": [
+    {
+      "lessonID": "arms-extra-warmup-aerobic",
+      "resource": "arms-extra-warmup-aerobic.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "站稳起步",
+          "startSeconds": 0,
+          "endSeconds": 0.5,
+          "instruction": "双脚留在身体各自一侧站稳，视线平、肩膀放松，自然呼吸。"
+        },
+        {
+          "title": "左脚轻抬",
+          "startSeconds": 0.5,
+          "endSeconds": 1.1,
+          "instruction": "左脚在身体左侧轻轻离地，右脚稳稳支撑；右臂轻摆，不越过身体中线。"
+        },
+        {
+          "title": "左脚轻落",
+          "startSeconds": 1.1,
+          "endSeconds": 1.7,
+          "instruction": "左脚向地面缓缓回落，躯干保持直立；落地后再平稳换边。"
+        },
+        {
+          "title": "双脚过渡",
+          "startSeconds": 1.7,
+          "endSeconds": 2,
+          "instruction": "两脚都稳稳着地，平稳换到另一侧，不交叉双腿。"
+        },
+        {
+          "title": "右脚轻抬",
+          "startSeconds": 2,
+          "endSeconds": 2.6,
+          "instruction": "右脚在身体右侧轻轻离地，左脚稳稳支撑；左臂轻摆，不越过身体中线。"
+        },
+        {
+          "title": "右脚轻落",
+          "startSeconds": 2.6,
+          "endSeconds": 3.2,
+          "instruction": "右脚缓缓向地面回落，保持呼吸自然、动作轻巧。"
+        },
+        {
+          "title": "左脚继续轻抬",
+          "startSeconds": 3.2,
+          "endSeconds": 3.8,
+          "instruction": "继续左右交替：左脚轻抬，右脚支撑，右臂轻摆。"
+        },
+        {
+          "title": "左脚继续轻落",
+          "startSeconds": 3.8,
+          "endSeconds": 4.4,
+          "instruction": "左脚向原侧缓缓回落，动作连续、安静。"
+        },
+        {
+          "title": "右脚继续轻抬",
+          "startSeconds": 4.4,
+          "endSeconds": 5,
+          "instruction": "右脚在身体右侧轻抬，左脚支撑，左臂轻摆。"
+        },
+        {
+          "title": "右脚继续轻落",
+          "startSeconds": 5,
+          "endSeconds": 5.6,
+          "instruction": "右脚向地面轻落，不跺脚、不跨过中线。"
+        },
+        {
+          "title": "回到站稳",
+          "startSeconds": 5.6,
+          "endSeconds": 6,
+          "instruction": "双脚重新站稳，准备继续左右交替轻踏步。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "publisher": "Mayo Clinic",
+          "title": "Weight training: Do’s and don’ts of proper technique",
+          "url": "https://sportsmedicine.mayoclinic.org/news/weight-training-dos-and-donts-of-proper-technique/",
+          "checked": "力量训练前可用快走等轻有氧热身 5–10 分钟；完整热身应持续数分钟。"
+        },
+        {
+          "origin": "supplemental",
+          "publisher": "Steady",
+          "title": "原创热身动作编排",
+          "url": "",
+          "checked": "轻踏步、动作范围与循环时长为 Steady 补充示意，不归因于谭成义视频。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 肩放松，视线平\n② 小幅抬脚，轻轻落地\n③ 换边前支撑脚踩稳\n\n红色 · 主要发力：髂腰肌\n浅红 · 协同：股直肌、胫骨前肌、腓肠肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肩放松，自然轻摆\n\n右图 · 错误示范：耸肩、猛甩手臂\n\n调整方法：放松肩膀，让手臂自然轻摆；保持轻松能说话的强度，脚轻抬轻落。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "髂腰肌"
+      ],
+      "secondaryMuscles": [
+        "股直肌",
+        "胫骨前肌",
+        "腓肠肌"
+      ]
+    },
+    {
+      "lessonID": "arms-extra-warmup-mobility",
+      "resource": "arms-extra-warmup-mobility.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "站稳放松",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双脚舒适分开站稳，膝盖放松，肩膀远离耳朵。"
+        },
+        {
+          "title": "肩点小幅绕环",
+          "startSeconds": 0.6,
+          "endSeconds": 1.5,
+          "instruction": "肩点随小圆轨迹缓慢活动，上臂保持贴近身体；幅度轻柔，不耸肩。"
+        },
+        {
+          "title": "空手屈伸肘",
+          "startSeconds": 1.5,
+          "endSeconds": 2,
+          "instruction": "上臂位置稳定，手肘慢慢弯曲；动作轻柔，不锁肘或强压。"
+        },
+        {
+          "title": "手腕轻柔转动",
+          "startSeconds": 2,
+          "endSeconds": 2.8,
+          "instruction": "轻轻活动手腕，保持肘部靠近身体，不甩动或强压关节。"
+        },
+        {
+          "title": "舒适位短暂停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在当前舒适幅度停留，自然呼吸；不把关节推到尽头。"
+        },
+        {
+          "title": "手腕回到自然位",
+          "startSeconds": 3.3,
+          "endSeconds": 4.2,
+          "instruction": "缓慢解除手腕转动，手部回到自然方向。"
+        },
+        {
+          "title": "手肘回到自然位",
+          "startSeconds": 4.2,
+          "endSeconds": 4.75,
+          "instruction": "平稳伸回手肘，保持肩膀放松。"
+        },
+        {
+          "title": "肩点回到自然位",
+          "startSeconds": 4.75,
+          "endSeconds": 5.7,
+          "instruction": "肩点沿小范围轨迹缓缓回位；全程不甩臂。"
+        },
+        {
+          "title": "放松停顿",
+          "startSeconds": 5.7,
+          "endSeconds": 6,
+          "instruction": "双臂放松，回到站稳姿势。若疼痛或麻木，立即停止。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "publisher": "ACE",
+          "title": "How to Increase Upper-Body Stability and Mobility",
+          "url": "https://www.acefitness.org/resources/pros/expert-articles/5412/how-to-increase-upper-body-stability-and-mobility/",
+          "checked": "上肢稳定与活动度的一般指导参考；本课动作编排为 Steady 补充建议。"
+        },
+        {
+          "origin": "supplemental",
+          "publisher": "Mayo Clinic Sports Medicine",
+          "title": "Weight training: Do’s and don’ts of proper technique",
+          "url": "https://sportsmedicine.mayoclinic.org/news/weight-training-dos-and-donts-of-proper-technique/",
+          "checked": "热身快走等轻有氧 5–10 分钟的参考建议。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 肩点小圈，保持放松\n② 空手屈伸，肘位稳定\n③ 手腕轻柔活动\n\n红色 · 主要发力：肱二头肌\n浅红 · 协同：三角肌、肱桡肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：小幅、慢速活动\n\n右图 · 错误示范：耸肩、手腕过度弯曲\n\n调整方法：肩部放松，减小手腕幅度，不甩动或强压关节；若出现疼痛或麻木就停止。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱二头肌"
+      ],
+      "secondaryMuscles": [
+        "三角肌",
+        "肱桡肌"
+      ]
+    },
+    {
+      "lessonID": "arms-extra-warmup-rehearsal",
+      "resource": "arms-extra-warmup-rehearsal.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "安排位置",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "以单手绳索臂屈伸为例，把阻力调轻，确认附件连接、站姿和绳索路线。"
+        },
+        {
+          "title": "轻练伸肘",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "上臂留在身侧，慢慢伸肘，感受动作是否通畅、关节是否舒适。"
+        },
+        {
+          "title": "停住检查",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在舒适的位置停住，确认肩膀放松，身体没有晃动。"
+        },
+        {
+          "title": "控制还原",
+          "startSeconds": 3.3,
+          "endSeconds": 5.7,
+          "instruction": "慢慢屈肘回到起点，让配重受控回落。预演只需轻练几次。"
+        },
+        {
+          "title": "熟悉其余动作",
+          "startSeconds": 5.7,
+          "endSeconds": 6,
+          "instruction": "按其他主动作图解依次轻练；换杠铃前先用轻杆熟悉轨迹，不练到疲劳。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "checked": "轻阻力预演的阶段与次数由 Steady 补充，不是原视频规定。动画示范单手绳索动作的轻练过程，其他三项按各自主动作动画熟悉。"
+        },
+        {
+          "origin": "supplemental",
+          "publisher": "Mayo Clinic Sports Medicine",
+          "url": "https://sportsmedicine.mayoclinic.org/news/weight-training-dos-and-donts-of-proper-technique/",
+          "checked": "受控动作及适当重量的一般参考；本课程的分阶段安排为额外补充。"
+        },
+        {
+          "videoTime": "01:20–01:58",
+          "checked": "复用已经核对的出线点、身侧肘位和舒适终点几何；此示例以轻阻力预演讲解，不计正式组。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 先确认附件连接\n② 肘稳，舒适范围轻练\n③ 肩放松，停住检查\n\n红色 · 主要发力：肱三头肌\n浅红 · 协同：肱桡肌、腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：轻练，肩膀放松\n\n右图 · 错误示范：耸肩硬压到头\n\n调整方法：把阻力调轻，回到肩肘舒适的幅度。预演只需熟悉轨迹，不练到疲劳。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱三头肌"
+      ],
+      "secondaryMuscles": [
+        "肱桡肌",
+        "腹外斜肌"
+      ]
+    },
+    {
+      "lessonID": "arms-extra-cable-pushdown",
+      "resource": "arms-extra-cable-pushdown.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "调好出线点",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "单手握住拉索末端，双脚踩稳。调节出线点，让绳线到手腕时不经过胸前；出线点过高可能打胸或卡住。"
+        },
+        {
+          "title": "固定肘位",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "身体从髋部微微前倾，肘靠近躯干；以肘为轴向髋旁伸下前臂，不随肩摆动。一般提示：下压时呼气。"
+        },
+        {
+          "title": "按舒适范围停住",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "按肩肘舒适感调整终点，保持受控张力；不舒服时不要强行伸到底。"
+        },
+        {
+          "title": "慢慢回位",
+          "startSeconds": 3.3,
+          "endSeconds": 5.7,
+          "instruction": "控制手臂屈肘回到起始位，让配重受控下降，保持肩和躯干稳定；一般提示：回位时吸气。"
+        },
+        {
+          "title": "准备下一次",
+          "startSeconds": 5.7,
+          "endSeconds": 6,
+          "instruction": "确认肘仍在身侧，再开始下一次。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "00:51",
+          "checked": "口播称动作是‘单手绳索臂屈伸’。"
+        },
+        {
+          "videoTime": "01:20–01:34",
+          "keyframe": "../keyframes/cable-pushdown-01-30.jpg",
+          "checked": "口播提醒滑轮太高会使绳子打胸或卡住；需调整出线点。"
+        },
+        {
+          "videoTime": "01:35",
+          "keyframe": "../keyframes/cable-pushdown-01-35.jpg",
+          "checked": "教练提醒调好肩身位；学员前倾，工作侧肘靠近躯干。"
+        },
+        {
+          "videoTime": "01:44",
+          "keyframe": "../keyframes/cable-pushdown-01-44.jpg",
+          "checked": "结束位置手在髋旁；动画以舒适受控的肘伸展表现，不把锁肘列为通用要求。"
+        },
+        {
+          "videoTime": "约01:40–02:00",
+          "checked": "口播说明末端伸展根据个人肩肘压力感受调整；握把形状无法从画面确认。"
+        },
+        {
+          "checked": "呼吸节奏未从视频确认；呼气下压、吸气回位是通用动画补充提示，不是原片引语。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 肘留在身侧\n② 手腕顺直，握住柄\n③ 双脚踩稳，微前倾\n\n红色 · 主要发力：肱三头肌\n浅红 · 协同：肱桡肌、腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：固定肘位伸肘\n\n右图 · 错误示范：肩肘前摆借力\n\n调整方法：减轻阻力，肩膀放松，让肘留在身侧；只用前臂完成伸肘和还原。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱三头肌"
+      ],
+      "secondaryMuscles": [
+        "肱桡肌",
+        "腹外斜肌"
+      ]
+    },
+    {
+      "lessonID": "arms-extra-seated-cable-curl",
+      "resource": "arms-extra-seated-cable-curl.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "坐稳并握杆",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "坐在地面面对低位滑轮，屈膝并踩稳双脚；双手掌心向上反握直横杆，先找到可保持的肘位。"
+        },
+        {
+          "title": "向躯干弯举",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "动作主要由屈肘带动横杆靠近躯干；保持轻微勾握，不主动卷腕。一般提示：弯举时呼气。"
+        },
+        {
+          "title": "短暂停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "稳住已安排好的肘位，保持勾握和腕部控制，不要塌腕。"
+        },
+        {
+          "title": "控制伸肘",
+          "startSeconds": 3.3,
+          "endSeconds": 5.7,
+          "instruction": "缓慢伸肘回放，保持勾握，手腕不要突然松开；让配重受控下降。一般提示：回程吸气。"
+        },
+        {
+          "title": "准备下一次",
+          "startSeconds": 5.7,
+          "endSeconds": 6,
+          "instruction": "重新确认坐姿、脚掌支撑和勾握，再开始下一次。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "02:25",
+          "keyframe": "../keyframes/seated-curl-02-25.jpg",
+          "checked": "口播提示直接采用坐姿，作为动作介绍证据；具体姿势以02:32后的实做画面为准。"
+        },
+        {
+          "videoTime": "02:32",
+          "keyframe": "../keyframes/seated-curl-start-02-32.jpg",
+          "checked": "真实姿势：学员坐在地面、屈膝，面向低位滑轮双手掌心朝上反握直横杆弯举。"
+        },
+        {
+          "videoTime": "02:36",
+          "keyframe": "../keyframes/seated-curl-elbow-cue-02-36.jpg",
+          "checked": "教练手指示范已安排好的肘位；画面中肘靠近弯屈腿区域，课程只提示坐稳后稳定肘位，不扩写绝对悬空位置。"
+        },
+        {
+          "videoTime": "02:44",
+          "keyframe": "../keyframes/seated-curl-contraction-02-44.jpg",
+          "checked": "弯举收缩阶段，双手握杆向上靠近身体。"
+        },
+        {
+          "videoTime": "02:46–02:50.36",
+          "keyframe": "../keyframes/seated-curl-wrist-return-02-48.jpg",
+          "checked": "口播/字幕明确：回放时手腕别松、不要塌下去，要勾起来去放。勾握保持稳定，动作仍由肘屈伸完成，不是主动卷腕。"
+        },
+        {
+          "videoTime": "06:58–07:10",
+          "keyframe": "../keyframes/seated-curl-06-58.jpg",
+          "checked": "学员坐在地面面对低位滑轮，双膝弯曲、双手握直横杆做绳索弯举。"
+        },
+        {
+          "videoTime": "07:10",
+          "keyframe": "../keyframes/seated-curl-07-10.jpg",
+          "checked": "弯举末端握杆靠近上身；字幕讲‘七八九收紧’。手腕保持稳定。"
+        },
+        {
+          "videoTime": "06:58–07:10",
+          "checked": "实做画面不足以确认精确握距或握把附件型号；动画没有规定精确规格。"
+        },
+        {
+          "checked": "呼吸节奏未从视频确认；发力呼气、回程吸气是通用动画补充提示，不是原片引语。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 坐地屈膝，脚掌踩稳\n② 安排肘位后保持稳定\n③ 反握横杆，回程不塌腕\n\n红色 · 主要发力：肱二头肌\n浅红 · 协同：肱肌、肱桡肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：保持勾握和腕控制\n\n右图 · 错误示范：回程突然塌腕\n\n调整方法：保持原来的勾握和手腕控制，慢慢伸肘回放；不要突然松腕或用卷腕代替弯举。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱二头肌"
+      ],
+      "secondaryMuscles": [
+        "肱肌",
+        "肱桡肌"
+      ]
+    },
+    {
+      "lessonID": "arms-extra-lying-barbell-extension",
+      "resource": "arms-extra-lying-barbell-extension.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "可调凳仰卧",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "仰卧在头端抬高的小上斜可调凳上，肩背贴稳、双脚踩地，双手握住杠铃。"
+        },
+        {
+          "title": "屈肘下放",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "让肘关节弯曲，杠铃向额头或头部附近下放；保持肩背贴凳并控制轨迹。一般提示：下放时吸气。"
+        },
+        {
+          "title": "保持三头张力",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "在舒适且可控的位置短暂停留，维持三头肌张力。"
+        },
+        {
+          "title": "伸肘回到上方",
+          "startSeconds": 3.3,
+          "endSeconds": 5.7,
+          "instruction": "伸肘把杠铃送回上方，不必强行完全锁直；一般提示：推起时呼气。"
+        },
+        {
+          "title": "准备下一次",
+          "startSeconds": 5.7,
+          "endSeconds": 6,
+          "instruction": "保持肩背和脚部支撑，再开始下一次。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "08:38–约12:35",
+          "keyframe": "../keyframes/lying-extension-09-20.jpg",
+          "checked": "第三项为可调凳仰卧杠铃臂屈伸；原片演示为头端略高的小上斜凳，屈肘后将杆降向额头/头部附近。握向不设为固定要求。"
+        },
+        {
+          "videoTime": "08:51.920–08:57.920",
+          "keyframe": "../keyframes/lying-incline-08-54.jpg",
+          "checked": "SRT提到凳子调至约15度以减少核心参与；实帧可见头端高于髋端。动画以小上斜表达，约15度为原片描述，不作为通用硬性角度。"
+        },
+        {
+          "videoTime": "08:56",
+          "keyframe": "../keyframes/lying-incline-08-56.jpg",
+          "checked": "学员实际仰卧演示；头、颈、肩背在凳面上方支撑。该近景未拍到脚，脚落点未从此帧确认；双脚踩地为动画补充支撑提示。"
+        },
+        {
+          "videoTime": "08:59",
+          "keyframe": "../keyframes/bar-shape-08-59.jpg",
+          "checked": "片盘遮住杆身，无法核定仰卧动作所用杆型；动画采用同组已确认EZ曲杆作为原创示意，不归为原片指定杆型。"
+        },
+        {
+          "videoTime": "10:50",
+          "keyframe": "../keyframes/lying-extension-10-50.jpg",
+          "checked": "字幕清楚写到‘不需要去完全伸直’；这是视频对该动作的提示。"
+        },
+        {
+          "videoTime": "11:10",
+          "keyframe": "../keyframes/lying-extension-11-10.jpg",
+          "checked": "画面显示屈肘将杠铃降至额头附近。"
+        },
+        {
+          "videoTime": "10:58–11:08",
+          "keyframe": "../keyframes/lying-upper-arm-11-02.jpg",
+          "checked": "口播提示上举时不要把大臂抬到三头张力消失的位置；11:02实帧展示上臂抬得过高的错误位置。"
+        },
+        {
+          "videoTime": "08:55–约12:35",
+          "checked": "画面不足以确认标准握距或固定肘角度；动画没有声称视频规定精确握距。"
+        },
+        {
+          "checked": "呼吸节奏未从视频确认；推起呼气、下放吸气是通用动画补充提示，不是原片引语。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 头颈肩背有凳面支撑\n② 肘位稳定，杆近额头\n③ 双脚踩地，不强行锁肘\n\n红色 · 主要发力：肱三头肌\n浅红 · 协同：三角肌前束、肱桡肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：留肘弯，维持张力\n\n右图 · 错误示范：大臂抬直、硬锁肘\n\n调整方法：重新安排大臂和上举终点，在仍能保持三头肌张力的位置停住，保留舒适肘弯，不硬顶到完全伸直。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱三头肌"
+      ],
+      "secondaryMuscles": [
+        "三角肌前束",
+        "肱桡肌"
+      ]
+    },
+    {
+      "lessonID": "arms-extra-standing-barbell-curl",
+      "resource": "arms-extra-standing-barbell-curl.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "站稳并反握",
+          "startSeconds": 0,
+          "endSeconds": 0.6,
+          "instruction": "双脚踩稳，双手掌心向上握住EZ曲杆斜握段，手腕保持稳定。"
+        },
+        {
+          "title": "屈肘上举",
+          "startSeconds": 0.6,
+          "endSeconds": 2.8,
+          "instruction": "弯曲肘关节把EZ曲杆向躯干前方抬起，肘留在躯干附近。一般提示：弯举时呼气。"
+        },
+        {
+          "title": "短暂停留",
+          "startSeconds": 2.8,
+          "endSeconds": 3.3,
+          "instruction": "保持躯干直立，不靠腰部后摆借力。"
+        },
+        {
+          "title": "控制下放",
+          "startSeconds": 3.3,
+          "endSeconds": 5.7,
+          "instruction": "有控制地放低EZ曲杆；大臂不后移且动作可控时可稍多伸肘，不必放到底。一般提示：下放时吸气。"
+        },
+        {
+          "title": "准备下一次",
+          "startSeconds": 5.7,
+          "endSeconds": 6,
+          "instruction": "手腕与前臂顺直，双脚和躯干保持稳定。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "12:40–13:28",
+          "keyframe": "../keyframes/standing-curl-13-00.jpg",
+          "checked": "站姿双手掌心向上握EZ曲杆内侧斜握段，肘屈曲把杆向上弯举。"
+        },
+        {
+          "videoTime": "09:43（器械近景）",
+          "keyframe": "../keyframes/bar-shape-09-43.jpg",
+          "checked": "近景清楚显示EZ曲杆的多处转折及内侧斜握段；站姿弯举握在斜段上，掌心朝上。"
+        },
+        {
+          "videoTime": "12:56",
+          "keyframe": "../keyframes/standing-curl-12-56.jpg",
+          "checked": "上举阶段EZ曲杆靠近胸前，双手保持反握。"
+        },
+        {
+          "videoTime": "约12:40至13:00",
+          "keyframe": "../keyframes/standing-curl-12-40.jpg",
+          "checked": "画面显示站姿反握杠铃弯举；字幕/讲解提示控制大臂位置与下放。"
+        },
+        {
+          "videoTime": "12:44–12:56",
+          "keyframe": "../keyframes/standing-range-12-54.jpg",
+          "checked": "口播提示在大臂不后移且动作可控时可稍多伸肘，不必放到底；动画终点保留轻微屈肘。"
+        },
+        {
+          "videoTime": "12:40–13:28",
+          "checked": "现有画面不能证明精确握距、固定次数或必须完全伸肘，文案未补写这些要求。"
+        },
+        {
+          "checked": "呼吸节奏未从视频确认；弯举呼气、下放吸气是通用动画补充提示，不是原片引语。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 600,
+        "effortEnd": 2800,
+        "returnStart": 3300,
+        "returnEnd": 5700,
+        "duration": 6000
+      },
+      "detailExplanation": "图中编号\n① 反握曲杆，手腕自然\n② 大臂留在身侧\n③ 躯干直立，不后摆\n\n红色 · 主要发力：肱二头肌\n浅红 · 协同：肱肌、肱桡肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：躯干稳，控制弯举\n\n右图 · 错误示范：后仰甩杆、肘后跑\n\n调整方法：减轻重量，让躯干直立。大臂留在原位，控制弯举和下放，不靠腰部后摆甩起杠铃。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱二头肌"
+      ],
+      "secondaryMuscles": [
+        "肱肌",
+        "肱桡肌"
+      ]
+    }
+  ],
+  "timeUnit": "seconds"
+}

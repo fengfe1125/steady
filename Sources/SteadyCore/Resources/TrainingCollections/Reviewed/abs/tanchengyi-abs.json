@@ -1,0 +1,764 @@
+{
+  "id": "tanchengyi-abs",
+  "title": "腹部训练",
+  "subtitle": "热身、举腿变式、卷腹与健腹轮",
+  "author": "谭成义",
+  "sourceTitle": "私教系列之腹肌教学 希望大家对于腹肌有新的认识，对大家有所帮助！！#腹肌 #核心",
+  "sourceURL": "https://www.douyin.com/video/7657365167379023973",
+  "durationSeconds": 1007.9,
+  "overview": "先完成补充热身，再逐项学习腹部动作。高位悬垂、前臂吊带和罗马椅举腿分别讲解，卷腹包含单侧偏向的变式；每课有对应支撑和姿势演示。",
+  "equipment": "瑜伽垫；举腿需相应固定横杠／前臂吊带／支撑机；健腹轮需轮子与防滑地面。",
+  "trainingNote": "这是一组动作教学，先选择适合自己器械和能力的课程。热身、退阶、部分呼吸与纠错建议已标补充；出现疼痛或无法控制回程时先停止。",
+  "sections": [
+    {
+      "id": "warmup",
+      "title": "热身阶段",
+      "caption": "Steady补充热身，约5～7分钟；先让身体暖起来，再熟悉腹部控制。",
+      "lessons": [
+        {
+          "id": "abs-warmup-marching",
+          "title": "原地踏步",
+          "summary": "先让身体暖起来，保持能舒适说话的节奏。",
+          "equipment": "平整地面",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "Steady补充：约3分钟，按舒适节奏进行。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "站稳",
+              "detail": "双脚自然分开，膝盖放松，给前后摆臂留出空间。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "站直，双脚自然分开，目视前方，双肩放松。"
+            },
+            {
+              "title": "左侧踏步",
+              "detail": "左脚轻轻离地抬膝，右脚稳稳支撑；手臂自然配合，再轻放左脚。"
+            },
+            {
+              "title": "换侧站稳",
+              "detail": "左脚放稳，双脚短暂停稳，准备抬右脚。"
+            },
+            {
+              "title": "右侧踏步",
+              "detail": "右脚轻轻离地抬膝，左脚稳稳支撑；轻放右脚后继续左右交替。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "轻、稳",
+              "detail": "脚步轻落地，身体不要大幅前后晃。"
+            },
+            {
+              "title": "呼吸",
+              "detail": "自然呼吸，能舒适说话。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "仰身抬腿",
+              "detail": "为了抬得高而后仰时，先降低抬膝幅度。"
+            },
+            {
+              "title": "猛踩地面",
+              "detail": "把速度放慢，轻轻落脚。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "热身安排",
+              "detail": "建议约3分钟，属于Steady补充热身。"
+            }
+          ],
+          "checks": [
+            "地面平整、防滑",
+            "踏步时身体平稳",
+            "呼吸舒适"
+          ],
+          "references": [
+            {
+              "title": "NHS：运动前热身",
+              "url": "https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/"
+            }
+          ]
+        },
+        {
+          "id": "abs-warmup-cat-cow",
+          "title": "猫牛式活动",
+          "summary": "用轻柔的弓背与还原，熟悉躯干和呼吸的配合。",
+          "equipment": "瑜伽垫",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "Steady补充：轻柔做6～8次；动作之间自然呼吸。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "四点支撑",
+              "detail": "双手在肩下，双膝在髋下；手掌和膝盖都稳稳支撑。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "四点跪姿，背部轻柔展开，头部随脊柱自然延伸。"
+            },
+            {
+              "title": "弓背",
+              "detail": "缓缓呼气，让背部轻轻向上拱，头部随脊柱自然收回。"
+            },
+            {
+              "title": "停留",
+              "detail": "在舒适范围内停一下，手和膝保持原位。"
+            },
+            {
+              "title": "还原",
+              "detail": "缓慢吸气，让背部轻柔展开，回到舒适的准备位置；不猛抬头、不挤压腰部。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "支撑",
+              "detail": "手掌与膝盖不随躯干移动。"
+            },
+            {
+              "title": "舒适幅度",
+              "detail": "用能自然呼吸的幅度活动。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "只甩头",
+              "detail": "让动作从躯干开始，颈部跟随而不是猛甩。"
+            },
+            {
+              "title": "塌腰到底",
+              "detail": "减少幅度，先回到平稳四点支撑。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "次数安排",
+              "detail": "建议轻柔做6～8次，属于Steady补充；不追求最大活动范围。"
+            }
+          ],
+          "checks": [
+            "手掌在肩下",
+            "膝盖在髋下",
+            "活动时无疼痛"
+          ],
+          "references": [
+            {
+              "title": "ACE：猫牛式",
+              "url": "https://www.acefitness.org/resources/everyone/exercise-library/15/cat-cow/"
+            }
+          ]
+        },
+        {
+          "id": "abs-warmup-pelvic-tilt",
+          "title": "仰卧骨盆控制",
+          "summary": "臀部留在垫上，感受轻轻收紧腹部时腰弧的变化。",
+          "equipment": "瑜伽垫",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "Steady补充：小幅度做6～8次，先熟悉腹部控制。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "仰卧屈膝",
+              "detail": "背部朝下躺在垫上，两脚平放，膝盖与脚的方向一致。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "头、肩背和臀部有支撑，膝盖自然弯曲。"
+            },
+            {
+              "title": "收紧",
+              "detail": "缓缓呼气，轻轻收紧腹部，让腰部更接近垫面。"
+            },
+            {
+              "title": "停留",
+              "detail": "短暂停留，臀部不抬起，腿和脚不挪动。"
+            },
+            {
+              "title": "还原",
+              "detail": "吸气时缓缓放松，回到原来的自然腰弧。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "臀部不离垫",
+              "detail": "这是小幅骨盆控制，不是把臀部抬起的桥式动作。"
+            },
+            {
+              "title": "呼吸",
+              "detail": "呼气轻收紧，吸气放松，不憋气。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "抬起臀部",
+              "detail": "减小动作幅度，保留臀部接触垫面。"
+            },
+            {
+              "title": "脚蹬地顶腰",
+              "detail": "放松腿部，让动作来自轻轻收紧腹部。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "次数安排",
+              "detail": "建议先做6～8次，属于Steady补充；强度以不费力、不疼为准。"
+            }
+          ],
+          "checks": [
+            "双脚平放",
+            "臀部没有抬起",
+            "呼吸不中断"
+          ],
+          "references": [
+            {
+              "title": "ACE：仰卧骨盆倾斜",
+              "url": "https://www.acefitness.org/resources/everyone/exercise-library/7/supine-pelvic-tilts/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "title": "正式动作与器械变式",
+      "caption": "三种支撑方式的举腿、普通与单侧偏向卷腹，以及跪姿健腹轮。",
+      "lessons": [
+        {
+          "id": "abs-hanging-leg-raise",
+          "title": "悬垂举腿",
+          "summary": "高位握杠悬垂，学习腿部上收与腹部发力的配合。",
+          "equipment": "高位固定横杠",
+          "origin": "video",
+          "videoRange": {
+            "start": 67,
+            "end": 200
+          },
+          "dosage": "先学习准备与回程，用自己能控制的范围练习。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "握住横杠",
+              "detail": "双手握稳身体两侧的高位握把，双臂向上承重，身体保持悬垂。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "握稳横杠，身体悬垂，先让腿停在身体下方。"
+            },
+            {
+              "title": "上收",
+              "detail": "按画面中的屈膝示范，双膝向腹部方向上收。"
+            },
+            {
+              "title": "停留",
+              "detail": "在能控制的位置停一下，观察腹部与骨盆的变化。"
+            },
+            {
+              "title": "回落",
+              "detail": "缓缓放下双腿，回到仍能控制身体的低位，再开始下一次。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "腹部参与",
+              "detail": "重点在腹直肌的发力，不只比较腿抬得多高。"
+            },
+            {
+              "title": "呼吸讲解",
+              "detail": "可以比较吐气收肋与吸气后绷腹两种发力感受；先学习能够控制的呼吸与腹部收缩。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充纠错",
+              "detail": "身体大幅摆动时先暂停，缩小抬腿幅度，重新稳住躯干。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "呼吸补充",
+              "detail": "避免刻意屏息或强行吐到不适；不熟悉悬垂时先由现场指导确认握力和器械。"
+            }
+          ],
+          "checks": [
+            "横杠固定、能握稳",
+            "身体不大幅摆动",
+            "能慢慢放下腿"
+          ],
+          "references": []
+        },
+        {
+          "id": "abs-sling-knee-raise",
+          "title": "吊带支撑举腿",
+          "summary": "吊带在肘部附近承托双臂，双手仍握高位握把，再完成腿部上收。",
+          "equipment": "牢固安装的臂撑吊带与高位握把",
+          "origin": "video",
+          "videoRange": {
+            "start": 200,
+            "end": 240
+          },
+          "dosage": "先确认吊带与握把的布置，再用可控范围学习动作。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "承托位置",
+              "detail": "双臂放入两侧悬挂吊带，在肘部附近获得承托；双手握住上方握把。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "将双臂放入对应吊带，肘部有承托，双手握稳高位握把。"
+            },
+            {
+              "title": "上收",
+              "detail": "以接近伸膝的方式，让双腿缓缓向前上方上收，保持两侧支撑。"
+            },
+            {
+              "title": "停留",
+              "detail": "在能够稳住的位置停一下，不把全身甩到前面。"
+            },
+            {
+              "title": "回落",
+              "detail": "保持吊带和双手支撑，控制双腿缓缓回到仍能稳住的低位。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "支撑方式",
+              "detail": "吊带在肘部附近承托双臂；这与只用手悬垂、前臂垫式举腿机的支撑方式不同。"
+            },
+            {
+              "title": "腹部控制",
+              "detail": "吐气收紧核心后更容易稳住身体；吊带帮助承重，举腿仍需自己控制。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充纠错",
+              "detail": "两侧承托不同或身体晃动时先停下，重新调整前臂和握把位置。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "握法补充",
+              "detail": "吊带不能代替握稳握把；先按吊带及器械的安装说明使用。"
+            }
+          ],
+          "checks": [
+            "吊带安装可靠",
+            "两侧吊带都有稳定承托",
+            "双手始终握稳握把"
+          ],
+          "references": []
+        },
+        {
+          "id": "abs-supported-knee-raise",
+          "title": "罗马椅支撑举腿",
+          "summary": "前臂垫与竖握把支撑身体，学习接近伸膝的举腿。",
+          "equipment": "罗马椅／前臂垫式举腿机",
+          "origin": "video",
+          "videoRange": {
+            "start": 240,
+            "end": 413
+          },
+          "dosage": "先确认支撑方式；用自己能稳定控制的膝角和幅度。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "支撑位置",
+              "detail": "背部靠近背垫，肘部和靠近肘的一段前臂压稳两侧软垫；前臂朝前上方，双手握住竖把。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "背部靠近背垫，肘部落在垫上，前臂朝前上方，双手握住竖把。"
+            },
+            {
+              "title": "上收",
+              "detail": "保持前臂支撑，按接近伸膝的示范把双腿向前上方举起，感受腹部收缩。"
+            },
+            {
+              "title": "停留",
+              "detail": "在可控制的位置停一下，保留骨盆轻轻向后卷起的感觉。"
+            },
+            {
+              "title": "回落",
+              "detail": "缓缓将腿放回仍能控制的低位，避免完全放到底后失去腹部张力。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "前臂支撑",
+              "detail": "肘部与靠近肘的一段前臂持续压稳软垫，双手握住竖把，肩膀不要耸起。"
+            },
+            {
+              "title": "骨盆控制",
+              "detail": "保持骨盆后倾的感觉，下放不要到底；不用甩腿带动上身。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "耸肩",
+              "detail": "先稳住前臂承托，肩膀不要耸向耳朵。"
+            },
+            {
+              "title": "放到底失去控制",
+              "detail": "缩短下放范围，保留腹部与骨盆的控制。"
+            },
+            {
+              "title": "补充纠错",
+              "detail": "肘部离垫，或需要大幅摇摆才能举腿时，先调整承托、缩小幅度；必要时改用屈膝版本。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "屈膝退阶补充",
+              "detail": "先进一步屈膝、缩短力臂可以简化动作；熟练后再逐步接近伸膝举腿。"
+            },
+            {
+              "title": "呼吸补充",
+              "detail": "保持自然呼吸，不强迫屏息；先以稳定支撑和缓慢上收、回落为目标。"
+            }
+          ],
+          "checks": [
+            "前臂在两侧垫上",
+            "握把和背垫位置合适",
+            "能够缓慢放下腿"
+          ],
+          "references": []
+        },
+        {
+          "id": "abs-supine-crunch",
+          "title": "仰卧卷腹",
+          "summary": "屈膝仰卧，小幅卷起上身；学习腹部收缩，而不是整个人坐起。",
+          "equipment": "瑜伽垫",
+          "origin": "video",
+          "videoRange": {
+            "start": 413,
+            "end": 638
+          },
+          "dosage": "先学会短程卷起与控制还原，再决定练习量。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "仰卧屈膝",
+              "detail": "双脚踩地、膝盖弯曲；画面展示手放头侧的位置。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "仰卧屈膝，双脚留在垫上，手轻放在头侧。"
+            },
+            {
+              "title": "卷起",
+              "detail": "由腹部收缩带动肩背小幅卷起，肘的方向朝上，不用向前猛冲。"
+            },
+            {
+              "title": "停留",
+              "detail": "在短程卷起的位置停一下，臀部和双脚继续有支撑。"
+            },
+            {
+              "title": "还原",
+              "detail": "缓缓回到低位，保持腹部控制，不完全放松或突然下落。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "短程卷起",
+              "detail": "不要起得太多、下放不要到底，在可控制的中间行程练习。"
+            },
+            {
+              "title": "肘的方向",
+              "detail": "手轻托头侧；肘随肩背朝上移动，避免向前或向下抢动作。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "只抬头颈",
+              "detail": "让动作从腹部收缩开始，不把抬头当作完成卷腹。"
+            },
+            {
+              "title": "过度起身",
+              "detail": "起到过高的位置是常见错误；减小行程，保留短程卷起。"
+            },
+            {
+              "title": "补充纠错",
+              "detail": "手轻托头侧，不拉扯头颈；双脚和臀部保持支撑。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "呼吸补充",
+              "detail": "卷起时缓缓呼气，还原时吸气，不憋气。"
+            },
+            {
+              "title": "难度参考",
+              "detail": "手放低比头侧手位容易，下斜卷腹可作为进阶；本课先学习平垫短程控制。"
+            }
+          ],
+          "checks": [
+            "双脚平放，臀部有支撑",
+            "手没有拉头颈",
+            "小幅卷起后能慢慢放回"
+          ],
+          "references": []
+        },
+        {
+          "id": "abs-side-biased-crunch",
+          "title": "单侧偏向卷腹",
+          "summary": "在仰卧卷腹的基础上，学习轻向目标侧卷起的变式。",
+          "equipment": "瑜伽垫",
+          "origin": "video",
+          "videoRange": {
+            "start": 513,
+            "end": 552
+          },
+          "dosage": "先比较短程卷起的方向；不用追求大幅转身。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "仰卧支撑",
+              "detail": "保持仰卧屈膝、双脚踩地，手在头侧轻托；准备向目标侧小幅卷起。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "仰卧屈膝，双脚和臀部保持支撑，手轻放头侧。"
+            },
+            {
+              "title": "偏向卷起",
+              "detail": "小幅卷起肩背，让胸廓轻向目标侧偏向；身体仍保持仰卧支撑。"
+            },
+            {
+              "title": "停留",
+              "detail": "在上背小幅离垫的位置停一下，双脚和臀部不挪动。"
+            },
+            {
+              "title": "还原",
+              "detail": "缓缓回到低位，保持脚和臀部支撑，再开始下一次。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "卷腹变式",
+              "detail": "这是普通卷腹中的轻微旋转与侧偏变式，肘的方向仍朝上。"
+            },
+            {
+              "title": "支撑不变",
+              "detail": "保持仰卧屈膝支撑，用小幅卷起观察胸廓方向，避免大幅转身。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充纠错",
+              "detail": "避免大幅扭转身体，或用手拉扯头颈。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "方向补充",
+              "detail": "先在自己能够控制的小幅度学习；肩背卷起时，双脚和臀部不跟着翻转。"
+            },
+            {
+              "title": "呼吸补充",
+              "detail": "保持自然呼吸，不强行屏息；需要时缩小卷起幅度。"
+            }
+          ],
+          "checks": [
+            "双脚和臀部有支撑",
+            "只做短程卷起",
+            "没有大幅扭腰或手拉头颈"
+          ],
+          "references": []
+        },
+        {
+          "id": "abs-kneeling-ab-wheel",
+          "title": "跪姿健腹轮",
+          "summary": "膝盖落垫、两手握轮轴，先学习小幅前滚与控制回收。",
+          "equipment": "健腹轮、瑜伽垫、平整地面",
+          "origin": "video",
+          "videoRange": {
+            "start": 728,
+            "end": 1007.9
+          },
+          "dosage": "先用小幅度学习前滚与回收，不按最远距离衡量完成度。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "跪姿持轮",
+              "detail": "双膝跪垫，双手握住轮轴两侧；轮子接触地面，先用双手撑稳肩带。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "双膝落垫，两手握轮轴，主动撑稳肩带，臀部保持在可控制的位置。"
+            },
+            {
+              "title": "前滚",
+              "detail": "保持肩胛和躯干的支撑，让轮子缓缓前滚，先用小幅度。"
+            },
+            {
+              "title": "停留",
+              "detail": "在能够控制并收回的位置停一下，膝盖仍是地面支撑点。"
+            },
+            {
+              "title": "回收",
+              "detail": "把轮子缓缓收回到仍有支撑张力的位置，不将臀部完全坐回脚跟。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "可控幅度",
+              "detail": "只做能维持姿势的前滚范围，小幅度也可以。"
+            },
+            {
+              "title": "肩胛稳定",
+              "detail": "双手持续撑住轮轴，前滚时肩带保持主动支撑，避免肩胛明显后缩或塌落。"
+            },
+            {
+              "title": "难度调整",
+              "detail": "臀部稍后移可降低难度；找到仍能维持支撑的位置，不完全松掉。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "回程完全松掉",
+              "detail": "回得太近容易全身松掉；回到能够保留支撑的工作位置。"
+            },
+            {
+              "title": "补充纠错",
+              "detail": "不要以塌腰换取更远距离；如果无法控制回收，缩短前滚幅度。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "呼吸补充",
+              "detail": "全程保持自然呼吸，不把动作练成屏息发力；握稳两侧轮轴。"
+            }
+          ],
+          "checks": [
+            "轮子和地面不打滑",
+            "双膝在垫上",
+            "前滚后能自己慢慢收回"
+          ],
+          "references": []
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "title": "拉伸参考",
+      "caption": "卷腹后的拉伸，逐项查看舒适范围与支撑位置。",
+      "lessons": [
+        {
+          "id": "abs-prone-abdominal-stretch",
+          "title": "俯卧抬胸拉伸",
+          "summary": "双手撑地轻轻抬起胸部，体验腹部前侧的伸展。",
+          "equipment": "瑜伽垫",
+          "origin": "video",
+          "videoRange": {
+            "start": 638,
+            "end": 728
+          },
+          "dosage": "轻柔拉伸，不强撑到疼痛。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "俯卧撑地",
+              "detail": "俯卧，双腿向后延伸，双手放在上身两侧撑地。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "准备",
+              "detail": "俯卧，双腿伸向后方，双手放在上身两侧。"
+            },
+            {
+              "title": "抬胸",
+              "detail": "手掌稳稳撑住，轻轻抬起胸部，保留舒适范围。"
+            },
+            {
+              "title": "停留",
+              "detail": "骨盆和双腿仍留在垫上，自然呼吸，在舒适的抬胸姿势停一下。"
+            },
+            {
+              "title": "还原",
+              "detail": "缓缓弯回手肘，让胸部回到垫面。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "轻柔抬胸",
+              "detail": "手掌撑稳，胸部缓缓抬起；这段拉伸安排在卷腹之后。"
+            },
+            {
+              "title": "呼吸与幅度",
+              "detail": "先吸气再开始伸展；保持自己能自然呼吸的舒适幅度。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充纠错",
+              "detail": "避免为了抬高胸部而把骨盆顶离垫面；先缩小幅度，出现腰部不适时停止。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "幅度补充",
+              "detail": "以腹部轻微牵拉、腰部不被挤压为准；不追求抬得最高。"
+            }
+          ],
+          "checks": [
+            "手掌支撑稳定",
+            "骨盆和双腿留在垫上",
+            "拉伸幅度舒适",
+            "没有腰部疼痛"
+          ],
+          "references": []
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "NHS：运动前热身",
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/"
+    },
+    {
+      "title": "ACE：猫牛式",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/15/cat-cow/"
+    },
+    {
+      "title": "ACE：仰卧骨盆倾斜",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/7/supine-pelvic-tilts/"
+    }
+  ]
+}

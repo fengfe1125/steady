@@ -1,0 +1,351 @@
+// Source and contact evidence: docs/verification/training-functional/anatomy-upgrade/report.md
+export default {
+  "id": "functional-dumbbell-lunge-press",
+  "title": "双哑铃弓步蹲推",
+  "view": "side",
+  "dropManifestKeys": [
+    "documentLayout",
+    "injectedRuntimeResource",
+    "availableViews",
+    "defaultView",
+    "supportsSideSelection"
+  ],
+  "poses": {
+    "start": {
+      "x": 0,
+      "y": -183,
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": 0,
+      "head": 0,
+      "scapE": 0,
+      "scapP": 0,
+      "arms": {
+        "near": {
+          "sh": 6,
+          "el": 14,
+          "wr": 0
+        },
+        "far": {
+          "sh": -4,
+          "el": 8,
+          "wr": 0
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      },
+      "ik": {
+        "ankle": {
+          "near": {
+            "x": 16,
+            "y": -14,
+            "foot": 0
+          },
+          "far": {
+            "x": -16,
+            "y": -14,
+            "foot": 0
+          }
+        }
+      }
+    },
+    "rack": {
+      "x": 0,
+      "y": -183,
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": 0,
+      "head": 0,
+      "scapE": 0,
+      "scapP": 0,
+      "arms": {
+        "near": {
+          "sh": 48,
+          "el": 108
+        },
+        "far": {
+          "sh": 43,
+          "el": 113
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      },
+      "ik": {
+        "ankle": {
+          "near": {
+            "x": 16,
+            "y": -14,
+            "foot": 0
+          },
+          "far": {
+            "x": -16,
+            "y": -14,
+            "foot": 0
+          }
+        }
+      }
+    },
+    "step": {
+      "x": 0,
+      "y": -139,
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": 0,
+      "head": 0,
+      "scapE": 0,
+      "scapP": 0,
+      "arms": {
+        "near": {
+          "sh": 80,
+          "el": 95,
+          "f": 1
+        },
+        "far": {
+          "sh": 80,
+          "el": 95,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      },
+      "ik": {
+        "ankle": {
+          "near": {
+            "x": 96,
+            "y": -14,
+            "foot": 0
+          },
+          "far": {
+            "x": -91,
+            "y": -38,
+            "foot": -42
+          }
+        }
+      }
+    },
+    "peak": {
+      "x": 0,
+      "y": -139,
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": 0,
+      "head": 0,
+      "scapE": 0,
+      "scapP": 0,
+      "arms": {
+        "near": {
+          "sh": 165,
+          "el": 10
+        },
+        "far": {
+          "sh": 155,
+          "el": 10
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      },
+      "ik": {
+        "ankle": {
+          "near": {
+            "x": 96,
+            "y": -14,
+            "foot": 0
+          },
+          "far": {
+            "x": -91,
+            "y": -38,
+            "foot": -42
+          }
+        }
+      }
+    }
+  },
+  "track": {
+    "keys": [
+      {
+        "t": 0,
+        "pose": "start",
+        "p": 0.25
+      },
+      {
+        "t": 600,
+        "pose": "start",
+        "p": 0.25
+      },
+      {
+        "t": 1200,
+        "pose": "rack",
+        "p": 0.45
+      },
+      {
+        "t": 1900,
+        "pose": "step",
+        "p": 0.7
+      },
+      {
+        "t": 2800,
+        "pose": "peak",
+        "p": 1
+      },
+      {
+        "t": 3300,
+        "pose": "peak",
+        "p": 1
+      },
+      {
+        "t": 4400,
+        "pose": "rack",
+        "p": 0.45
+      },
+      {
+        "t": 5900,
+        "pose": "start",
+        "p": 0.25
+      }
+    ]
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "x"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "x"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "quads",
+      "glute.max",
+      "deltoid.ant"
+    ],
+    "secondary": [
+      "triceps",
+      "abs",
+      "obliques"
+    ]
+  },
+  "labels": [
+    {
+      "muscle": "quads@near",
+      "at": "tr"
+    },
+    {
+      "muscle": "deltoid.ant@near",
+      "at": "tl"
+    }
+  ],
+  "guide": {
+    "joint": "arms.near.H",
+    "offset": [
+      18,
+      0
+    ],
+    "a": "start",
+    "b": "peak"
+  },
+  "detail": {
+    "pose": "peak",
+    "ghost": "rack",
+    "legend": "bl",
+    "callouts": [
+      {
+        "n": 1,
+        "at": "arms.near.H",
+        "text": "握杆在掌内，两铃分开",
+        "dx": 8,
+        "dy": -20
+      },
+      {
+        "n": 2,
+        "at": "legs.near.sole",
+        "text": "前脚全掌，后脚前掌",
+        "dx": 15,
+        "dy": -14
+      },
+      {
+        "n": 3,
+        "at": "N.1",
+        "text": "肋骨骨盆收稳再推",
+        "dx": -25,
+        "dy": -12
+      }
+    ]
+  },
+  "mistake": {
+    "goodText": "收稳躯干再过顶",
+    "text": "推举时拱腰借力",
+    "pose": {
+      "lumbar": -24,
+      "thorax": -10,
+      "arms": {
+        "near": {
+          "sh": 173,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 173,
+          "el": 6,
+          "f": 1
+        }
+      }
+    },
+    "marks": [
+      {
+        "at": "N.1",
+        "type": "circle",
+        "r": 16
+      }
+    ],
+    "muscles": {
+      "primary": [
+        "erectors"
+      ],
+      "secondary": [
+        "deltoid.ant",
+        "quads"
+      ]
+    },
+    "fix": "减轻双铃重量，收住肋骨和骨盆；两膝弯曲下沉，保持躯干后再控制推举。"
+  }
+};
