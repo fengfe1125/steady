@@ -678,19 +678,20 @@
         {
           "title": "动作移动",
           "startSeconds": 0.6,
-          "endSeconds": 2.8,
+          "endSeconds": 1.4,
           "instruction": "交替向前迈步并控制下沉。"
         },
         {
           "title": "末端停顿",
-          "startSeconds": 2.8,
-          "endSeconds": 3.3,
+          "startSeconds": 1.4,
+          "endSeconds": 1.8,
           "instruction": "稳定停顿，保持自然呼吸。"
         },
         {
           "title": "控制还原",
-          "startSeconds": 3.3,
+          "startSeconds": 1.8,
           "endSeconds": 6,
+          "previewTimeSeconds": 2.2,
           "instruction": "蹬地回站并换侧。"
         }
       ],
@@ -728,8 +729,8 @@
       ],
       "timingMilliseconds": {
         "effortStart": 600,
-        "effortEnd": 2800,
-        "returnStart": 3300,
+        "effortEnd": 1400,
+        "returnStart": 1800,
         "returnEnd": 6000,
         "duration": 6000
       },
