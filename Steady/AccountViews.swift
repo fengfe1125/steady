@@ -39,13 +39,13 @@ struct AccountConnectionsView: View {
                 NavigationLink { HealthConnectionView(model: model) } label: {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("苹果健康")
-                        Text(model.isDemo ? "演示模式不读取健康" : model.hasHealthSummary ? "本机已有健康摘要" : "尚无可用摘要").font(.caption).foregroundStyle(.secondary)
+                        Text(model.isDemo ? "演示模式不读取健康" : model.hasHealthSummary ? "本机已有健康摘要" : "尚无可用摘要").font(.caption).foregroundStyle(SteadyTheme.secondary)
                     }
                 }
                 NavigationLink { CloudRecordsView(model: model) } label: {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("云端记录")
-                        Text(model.cloudDescription).font(.caption).foregroundStyle(.secondary)
+                        Text(model.cloudDescription).font(.caption).foregroundStyle(SteadyTheme.secondary)
                     }
                 }
             }
@@ -76,7 +76,7 @@ struct EmailLoginView: View {
             Section { EmailLoginFields(model: model) }
             Section {
                 RequestStatus(model: model)
-                Text("登录不会自动开启云同步或 AI，每项用途都由你决定").font(.footnote).foregroundStyle(.secondary)
+                Text("登录不会自动开启云同步或 AI，每项用途都由你决定").font(.footnote).foregroundStyle(SteadyTheme.secondary)
             }
         }.journalSurface().navigationTitle("邮箱登录").navigationBarTitleDisplayMode(.inline)
         .onChange(of: model.authState) { _, _ in if model.isSignedIn { dismiss() } }
@@ -101,7 +101,7 @@ struct HealthConnectionView: View {
                 if let latest = model.summaries.filter({ $0.metadata.source == .healthKit && $0.missingMetrics.count < 4 }).max(by: { $0.date < $1.date }) {
                     LabeledContent("最近记录日期", value: latest.dayKey)
                 }
-                Text("只有实际读到记录才显示摘要。未读到数据时，请检查苹果健康中的记录与读取许可。").font(.footnote).foregroundStyle(.secondary)
+                Text("只有实际读到记录才显示摘要。未读到数据时，请检查苹果健康中的记录与读取许可。").font(.footnote).foregroundStyle(SteadyTheme.secondary)
             }
             Section {
                 Button(model.journal.preferences.healthRead ? "重新读取健康记录" : "连接苹果健康") { didRequest = true; model.connectHealth() }
@@ -128,7 +128,7 @@ struct CloudRecordsView: View {
                 if !model.journal.preferences.cloudSync { Text("返回设置，在隐私区单独开启云端同步后再继续").font(.footnote) }
                 Button("立即同步") { model.scheduleSync() }.disabled(!enabled)
                 Button("同步并恢复云端历史") { model.restoreHistory() }.disabled(!enabled)
-                Text("断网修改保存在本机，联网后重试。关闭同步不会删除已有云端记录。").font(.footnote).foregroundStyle(.secondary)
+                Text("断网修改保存在本机，联网后重试。关闭同步不会删除已有云端记录。").font(.footnote).foregroundStyle(SteadyTheme.secondary)
             }
             if !model.conflicts.isEmpty {
                 Section("需要处理的版本") {

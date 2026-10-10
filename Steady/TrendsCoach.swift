@@ -18,7 +18,7 @@ struct TrendsView: View {
             Picker("记录范围", selection: $days) { ForEach([7, 14, 30], id: \.self) { Text("\($0)天").tag($0) } }.pickerStyle(.segmented)
             Picker("指标", selection: $metric) { ForEach(TrendMetric.allCases) { Text($0.rawValue).tag($0) } }.pickerStyle(.segmented)
             JournalCard {
-                Text("\(metric.rawValue) · \(metric.unit)").font(.headline)
+                Text("\(metric.rawValue) · \(metric.unit)").font(.headline).foregroundStyle(SteadyTheme.primary)
                 if window.points(for: metric).isEmpty {
                     ContentUnavailableView("这段时间暂无记录", systemImage: "chart.xyaxis.line")
                 } else {
@@ -44,15 +44,17 @@ struct TrendsView: View {
                     .frame(height: 230)
                 }
                 Text("有效记录 \(window.points(for: metric).count) / \(days)天").font(.subheadline)
-                Text("连线连接已有记录，空缺日期没有测量值").font(.caption).foregroundStyle(.secondary)
-                if metric == .weight { Text("体重纵轴不从零开始").font(.caption).foregroundStyle(.secondary) }
+                Text("连线连接已有记录，空缺日期没有测量值").font(.caption).foregroundStyle(SteadyTheme.secondary)
+                if metric == .weight { Text("体重纵轴不从零开始").font(.caption).foregroundStyle(SteadyTheme.secondary) }
             }
-            NavigationLink("查看每天的健康记录") {
-                HealthHistoryView(summaries: model.summaries, isDemo: model.isDemo)
-            }
-            NavigationLink("历史日报") { HistoryView(model: model) }
+            VStack(alignment: .leading, spacing: 0) {
+                NavigationLink("查看每天的健康记录") {
+                    HealthHistoryView(summaries: model.summaries, isDemo: model.isDemo)
+                }
+                NavigationLink("历史日报") { HistoryView(model: model) }
+            }.buttonStyle(.journalText)
             JournalCard {
-                Text("数据来源").font(.headline)
+                Text("数据来源").font(.headline).foregroundStyle(SteadyTheme.primary)
                 Text(model.isDemo ? "固定30天样例：2026年8月23日–9月21日。时区 Asia/Shanghai。尚未读取苹果健康。" : "来自苹果健康的最近30天摘要。缺失不计为零，睡眠按醒来日期归档，运动分钟采用 Apple 运动时间。")
             }
         }.journalSurface().navigationTitle("看见小小变化")
@@ -73,7 +75,7 @@ private struct HealthHistoryView: View {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(summary.dayKey).font(.headline)
                             Text(summary.steps.map { "\($0.formatted()) 步" } ?? "步数暂无记录")
-                                .font(.subheadline).foregroundStyle(.secondary)
+                                .font(.subheadline).foregroundStyle(SteadyTheme.secondary)
                         }
                     }
                 }
@@ -98,7 +100,7 @@ private struct HealthDayView: View {
             }
             Section {
                 Text(isDemo ? "来源：本地虚构样例。" : "来源：苹果健康。本页展示保存在本机的摘要；缺失指标不当作零。")
-                    .font(.footnote).foregroundStyle(.secondary)
+                    .font(.footnote).foregroundStyle(SteadyTheme.secondary)
             }
         }
         .journalSurface().navigationTitle("健康记录")
@@ -122,7 +124,7 @@ struct CoachView: View {
                     Label {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("八个训练专题 · 动画与分步讲解")
-                            Text("从热身开始，学习动作、支撑和易错点").font(.caption).foregroundStyle(.secondary)
+                            Text("从热身开始，学习动作、支撑和易错点").font(.caption).foregroundStyle(SteadyTheme.secondary)
                         }
                     } icon: { Image(systemName: "books.vertical") }
                 }.accessibilityIdentifier("trainingCollections")
@@ -132,18 +134,18 @@ struct CoachView: View {
                     Label {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("健身房器材")
-                            Text("看动作示范，按步骤学会使用").font(.caption).foregroundStyle(.secondary)
+                            Text("看动作示范，按步骤学会使用").font(.caption).foregroundStyle(SteadyTheme.secondary)
                         }
                     } icon: { Image(systemName: "figure.strengthtraining.traditional") }
                 }.accessibilityIdentifier("equipmentLibrary")
             }
             Section("会话记录") {
-                if model.journal.conversations.isEmpty { Text("还没有会话 想聊的时候我们再开始").foregroundStyle(.secondary) }
+                if model.journal.conversations.isEmpty { Text("还没有会话 想聊的时候我们再开始").foregroundStyle(SteadyTheme.secondary) }
                 ForEach(model.journal.conversations) { chat in
                     Button { model.openChat(id: chat.id) } label: {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(chat.title)
-                            Text(chat.messages.last?.content ?? "还没有消息").lineLimit(2).font(.caption).foregroundStyle(.secondary)
+                            Text(chat.messages.last?.content ?? "还没有消息").lineLimit(2).font(.caption).foregroundStyle(SteadyTheme.secondary)
                         }
                     }
                 }
@@ -156,23 +158,24 @@ struct ChatView: View {
     @Bindable var model: AppModel
     @State private var question = ""
     @FocusState private var composerFocused: Bool
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     var body: some View {
         ScrollViewReader { proxy in
             JournalPage {
                 ModeBadge(isDemo: model.isDemo)
                 if model.conversation?.messages.isEmpty != false {
                     JournalCard {
-                        Text("从今天的记录聊起").font(.title2)
-                        Button("我今天适合运动吗？") { model.send("我今天适合运动吗？") }.disabled(model.busy != nil)
+                        Text("从今天的记录聊起").font(.title2).foregroundStyle(SteadyTheme.primary)
+                        Button("我今天适合运动吗？") { model.send("我今天适合运动吗？") }.buttonStyle(.journalText).disabled(model.busy != nil)
                     }
                 }
                 ForEach(model.conversation?.messages ?? []) { message in
                     JournalCard {
-                        Text(message.role == .user ? "你" : (model.isDemo ? "演示教练" : "教练")).font(.caption.weight(.medium)).foregroundStyle(.secondary)
+                        Text(message.role == .user ? "你" : (model.isDemo ? "演示教练" : "教练")).font(.caption.weight(.medium)).foregroundStyle(SteadyTheme.secondary)
                         Text(message.content.isEmpty ? "正在整理回复…" : message.content).textSelection(.enabled)
                         if !message.evidence.isEmpty { DisclosureGroup("引用数据") { EvidenceView(evidence: message.evidence) } }
                         if message.status == .cancelled { Text("已取消 · 以上为未完成内容").font(.caption) }
-                        if message.status == .failed { Text("回复失败 · 可重新发送问题").font(.caption).foregroundStyle(.red) }
+                        if message.status == .failed { Label { Text("回复失败 · 可重新发送问题") } icon: { Image(systemName: "exclamationmark.circle").foregroundStyle(.red) }.font(.caption) }
                     }.id(message.id)
                 }
                 RequestStatus(model: model)
@@ -189,7 +192,7 @@ struct ChatView: View {
                 }.padding().background(.bar)
             }
             .onChange(of: model.conversation?.messages.count) { _, _ in
-                if let id = model.conversation?.messages.last?.id { withAnimation { proxy.scrollTo(id, anchor: .bottom) } }
+                if let id = model.conversation?.messages.last?.id { withAnimation(reduceMotion ? nil : .default) { proxy.scrollTo(id, anchor: .bottom) } }
             }
         }.journalSurface().navigationTitle("关于今天的状态").navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .topBarTrailing) { PlanLauncher(model: model, title: "训练草案") }; ToolbarItemGroup(placement: .keyboard) { Spacer(); Button("收起键盘") { composerFocused = false } } }

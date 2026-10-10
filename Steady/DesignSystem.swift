@@ -48,7 +48,7 @@ struct EvidenceView: View {
         ForEach(evidence) { ref in
             VStack(alignment: .leading, spacing: 4) {
                 Text("\(ref.metric) · \(ref.value)").font(.subheadline.weight(.medium))
-                Text("\(ref.dayKey) · \(ref.source == .demo ? "固定虚构样例" : "苹果健康摘要")").font(.caption).foregroundStyle(.secondary)
+                Text("\(ref.dayKey) · \(ref.source == .demo ? "固定虚构样例" : "苹果健康摘要")").font(.caption).foregroundStyle(SteadyTheme.secondary)
             }.accessibilityElement(children: .combine)
         }
     }
@@ -120,6 +120,19 @@ extension View {
     func journalPrimaryButton() -> some View {
         buttonStyle(.borderedProminent).tint(SteadyTheme.button).foregroundStyle(SteadyTheme.primary)
     }
+}
+
+/// Plain text actions on Steady's own pages and cards: accent tint, at least a 44pt tap target.
+struct JournalTextButtonStyle: ButtonStyle {
+    @Environment(\.isEnabled) private var isEnabled
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label.foregroundStyle(.tint)
+            .frame(minHeight: 44, alignment: .leading).contentShape(Rectangle())
+            .opacity(isEnabled ? (configuration.isPressed ? 0.5 : 1) : 0.4)
+    }
+}
+extension ButtonStyle where Self == JournalTextButtonStyle {
+    static var journalText: JournalTextButtonStyle { JournalTextButtonStyle() }
 }
 
 @MainActor enum JournalIcons {

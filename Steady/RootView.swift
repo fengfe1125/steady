@@ -37,17 +37,17 @@ struct RequestStatus: View {
         if let busy = model.busy {
             JournalCard {
                 ProgressView(busy)
-                Button("取消生成") { model.cancel() }.accessibilityIdentifier("cancelGeneration")
+                Button("取消生成") { model.cancel() }.buttonStyle(.journalText).accessibilityIdentifier("cancelGeneration")
             }
         }
         if let error = model.error {
             JournalCard {
-                Label("请求未完成", systemImage: "exclamationmark.circle").font(.headline)
+                Label("请求未完成", systemImage: "exclamationmark.circle").font(.headline).foregroundStyle(SteadyTheme.primary)
                 Text(error).font(.subheadline)
-                Button("知道了") { model.error = nil }
+                Button("知道了") { model.error = nil }.buttonStyle(.journalText)
             }.accessibilityIdentifier("requestError")
         }
-        if let notice = model.notice { Text(notice).font(.footnote).foregroundStyle(.secondary) }
+        if let notice = model.notice { Text(notice).font(.footnote).foregroundStyle(SteadyTheme.secondary) }
     }
 }
 
@@ -67,7 +67,7 @@ struct TodayView: View {
     }
     var body: some View {
         JournalPage {
-            Text(model.isDemo ? "2026年9月21日 · 固定样例日期" : Date().formatted(date: .long, time: .omitted)).font(.subheadline).foregroundStyle(.secondary)
+            Text(model.isDemo ? "2026年9月21日 · 固定样例日期" : Date().formatted(date: .long, time: .omitted)).font(.subheadline).foregroundStyle(SteadyTheme.secondary)
             ModeBadge(isDemo: model.isDemo)
             if model.isDemo && model.scenario != .normal {
                 Label("当前场景：\(model.scenario.rawValue)", systemImage: "info.circle").font(.subheadline)
@@ -80,34 +80,34 @@ struct TodayView: View {
                     SummaryMetric(title: "运动", value: today.activeMinutes.map(String.init) ?? "暂无记录", detail: "分钟 · Apple 运动")
                     SummaryMetric(title: "体重", value: today.weightKG.map { String(format: "%.1f", $0) } ?? "暂无记录", detail: "kg · 当天记录")
                 }
-                Text(model.isDemo ? "来源：本地虚构样例 · 缺失指标不计为零" : "来源：苹果健康 · 缺失指标不计为零").font(.caption).foregroundStyle(.secondary)
+                Text(model.isDemo ? "来源：本地虚构样例 · 缺失指标不计为零" : "来源：苹果健康 · 缺失指标不计为零").font(.caption).foregroundStyle(SteadyTheme.secondary)
             } else { Text("暂无可用数据，可在设置中连接苹果健康。") }
             if !model.isDemo {
                 Button(model.journal.preferences.healthRead ? "重新读取苹果健康" : "连接苹果健康") { model.connectHealth() }
                     .disabled(model.busy != nil)
-                    .accessibilityIdentifier("connectHealth")
+                    .buttonStyle(.journalText).accessibilityIdentifier("connectHealth")
             }
             RequestStatus(model: model)
             JournalCard {
-                Text("今日训练").font(.headline)
+                Text("今日训练").font(.headline).foregroundStyle(SteadyTheme.primary)
                 if let workout = todaysWorkout {
                     NavigationLink { WorkoutView(model: model, planID: workout.plan.id, sessionID: workout.session.id) } label: {
                         Label("\(workout.session.title) · \(workout.session.minutes)分钟", systemImage: "figure.walk")
-                    }
+                    }.buttonStyle(.journalText)
                 } else {
-                    Text("今天还没有确认的安排").foregroundStyle(.secondary)
-                    PlanLauncher(model: model, title: "安排训练")
+                    Text("今天还没有确认的安排").foregroundStyle(SteadyTheme.secondary)
+                    PlanLauncher(model: model, title: "安排训练").buttonStyle(.journalText)
                 }
             }
             PrimaryAction(title: model.isDemo ? "生成演示报告" : "生成今日日报") { model.generateReport() }
                 .disabled(model.busy != nil || model.today == nil).accessibilityIdentifier("generateReport")
-            NavigationLink("查看已有日报") { HistoryView(model: model) }
+            NavigationLink("查看已有日报") { HistoryView(model: model) }.buttonStyle(.journalText)
             JournalCard {
-                Text("今天感觉怎么样").font(JournalFonts.handwriting(27))
-                Button("补记感受", systemImage: "pencil.line") { note = true }.accessibilityIdentifier("addNote")
+                Text("今天感觉怎么样").font(JournalFonts.handwriting(27)).foregroundStyle(SteadyTheme.primary)
+                Button("补记感受", systemImage: "pencil.line") { note = true }.buttonStyle(.journalText).accessibilityIdentifier("addNote")
             }
             if let text = model.today.flatMap({ model.journal.notes[$0.dayKey] }), !text.isEmpty {
-                JournalCard { Text("今日补记").font(.headline); Text(text) }
+                JournalCard { Text("今日补记").font(.headline).foregroundStyle(SteadyTheme.primary); Text(text) }
             }
         }
         .journalSurface().navigationTitle("今天，慢慢来")
@@ -128,7 +128,7 @@ struct NoteView: View {
             Form {
                 Section("今天感觉怎么样") { TextField("睡醒感受、疲劳或其他想记的事", text: $note, axis: .vertical).lineLimit(5...12).accessibilityIdentifier("noteInput") }
                 Text(model.journal.preferences.cloudSync ? "补记将随记录同步；不会自动发送给 AI。" : "仅保存在这台设备，不发送给 AI。").font(.footnote)
-                if let error = model.error { Text(error).foregroundStyle(.red) }
+                if let error = model.error { Label { Text(error) } icon: { Image(systemName: "exclamationmark.circle").foregroundStyle(.red) } }
             }
             .journalSurface().navigationTitle("补记感受").navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -153,7 +153,7 @@ struct ReportView: View {
             Text(model.summaries.first(where: { $0.id == report.summaryID })?.dayKey ?? report.sections.flatMap(\.evidence).first?.dayKey ?? "健康日报").font(.subheadline)
             ForEach(report.sections) { section in
                 JournalCard {
-                    Text(section.title).font(.headline)
+                    Text(section.title).font(.headline).foregroundStyle(SteadyTheme.primary)
                     Text(section.body).font(.body)
                     if !section.evidence.isEmpty {
                         DisclosureGroup("查看数据依据") { EvidenceView(evidence: section.evidence).padding(.top, 8) }
@@ -179,7 +179,7 @@ struct HistoryView: View {
                 NavigationLink { ReportView(model: model, report: report) } label: {
                     VStack(alignment: .leading) {
                         Text(model.summaries.first(where: { $0.id == report.summaryID })?.dayKey ?? report.sections.flatMap(\.evidence).first?.dayKey ?? "健康日报")
-                        Text(model.isDemo ? "演示日报 · 已保存在本机" : "健康日报 · 已保存在本机").font(.caption).foregroundStyle(.secondary)
+                        Text(model.isDemo ? "演示日报 · 已保存在本机" : "健康日报 · 已保存在本机").font(.caption).foregroundStyle(SteadyTheme.secondary)
                     }
                 }
             }

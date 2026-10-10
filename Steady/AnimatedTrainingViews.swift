@@ -36,7 +36,7 @@ struct AnimatedTrainingCollectionsView: View {
         List {
             Section {
                 Text("从热身开始，逐步学习动作、支撑和发力。动画与要领可离线查看。")
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(SteadyTheme.secondary)
             }
             ForEach(AnimatedTrainingTopic.allCases) { topic in
                 switch Result(catching: { try topic.load() }) {
@@ -46,9 +46,9 @@ struct AnimatedTrainingCollectionsView: View {
                     } label: {
                         VStack(alignment: .leading, spacing: 6) {
                             Text(topic.title).font(.headline)
-                            Text(bundle.collection.subtitle).font(.subheadline).foregroundStyle(.secondary)
+                            Text(bundle.collection.subtitle).font(.subheadline).foregroundStyle(SteadyTheme.secondary)
                             Text("\(bundle.collection.lessons.count) 课 · 动画与分步讲解")
-                                .font(.caption).foregroundStyle(.secondary)
+                                .font(.caption).foregroundStyle(SteadyTheme.secondary)
                         }.padding(.vertical, 6)
                     }.accessibilityIdentifier("animatedCollection_\(topic.id)")
                 case .failure:
@@ -102,8 +102,8 @@ struct AnimatedTrainingCollectionView: View {
             Section {
                 Text(bundle.collection.overview)
                 Label(bundle.collection.equipment, systemImage: "dumbbell")
-                    .font(.subheadline).foregroundStyle(.secondary)
-                Text(bundle.collection.trainingNote).font(.footnote).foregroundStyle(.secondary)
+                    .font(.subheadline).foregroundStyle(SteadyTheme.secondary)
+                Text(bundle.collection.trainingNote).font(.footnote).foregroundStyle(SteadyTheme.secondary)
             }
             ForEach(bundle.collection.sections) { section in
                 Section(section.title) {
@@ -115,7 +115,7 @@ struct AnimatedTrainingCollectionView: View {
                             } label: {
                                 VStack(alignment: .leading, spacing: 5) {
                                     Text(lesson.title).font(.headline)
-                                    Text(lesson.summary).font(.caption).foregroundStyle(.secondary).lineLimit(2)
+                                    Text(lesson.summary).font(.caption).foregroundStyle(SteadyTheme.secondary).lineLimit(2)
                                 }
                             }.accessibilityIdentifier("animatedLesson_\(lesson.id)")
                         }
@@ -147,7 +147,7 @@ struct AnimatedTrainingLessonView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text(lesson.summary).foregroundStyle(.secondary)
+                Text(lesson.summary).foregroundStyle(SteadyTheme.secondary)
                 Picker("图解", selection: $player.mode) {
                     ForEach(EquipmentViewMode.allCases) { Text($0.title).tag($0) }
                 }.pickerStyle(.segmented).onChange(of: player.mode) { _, mode in
@@ -183,12 +183,12 @@ struct AnimatedTrainingLessonView: View {
                     .accessibilityIdentifier("trainingArtwork")
                 if let muscleSummary {
                     Label(muscleSummary, systemImage: "figure.strengthtraining.traditional")
-                        .font(.subheadline).foregroundStyle(.secondary)
+                        .font(.subheadline).foregroundStyle(SteadyTheme.secondary)
                         .accessibilityIdentifier("trainingMuscles")
                 }
                 if player.failed {
                     Text("图解暂时无法加载，仍可阅读下方步骤。返回后重新打开此动作可重试。")
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(SteadyTheme.secondary)
                 }
                 if player.mode == .motion {
                     HStack {
@@ -205,7 +205,7 @@ struct AnimatedTrainingLessonView: View {
                         Spacer()
                         // The hint sits outside the picture so nothing covers the drawing.
                         if canTapToPlay {
-                            Text(player.playing ? "轻点画面暂停" : "轻点画面播放").font(.caption).foregroundStyle(.secondary)
+                            Text(player.playing ? "轻点画面暂停" : "轻点画面播放").font(.caption).foregroundStyle(SteadyTheme.secondary)
                         }
                     }
                     Slider(value: Binding(get: { player.time / 1000 }, set: { player.seek(seconds: $0) }),
@@ -219,8 +219,8 @@ struct AnimatedTrainingLessonView: View {
                             VStack(alignment: .leading, spacing: 6) {
                                 Label("\(index + 1). \(step.title)", systemImage:
                                     player.animation.stepIndex(at: player.time / 1000) == index ? "checkmark.circle.fill" : "circle")
-                                    .font(.headline)
-                                Text(step.instruction).foregroundStyle(.secondary)
+                                    .font(.headline).foregroundStyle(SteadyTheme.primary)
+                                Text(step.instruction).foregroundStyle(SteadyTheme.secondary)
                             }.frame(maxWidth: .infinity, alignment: .leading)
                         }.buttonStyle(.plain).disabled(!player.ready)
                             .accessibilityIdentifier("trainingStep_\(index)")
@@ -232,14 +232,14 @@ struct AnimatedTrainingLessonView: View {
                 if player.mode == .mistakes, let explanation = player.animation.mistakeExplanation {
                     Text(explanation).accessibilityIdentifier("trainingMistakeExplanation")
                 }
-                Text("训练安排").font(.title3.bold())
+                Text("训练安排").font(.title3.bold()).foregroundStyle(SteadyTheme.primary)
                 Text(lesson.dosage)
                 notes("准备与支撑", lesson.preparation)
                 notes("动作要点与呼吸", lesson.cues)
                 notes("常见错误", lesson.mistakes)
                 notes("补充说明", lesson.supplements)
                 if !lesson.checks.isEmpty {
-                    Text("开始前检查").font(.title3.bold())
+                    Text("开始前检查").font(.title3.bold()).foregroundStyle(SteadyTheme.primary)
                     ForEach(Array(lesson.checks.enumerated()), id: \.offset) { _, check in Text(check) }
                 }
             }.padding()
@@ -266,11 +266,11 @@ struct AnimatedTrainingLessonView: View {
 
     @ViewBuilder private func notes(_ title: String, _ values: [TrainingNote]) -> some View {
         if !values.isEmpty {
-            Text(title).font(.title3.bold())
+            Text(title).font(.title3.bold()).foregroundStyle(SteadyTheme.primary)
             ForEach(Array(values.enumerated()), id: \.offset) { _, note in
                 VStack(alignment: .leading, spacing: 5) {
-                    Text(note.title).font(.headline)
-                    Text(note.detail).foregroundStyle(.secondary)
+                    Text(note.title).font(.headline).foregroundStyle(SteadyTheme.primary)
+                    Text(note.detail).foregroundStyle(SteadyTheme.secondary)
                 }
             }
         }
