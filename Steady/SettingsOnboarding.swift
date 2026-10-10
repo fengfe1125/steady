@@ -10,7 +10,7 @@ struct PrivacyFields: View {
             Toggle("云端同步", isOn: $preferences.cloudSync).accessibilityIdentifier("cloudConsent")
             Toggle("AI 处理", isOn: $preferences.aiProcessing).accessibilityIdentifier("aiConsent")
             Text(isDemo ? "演示模式不会读取健康、上传数据或调用 AI。" : "健康原始样本留在设备。云同步会把摘要与记录存入新加坡 Supabase；AI 会把本次必要摘要和最近对话经新加坡服务转交 DeepSeek。不同意同步仍可单独使用 AI，Steady 后端不保存该次正文。关闭开关停止后续对应操作，不删除已有云记录。")
-                .font(.footnote).foregroundStyle(.secondary)
+                .font(.footnote).foregroundStyle(SteadyTheme.secondary)
         }
     }
 }
@@ -28,7 +28,7 @@ struct SettingsView: View {
                 NavigationLink { AccountConnectionsView(model: model) } label: {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("账户与连接")
-                        Text(model.accountDescription).font(.caption).foregroundStyle(.secondary)
+                        Text(model.accountDescription).font(.caption).foregroundStyle(SteadyTheme.secondary)
                     }
                 }.accessibilityIdentifier("accountConnections")
             }
@@ -106,7 +106,7 @@ struct OnboardingView: View {
                         Section {
                             JournalWelcome(title: "慢慢来\n我们一起记录", expression: .shy)
                             Text("登录不会自动同步记录。云同步和 AI 处理仍由你分别决定。")
-                                .font(.subheadline).foregroundStyle(.secondary)
+                                .font(.subheadline).foregroundStyle(SteadyTheme.secondary)
                         }
                         if model.isDemo { Section { Text("演示模式无需登录。") } }
                         else { Section("邮箱验证码") { EmailLoginFields(model: model) } }
@@ -124,7 +124,7 @@ struct OnboardingView: View {
                                 Text("把睡眠、活动和每天的感受放在一起。先看见记录，再选择适合自己的节奏。")
                                 Text(model.isDemo ? "现在体验的是虚构样例，不需要登录，也不会上传健康信息。" : "无需登录即可在本机记录。健康、云同步与 AI 的用途分别由你决定。")
                             } else if step == 2 {
-                                Text("健康读取，单独由你决定").font(.title2)
+                                Text("健康读取，单独由你决定").font(.title2).foregroundStyle(SteadyTheme.primary)
                                 Text("读取体重、睡眠、步数和 Apple 运动分钟。原始样本留在设备，缺失不当作零。")
                                 if model.isDemo { Text("演示模式不会弹出健康授权。") }
                                 else {
@@ -165,8 +165,8 @@ private struct HealthReadPreview: View {
     var body: some View {
         if let latest {
             VStack(alignment: .leading, spacing: 8) {
-                Text("本机已有的苹果健康记录").font(.headline)
-                Text(latest.dayKey).font(.caption).foregroundStyle(.secondary)
+                Text("本机已有的苹果健康记录").font(.headline).foregroundStyle(SteadyTheme.primary)
+                Text(latest.dayKey).font(.caption).foregroundStyle(SteadyTheme.secondary)
                 if let steps = latest.steps { LabeledContent("步数", value: "\(steps.formatted()) 步") }
                 if let sleep = latest.sleepMinutes { LabeledContent("睡眠", value: "\(sleep / 60) 小时 \(sleep % 60) 分") }
                 if let active = latest.activeMinutes { LabeledContent("运动", value: "\(active) 分钟") }
@@ -176,7 +176,7 @@ private struct HealthReadPreview: View {
         } else {
             Text("尚未读到可显示的健康记录。")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(SteadyTheme.secondary)
         }
     }
 }
@@ -221,7 +221,7 @@ struct EmailLoginFields: View {
                     model.sendEmailCode(trimmedEmail, onSent: { codeSent = true })
                 }.disabled(trimmedEmail.isEmpty || model.busy != nil)
             } else {
-                Text("验证码已发送至 \(trimmedEmail)").font(.footnote).foregroundStyle(.secondary)
+                Text("验证码已发送至 \(trimmedEmail)").font(.footnote).foregroundStyle(SteadyTheme.secondary)
                 TextField("邮箱验证码", text: $code).keyboardType(.numberPad).textContentType(.oneTimeCode)
                     .accessibilityIdentifier("loginCode")
                 Button("验证并登录") { model.verifyEmailCode(trimmedEmail, code: code.trimmingCharacters(in: .whitespacesAndNewlines)) }

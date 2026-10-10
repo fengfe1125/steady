@@ -59,7 +59,7 @@ struct PreferenceFields: View {
         Section("可用时间与限制") {
             Stepper("每次 \(preferences.availableMinutes) 分钟", value: $preferences.availableMinutes, in: 10...90, step: 5)
             TextField("运动限制（如有，请填写）", text: $preferences.limitations, axis: .vertical)
-            Text("这不是医疗评估。有疼痛或运动限制时请先咨询专业人士。").font(.footnote).foregroundStyle(.secondary)
+            Text("这不是医疗评估。有疼痛或运动限制时请先咨询专业人士。").font(.footnote).foregroundStyle(SteadyTheme.secondary)
         }
     }
 }
@@ -83,7 +83,7 @@ struct DraftView: View {
                         VStack(alignment: .leading) {
                             Text(exercise.name)
                             TextField("动作说明", text: $exercise.prescription)
-                                .font(.subheadline).foregroundStyle(.secondary)
+                                .font(.subheadline).foregroundStyle(SteadyTheme.secondary)
                         }
                     }
                     Button("替换深蹲为坐站练习") {
@@ -173,7 +173,7 @@ struct PlansView: View {
                     ForEach(plan.sessions.sorted { $0.scheduledAt < $1.scheduledAt }) { session in
                         NavigationLink { WorkoutView(model: model, planID: plan.id, sessionID: session.id) } label: {
                             VStack(alignment: .leading, spacing: 5) {
-                                Text(session.scheduledAt, format: .dateTime.month().day().weekday()).font(.caption).foregroundStyle(.secondary)
+                                Text(session.scheduledAt, format: .dateTime.month().day().weekday()).font(.caption).foregroundStyle(SteadyTheme.secondary)
                                 Text("\(session.title) · \(session.minutes)分钟")
                                 if let feedback = session.feedback { Text(feedback.completed ? "已完成" : "已记录 · 未完成").font(.caption).foregroundStyle(.tint) }
                             }
@@ -215,23 +215,23 @@ struct WorkoutView: View {
             ModeBadge(isDemo: model.isDemo)
             if let session {
                 Text(session.scheduledAt, format: .dateTime.month().day().weekday()).font(.subheadline)
-                Text("\(session.minutes)分钟 · 按自己的节奏").font(.title2)
+                Text("\(session.minutes)分钟 · 按自己的节奏").font(.title2).foregroundStyle(SteadyTheme.primary)
                 ForEach(session.exercises) { exercise in
                     JournalCard {
-                        Text(exercise.name).font(.headline)
-                        Text(exercise.prescription).foregroundStyle(.secondary)
+                        Text(exercise.name).font(.headline).foregroundStyle(SteadyTheme.primary)
+                        Text(exercise.prescription).foregroundStyle(SteadyTheme.secondary)
                         if let lesson = EquipmentLessonID.matching(exerciseName: exercise.name) {
                             NavigationLink { EquipmentLessonView(lesson: lesson) } label: {
                                 Label("看动作示范", systemImage: "play.circle")
-                            }.accessibilityIdentifier("exerciseLesson")
+                            }.buttonStyle(.journalText).accessibilityIdentifier("exerciseLesson")
                         }
                     }
                 }
                 Text("训练建议不是医疗处方；出现不适请停止。").font(.footnote)
-                Button("调整日期与动作") { edit = true }
+                Button("调整日期与动作") { edit = true }.buttonStyle(.journalText)
                 PrimaryAction(title: "记录训练反馈") { feedback = true }.accessibilityIdentifier("recordFeedback")
                 if let f = session.feedback {
-                    JournalCard { Text(f.completed ? "已完成" : "未完成").font(.headline); Text("主观强度 \(f.perceivedEffort)/10"); Text(f.note) }
+                    JournalCard { Text(f.completed ? "已完成" : "未完成").font(.headline).foregroundStyle(SteadyTheme.primary); Text("主观强度 \(f.perceivedEffort)/10"); Text(f.note) }
                 }
             }
         }.journalSurface().navigationTitle(session?.title ?? "训练详情").navigationBarTitleDisplayMode(.inline)

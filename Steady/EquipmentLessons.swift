@@ -5,7 +5,7 @@ struct EquipmentLibraryView: View {
     @State private var selectedLesson: EquipmentLessonID?
     var body: some View {
         List {
-            Section { Text("先认识器材，再跟着步骤学。\n选择器械或哑铃动作，查看动作和细节图解。").foregroundStyle(.secondary) }
+            Section { Text("先认识器材，再跟着步骤学。\n选择器械或哑铃动作，查看动作和细节图解。").foregroundStyle(SteadyTheme.secondary) }
             ForEach(EquipmentLessonDefinition.groups, id: \.self) { group in
                 Section(group) {
                     ForEach(EquipmentLessonID.equipmentLibrary.filter { EquipmentLessonDefinition.lesson($0).group == group }) { lesson in
@@ -19,7 +19,7 @@ struct EquipmentLibraryView: View {
                                     .accessibilityHidden(true)
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(lesson.title).font(.headline)
-                                    Text(definition.subtitle).font(.subheadline).foregroundStyle(.secondary)
+                                    Text(definition.subtitle).font(.subheadline).foregroundStyle(SteadyTheme.secondary)
                                 }
                                 Spacer(minLength: 4)
                                 Image(systemName: "chevron.right").font(.footnote.weight(.semibold)).foregroundStyle(.tertiary)
@@ -28,7 +28,7 @@ struct EquipmentLibraryView: View {
                     }
                 }
             }
-            Section { Text("图解可以离线查看。器械先按机身说明调整；哑铃先选轻重量，确认握法、支撑和安全放回方式。").font(.footnote).foregroundStyle(.secondary) }
+            Section { Text("图解可以离线查看。器械先按机身说明调整；哑铃先选轻重量，确认握法、支撑和安全放回方式。").font(.footnote).foregroundStyle(SteadyTheme.secondary) }
         }.journalSurface().navigationTitle("健身房器材")
             .navigationDestination(item: $selectedLesson) { lesson in
                 EquipmentLessonView(lesson: lesson)
@@ -105,16 +105,16 @@ struct EquipmentLessonView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("先看一遍，再跟着学").font(.title2.weight(.semibold))
-                        Text(definition.subtitle).font(.subheadline).foregroundStyle(.secondary)
-                        Text(definition.structure).font(.footnote).foregroundStyle(.secondary)
+                        Text("先看一遍，再跟着学").font(.title2.weight(.semibold)).foregroundStyle(SteadyTheme.primary)
+                        Text(definition.subtitle).font(.subheadline).foregroundStyle(SteadyTheme.secondary)
+                        Text(definition.structure).font(.footnote).foregroundStyle(SteadyTheme.secondary)
                     }
                     VStack(alignment: .leading, spacing: 16) {
                         modeSelector
                         artwork
                         if player.mode == .motion, let muscles = muscleSummary {
                             Label(muscles, systemImage: "figure.strengthtraining.traditional")
-                                .font(.subheadline).foregroundStyle(.secondary)
+                                .font(.subheadline).foregroundStyle(SteadyTheme.secondary)
                                 .accessibilityIdentifier("lessonMuscles")
                         }
                         if player.mode == .motion { playbackControls }
@@ -178,9 +178,9 @@ struct EquipmentLessonView: View {
         VStack(alignment: .leading, spacing: 0) {
             if player.mode == .motion {
                 HStack { Text(definition.machine); Spacer(); Text(definition.viewLabel) }
-                    .font(.caption).foregroundStyle(.secondary).padding([.top, .horizontal], 16)
+                    .font(.caption).foregroundStyle(SteadyTheme.secondary).padding([.top, .horizontal], 16)
             } else if player.mode == .detail {
-                Text(definition.detailTitle).accessibilityIdentifier("lessonDetailTitle").font(.headline).padding([.top, .horizontal], 16)
+                Text(definition.detailTitle).accessibilityIdentifier("lessonDetailTitle").font(.headline).foregroundStyle(SteadyTheme.primary).padding([.top, .horizontal], 16)
             }
             if player.usesBundledAnatomy {
                 artworkCanvas.aspectRatio(1, contentMode: .fit)
@@ -192,7 +192,7 @@ struct EquipmentLessonView: View {
                     Text(player.phase).font(.subheadline.weight(.medium)).foregroundStyle(SteadyTheme.primary)
                         .accessibilityIdentifier("lessonPhase")
                     Spacer()
-                    Text(player.playing ? "轻点画面暂停" : "轻点画面播放").font(.caption).foregroundStyle(.secondary)
+                    Text(player.playing ? "轻点画面暂停" : "轻点画面播放").font(.caption).foregroundStyle(SteadyTheme.secondary)
                 }.padding([.bottom, .horizontal], 16)
             }
         }.background(SteadyTheme.soft, in: RoundedRectangle(cornerRadius: 24))
@@ -248,7 +248,7 @@ struct EquipmentLessonView: View {
                 Spacer(minLength: 8)
                 Text(String(format: "%.1f / 6s", player.time / 1000)).monospacedDigit()
                     .accessibilityIdentifier("lessonTime")
-            }.font(.caption).foregroundStyle(.secondary)
+            }.font(.caption).foregroundStyle(SteadyTheme.secondary)
         }
     }
 
@@ -265,7 +265,7 @@ struct EquipmentLessonView: View {
                     numberedNote(index + 1, definition.details[index].title, definition.details[index].detail)
                 }
             }
-            Text(definition.detailCaption).font(.footnote).foregroundStyle(.secondary)
+            Text(definition.detailCaption).font(.footnote).foregroundStyle(SteadyTheme.secondary)
         }.accessibilityElement(children: .contain).accessibilityIdentifier("lessonDetailNotes")
     }
 
@@ -274,8 +274,8 @@ struct EquipmentLessonView: View {
             Text("\(number)").font(.caption.weight(.semibold)).frame(width: 26, height: 26)
                 .background(SteadyTheme.soft, in: Circle()).foregroundStyle(SteadyTheme.primary)
             VStack(alignment: .leading, spacing: 4) {
-                Text(title).font(.subheadline.weight(.medium))
-                Text(detail).font(.footnote).foregroundStyle(.secondary)
+                Text(title).font(.subheadline.weight(.medium)).foregroundStyle(SteadyTheme.primary)
+                Text(detail).font(.footnote).foregroundStyle(SteadyTheme.secondary)
             }
         }.accessibilityElement(children: .combine)
     }
@@ -303,14 +303,14 @@ struct EquipmentLessonView: View {
 
     private func supplementaryNote(_ title: String, _ detail: String) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(title).font(.subheadline.weight(.medium))
-            Text(detail).font(.footnote).foregroundStyle(.secondary)
+            Text(title).font(.subheadline.weight(.medium)).foregroundStyle(SteadyTheme.primary)
+            Text(detail).font(.footnote).foregroundStyle(SteadyTheme.secondary)
         }.accessibilityElement(children: .combine)
     }
 
     private func guide(scroll: ScrollViewProxy) -> some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("跟着步骤看").font(.title3.weight(.semibold))
+            Text("跟着步骤看").font(.title3.weight(.semibold)).foregroundStyle(SteadyTheme.primary)
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: typeSize.isAccessibilitySize ? 2 : 4), spacing: 8) {
                 ForEach(0..<definition.steps.count, id: \.self) { index in
                     Button { selectStep(index); scrollToPlayer(scroll) } label: {
@@ -322,8 +322,8 @@ struct EquipmentLessonView: View {
                         .accessibilityIdentifier("lessonStep_\(index)")
                 }
             }
-            Text(step.title).font(.headline).accessibilityIdentifier("lessonStepTitle")
-            Text(step.text).font(.subheadline).foregroundStyle(.secondary)
+            Text(step.title).font(.headline).foregroundStyle(SteadyTheme.primary).accessibilityIdentifier("lessonStepTitle")
+            Text(step.text).font(.subheadline).foregroundStyle(SteadyTheme.secondary)
             ForEach(step.points, id: \.self) { point in
                 HStack(alignment: .top, spacing: 10) {
                     Text("·").foregroundStyle(SteadyTheme.primary)
@@ -331,10 +331,10 @@ struct EquipmentLessonView: View {
                 }
             }
             JournalCard {
-                Text("怎么确认？").font(.subheadline.weight(.medium))
-                Text(step.question).font(.subheadline).foregroundStyle(.secondary)
+                Text("怎么确认？").font(.subheadline.weight(.medium)).foregroundStyle(SteadyTheme.primary)
+                Text(step.question).font(.subheadline).foregroundStyle(SteadyTheme.secondary)
             }
-            Label(step.hint, systemImage: "info.circle").font(.footnote).foregroundStyle(.secondary)
+            Label(step.hint, systemImage: "info.circle").font(.footnote).foregroundStyle(SteadyTheme.secondary)
             HStack {
                 Button("上一步") { selectStep(stepIndex - 1); scrollToPlayer(scroll) }
                     .disabled(stepIndex == 0).frame(minHeight: 44)
@@ -360,7 +360,7 @@ struct EquipmentLessonView: View {
     private var selfCheck: some View {
         VStack(alignment: .leading, spacing: 16) {
             Divider()
-            Text("开始前，再确认一次").font(.title3.weight(.semibold))
+            Text("开始前，再确认一次").font(.title3.weight(.semibold)).foregroundStyle(SteadyTheme.primary)
             let items = definition.checks
             ForEach(items.indices, id: \.self) { index in
                 Button {
@@ -370,22 +370,22 @@ struct EquipmentLessonView: View {
                         Image(systemName: checks.contains(index) ? "checkmark.square.fill" : "square")
                             .font(.title2).foregroundStyle(SteadyTheme.primary)
                         VStack(alignment: .leading, spacing: 6) {
-                            Text(items[index].title).font(.subheadline.weight(.medium))
-                            Text(items[index].detail).font(.footnote).foregroundStyle(.secondary)
+                            Text(items[index].title).font(.subheadline.weight(.medium)).foregroundStyle(SteadyTheme.primary)
+                            Text(items[index].detail).font(.footnote).foregroundStyle(SteadyTheme.secondary)
                         }.frame(maxWidth: .infinity, alignment: .leading)
                     }.padding(.vertical, 4).frame(minHeight: 44)
                 }.buttonStyle(.plain).accessibilityValue(checks.contains(index) ? "已确认" : "未确认")
                     .accessibilityIdentifier("lessonCheck_\(index)")
             }
             Text("\(checks.count) / 3 已确认 · 这是自查，不是系统对姿势的判断")
-                .font(.caption).foregroundStyle(.secondary).accessibilityIdentifier("lessonCheckSummary")
+                .font(.caption).foregroundStyle(SteadyTheme.secondary).accessibilityIdentifier("lessonCheckSummary")
         }
     }
 
     private var sources: some View {
         VStack(alignment: .leading, spacing: 12) {
             Divider()
-            Text(definition.scope).font(.footnote).foregroundStyle(.secondary)
+            Text(definition.scope).font(.footnote).foregroundStyle(SteadyTheme.secondary)
             if !lesson.isArmSupplement { DisclosureGroup("教学参考") {
                 VStack(alignment: .leading, spacing: 14) {
                     ForEach(definition.references, id: \.url) { reference in
