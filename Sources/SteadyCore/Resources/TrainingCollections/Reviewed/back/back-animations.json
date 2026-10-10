@@ -1,0 +1,547 @@
+{
+  "collectionID": "tanchengyi-back",
+  "timeUnit": "seconds",
+  "animations": [
+    {
+      "lessonID": "back-walking",
+      "resource": "back-walking-native.html",
+      "durationSeconds": 10,
+      "steps": [
+        {
+          "title": "左脚承重",
+          "startSeconds": 0,
+          "endSeconds": 2.5,
+          "instruction": "左脚落地承重，右脚开始向前迈；右臂从前方自然回摆，肩颈放松。"
+        },
+        {
+          "title": "右脚迈出",
+          "startSeconds": 2.5,
+          "endSeconds": 5,
+          "instruction": "右脚继续向前并落地，左臂自然向前；步幅轻松，身体平稳换重心。"
+        },
+        {
+          "title": "右脚承重",
+          "startSeconds": 5,
+          "endSeconds": 7.5,
+          "instruction": "右脚落地承重，左脚开始向前迈；左臂从前方自然回摆，肩颈放松。"
+        },
+        {
+          "title": "左脚迈出",
+          "startSeconds": 7.5,
+          "endSeconds": 10,
+          "instruction": "左脚继续向前并落地，右臂自然向前；脚步左右交替，接着重复这一轮。"
+        }
+      ],
+      "evidence": {
+        "videoRange": null,
+        "record": "../evidence/lesson-evidence.md",
+        "verifiedPoints": [
+          "本项来自补充热身安排；原片没有规定这段有氧。"
+        ],
+        "timingOrigin": "原创示意节奏，非原视频速度或训练处方"
+      },
+      "timingMilliseconds": {
+        "effortStart": 1500,
+        "effortEnd": 4500,
+        "returnStart": 5500,
+        "returnEnd": 9500,
+        "duration": 10000
+      },
+      "detailExplanation": "图中编号\n① 一脚落地承重\n② 小步交替迈出\n③ 肩松，手臂自然摆\n\n浅红 · 协同：臀大肌、股直肌、腘绳肌、腓肠肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：小步、肩颈放松\n\n右图 · 错误示范：耸肩、甩臂过大\n\n调整方法：先降低速度和步幅，放松肩颈，双臂随脚步轻摆。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "臀大肌",
+        "股直肌",
+        "腘绳肌",
+        "腓肠肌"
+      ]
+    },
+    {
+      "lessonID": "back-roller",
+      "resource": "back-roller-native.html",
+      "durationSeconds": 10,
+      "steps": [
+        {
+          "title": "起始",
+          "startSeconds": 0,
+          "endSeconds": 1.5,
+          "instruction": "双膝着地，小臂支撑泡沫轴，躯干保持稳定。"
+        },
+        {
+          "title": "前推",
+          "startSeconds": 1.5,
+          "endSeconds": 4.5,
+          "instruction": "肩胛向前顶起，带动泡沫轴小幅前滚。"
+        },
+        {
+          "title": "检查",
+          "startSeconds": 4.5,
+          "endSeconds": 5.5,
+          "instruction": "确认髋部和整个身体没有一起前后滑动。"
+        },
+        {
+          "title": "回位",
+          "startSeconds": 5.5,
+          "endSeconds": 10,
+          "instruction": "控制肩部与小臂回到起始支撑，继续保持身体位置。"
+        }
+      ],
+      "evidence": {
+        "videoRange": {
+          "start": 116,
+          "end": 428
+        },
+        "record": "../evidence/lesson-evidence.md",
+        "verifiedPoints": [
+          "膝盖和小臂承重，手指展开。",
+          "原片强调肩部和肩胛活动，躯干重心保持稳定。"
+        ],
+        "timingOrigin": "原创示意节奏，非原视频速度或训练处方"
+      },
+      "timingMilliseconds": {
+        "effortStart": 1500,
+        "effortEnd": 4500,
+        "returnStart": 5500,
+        "returnEnd": 9500,
+        "duration": 10000
+      },
+      "detailExplanation": "图中编号\n① 双膝留在垫上\n② 小臂带轴小幅前滚\n③ 髋和躯干不前后滑\n\n红色 · 主要发力：前锯肌\n浅红 · 协同：斜方肌下束、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肩胛动，髋部不动\n\n右图 · 错误示范：整个人跟轴前滑\n\n调整方法：缩小前推距离，把髋部留在原位；保留双膝与小臂支撑。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "前锯肌"
+      ],
+      "secondaryMuscles": [
+        "斜方肌下束",
+        "腹直肌"
+      ]
+    },
+    {
+      "lessonID": "back-bench-support",
+      "resource": "back-bench-support-native.html",
+      "durationSeconds": 10,
+      "steps": [
+        {
+          "title": "肘部支撑",
+          "startSeconds": 0,
+          "endSeconds": 1.5,
+          "instruction": "双膝着地，肘部留在凳垫上，身体先稳定。"
+        },
+        {
+          "title": "屈肘",
+          "startSeconds": 1.5,
+          "endSeconds": 4.5,
+          "instruction": "前臂向上转动，双手靠近头部；肘支点保持。"
+        },
+        {
+          "title": "保持",
+          "startSeconds": 4.5,
+          "endSeconds": 5.5,
+          "instruction": "肩胛与躯干受控，按舒适范围停留。"
+        },
+        {
+          "title": "伸回",
+          "startSeconds": 5.5,
+          "endSeconds": 10,
+          "instruction": "前臂缓慢向前伸回，保持肘部支撑。"
+        }
+      ],
+      "evidence": {
+        "videoRange": {
+          "start": 428,
+          "end": 494
+        },
+        "record": "../evidence/lesson-evidence.md",
+        "verifiedPoints": [
+          "本项是凳支撑的跪姿练习，原片可见前臂转动；不增加器械负重。",
+          "原片允许肩部不舒服时减小动作或做静态支撑；重心后移是进阶提示。"
+        ],
+        "timingOrigin": "原创示意节奏，非原视频速度或训练处方"
+      },
+      "timingMilliseconds": {
+        "effortStart": 1500,
+        "effortEnd": 4500,
+        "returnStart": 5500,
+        "returnEnd": 9500,
+        "duration": 10000
+      },
+      "detailExplanation": "图中编号\n① 肘支点留在凳垫\n② 前臂向头部转动\n③ 双膝着地，躯干稳\n\n红色 · 主要发力：前锯肌\n浅红 · 协同：肱三头肌长头、肱二头肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肘固定，只转前臂\n\n右图 · 错误示范：肘部抬离凳垫\n\n调整方法：把肘放回垫面，缩小前臂屈伸范围；不舒服时改为小幅或静态支撑。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "前锯肌"
+      ],
+      "secondaryMuscles": [
+        "肱三头肌长头",
+        "肱二头肌"
+      ]
+    },
+    {
+      "lessonID": "back-straight-arm",
+      "resource": "back-straight-arm-native.html",
+      "durationSeconds": 10,
+      "steps": [
+        {
+          "title": "高位起始",
+          "startSeconds": 0,
+          "endSeconds": 1.5,
+          "instruction": "双手在身体前上方，肘部保持轻微弯曲。"
+        },
+        {
+          "title": "下压",
+          "startSeconds": 1.5,
+          "endSeconds": 4.5,
+          "instruction": "用肩部运动将附件带向身体前下方，肘角大体保持。"
+        },
+        {
+          "title": "检查",
+          "startSeconds": 4.5,
+          "endSeconds": 5.5,
+          "instruction": "确认没有后仰、挺胸或把动作变成反复屈伸肘。"
+        },
+        {
+          "title": "回位",
+          "startSeconds": 5.5,
+          "endSeconds": 10,
+          "instruction": "控制附件回到前上方，保持躯干稳定。"
+        }
+      ],
+      "evidence": {
+        "videoRange": {
+          "start": 494,
+          "end": 688
+        },
+        "record": "../evidence/lesson-evidence.md",
+        "verifiedPoints": [
+          "原片在11:28起说明它属于激活与正式动作之间的适应动作。",
+          "08:35–09:40 可见双手持长直杆，肘角大体保持，从前上方压向髋/大腿前再返回。",
+          "准备时先建立稳定支撑，再进行下压，避免后仰。"
+        ],
+        "timingOrigin": "原创示意节奏，非原视频速度或训练处方"
+      },
+      "timingMilliseconds": {
+        "effortStart": 1500,
+        "effortEnd": 4500,
+        "returnStart": 5500,
+        "returnEnd": 9500,
+        "duration": 10000
+      },
+      "detailExplanation": "图中编号\n① 肘角保留小弯曲\n② 长杆压向髋前\n③ 站稳，不后仰\n\n红色 · 主要发力：背阔肌\n浅红 · 协同：大圆肌、肱三头肌长头、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：肘角稳，向下压\n\n右图 · 错误示范：屈肘代替肩下压\n\n调整方法：减轻阻力，保留肘部小弯曲，让上臂带杆向髋前下压。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "背阔肌"
+      ],
+      "secondaryMuscles": [
+        "大圆肌",
+        "肱三头肌长头",
+        "腹直肌"
+      ]
+    },
+    {
+      "lessonID": "back-one-arm-row",
+      "resource": "back-one-arm-row-native.html",
+      "durationSeconds": 10,
+      "steps": [
+        {
+          "title": "前伸起始",
+          "startSeconds": 0,
+          "endSeconds": 1.5,
+          "instruction": "单手持把手向前伸，坐姿和躯干保持稳定。"
+        },
+        {
+          "title": "向后拉",
+          "startSeconds": 1.5,
+          "endSeconds": 4.5,
+          "instruction": "肘沿身侧向后带动，手柄拉向可控制的身侧位置。"
+        },
+        {
+          "title": "收紧",
+          "startSeconds": 4.5,
+          "endSeconds": 5.5,
+          "instruction": "保持动作质量，不用侧屈制造额外距离。"
+        },
+        {
+          "title": "受控回位",
+          "startSeconds": 5.5,
+          "endSeconds": 10,
+          "instruction": "手臂慢慢伸回，保持躯干和肩部控制。"
+        }
+      ],
+      "evidence": {
+        "videoRange": {
+          "start": 688,
+          "end": 1132
+        },
+        "record": "../evidence/lesson-evidence.md",
+        "verifiedPoints": [
+          "多次纠正侧屈，要求回程保持控制，把每次动作做好。",
+          "完成一侧后换到另一侧，保留同样的稳定要求。"
+        ],
+        "timingOrigin": "原创示意节奏，非原视频速度或训练处方"
+      },
+      "timingMilliseconds": {
+        "effortStart": 1500,
+        "effortEnd": 4500,
+        "returnStart": 5500,
+        "returnEnd": 9500,
+        "duration": 10000
+      },
+      "detailExplanation": "图中编号\n① 单手握柄，受控拉回\n② 肘沿身侧向后带\n③ 坐稳，不侧倒\n\n红色 · 主要发力：背阔肌\n浅红 · 协同：菱形肌、斜方肌中束、三角肌后束、肱二头肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：身体居中，单臂拉\n\n右图 · 错误示范：身体向一侧倒\n\n调整方法：减轻负荷，坐回中间；保留躯干位置，单臂受控拉回和伸出。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "背阔肌"
+      ],
+      "secondaryMuscles": [
+        "菱形肌",
+        "斜方肌中束",
+        "三角肌后束",
+        "肱二头肌"
+      ]
+    },
+    {
+      "lessonID": "back-neutral-pulldown",
+      "resource": "back-neutral-pulldown-native.html",
+      "durationSeconds": 10,
+      "steps": [
+        {
+          "title": "高位起始",
+          "startSeconds": 0,
+          "endSeconds": 1.5,
+          "instruction": "坐稳、双脚支撑，两手握同一附件的两端，在高位准备。"
+        },
+        {
+          "title": "肘向下",
+          "startSeconds": 1.5,
+          "endSeconds": 4.5,
+          "instruction": "双肘沿身体两侧向下带动整个附件，不追求把手拉得过低。"
+        },
+        {
+          "title": "检查",
+          "startSeconds": 4.5,
+          "endSeconds": 5.5,
+          "instruction": "保持肩部受控和身体角度，避免后仰把重量压下。"
+        },
+        {
+          "title": "伸回高位",
+          "startSeconds": 5.5,
+          "endSeconds": 10,
+          "instruction": "控制伸臂，将整个附件送回高位，保持肩颈与躯干控制。"
+        }
+      ],
+      "evidence": {
+        "videoRange": {
+          "start": 1132,
+          "end": 1753
+        },
+        "record": "../evidence/lesson-evidence.md",
+        "verifiedPoints": [
+          "单根高位钢索从中央连接同一框架，两手握两端。",
+          "原片说明稍作外旋，并提醒过度外旋可能受前臂活动限制。"
+        ],
+        "timingOrigin": "原创示意节奏，非原视频速度或训练处方"
+      },
+      "timingMilliseconds": {
+        "effortStart": 1500,
+        "effortEnd": 4500,
+        "returnStart": 5500,
+        "returnEnd": 9500,
+        "duration": 10000
+      },
+      "detailExplanation": "图中编号\n① 同一框架，中央单钢索\n② 肘向下，终点不过低\n③ 坐稳、双脚支撑\n\n红色 · 主要发力：背阔肌\n浅红 · 协同：大圆肌、斜方肌下束、肱二头肌、肱肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：停在可控位置\n\n右图 · 错误示范：压低附件、顶肩\n\n调整方法：减轻重量，先把下拉行程收回到肩部可控制的位置，双手自然对握。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "背阔肌"
+      ],
+      "secondaryMuscles": [
+        "大圆肌",
+        "斜方肌下束",
+        "肱二头肌",
+        "肱肌"
+      ]
+    },
+    {
+      "lessonID": "back-seated-row",
+      "resource": "back-seated-row-native.html",
+      "durationSeconds": 10,
+      "steps": [
+        {
+          "title": "稳定起始",
+          "startSeconds": 0,
+          "endSeconds": 1.5,
+          "instruction": "双脚蹬稳，双手向前持把手，先固定躯干角度。"
+        },
+        {
+          "title": "适度回拉",
+          "startSeconds": 1.5,
+          "endSeconds": 4.5,
+          "instruction": "肘部向后带动，将把手拉向身体前侧的可控位置。"
+        },
+        {
+          "title": "受控收紧",
+          "startSeconds": 4.5,
+          "endSeconds": 5.5,
+          "instruction": "保持肩胛稳定，保留适中的回拉幅度。"
+        },
+        {
+          "title": "伸出去",
+          "startSeconds": 5.5,
+          "endSeconds": 10,
+          "instruction": "控制手臂前伸，身体角度保持，继续完成下一次。"
+        }
+      ],
+      "evidence": {
+        "videoRange": {
+          "start": 1753,
+          "end": 2101
+        },
+        "record": "../evidence/lesson-evidence.md",
+        "verifiedPoints": [
+          "原片提示避免过多后缩，动作主要由肩部与手臂完成。",
+          "从侧面看身体位置保持稳定，不用后仰增加距离。"
+        ],
+        "timingOrigin": "原创示意节奏，非原视频速度或训练处方"
+      },
+      "timingMilliseconds": {
+        "effortStart": 1500,
+        "effortEnd": 4500,
+        "returnStart": 5500,
+        "returnEnd": 9500,
+        "duration": 10000
+      },
+      "detailExplanation": "图中编号\n① 并握中立 V 把手\n② 身体角度不变\n③ 双脚蹬住踏板\n\n红色 · 主要发力：背阔肌\n浅红 · 协同：大圆肌、肱二头肌、斜方肌中束、菱形肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：身体稳，适度回拉\n\n右图 · 错误示范：大幅后仰借力\n\n调整方法：坐回原来的角度并减轻负荷；肘向后带，不靠后倒或夸张夹背增加距离。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "背阔肌"
+      ],
+      "secondaryMuscles": [
+        "大圆肌",
+        "肱二头肌",
+        "斜方肌中束",
+        "菱形肌"
+      ]
+    },
+    {
+      "lessonID": "back-bent-arm-pulldown",
+      "resource": "back-bent-arm-pulldown-native.html",
+      "durationSeconds": 10,
+      "steps": [
+        {
+          "title": "高位准备",
+          "startSeconds": 0,
+          "endSeconds": 1.5,
+          "instruction": "非工作手握出线滑轮下方的同一立柱，工作手高位持把手、屈肘，先把躯干摆正。"
+        },
+        {
+          "title": "向侧下压",
+          "startSeconds": 1.5,
+          "endSeconds": 4.5,
+          "instruction": "保持出线侧同柱支撑，肩部带动工作臂向侧下方运动，肘腕姿态受控。"
+        },
+        {
+          "title": "短暂停顿",
+          "startSeconds": 4.5,
+          "endSeconds": 5.5,
+          "instruction": "在可控制的位置收紧，不用侧弯或后仰追求更深终点。"
+        },
+        {
+          "title": "回到高位",
+          "startSeconds": 5.5,
+          "endSeconds": 10,
+          "instruction": "控制回程，保持同柱支撑和握向，避免拉放时随意内外旋前臂。"
+        }
+      ],
+      "evidence": {
+        "videoRange": {
+          "start": 2101,
+          "end": 2580
+        },
+        "record": "../evidence/lesson-evidence.md",
+        "verifiedPoints": [
+          "35–43分钟为同一项动作的讲解、带练和换侧，不另拆一张重复卡。",
+          "原片40:30与40:39可见非工作手扶握出线滑轮下方的同一立柱，位于身体前侧；下压与回程保持支撑位置。",
+          "原片反复纠正侧屈、旋转和后仰；先调好姿势再拉。",
+          "原片提示不用追求向下的幅度，先完成受控路径。"
+        ],
+        "timingOrigin": "原创示意节奏，非原视频速度或训练处方"
+      },
+      "timingMilliseconds": {
+        "effortStart": 1500,
+        "effortEnd": 4500,
+        "returnStart": 5500,
+        "returnEnd": 9500,
+        "duration": 10000
+      },
+      "detailExplanation": "图中编号\n① 屈肘握把，肩带上臂下压\n② 另一手扶出线滑轮同柱\n③ 坐地屈膝，身体摆正\n\n红色 · 主要发力：背阔肌\n浅红 · 协同：大圆肌、斜方肌下束、肱二头肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：扶同柱，身体稳定\n\n右图 · 错误示范：后倒追求压深\n\n调整方法：先坐直并扶稳同一立柱；缩小下压幅度，保持屈肘与手腕姿态，再受控回高。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "背阔肌"
+      ],
+      "secondaryMuscles": [
+        "大圆肌",
+        "斜方肌下束",
+        "肱二头肌",
+        "腹直肌"
+      ]
+    },
+    {
+      "lessonID": "back-supported-scapula",
+      "resource": "back-supported-scapula-native.html",
+      "durationSeconds": 10,
+      "steps": [
+        {
+          "title": "贴垫起始",
+          "startSeconds": 0,
+          "endSeconds": 1.5,
+          "instruction": "坐稳，胸口贴垫，躯干保持位置。"
+        },
+        {
+          "title": "肩胛后缩",
+          "startSeconds": 1.5,
+          "endSeconds": 4.5,
+          "instruction": "控制肩胛向后收，肘角与手臂姿态大体保持。"
+        },
+        {
+          "title": "小停顿",
+          "startSeconds": 4.5,
+          "endSeconds": 5.5,
+          "instruction": "收紧时稍作停顿，不耸肩、不顶肩。"
+        },
+        {
+          "title": "受控回位",
+          "startSeconds": 5.5,
+          "endSeconds": 10,
+          "instruction": "肩胛控制回到起始位置，胸口继续贴垫。"
+        }
+      ],
+      "evidence": {
+        "videoRange": {
+          "start": 2580,
+          "end": 2868
+        },
+        "record": "../evidence/lesson-evidence.md",
+        "verifiedPoints": [
+          "先做受控的小幅后缩，再逐步改善幅度；不要用挺胸制造距离。",
+          "原片提示吸气时不要挺胸，保持躯干稳定。",
+          "保留原片最后的中背补充安排，采用姿势描述名称。"
+        ],
+        "timingOrigin": "原创示意节奏，非原视频速度或训练处方"
+      },
+      "timingMilliseconds": {
+        "effortStart": 1500,
+        "effortEnd": 4500,
+        "returnStart": 5500,
+        "returnEnd": 9500,
+        "duration": 10000
+      },
+      "detailExplanation": "图中编号\n① 胸口持续贴垫\n② 肩胛小幅后收、下沉\n③ 肘角保持，不大拉肘\n\n红色 · 主要发力：斜方肌中束、菱形肌\n浅红 · 协同：斜方肌下束、三角肌后束\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：胸贴垫，只小幅收肩胛\n\n右图 · 错误示范：挺腰、胸口离垫\n\n调整方法：让胸口重新贴住垫面，减小肩胛行程；肘角保持，吸气时也不挺胸。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "斜方肌中束",
+        "菱形肌"
+      ],
+      "secondaryMuscles": [
+        "斜方肌下束",
+        "三角肌后束"
+      ]
+    }
+  ]
+}

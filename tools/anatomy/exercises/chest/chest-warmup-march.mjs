@@ -1,0 +1,237 @@
+// Authored chest anatomy lesson. See anatomy-upgrade/report.md for source and browser evidence.
+export default {
+  "id": "chest-warmup-march",
+  "title": "轻松踏步",
+  "view": "side",
+  "poses": {
+    "base": {
+      "y": -192,
+      "arms": {
+        "near": {
+          "sh": 3,
+          "el": 14
+        },
+        "far": {
+          "sh": 3,
+          "el": 14
+        }
+      }
+    },
+    "stand": {
+      "act": 0.4
+    },
+    "liftN": {
+      "act": 0.65,
+      "legs": {
+        "near": {
+          "hip": 32,
+          "knee": 48
+        },
+        "far": {
+          "hip": 0,
+          "knee": 3
+        }
+      },
+      "arms": {
+        "far": {
+          "sh": 23,
+          "el": 25
+        },
+        "near": {
+          "sh": -15,
+          "el": 21
+        }
+      }
+    },
+    "liftF": {
+      "act": 0.65,
+      "legs": {
+        "far": {
+          "hip": 32,
+          "knee": 48
+        },
+        "near": {
+          "hip": 0,
+          "knee": 3
+        }
+      },
+      "arms": {
+        "near": {
+          "sh": 23,
+          "el": 25
+        },
+        "far": {
+          "sh": -15,
+          "el": 21
+        }
+      }
+    },
+    "start": {
+      "act": 0.4
+    },
+    "peak": {
+      "act": 0.65,
+      "legs": {
+        "near": {
+          "hip": 32,
+          "knee": 48
+        },
+        "far": {
+          "hip": 0,
+          "knee": 3
+        }
+      },
+      "arms": {
+        "far": {
+          "sh": 23,
+          "el": 25
+        },
+        "near": {
+          "sh": -15,
+          "el": 21
+        }
+      }
+    }
+  },
+  "track": {
+    "keys": [
+      {
+        "t": 0,
+        "pose": "stand"
+      },
+      {
+        "t": 600,
+        "pose": "stand"
+      },
+      {
+        "t": 1600,
+        "pose": "liftN"
+      },
+      {
+        "t": 2400,
+        "pose": "liftN"
+      },
+      {
+        "t": 3050,
+        "pose": "stand"
+      },
+      {
+        "t": 3300,
+        "pose": "stand"
+      },
+      {
+        "t": 4400,
+        "pose": "liftF"
+      },
+      {
+        "t": 5500,
+        "pose": "stand"
+      },
+      {
+        "t": 5900,
+        "pose": "stand"
+      }
+    ]
+  },
+  "muscles": {
+    "secondary": [
+      "iliopsoas",
+      "quads.rf",
+      "gastrocnemius"
+    ]
+  },
+  "labels": [
+    {
+      "muscle": "quads.rf@near",
+      "at": "tr",
+      "text": "全身升温",
+      "sub": "轻松踏步，左右交替"
+    }
+  ],
+  "detail": {
+    "pose": "liftN",
+    "ghost": "stand",
+    "legend": "bl",
+    "callouts": [
+      {
+        "n": 1,
+        "at": "legs.near.K",
+        "text": "小幅抬脚，轻轻落地",
+        "dx": 20,
+        "dy": 0
+      },
+      {
+        "n": 2,
+        "at": "arms.far.H",
+        "text": "手臂随对侧脚步轻摆",
+        "dx": 0,
+        "dy": -20
+      },
+      {
+        "n": 3,
+        "at": "shoulder",
+        "text": "肩部放松，呼吸自然",
+        "dx": 0,
+        "dy": -23
+      }
+    ]
+  },
+  "mistake": {
+    "good": "liftN",
+    "text": "猛抬膝、甩臂后仰",
+    "goodText": "小步轻摆，身体平稳",
+    "fix": "降低抬膝和摆臂幅度，保持可以轻松说话的速度。",
+    "camera": {
+      "side": 28
+    },
+    "pose": {
+      "lumbar": -12,
+      "thorax": -7,
+      "scapE": 8,
+      "legs": {
+        "near": {
+          "hip": 76,
+          "knee": 112
+        }
+      },
+      "arms": {
+        "far": {
+          "sh": 95,
+          "el": 15
+        },
+        "near": {
+          "sh": -52,
+          "el": 14
+        }
+      }
+    },
+    "marks": [
+      {
+        "at": "shoulder",
+        "type": "circle",
+        "r": 17
+      },
+      {
+        "at": "legs.near.K",
+        "type": "circle",
+        "r": 17
+      }
+    ],
+    "muscles": {
+      "primary": [
+        "trap.upper"
+      ],
+      "secondary": [
+        "iliopsoas",
+        "quads.rf"
+      ]
+    }
+  },
+  "dropManifestKeys": [
+    "injectedRuntimeResource",
+    "documentLayout",
+    "availableViews",
+    "defaultView",
+    "supportsSideSelection"
+  ]
+};

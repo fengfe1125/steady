@@ -1,0 +1,1180 @@
+{
+  "id": "functional-lower-limb",
+  "title": "下肢功能性训练",
+  "subtitle": "髋部活动、单腿控制与力量组合",
+  "author": "谭成义",
+  "sourceTitle": "下肢功能＋肌力训练计划",
+  "sourceURL": "https://www.douyin.com/video/7688311849762979057",
+  "durationSeconds": 1538,
+  "overview": "围绕关节位置感受、单腿支撑与身体姿势控制，串联功能与力量动作。按热身、正式训练、放松阅读，用分步动画学习动作；相邻变式不自动增加训练组数。",
+  "equipment": "垫子、固定长凳或支撑架、一对哑铃；最后一项需要能固定大腿的下拉机座位和腿垫。",
+  "trainingNote": "训练量为练习起点。一般练习提示：保持动作可控，推起或站起时呼气，回落时吸气；动作引起疼痛时停止。",
+  "sections": [
+    {
+      "id": "warmup",
+      "title": "热身",
+      "caption": "包含髋部活动与单腿控制。青蛙式和扶架旋转的变式分卡讲解，不代表额外训练组数。",
+      "lessons": [
+        {
+          "id": "functional-warmup-frog",
+          "title": "青蛙式髋部前后活动",
+          "summary": "宽跪并以前臂支撑，髋部做可控的前后移动。",
+          "equipment": "垫子或平整地面",
+          "origin": "video",
+          "videoRange": {
+            "start": 95,
+            "end": 130
+          },
+          "dosage": "组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。",
+          "frames": [
+            {
+              "resource": "functional-warmup-frog-0101",
+              "seconds": 101,
+              "caption": "宽跪、前臂支撑"
+            },
+            {
+              "resource": "functional-warmup-frog-0105",
+              "seconds": 105,
+              "caption": "青蛙式支撑准备"
+            },
+            {
+              "resource": "functional-warmup-frog-0116",
+              "seconds": 116,
+              "caption": "髋部后移"
+            }
+          ],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "跪距与支撑",
+              "detail": "双膝向两侧分开，前臂和手肘放在身体前方；膝部稳定贴地。"
+            },
+            {
+              "title": "观察身体",
+              "detail": "躯干朝向地面，先找到能支撑体重的姿势，再开始移动。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "起始姿势",
+              "detail": "宽跪、前臂撑地，髋部处于双膝之间。"
+            },
+            {
+              "title": "髋部后移",
+              "detail": "前臂与双膝保持支撑，髋部缓慢向后移动，配合骨盆前倾。"
+            },
+            {
+              "title": "末端观察",
+              "detail": "在能够控制的范围稍作停留，观察膝距、骨盆和腰背的相对位置。"
+            },
+            {
+              "title": "前移还原",
+              "detail": "髋部向前回到起始位置，配合骨盆后倾，再重复前后活动。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "动态活动",
+              "detail": "用往返移动来做髋部活动，并配合骨盆前后倾变化。"
+            },
+            {
+              "title": "支撑变式",
+              "detail": "也可以用手掌支撑；它是姿势变化，不表示必须另加一组。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充提醒 · 只折腰背",
+              "detail": "髋部前后移动时，避免只靠腰背弯曲制造幅度。"
+            },
+            {
+              "title": "补充提醒 · 硬撑大幅度",
+              "detail": "膝距与移动幅度以能稳定控制为准。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "补充：呼吸与幅度",
+              "detail": "活动过程中自然呼吸；以舒适、可控的幅度练习。此为一般动作学习提示。"
+            }
+          ],
+          "checks": [
+            "前臂与膝部稳定支撑",
+            "前后移动可控"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+            }
+          ]
+        },
+        {
+          "id": "functional-warmup-supported-frog",
+          "title": "支撑青蛙式髋内旋",
+          "summary": "保持宽跪与前臂支撑，双侧小腿与脚小幅抬起，膝部持续对地支撑。",
+          "equipment": "垫子或平整地面",
+          "origin": "video",
+          "videoRange": {
+            "start": 128,
+            "end": 296
+          },
+          "dosage": "组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。",
+          "frames": [
+            {
+              "resource": "functional-warmup-supported-frog-0131",
+              "seconds": 131,
+              "caption": "双膝贴地、小腿与脚抬起"
+            },
+            {
+              "resource": "functional-warmup-supported-frog-0146",
+              "seconds": 146,
+              "caption": "宽跪、前臂支撑"
+            },
+            {
+              "resource": "functional-warmup-supported-frog-0206",
+              "seconds": 206,
+              "caption": "单侧大幅抬脚的对比说明"
+            },
+            {
+              "resource": "functional-warmup-supported-frog-0221",
+              "seconds": 221,
+              "caption": "小幅抬脚位置，另一侧被遮挡"
+            }
+          ],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "建立宽跪支撑",
+              "detail": "以前臂和双膝支撑，膝部向地面用力，先稳定骨盆与躯干。"
+            },
+            {
+              "title": "骨盆位置",
+              "detail": "保持骨盆后倾的可控姿势，不靠整侧骨盆翻起增加抬脚高度。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "起始姿势",
+              "detail": "宽跪、前臂撑地，小腿与脚先落地。"
+            },
+            {
+              "title": "双侧抬脚",
+              "detail": "保持双膝对地支撑，两侧脚与小腿一起小幅抬起，形成髋内旋变化。"
+            },
+            {
+              "title": "末端控制",
+              "detail": "在小幅度内控制住膝部、骨盆和脚的位置。"
+            },
+            {
+              "title": "放脚还原",
+              "detail": "将双侧小腿与脚轻放回地面，躯干继续稳定。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "膝部是支点",
+              "detail": "膝部持续留在地面，与地面形成对抗；脚抬起而躯干仍有前臂支撑。"
+            },
+            {
+              "title": "双侧小幅度",
+              "detail": "比较单侧大幅变化与双侧小幅变化，采用双侧一起抬脚的方式。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充提醒 · 单侧大幅抬脚",
+              "detail": "单侧大幅变化只用于对比；学习双侧小幅抬脚时保持骨盆稳定。"
+            },
+            {
+              "title": "补充提醒 · 用力甩脚",
+              "detail": "控制抬起与放下，不追求抬脚高度。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "补充：呼吸",
+              "detail": "自然呼吸，不为追求抬脚高度屏气。"
+            }
+          ],
+          "checks": [
+            "双膝持续对地支撑",
+            "双侧小幅抬脚时骨盆可控"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+            }
+          ]
+        },
+        {
+          "id": "functional-warmup-lunge-control",
+          "title": "分腿位侧走与摆臂",
+          "summary": "前后分腿，小步向侧方走动并回位，摆臂时保持躯干位置。",
+          "equipment": "平整防滑地面",
+          "origin": "video",
+          "videoRange": {
+            "start": 296,
+            "end": 416
+          },
+          "dosage": "组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。",
+          "frames": [
+            {
+              "resource": "functional-warmup-lunge-control-0311",
+              "seconds": 311,
+              "caption": "前后分腿与骨盆位置"
+            },
+            {
+              "resource": "functional-warmup-lunge-control-0341",
+              "seconds": 341,
+              "caption": "步伐变化"
+            },
+            {
+              "resource": "functional-warmup-lunge-control-0356",
+              "seconds": 356,
+              "caption": "摆动时保持躯干稳定"
+            }
+          ],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "前后分腿",
+              "detail": "一脚在前、一脚在后，脚尖尽量朝前；身体上半部保持略偏后的可控位置。"
+            },
+            {
+              "title": "先站稳",
+              "detail": "前后脚踩稳，先确认能维持分腿姿势。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "起始姿势",
+              "detail": "进入前后分腿位，身体上半部不向前抢。"
+            },
+            {
+              "title": "小步侧走",
+              "detail": "保持前后脚的关系，小步向侧方移动；可配合双臂摆动。"
+            },
+            {
+              "title": "控制躯干",
+              "detail": "侧走与摆臂时维持躯干位置，注意后脚尖朝前。"
+            },
+            {
+              "title": "回走换侧",
+              "detail": "用小步返回起点，换另一脚在前重复。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "躯干控制",
+              "detail": "摆动过程中躯干尽量不要动。"
+            },
+            {
+              "title": "观察脚向",
+              "detail": "注意脚容易出现外八变化。"
+            },
+            {
+              "title": "小步往返",
+              "detail": "保持分腿位侧走，再原路回位。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充提醒 · 脚尖越走越外",
+              "detail": "每次回位重新检查脚的朝向，避免不自觉外转。"
+            },
+            {
+              "title": "补充提醒 · 躯干抢先摆动",
+              "detail": "先缩小步幅，让重心变化保持可控。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "补充：呼吸",
+              "detail": "保持自然呼吸；先用小步幅熟悉控制。"
+            }
+          ],
+          "checks": [
+            "脚步变化时躯干稳定",
+            "左右侧都能控制分腿姿势"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+            }
+          ]
+        },
+        {
+          "id": "functional-warmup-supported-rotation",
+          "title": "扶架单腿髋旋转",
+          "summary": "一手扶稳，单腿支撑并做髋部旋转；身体与抬起腿一起转开和回收。",
+          "equipment": "稳固的架或凳面",
+          "origin": "video",
+          "videoRange": {
+            "start": 416,
+            "end": 695
+          },
+          "dosage": "组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。",
+          "frames": [
+            {
+              "resource": "functional-warmup-supported-rotation-0431",
+              "seconds": 431,
+              "caption": "扶架、分腿准备"
+            },
+            {
+              "resource": "functional-warmup-supported-rotation-0446",
+              "seconds": 446,
+              "caption": "单腿支撑与身体前倾"
+            },
+            {
+              "resource": "functional-warmup-supported-rotation-0461",
+              "seconds": 461,
+              "caption": "躯干和髋部转开"
+            },
+            {
+              "resource": "functional-warmup-supported-rotation-0551",
+              "seconds": 551,
+              "caption": "向外转开的姿势"
+            }
+          ],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "选稳固支撑",
+              "detail": "一手扶固定支撑，支撑脚踩稳地面。"
+            },
+            {
+              "title": "髋铰链位置",
+              "detail": "另一腿抬向后方，身体从髋部前倾；支撑手帮助保持平衡。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "起始姿势",
+              "detail": "单腿踩地、一手扶稳，另一腿抬起，躯干从髋部前倾。"
+            },
+            {
+              "title": "向内转动",
+              "detail": "保持支撑脚与支撑手位置，让身体向一侧转动；眼睛跟随手指方向。"
+            },
+            {
+              "title": "向外转开",
+              "detail": "先回正，再让身体向另一侧转开，抬起腿保持受控。"
+            },
+            {
+              "title": "回正还原",
+              "detail": "回到稳定的前倾姿势，放下抬起腿，再换另一侧。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "支点不变",
+              "detail": "支撑手和踩地脚提供稳定支点。"
+            },
+            {
+              "title": "腰背控制",
+              "detail": "不要弯腰；转动要与髋部姿势配合。"
+            },
+            {
+              "title": "视线跟随手指",
+              "detail": "转开时眼睛跟随伸出的手指方向，观察身体姿势变化。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充提醒 · 只扭腰",
+              "detail": "保持扶手和单腿支撑，不要用弯腰代替身体转体；骨盆可随动作自然转动。"
+            },
+            {
+              "title": "补充提醒 · 失去脚底支撑",
+              "detail": "先减小旋转幅度，维持站立脚的稳定。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "阻力变化",
+              "detail": "讲解中提到可加弹力带阻力，但未实际展示绑带与锚点；本课先学习无带扶架版本。"
+            },
+            {
+              "title": "补充：旋转幅度",
+              "detail": "以舒适、可控范围练习；不强压到末端。"
+            },
+            {
+              "title": "补充：呼吸",
+              "detail": "缓慢转动时保持自然呼吸。"
+            }
+          ],
+          "checks": [
+            "支撑物不移动",
+            "前倾与旋转均可控"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "title": "正式训练",
+      "caption": "按动作次序学习：臀推、弓步蹲推、硬拉、交替弓步，再看坐姿单臂推举与躯干控制。",
+      "lessons": [
+        {
+          "id": "functional-single-leg-hip-thrust",
+          "title": "长凳单腿臀推 · 跳起落地",
+          "summary": "上背靠凳，单腿臀推配合小幅跳起；落地先稳住，再缓慢降髋。",
+          "equipment": "固定长凳",
+          "origin": "video",
+          "videoRange": {
+            "start": 695,
+            "end": 860
+          },
+          "dosage": "一侧做 3 组、每组 12 次，然后换侧；可以跳得更低或不跳，组间充分休息。",
+          "frames": [
+            {
+              "resource": "functional-single-leg-hip-thrust-0745",
+              "seconds": 745,
+              "caption": "上背靠凳、双脚准备"
+            },
+            {
+              "resource": "functional-single-leg-hip-thrust-0755",
+              "seconds": 755,
+              "caption": "单脚支撑与抬膝"
+            },
+            {
+              "resource": "functional-single-leg-hip-thrust-0765",
+              "seconds": 765,
+              "caption": "髋部抬高与落脚变化"
+            },
+            {
+              "resource": "functional-single-leg-hip-thrust-0815",
+              "seconds": 815,
+              "caption": "换侧准备"
+            }
+          ],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "固定凳面",
+              "detail": "上背靠在稳定凳缘，脚放在身体前方；先确认凳子不会滑动。"
+            },
+            {
+              "title": "明确两条腿",
+              "detail": "一脚留地承担支撑，另一腿屈髋抬膝。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "起始支撑",
+              "detail": "上背靠凳，支撑脚踩稳，另一腿抬起。"
+            },
+            {
+              "title": "控制下沉",
+              "detail": "支撑腿屈曲，骨盆向下移动，为伸髋发力做准备。"
+            },
+            {
+              "title": "伸髋跳起",
+              "detail": "支撑腿伸髋发力，脚短暂离地；抬起腿的位置尽量保持。"
+            },
+            {
+              "title": "落地先稳住",
+              "detail": "支撑脚落地，先停在能控制的高位支撑姿势。"
+            },
+            {
+              "title": "缓慢降髋",
+              "detail": "落地稳定后，再缓慢降低骨盆，准备下一次；完成后换侧。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "上背支撑",
+              "detail": "凳缘支撑上背，骨盆随伸髋升降。"
+            },
+            {
+              "title": "自由腿保持抬起",
+              "detail": "非支撑腿尽量保持抬膝位置；落地和慢降仍由同一支撑脚承重。"
+            },
+            {
+              "title": "落地次序",
+              "detail": "落地后先支撑，再慢慢下降，不能落地立刻塌下。"
+            },
+            {
+              "title": "简化版本",
+              "detail": "可以跳得更低或完全不跳；无跳版仍做单腿臀推。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充提醒 · 落地立即塌下",
+              "detail": "先控制住落地支撑姿势，再慢慢降髋。"
+            },
+            {
+              "title": "补充提醒 · 顶端折腰",
+              "detail": "上推来自髋部伸展，避免用腰背后仰补高度。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "补充：呼吸",
+              "detail": "用一般力量训练的呼吸方法：上推时呼气，回落时吸气。"
+            }
+          ],
+          "checks": [
+            "凳子与上背支撑稳定",
+            "先能控制无跳版，再选择跳起变化"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+            }
+          ]
+        },
+        {
+          "id": "functional-dumbbell-lunge-press",
+          "title": "双哑铃弓步蹲推",
+          "summary": "双铃先到肩前架位，向前弓步时配合过顶推举，再回位换腿。",
+          "equipment": "两只哑铃、足够迈步的空间",
+          "origin": "video",
+          "videoRange": {
+            "start": 860,
+            "end": 1095
+          },
+          "dosage": "本项共 12 次；两个动作连接算一轮、共 3 轮，轮间休息。负荷和休息按自己的情况调整。",
+          "frames": [
+            {
+              "resource": "functional-dumbbell-lunge-press-0875",
+              "seconds": 875,
+              "caption": "双哑铃由两侧准备"
+            },
+            {
+              "resource": "functional-dumbbell-lunge-press-0885",
+              "seconds": 885,
+              "caption": "肩前持铃"
+            },
+            {
+              "resource": "functional-dumbbell-lunge-press-0895",
+              "seconds": 895,
+              "caption": "交替弓步推举"
+            },
+            {
+              "resource": "functional-dumbbell-lunge-press-0925",
+              "seconds": 925,
+              "caption": "分腿位与躯干中立"
+            }
+          ],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "双手握法",
+              "detail": "每手持一只哑铃，握住握杆；先在身体两侧稳住，再提至双肩前方。"
+            },
+            {
+              "title": "架位与空间",
+              "detail": "双铃靠近肩前，前后留出迈步空间。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "起始架位",
+              "detail": "双脚站稳，两只哑铃放在肩前。"
+            },
+            {
+              "title": "迈步与推举",
+              "detail": "一脚向前进入弓步，同时双臂把哑铃向头顶推起。"
+            },
+            {
+              "title": "分腿位控制",
+              "detail": "在分腿位控制躯干和双铃的位置，避免摇晃。"
+            },
+            {
+              "title": "回架位并收步",
+              "detail": "双铃回到肩前，蹬地收回站姿，再换另一腿。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "肩前架位",
+              "detail": "把哑铃放在肩膀前面。"
+            },
+            {
+              "title": "躯干中立",
+              "detail": "躯干保持中立位。"
+            },
+            {
+              "title": "拾铃变式",
+              "detail": "相邻示范还出现从地面拾起双铃的准备，随后仍配合弓步蹲推；归入本课。"
+            },
+            {
+              "title": "难度变化",
+              "detail": "先学徒手弓步，再持铃弓步；起身时推举较容易，下蹲同时推举较难。主动画展示下蹲同时推举的版本。"
+            },
+            {
+              "title": "速度选择",
+              "detail": "可以做得偏快，但动作不熟练时先慢慢做。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充提醒 · 过顶时大幅折腰",
+              "detail": "检查肋骨与骨盆位置，减轻重量来保持躯干控制。"
+            },
+            {
+              "title": "补充提醒 · 迈步时碰铃",
+              "detail": "肩前与过顶路径留出空间，握稳双铃。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "补充：呼吸",
+              "detail": "推起时呼气，双铃回落时吸气；先采用能保持动作控制的重量。"
+            }
+          ],
+          "checks": [
+            "双铃握稳、迈步空间足够",
+            "分腿与推举时躯干可控"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+            }
+          ]
+        },
+        {
+          "id": "functional-dumbbell-romanian-deadlift",
+          "title": "双哑铃罗马尼亚硬拉",
+          "summary": "双铃贴近腿部，髋向后移，再以伸髋回到站立。",
+          "equipment": "两只哑铃",
+          "origin": "video",
+          "videoRange": {
+            "start": 1095,
+            "end": 1187
+          },
+          "dosage": "组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。",
+          "frames": [
+            {
+              "resource": "functional-dumbbell-romanian-deadlift-1105",
+              "seconds": 1105,
+              "caption": "髋部后移、双铃下放"
+            },
+            {
+              "resource": "functional-dumbbell-romanian-deadlift-1135",
+              "seconds": 1135,
+              "caption": "站立还原"
+            },
+            {
+              "resource": "functional-dumbbell-romanian-deadlift-1145",
+              "seconds": 1145,
+              "caption": "髋铰链变化"
+            },
+            {
+              "resource": "functional-dumbbell-romanian-deadlift-1155",
+              "seconds": 1155,
+              "caption": "回到站姿与收紧提示"
+            }
+          ],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "并排站稳",
+              "detail": "双脚采用自然的并排站距，脚尖朝前；每手握一只哑铃，双铃靠近大腿前侧或两侧。"
+            },
+            {
+              "title": "建立髋铰链",
+              "detail": "两侧膝部微屈，躯干与骨盆保持可控关系；双脚继续踩稳。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "站立准备",
+              "detail": "双脚踩稳，双铃靠近腿部。"
+            },
+            {
+              "title": "向后送髋",
+              "detail": "髋部向后移动，躯干随之前倾，双铃沿腿部下放。"
+            },
+            {
+              "title": "底部控制",
+              "detail": "在能控制的幅度停下，双铃保持靠近腿部。"
+            },
+            {
+              "title": "伸髋站起",
+              "detail": "髋部向前回到站姿，双铃跟随身体还原。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "髋部移动",
+              "detail": "画面展示髋向后移、再伸髋站起。"
+            },
+            {
+              "title": "可缩小幅度",
+              "detail": "可以选择更小的幅度。"
+            },
+            {
+              "title": "起身控制",
+              "detail": "起身时收紧、保持膝的位置，避免向前顶膝；完整呼吸口令另列补充。"
+            },
+            {
+              "title": "足底参与",
+              "detail": "足弓与足底参与力量传递；站起时继续维持脚底支撑。"
+            },
+            {
+              "title": "动作组合",
+              "detail": "可与下一项交替弓步连接为超级组；疲劳时允许拆开或减重。本组合次数、轮数和休息未明确。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充提醒 · 双铃离腿太远",
+              "detail": "维持靠近腿部的下放路径，避免用肩臂远举重量。"
+            },
+            {
+              "title": "补充提醒 · 起身时过度后仰",
+              "detail": "回到站立即可，不继续向后折腰。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "补充：呼吸",
+              "detail": "站起时呼气，下放时吸气。"
+            }
+          ],
+          "checks": [
+            "双铃路径靠近身体",
+            "髋铰链和站起均可控"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+            }
+          ]
+        },
+        {
+          "id": "functional-alternating-lunge",
+          "title": "交替弓步蹲 · 手臂变化",
+          "summary": "左右交替迈步，控制分腿位；手臂位置和负重用于改变动作难度。",
+          "equipment": "平整地面；哑铃为可选变式",
+          "origin": "video",
+          "videoRange": {
+            "start": 1187,
+            "end": 1380
+          },
+          "dosage": "组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。",
+          "frames": [
+            {
+              "resource": "functional-alternating-lunge-1225",
+              "seconds": 1225,
+              "caption": "持铃在两侧的弓步"
+            },
+            {
+              "resource": "functional-alternating-lunge-1235",
+              "seconds": 1235,
+              "caption": "不用重量的选择"
+            },
+            {
+              "resource": "functional-alternating-lunge-1245",
+              "seconds": 1245,
+              "caption": "徒手弓步"
+            },
+            {
+              "resource": "functional-alternating-lunge-1305",
+              "seconds": 1305,
+              "caption": "手臂上举的姿势"
+            }
+          ],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "先学徒手版",
+              "detail": "双脚站稳，双手自然放在身体两侧；前方留出迈步空间。"
+            },
+            {
+              "title": "选择手臂位置",
+              "detail": "先用能控制的手臂位置，之后可尝试双手上举及哑铃变化。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "站立准备",
+              "detail": "双脚站稳，躯干保持可控。"
+            },
+            {
+              "title": "迈步下蹲",
+              "detail": "一脚向前迈出，两膝弯曲进入弓步位。"
+            },
+            {
+              "title": "分腿位控制",
+              "detail": "在分腿位观察躯干与骨盆，不随手臂位置大幅摇晃。"
+            },
+            {
+              "title": "收步换腿",
+              "detail": "蹬地收回站姿，再换另一腿重复。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "可以不用重量",
+              "detail": "可以选择不用重量。"
+            },
+            {
+              "title": "手臂位置变化",
+              "detail": "手在不同位置时，维持身体姿势的难度不同。"
+            },
+            {
+              "title": "推举变化",
+              "detail": "持双铃接推举的变化请对照前面的『双哑铃弓步蹲推』。"
+            },
+            {
+              "title": "动作组合",
+              "detail": "可接在罗马尼亚硬拉后做超级组，疲劳时可拆开或减重；这组组合的轮数未明确。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充提醒 · 失稳还继续加难度",
+              "detail": "先减小步幅或回到徒手、手臂放低的版本。"
+            },
+            {
+              "title": "补充提醒 · 只看负重量",
+              "detail": "先观察能否维持身体姿势，再选择手臂位置与重量。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "补充：呼吸",
+              "detail": "起身时呼气，下蹲时吸气，保持动作可控。"
+            }
+          ],
+          "checks": [
+            "能够控制左右分腿位",
+            "收步换侧不失去平衡"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+            }
+          ]
+        },
+        {
+          "id": "functional-seated-dumbbell-press",
+          "title": "后仰单臂推举与躯干旋转",
+          "summary": "腿垫固定下肢，保持躯干后仰，单手持独立哑铃推举并配合旋转。",
+          "equipment": "一只哑铃、能固定大腿的高位下拉机座位与腿垫",
+          "origin": "video",
+          "videoRange": {
+            "start": 1380,
+            "end": 1441
+          },
+          "dosage": "每侧约 10–12 次、3 组；重量和休息按自己的情况调整。",
+          "frames": [
+            {
+              "resource": "functional-seated-dumbbell-press-1395",
+              "seconds": 1395,
+              "caption": "独立哑铃放在身体前侧"
+            },
+            {
+              "resource": "functional-seated-dumbbell-press-1405",
+              "seconds": 1405,
+              "caption": "坐位与握铃准备"
+            },
+            {
+              "resource": "functional-seated-dumbbell-press-1415",
+              "seconds": 1415,
+              "caption": "单臂向上推举"
+            },
+            {
+              "resource": "functional-seated-dumbbell-press-1425",
+              "seconds": 1425,
+              "caption": "躯干随推举发生变化"
+            }
+          ],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "腿垫固定",
+              "detail": "坐在下拉机座位上，腿垫切实固定大腿，双脚放在身体前方。先卡稳双腿。"
+            },
+            {
+              "title": "单手握铃",
+              "detail": "握住独立哑铃，先放在身体前侧、肩前附近。哑铃不与机器连接。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "固定与后仰",
+              "detail": "先用腿垫固定下肢，再将躯干后仰到可控位置，哑铃放在身体前侧。"
+            },
+            {
+              "title": "单臂推举与旋转",
+              "detail": "维持后仰支撑，单臂把哑铃向上推起，躯干配合旋转。"
+            },
+            {
+              "title": "末端控制",
+              "detail": "控制后仰姿势和推举末端，观察躯干旋转与上肢位置。"
+            },
+            {
+              "title": "回落还原",
+              "detail": "哑铃缓慢回到身体前侧，完成一侧后换另一侧；结束时先收回后仰姿势再离开座位。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "下肢固定",
+              "detail": "下拉机提供座位与腿垫固定；双腿必须卡稳。"
+            },
+            {
+              "title": "保持后仰",
+              "detail": "身体后仰后维持支撑姿势，单臂推举再加入旋转。"
+            },
+            {
+              "title": "实际器械",
+              "detail": "手里是独立哑铃，机器拉杆没有被拉动。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "补充提醒 · 大腿没固定就后仰",
+              "detail": "先确认腿垫切实固定大腿；缺少这项支撑时不要做后仰动作。"
+            },
+            {
+              "title": "补充提醒 · 重量拉着身体失控",
+              "detail": "先减轻重量和幅度，保持躯干与哑铃的控制。"
+            }
+          ],
+          "supplements": [
+            {
+              "title": "补充：负荷与幅度",
+              "detail": "采用能控制的负荷和旋转幅度；一般负荷建议参考 Mayo Clinic。"
+            },
+            {
+              "title": "补充：呼吸",
+              "detail": "推起时呼气，回落时吸气。"
+            }
+          ],
+          "checks": [
+            "腿垫切实固定大腿，脚在前方",
+            "能够保持后仰姿势并控制哑铃回落"
+          ],
+          "references": [
+            {
+              "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+              "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cooldown",
+      "title": "放松",
+      "caption": "补充内容。先慢走，让呼吸逐渐平稳，再做舒适范围内的下肢拉伸；以下动作与时长均另列来源。",
+      "lessons": [
+        {
+          "id": "functional-cooldown-walk",
+          "title": "逐步慢走",
+          "summary": "逐渐减速，放松双臂，让呼吸慢慢平稳。",
+          "equipment": "平坦、没有障碍的步行空间",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "补充建议：逐渐减慢步速，持续 5–10 分钟；依据 American Heart Association 的放松建议。",
+          "frames": [],
+          "illustration": "walking",
+          "preparation": [
+            {
+              "title": "选好路线",
+              "detail": "在平坦空间走动，目视前方，双臂自然放松。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "保持走动",
+              "detail": "完成正式训练后，先用轻松步速继续行走。"
+            },
+            {
+              "title": "逐渐减速",
+              "detail": "缩小步幅、放慢频率，双臂随步伐自然摆动。"
+            },
+            {
+              "title": "让呼吸平稳",
+              "detail": "自然呼吸，给身体逐渐恢复的时间。"
+            },
+            {
+              "title": "结束走动",
+              "detail": "在完成这段慢走后，再开始舒适范围内的拉伸。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "逐步降低强度",
+              "detail": "动画展示轻松步行；这一步不需要跑跳或加速。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "急着停下来",
+              "detail": "训练后留出逐步减速的过程。"
+            }
+          ],
+          "supplements": [],
+          "checks": [
+            "脚下平坦、没有障碍",
+            "能保持轻松步速和自然呼吸"
+          ],
+          "references": [
+            {
+              "title": "American Heart Association · Warm Up, Cool Down",
+              "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/warm-up-cool-down"
+            }
+          ]
+        },
+        {
+          "id": "functional-cooldown-calf-stretch",
+          "title": "扶墙小腿拉伸",
+          "summary": "前腿微屈，后腿伸直、足跟贴地，左右分别保持。",
+          "equipment": "墙面或稳固椅背",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "补充建议：每侧保持 15–20 秒；依据 NHS 运动后小腿拉伸步骤。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "找到支撑",
+              "detail": "面对墙面，双手轻扶；一脚向前迈出，另一脚留在后方。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "前后站好",
+              "detail": "前腿轻轻屈膝，后腿保持伸直。"
+            },
+            {
+              "title": "缓慢前移",
+              "detail": "身体轻微前倾，让后足跟保持贴地。"
+            },
+            {
+              "title": "舒适保持",
+              "detail": "在舒适的牵拉感下保持 15–20 秒，正常呼吸。"
+            },
+            {
+              "title": "放松换侧",
+              "detail": "缓慢回到站姿，换另一条腿重复。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "观察后足跟",
+              "detail": "后腿伸直，后足跟贴地；需要时借助墙面或椅背维持平衡。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "弹震或硬压",
+              "detail": "保持温和、稳定的牵拉；不要上下弹动，也不要强压到疼痛。"
+            }
+          ],
+          "supplements": [],
+          "checks": [
+            "支撑物稳固",
+            "牵拉感舒适，后足跟能保持贴地"
+          ],
+          "references": [
+            {
+              "title": "NHS · How to stretch after exercising",
+              "url": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/"
+            },
+            {
+              "title": "American Heart Association · Stretching during cool down",
+              "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/warm-up-cool-down"
+            }
+          ]
+        },
+        {
+          "id": "functional-cooldown-hamstring-stretch",
+          "title": "仰卧大腿后侧拉伸",
+          "summary": "一脚着地，双手扶另一腿膝下后方，缓慢牵拉大腿后侧。",
+          "equipment": "平整地面和垫子",
+          "origin": "supplemental",
+          "videoRange": null,
+          "dosage": "补充建议：每侧保持 15–20 秒；依据 NHS 运动后大腿后侧拉伸步骤。",
+          "frames": [],
+          "illustration": null,
+          "preparation": [
+            {
+              "title": "仰卧准备",
+              "detail": "仰卧在垫子上，一侧膝盖弯曲、脚掌贴地，另一条腿向上抬起。"
+            }
+          ],
+          "steps": [
+            {
+              "title": "扶住腿后",
+              "detail": "双手扶抬起那条腿的膝盖下方、腿后侧。"
+            },
+            {
+              "title": "轻轻靠近",
+              "detail": "保持抬起的腿伸直，缓慢向躯干方向拉近；另一脚继续贴地。"
+            },
+            {
+              "title": "舒适保持",
+              "detail": "在舒适幅度保持 15–20 秒，保持自然呼吸。"
+            },
+            {
+              "title": "缓慢还原",
+              "detail": "轻轻放下这条腿，再换另一侧。"
+            }
+          ],
+          "cues": [
+            {
+              "title": "保持温和牵拉",
+              "detail": "双手扶腿后，另一侧脚掌保持着地；幅度以舒适为准。"
+            }
+          ],
+          "mistakes": [
+            {
+              "title": "拉得太急",
+              "detail": "缓慢进入和退出姿势，避免弹动或强拉到疼痛。"
+            }
+          ],
+          "supplements": [],
+          "checks": [
+            "垫子平整，仰卧稳定",
+            "牵拉感舒适，能保持自然呼吸"
+          ],
+          "references": [
+            {
+              "title": "NHS · How to stretch after exercising",
+              "url": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/"
+            },
+            {
+              "title": "American Heart Association · Stretching during cool down",
+              "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/warm-up-cool-down"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Mayo Clinic · 重量训练的动作、呼吸和负荷建议",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842?p=1"
+    },
+    {
+      "title": "NHS · How to stretch after exercising",
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/"
+    },
+    {
+      "title": "American Heart Association · Stretching during cool down",
+      "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/warm-up-cool-down"
+    }
+  ]
+}

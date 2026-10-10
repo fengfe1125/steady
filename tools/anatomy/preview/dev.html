@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anatomy dev</title>
+<style>
+body{margin:0;background:#f6f8f2;font:14px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:#2c4633}
+html[data-dark="true"] body{background:#151c18;color:#e3ecdf}
+.bar{display:flex;gap:10px;align-items:center;padding:10px 14px;flex-wrap:wrap}
+.row{display:flex;gap:12px;padding:0 14px 14px;flex-wrap:wrap}
+.cell{width:400px;height:400px;position:relative}
+.cell .panel{position:absolute;inset:0}
+input[type=range]{width:320px}
+</style></head>
+<body>
+<div class="bar"><b id="name"></b><input id="t" type="range" min="0" max="6000" value="0"><span id="tv"></span>
+<button id="play">播放</button><button id="dark">深色</button><select id="pick"></select></div>
+<div class="row"><div class="cell"><div class="panel" id="motion"></div></div><div class="cell"><div class="panel" id="detail"></div></div><div class="cell"><div class="panel" id="mistakes"></div></div></div>
+<script type="module">
+const q = new URLSearchParams(location.search);
+const topic = q.get('topic') || 'shoulders', id = q.get('id') || 'shoulders-lateral-raise';
+const manifests = {shoulders: 'shoulders-animations.json', arms: 'arms-animations.json', 'arms-extra': 'arms-extra-complete-animations.json',
+  chest: 'chest-animations.json', back: 'back-animations.json', abs: 'abs-animations.json', legs: 'legs-animations.json', functional: 'functional-animations.json'};
+const spec = structuredClone((await import(`../exercises/${topic}/${id}.mjs?${Date.now()}`)).default);
+if (manifests[topic]) {
+  const m = await (await fetch(`/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/${topic}/${manifests[topic]}`)).json();
+  const e = m.animations.find(a => a.lessonID === (spec.lessons ? spec.lessons[0] : spec.id));
+  spec.timing = e.timingMilliseconds || {effortStart: 600, effortEnd: 2800, returnStart: 3300, returnEnd: 5700, duration: 6000};
+  spec.steps = e.steps.map(s => ({title: s.title, start: s.startSeconds * 1000, end: s.endSeconds * 1000}));
+}
+window.SteadyLesson = spec; window.SteadyPreviewManual = true;
+const files = ['00-core.js', '10-rig.js', '20-body-side.js', '21-body-front-back.js', '30-figure.js', '40-theme.js', '50-equipment.js', '60-scene.js', '70-lesson.js'];
+for (const f of files) await new Promise((ok, bad) => { const s = document.createElement('script'); s.src = `../engine/${f}?${Date.now()}`; s.onload = ok; s.onerror = bad; document.body.appendChild(s); });
+document.getElementById('name').textContent = spec.title;
+const t = document.getElementById('t'); t.max = spec.timing ? spec.timing.duration : 6000;
+let dark = false, playing = false, time = 0;
+const cmd = (mode, extra) => window.setLessonState(Object.assign({mode, playing: false, speed: 1, seekTime: time, seekRevision: Math.random(), dark, timing: spec.timing}, extra || {}));
+// show all three panels at once for review
+['detail', 'mistakes', 'motion'].forEach(m => cmd(m));
+document.getElementById('detail').hidden = false; document.getElementById('mistakes').hidden = false;
+const show = () => { cmd('motion', {playing}); document.getElementById('detail').hidden = false; document.getElementById('mistakes').hidden = false; document.getElementById('tv').textContent = (time / 1000).toFixed(2) + 's'; };
+t.oninput = () => { time = +t.value; playing = false; show(); };
+document.getElementById('play').onclick = () => { playing = !playing; show(); };
+document.getElementById('dark').onclick = () => { dark = !dark; show(); };
+window.devSeek = ms => { time = ms; t.value = ms; playing = false; show(); };
+show();
+</script>
+</body></html>

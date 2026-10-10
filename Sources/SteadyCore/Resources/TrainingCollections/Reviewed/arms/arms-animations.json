@@ -1,0 +1,595 @@
+{
+  "collectionID": "tanchengyi-arms",
+  "timeUnit": "seconds",
+  "animations": [
+    {
+      "lessonID": "arms-warmup-triceps",
+      "resource": "arms-single-cable-extension.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "扶柱站稳",
+          "startSeconds": 0,
+          "endSeconds": 0.45,
+          "instruction": "非工作手扶柱，脚下站稳，身体适度前倾；先找出绳索不会卡住身体的位置。"
+        },
+        {
+          "title": "轻负荷起始",
+          "startSeconds": 0.45,
+          "endSeconds": 1,
+          "instruction": "工作上臂留在身体后侧，轻负荷屈肘起始；先熟悉可控的活动范围。"
+        },
+        {
+          "title": "轻松伸肘",
+          "startSeconds": 1,
+          "endSeconds": 3.5,
+          "instruction": "让前臂绕肘伸出，保持身体稳定。热身先熟悉运动，不急着增加负荷。"
+        },
+        {
+          "title": "检查控制",
+          "startSeconds": 3.5,
+          "endSeconds": 4.3,
+          "instruction": "检查肩位和支撑能否保持；热身的目标是适应动作，不要用摆动补足幅度。"
+        },
+        {
+          "title": "屈肘还原",
+          "startSeconds": 4.3,
+          "endSeconds": 8,
+          "instruction": "控制回到起点，重复轻负荷演练；完成一侧后，换另一侧热身。两侧都能够稳定控制后，再进入正式训练。"
+        }
+      ],
+      "evidence": [
+        {
+          "seconds": 194,
+          "confirmed": "轻负荷热身演练与肘屈伸"
+        },
+        {
+          "seconds": 200,
+          "confirmed": "字幕说明下一组正式组再讲细节"
+        },
+        {
+          "seconds": 206,
+          "confirmed": "热身后学员换另一侧，仍用轻负荷适应动作"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3500,
+        "returnStart": 4300,
+        "returnEnd": 7200,
+        "duration": 8000
+      },
+      "detailExplanation": "图中编号\n① 扶柱站稳，轻负荷热身\n② 上臂后置，只动前臂\n③ 握柄向小指侧微偏\n\n红色 · 主要发力：肱三头肌\n浅红 · 协同：三角肌后束、前臂伸肌群\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：扶柱，保留上臂位置\n\n右图 · 错误示范：上臂向前跑\n\n调整方法：降低阻力，扶柱站稳，保留后置的上臂，再让前臂绕肘运动。尺偏仅作微偏握持，不强掰手腕。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱三头肌"
+      ],
+      "secondaryMuscles": [
+        "三角肌后束",
+        "前臂伸肌群"
+      ]
+    },
+    {
+      "lessonID": "arms-single-cable-extension",
+      "resource": "arms-single-cable-extension.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "扶柱站稳",
+          "startSeconds": 0,
+          "endSeconds": 0.45,
+          "instruction": "非工作手扶住立柱，双脚支撑，身体前倾。先稳定身体，再开始伸肘。"
+        },
+        {
+          "title": "屈肘起始",
+          "startSeconds": 0.45,
+          "endSeconds": 1,
+          "instruction": "单手握住握柄，上臂在身体后侧并向内收，前臂处于屈肘位置；保留尺偏握法。"
+        },
+        {
+          "title": "伸肘发力",
+          "startSeconds": 1,
+          "endSeconds": 3.5,
+          "instruction": "让前臂绕肘向身体后下方伸出，伸肘到位。上臂留在原位，不用肩部来回摆动拉动绳索。"
+        },
+        {
+          "title": "末端稳住",
+          "startSeconds": 3.5,
+          "endSeconds": 4.3,
+          "instruction": "末端把肘伸直到位，保持握柄时向小指侧微偏的尺偏位置；肩胛稳定，上臂后置并内收。"
+        },
+        {
+          "title": "屈肘还原",
+          "startSeconds": 4.3,
+          "endSeconds": 8,
+          "instruction": "控制前臂回到起点；保持上臂后置，别在还原时让整条手臂被拉向前。"
+        }
+      ],
+      "evidence": [
+        {
+          "seconds": 116,
+          "confirmed": "字幕做肘伸；前倾扶柱、上臂在身后"
+        },
+        {
+          "seconds": 121,
+          "confirmed": "字幕提示绳子会卡住"
+        },
+        {
+          "seconds": 127,
+          "confirmed": "字幕提示滑轮不要过高"
+        },
+        {
+          "seconds": 165,
+          "confirmed": "学生扶柱，单侧伸肘动作姿势"
+        },
+        {
+          "seconds": 243,
+          "confirmed": "字幕把这个尺偏夹紧；不是中立手腕规则"
+        },
+        {
+          "seconds": 523,
+          "confirmed": "作者在另一个面对绳索的站位中示范减小行程；字幕提醒已有不适时不强求完全伸直，不确定具体不适部位。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3500,
+        "returnStart": 4300,
+        "returnEnd": 7200,
+        "duration": 8000
+      },
+      "detailExplanation": "图中编号\n① 扶柱站稳，轻负荷热身\n② 上臂后置，只动前臂\n③ 握柄向小指侧微偏\n\n红色 · 主要发力：肱三头肌\n浅红 · 协同：三角肌后束、前臂伸肌群\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：扶柱，保留上臂位置\n\n右图 · 错误示范：上臂向前跑\n\n调整方法：降低阻力，扶柱站稳，保留后置的上臂，再让前臂绕肘运动。尺偏仅作微偏握持，不强掰手腕。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱三头肌"
+      ],
+      "secondaryMuscles": [
+        "三角肌后束",
+        "前臂伸肌群"
+      ]
+    },
+    {
+      "lessonID": "arms-lying-barbell-extension",
+      "resource": "arms-lying-barbell-extension.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "头背贴斜凳",
+          "startSeconds": 0,
+          "endSeconds": 0.45,
+          "instruction": "约15°凳面支撑头背，双脚保持接地；双手正握曲杆，握距约肩宽，手腕保持顶住而不松掉。"
+        },
+        {
+          "title": "屈肘起始",
+          "startSeconds": 0.45,
+          "endSeconds": 1,
+          "instruction": "在可控范围内屈肘，曲杆位于头侧上方。上臂保留举起的位置。"
+        },
+        {
+          "title": "伸肘举回",
+          "startSeconds": 1,
+          "endSeconds": 3.5,
+          "instruction": "伸肘把曲杆举回原来的起始角度。保留上臂向头侧的倾角，不把手臂举到重量完全垂直落在肩上的位置。"
+        },
+        {
+          "title": "保留张力",
+          "startSeconds": 3.5,
+          "endSeconds": 4.3,
+          "instruction": "到示范的末端位置后受控衔接下放，不用特意做顶峰停顿；头背与双脚继续保持支撑。"
+        },
+        {
+          "title": "朝额头下放",
+          "startSeconds": 4.3,
+          "endSeconds": 8,
+          "instruction": "再次屈肘，控制曲杆朝额头方向下放，回到起点。不要让重量自由坠向头部。"
+        }
+      ],
+      "evidence": [
+        {
+          "seconds": 670,
+          "confirmed": "小斜角凳面、双手曲杆与仰卧姿势"
+        },
+        {
+          "seconds": 720,
+          "confirmed": "字幕提示下往额头方向；教师在曲杆下方保护"
+        },
+        {
+          "seconds": 770,
+          "confirmed": "屈伸肘动作与小斜角凳面支撑"
+        },
+        {
+          "seconds": 602,
+          "confirmed": "字幕明确凳面调整大概15度左右"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3500,
+        "returnStart": 4300,
+        "returnEnd": 7200,
+        "duration": 8000
+      },
+      "detailExplanation": "图中编号\n① 头背贴约15°凳面\n② 上臂保留向头侧倾角\n③ 屈肘朝额头，受控举回\n\n红色 · 主要发力：肱三头肌\n浅红 · 协同：前臂伸肌群\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：上臂留住倾角\n\n右图 · 错误示范：整臂前摆到肩上\n\n调整方法：头背贴凳、脚踩稳，保留上臂朝头侧的角度，靠肘屈伸控制曲杆；不要用肩摆动追求高度。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱三头肌"
+      ],
+      "secondaryMuscles": [
+        "前臂伸肌群"
+      ]
+    },
+    {
+      "lessonID": "arms-seated-cable-curl",
+      "resource": "arms-seated-cable-curl.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "坐地屈膝",
+          "startSeconds": 0,
+          "endSeconds": 0.45,
+          "instruction": "骨盆落在地面上，屈膝踩稳；先摆好膝部附近的上臂位置，稳定肩肘方向和躯干。"
+        },
+        {
+          "title": "反握起始",
+          "startSeconds": 0.45,
+          "endSeconds": 1,
+          "instruction": "肩保持外旋，掌心朝上反握短杆；伸肘到仍保留张力的起点，不完全放到底松掉。"
+        },
+        {
+          "title": "屈肘弯举",
+          "startSeconds": 1,
+          "endSeconds": 3.5,
+          "instruction": "前臂绕肘把短杆弯举回来，保持反握；躯干不跟着往后倒。"
+        },
+        {
+          "title": "颈前收紧",
+          "startSeconds": 3.5,
+          "endSeconds": 4.3,
+          "instruction": "把短杆在身体前侧弯举到能够保持肩位的位置。只做颈前弯举，不把短杆绕到颈后，也不靠折腕补幅度。"
+        },
+        {
+          "title": "控制伸肘",
+          "startSeconds": 4.3,
+          "endSeconds": 8,
+          "instruction": "逐渐伸肘，把短杆送回仍有张力的位置，不完全放到底。上臂位置、身体与骨盆保持稳定。"
+        }
+      ],
+      "evidence": [
+        {
+          "seconds": 980,
+          "confirmed": "坐地屈膝、双手反握短杆、低位绳索与弯举姿势"
+        },
+        {
+          "seconds": 870,
+          "confirmed": "坐地屈膝，上臂位于膝部附近；不据此断言全程压靠膝部"
+        },
+        {
+          "seconds": 1036,
+          "confirmed": "字幕明确建议把大臂往前放一点"
+        },
+        {
+          "seconds": 1045,
+          "confirmed": "字幕明确只做颈前，前段说明不要做颈后"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3500,
+        "returnStart": 4300,
+        "returnEnd": 7200,
+        "duration": 8000
+      },
+      "detailExplanation": "图中编号\n① 反握短杆，只做颈前\n② 膝附近先摆好上臂\n③ 骨盆坐地，脚踩稳\n\n红色 · 主要发力：肱二头肌\n浅红 · 协同：肱肌、肱桡肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：坐稳，只做屈肘\n\n右图 · 错误示范：后仰拉成划船\n\n调整方法：降低阻力，恢复坐地屈膝支撑，摆好上臂后用前臂弯举到颈前，不把肩肘向后拉。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱二头肌"
+      ],
+      "secondaryMuscles": [
+        "肱肌",
+        "肱桡肌"
+      ]
+    },
+    {
+      "lessonID": "arms-incline-dumbbell-curl",
+      "resource": "arms-incline-dumbbell-curl.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "头背贴靠背",
+          "startSeconds": 0,
+          "endSeconds": 0.45,
+          "instruction": "坐靠在斜凳上，头背接触靠背，双脚踩地。不要抬头追着哑铃看。"
+        },
+        {
+          "title": "保留肩伸位",
+          "startSeconds": 0.45,
+          "endSeconds": 1,
+          "instruction": "上臂位于身体后侧并向内收，肩保留外旋，哑铃掌心朝上；先确认下放到哪里仍能保持张力。"
+        },
+        {
+          "title": "屈肘举起",
+          "startSeconds": 1,
+          "endSeconds": 3.5,
+          "instruction": "前臂绕肘把哑铃举起，上臂留在身体后侧，避免把肩向前卷。"
+        },
+        {
+          "title": "顶端稳住",
+          "startSeconds": 3.5,
+          "endSeconds": 4.3,
+          "instruction": "在可以保持支撑的位置停稳，头背仍贴靠背，不抬肩甩起哑铃。"
+        },
+        {
+          "title": "控制下放",
+          "startSeconds": 4.3,
+          "endSeconds": 8,
+          "instruction": "逐渐伸肘，哑铃回到仍保留张力的起点，不完全放到底松掉。头背保持支撑，肩不向前翻。"
+        }
+      ],
+      "evidence": [
+        {
+          "seconds": 1430,
+          "confirmed": "双哑铃、斜凳、肩伸位与头背支撑"
+        },
+        {
+          "seconds": 1470,
+          "confirmed": "屈肘弯举阶段，教师提示肩肘位置"
+        },
+        {
+          "seconds": 1520,
+          "confirmed": "斜凳上控制动作范围"
+        },
+        {
+          "seconds": 1482,
+          "confirmed": "字幕建议弄一个瑜伽砖，头后支撑提示"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3500,
+        "returnStart": 4300,
+        "returnEnd": 7200,
+        "duration": 8000
+      },
+      "detailExplanation": "图中编号\n① 约45°靠背，头背贴稳\n② 上臂后置，掌心向上\n③ 前臂弯举，不放到底\n\n红色 · 主要发力：肱二头肌\n浅红 · 协同：肱肌、肱桡肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：头背贴住靠背\n\n右图 · 错误示范：抬头追着哑铃\n\n调整方法：减轻重量，把头背贴回已锁定的靠背；需要时用垫稳的毛巾辅助头部支撑。上臂继续留在身体后侧。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱二头肌"
+      ],
+      "secondaryMuscles": [
+        "肱肌",
+        "肱桡肌"
+      ]
+    },
+    {
+      "lessonID": "arms-overhead-single-cable-extension",
+      "resource": "arms-overhead-single-cable-extension.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "站稳举臂",
+          "startSeconds": 0,
+          "endSeconds": 0.45,
+          "instruction": "双脚支撑，上臂举高后设置肩外旋位，保留主动向内收的用力意图。另一手放腹部，避免伸肘时挺腰。"
+        },
+        {
+          "title": "头后起始",
+          "startSeconds": 0.45,
+          "endSeconds": 1,
+          "instruction": "工作手单手握柄，前臂在头后屈肘；工作肘留在头上，手腕保持向上顶住的感觉，下放不塌。"
+        },
+        {
+          "title": "向上伸肘",
+          "startSeconds": 1,
+          "endSeconds": 3.5,
+          "instruction": "在当前低位滑轮的姿势中，让前臂绕肘向上伸出，保持举高的上臂和肩位。向内收是用力意图，不要求把肘硬夹到头上。"
+        },
+        {
+          "title": "稳住顶端",
+          "startSeconds": 3.5,
+          "endSeconds": 4.3,
+          "instruction": "末端仍保留一点屈肘，不必完全伸直锁死；上臂举高、躯干稳定，不靠后仰获得幅度。"
+        },
+        {
+          "title": "屈肘回头后",
+          "startSeconds": 4.3,
+          "endSeconds": 8,
+          "instruction": "控制屈肘，手柄回到头后起点；肩继续保留外旋和主动内收的意图，工作肘保持在头上。"
+        }
+      ],
+      "evidence": [
+        {
+          "seconds": 1770,
+          "confirmed": "低位握柄及转身准备"
+        },
+        {
+          "seconds": 1850,
+          "confirmed": "一手放腹部，另一手在头后，上臂举高"
+        },
+        {
+          "seconds": 1950,
+          "confirmed": "伸肘至头上末端"
+        },
+        {
+          "seconds": 1866,
+          "confirmed": "字幕不要完全伸直，教师示范末端微屈"
+        },
+        {
+          "seconds": 1698,
+          "confirmed": "字幕说明向前路线并非一律错误，随后调高滑轮示范较容易的版本"
+        },
+        {
+          "seconds": 1780,
+          "confirmed": "清楚字幕外旋啊外旋，教师手在学员举高的上臂处调整肩位"
+        },
+        {
+          "seconds": 1888,
+          "confirmed": "清楚字幕说明已有向内收的用力意图，肘不必硬夹到头部"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3500,
+        "returnStart": 4300,
+        "returnEnd": 7200,
+        "duration": 8000
+      },
+      "detailExplanation": "图中编号\n① 上臂举高，保留肩位\n② 向上伸肘，末端留弯\n③ 另一手放腹部，不挺腰\n\n红色 · 主要发力：肱三头肌\n浅红 · 协同：腹直肌、前臂伸肌群\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：腹部收稳，上臂举高\n\n右图 · 错误示范：挺腰借力\n\n调整方法：减轻阻力，重新站稳并收住肋骨；另一手留在腹部，上臂保持头侧，再做屈伸肘。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱三头肌"
+      ],
+      "secondaryMuscles": [
+        "腹直肌",
+        "前臂伸肌群"
+      ]
+    },
+    {
+      "lessonID": "arms-standing-rope-hammer-curl",
+      "resource": "arms-standing-rope-hammer-curl.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "站稳对握",
+          "startSeconds": 0,
+          "endSeconds": 0.45,
+          "instruction": "面对低位绳索，双脚站稳，两手各握一端绳把，掌心相对。"
+        },
+        {
+          "title": "体侧肘位",
+          "startSeconds": 0.45,
+          "endSeconds": 1,
+          "instruction": "上臂留在身体两侧，肘不过度前移或抬高；从仍有张力的屈肘起点开始。"
+        },
+        {
+          "title": "屈肘举起",
+          "startSeconds": 1,
+          "endSeconds": 3.5,
+          "instruction": "前臂绕肘把绳把举到胸前，上臂不动，身体不向后仰。"
+        },
+        {
+          "title": "顶端稍停",
+          "startSeconds": 3.5,
+          "endSeconds": 4.3,
+          "instruction": "顶端短暂停住并收紧，保持掌心相对，肘不跟着往上走。"
+        },
+        {
+          "title": "受控送回",
+          "startSeconds": 4.3,
+          "endSeconds": 8,
+          "instruction": "逐渐伸肘，把绳把送回仍有张力的位置；不要完全放到底，继续控制上臂和身体。"
+        }
+      ],
+      "evidence": [
+        {
+          "seconds": 1962,
+          "confirmed": "字幕明确绳索锤式弯举，教师准备站姿绳把"
+        },
+        {
+          "seconds": 1980,
+          "confirmed": "教师站姿示范掌心相对的绳把弯举"
+        },
+        {
+          "seconds": 2005,
+          "confirmed": "学员实际站姿弯举，字幕建议选择20次左右的重量"
+        },
+        {
+          "seconds": 2010,
+          "confirmed": "33:24–33:39的2fps序列显示实际屈肘和回程，并有不抬上臂、不后仰的纠正"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3500,
+        "returnStart": 4300,
+        "returnEnd": 7200,
+        "duration": 8000
+      },
+      "detailExplanation": "图中编号\n① 双手对握，各握一端绳把\n② 体侧肘位，顶端稍停\n③ 重心稳定，回程留张力\n\n红色 · 主要发力：肱肌、肱桡肌\n浅红 · 协同：肱二头肌、前臂伸肌群\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：体侧肘位，站稳\n\n右图 · 错误示范：抬肘、后仰\n\n调整方法：降低阻力，站稳重心，让上臂留在体侧；只做肘屈伸，回程不完全放到底。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱肌",
+        "肱桡肌"
+      ],
+      "secondaryMuscles": [
+        "肱二头肌",
+        "前臂伸肌群"
+      ]
+    },
+    {
+      "lessonID": "arms-seated-internal-rotation-curl",
+      "resource": "arms-seated-internal-rotation-curl.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "坐地屈膝",
+          "startSeconds": 0,
+          "endSeconds": 0.45,
+          "instruction": "骨盆坐地，膝盖弯曲，面向低位绳索。上身稳定，别向后倒。"
+        },
+        {
+          "title": "中立握绳把",
+          "startSeconds": 0.45,
+          "endSeconds": 1,
+          "instruction": "两手各握一端绳把，掌心相对，肘向外展开；内旋描述肩位，手腕保持自然。"
+        },
+        {
+          "title": "屈肘弯举",
+          "startSeconds": 1,
+          "endSeconds": 3.5,
+          "instruction": "在保留肩位和肘方向的前提下，前臂绕肘把绳把弯举回来。"
+        },
+        {
+          "title": "保留肩肘位置",
+          "startSeconds": 3.5,
+          "endSeconds": 4.3,
+          "instruction": "顶端稍微停住并收紧；保持身体和上臂稳定，不向后仰，不把肩肘后拉做成面拉。"
+        },
+        {
+          "title": "把绳把送回",
+          "startSeconds": 4.3,
+          "endSeconds": 8,
+          "instruction": "控制伸肘，把绳把送向前方仍有张力的位置，不完全放到底；保持肘向外和坐地支撑。"
+        }
+      ],
+      "evidence": [
+        {
+          "seconds": 2130,
+          "confirmed": "坐地屈膝、绳把中立握、肘向外；字幕不要后仰"
+        },
+        {
+          "seconds": 2160,
+          "confirmed": "坐姿肩内旋位的弯举与反馈"
+        },
+        {
+          "seconds": 2040,
+          "confirmed": "开始介绍肩内旋姿势的绳把弯举变式"
+        },
+        {
+          "seconds": 2264,
+          "confirmed": "37:37–37:52清楚字幕连续提到肘弹响、旋后受限及不太推荐这种姿势"
+        },
+        {
+          "seconds": 2293,
+          "confirmed": "末段示范相对外旋肩位的条件性选择，未作为有负荷完整动作周期"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3500,
+        "returnStart": 4300,
+        "returnEnd": 7200,
+        "duration": 8000
+      },
+      "detailExplanation": "图中编号\n① 肘向外，保留已设置的肩内旋位。\n② 两手中立握绳把；内旋指肩位，不通过扭腕完成。\n③ 骨盆坐地，屈膝、双脚支撑，身体稳定。\n\n红色 · 主要发力：肱肌、肱桡肌\n浅红 · 协同：肱二头肌、前臂屈肌群\n虚线人形：起始姿势 · 绿色箭头：弯举方向。此图为正面投影，前臂朝向镜头的部分作透视缩短。",
+      "mistakeExplanation": "左图 · 正确示范：坐稳，保留肘方向\n\n右图 · 错误示范：抬肘耸肩，带成面拉\n\n调整方法：降低阻力，恢复稳定坐姿。把肘向外摆好后只动前臂，不向后拉肩肘做成面拉；内旋指肩位，保持中立握。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉",
+      "primaryMuscles": [
+        "肱肌",
+        "肱桡肌"
+      ],
+      "secondaryMuscles": [
+        "肱二头肌",
+        "前臂屈肌群"
+      ]
+    }
+  ]
+}

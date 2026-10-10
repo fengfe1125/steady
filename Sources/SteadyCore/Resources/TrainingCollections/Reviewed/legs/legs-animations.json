@@ -1,0 +1,1341 @@
+{
+  "collectionID": "tanchengyi-legs",
+  "version": 1,
+  "timeUnit": "seconds",
+  "animations": [
+    {
+      "lessonID": "legs-general-warmup",
+      "resource": "legs-warmup-general.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "以能轻松说话的速度开始。"
+        },
+        {
+          "title": "轻抬脚",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "交替抬起双脚，手臂自然摆动。"
+        },
+        {
+          "title": "轻抬短停",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "轻抬脚时保持身体稳定，不追求高抬腿。"
+        },
+        {
+          "title": "轻轻落地",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "脚掌平稳落回，再换另一侧轻步走动。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/warm-up-cool-down",
+          "checked": "轻松活动5–10分钟为补充热身，不属于原片作者建议。"
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "髂腰肌",
+        "股直肌",
+        "腓肠肌"
+      ],
+      "detailExplanation": "图中编号\n① 肩颈放松，正常呼吸\n② 手臂随步伐轻摆\n③ 小步轻抬，平稳落地\n\n浅红 · 协同：髂腰肌、股直肌、腓肠肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：小步轻摆，肩颈放松\n\n右图 · 错误示范：耸肩、甩臂幅度过大\n\n调整方法：放慢到能轻松说话的速度，松开肩颈，缩小摆臂幅度。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-frog-rock",
+      "resource": "legs-warmup-frog-rock.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "维持宽跪与前臂支撑，躯干保持稳定。"
+        },
+        {
+          "title": "臀部后移",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "臀部缓慢向后坐，骨盆保持前倾方向。"
+        },
+        {
+          "title": "停在可控处",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "出现拉伸感后短停，不继续后移到骨盆翻转。"
+        },
+        {
+          "title": "髋部前移",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "控制前移并调整骨盆，再进入下一次往返。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "00:54–00:56",
+          "checked": "作者称青蛙式。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "01:20–02:03",
+          "checked": "臀部后坐、骨盆姿势与前后移动提示。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "02:31–02:42",
+          "checked": "一次往返约10次、通常两组。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "01:20",
+          "checked": "宽跪肘撑姿势。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t80.jpg"
+        },
+        {
+          "videoTime": "02:50",
+          "checked": "前后摇摆姿势样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t170.jpg"
+        },
+        {
+          "videoTime": "01:55–02:07",
+          "checked": "画面显示肘撑宽跪，手可向前放；髋向后/前移动，后移时骨盆翻转会出现代偿。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-frog-rock.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 12
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "腹直肌",
+        "腹外斜肌"
+      ],
+      "stretchMuscles": [
+        "内收肌群"
+      ],
+      "detailExplanation": "图中编号\n① 双膝宽跪，保持接触\n② 前臂和肘稳撑地垫\n③ 臀部后移，骨盆仍可控\n\n红色斜线 · 拉伸部位：内收肌群\n浅红 · 协同：腹直肌、腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：髋部后坐，躯干稳定\n\n右图 · 错误示范：后坐过深，骨盆翻转\n\n调整方法：缩小后坐范围，停在内侧有拉伸感且腰背仍能稳定的位置。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-frog-hip-rotation",
+      "resource": "legs-warmup-hip-rotation.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "固定双膝与上肢支撑，保持舒适张力。"
+        },
+        {
+          "title": "双脚同时抬转",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "以双膝为支撑，让两侧小腿和脚同时轻抬轻转。"
+        },
+        {
+          "title": "保持躯干",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "在可控终点停住，脊柱不随脚转动。"
+        },
+        {
+          "title": "缓慢回落",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "两脚同时回到起始方向，再重复。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "03:17–03:50",
+          "checked": "宽跪位双侧髋内旋、减少代偿。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "03:50–05:12",
+          "checked": "腰椎稳定、不塌腰；后段说抬腿、两组。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "03:25",
+          "checked": "宽跪位准备姿势。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t205.jpg"
+        },
+        {
+          "videoTime": "03:50",
+          "checked": "教练检查躯干姿势。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t230.jpg"
+        },
+        {
+          "videoTime": "04:40–04:55",
+          "checked": "青蛙趴宽跪位两侧共同做髋部旋转/抬腿变化；全程保持脊柱稳定，不能用躯干旋转代偿。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-frog-rotation.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [
+        "阔筋膜张肌"
+      ],
+      "secondaryMuscles": [
+        "臀中肌",
+        "腹外斜肌"
+      ],
+      "detailExplanation": "图中编号\n① 双膝位置固定，不滑走\n② 两脚同时抬转，再慢落\n③ 胸腹收稳，腰背不塌\n\n红色 · 主要发力：阔筋膜张肌\n浅红 · 协同：臀中肌、腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：膝稳住，只旋转髋部\n\n右图 · 错误示范：抬脚时腰背跟着变形\n\n调整方法：减小抬脚高度，先收稳腰背，再让双脚同时轻抬轻转。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-lunge-rotation",
+      "resource": "legs-warmup-lunge-rotation.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "进入低弓步，用与前腿相反侧的手撑地。"
+        },
+        {
+          "title": "胸廓打开",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "转动胸廓，另一臂向上延长并向后打开。"
+        },
+        {
+          "title": "跟随手指",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "眼睛看向抬起手的指尖，停在舒适旋转范围。"
+        },
+        {
+          "title": "回到支撑",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "控制手臂回落，重复后换另一侧。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "05:46–06:40",
+          "checked": "拉伸名称/手支撑、后腿姿态和视线提示。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "06:14–06:56",
+          "checked": "臀部及大腿后侧拉伸感；10次后换腿。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "06:40",
+          "checked": "弓步/伸展位样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t400.jpg"
+        },
+        {
+          "videoTime": "06:30–06:45",
+          "checked": "低弓步、一手支撑，另一手上举转体并看手指方向；画面字幕提示向上及向后延长。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-lunge-rotation.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "腹外斜肌",
+        "前锯肌"
+      ],
+      "stretchMuscles": [
+        "髂腰肌",
+        "臀大肌"
+      ],
+      "detailExplanation": "图中编号\n① 对侧手与前脚踩稳\n② 胸廓打开，视线随手\n③ 后腿接近伸直，不松掉\n\n红色斜线 · 拉伸部位：髂腰肌、臀大肌\n浅红 · 协同：腹外斜肌、前锯肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：胸廓转动，支撑不变\n\n右图 · 错误示范：挺腰抬胸代替转体\n\n调整方法：保持前脚、后脚与支撑手稳定，缩小转动范围，从胸廓打开。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-90-90-switch",
+      "resource": "legs-warmup-90-90-switch.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "坐稳，双腿落在一侧的 90/90 位置。"
+        },
+        {
+          "title": "双膝抬起",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "双膝逐渐抬起，通过髋部旋转准备换向。"
+        },
+        {
+          "title": "换到另一侧",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "控制膝盖落向另一侧，保持舒适范围。"
+        },
+        {
+          "title": "回到起始侧",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "以同样路径换回，不急着做进阶。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "08:05–09:40",
+          "checked": "90/90名称、双腿位置和手撑回归。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "09:40–11:28",
+          "checked": "08:57–09:22先顶髋，进阶到顶髋后伸腿再换边；09:29–09:33手撑地可简化，11:28附近结束热身。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "08:10",
+          "checked": "90/90起始位。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t490.jpg"
+        },
+        {
+          "videoTime": "09:40",
+          "checked": "换边姿势样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t580.jpg"
+        },
+        {
+          "videoTime": "11:00",
+          "checked": "髋活动变化样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t660.jpg"
+        },
+        {
+          "videoTime": "08:38–08:53",
+          "checked": "离散帧序列显示坐姿90/90左右翻转的基础动作。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-90-90-switch.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "08:57–09:12",
+          "checked": "离散帧显示坐姿转双膝承重跪姿/顶髋，再回坐。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-90-90-hip-rise.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "09:10–09:25",
+          "checked": "进阶：顶髋后抬腿跨至身体前方，落脚形成半跪弓步，再回位；动作名按作者‘顶髋后伸腿’原称，实际步骤依据画面。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-90-90-leg-extension.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [],
+      "secondaryMuscles": [
+        "臀中肌",
+        "内收肌群",
+        "髂腰肌",
+        "腹外斜肌"
+      ],
+      "detailExplanation": "图中编号\n① 坐稳，髋部带动换向\n② 双膝先抬，再落向另一侧\n③ 可用双手撑地辅助\n\n浅红 · 协同：臀中肌、内收肌群、髂腰肌、腹外斜肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：双膝换向，上身可控\n\n右图 · 错误示范：急着换边，上身抢先倒\n\n调整方法：放慢转换，使用手撑辅助，让两个膝盖在舒适范围内换向。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-90-90-hip-rise",
+      "resource": "legs-warmup-90-90-hip-rise.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "在 90/90 坐姿中确认膝部能稳定支撑。"
+        },
+        {
+          "title": "顶起髋部",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "由髋部带动躯干向上，双膝仍承重，不让整个身体漂离地面。"
+        },
+        {
+          "title": "稳定跪姿",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "在顶髋位置保持躯干和骨盆可控。"
+        },
+        {
+          "title": "控制坐回",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "臀部缓慢坐回，随后可做基础换边。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "08:05–09:40",
+          "checked": "90/90名称、双腿位置和手撑回归。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "09:40–11:28",
+          "checked": "08:57–09:22先顶髋，进阶到顶髋后伸腿再换边；09:29–09:33手撑地可简化，11:28附近结束热身。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "08:10",
+          "checked": "90/90起始位。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t490.jpg"
+        },
+        {
+          "videoTime": "09:40",
+          "checked": "换边姿势样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t580.jpg"
+        },
+        {
+          "videoTime": "11:00",
+          "checked": "髋活动变化样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t660.jpg"
+        },
+        {
+          "videoTime": "08:38–08:53",
+          "checked": "离散帧序列显示坐姿90/90左右翻转的基础动作。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-90-90-switch.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "08:57–09:12",
+          "checked": "离散帧显示坐姿转双膝承重跪姿/顶髋，再回坐。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-90-90-hip-rise.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "09:10–09:25",
+          "checked": "进阶：顶髋后抬腿跨至身体前方，落脚形成半跪弓步，再回位；动作名按作者‘顶髋后伸腿’原称，实际步骤依据画面。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-90-90-leg-extension.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [
+        "臀大肌"
+      ],
+      "secondaryMuscles": [
+        "股四头肌",
+        "腹直肌"
+      ],
+      "detailExplanation": "图中编号\n① 双膝始终接触地垫\n② 髋伸带动身体升起\n③ 双手在胸前，不撑起\n\n红色 · 主要发力：臀大肌\n浅红 · 协同：股四头肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：髋伸顶起，躯干收稳\n\n右图 · 错误示范：身体后仰，顶腰借力\n\n调整方法：减小顶髋幅度，收住胸腹；无法控制回坐时退回基础换边。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-90-90-leg-extension",
+      "resource": "legs-warmup-90-90-leg-extension.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "从 90/90 坐姿稳定顶髋，进入双膝承重位置。"
+        },
+        {
+          "title": "抬腿跨前",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "一侧腿抬起并跨向身体前方，脚掌落地形成半跪弓步。",
+          "previewTimeSeconds": 2.3333333333333335
+        },
+        {
+          "title": "稳定半跪",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "前脚与后膝支撑，髋部轻向前顶，保持躯干可控。"
+        },
+        {
+          "title": "回到坐姿",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "控制腿回到跪姿，再缓慢坐回 90/90 位置。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "08:05–09:40",
+          "checked": "90/90名称、双腿位置和手撑回归。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "09:40–11:28",
+          "checked": "08:57–09:22先顶髋，进阶到顶髋后伸腿再换边；09:29–09:33手撑地可简化，11:28附近结束热身。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "08:10",
+          "checked": "90/90起始位。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t490.jpg"
+        },
+        {
+          "videoTime": "09:40",
+          "checked": "换边姿势样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t580.jpg"
+        },
+        {
+          "videoTime": "11:00",
+          "checked": "髋活动变化样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t660.jpg"
+        },
+        {
+          "videoTime": "08:38–08:53",
+          "checked": "离散帧序列显示坐姿90/90左右翻转的基础动作。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-90-90-switch.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "08:57–09:12",
+          "checked": "离散帧显示坐姿转双膝承重跪姿/顶髋，再回坐。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-90-90-hip-rise.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "09:10–09:25",
+          "checked": "进阶：顶髋后抬腿跨至身体前方，落脚形成半跪弓步，再回位；动作名按作者‘顶髋后伸腿’原称，实际步骤依据画面。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-90-90-leg-extension.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [
+        "臀大肌",
+        "髂腰肌"
+      ],
+      "secondaryMuscles": [
+        "股四头肌",
+        "腹直肌"
+      ],
+      "detailExplanation": "图中编号\n① 先稳定顶髋，再跨前\n② 前脚落稳，后膝仍撑地\n③ 上身收稳，能控制坐回\n\n红色 · 主要发力：臀大肌、髂腰肌\n浅红 · 协同：股四头肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：前脚落稳后轻顶髋\n\n右图 · 错误示范：脚未踩稳就前冲\n\n调整方法：先让前脚整掌落稳，再轻推髋部；无法平顺回坐时退回顶髋版本。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-calf-raise",
+      "resource": "legs-main-calf-raise.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "身体直立，前脚掌踩稳，膝盖自然伸展。"
+        },
+        {
+          "title": "脚跟上提",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "通过踝关节动作抬起脚跟，身体随之升高。"
+        },
+        {
+          "title": "保持顶部",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "短停时前脚掌仍抓地，躯干不前冲。"
+        },
+        {
+          "title": "控制下放",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "缓慢降回地面，避免前掌或脚趾翘起。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "12:24–12:42",
+          "checked": "区分站姿/坐姿提踵，作者倾向站姿。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "12:44–13:12",
+          "checked": "前脚掌垫高、后跟悬空是口头可选设置。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "13:27–14:22",
+          "checked": "前掌不要翘起、脚趾抓地、不追求过大范围。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "14:47–14:56",
+          "checked": "初练减少组数、适应后增加。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "15:00",
+          "checked": "主体示范为地面自重站姿；附近器械属于背景，不是本动作所用器械。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t900.jpg"
+        },
+        {
+          "videoTime": "17:00",
+          "checked": "动作段末样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t1020.jpg"
+        },
+        {
+          "videoTime": "15:00–15:15",
+          "checked": "画面显示地面站姿自重提踵、脚跟抬起/下降；脚趾和前脚掌抓地口令同帧出现。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-calf-raise.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [
+        "腓肠肌"
+      ],
+      "secondaryMuscles": [
+        "比目鱼肌"
+      ],
+      "detailExplanation": "图中编号\n① 脚趾与前掌始终踩稳\n② 脚跟升降，身体同步\n③ 躯干直立，不向前冲\n\n红色 · 主要发力：腓肠肌\n浅红 · 协同：比目鱼肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：前掌踩稳，身体直立\n\n右图 · 错误示范：躯干前倾，用腰借力\n\n调整方法：放慢提踵，保持脚趾和前脚掌承重，让身体随踝部平稳升降。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-hip-adduction",
+      "resource": "legs-main-hip-adduction.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "靠稳靠背，设置能控制的起始开合范围。"
+        },
+        {
+          "title": "双腿合拢",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "大腿带动器械摆臂向身体中线内收，保持与腿垫接触。"
+        },
+        {
+          "title": "稳定收紧",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "在可控终点短停，腰背继续贴垫。"
+        },
+        {
+          "title": "缓慢打开",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "控制双腿回到起始范围，避免突然被负重拉开。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "17:26–18:50",
+          "checked": "作者称髋内收；坐姿是常见替代，主示范讲仰卧器械。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "18:26–19:00",
+          "checked": "有仰卧器械可用；不要完全调平，作者建议靠背浅倾约15–20度。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "19:09–20:29",
+          "checked": "首组幅度、腰背姿势提示。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "20:50–22:52",
+          "checked": "腰与肋骨/核心稳定；不以重量或次数替代动作控制。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "23:08–24:09",
+          "checked": "第三组及后续组数语境。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "17:40",
+          "checked": "器械训练段样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t1060.jpg"
+        },
+        {
+          "videoTime": "18:40",
+          "checked": "教练说明靠背角度/体位；坐姿是替代说明。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t1120.jpg"
+        },
+        {
+          "videoTime": "20:50",
+          "checked": "教练检查躯干/骨盆位置。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t1250.jpg"
+        },
+        {
+          "videoTime": "23:20",
+          "checked": "训练段后程样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t1400.jpg"
+        },
+        {
+          "videoTime": "20:50–21:05",
+          "checked": "此段主要是训练者坐起听讲/教练指出肋骨外翻，不能当作髋内收工作周期证据。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-hip-adduction.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "23:05–23:20",
+          "checked": "历史文件名保留：支持坐起听讲后躺回浅倾器械与第三组字幕语境；不能可靠确认腿部完整开合周期，膝以下多被裁切。旧“可见完成内收动作”表述撤回。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-hip-adduction-working.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        },
+        {
+          "videoTime": "22:20（约）",
+          "checked": "宽景工作位：浅躺、大腿朝前、膝屈、小腿前下斜、两脚各在足托；不标打开/合拢相位。",
+          "method": "frame",
+          "internalEvidence": "../evidence/hip-adduction/source-working-22m20.jpg"
+        },
+        {
+          "videoTime": "22:31（约）",
+          "checked": "可见前向大腿、屈膝、鞋在独立前侧足托；两个竖垫在膝上附近，精确接触面遮挡。",
+          "method": "frame",
+          "internalEvidence": "../evidence/hip-adduction/source-working-22m31.jpg"
+        },
+        {
+          "videoTime": "22:47（约）",
+          "checked": "夹紧/向心要求的字幕辅助线索；不能据字幕给这帧标合拢终点。",
+          "method": "frame",
+          "internalEvidence": "../evidence/hip-adduction/source-working-22m47.jpg"
+        },
+        {
+          "videoTime": "22:51（约）",
+          "checked": "另一机位宽景保留腿垫和足托结构；机位改变，不能凭屏幕垫距推定打开幅度。",
+          "method": "frame",
+          "internalEvidence": "../evidence/hip-adduction/source-working-22m51.jpg"
+        },
+        {
+          "videoTime": "23:07.5（约）",
+          "checked": "坐起讲解时向前近伸直腿，不是屈膝工作位。",
+          "method": "frame",
+          "internalEvidence": "../evidence/hip-adduction/source-seated-rest-23m07_5.jpg"
+        },
+        {
+          "videoTime": "23:13.5（约）",
+          "checked": "浅躺近景，膝以下裁切；不能据此推断膝角、脚支撑和开合终点。",
+          "method": "frame",
+          "internalEvidence": "../evidence/hip-adduction/source-cropped-reclined-23m13_5.jpg"
+        },
+        {
+          "videoTime": "20:10–20:40.5 / 22:20–22:54.5 / 23:03–23:20.5",
+          "checked": "源静帧确认工作设置；完整开合相位、精确膝角和腿垫接触面未确认。动画开合为教学示意参数，不声称实测幅度。",
+          "method": "visual_still_review",
+          "internalEvidence": "../evidence/hip-adduction-source-review.md"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [
+        "内收肌群"
+      ],
+      "secondaryMuscles": [],
+      "detailExplanation": "图中编号\n① 背臀贴靠，腰背不离垫\n② 腿垫贴大腿内侧\n③ 双脚踩稳脚杆\n\n红色 · 主要发力：内收肌群\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：背臀贴靠，大腿内夹\n\n右图 · 错误示范：上身摆动借力\n\n调整方法：降低重量，背臀重新贴住靠垫，只让大腿带动腿垫合拢。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-bulgarian-split-squat",
+      "resource": "legs-main-bulgarian-split-squat.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "前后分腿站稳，后脚保持支撑，躯干稳定。"
+        },
+        {
+          "title": "控制下蹲",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "屈髋屈膝降低身体，前脚整掌接触地面。"
+        },
+        {
+          "title": "停在可控处",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "不强求蹲得很深，避免前脚失稳或后腿拉扯过强。"
+        },
+        {
+          "title": "以前腿起身",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "通过前腿支撑升起身体，避免借后腿弹起。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "24:33–25:30",
+          "checked": "动作名、下蹲范围提示。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "26:59–27:40",
+          "checked": "重心至前腿及按人调整。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "28:21",
+          "checked": "脚位置在前侧一点。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "31:01",
+          "checked": "第二组。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "32:47–32:53",
+          "checked": "最后一组。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "24:40",
+          "checked": "后脚抬高准备姿势。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t1480.jpg"
+        },
+        {
+          "videoTime": "27:30",
+          "checked": "前后脚/重心姿势样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t1650.jpg"
+        },
+        {
+          "videoTime": "32:30",
+          "checked": "后段演示样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t1950.jpg"
+        },
+        {
+          "videoTime": "27:20–27:35",
+          "checked": "可见后脚抬高分腿站姿和下蹲/起身方向；片段更偏口令/姿势展示，不能据此声称连续完整训练组。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-bulgarian-split-squat.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "28:30–28:45",
+          "checked": "学员后脚抬高、前脚支撑，逐秒画面可见下蹲及起身；字幕讨论脚踝能力不足时不够稳定。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-bulgarian-learner.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [
+        "股四头肌",
+        "臀大肌"
+      ],
+      "secondaryMuscles": [
+        "臀中肌",
+        "腹直肌"
+      ],
+      "detailExplanation": "图中编号\n① 前脚整掌承重\n② 后脚踝搭住滚垫支架\n③ 髋膝同降，不强追深\n\n红色 · 主要发力：股四头肌、臀大肌\n浅红 · 协同：臀中肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：前腿承重，后脚有支撑\n\n右图 · 错误示范：重心后移，前腿卸力\n\n调整方法：重新调整站距和重心，减小深度，由前脚整掌支撑起身。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-dumbbell-deadlift",
+      "resource": "legs-main-dumbbell-rdl.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "握稳哑铃，保持躯干与脚下支撑。"
+        },
+        {
+          "title": "臀部后移",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "髋部向后折叠，躯干随髋前倾，哑铃靠近腿部下行。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "到大腿后侧有张力且腰背可控的位置停住，不以弯腰换深度。"
+        },
+        {
+          "title": "收臀起身",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "由髋部带动起身，避免向前顶腰或过度后仰。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "34:40–34:56",
+          "checked": "动作段开始，称哑铃硬拉/哑铃直腿硬拉。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "35:27–36:18",
+          "checked": "脚微内八、膝外向，避免膝内扣。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "35:59",
+          "checked": "起身不要往前顶。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "37:24–39:40",
+          "checked": "不要完全起来；收臀、保持核心；腰不适时不要做。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "38:11",
+          "checked": "OCR有收臀、深吸提示，完整时点不明确。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "42:06–42:34",
+          "checked": "髋宽站距及避免顶腰。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "34:50",
+          "checked": "哑铃动作准备/演示样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t2090.jpg"
+        },
+        {
+          "videoTime": "39:10",
+          "checked": "髋铰链姿势样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t2350.jpg"
+        },
+        {
+          "videoTime": "42:00",
+          "checked": "动作末段样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t2520.jpg"
+        },
+        {
+          "videoTime": "38:10–38:25",
+          "checked": "可见站姿髋铰链下放至个人可控范围并起身，字幕提示收臀、呼吸和依能力定幅度。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-dumbbell-deadlift.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "40:40–40:55",
+          "checked": "学员双手各持一只哑铃，逐秒画面可见完整髋铰链下放并起身；身体/哑铃沿腿附近移动，起身收臀。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-deadlift-learner.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [
+        "腘绳肌",
+        "臀大肌"
+      ],
+      "secondaryMuscles": [
+        "竖脊肌",
+        "腹直肌",
+        "前臂伸肌群"
+      ],
+      "detailExplanation": "图中编号\n① 臀部向后，髋部折叠\n② 两铃靠腿，手臂自然垂\n③ 腰背可控，膝微屈\n\n红色 · 主要发力：腘绳肌、臀大肌\n浅红 · 协同：竖脊肌、腹直肌、前臂伸肌群\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：髋铰链，哑铃靠腿\n\n右图 · 错误示范：弯腰追深，哑铃远离腿\n\n调整方法：减轻负重，缩小下降范围，保持膝微屈与躯干稳定，让髋部向后折叠。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-hip-flexion",
+      "resource": "legs-main-hip-flexion.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "抓稳把手，双腿就位，稳定上身。"
+        },
+        {
+          "title": "由髋抬腿",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "固定上身，由髋关节抬高大腿，同时膝盖逐步伸展，滚垫随下肢上移。"
+        },
+        {
+          "title": "稳定顶位",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "停在能保持躯干稳定的位置，不靠弯腰追求抬得更高。"
+        },
+        {
+          "title": "控制回落",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "控制大腿回落，让膝盖重新弯曲，握稳把手并保持上身稳定。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "42:53–43:47",
+          "checked": "第五动作段；坐姿腿屈伸器械画面，但作者将训练说明为屈髋主导、股直肌更多参与。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "44:05–44:30",
+          "checked": "膝朝前、微向内、抬腿、屈髋为主。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "44:54–45:16",
+          "checked": "上肢/躯干稳定，抓紧把手，不屈脊柱而用髋关节。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "45:28",
+          "checked": "第二组。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "47:38",
+          "checked": "最后一组。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "43:40",
+          "checked": "作者在座椅/器械旁解释位置。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t2620.jpg"
+        },
+        {
+          "videoTime": "44:00",
+          "checked": "坐姿器械位，训练者躯干前倾/调整阶段。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t2640.jpg"
+        },
+        {
+          "videoTime": "45:00",
+          "checked": "坐稳抓把手、腿在器械脚垫上的演示样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t2700.jpg"
+        },
+        {
+          "videoTime": "45:40–46:03",
+          "checked": "原1fps静帧可见坐稳、抓柄和抬腿姿势，不能据此规定膝角固定。后续45:52–46:08的4fps离散帧显示抬大腿伴膝伸展，见本次独立原尺寸复核。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/hip-flexion-cycle-45m40.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 24
+        },
+        {
+          "videoTime": "46:40",
+          "checked": "该动作段后续样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t2800.jpg"
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        },
+        {
+          "videoTime": "45:52–46:08（4fps离散采样；最后帧46:07.733）",
+          "checked": "64张采样帧和45:57/45:57.5/45:58原尺寸帧显示髋屈抬大腿同时膝伸，再回到较低屈膝位。原片精确髋/膝角、活动度、帧间路径、全程滚垫接触未确认；动画角度仅为示意。",
+          "method": "visual_still_review",
+          "internalEvidence": "../evidence/source-recheck/hip-flexion-knee-change.json"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [
+        "股直肌",
+        "髂腰肌"
+      ],
+      "secondaryMuscles": [
+        "股外侧肌",
+        "股内侧肌",
+        "腹直肌"
+      ],
+      "detailExplanation": "图中编号\n① 坐稳抓柄，上身固定\n② 大腿由髋部抬高\n③ 膝同时伸展，滚垫上移\n\n红色 · 主要发力：股直肌、髂腰肌\n浅红 · 协同：股外侧肌、股内侧肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：大腿抬高，膝伴随伸展\n\n右图 · 错误示范：只伸小腿，大腿未抬\n\n调整方法：减轻负重，握稳把手，把重点放回髋部抬大腿；允许膝随动作逐步伸展。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-prone-leg-curl",
+      "resource": "legs-main-prone-leg-curl.html",
+      "durationSeconds": 6,
+      "steps": [
+        {
+          "title": "准备",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "收住核心，保持大腿与骨盆支撑，脚踝勾起。"
+        },
+        {
+          "title": "屈膝弯举",
+          "startSeconds": 1,
+          "endSeconds": 3,
+          "instruction": "脚跟朝臀部靠近，小腿带动滚垫移动。"
+        },
+        {
+          "title": "保持顶位",
+          "startSeconds": 3,
+          "endSeconds": 3.5,
+          "instruction": "保持躯干稳定，不依赖髋部抬起带动滚垫。"
+        },
+        {
+          "title": "控制回落",
+          "startSeconds": 3.5,
+          "endSeconds": 6,
+          "instruction": "缓慢放下小腿，停在滚垫仍贴合、腿后侧保持张力的位置。"
+        }
+      ],
+      "evidence": [
+        {
+          "videoTime": "48:26–48:38",
+          "checked": "最后动作，俯卧腿弯举，目标大腿后侧。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "48:46–49:21",
+          "checked": "勾脚、轻微内八的作者提示。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "49:24–49:52",
+          "checked": "不完全下放，保留张力，结构松掉表示超范围。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "49:53–50:06",
+          "checked": "收核心、保持骨盆稳定。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "50:42",
+          "checked": "第二组。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "51:16",
+          "checked": "第三组。",
+          "method": "subtitle"
+        },
+        {
+          "videoTime": "48:50",
+          "checked": "俯卧器械设置。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t2930.jpg"
+        },
+        {
+          "videoTime": "50:00",
+          "checked": "俯卧动作位。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t3000.jpg"
+        },
+        {
+          "videoTime": "51:20",
+          "checked": "后段教练口令/姿势样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t3080.jpg"
+        },
+        {
+          "videoTime": "52:00",
+          "checked": "收尾动作姿态样本。",
+          "method": "frame",
+          "internalEvidence": "../evidence/keyframes/t3120.jpg"
+        },
+        {
+          "videoTime": "49:50–50:05",
+          "checked": "该取样段是俯卧器械的腿垫/脚位和收核心指导，图中教练调整学员；不据此声称看到完整弯举周期。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-prone-leg-curl.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "videoTime": "51:30–51:45",
+          "checked": "学员俯卧在弯举机上，逐秒图可见屈膝使小腿/脚端滚垫移动；脚位和收核心口令同段出现，证明不只是调垫讲解。",
+          "method": "frame_sequence",
+          "internalEvidence": "../evidence/cycle-prone-leg-curl-working.jpg",
+          "sampleRateSeconds": 1,
+          "frameCount": 15
+        },
+        {
+          "checked": "六秒为动画教学节奏，不作为作者规定的动作速度或训练剂量。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 1000,
+        "effortEnd": 3000,
+        "returnStart": 3500,
+        "returnEnd": 6000,
+        "duration": 6000
+      },
+      "primaryMuscles": [
+        "腘绳肌"
+      ],
+      "secondaryMuscles": [
+        "腓肠肌",
+        "腹直肌"
+      ],
+      "detailExplanation": "图中编号\n① 胸腹、骨盆和大腿贴垫\n② 屈膝弯举，大腿不抬\n③ 勾脚，后踝抵住滚垫\n\n红色 · 主要发力：腘绳肌\n浅红 · 协同：腓肠肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
+      "mistakeExplanation": "左图 · 正确示范：胸腹贴稳，由膝弯举\n\n右图 · 错误示范：抬髋、挺腰借力\n\n调整方法：降低重量，重新贴稳胸腹、骨盆与大腿；回程保留滚垫贴合和腿后侧张力。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    }
+  ]
+}

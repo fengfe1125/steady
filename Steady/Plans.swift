@@ -217,7 +217,15 @@ struct WorkoutView: View {
                 Text(session.scheduledAt, format: .dateTime.month().day().weekday()).font(.subheadline)
                 Text("\(session.minutes)分钟 · 按自己的节奏").font(.title2)
                 ForEach(session.exercises) { exercise in
-                    JournalCard { Text(exercise.name).font(.headline); Text(exercise.prescription).foregroundStyle(.secondary) }
+                    JournalCard {
+                        Text(exercise.name).font(.headline)
+                        Text(exercise.prescription).foregroundStyle(.secondary)
+                        if let lesson = EquipmentLessonID.matching(exerciseName: exercise.name) {
+                            NavigationLink { EquipmentLessonView(lesson: lesson) } label: {
+                                Label("看动作示范", systemImage: "play.circle")
+                            }.accessibilityIdentifier("exerciseLesson")
+                        }
+                    }
                 }
                 Text("训练建议不是医疗处方；出现不适请停止。").font(.footnote)
                 Button("调整日期与动作") { edit = true }

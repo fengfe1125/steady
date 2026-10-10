@@ -117,6 +117,26 @@ struct CoachView: View {
                 Button("开始新会话") { model.openChat() }
                 PlanLauncher(model: model, title: "生成训练草案")
             }
+            Section("训练合集") {
+                NavigationLink { TrainingCollectionsView() } label: {
+                    Label {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("八个训练专题 · 动画与分步讲解")
+                            Text("从热身开始，学习动作、支撑和易错点").font(.caption).foregroundStyle(.secondary)
+                        }
+                    } icon: { Image(systemName: "books.vertical") }
+                }.accessibilityIdentifier("trainingCollections")
+            }
+            Section("动作与器材") {
+                NavigationLink { EquipmentLibraryView() } label: {
+                    Label {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("健身房器材")
+                            Text("看动作示范，按步骤学会使用").font(.caption).foregroundStyle(.secondary)
+                        }
+                    } icon: { Image(systemName: "figure.strengthtraining.traditional") }
+                }.accessibilityIdentifier("equipmentLibrary")
+            }
             Section("会话记录") {
                 if model.journal.conversations.isEmpty { Text("还没有会话 想聊的时候我们再开始").foregroundStyle(.secondary) }
                 ForEach(model.journal.conversations) { chat in
