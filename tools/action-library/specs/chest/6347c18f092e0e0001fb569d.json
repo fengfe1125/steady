@@ -1,0 +1,167 @@
+{
+  "sourceID": "6347c18f092e0e0001fb569d",
+  "sourceName": "下斜宽距俯卧撑",
+  "part": "chest",
+  "title": "下斜宽距俯卧撑",
+  "variant": "下斜（双脚架高约 50cm 的凳面）· 双手约两倍肩宽、下放到肘与躯干齐平 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.34,
+    1.02,
+    1.71,
+    2.39,
+    3.4,
+    4.44
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.75,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 96,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -9,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -60
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -60
+        }
+      }
+    },
+    "1": {
+      "pelvis": 100,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 4,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": -155,
+      "y": -95
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "bench",
+      "x": -200,
+      "length": 100,
+      "top": -95
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus",
+      "forearm.flex"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手在垫上撑到约两倍肩宽、五指抓稳垫面，双脚搭到半米左右的凳面上，身体绷直成一条线；屈臂把身体送到肘与躯干齐平再撑起。",
+  "mistake": {
+    "title": "撅臀或塌腰，身体离开一条直线",
+    "fix": "先收腹夹臀、把骨盆放到中立位，让肩、髋、脚踝连成一条线再下放；稳定性不够就先把脚放回地面、缩短下放幅度。",
+    "basis": "依据源 detail.description 的常见错误条目（手臂推直时硬顶死关节、下放过程中腰椎前凸或臀部上撅），以及俯卧撑类动作的通用要求：侧面看肩、髋、踝应落在同一条直线上。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 96,
+      "lumbar": -22,
+      "thorax": 4,
+      "legs": {
+        "near": {
+          "hip": -4
+        },
+        "far": {
+          "hip": -4
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080、8.20 秒，但 12 张帧图全是同一个肩臂特写，看不到完整身体：镜头从人物斜后方俯拍，只有后脑、肩和压在深色垫子上的那只手入画，画面右侧是垫外的浅色地面。帧图上叠加了绿色示意线（上臂与地面的垂直参照线、前臂走向、肘部向下并向后的虚线箭头，以及肘的旋转轨迹弧线），1.9~8.0 秒之间的多张标注几乎完全一致，说明这段是静态讲解画面。因此躯干角度、凳高、下放深度都是按文字说明“双手撑垫、间距两倍肩宽、双脚放于凳子上、屈臂至肘关节与躯干同高”推断的，并与同系列的“下斜半程俯卧撑”保持同一套倾斜几何（凳面约 50 厘米、双脚踩凳、双手撑地）；时间点也按该系列约 2 秒一次下放的节奏估计，未能从画面核实。人物朝向无法从特写判断，mirror 按同类侧面示范默认取 true；“两倍肩宽”在侧面视角下也无法直接看到。"
+}

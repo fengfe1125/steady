@@ -1,0 +1,140 @@
+{
+  "sourceID": "62f3633ffe941a0001449a04",
+  "sourceName": "跪姿离心爆发俯卧撑",
+  "part": "chest",
+  "title": "跪姿离心爆发俯卧撑",
+  "variant": "跪姿 + 3 秒慢放、瞬间推起 · 双手略比肩宽 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.8,
+    1.8,
+    3.0,
+    3.9,
+    4.2,
+    4.75
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.7,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 65,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 70,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "从撑起的最高点开始，用大约三秒把胸口匀速放向垫面，肘略微高于躯干；触底后立刻用胸和上臂后侧把身体顶回起点。",
+  "mistake": {
+    "title": "塌腰下沉，髋先落到垫面",
+    "fix": "下落途中夹臀收腹，把髋固定在肩与膝的连线上；注意力放在肘的弯曲上，髋不要往下掉。",
+    "basis": "源资料把撑起时肘部顶死与下落途中腰背失控并列成常见问题；本条按后者设计错误姿态，细节来自通用训练常识。",
+    "level": 0.7,
+    "override": {
+      "pelvis": 77,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，正面俯视近景，画面只保留前臂、双手、垫面和上半身，头顶出画，因此看不到头脸朝向，也看不到全程的躯干起伏；镜像与否按同系列跪姿俯卧撑（头朝画面左）统一取 true。画面上有绿色虚线连接两只手掌并标注“略比肩宽”，可确认握距稍宽于肩。全程约十秒，据资料说明下落约三秒、推起很短，故取 0.80→4.75 秒这一次：3.90 秒落到最低点，之后快速回到起点。手撑垫、膝压垫都不移动，手部固定点取肩下略前。"
+}

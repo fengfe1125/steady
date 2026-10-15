@@ -1,0 +1,140 @@
+{
+  "sourceID": "55cc42d05f9bd587372f64cc",
+  "sourceName": "跪姿缓冲俯卧撑",
+  "part": "chest",
+  "title": "跪姿缓冲俯卧撑",
+  "variant": "跪姿 + 上身向前倾倒、双手先着地缓冲 · 手距略宽于肩 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.63,
+    1.2,
+    1.6,
+    1.89,
+    3.15,
+    5.68
+  ],
+  "levels": [
+    0,
+    0.45,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 85,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 62,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 67,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "triceps.long",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "跪在垫上，把重心慢慢往前送，身体像门板一样倒向垫面；手掌先落地、肘顺着弯曲，用胸肌把下坠的力量吃住，再慢慢撑回跪立位。",
+  "mistake": {
+    "title": "下落时塌腰，髋部先砸向垫面",
+    "fix": "倒下去的过程中收腹夹臀，保持肩、髋、膝一条线；双手稍微放正，让肘先弯、由胸肌吸收冲击。",
+    "basis": "源 detail.description 说明冲击过大时可略微撅臀、且常见错误是肘部受力过多；结合通用训练常识补充塌腰这一形态表现。",
+    "level": 0.6,
+    "override": {
+      "pelvis": 78,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，纯侧面机位，人物头朝画面左侧，mirror 取 true；全程 3 次，每次约 5 秒。以第一次为例：0.63 秒上身已经前倾、手掌将触垫，1.89 秒身体落在垫上、胸口最低、肘向后弯，是缓冲点；之后 3.15 秒与 4.42 秒慢慢把上身撑回，5.68 秒回到膝盖承重的跪立位。因此下落只用约 1.3 秒、回来要 3 秒多，节奏是快落慢起。膝与小腿全程压垫不移动，手撑地后也不再移位。源资料提到冲击力过大时可以略微撅臀，这一点在本次所选重复中没有明显出现。"
+}

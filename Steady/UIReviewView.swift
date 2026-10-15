@@ -48,12 +48,20 @@ struct UIReviewView: View {
                     NavigationStack { AnimatedTrainingCollectionView(bundle: bundle) }
                 }
             case "equipment": NavigationStack { EquipmentLibraryView() }
+            case "coach": NavigationStack { CoachView(model: model) }
+            case "action-library-chest": NavigationStack { ActionLibraryView(part: "chest") }
             case "equipment-motion": NavigationStack { EquipmentLessonView(lesson: .seatedChestPress) }
             case "equipment-grip": NavigationStack { EquipmentLessonView(lesson: .seatedChestPress, initialMode: .detail) }
             case "equipment-mistakes": NavigationStack { EquipmentLessonView(lesson: .seatedChestPress, initialMode: .mistakes) }
             default:
                 // animated-lesson-<topic>:<lessonID>, e.g. animated-lesson-shoulders:shoulders-lateral-raise
-                if screen.hasPrefix("animated-lesson-"),
+                // action-library-<part>:<sourceID>, e.g. action-library-chest:586cfdab124816784056bfa7
+                if screen.hasPrefix("action-library-"),
+                   case let parts = screen.dropFirst("action-library-".count).split(separator: ":", maxSplits: 1), parts.count == 2,
+                   let entry = try? ActionLibrary.entries(part: String(parts[0])).first(where: { $0.id == String(parts[1]) }),
+                   let url = entry.artworkURL {
+                    NavigationStack { AnimatedTrainingLessonView(lesson: entry.lesson, animation: entry.animation, resourceURL: url, runtime: .bundled, initialMode: ProcessInfo.processInfo.arguments.contains("--reference-detail") ? .detail : (ProcessInfo.processInfo.arguments.contains("--reference-mistakes") ? .mistakes : .motion)) }
+                } else if screen.hasPrefix("animated-lesson-"),
                    case let parts = screen.dropFirst("animated-lesson-".count).split(separator: ":", maxSplits: 1), parts.count == 2,
                    let topic = AnimatedTrainingTopic(rawValue: String(parts[0])), let bundle = try? topic.load(),
                    let lesson = bundle.collection.lesson(id: String(parts[1])),

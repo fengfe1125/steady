@@ -1,0 +1,134 @@
+{
+  "sourceID": "6492c31ad721f9000174798d",
+  "sourceName": "右侧跪姿半程弓箭俯卧撑",
+  "part": "chest",
+  "title": "右侧跪姿半程弓箭俯卧撑",
+  "variant": "跪姿弓箭手俯卧撑 · 只下到一半幅度 · 宽距双手 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    9.6,
+    10.4,
+    12.3,
+    13.2,
+    13.8,
+    14.3
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "neck": -8,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 71,
+      "neck": -8,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 70,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 76,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 5,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 20,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌"
+  ],
+  "cue": "跪在垫上，双手比肩宽出一大截，一侧手臂贴近身体撑住，另一侧向外撑远；屈肘只下到一半就推起，腰背始终不塌。",
+  "mistake": {
+    "title": "撑起时手肘锁死，同时塌腰撅臀",
+    "fix": "推起时肘关节留一点微屈不要顶死，同时收腹夹臀，让肩、髋、膝保持在一条斜线上。",
+    "basis": "依据资料常见错误：伸臂时肘关节超伸锁死，过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 15 秒，侧面机位，人物头部朝画面左侧，所以 mirror 为 true。垫上跪姿：膝盖着垫、小腿向后上方抬起、脚离地，双手间距明显大于肩宽。前 7 帧机位较远，后 5 帧拉近，动作幅度很小，属于半程。选后半段这次重复：9.6 秒撑到最高，13.2 秒降到最低点，14.3 秒回到最高。手掌与膝为固定支点；角度为人工示意拟合。"
+}

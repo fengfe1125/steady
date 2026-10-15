@@ -1,0 +1,196 @@
+{
+  "sourceID": "62f36150fe941a0001445da9",
+  "sourceName": "跪姿宽距俯卧撑",
+  "part": "chest",
+  "title": "跪姿宽距俯卧撑",
+  "variant": "跪姿 · 双手间距约两倍肩宽 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.49,
+    0.9,
+    1.2,
+    1.48,
+    2.0,
+    2.47
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.75,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 56,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.3": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 8,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 8,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.75": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 16,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 16,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 22,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 22,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.4": {
+      "pelvis": 66,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 10,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 380
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.lat",
+      "pec.upper",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "跪撑宽握、两手间距约两倍肩宽，屈肘让胸口下沉到大胸有明显牵拉，再用胸部发力把身体推起，肘伸直但别锁死，全程腰背挺直。",
+  "mistake": {
+    "title": "塌腰撅臀",
+    "fix": "全程收紧腹部和臀部，让肩、髋、膝保持一条斜线；肘关节伸直即可，不要超伸锁死。",
+    "basis": "来源资料常见错误：伸臂时肘关节超伸锁死、训练中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，固定侧面机位，人物朝画面左侧，画面带姿态跟踪骨架叠加。跪姿俯卧撑，双手左右间距约两倍肩宽（横向宽度侧面不可见），膝盖着垫、小腿向后抬起。取 0.49~2.47 秒一轮：0.49 直臂顶部，1.48 胸口接近垫面，2.47 回到顶部，视频内多轮节奏一致。手掌固定在肩前同一位置，肘部伸直时不过分锁死。"
+}

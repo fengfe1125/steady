@@ -1,0 +1,147 @@
+{
+  "sourceID": "5763d3b011fc5077c3acf565",
+  "sourceName": "下斜俯卧撑",
+  "part": "chest",
+  "title": "下斜俯卧撑",
+  "variant": "下斜 · 双手撑垫、双脚搭在凳面上（脚高于手）· 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    2.62,
+    3.38,
+    3.98,
+    4.12,
+    4.5,
+    4.88
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 87,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        }
+      }
+    },
+    "1": {
+      "pelvis": 97,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": -155,
+      "y": -95
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -60,
+      "length": 280
+    },
+    {
+      "type": "bench",
+      "x": -230,
+      "length": 90,
+      "top": -88
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手撑在垫子上、略宽于肩，双脚搭在凳面上，身体从头到脚保持一条直线；屈肘让肘降到与躯干同高，再撑起还原。",
+  "mistake": {
+    "title": "塌腰：髋部下沉，身体折成两段",
+    "fix": "撑起前先把腹部收紧、臀部夹住，让肩、髋、踝回到同一条直线；如果撑不住，就把脚从凳面上放下来降低难度。",
+    "basis": "源资料「常见错误」写明训练过程中塌腰或撅臀；脚被垫高后腰腹更容易失去控制。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 92,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "帧图为 512×512 的侧前方机位，人物脸朝画面左侧，所以 mirror 为 true。视频里共 3 次重复，约每 3.0 秒一次；取第 2 次：2.62 秒手臂撑直、身体接近水平的最高点（与 1.88 秒的姿势一致），3.38 秒手臂刚屈、肩部开始下沉，4.12 秒降到最低点、胸口接近垫面，4.88 秒撑回最高点。双手掌平放在垫子上、间距略宽于肩；脚踝与脚背搭在一张白色矮凳的凳面上，脚尖悬在凳沿外，整段动作手掌和脚踝位置都不移动。6.38 秒之后画面切到更近的机位，未采用。躯干角度为按帧图拟合的示意值。"
+}

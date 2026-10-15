@@ -1,0 +1,137 @@
+{
+  "sourceID": "5eb385b935e38a31ec2f48c7",
+  "sourceName": "阻力带负重俯卧撑",
+  "part": "chest",
+  "title": "阻力带负重俯卧撑",
+  "variant": "阻力带绕背增加负荷 · 标准俯卧撑 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    5.07,
+    5.55,
+    6.15,
+    6.45,
+    7.1,
+    7.75
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "pec.lower",
+      "triceps.long",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上束"
+  ],
+  "cue": "阻力带绕过背上背部并用大拇指压住，双手稍宽于肩撑地，身体绷成直线后屈肘下沉到胸口近垫，再发力推起，全程腰腹收紧不塌不撅。",
+  "mistake": {
+    "title": "塌腰，腹部先掉下去",
+    "fix": "全程收紧腹部和臀部，让肩、髋、踝保持一条直线；带上负荷越大越要夹紧臀部稳住骨盆。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面，人物面朝画面左侧，故 mirror 为 true，共 3 次。取第 3 次：5.1 秒手臂撑直为起点，6.4 秒胸口接近垫面为最低点，7.8 秒推回顶部。双手比肩稍宽，侧面无法体现宽度，仅以 dx 略大示意；阻力带横在背上，侧面无法表现，图中未画出。角度为人工示意拟合。"
+}

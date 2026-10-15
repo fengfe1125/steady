@@ -1,0 +1,149 @@
+{
+  "sourceID": "5b90f8a8d734a219f8e00f1d",
+  "sourceName": "半球跪式俯卧撑",
+  "part": "chest",
+  "title": "半球跪式俯卧撑",
+  "variant": "双膝跪半球 · 双手撑垫 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    2.2,
+    2.6,
+    3.0,
+    3.3,
+    3.7,
+    4.2
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 94,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 70,
+          "knee": 95,
+          "ankle": 20
+        },
+        "far": {
+          "hip": 70,
+          "knee": 98,
+          "ankle": 20
+        }
+      }
+    },
+    "1": {
+      "pelvis": 104,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 76,
+          "knee": 88,
+          "ankle": 20
+        },
+        "far": {
+          "hip": 76,
+          "knee": 91,
+          "ankle": 20
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -50,
+      "y": -35
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": 40,
+      "length": 150
+    },
+    {
+      "type": "bosu",
+      "x": -50,
+      "r": 58
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "膝盖跪压半球顶端，小腿向后抬起交叠，双手撑垫略宽于肩，屈肘降胸到近垫再发力推回。",
+  "mistake": {
+    "title": "塌腰，腹部松掉",
+    "fix": "全程收紧腹臀，让头、背、髋保持一条斜线；腰部下坠就减小下降幅度。",
+    "basis": "源资料要求身体成直线，结合跪姿推撑最常见的代偿。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 102,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": 30,
+          "knee": 60,
+          "ankle": 20
+        },
+        "far": {
+          "hip": 30,
+          "knee": 60,
+          "ankle": 20
+        }
+      }
+    }
+  },
+  "observation": "主视频为侧面，人物头/脸朝画面左侧，故 mirror 为 true。共 5 次，取第 2 次：2.2 秒手臂撑直为起点，3.1 秒前后胸口最低、接近垫面，4.2 秒回到起点。双膝跪在半球顶面，小腿向后上方抬起、双脚交叠悬空；双手撑在身前垫面、间距比肩略宽，全程不移动。各次下降深度略有差异，前三次较深、后段较浅；视频前段镜头较近、后段拉远，肘部与手部细节被衣袖部分遮挡，肘角为拟合值。"
+}

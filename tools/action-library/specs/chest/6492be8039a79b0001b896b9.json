@@ -1,0 +1,140 @@
+{
+  "sourceID": "6492be8039a79b0001b896b9",
+  "sourceName": "跪姿窄距俯卧撑底部保持",
+  "part": "chest",
+  "title": "跪姿窄距俯卧撑底部保持",
+  "variant": "跪姿 + 手距略窄于肩 + 最低点长时间静力保持 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.33,
+    0.7,
+    1.05,
+    1.35,
+    7.05,
+    7.95
+  ],
+  "levels": [
+    0,
+    0.45,
+    0.9,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 63,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 65,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 70,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "serratus",
+      "triceps.long",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "窄距跪撑，屈臂降到胸口贴近垫面后停住，肘略高于躯干；保持腰背一条直线，自然呼吸，撑够时间再伸臂回位。",
+  "mistake": {
+    "title": "保持时塌腰撅臀，支撑线断掉",
+    "fix": "把腹部和臀部收紧，肋骨往下压，让肩、髋、膝成一条直线；稳不住就缩短保持时间而不是靠塌腰撑着。",
+    "basis": "源资料把保持阶段的腰背失控列为常见问题；错误形态按通用训练常识补全为塌腰。",
+    "level": 0.85,
+    "override": {
+      "pelvis": 79,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，纯侧面机位，人物头朝画面左侧，mirror 取 true；膝与小腿压垫，双脚在身后交叉上翘。0.33 至 6.33 秒身体一直维持在最低点附近，只有很小的起伏（6.33 与 7.67 秒胸口最贴近垫面、肘部收到身体两侧），也就是说整段视频以底部静力保持为主。为了让动画能循环，本 JSON 把它写成一个完整循环：0.33 秒撑起、1.35 秒落到最低点，保持到约 7.05 秒再回起，首尾两个起落阶段属于还原补全而非画面直接可见。手距略窄于肩，在侧视角只能通过手部固定点近似表达。"
+}

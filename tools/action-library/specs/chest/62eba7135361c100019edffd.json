@@ -1,0 +1,144 @@
+{
+  "sourceID": "62eba7135361c100019edffd",
+  "sourceName": "右侧侧卧推起",
+  "part": "chest",
+  "title": "侧卧推起",
+  "variant": "侧卧于垫上 · 髋与腿贴垫不动 · 单臂把上半身推起 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "hands": {
+    "near": "open"
+  },
+  "times": [
+    5.41,
+    6.0,
+    6.6,
+    7.1,
+    7.8,
+    8.36
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 55,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 20,
+          "el": 90
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -40,
+          "knee": 0
+        },
+        "far": {
+          "hip": -40,
+          "knee": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 10,
+          "el": 150
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -5,
+          "knee": 0
+        },
+        "far": {
+          "hip": -5,
+          "knee": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 20,
+      "y": -36
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 15,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -185,
+      "length": 390
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "pec.upper",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "侧卧后髋和腿全程压在垫上，上侧手撑在上侧胸口下方；靠手臂把上半身推离垫面，顶端把同侧胸肌收紧，再慢慢放回去。",
+  "mistake": {
+    "title": "手臂伸得太远，上半身推不起来、胸口没收紧",
+    "fix": "把支撑点收回到上侧胸口的正下方，肘部贴着身体后收，下落到位后再让胸肌发力把上半身推高。",
+    "basis": "源资料常见错误：手臂离身体太远，胸部没有收缩挤压的感觉。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 88,
+      "lumbar": -6,
+      "arms": {
+        "far": {
+          "sh": 15,
+          "el": 150
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -7
+        },
+        "far": {
+          "hip": -7
+        }
+      }
+    }
+  },
+  "observation": "视频 11.8 秒，前半段是平视远景、6 秒后机位变低变近，人物始终侧卧在垫上，头朝画面右侧，因此不镜像。总共约四次起伏，取 5.41 秒撑到最高位、7 秒前后降到最低位、8.36 秒再次推起这一轮。上侧手掌全程平按在垫面、位置不移动，手掌张开的；髋部和两腿一直贴着垫面，头略微抬起。下侧手臂被身体挡住，看不清具体位置，按屈肘收在身前处理。"
+}

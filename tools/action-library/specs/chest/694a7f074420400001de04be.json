@@ -1,0 +1,131 @@
+{
+  "sourceID": "694a7f074420400001de04be",
+  "sourceName": "地板哑铃锤式卧推",
+  "part": "chest",
+  "title": "地板哑铃锤式卧推",
+  "variant": "平地仰卧 · 锤式对握 · 肘夹角30~45° · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    3.3,
+    3.9,
+    4.8,
+    5.2,
+    6.6,
+    8.0
+  ],
+  "levels": [
+    0,
+    0.15,
+    0.85,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 5
+        },
+        "far": {
+          "sh": 90,
+          "el": 5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "arms": {
+        "near": {
+          "sh": 25,
+          "el": 90
+        },
+        "far": {
+          "sh": 25,
+          "el": 90
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 0,
+      "y": -36
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "屈膝踩稳仰卧，对握哑铃举在胸口上方；肘部保持三四十度夹角慢慢放到三头肌轻触地面，再推起至手臂接近伸直、不锁死肘关节。",
+  "mistake": {
+    "title": "下放时肘部过度外展、离开躯干",
+    "fix": "主动下沉肩胛，控制肘部与躯干的夹角在30~45°，放慢下放速度来稳定肩关节。",
+    "basis": "源 detail 常见错误：肘部外展过大导致肩部代偿，需主动下沉肩胛并保持肘部夹角。",
+    "level": 0.5,
+    "override": {
+      "arms": {
+        "near": {
+          "sh": 62,
+          "el": 90
+        },
+        "far": {
+          "sh": 62,
+          "el": 90
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，侧面机位，人物头朝画面右侧（+x），故 mirror 为 true；平躺在地板上、双腿伸直并拢（帧中双脚略叠），未铺瑜伽垫。取一次完整重复：3.3 秒哑铃举至顶端，5.2 秒上臂后侧轻触地面、肘部保持约40°夹角，8.0 秒推回顶端。掌心相对锤式对握，动作中胸廓稳定。角度为人工示意拟合。"
+}

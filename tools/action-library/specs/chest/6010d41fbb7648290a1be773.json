@@ -1,0 +1,143 @@
+{
+  "sourceID": "6010d41fbb7648290a1be773",
+  "sourceName": "哑铃臀桥卧推",
+  "part": "chest",
+  "title": "哑铃臀桥卧推",
+  "variant": "臀桥支撑 · 髋部顶起保持直线 · 哑铃 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    1.0,
+    1.8,
+    3.2,
+    3.8,
+    5.0,
+    6.0
+  ],
+  "levels": [
+    0,
+    0.1,
+    0.8,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -104,
+      "lumbar": -6,
+      "neck": -10,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 3
+        },
+        "far": {
+          "sh": 90,
+          "el": 3
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 95
+        },
+        "far": {
+          "hip": 12,
+          "knee": 95
+        }
+      }
+    },
+    "1": {
+      "pelvis": -104,
+      "lumbar": -6,
+      "neck": -10,
+      "arms": {
+        "near": {
+          "sh": 20,
+          "el": 95
+        },
+        "far": {
+          "sh": 20,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 95
+        },
+        "far": {
+          "hip": 12,
+          "knee": 95
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "shoulder",
+    "side": "near",
+    "at": {
+      "x": -110,
+      "y": -38
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 135,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 122,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower"
+    ],
+    "secondary": [
+      "glute.max",
+      "triceps.long",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌外侧"
+  ],
+  "cue": "双脚踩地夹臀顶髋，让肩、髋、膝连成一条斜线并全程保持；哑铃举在胸口上方，肘部轻落垫面后再夹胸推回顶端。",
+  "mistake": {
+    "title": "推铃时臀部掉下来、腰塌向垫面",
+    "fix": "全程收紧臀部和核心把髋顶住，保持肩、髋、膝一条直线；髋稳住了再推哑铃。",
+    "basis": "源 detail 要求全程维持臀桥姿态、身体呈一条直线；髋部下掉是臀桥类动作通用常见错误。",
+    "level": 0.5,
+    "override": {
+      "pelvis": -94,
+      "lumbar": -4
+    }
+  },
+  "observation": "主视频 12 帧全部为肩胛骨后缩下沉的背部特写教学镜头（绿色箭头示意），没有出现完整动作画面。身体姿态按文字说明构建：臀桥支撑、肩头贴垫、屈膝踩地、髋部顶起，卧推节奏参照同系列 3 秒离心推法估计：1.0 秒顶端，3.8 秒大臂落至体侧肘部近垫，6.0 秒推回顶端。时间点与角度均为人工示意拟合。"
+}

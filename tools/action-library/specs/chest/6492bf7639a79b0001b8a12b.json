@@ -1,0 +1,138 @@
+{
+  "sourceID": "6492bf7639a79b0001b8a12b",
+  "sourceName": "跪姿腰侧半程俯卧撑",
+  "part": "chest",
+  "title": "跪姿腰侧半程俯卧撑",
+  "variant": "跪姿腰侧 · 只下到屈肘约90度 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    2.51,
+    3.2,
+    3.9,
+    4.51,
+    5.0,
+    5.52
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 70,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 74,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 79,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -34,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -34,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 400
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat"
+    ],
+    "secondary": [
+      "pec.lower",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌"
+  ],
+  "cue": "手掌撑在腰侧、指尖朝后，屈膝跪撑；只下放到大臂与地面平行、肘约成直角就向上推回，全程控制速度不猛落。",
+  "mistake": {
+    "title": "下放过深，肘部低于躯干太多",
+    "fix": "记住半程的停止点：大臂与背部平齐即可返程；同时保持腹部收紧，避免腰部下坠借力。",
+    "basis": "依据源资料常见错误：训练过程中塌腰或撅臀、伸臂时肘关节超伸锁死。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 70,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080 宽，侧面，人物头朝画面左侧。1.50 秒与 4.51 秒为最低位（头顶约 258），2.51 秒与 5.52 秒为最高位（头顶约 229），幅度明显小于全程俯卧撑，符合半程描述；6.52 秒后切换为更近机位。取 2.51-5.52 秒的一次往复作为完整重复。双手撑在腰侧这一细节来自文字资料，帧图中手臂与躯干重叠、手距看不清。"
+}

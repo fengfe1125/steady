@@ -1,0 +1,134 @@
+{
+  "sourceID": "5c2c7780d734a269072476a6",
+  "sourceName": "跪姿俯冲轰炸机俯卧撑",
+  "part": "chest",
+  "title": "跪姿俯冲轰炸机俯卧撑",
+  "variant": "跪姿 · 婴儿式与上身撑起之间来回（俯冲轰炸）· 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.8,
+    1.8,
+    4.4,
+    5.3,
+    6.8,
+    9.5
+  ],
+  "levels": [
+    0,
+    0.15,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 88,
+      "lumbar": 18,
+      "thorax": 14,
+      "neck": 0,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 116,
+          "knee": 118,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 118,
+          "knee": 120,
+          "ankle": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 55,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -18,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": -8,
+          "knee": 43,
+          "ankle": 0
+        },
+        "far": {
+          "hip": -8,
+          "knee": 45,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 80,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 80,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -200,
+      "length": 350
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "triceps.long",
+      "triceps.lat",
+      "serratus",
+      "erectors"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "先跪成婴儿式、双手向前撑住垫面，然后吸气让胸口贴着垫面往前往上划出去，撑到最高处感受背部发力，再呼气把髋部推回后方还原。",
+  "mistake": {
+    "title": "起身时含胸弓背，只靠手臂把身体抬起来",
+    "fix": "起身先挺胸沉肩、把胸口打开，再让背部顺序发力推起，全程收紧腰腹保持脊柱延展。",
+    "basis": "资料“常见错误”：含胸弓背，解决方法是挺胸沉肩、收紧腰腹、全程保持腰背平直。",
+    "level": 0.5,
+    "override": {
+      "lumbar": 26,
+      "thorax": 22,
+      "neck": 10
+    }
+  },
+  "observation": "视频 18.08 秒，2 次重复，全程侧面机位，人物头朝画面左侧、在灰绿色垫上完成，双膝着垫、小腿与脚背平放垫面不动，双手向前撑在垫上也不动。0.75 秒与 9.79 秒都是臀部坐回脚跟、胸口贴近大腿的婴儿式；5.27 秒是撑到最高处：手臂伸直、胸口抬起、髋部前移下沉。取 0.75→5.27→9.79 这一次完整重复。两次重复之间第 15.8 秒是俯冲过程的中段（胸口低、髋部高）。"
+}

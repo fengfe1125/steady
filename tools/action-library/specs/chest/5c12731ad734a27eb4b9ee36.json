@@ -1,0 +1,215 @@
+{
+  "sourceID": "5c12731ad734a27eb4b9ee36",
+  "sourceName": "哑铃俯卧撑交替 T 字转体",
+  "part": "chest",
+  "title": "哑铃俯卧撑交替 T 字转体",
+  "variant": "哑铃支撑 · 推起后转体举铃 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    0.2,
+    0.64,
+    1.15,
+    1.95,
+    2.6,
+    3.2
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.6,
+    1,
+    0.6,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 0
+        },
+        "far": {
+          "sh": 110,
+          "el": 0,
+          "f": 0.5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "0.35": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 60
+        },
+        "far": {
+          "sh": 110,
+          "el": 90,
+          "f": 0.5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    },
+    "0.6": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 0
+        },
+        "far": {
+          "sh": 110,
+          "el": 0,
+          "f": 0.5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 0
+        },
+        "far": {
+          "sh": 230,
+          "el": 0,
+          "f": 0.3
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -8,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "deltoid.ant",
+      "triceps.long"
+    ],
+    "secondary": [
+      "pec.lower",
+      "obliques",
+      "glute.med"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "三角肌前束",
+    "肱三头肌"
+  ],
+  "cue": "双手各握一只哑铃撑地，收紧核心做俯卧撑；推直后身体转向一侧成 T 字，上侧手臂将哑铃举向天花板，稍停后落回俯撑，两侧交替。",
+  "mistake": {
+    "title": "推撑时塌腰，髋部下坠",
+    "fix": "全程收紧腹部与臀部，让头、肩、髋、踝始终成一条直线；核心不稳时可先做标准俯卧撑再渐进加入转体。",
+    "basis": "俯卧撑类动作通用常见错误：塌腰。",
+    "level": 0.6,
+    "override": {
+      "pelvis": 82,
+      "lumbar": -14,
+      "legs": {
+        "near": {
+          "hip": -10
+        },
+        "far": {
+          "hip": -10
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面，人物朝左，双手撑哑铃，共 4 次（俯卧撑+左右交替转体）。取第 1 次：0.64 秒俯撑最低点，约 1.2 秒推起，1.95 秒转成侧板、上侧手臂竖直举铃，3.2 秒回到俯撑。侧面视角无法表现躯干绕纵轴的旋转与双脚叠放，举铃手臂角度为示意拟合；哑铃手柄大致指向镜头。 （Claude 统筹修正：自由手用透视缩短 f 0.5 避免穿地；转体抬臂从下方经头前方转到上方 sh 230、f 0.3，表现手臂朝镜头外侧打开；塌腰错误示意放在顶端 level 0.6。）"
+}

@@ -16,11 +16,15 @@ public enum TrainingArtworkDocument {
 
     public static func usesBundledAnatomy(at url: URL) throws -> Bool {
         let html = try String(contentsOf: url, encoding: .utf8)
-        guard html.contains("window.SteadyLesson=") else { return false }
-        guard html.contains("<script src=\"\(anatomyEngine)\"></script>") else {
+        let engineName: String
+        if html.contains("window.SteadyLesson=") { engineName = anatomyEngine }
+        else if html.contains("window.SteadyReferenceLesson=") { engineName = "video-reference-runtime.js" }
+        else if html.contains("window.SteadyBasicLesson=") { engineName = "legs-basic-renderer.js" }
+        else { return false }
+        guard html.contains("<script src=\"\(engineName)\"></script>") else {
             throw TrainingCollectionLoadError.invalidResource
         }
-        let engine = url.deletingLastPathComponent().appendingPathComponent(anatomyEngine)
+        let engine = url.deletingLastPathComponent().appendingPathComponent(engineName)
         guard FileManager.default.isReadableFile(atPath: engine.path) else {
             throw TrainingCollectionLoadError.missingResource
         }
@@ -30,7 +34,9 @@ public enum TrainingArtworkDocument {
     public static func anatomyExplanations(at url: URL, lessonID: String) throws -> TrainingArtworkExplanations? {
         guard try usesBundledAnatomy(at: url) else { return nil }
         let html = try String(contentsOf: url, encoding: .utf8)
-        guard let start = html.range(of: "window.SteadyLesson="),
+        let marker = html.contains("window.SteadyReferenceLesson=") ? "window.SteadyReferenceLesson=" :
+            (html.contains("window.SteadyBasicLesson=") ? "window.SteadyBasicLesson=" : "window.SteadyLesson=")
+        guard let start = html.range(of: marker),
               let end = html.range(of: ";</script>", range: start.upperBound..<html.endIndex),
               let json = String(html[start.upperBound..<end.lowerBound]).data(using: .utf8) else {
             throw TrainingCollectionLoadError.invalidResource

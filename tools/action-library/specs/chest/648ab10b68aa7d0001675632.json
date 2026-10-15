@@ -1,0 +1,139 @@
+{
+  "sourceID": "648ab10b68aa7d0001675632",
+  "sourceName": "跪姿快速窄距俯卧撑",
+  "part": "chest",
+  "title": "跪姿快速窄距俯卧撑",
+  "variant": "窄距 · 双手略窄于肩 · 快速节奏 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.74,
+    3.88,
+    4.06,
+    4.16,
+    4.38,
+    4.6
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 76,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -2,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -2,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "triceps.lat"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "跪姿窄距俯撑，两手略窄于肩、肘部朝后夹住身体，快速下沉到胸口近垫立即推起，保持不停顿的快节奏。",
+  "mistake": {
+    "title": "塌腰，腹部先往下掉",
+    "fix": "全程收紧腹部和臀部，让肩、髋、膝保持一条斜线，速度再快也不放松躯干。",
+    "basis": "源动作说明的常见错误栏提示训练中会塌腰或撅臀，取侧面最明显的塌腰做示意。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512，侧面，人物面朝画面左侧；跪姿，膝盖着垫、小腿向后上方抬起，双手略窄于肩（侧面看手掌略靠肩部后下方）。节奏很快，约 0.85 秒一次。取 3.74~4.6 秒一次重复：3.74 秒撑直到顶（帧 3.74 在顶部），约 4.16 秒降到最低，4.6 秒回顶；最低点时刻为帧间估计。掌根与膝盖全程不移动。"
+}

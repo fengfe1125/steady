@@ -1,0 +1,138 @@
+{
+  "sourceID": "6492bfc6d721f9000174521e",
+  "sourceName": "腰侧俯卧撑底部保持",
+  "part": "chest",
+  "title": "腰侧俯卧撑底部保持",
+  "variant": "腰侧手位 · 底部等长保持 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.5,
+    1.2,
+    2.6,
+    4.6,
+    6.6,
+    7.6
+  ],
+  "levels": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 81,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -24,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -24,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "两手收在髋旁撑稳，屈肘贴身下压到最低点停住，全身绷直保持住，别塌腰。",
+  "mistake": {
+    "title": "塌腰，髋部往下掉",
+    "fix": "全程收紧腹部和臀部，让肩、髋、踝保持一条直线；撑不住就缩短保持时间。",
+    "basis": "来源说明的常见错误项：做动作时腰腹松掉、塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 89,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080。0.33~4.33 秒为正侧面，人物头朝画面左侧（mirror 取 true）；5.0 秒起机位升高成斜俯视角，头仍朝左下。整段 8 秒基本停在俯卧撑最低位不动，属于等长保持，故 1.2~6.6 秒多个点 level 均取 1；开头下降与结尾回升为示意性补全。手腕撑点在髋部侧面、明显在肩关节后方：侧面帧里手腕与髋部/短裤几乎平齐，肩在其前上方，估 dx 约 -24。远侧手被躯干遮挡看不清，按说明视为与近侧手对称、双手均在腰侧。肘深屈贴身、肘尖朝后上；脚尖着垫为支点，全程不移动。角度为人工示意拟合。"
+}

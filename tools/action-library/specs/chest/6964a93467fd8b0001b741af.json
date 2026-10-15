@@ -1,0 +1,139 @@
+{
+  "sourceID": "6964a93467fd8b0001b741af",
+  "sourceName": "单臂哑铃上斜卧推",
+  "part": "chest",
+  "title": "单臂哑铃上斜卧推",
+  "variant": "单臂交替 · 上斜凳约45° · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    3.65,
+    4.69,
+    5.74,
+    6.78,
+    7.82,
+    8.87
+  ],
+  "levels": [
+    0,
+    0.2,
+    0.55,
+    0.85,
+    1,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 45,
+          "el": 100
+        },
+        "far": {
+          "sh": 118,
+          "el": 10
+        }
+      }
+    },
+    "1": {
+      "pelvis": -60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 118,
+          "el": 10
+        },
+        "far": {
+          "sh": 45,
+          "el": 100
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 10,
+      "y": -119
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 120,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 108,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -20,
+      "length": 110,
+      "top": -88,
+      "back": {
+        "x": -10,
+        "angle": 60,
+        "length": 170
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.7
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.ant",
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ]
+  },
+  "primaryNames": [
+    "三角肌前束",
+    "胸大肌上部"
+  ],
+  "cue": "躺稳在上斜凳上，双脚踩实，挺胸沉肩；单手把哑铃从胸侧推到上方，另一只手停在胸侧不动，再缓慢放回并换边。",
+  "mistake": {
+    "title": "另一侧手臂跟着一起发力",
+    "fix": "非工作侧的哑铃停在胸侧保持完全静止，腹部收紧，避免身体跟着旋转借力。",
+    "basis": "源资料常见错误：另一侧哑铃左右晃动导致躯干扭转。",
+    "level": 0.5,
+    "override": {
+      "arms": {
+        "far": {
+          "sh": 60,
+          "el": 45
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面略偏正面，人物仰卧在约45度上斜凳上，头朝画面左侧，双脚踩地。视频为交替单臂推举：0.5秒时双手都在顶端，之后两臂交替。选取3.65至8.87秒一次循环：近侧臂从胸侧推起至顶端（视为level 1），同时远侧臂回落到胸侧休息，随后回到起始。帧图较小，近/远侧的判定和个别时间点为估计，哑铃为人工拟合。"
+}

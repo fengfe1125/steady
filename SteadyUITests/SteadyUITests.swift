@@ -162,6 +162,20 @@ import CryptoKit
         XCTAssertTrue(app.buttons["settings"].waitForExistence(timeout: 10))
     }
 
+    /// Coach tab → 胸部动作库 → first move must open its lesson player.
+    func testActionLibraryOpensLesson() {
+        startFresh()
+        tap(app.tabBars.buttons["教练"])
+        tap(app.buttons["actionLibrary_chest"])
+        XCTAssertTrue(app.navigationBars["胸部动作库"].waitForExistence(timeout: 10), "动作库列表没有打开")
+        capture("action-library-list")
+        let first = app.buttons["actionLibrary_648a8e8a68aa7d000165d38e"]
+        XCTAssertTrue(first.waitForExistence(timeout: 10), "列表里没有第一个动作")
+        tap(first)
+        XCTAssertTrue(app.navigationBars["90° 跪姿宽距俯卧撑"].waitForExistence(timeout: 10), "点动作没有进入动作页")
+        capture("action-library-lesson")
+    }
+
     func testTrainingCandidateAbs() { candidateFlow("abs-collection", "abs-warmup-marching") }
     func testTrainingCandidateChest() { candidateFlow("chest-animation-collection", "chest-warmup-march") }
     func testTrainingCandidateArms() { candidateFlow("arms-animation-collection", "arms-warmup-triceps") }

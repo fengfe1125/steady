@@ -1,0 +1,146 @@
+{
+  "sourceID": "6492c057d721f90001745877",
+  "sourceName": "跪姿上斜半程俯卧撑",
+  "part": "chest",
+  "title": "跪姿上斜半程俯卧撑",
+  "variant": "跪姿 · 撑凳面 · 只落到屈肘约 90° 的半程幅度 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    1.0,
+    2.0,
+    5.6,
+    6.6,
+    8.4,
+    10.4
+  ],
+  "levels": [
+    0,
+    0.12,
+    0.85,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 40,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 48,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 74,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 79,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -88,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -88,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 200
+    },
+    {
+      "type": "bench",
+      "x": 50,
+      "length": 120,
+      "top": -88
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "撑住凳面跪稳以后只走半程：肘弯到接近直角就刹住，别一路沉到凳面，再靠胸部和手臂把身体顶回起点，腰背始终别松。",
+  "mistake": {
+    "title": "下放幅度过大，直接沉到胸口碰凳子",
+    "fix": "给自己定一条看不见的停止线，肘部约 90° 就还原；半程的意义是全程保持张力，沉到底反而变成借力。",
+    "basis": "资料要求下落到屈肘 90 度即还原，超过这个幅度就失去了半程的价值。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 52,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 12.26 秒。0.51 秒与 3.58 秒是侧面机位：双手撑在凳面上、手臂基本伸直，双膝跪垫、小腿向后斜伸、脚离垫；6.64 秒切到左前方 3/4 视角，此时肘部明显屈曲、胸口停在小臂高度附近，没有一路沉到凳面；10.73 秒回到起点。与“跪姿上斜俯卧撑”相比，本动作底端的躯干倾角明显更小（最低点髋角约 48），属于半程幅度。凳面高度按已验证的跪姿上斜模板取约 43 cm。"
+}

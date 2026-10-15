@@ -1,0 +1,127 @@
+{
+  "sourceID": "586cfdaf124816784056bfb8",
+  "sourceName": "哑铃钻石卧推",
+  "part": "chest",
+  "title": "哑铃钻石卧推",
+  "variant": "窄距 · 两只哑铃相贴 · 肘贴近躯干 · 平板凳侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    9.11,
+    9.7,
+    11.1,
+    11.54,
+    12.1,
+    12.76
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 0
+        },
+        "far": {
+          "sh": 90,
+          "el": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 25,
+          "el": 100
+        },
+        "far": {
+          "sh": 25,
+          "el": 100
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 20,
+      "y": -119
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 130,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 118,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -120,
+      "length": 190,
+      "top": -88
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "仰卧凳上，肩胛后缩下沉贴住凳面，两只哑铃相贴置于胸口上方；上推时肘贴着身体向内夹，顶端稍停，再慢放到胸口两侧。",
+  "mistake": {
+    "title": "推起时耸肩、肩膀前送借力",
+    "fix": "全程主动沉肩，肩胛骨后缩贴凳不松开，用胸部发力推起，而不是靠肩带前送。",
+    "basis": "源资料常见错误：发力时耸肩、肩膀前送借力，应保持肩胛后缩下沉。",
+    "level": 0.5,
+    "override": {
+      "thorax": 16,
+      "neck": -4
+    }
+  },
+  "observation": "主视频 1080×1080，侧面，人物头朝画面左、仰卧平板凳（与模板默认朝向一致，未镜像），共 5 次，前段远景后段近景。取第 4 次：9.11 秒双臂伸直为顶端，11.54 秒哑铃落到胸口、肘贴身屈约 100 度，12.76 秒推回顶端。双脚踩地、臀背贴凳不移动；钻石握距即两哑铃相贴，侧面视角看不出左右间距，如实说明。角度为人工示意拟合。"
+}
