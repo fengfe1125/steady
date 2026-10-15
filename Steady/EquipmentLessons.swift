@@ -421,7 +421,9 @@ struct ActionLibraryView: View {
             ForEach(shown) { group in
                 Section("\(group.title) · \(group.entries.count)") {
                     ForEach(group.entries) { entry in
-                        NavigationLink(value: entry) {
+                        // Destination-style links like the other coach lists: a value link's
+                        // navigationDestination is not honoured inside this destination-pushed page.
+                        NavigationLink { ActionLibraryLessonView(entry: entry) } label: {
                             HStack(spacing: 16) {
                                 // Drawn from the lesson's own animation at its working position (tools/action-library/icons.mjs).
                                 Image(entry.iconName).resizable().scaledToFit()
@@ -440,12 +442,17 @@ struct ActionLibraryView: View {
         }
         .journalSurface().navigationTitle("\(ActionLibrary.title(part: part))动作库")
         .searchable(text: $query, prompt: "搜索动作或器材")
-        .navigationDestination(for: ActionLibraryEntry.self) { entry in
-            if let url = entry.artworkURL {
-                AnimatedTrainingLessonView(lesson: entry.lesson, animation: entry.animation, resourceURL: url, runtime: .bundled)
-            } else {
-                ContentUnavailableView("动作暂时无法打开", systemImage: "book.closed")
-            }
+    }
+}
+
+/// Builds the lesson player only when the row is opened, not for every visible row.
+struct ActionLibraryLessonView: View {
+    let entry: ActionLibraryEntry
+    var body: some View {
+        if let url = entry.artworkURL {
+            AnimatedTrainingLessonView(lesson: entry.lesson, animation: entry.animation, resourceURL: url, runtime: .bundled)
+        } else {
+            ContentUnavailableView("动作暂时无法打开", systemImage: "book.closed")
         }
     }
 }
