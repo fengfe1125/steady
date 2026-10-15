@@ -1,0 +1,140 @@
+{
+  "sourceID": "6347d12c3723980001610ed4",
+  "sourceName": "窄距爆发俯卧撑起跳",
+  "part": "chest",
+  "title": "窄距爆发俯卧撑起跳",
+  "variant": "窄距 · 爆发推起 · 双手离地腾空 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.42,
+    0.85,
+    1.15,
+    1.27,
+    1.75,
+    2.12
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 91,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -1
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -1
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -26
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -26
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 3,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 3,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手略窄于肩、指尖扣住垫面，屈肘沉到胸口几乎贴垫；随即把整个身体一口气推离垫面，双手短暂腾空，落回原位后立刻接下一次。",
+  "mistake": {
+    "title": "推起时撅臀，髋部耸成尖顶",
+    "fix": "腹部与臀部持续收紧，让肩、髋、踝连成一条直线；起身靠手臂与胸部的爆发力，而不是把髋往上顶。",
+    "basis": "源 detail.description 常见错误：伸臂时肘关节超伸锁死，训练过程中塌腰或撅臀。",
+    "level": 0.6,
+    "override": {
+      "pelvis": 98,
+      "lumbar": 6,
+      "legs": {
+        "near": {
+          "hip": 22
+        },
+        "far": {
+          "hip": 22
+        }
+      }
+    }
+  },
+  "observation": "主视频 10.20 秒内约 6 次重复，前 8 张帧图为接近纯侧面（人物头朝画面左侧），后 4 张机位略转到斜后方，仍能看出头在画面左侧，故 mirror 为 true。取第 1 次：0.42 秒最低点、1.27 秒推起最高点、2.12 秒回到最低点。12 张帧图都落在最低点或最高点上，双手离地的腾空瞬间没有被采到，腾空高度按动作常识在最高点姿态中放大示意。手撑肩下略窄处、脚尖蹬垫，两个支撑点全程未移动。"
+}

@@ -1,0 +1,139 @@
+{
+  "sourceID": "6492c266d721f900017470fc",
+  "sourceName": "离心爆发钻石俯卧撑",
+  "part": "chest",
+  "title": "离心爆发钻石俯卧撑",
+  "variant": "钻石窄距 · 慢降快推 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.9,
+    4.6,
+    6.3,
+    7.0,
+    7.25,
+    7.8
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.85,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "两手在胸口正下方靠拢撑地，约三秒控制身体下放，让肘部落到躯干后方，随即发力快速推回直臂，全程绷紧躯干成一条线。",
+  "mistake": {
+    "title": "下放时塌腰，髋部先掉下去",
+    "fix": "全程收紧腹部和臀部，让肩、髋、踝保持在一条直线上；力量不足可先退到跪姿版本。",
+    "basis": "源资料常见错误栏：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面，人物头朝画面左侧，垫上以脚尖和双手支撑，手掌位于胸口下方、略偏肩后；侧面无法确认双手拼成钻石形，按窄距模板处理。共见 3 次：第 1 次约 0.5 秒顶点、2.5 秒最低、3.5 秒回顶；第 3 次约 8.6 秒顶点、10.9 秒最低、11.6 秒回顶。取第 2 次：3.9 秒直臂顶点开始，缓慢下放约 3 秒，7.0 秒胸口接近垫面（肘部落到躯干后方），随后约 0.7 秒快速推起，7.8 秒回到顶点。躯干角度与下降深度为人工拟合。"
+}

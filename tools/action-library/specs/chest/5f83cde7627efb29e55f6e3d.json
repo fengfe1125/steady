@@ -1,0 +1,140 @@
+{
+  "sourceID": "5f83cde7627efb29e55f6e3d",
+  "sourceName": "宽窄交替俯卧撑",
+  "part": "chest",
+  "title": "宽窄交替俯卧撑",
+  "variant": "窄距俯卧撑 · 双手收到约一倍肩宽、肘部夹紧身体（宽窄交替中的窄距一次）· 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    7.73,
+    8.3,
+    9.7,
+    10.12,
+    10.9,
+    11.6
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.8,
+    1,
+    0.35,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower",
+      "triceps.lat"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌",
+    "肱三头肌"
+  ],
+  "cue": "双手收到约一倍肩宽、肘尖贴着身体两侧，从肩到脚跟绷成一条直线；屈肘让胸口靠近垫面再推起，这一组的手距比宽距那次窄得多。",
+  "mistake": {
+    "title": "塌腰，髋先下坠",
+    "fix": "下放前先收腹夹臀，让肩、髋、踝保持在一条直线上；控制不住幅度时先减小下放深度。",
+    "basis": "依据资料常见错误：过程中塌腰或撅臀，伸臂时肘关节超伸锁死。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 86,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 14.28 秒，固定侧面机位，人物头部朝画面左侧，所以 mirror 为 true；双手撑垫、脚尖点垫。资料标注 8 次重复（约 1.8 秒一次），做法是宽距与窄距轮流：宽距约 1.5 倍肩宽，窄距收到约 1 倍肩宽、肘部夹紧身体。取 7.73~11.6 秒这一次：7.73 秒手臂撑直到最高，10.12 秒胸口几乎贴到垫面，11.6 秒回到最高。宽窄交替变化的是双手在左右方向的间距，而侧面机位读不出左右间距，画面上每次重复都只是普通的上下起伏；因此本条目取窄距那一次，用双手在前后方向的偏移量（dx -14，即双手收到胸口下方、略在肩后）来表达窄距，躯干角度仍是完整的俯卧撑幅度，与宽距类动作在支撑参数上区分开。"
+}

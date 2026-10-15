@@ -1,0 +1,139 @@
+{
+  "sourceID": "66b07284d835de0001acabf2",
+  "sourceName": "哑铃上斜窄距卧推",
+  "part": "chest",
+  "title": "哑铃上斜窄距卧推",
+  "variant": "掌心相对窄距 · 上斜凳约45° · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    1.5,
+    2.0,
+    2.51,
+    2.8,
+    3.2,
+    3.9
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 118,
+          "el": 10
+        },
+        "far": {
+          "sh": 118,
+          "el": 10
+        }
+      }
+    },
+    "1": {
+      "pelvis": -60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 45,
+          "el": 100
+        },
+        "far": {
+          "sh": 45,
+          "el": 100
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 10,
+      "y": -119
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 120,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 108,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -20,
+      "length": 110,
+      "top": -88,
+      "back": {
+        "x": -10,
+        "angle": 60,
+        "length": 170
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.7
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "掌心相对、两铃靠近，躺稳上斜凳；大臂贴着身体两侧下放到肘约九十度，再原路推起，两铃全程保持平行不外张。",
+  "mistake": {
+    "title": "下放幅度不够，只推半程",
+    "fix": "控制速度下放到大臂贴近身体两侧、肘约九十度再推起，让上胸得到充分牵拉和收缩。",
+    "basis": "通用训练常识：窄距卧推行程不足会大幅削弱上胸刺激，动作步骤也要求下放至大臂位于身体两侧。",
+    "level": 1,
+    "override": {
+      "arms": {
+        "near": {
+          "el": 50
+        },
+        "far": {
+          "el": 50
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面，人物仰卧在约45度上斜凳上，头朝画面左侧，双脚踩地。0.5至6.5秒为双手窄距（掌心相对）卧推，约2秒一次；之后换成单臂。选取1.5至3.9秒一次完整循环：1.5秒顶端，2.51至2.8秒下放到最低点，3.9秒回到顶端。侧面视角看不出两手间距，窄距握法按动作名称与资料写入文字；角度为人工拟合。"
+}

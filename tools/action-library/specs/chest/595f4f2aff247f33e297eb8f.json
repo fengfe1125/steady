@@ -1,0 +1,145 @@
+{
+  "sourceID": "595f4f2aff247f33e297eb8f",
+  "sourceName": "平移深度俯卧撑",
+  "part": "chest",
+  "title": "平移深度俯卧撑",
+  "variant": "单手撑砖 · 超深度俯身 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.63,
+    1.05,
+    1.55,
+    1.9,
+    2.5,
+    3.16
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -30,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 30,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "box",
+      "under": "hands",
+      "width": 45,
+      "top": -30
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "triceps.long",
+      "triceps.lat"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "单手扶砖、另一手撑在胸部旁的垫面，下降时身体向砖侧压到胸口近垫，感受胸外侧深度牵拉，再发力推回。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "收紧腹部和臀部，让肩、髋、踝始终保持一条直线；撑不住时退到跪姿完成。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 88,
+      "lumbar": -9,
+      "legs": {
+        "near": {
+          "hip": -7
+        },
+        "far": {
+          "hip": -7
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面，人物朝左，mirror 取 true，共 4 次。取第 1 次：0.63 秒手臂撑直在顶部，1.90 秒降到最低、胸口接近垫面，3.16 秒推回顶部。靠砖侧的手全程撑在瑜伽砖顶（约 -30），另一手撑在胸部旁的垫面上，两手都不移动；脚尖着地为支点。视频里下降时身体明显向撑砖一侧平移并侧屈，侧视无法体现该左右分量，姿态只画深度变化。后半段视频砖为两块叠放，所选的第 1 次循环按单块砖绘制。角度为人工示意拟合。"
+}

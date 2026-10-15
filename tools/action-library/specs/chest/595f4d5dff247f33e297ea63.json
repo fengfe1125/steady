@@ -1,0 +1,150 @@
+{
+  "sourceID": "595f4d5dff247f33e297ea63",
+  "sourceName": "靠墙俯卧撑",
+  "part": "chest",
+  "title": "靠墙俯卧撑",
+  "variant": "站姿面向墙 · 双手撑墙与胸同高 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    12.69,
+    13.6,
+    15.0,
+    15.9,
+    16.9,
+    17.8
+  ],
+  "levels": [
+    0,
+    0.15,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 22,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 75,
+          "el": 5
+        },
+        "far": {
+          "sh": 75,
+          "el": 5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 30,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 70,
+          "el": 40
+        },
+        "far": {
+          "sh": 70,
+          "el": 40
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": 0,
+      "y": -19
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 158,
+        "y": -235,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "x": 158,
+        "y": -235,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "chest_wall",
+      "x": 160
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.lat",
+      "pec.upper",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌外侧"
+  ],
+  "cue": "双脚分开踩稳，双手略宽于肩平撑在胸口高度的墙上，从头到脚保持一条直线；屈肘让胸口缓缓贴近墙面，稍停后推回，顶端肘部微屈不锁死。",
+  "mistake": {
+    "title": "身体没绷直，臀部向后撅起",
+    "fix": "收紧腹部和臀部，让头、肩、髋、脚跟保持在一个平面上，整个身体一起靠近和离开墙面。",
+    "basis": "源资料常见错误：身体没有绷直、臀部太高，结合通用训练常识在下降途中示意。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 32,
+      "lumbar": -10,
+      "legs": {
+        "near": {
+          "hip": -10
+        },
+        "far": {
+          "hip": -10
+        }
+      }
+    }
+  },
+  "observation": "视频 1080×1080，0.75–8.21 秒为背面机位（可见肘外展、撑距略宽于肩），12.69 秒起切到侧面机位。取侧面段一次完整重复：12.69 秒推起顶端、人近直立仅前倾约 15 度、双臂前伸撑墙；15.68 秒附近最低点屈肘、胸口接近墙面；17.17 秒基本推回。双脚平踩地面全程不动，双手贴墙高度约与胸口齐平、略低于肩，手不移动；身体以脚踝为轴小幅前倾。角度为人工示意拟合。"
+}

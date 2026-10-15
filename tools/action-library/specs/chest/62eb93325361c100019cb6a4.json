@@ -1,0 +1,140 @@
+{
+  "sourceID": "62eb93325361c100019cb6a4",
+  "sourceName": "跪姿 3 秒俯撑下落",
+  "part": "chest",
+  "title": "跪姿 3 秒俯撑下落",
+  "variant": "跪姿 · 双手略比肩宽 · 3 秒离心缓慢下落 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.5,
+    1.2,
+    3.6,
+    4.6,
+    6.5,
+    8.2
+  ],
+  "levels": [
+    0,
+    0.1,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "跪在垫上，双手略宽于肩撑稳，用整整 3 秒把身体缓慢放到胸口贴近垫面，全程胸背绷紧别松劲，起身可以用省力的方式撑回来。",
+  "mistake": {
+    "title": "下落时塌腰，髋部先往下掉",
+    "fix": "收紧腹部和臀部，让肩、髋、膝始终在一条线上，下放全程由胸臂控制速度，不要靠腰塌下去完成动作。",
+    "basis": "通用训练常识：跪姿俯卧撑最常见的问题是核心松掉、腰背下塌。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 8.56 秒，本组帧为镜头在身后上方的局部特写，只能看到背部与近侧手臂，看不到躯干整体朝向。画面里手臂由伸直逐渐屈肘，约 4.6 秒落到最深处（该帧出现完成标记），随后慢慢回到起始。时间点依据文字节奏（3 秒下落）与帧图屈肘程度推定，躯干角度按同系列跪姿俯卧撑的标准姿态拟合。"
+}

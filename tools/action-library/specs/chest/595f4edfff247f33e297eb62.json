@@ -1,0 +1,149 @@
+{
+  "sourceID": "595f4edfff247f33e297eb62",
+  "sourceName": "仰卧垫足负重后撑",
+  "part": "chest",
+  "title": "仰卧垫足负重后撑",
+  "variant": "脚跟垫凳 · 腿上负重杠铃片 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    4.94,
+    5.4,
+    6.1,
+    6.35,
+    7.0,
+    7.76
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 5,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -25,
+          "el": 5
+        },
+        "far": {
+          "sh": -25,
+          "el": 5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 85,
+          "knee": 45,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 85,
+          "knee": 45,
+          "ankle": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 12,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -65,
+          "el": 90
+        },
+        "far": {
+          "sh": -65,
+          "el": 90
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 95,
+          "knee": 60,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 95,
+          "knee": 60,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hand",
+    "side": "near",
+    "at": {
+      "x": -45,
+      "y": -92
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 110,
+        "y": -94,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 98,
+        "y": -94,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -170,
+      "length": 130,
+      "top": -88
+    },
+    {
+      "type": "bench",
+      "x": 85,
+      "length": 110,
+      "top": -75
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.upper"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "pec.lower"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌上部"
+  ],
+  "cue": "双手撑住身后凳沿，脚跟搭在前方凳面，臀部悬空；屈肘让身体贴凳下沉到大臂接近平行，再发力撑回，肘不完全锁死。",
+  "mistake": {
+    "title": "下沉时躯干过度前倾",
+    "fix": "保持胸口挺起、躯干接近竖直，只让肘关节屈伸；身体不要向前趴，减少肩部代偿。",
+    "basis": "源资料强调肩部全程保持紧绷；躯干前倾代偿为凳上臂屈伸通用常见错误。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 25,
+      "lumbar": 8
+    }
+  },
+  "observation": "主视频 1080×1080，侧面，人物朝左（已镜像），共 5 次，前段远景后段近景。取第 3 次：4.94 秒手臂撑直为顶点，6.35 秒沉到最低点，7.76 秒撑回顶点。双手撑在身后平板凳沿、双脚跟搭在前方凳面，全程不移动；大腿上放有一片杠铃片作负重，器材表无杠铃片类型，未绘制。角度为人工示意拟合。"
+}

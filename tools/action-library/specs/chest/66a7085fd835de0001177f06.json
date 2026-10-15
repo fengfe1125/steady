@@ -1,0 +1,135 @@
+{
+  "sourceID": "66a7085fd835de0001177f06",
+  "sourceName": "绳索左侧抗旋支撑",
+  "part": "chest",
+  "title": "绳索左侧抗旋支撑",
+  "variant": "站姿静态保持 · 双手握单把抗旋等长支撑 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.5,
+    1.5,
+    3.0,
+    5.0,
+    6.5,
+    7.6
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.6,
+    1,
+    0.6,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 85,
+          "el": 8
+        },
+        "far": {
+          "sh": 85,
+          "el": 8,
+          "f": 0.9
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 85,
+          "el": 8
+        },
+        "far": {
+          "sh": 85,
+          "el": 8,
+          "f": 0.9
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "heel",
+    "side": "near",
+    "at": {
+      "x": -10,
+      "y": 0
+    }
+  },
+  "equipment": [
+    {
+      "type": "cable",
+      "anchor": {
+        "x": -170,
+        "y": -230
+      },
+      "hands": [
+        "near"
+      ],
+      "column": true
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "abs",
+      "obliques",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上束"
+  ],
+  "cue": "侧对龙门架站稳，双手把握把收到胸前再向前推直并停住，全程绷紧腹部和臀部，像钉在原地一样抵抗绳索把身体拉转的力。",
+  "mistake": {
+    "title": "躯干被绳索拉得向后旋转",
+    "fix": "肩胛微收、腹部先发力锁住肋骨和骨盆，感觉躯干是一块整体，坚持到规定时间再松手。",
+    "basis": "源资料常见错误：身体被绳索拉转；解决是用力收紧腹部对抗绳索拉力。",
+    "level": 0.7,
+    "override": {
+      "lumbar": -12,
+      "thorax": -10,
+      "arms": {
+        "near": {
+          "sh": 70,
+          "el": 35
+        }
+      }
+    }
+  },
+  "observation": "视频为静态保持动作，无重复次数。帧图上带姿态识别框线，前段为正面视角，约 6.3 秒处切到侧面视角，人物面朝画面右侧，故 mirror 为 false。全程双手握单把、手臂向前伸直保持不动，肩背和下肢姿势基本无变化，因此起点与终点姿态相同，动画表现为等长静止保持。绳索从其左后方胸高处连到双手，侧面按一条画到近侧手。角度为人工示意拟合。"
+}

@@ -1,0 +1,154 @@
+{
+  "sourceID": "6347cd543723980001609b73",
+  "sourceName": "十字俯卧撑",
+  "part": "chest",
+  "title": "十字俯卧撑",
+  "variant": "十字宽距 · 双手间距超过两倍肩宽、手指朝外 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    2.09,
+    2.7,
+    3.25,
+    3.5,
+    4.2,
+    4.9
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 0
+        },
+        "far": {
+          "sh": 90,
+          "el": 0
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 62,
+          "el": 96
+        },
+        "far": {
+          "sh": 62,
+          "el": 96
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌",
+    "肱三头肌"
+  ],
+  "cue": "双手摆到比两倍肩宽还远、指尖朝外撑住，肘保持微屈，靠上臂向身体内侧夹的力量把身体推起，落点要控制到胸前有明显拉伸。",
+  "mistake": {
+    "title": "撑起时塌腰、撅臀，身体中间塌下去",
+    "fix": "宽距对腰部负担更大，先把腹部和臀部收紧再下沉；撑不住就把两手收回一些、缩窄距离。",
+    "basis": "依据源 detail.description 的常见错误条目：推起时把肘部锁死、过程中腰部下塌或臀部抬高，另外还提到手臂出现拉伸感。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512 正方形，机位在人物侧前方且距离很近，画面里只装得下头、肩、上臂和躯干，人物头朝画面左侧（mirror 取 true），画面上还叠了一条表示头-躯干-髋连线的虚线提示（说明示范的是「身体成一条直线」）。12 张帧图差异很小，0.42 秒手臂弯曲、肩位最低，2.09 秒及之后手臂基本撑直、肩位最高，可判断下落与撑起的幅度不大、节奏较慢；这里取 2.09（撑直）→ 3.5（胸口最低）→ 4.9（撑直）这一整次重复，时间点按采样节奏估计。局限：双手间距超过两倍肩宽、指尖朝外是左右方向的差异，纯侧面视角下只能把手掌画得张开一些，因此手距本身画不出来；画面太近也看不到脚与地面。"
+}

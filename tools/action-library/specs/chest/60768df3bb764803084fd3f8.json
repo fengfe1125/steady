@@ -1,0 +1,138 @@
+{
+  "sourceID": "60768df3bb764803084fd3f8",
+  "sourceName": "支架跪姿深度俯卧撑",
+  "part": "chest",
+  "title": "支架跪姿深度俯卧撑",
+  "variant": "跪姿 · 支架加深下沉至肘低于躯干 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    8.33,
+    8.85,
+    9.8,
+    10.29,
+    10.8,
+    11.27
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 86,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 66,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 71,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "pushup_bars",
+      "top": -24
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上束",
+    "胸大肌外侧"
+  ],
+  "cue": "跪垫握支架，身体成一条斜线，屈肘让胸口尽量沉向垫面、肘部低过躯干，再发力推回直臂，下沉时保持腰背不塌。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "全程收紧腹臀，让肩、髋、膝保持一条直线，深度不够就少沉一些。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "侧面视角，人物头朝画面左侧，双膝跪垫、双手撑俯卧撑支架，共3次，底部有明显停顿。取8.33~11.27秒一次完整重复：8.33秒直臂撑起，10.29秒深度下沉、胸口接近垫面且肘部低于躯干并停约1秒，11.27秒推回顶部。与普通跪姿俯卧撑相比下沉幅度明显更大。角度为人工示意拟合。"
+}

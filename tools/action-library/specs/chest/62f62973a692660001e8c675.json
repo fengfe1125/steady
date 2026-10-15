@@ -1,0 +1,190 @@
+{
+  "sourceID": "62f62973a692660001e8c675",
+  "sourceName": "俯卧撑右转挤压",
+  "part": "chest",
+  "title": "俯卧撑右转挤压",
+  "variant": "标准距 · 推起到顶时顺势向右拧身挤压右胸 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    1.51,
+    2.0,
+    3.0,
+    3.52,
+    4.2,
+    4.53
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.8,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": -2,
+      "thorax": -4,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 88,
+          "el": 0
+        },
+        "far": {
+          "sh": 92,
+          "el": 0
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 0
+        },
+        "far": {
+          "sh": 90,
+          "el": 0
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 60,
+          "el": 100
+        },
+        "far": {
+          "sh": 60,
+          "el": 100
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.lat",
+      "pec.upper",
+      "deltoid.ant",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌"
+  ],
+  "cue": "推起的过程中就把上身往右拧，到顶点时右肩略低、右胸主动收紧挤压，停一拍再控制着落回。",
+  "mistake": {
+    "title": "撑起时塌腰、撅臀",
+    "fix": "推起前先夹紧臀部和腹部，让肩、髋、踝保持一条直线；腰撑不住就把脚放宽或减少次数。",
+    "basis": "通用训练常识：同类俯卧撑最常见的代偿是推起阶段塌腰或撅臀，源 detail.description 也把“塌腰或撅臀”列为常见错误。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512 正方形，侧面机位，人物头朝画面左侧（mirror 取 true），垫子是深灰绿色长条，双手撑垫、脚尖踩垫两点全程不动。全片 4 次重复：0.50 秒与 3.52 秒是胸口贴垫的最低点，1.51 秒与 2.52 秒两个采样点都停在最高点撑直位，说明顶端有一次明显的挤压停顿，4.53 秒再次到顶。这里取 1.51（挤压顶）→ 3.52（最低点）→ 4.53（挤压顶）这一整次重复。注意：右转挤压是绕身体纵轴的拧转，二维侧面图无法表现旋转本身，因此用顶端姿态的胸椎上挺、骨盆略高以及颈部向一侧偏转来近似，这一点在原素材画面里也难以直接看清。"
+}

@@ -138,6 +138,16 @@ struct CoachView: View {
                         }
                     } icon: { Image(systemName: "figure.strengthtraining.traditional") }
                 }.accessibilityIdentifier("equipmentLibrary")
+                ForEach(ActionLibrary.parts, id: \.self) { part in
+                    NavigationLink { ActionLibraryView(part: part) } label: {
+                        Label {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text("\(ActionLibrary.title(part: part))动作库")
+                                Text("\((try? ActionLibrary.entries(part: part).count) ?? 0) 个动作 · 动画、分解图与易错点").font(.caption).foregroundStyle(SteadyTheme.secondary)
+                            }
+                        } icon: { Image(systemName: "square.grid.2x2") }
+                    }.accessibilityIdentifier("actionLibrary_\(part)")
+                }
             }
             Section("会话记录") {
                 if model.journal.conversations.isEmpty { Text("还没有会话 想聊的时候我们再开始").foregroundStyle(SteadyTheme.secondary) }

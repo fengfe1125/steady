@@ -1,0 +1,153 @@
+{
+  "sourceID": "5c2c775dd734a2690724768b",
+  "sourceName": "俯冲轰炸机俯卧撑",
+  "part": "chest",
+  "title": "俯冲轰炸机俯卧撑",
+  "variant": "三阶段循环 · 下犬位下潜前扫贴垫 · 再撑成上犬位 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.55,
+    1.0,
+    1.64,
+    2.73,
+    4.4,
+    6.01
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.5,
+    1,
+    0.6,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 125,
+      "lumbar": -3,
+      "thorax": -3,
+      "neck": 6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 72,
+          "knee": 0,
+          "ankle": -15
+        },
+        "far": {
+          "hip": 72,
+          "knee": 0,
+          "ankle": -15
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 82,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": 0,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": -5,
+          "knee": 0,
+          "ankle": -10
+        },
+        "far": {
+          "hip": -5,
+          "knee": 0,
+          "ankle": -10
+        }
+      }
+    },
+    "1": {
+      "pelvis": 38,
+      "lumbar": -3,
+      "thorax": -2,
+      "neck": -22,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": -62,
+          "knee": 0,
+          "ankle": 0
+        },
+        "far": {
+          "hip": -62,
+          "knee": 0,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 16,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 16,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.ant",
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "lats",
+      "erectors",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "三角肌前束",
+    "胸大肌上部"
+  ],
+  "cue": "先把髋顶高成倒 V，胸口贴着垫面向前下方划弧，再靠手掌推地把上身撑起、抬头挺胸，最后把髋送回去。",
+  "mistake": {
+    "title": "含胸弓背，胸椎一路塌着往前钻",
+    "fix": "先挺胸沉肩、把肩胛往后往下放，腰腹收紧让胸椎保持平直，再让胸口贴近垫面往前扫。",
+    "basis": "依据源 detail.description：常见错误为含胸弓背，纠正是把肩膀沉下来、胸口打开并把腰腹收紧。",
+    "level": 0.5,
+    "override": {
+      "lumbar": 16,
+      "thorax": 16,
+      "neck": 0
+    }
+  },
+  "observation": "主视频 512×512 正方形，侧面机位，人物头朝画面左侧（mirror 取 true），垫子是深灰绿色长条，全程手撑垫、脚尖踩垫两个支点不动。0.55 秒是髋部最高、头在两手之间的倒 V 位（下犬位）；1.64 秒身体压到最低，胸口贴着垫面向前扫过；2.73 秒撑成上犬位，手臂基本伸直、抬头挺胸；4.92 秒髋部重新抬升；6.01 秒回到倒 V 位。全片 2 次重复，这里取第 1 次完整循环。下潜与上撑的幅度较大，姿态角度为人工示意拟合，中间用 0.5 关键姿态表示“胸口贴垫”的过渡位。"
+}

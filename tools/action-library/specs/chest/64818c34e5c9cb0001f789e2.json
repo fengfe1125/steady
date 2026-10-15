@@ -1,0 +1,133 @@
+{
+  "sourceID": "64818c34e5c9cb0001f789e2",
+  "sourceName": "跪姿 3 秒顶峰收缩斯万夹胸",
+  "part": "chest",
+  "title": "跪姿 3 秒顶峰收缩斯万夹胸",
+  "variant": "跪姿 · 双手胸前合掌前推 · 最远端保持 3 秒 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.8,
+    1.6,
+    5.4,
+    8.2,
+    10.0,
+    11.6
+  ],
+  "levels": [
+    0,
+    0.2,
+    0.9,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": 0,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 36,
+          "el": 124
+        },
+        "far": {
+          "sh": 36,
+          "el": 124
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 90,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 92,
+          "ankle": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": 0,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 80,
+          "el": 22
+        },
+        "far": {
+          "sh": 80,
+          "el": 22
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 90,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 92,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -30,
+      "y": -8
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "serratus",
+      "triceps.long",
+      "triceps.lat"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "跪坐在垫上，两手于胸前用力合掌并向前方推出，推到最远处定住 3 秒体会胸部夹紧，再匀速收回，全程挺胸沉肩。",
+  "mistake": {
+    "title": "推出去的时候含胸驼背，肩膀往前塌",
+    "fix": "先把胸口打开、肩胛向下沉住再往前推，全程让上半身保持直立，不要为了推远而缩起胸口。",
+    "basis": "通用训练常识：夹胸类动作一旦含胸，胸部张力立刻跑到肩颈上去，练不到目标肌群。",
+    "level": 0.5,
+    "override": {
+      "lumbar": 8,
+      "thorax": 16,
+      "neck": 10
+    }
+  },
+  "observation": "视频 16.20 秒。0.7~4.7 秒镜头在人物左前方，能看到双手在胸前合掌后一起向前推出，推出后双手高度大约与肩齐；8.8 秒切到侧面机位时手臂仍完全前伸，11.5 秒回到屈肘合掌位。本份 JSON 按侧面机位书写；侧视下左右两臂完全重合，看不出双手是否真的用力夹紧，也无法判断双手离胸的距离，手臂角度为按画面比例的估算。"
+}

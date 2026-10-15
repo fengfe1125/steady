@@ -1,0 +1,164 @@
+{
+  "sourceID": "6492c0c539a79b0001b8b026",
+  "sourceName": "上斜半程俯卧撑",
+  "part": "chest",
+  "title": "上斜半程俯卧撑",
+  "variant": "上斜（撑高约 50cm 的凳面）· 只做半程、屈肘到约 90° 就停 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    8.57,
+    9.1,
+    9.75,
+    10.15,
+    10.9,
+    11.6
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 50,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -18
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -18
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 54,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -9,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -15
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -15
+        }
+      }
+    },
+    "1": {
+      "pelvis": 59,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -12
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -12
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -105,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -105,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 270
+    },
+    {
+      "type": "bench",
+      "x": 0,
+      "length": 100,
+      "top": -105
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "pec.lower",
+      "deltoid.ant",
+      "triceps.long",
+      "triceps.lat",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "双手撑在约半米高的凳子或箱面上、比肩略宽，脚尖踩地让身体绷成一条斜线；屈肘下降到肘约 90 度就停住，再推回起始位，全程收腹不塌腰不撅臀。",
+  "mistake": {
+    "title": "塌腰或撅臀，身体不再是一条直线",
+    "fix": "下落前先把骨盆收到中立位、夹紧臀部，让肩、髋、踝连成斜线；感觉腰开始下陷就减小下放深度或改用跪姿。",
+    "basis": "依据源 detail.description 的常见错误条目（下放过程中腰椎前凸、臀部上撅），以及俯卧撑类动作的通用要求：侧面看肩、髋、踝应落在同一条直线上。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 56,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080、12.10 秒，侧面机位，人物头朝画面左侧（需镜像）。双手撑在一个金属小凳上（凳面高度按画面比例约 50 厘米出头），双脚脚尖踩地，身体从脚尖到肩是一条向下倾斜约 40° 的直线，头部自然下垂看向凳面。0.5~5.5 秒是第一段：0.5 秒位置最高（撑起），4.5 秒头部最低（下沉到底），此后回升；6.5 秒起镜头拉近、露出脚下的深色垫子，第二段里 8.6 秒最高、10.0 秒左右最低、11.6 秒回到最高。我取 8.57→10.15→11.60 秒这一轮作为完整重复（半程幅度较小，与文字里“屈肘 90 度”的半程设定一致）。凳子高度、手距是估读：1 单位约 0.49 厘米，凳面我放在 y=-105（约 51 厘米），镜头在两段之间切换过，两段的绝对高度无法严格对齐。"
+}

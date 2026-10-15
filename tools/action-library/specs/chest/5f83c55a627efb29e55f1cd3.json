@@ -1,0 +1,134 @@
+{
+  "sourceID": "5f83c55a627efb29e55f1cd3",
+  "sourceName": "窄距离心爆发拳卧撑",
+  "part": "chest",
+  "title": "窄距离心爆发拳卧撑",
+  "variant": "窄距 · 握拳以拳面撑垫 · 慢下放爆发推起 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    2.05,
+    2.6,
+    3.4,
+    3.69,
+    3.95,
+    4.51
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 73,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -21
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -21
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 2,
+        "y": -13,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 2,
+        "y": -13,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "pec.upper",
+      "deltoid.ant",
+      "forearm.flex"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "双手握拳，拳面撑垫、贴近身体两侧，双臂夹紧躯干；用两秒慢慢沉到胸口快贴垫，再一口气爆发推起还原，拳面全程不挪位。",
+  "mistake": {
+    "title": "下放过程塌腰，髋部提前掉向垫面",
+    "fix": "下放前先收紧腹背，让肩、髋、踝成一条直线；宁可下放幅度浅一点，也不要靠塌腰去完成行程。",
+    "basis": "源 detail.description 常见错误：伸臂时肘关节超伸锁死，训练过程中塌腰或撅臀。",
+    "level": 0.55,
+    "override": {
+      "pelvis": 85,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 9.84 秒共 4 次重复，每次约 2.4 秒：慢速下放约 2 秒、推起很快。前 5 张帧机位偏斜后方，第 6 张起转为接近正侧面，人物头始终在画面左侧，故 mirror 为 true。取第 2 次：2.05 秒撑起最高点、3.69 秒最低点（胸前几乎贴垫）、4.51 秒推起还原。双手握拳以拳面支撑，拳面位置比手掌略高，因此支撑点在垫面之上约 8 单位；脚尖蹬垫。帧图中拳头位置清晰，肘部始终贴身，属于窄距。"
+}

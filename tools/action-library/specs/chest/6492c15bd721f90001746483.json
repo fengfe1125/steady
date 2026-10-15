@@ -1,0 +1,138 @@
+{
+  "sourceID": "6492c15bd721f90001746483",
+  "sourceName": "跪姿钻石俯卧撑底部保持",
+  "part": "chest",
+  "title": "跪姿钻石俯卧撑底部保持",
+  "variant": "跪姿钻石 · 沉到最低位静态停住 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.9,
+    2.0,
+    3.2,
+    4.33,
+    5.6,
+    7.0
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.7,
+    1,
+    0.55,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 76,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 70,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 75,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 82,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 65,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 70,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 400
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat"
+    ],
+    "secondary": [
+      "pec.lower",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌"
+  ],
+  "cue": "钻石手位放在胸口正下方，屈肘下沉到最低点停住，让上臂后侧和胸口持续受力；腰腹收紧，呼吸别憋，到时间再推起。",
+  "mistake": {
+    "title": "保持时腰腹下坠、臀部抬高",
+    "fix": "用腹部和臀部一起锁住身体，让头、背、膝保持一条斜线；坚持不了就减少保持秒数。",
+    "basis": "依据源资料常见错误：训练过程中塌腰或撅臀；并按通用等长训练常识补充。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 78,
+      "lumbar": -26,
+      "legs": {
+        "near": {
+          "hip": -12
+        },
+        "far": {
+          "hip": -12
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080 宽，侧面，人物头朝画面左侧。0.33-4.33 秒七帧完全静止，胸口贴近垫面、肘在躯干后方，为标准底部保持；5.00-7.67 秒身体略微抬高但仍在中低位，未见完整起身。取整段作为一次保持：0.9 秒已在低位，4.33 秒最深，随后缓慢回升。钻石手位在帧图中被躯干遮挡，按文字资料取胸口正下方、肩后约 14 个单位。"
+}

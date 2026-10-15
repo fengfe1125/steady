@@ -1,0 +1,140 @@
+{
+  "sourceID": "6492c188d721f90001746699",
+  "sourceName": "跪姿底部暂停钻石俯卧撑",
+  "part": "chest",
+  "title": "跪姿底部暂停钻石俯卧撑",
+  "variant": "钻石 · 双手在胸口下方拼成菱形 · 底部停顿 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    10.31,
+    11.0,
+    11.5,
+    11.75,
+    13.6,
+    14.3
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.95,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "triceps.lat",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "两手拇指与食指相触拼成菱形，放在胸口正下方，肘部贴着身体下沉到最低点停两三秒，感觉内侧胸绷紧后再推回起点。",
+  "mistake": {
+    "title": "塌腰，腹部先往下掉",
+    "fix": "全程收紧腹部和臀部，让肩、髋、膝保持一条斜线，做不到就退回常规跪姿俯卧撑。",
+    "basis": "源动作说明的常见错误栏提示训练中会塌腰或撅臀，取侧面最明显的塌腰做示意。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512，侧面偏四分之三，人物面朝画面左侧；跪姿，膝盖着垫、小腿向后上方抬起。钻石手距在侧面视角不可见，按资料把手固定点放在胸口正下方（肩部明显后下侧），画面中手掌确实落在肩部后下方。取 10.3~14.3 秒一次重复：10.31 秒撑直到顶（帧 10.31 在顶部），约 11.75 秒降到最低并停顿（帧 12.74 仍在底部），13.6 秒起推起、14.3 秒回顶。帧间时间点为估计。"
+}

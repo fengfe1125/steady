@@ -1,0 +1,132 @@
+{
+  "sourceID": "5cb2ed66e7ea5d67b09fdb57",
+  "sourceName": "蝎子俯卧撑",
+  "part": "chest",
+  "title": "蝎子俯卧撑",
+  "variant": "单腿后举 · 抬起一侧腿使脚跟高于髋部 · 双手间距略宽于肩 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.43,
+    0.86,
+    1.15,
+    1.29,
+    1.7,
+    2.16
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 75,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": -45,
+          "knee": 65,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": -42,
+          "knee": 62,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "far",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.lat",
+      "deltoid.ant",
+      "erectors",
+      "glute.max"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手略宽于肩撑垫，一侧腿向后上方抬起、屈膝让脚高于髋；只用另一只脚蹬垫，屈肘把胸口压向垫面再推起，抬腿全程不掉。",
+  "mistake": {
+    "title": "撑起过程中塌腰，髋部先落向垫面",
+    "fix": "先收紧腹部与臀部、把肋骨收住，让肩、髋、支撑腿的踝保持一条直线，抬起的腿也要跟着身体一起保持稳定。",
+    "basis": "源 detail.description 常见错误：伸臂时肘关节超伸锁死，训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22
+    }
+  },
+  "observation": "主视频 10.36 秒约 5 次重复，每次约 2 秒，全程单一侧面固定机位，人物头朝画面左侧，故 mirror 为 true。取第 1 次：0.43 秒推起最高点、1.29 秒最低点（胸口接近垫面）、2.16 秒回到最高点。12 张帧图里一侧腿始终向后上方抬起、膝关节明显屈曲、鞋底高过髋部，另一只脚以脚尖蹬垫，说明支撑点只有一手一脚；抬起腿的脚尖离开垫面，因此支点取在另一侧（far）的脚尖上。双手撑在胸侧、间距略宽于肩，全程未移动。"
+}

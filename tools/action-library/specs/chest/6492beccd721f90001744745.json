@@ -1,0 +1,139 @@
+{
+  "sourceID": "6492beccd721f90001744745",
+  "sourceName": "跪姿底部暂停窄距俯卧撑",
+  "part": "chest",
+  "title": "跪姿底部暂停窄距俯卧撑",
+  "variant": "窄距 · 双手略窄于肩 · 底部停顿 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    4.19,
+    4.81,
+    5.16,
+    5.41,
+    8.05,
+    8.8
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.95,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -2,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -2,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "triceps.long"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "triceps.lat"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌中下部",
+    "肱三头肌"
+  ],
+  "cue": "两手间距略窄于肩撑在胸部下方，跪撑保持从头到膝一条斜线，慢降到胸口近垫后定住两三秒，再把肘部推直还原。",
+  "mistake": {
+    "title": "塌腰，腹部先往下掉",
+    "fix": "全程收紧腹部和臀部，让肩、髋、膝保持一条斜线，做不到就退回常规跪姿俯卧撑。",
+    "basis": "源动作说明的常见错误栏提示训练中会塌腰或撅臀，取侧面最明显的塌腰做示意。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512，侧面，人物面朝画面左侧；跪姿，膝盖着垫、小腿向后上方抬起、双脚离地。双手间距略窄于肩，侧面看手掌略靠肩部后下方。取 4.2~8.8 秒一次重复：4.19 秒撑直到顶（帧 4.19 在顶部），约 5.4 秒到最低点后停顿（帧 5.39/6.59/7.79 均停在底部），约 8 秒推起、8.8 秒回顶。掌根与膝盖全程不移动；帧间时间点为估计。"
+}

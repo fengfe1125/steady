@@ -1,0 +1,142 @@
+{
+  "sourceID": "54af5ef35c5f72d2058c5d23",
+  "sourceName": "窄距俯卧撑",
+  "part": "chest",
+  "title": "窄距俯卧撑",
+  "variant": "窄距 · 双手间距窄于肩宽、撑在胸口正下方 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.29,
+    3.75,
+    4.15,
+    4.35,
+    5.0,
+    5.95
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 75,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower",
+      "triceps.long",
+      "triceps.lat"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部",
+    "肱三头肌"
+  ],
+  "cue": "双手撑在胸口正下方、间距明显窄于肩宽，肘部收在身体两侧，收紧腹部把肩到脚跟绷成一条直线，屈肘下沉到胸口接近垫面再推起。",
+  "mistake": {
+    "title": "塌腰，髋部先沉下去",
+    "fix": "把肚脐向内收、臀部夹紧，让肩、髋、踝连成一条直线再开始下放；核心撑不住时改用跪姿支撑。",
+    "basis": "源 detail.description 常见错误：训练过程中塌腰或撅臀，伸臂时肘关节超伸锁死。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频为侧面固定机位，人物头朝画面左侧，因此 mirror 置 true；全长 11.29 秒，前 7.9 秒为全身景，之后切近景，能看出双手明显并拢、间距小于肩宽。取第 2 次重复：3.29 秒为顶部（两臂撑直）、4.35 秒为最低点（胸口贴近垫面、两肘贴住躯干两侧）、5.95 秒回到顶部。双手撑在胸口正下方、落在肩的略后方（窄距，dx 取 -14；标准俯卧撑是肩前 +8），两肘贴身指向脚的方向，脚尖撑垫、全程不移动。近景帧里手距更清楚但没有新的角度信息；躯干角度为人工示意拟合。"
+}

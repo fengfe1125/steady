@@ -1,0 +1,140 @@
+{
+  "sourceID": "6492c3f0d721f90001748465",
+  "sourceName": "右侧弓箭俯卧撑底部保持",
+  "part": "chest",
+  "title": "弓箭俯卧撑底部保持",
+  "variant": "宽距 · 一臂屈一臂伸 · 最低点等长保持 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.33,
+    1.67,
+    3.0,
+    4.33,
+    5.67,
+    7.67
+  ],
+  "levels": [
+    0,
+    0.5,
+    0.85,
+    1,
+    0.6,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 86,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -4
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -4
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 48,
+        "y": -5,
+        "flat": true,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "摆成弓箭式：一臂伸直、另一臂屈肘把身体压到最低停住，两手撑得比两倍肩宽还多；全程收腹夹臀绷成一条线，肩肘顶住，自然呼吸。",
+  "mistake": {
+    "title": "塌腰撅臀，身体不再是一条直线",
+    "fix": "保持之前先收紧腹部和臀部，让肩、髋、支撑脚连成一条直线；撑不住就缩短保持时间，不要靠塌腰顶住。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 89,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -12
+        },
+        "far": {
+          "hip": -12
+        }
+      }
+    }
+  },
+  "observation": "视频 8 秒，0~4.5 秒是侧面平视机位，5 秒起切成更低更近的机位，人物头一直朝画面左侧，因此镜像。12 张帧图里身体几乎停在同一个低位，没有明显起伏，是等长保持。手掌全程平按垫面不移动，两手间距明显超过两倍肩宽。第二个机位里能看清靠前的那条手臂是伸直的，另一条屈在身体下方。因为全程接近静止，这里写的一点点下沉是照画面估的。"
+}

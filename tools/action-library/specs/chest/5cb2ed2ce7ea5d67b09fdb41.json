@@ -1,0 +1,300 @@
+{
+  "sourceID": "5cb2ed2ce7ea5d67b09fdb41",
+  "sourceName": "跪姿俯卧撑交替抬臂",
+  "part": "chest",
+  "title": "跪姿俯卧撑交替抬臂",
+  "variant": "跪姿 · 推起还原后交替抬起一侧手臂 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    8.12,
+    8.6,
+    9.3,
+    9.6,
+    10.4,
+    11.07
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.85,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 165,
+          "el": 0
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "0.08": {
+      "pelvis": 63,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 132,
+          "el": 25
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 79,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.16": {
+      "pelvis": 65,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 100,
+          "el": 50
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 77,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 83,
+          "ankle": 25
+        }
+      }
+    },
+    "0.24": {
+      "pelvis": 66,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 70,
+          "el": 74
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 76,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 81,
+          "ankle": 25
+        }
+      }
+    },
+    "0.32": {
+      "pelvis": 68,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 45,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 75,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        }
+      }
+    },
+    "0.4": {
+      "pelvis": 70,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 32,
+          "el": 112
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 78,
+          "ankle": 25
+        }
+      }
+    },
+    "0.6": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 23,
+          "el": 145
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 70,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 75,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "far": {
+          "sh": 23,
+          "el": 145
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "deltoid.ant"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "三角肌前束"
+  ],
+  "cue": "跪姿撑稳，屈肘下沉再撑起，推起到位后把一只手向前上方抬起停一下，放回垫面再换另一只手，全程腰背别塌。",
+  "mistake": {
+    "title": "抬手时身体跟着向一侧倒、髋部歪掉",
+    "fix": "抬手前先把腹部和臀部收紧、把重心压稳，只让手臂离地，肩膀和髋部保持水平不动。",
+    "basis": "通用训练常识：跪姿俯卧撑抬臂一旦核心松掉，骨盆就会侧倾、身体向支撑手一侧倒。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -22,
+      "arms": {
+        "far": {
+          "sh": 20,
+          "el": 145
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 17.72 秒，6 次重复（约每 2.95 秒一次），人物头朝画面右侧、在灰绿色垫上跪姿完成，膝盖着垫、小腿抬起脚离地。0.74、3.69、6.64、15.51 秒都停在最低点（胸口接近垫面）；11.07 秒在顶端且一侧手臂向前抬起、另一只手撑垫。取 8.12 秒（顶端抬臂）→9.6 秒（最低点）→11.07 秒（顶端）这一次完整重复。抬侧手臂在顶端上举，随身体开始下沉在前三分之一行程内沿前下方划弧放回垫面，之后与支撑手一同屈肘随身体下沉；因为要表现抬手，只固定撑垫的那只手为接触点，抬手与放手的时机按画面估读，手臂各角度为人工示意拟合。"
+}

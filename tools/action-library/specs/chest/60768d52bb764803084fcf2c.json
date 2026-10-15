@@ -1,0 +1,213 @@
+{
+  "sourceID": "60768d52bb764803084fcf2c",
+  "sourceName": "支架跪姿俯卧撑后坐",
+  "part": "chest",
+  "title": "支架跪姿俯卧撑后坐",
+  "variant": "跪姿俯卧撑加向后跪坐拉伸 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    8.2,
+    9.3,
+    10.1,
+    11.0,
+    12.5,
+    13.4
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.6,
+    1,
+    0.6,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 10
+        },
+        "far": {
+          "sh": 90,
+          "el": 10
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 95,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 12,
+      "arms": {
+        "near": {
+          "sh": 85,
+          "el": 10
+        },
+        "far": {
+          "sh": 85,
+          "el": 10
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 140,
+          "knee": 145,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 140,
+          "knee": 145,
+          "ankle": 25
+        }
+      }
+    },
+    "0.3": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 85,
+          "el": 80
+        },
+        "far": {
+          "sh": 85,
+          "el": 80
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    },
+    "0.6": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 10
+        },
+        "far": {
+          "sh": 90,
+          "el": 10
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 80,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "x": 80,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "pushup_bars",
+      "top": -24
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "deltoid.ant",
+      "lats"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上束",
+    "胸大肌外侧"
+  ],
+  "cue": "双膝跪垫、双手撑架成俯撑位，屈肘下沉到肘略高于躯干再推直，随后重心后移、臀部坐向脚跟，手臂随之前伸拉伸背部，再前滑回俯撑位循环。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "下放和推起时收紧腹部臀部，让肩、髋、膝保持一条直线，再进入后坐拉伸。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.3,
+    "override": {
+      "pelvis": 78,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "侧面视角，人物头朝画面左侧，双膝跪垫、双手握俯卧撑支架，共3个循环。取8.2~13.4秒一次完整重复：8.2秒前滑至俯撑顶部，9.3秒屈肘下沉到最低点，10.1秒推直手臂，10.0秒推起后臀部向后坐向脚跟、11.0秒后坐到位且手臂前伸扶架，之后前滑，13.4秒回到俯撑起点。后坐姿态pelvis 100、hip 120、knee 120为人工示意拟合，与帧图大致相符。 统筹修正：后坐pelvis95、hip140/knee145，手x80；姿态分段0/.3/.6/1避免过短插值导致跳变。"
+}

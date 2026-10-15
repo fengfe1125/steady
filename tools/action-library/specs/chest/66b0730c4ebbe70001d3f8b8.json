@@ -1,0 +1,132 @@
+{
+  "sourceID": "66b0730c4ebbe70001d3f8b8",
+  "sourceName": "哑铃上斜反手卧推",
+  "part": "chest",
+  "title": "哑铃上斜反手卧推",
+  "variant": "反手握铃 · 上斜凳约45° · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    1.51,
+    2.0,
+    2.5,
+    2.8,
+    3.2,
+    3.9
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 118,
+          "el": 10
+        },
+        "far": {
+          "sh": 118,
+          "el": 10
+        }
+      }
+    },
+    "1": {
+      "pelvis": -60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 45,
+          "el": 100
+        },
+        "far": {
+          "sh": 45,
+          "el": 100
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 10,
+      "y": -119
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 120,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 108,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -20,
+      "length": 110,
+      "top": -88,
+      "back": {
+        "x": -10,
+        "angle": 60,
+        "length": 170
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "triceps.long",
+      "triceps.lat",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "反手握铃躺在上斜凳上，下放到大臂略低于躯干、肘约九十度，推起时大臂向内夹，全程挺胸、肩胛收紧。",
+  "mistake": {
+    "title": "下放时弓腰、腰部离开凳面",
+    "fix": "全程保持挺胸、肋骨下沉，腰背贴住凳面；重量过大时减轻重量再来。",
+    "basis": "源资料强调全程挺胸、肩胛内收保持稳定；弓腰是反手卧推的通用错误，会失去上背支撑并伤腰。",
+    "level": 1,
+    "override": {
+      "lumbar": -22
+    }
+  },
+  "observation": "主视频侧面，人物仰卧在约45度上斜凳上，头朝画面左侧，双脚踩地。0.5至7.6秒为双手反手卧推，约2秒一次；7.6秒后改为单臂交替。选取1.51至3.9秒一次完整循环：1.51秒推至顶端，2.5至2.8秒下放到肘约90度的最低点，3.9秒回到顶端。帧图上反手握法不易分辨，握向为按动作名称推断；角度为人工拟合。"
+}

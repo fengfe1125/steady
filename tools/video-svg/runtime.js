@@ -6,7 +6,7 @@ const svg=(host,label)=>SA.util.el('svg',{viewBox:'0 0 400 400',role:'img','aria
 const motion=SA.scene.MotionPanel(svg(document.getElementById('motion'),spec.title),spec,'reference-motion');
 const renderers={motion};const samples={};let modeBuilt=new Set();
 function ensure(mode){if(modeBuilt.has(mode))return;
-if(mode==='detail'){for(const [i,k] of spec.referenceFrames.entries()){const f=document.createElement('figure');document.getElementById('detail').append(f);const render=SA.scene.MotionPanel(svg(f,k.caption),spec,`reference-detail-${i}`);render(k.time);const c=document.createElement('figcaption');c.textContent=`${i+1}. ${k.caption} · 原片 ${k.sourceSeconds.toFixed(2)}s`;f.append(c);}}
+if(mode==='detail'){for(const [i,k] of spec.referenceFrames.entries()){const f=document.createElement('figure');document.getElementById('detail').append(f);const render=SA.scene.MotionPanel(svg(f,k.caption),spec,`reference-detail-${i}`);render(k.time);const c=document.createElement('figcaption');c.textContent=`${i+1}. ${k.caption}`+(k.sourceSeconds==null?'':` · 原片 ${k.sourceSeconds.toFixed(2)}s`);f.append(c);}}
 if(mode==='mistakes') samples.mistakes=SA.scene.MistakePanel(svg(document.getElementById('mistakes'),'正确与错误教学示意'),spec,'reference-mistakes');
 modeBuilt.add(mode);}
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');const state={mode:'motion',playing:false,time:0,speed:1,seekRevision:-1};let raf=0,last=null,lastReport=0;
