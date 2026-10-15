@@ -121,6 +121,7 @@ struct EquipmentLessonView: View {
                         else if player.mode == .detail { detailNotes }
                         else { mistakeNotes }
                     }.id("player")
+                    VideoReferenceTeachingLink(existingLessonID: lesson.rawValue)
                     guide(scroll: scroll)
                     selfCheck.id("selfCheck")
                     sources
