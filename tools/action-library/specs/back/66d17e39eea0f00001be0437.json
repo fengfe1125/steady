@@ -1,0 +1,144 @@
+{
+  "sourceID": "66d17e39eea0f00001be0437",
+  "sourceName": "瑞士球脚撑俯卧撑",
+  "part": "back",
+  "title": "瑞士球脚撑俯卧撑",
+  "variant": "侧面 · 脚背搭球 · 手比肩稍宽",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    0.64,
+    1.5,
+    2.4,
+    3.15,
+    4.3,
+    5.5
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        }
+      }
+    },
+    "1": {
+      "pelvis": 97,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": -155,
+      "y": -95
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -60,
+      "length": 300
+    },
+    {
+      "type": "ball",
+      "x": -150,
+      "r": 46
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "erectors"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸肌上束",
+    "竖脊肌"
+  ],
+  "cue": "脚背搭在球上，手撑在垫上，间距比肩稍宽。从头到脚保持一条直线，屈肘到大臂差不多与肩平就推回去，肘伸直但不要锁死。",
+  "mistake": {
+    "title": "推起时腰塌下去",
+    "fix": "肚子和臀部收紧，肩、髋、脚保持一条直线；做不到就减小幅度。",
+    "basis": "资料写伸臂时容易塌腰或撅臀，肘也不要超伸锁死。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 93,
+      "lumbar": -18,
+      "legs": {
+        "near": {
+          "hip": -12
+        },
+        "far": {
+          "hip": -12
+        }
+      }
+    }
+  },
+  "observation": "侧面，头朝左。脚背放在球上，腿是直的，手撑在身前的垫上。最低点肘大约与肩同高，胸口不到垫子。侧面看不出手比肩宽多少，手的前后位置按略宽处理。取大约 0.6 秒撑直到 5.5 秒回到撑直。"
+}

@@ -1,0 +1,140 @@
+{
+  "sourceID": "64818be0e5c9cb0001f785bb",
+  "sourceName": "脉冲俯卧撑",
+  "part": "chest",
+  "title": "脉冲俯卧撑",
+  "variant": "窄幅脉冲 · 肘关节始终不完全伸直 · 全程在低位的上下小幅运动 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.52,
+    0.75,
+    0.98,
+    1.05,
+    1.3,
+    1.57
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 85,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -7
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -7
+        }
+      }
+    },
+    "1": {
+      "pelvis": 91,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -1
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -1
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "先沉到肘部略高于躯干的下位，然后就在这个位置附近不停做小幅度上下，肘关节始终保持微屈、不完全锁直，胸口持续保持张力。",
+  "mistake": {
+    "title": "做起脉冲时把髋部顶高，身体折成尖角",
+    "fix": "腹部臀部收紧，让肩、髋、踝保持一条直线，只让胸口在原位附近小幅起伏，不要靠抬臀借力。",
+    "basis": "源 detail.description 常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 100,
+      "lumbar": 6,
+      "legs": {
+        "near": {
+          "hip": 20
+        },
+        "far": {
+          "hip": 20
+        }
+      }
+    }
+  },
+  "observation": "主视频 12.52 秒、未标注组数，采样间隔约 1.05 秒。前 6 张帧为侧机位（人物头朝画面左侧），第 7 张起转到斜后方机位。12 张帧图的躯干都停在偏低位、肘部明显弯曲，从没有出现过手臂完全伸直的撑起位，因此本动作的可动范围只在下位附近，起点姿态也取在偏低的位置（pelvis 85）。取 0.52 秒至 1.57 秒这一轮小幅起伏作为一次重复，中间时间点由帧图之间的插值估计。手撑胸侧略宽于肩、脚尖着垫，支撑点全程不动。"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "arms",
+    "source": "/private/tmp/steady-arm-video-20261003",
+    "source_exists": false,
+    "target": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/.cache/downloads/steady-arm-video-20261003",
+    "target_exists": true,
+    "video_files": [
+      "arm-class.mp4"
+    ]
+  },
+  {
+    "topic": "chest",
+    "source": "/private/tmp/steady-chest-video",
+    "source_exists": false,
+    "target": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/.cache/downloads/chest-video",
+    "target_exists": true,
+    "video_files": [
+      "original.mp4"
+    ]
+  },
+  {
+    "topic": "chest-before",
+    "source": "/private/tmp/steady-chest-before",
+    "source_exists": false,
+    "target": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/.cache/tmp/before-coordination",
+    "target_exists": true,
+    "video_files": []
+  },
+  {
+    "topic": "shoulders",
+    "source": "/private/tmp/steady-shoulder-video-20261003",
+    "source_exists": false,
+    "target": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/.cache/downloads/shoulder-video",
+    "target_exists": true,
+    "video_files": [
+      "shoulder_training.mp4"
+    ]
+  },
+  {
+    "topic": "arms-extra",
+    "source": "/private/tmp/steady-arm-video",
+    "source_exists": false,
+    "target": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/.cache/downloads/video-workspace",
+    "target_exists": true,
+    "video_files": [
+      "7658495365934683493.mp4"
+    ]
+  }
+]

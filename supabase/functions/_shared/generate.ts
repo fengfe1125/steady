@@ -1,6 +1,6 @@
 import { aiRequest } from "./schema.ts";
 import { handler,identity,input,json,Failure } from "./http.ts";
-import { buildPlan,buildReport,finish,modelRequest,validateRequest } from "./coach.ts";
+import { buildPlan,buildReport,finish,modelRequest,modelOutputError,validateRequest } from "./coach.ts";
 export function generate(route:"report"|"plan-draft") {
  return handler(async req=>{
   const who=await identity(req),b=aiRequest.parse(await input(req)); validateRequest(b,route);
@@ -15,6 +15,6 @@ export function generate(route:"report"|"plan-draft") {
    await who.rpc("set_consents",{c:b.consent});
    await finish(who,b,true,data.usage);
    return json(result);
-  } catch(error) { await finish(who,b,false).catch(()=>{}); throw error; }
+  } catch(error) { await finish(who,b,false).catch(()=>{}); throw modelOutputError(error); }
  });
 }

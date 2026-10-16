@@ -1,0 +1,19 @@
+BEGIN
+CREATE TABLE
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+INSERT 0 1
+INSERT 0 1
+    set_consents    
+--------------------
+ {"accepted": true}
+(1 row)
+
+DO
+ passed_catalog_compatibility_checks 
+-------------------------------------
+                                  27
+(1 row)
+
+ROLLBACK

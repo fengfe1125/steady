@@ -1,0 +1,151 @@
+{
+  "sourceID": "586cfd88124816784056bf1c",
+  "sourceName": "俯身小哑铃反握划船",
+  "part": "back",
+  "title": "俯身小哑铃反握划船",
+  "variant": "反手小重量，收到下腹后短暂停 · 上身约三十度 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    0.53,
+    1.4,
+    2.15,
+    2.7,
+    3.7,
+    4.75
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 58,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 16,
+          "f": 1
+        },
+        "far": {
+          "sh": 68,
+          "el": 18,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 50,
+          "knee": 28
+        },
+        "far": {
+          "hip": 46,
+          "knee": 32
+        }
+      }
+    },
+    "1": {
+      "pelvis": 58,
+      "lumbar": 0,
+      "thorax": -3,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 2,
+          "el": 128,
+          "f": 1
+        },
+        "far": {
+          "sh": 6,
+          "el": 122,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 50,
+          "knee": 28
+        },
+        "far": {
+          "hip": 46,
+          "knee": 32
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -4,
+      "y": -176
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 18,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 0,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.7
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.7
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid"
+    ],
+    "secondary": [
+      "biceps",
+      "trap.mid",
+      "erectors"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "菱形肌"
+  ],
+  "cue": "上身大约三十度。掌心朝前握住小铃，屈肘收到下腹两侧，短暂停顿后放下，后背保持平直。",
+  "mistake": {
+    "title": "上拉时后背变圆",
+    "fix": "先收住肚子，让后脑到骨盆接近直线，再把铃收到下腹。",
+    "basis": "资料写弯腰和身体前后晃动。上拉途中把腰弯圆。",
+    "level": 0.8,
+    "override": {
+      "lumbar": 16,
+      "thorax": 12,
+      "neck": 6,
+      "head": 4
+    }
+  },
+  "observation": "侧面，人朝左，小哑铃。0.53 秒手臂垂下，2.7 秒收到下腹，4.75 秒回到垂下，顶端只短暂停，没有前几个动作那种长停。侧面分不清掌心朝向，反手用更屈的肘、手留在下腹前来表现。躯干与地面约三十度，pelvis 58，比接近水平的反手划船立得更高。头是最高点。"
+}

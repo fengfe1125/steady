@@ -1,0 +1,182 @@
+{
+  "sourceID": "586cfdae124816784056bfb4",
+  "sourceName": "俯身小哑铃划船臂屈伸",
+  "part": "back",
+  "title": "俯身小哑铃划船臂屈伸",
+  "variant": "先划到髋旁，再把肘伸直送到身后 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    0.63,
+    1.7,
+    3.16,
+    4.43,
+    5.5,
+    6.4
+  ],
+  "levels": [
+    0,
+    0.28,
+    0.5,
+    1,
+    0.35,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 54,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 60,
+          "el": 16,
+          "f": 1
+        },
+        "far": {
+          "sh": 64,
+          "el": 18,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 46,
+          "knee": 26
+        },
+        "far": {
+          "hip": 42,
+          "knee": 30
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 54,
+      "lumbar": 0,
+      "thorax": -3,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -2,
+          "el": 112,
+          "f": 1
+        },
+        "far": {
+          "sh": 2,
+          "el": 106,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 46,
+          "knee": 26
+        },
+        "far": {
+          "hip": 42,
+          "knee": 30
+        }
+      }
+    },
+    "1": {
+      "pelvis": 54,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -16,
+          "el": 14,
+          "f": 1
+        },
+        "far": {
+          "sh": -12,
+          "el": 16,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 46,
+          "knee": 26
+        },
+        "far": {
+          "hip": 42,
+          "knee": 30
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -4,
+      "y": -176
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 16,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -2,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.7
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.7
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "trap.lower",
+      "lats"
+    ],
+    "secondary": [
+      "triceps.long",
+      "rhomboid",
+      "deltoid.post"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中束",
+    "斜方肌下束",
+    "背阔肌"
+  ],
+  "cue": "膝微屈，上身停在三十到四十五度之间。先屈肘收到髋旁，再把肘伸直、小臂送到身后，停一下再收回。",
+  "mistake": {
+    "title": "伸臂时后背跟着晃圆",
+    "fix": "幅度可以小一点，先稳住髋和后背，再把小臂向后送直。",
+    "basis": "资料把弓腰和身体前后晃动列为常见问题，在伸臂的位置把背弯圆。",
+    "level": 1,
+    "override": {
+      "lumbar": 16,
+      "thorax": 12,
+      "neck": 6,
+      "head": 6
+    }
+  },
+  "observation": "侧面，人朝左，小哑铃，对握。0.63 秒手臂垂下，3.16 秒收到髋旁，4.43 秒肘伸直、小臂送到身后，约 6.4 秒回到垂下。上身比前几个划船更立一些，落在三十到四十五度之间，pelvis 54。伸直后手臂仍贴着身体，没有向两侧打开。"
+}

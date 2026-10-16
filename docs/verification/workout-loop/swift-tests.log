@@ -1,0 +1,334 @@
+warning: 'steady': found 1 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /Volumes/Developer/Projects/steady/Steady/steady-anatomy.js
+Building for debugging...
+[Computing dependencies]
+[Using on-disk description]
+[1 / 5]
+[2 / 6] SteadyCore
+[3 / 7] SteadyCore
+[7 / 10] SteadyCore
+[10 / 11] SteadyAppStateTests-product
+[12 / 12] SteadyAppStateTests-product
+[13 / 16] SteadyCoreTests-product
+[15 / 18] SteadyCoreTests-product
+[21 / 23] SteadyCoreTests-product
+[23 / 23] SteadyCoreTests-product
+[24 / 25] SteadyLiveTests-product
+[26 / 26] SteadyLiveTests-product
+Build complete! (4.30秒)
+Test Suite 'All tests' started at 2026-10-16 15:24:30.517.
+Test Suite 'All tests' passed at 2026-10-16 15:24:30.519.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+Test Suite 'All tests' started at 2026-10-16 15:24:30.653.
+Test Suite 'All tests' passed at 2026-10-16 15:24:30.654.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'All tests' started at 2026-10-16 15:24:30.762.
+Test Suite 'All tests' passed at 2026-10-16 15:24:30.763.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite SyncPullPageTests started.
+◇ Test rejectsPrivilegedKeysAndInsecureEndpoints() started.
+◇ Test byteStreamPreservesBlankFramesAndChineseText() started.
+◇ Test fabricatedEvidenceAndChangedVersionsAreRejected() started.
+◇ Test sseHandlesCommentsMultilineAndTerminalFrames() started.
+◇ Test unknownKindsAdvanceCursorButKnownMalformedRecordsFail() started.
+✔ Test sseHandlesCommentsMultilineAndTerminalFrames() passed after 0.001 seconds.
+✔ Test rejectsPrivilegedKeysAndInsecureEndpoints() passed after 0.001 seconds.
+✔ Test byteStreamPreservesBlankFramesAndChineseText() passed after 0.001 seconds.
+✔ Test fabricatedEvidenceAndChangedVersionsAreRejected() passed after 0.001 seconds.
+✔ Test unknownKindsAdvanceCursorButKnownMalformedRecordsFail() passed after 0.005 seconds.
+✔ Suite SyncPullPageTests passed after 0.005 seconds.
+✔ Test run with 5 tests in 1 suite passed after 0.005 seconds.
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite PersistenceTests started.
+◇ Suite VideoReferenceLessonTests started.
+◇ Suite DemoTests started.
+◇ Suite WorkoutTests started.
+◇ Test invalidFeedbackAndEmptyPlanAreRejected() started.
+◇ Suite AnimatedTrainingCollectionTests started.
+◇ Suite LowerBodyCatalogTests started.
+◇ Suite ActionLibraryTests started.
+◇ Suite EquipmentLessonTests started.
+◇ Test entirelyMissingSummaryHasNoFabricatedEvidence() started.
+◇ Test streamCanBeCancelledAfterFirstToken() started.
+◇ Suite TrainingArtworkDocumentTests started.
+◇ Test liveRecordsAndOutboxSurviveReopenAndStayAccountScoped() started.
+◇ Test remoteConflictAndDeletionDoNotSilentlyOverwrite() started.
+◇ Suite ExerciseCatalogTests started.
+◇ Test consentRevisionAndGuestImportAreExplicit() started.
+◇ Test inFlightAcknowledgementKeepsNewerLocalEdit() started.
+◇ Test cloudJSONWhitespaceDoesNotRequeueUnchangedRecords() started.
+◇ Suite LowerBodyTeachingTests started.
+◇ Test journalSurvivesReopen() started.
+◇ Test sleepMergesSourcesButDoesNotCountAwakeIntervals() started.
+◇ Test sixExamplesResolveWithoutChangingPlanCatalog() started.
+◇ Test diskReopenPreservesLogTemplateAndNextPerformance() started.
+◇ Test streamedAnswerHasEvidenceAndCompletion() started.
+◇ Test savesEditsAndFeedbackAcrossRepositoryReopen() started.
+◇ Test concurrentOfflineSessionsStayVisibleAndCanBeResolved() started.
+◇ Test unilateralWorkRequiresBothSidesAndCannotCompareTotalLoad() started.
+◇ Test extendedFieldsPreserveOmissionAndExplicitClearing() started.
+◇ Test allFourApprovedAcceptanceCombinationsFitCompleteTemplates() started.
+◇ Test swiftAndBackendCandidatesAndBaseBudgetsMatchAllTwelveFixtures() started.
+◇ Test shouldersCandidatePreservesMixedCycleLengths() started.
+◇ Test legsPreviewCrossingAndRejectOutOfStepPreview() started.
+◇ Test ongoingIsUniqueAndDeletionAllowsNewSession() started.
+◇ Test interchangeableCalfVariantsCannotFillBothAuxiliarySlots() started.
+◇ Test fixedThirtyDaysAndStableIDs() started.
+◇ Test accountIsolationConflictAndTombstone() started.
+◇ Test conditionsAreRequiredAndEquipmentCannotStandInForAbility() started.
+◇ Test bodyweightSupportsNeverRequireLoadAndLearningOnlyStaysSeparate() started.
+◇ Test threeScenesAndNoObjectBodyweightGenerateBothRequiredPatterns() started.
+◇ Test historyEditsAndDeleteRecomputeSuggestion() started.
+◇ Test invalidSetCannotBeAcknowledgedOrPersisted() started.
+◇ Test armsExtraUsesBundledAnatomyWithoutChangingStepCounts() started.
+◇ Test allSixteenTargetsResolveAndOriginalTeachingReferencesRemain() started.
+◇ Test progressionRequiresFullWorkAndMatchingMeasurement() started.
+◇ Test rejectsUnavailableDefaultView() started.
+◇ Test functionalKeepsSevenHipThrustStagesOnAnatomyCanvas() started.
+◇ Test offlineStillReadsHistory() started.
+◇ Test templateEstimatesIncludeBothSidesRestSetupAndTransitions() started.
+◇ Test snapshotsSurviveTemplateChangesAndLegacySessionIsNotFabricated() started.
+◇ Test missingIsNotZero() started.
+◇ Test abdominalCandidateLoadsFromBuiltResourceBundle() started.
+◇ Test revokedConditionsAllowRepairingOneHistoricalSlotAtATime() started.
+◇ Test pauseResumeRestAndEarlyFinishUseWallClock() started.
+◇ Test lowerBodyWarmupCannotUseUnrelatedUpperBodyLesson() started.
+◇ Test restrictionsAreNotSilentlyIgnored() started.
+◇ Test allEightCollectionsUseTheSameOfflineAnatomyContract() started.
+◇ Test cancelledReportDoesNotSucceed() started.
+◇ Test consentSwitchesAreIndependent() started.
+◇ Test armsCandidateKeepsEightSecondPlayback() started.
+◇ Test rejectsMismatchedOrZeroLengthPlaybackTiming() started.
+◇ Test chestCandidateLoadsItsBundledPlaybackDependencies() started.
+◇ Test invalidCoverageBudgetGroupCountAndDatesAreRejected() started.
+◇ Test everyMoveHasLightAndDarkIcons() started.
+◇ Test completeBeginnerContentAndStepRouting(_:) started.
+◇ Test backKeepsWalkingCycleWithBundledAnatomy() started.
+◇ Test draftRequiresConfirmationAndEditsRoundTrip() started.
+◇ Test chestLibraryLoadsAllApprovedMoves() started.
+◇ Test everyPageUsesTheBundledRuntimeAndNeverCitesTheSourceVideo() started.
+◇ Test replacementUsesExplicitRelationsAndRevocationExcludesActions() started.
+◇ Test effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test unknownPartsAreRejected() started.
+◇ Test requestFailureIsExplicit() started.
+◇ Test lessonNamesAndAliasesAreUnique() started.
+◇ Test unsupportedVariantsNeverGetAnUnrelatedTutorial() started.
+◇ Test exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test missingEngineCannotFallBackToTheLegacyRuntime() started.
+◇ Test catalogueIncludesEveryLessonExactlyOnce() started.
+◇ Test dumbbellDirectionsDescribeTheActualWeightMovement() started.
+◇ Test nativeExplanationRejectsTheWrongLessonIdentity() started.
+◇ Test shoulderUsesItsAdjacentBundledEngine() started.
+◇ Test allFourteenEquipmentExplanationsMatchTheDrawingHandoff() started.
+◇ Test unconfirmedEquipmentAndRestrictionsCannotGenerate() started.
+◇ Test generationContextPreservesAbsenceUntilAssigned() started.
+◇ Test bundledCatalogResolvesEveryTeachingAndSharesHash() started.
+◇ Test historicalUnknownAndLegacyRenamedEntriesRemainEditable() started.
+◇ Test legacyAndIncompleteAnatomyDocumentsAreDistinct() started.
+◇ Test offlineUpgradeRetainsOmissionsThroughRestartDateFeedbackAndDoseEdits() started.
+◇ Test localAndSyncedRepositoryPreserveCatalogAfterRestart() started.
+◇ Test customDoseClearsTemplateButKeepsTeaching() started.
+◇ Test legacyJSONPreservesOmissionsWhileNewRecordsEncodeNulls() started.
+◇ Test legacyCustomDoseOnlyClearsTemplate() started.
+◇ Test generatedDraftUsesTemplatesAndRoundTrips() started.
+◇ Test replacementKeepsSlotIdentityAndChecksEligibility() started.
+◇ Test eachCatalogFieldPreservesMissingNullAndValueIndependently() started.
+◇ Test generatedPlanRejectsTamperingAndTimeOverflow() started.
+◇ Test legacyEquipmentSurvivesRepositorySaveUntilExplicitlyAssigned() started.
+◇ Test referencesKeepFloorBridgeDistinctFromBallBridgeAndHingeFromSquat() started.
+◇ Test supplementalLessonsResolveOfflineWithCompleteTeachingStages() started.
+◇ Test case passing 1 argument id → .seatedChestPress to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .latPulldown to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedCableRow to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedLegPress to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedShoulderPress to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedLegExtension to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedAbdominalCrunch to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .dumbbellGobletSquat to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .singleArmDumbbellRow to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedChestPress to effortAndReturnAreContinuousAndMonotonic(_:) started.
+✔ Test invalidFeedbackAndEmptyPlanAreRejected() passed after 0.047 seconds.
+◇ Test case passing 1 argument id → .latPulldown to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .seatedDumbbellShoulderPress to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedCableRow to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .seatedLegCurl to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedLegPress to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .seatedChestPress to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedShoulderPress to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .latPulldown to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedLegExtension to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .preacherBicepsCurl to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedCableRow to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedAbdominalCrunch to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .seatedLegPress to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedPecFly to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .dumbbellGobletSquat to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .seatedHipAbduction to completeBeginnerContentAndStepRouting(_:) started.
+◇ Test case passing 1 argument id → .seatedShoulderPress to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .singleArmDumbbellRow to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .seatedLegExtension to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedDumbbellShoulderPress to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .seatedAbdominalCrunch to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedLegCurl to effortAndReturnAreContinuousAndMonotonic(_:) started.
+✔ Test sleepMergesSourcesButDoesNotCountAwakeIntervals() passed after 0.052 seconds.
+◇ Test case passing 1 argument id → .dumbbellGobletSquat to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .preacherBicepsCurl to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .singleArmDumbbellRow to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedPecFly to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .seatedHipAbduction to effortAndReturnAreContinuousAndMonotonic(_:) started.
+◇ Test case passing 1 argument id → .seatedDumbbellShoulderPress to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .preacherBicepsCurl to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedLegCurl to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedPecFly to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+◇ Test case passing 1 argument id → .seatedHipAbduction to exactMachineAliasesResolveToTheirOwnLesson(_:) started.
+✔ Test fixedThirtyDaysAndStableIDs() passed after 0.062 seconds.
+✔ Test shouldersCandidatePreservesMixedCycleLengths() passed after 0.062 seconds.
+✔ Test extendedFieldsPreserveOmissionAndExplicitClearing() passed after 0.062 seconds.
+✔ Test conditionsAreRequiredAndEquipmentCannotStandInForAbility() passed after 0.062 seconds.
+✔ Test armsExtraUsesBundledAnatomyWithoutChangingStepCounts() passed after 0.062 seconds.
+✔ Test functionalKeepsSevenHipThrustStagesOnAnatomyCanvas() passed after 0.062 seconds.
+✔ Test abdominalCandidateLoadsFromBuiltResourceBundle() passed after 0.062 seconds.
+✔ Test templateEstimatesIncludeBothSidesRestSetupAndTransitions() passed after 0.062 seconds.
+✔ Test legsPreviewCrossingAndRejectOutOfStepPreview() passed after 0.062 seconds.
+✔ Test rejectsUnavailableDefaultView() passed after 0.062 seconds.
+✔ Test consentSwitchesAreIndependent() passed after 0.062 seconds.
+✔ Test interchangeableCalfVariantsCannotFillBothAuxiliarySlots() passed after 0.066 seconds.
+✔ Test armsCandidateKeepsEightSecondPlayback() passed after 0.066 seconds.
+✔ Test swiftAndBackendCandidatesAndBaseBudgetsMatchAllTwelveFixtures() passed after 0.066 seconds.
+✔ Test chestCandidateLoadsItsBundledPlaybackDependencies() passed after 0.066 seconds.
+✔ Test lowerBodyWarmupCannotUseUnrelatedUpperBodyLesson() passed after 0.066 seconds.
+✔ Test completeBeginnerContentAndStepRouting(_:) with 14 test cases passed after 0.066 seconds.
+✔ Test backKeepsWalkingCycleWithBundledAnatomy() passed after 0.066 seconds.
+✔ Test revokedConditionsAllowRepairingOneHistoricalSlotAtATime() passed after 0.066 seconds.
+✔ Test rejectsMismatchedOrZeroLengthPlaybackTiming() passed after 0.066 seconds.
+✔ Test allFourApprovedAcceptanceCombinationsFitCompleteTemplates() passed after 0.067 seconds.
+✔ Test allSixteenTargetsResolveAndOriginalTeachingReferencesRemain() passed after 0.067 seconds.
+✔ Test lessonNamesAndAliasesAreUnique() passed after 0.066 seconds.
+✔ Test effortAndReturnAreContinuousAndMonotonic(_:) with 14 test cases passed after 0.066 seconds.
+✔ Test invalidCoverageBudgetGroupCountAndDatesAreRejected() passed after 0.067 seconds.
+✔ Test unsupportedVariantsNeverGetAnUnrelatedTutorial() passed after 0.066 seconds.
+✔ Test catalogueIncludesEveryLessonExactlyOnce() passed after 0.066 seconds.
+✔ Test dumbbellDirectionsDescribeTheActualWeightMovement() passed after 0.066 seconds.
+✔ Test exactMachineAliasesResolveToTheirOwnLesson(_:) with 14 test cases passed after 0.066 seconds.
+✔ Test replacementUsesExplicitRelationsAndRevocationExcludesActions() passed after 0.067 seconds.
+✔ Test nativeExplanationRejectsTheWrongLessonIdentity() passed after 0.066 seconds.
+✔ Test unknownPartsAreRejected() passed after 0.066 seconds.
+✔ Test shoulderUsesItsAdjacentBundledEngine() passed after 0.066 seconds.
+✔ Test threeScenesAndNoObjectBodyweightGenerateBothRequiredPatterns() passed after 0.067 seconds.
+✔ Test missingEngineCannotFallBackToTheLegacyRuntime() passed after 0.066 seconds.
+✔ Test generationContextPreservesAbsenceUntilAssigned() passed after 0.066 seconds.
+✔ Test legacyAndIncompleteAnatomyDocumentsAreDistinct() passed after 0.066 seconds.
+✔ Test chestLibraryLoadsAllApprovedMoves() passed after 0.067 seconds.
+✔ Test unconfirmedEquipmentAndRestrictionsCannotGenerate() passed after 0.066 seconds.
+✔ Test legacyCustomDoseOnlyClearsTemplate() passed after 0.066 seconds.
+✔ Test legacyJSONPreservesOmissionsWhileNewRecordsEncodeNulls() passed after 0.066 seconds.
+✔ Test everyMoveHasLightAndDarkIcons() passed after 0.067 seconds.
+✔ Test eachCatalogFieldPreservesMissingNullAndValueIndependently() passed after 0.066 seconds.
+✔ Test replacementKeepsSlotIdentityAndChecksEligibility() passed after 0.066 seconds.
+✔ Test generatedDraftUsesTemplatesAndRoundTrips() passed after 0.067 seconds.
+✔ Test customDoseClearsTemplateButKeepsTeaching() passed after 0.067 seconds.
+✔ Test referencesKeepFloorBridgeDistinctFromBallBridgeAndHingeFromSquat() passed after 0.042 seconds.
+✔ Test remoteConflictAndDeletionDoNotSilentlyOverwrite() passed after 0.069 seconds.
+✔ Suite LowerBodyCatalogTests passed after 0.069 seconds.
+✔ Test entirelyMissingSummaryHasNoFabricatedEvidence() passed after 0.069 seconds.
+✔ Test offlineStillReadsHistory() passed after 0.068 seconds.
+✔ Test missingIsNotZero() passed after 0.068 seconds.
+✔ Test liveRecordsAndOutboxSurviveReopenAndStayAccountScoped() passed after 0.069 seconds.
+✔ Test restrictionsAreNotSilentlyIgnored() passed after 0.068 seconds.
+✔ Suite EquipmentLessonTests passed after 0.069 seconds.
+✔ Test cancelledReportDoesNotSucceed() passed after 0.068 seconds.
+✔ Test requestFailureIsExplicit() passed after 0.068 seconds.
+✔ Test historicalUnknownAndLegacyRenamedEntriesRemainEditable() passed after 0.070 seconds.
+✔ Test generatedPlanRejectsTamperingAndTimeOverflow() passed after 0.072 seconds.
+✔ Test supplementalLessonsResolveOfflineWithCompleteTeachingStages() passed after 0.046 seconds.
+✔ Suite LowerBodyTeachingTests passed after 0.073 seconds.
+✔ Test consentRevisionAndGuestImportAreExplicit() passed after 0.075 seconds.
+✔ Test draftRequiresConfirmationAndEditsRoundTrip() passed after 0.075 seconds.
+✔ Test streamedAnswerHasEvidenceAndCompletion() passed after 0.077 seconds.
+✔ Suite DemoTests passed after 0.077 seconds.
+✔ Test allEightCollectionsUseTheSameOfflineAnatomyContract() passed after 0.077 seconds.
+✔ Suite AnimatedTrainingCollectionTests passed after 0.078 seconds.
+✔ Test bundledCatalogResolvesEveryTeachingAndSharesHash() passed after 0.077 seconds.
+✔ Test cloudJSONWhitespaceDoesNotRequeueUnchangedRecords() passed after 0.081 seconds.
+✔ Test streamCanBeCancelledAfterFirstToken() passed after 0.085 seconds.
+✔ Test inFlightAcknowledgementKeepsNewerLocalEdit() passed after 0.086 seconds.
+✔ Test sixExamplesResolveWithoutChangingPlanCatalog() passed after 0.093 seconds.
+✔ Suite VideoReferenceLessonTests passed after 0.094 seconds.
+✔ Test allFourteenEquipmentExplanationsMatchTheDrawingHandoff() passed after 0.101 seconds.
+✔ Suite TrainingArtworkDocumentTests passed after 0.102 seconds.
+✔ Test offlineUpgradeRetainsOmissionsThroughRestartDateFeedbackAndDoseEdits() passed after 0.103 seconds.
+✔ Test localAndSyncedRepositoryPreserveCatalogAfterRestart() passed after 0.122 seconds.
+✔ Test legacyEquipmentSurvivesRepositorySaveUntilExplicitlyAssigned() passed after 0.133 seconds.
+✔ Suite ExerciseCatalogTests passed after 0.134 seconds.
+✔ Test journalSurvivesReopen() passed after 0.147 seconds.
+✔ Test accountIsolationConflictAndTombstone() passed after 0.171 seconds.
+✔ Test bodyweightSupportsNeverRequireLoadAndLearningOnlyStaysSeparate() passed after 0.171 seconds.
+✔ Test snapshotsSurviveTemplateChangesAndLegacySessionIsNotFabricated() passed after 0.171 seconds.
+✔ Test unilateralWorkRequiresBothSidesAndCannotCompareTotalLoad() passed after 0.171 seconds.
+✔ Test pauseResumeRestAndEarlyFinishUseWallClock() passed after 0.171 seconds.
+✔ Test concurrentOfflineSessionsStayVisibleAndCanBeResolved() passed after 0.171 seconds.
+✔ Test ongoingIsUniqueAndDeletionAllowsNewSession() passed after 0.171 seconds.
+✔ Test savesEditsAndFeedbackAcrossRepositoryReopen() passed after 0.171 seconds.
+✔ Test historyEditsAndDeleteRecomputeSuggestion() passed after 0.171 seconds.
+✔ Test invalidSetCannotBeAcknowledgedOrPersisted() passed after 0.171 seconds.
+✔ Test diskReopenPreservesLogTemplateAndNextPerformance() passed after 0.172 seconds.
+✔ Test progressionRequiresFullWorkAndMatchingMeasurement() passed after 0.171 seconds.
+✔ Suite PersistenceTests passed after 0.172 seconds.
+✔ Suite WorkoutTests passed after 0.172 seconds.
+✔ Test everyPageUsesTheBundledRuntimeAndNeverCitesTheSourceVideo() passed after 2.203 seconds.
+✔ Suite ActionLibraryTests passed after 2.204 seconds.
+✔ Test run with 87 tests in 11 suites passed after 2.204 seconds.
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test unknownFutureRuleKeepsHistoricalFeedbackReadable() started.
+◇ Suite WorkoutStateTests started.
+◇ Test liveSyncRetriesAfterTransientFailureWithoutLosingLocalNote() started.
+◇ Test futureConditionRecordsRemainSavedButDoNotBlockCurrentGeneration() started.
+◇ Test privacySavePreservesNewerTrainingAndConsentValues() started.
+◇ Test failedConfirmationDoesNotDismissResumedDraft() started.
+◇ Test cancelledChatCannotFinishOrClearNewRequest() started.
+◇ Test healthConnectionWaitsForFirstReadBeforeReportingSuccess() started.
+◇ Test catalogPlanSavesHistoricalFeedbackButRejectsDuplicateDates() started.
+◇ Test cancelledHealthReadCannotOverwriteNewRequest(outcome:) started.
+◇ Test lowerBodyDatesCannotBypassRecoveryCheckAndSnapshotsStayReadable() started.
+◇ Test appFlowKeepsDraftSeparateAndPersistsNote() started.
+◇ Test healthReadFailureReportsErrorWithoutSuccessNotice() started.
+◇ Test healthReconnectionWaitsForBackgroundReadAndRefreshes() started.
+◇ Test trendSinglePointAndMetricUnits() started.
+◇ Test legacyGenerationProjectsNewEquipmentWithoutOverwritingPreferences() started.
+◇ Test trendUsesCalendarWindowNotRecordCount() started.
+◇ Test trendWindowRespectsDaylightSavingBoundary() started.
+◇ Test cancelledQueuedHealthConnectionDoesNotAuthorize() started.
+◇ Test doubleStartAndAccountSwitchKeepLogsIsolated() started.
+◇ Test case passing 1 argument outcome → .success to cancelledHealthReadCannotOverwriteNewRequest(outcome:) started.
+◇ Test case passing 1 argument outcome → .cancelled to cancelledHealthReadCannotOverwriteNewRequest(outcome:) started.
+◇ Test case passing 1 argument outcome → .failed to cancelledHealthReadCannotOverwriteNewRequest(outcome:) started.
+◇ Test saveFailureNeverClaimsStartedOrSaved() started.
+✔ Test trendSinglePointAndMetricUnits() passed after 0.001 seconds.
+✔ Test trendUsesCalendarWindowNotRecordCount() passed after 0.001 seconds.
+✔ Test trendWindowRespectsDaylightSavingBoundary() passed after 0.001 seconds.
+✔ Test unknownFutureRuleKeepsHistoricalFeedbackReadable() passed after 0.018 seconds.
+✔ Test privacySavePreservesNewerTrainingAndConsentValues() passed after 0.025 seconds.
+✔ Test catalogPlanSavesHistoricalFeedbackButRejectsDuplicateDates() passed after 0.033 seconds.
+✔ Test lowerBodyDatesCannotBypassRecoveryCheckAndSnapshotsStayReadable() passed after 0.053 seconds.
+✔ Test failedConfirmationDoesNotDismissResumedDraft() passed after 0.069 seconds.
+✔ Test futureConditionRecordsRemainSavedButDoNotBlockCurrentGeneration() passed after 0.087 seconds.
+✔ Test saveFailureNeverClaimsStartedOrSaved() passed after 0.089 seconds.
+✔ Test doubleStartAndAccountSwitchKeepLogsIsolated() passed after 0.092 seconds.
+✔ Suite WorkoutStateTests passed after 0.092 seconds.
+✔ Test healthReadFailureReportsErrorWithoutSuccessNotice() passed after 0.095 seconds.
+✔ Test legacyGenerationProjectsNewEquipmentWithoutOverwritingPreferences() passed after 0.095 seconds.
+✔ Test cancelledHealthReadCannotOverwriteNewRequest(outcome:) with 3 test cases passed after 0.105 seconds.
+✔ Test appFlowKeepsDraftSeparateAndPersistsNote() passed after 0.110 seconds.
+✔ Test healthReconnectionWaitsForBackgroundReadAndRefreshes() passed after 0.136 seconds.
+✔ Test cancelledQueuedHealthConnectionDoesNotAuthorize() passed after 0.139 seconds.
+✔ Test healthConnectionWaitsForFirstReadBeforeReportingSuccess() passed after 0.148 seconds.
+✔ Test cancelledChatCannotFinishOrClearNewRequest() passed after 0.246 seconds.
+✔ Test liveSyncRetriesAfterTransientFailureWithoutLosingLocalNote() passed after 3.230 seconds.
+✔ Test run with 20 tests in 1 suite passed after 3.231 seconds.

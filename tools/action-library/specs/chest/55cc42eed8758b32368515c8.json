@@ -1,0 +1,140 @@
+{
+  "sourceID": "55cc42eed8758b32368515c8",
+  "sourceName": "右侧偏重俯卧撑",
+  "part": "chest",
+  "title": "偏重俯卧撑",
+  "variant": "一侧腿抬起并转到身体另一侧 · 重心压在支撑臂上 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    1.25,
+    2.08,
+    3.75,
+    4.58,
+    6.25,
+    7.08
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 76,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -18
+        },
+        "far": {
+          "hip": 12,
+          "knee": 55,
+          "ankle": 10
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 12,
+          "knee": 55,
+          "ankle": 10
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 9,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 9,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "撑好后把一条腿抬起、横过身体落在另一侧，重心压到支撑臂上；下落时肘向身后收，胸口贴近垫面再推起，躯干不能跟着歪。",
+  "mistake": {
+    "title": "塌腰撅臀，躯干没有成一条直线",
+    "fix": "开始前先收紧腹部和臀部，让肩、髋、支撑脚保持在一条线上；推到顶端时肘部留一点弯曲，不要向后锁死。",
+    "basis": "源资料常见错误：伸臂时肘关节超伸锁死，训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 10 秒，全程是极近的特写，画面里只有躯干和撑地的手臂，头部朝画面左侧，因此镜像。画面叠了向下的箭头提示发力方向。12 张帧图的姿态几乎没有差别，都是屈肘、胸口贴近垫面的低位，脚部完全出画，抬腿交叉的细节看不到，重复节奏按文字资料设定。手掌全程平按垫面、位置不变，肘部明显向后上方弯曲。"
+}

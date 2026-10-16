@@ -1,0 +1,139 @@
+{
+  "sourceID": "6492bf9d39a79b0001b8a2fa",
+  "sourceName": "跪姿腰侧俯卧撑底部保持",
+  "part": "chest",
+  "title": "跪姿腰侧俯卧撑底部保持",
+  "variant": "跪姿腰侧 · 沉到低位后静态停留 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.9,
+    2.0,
+    3.2,
+    4.33,
+    5.6,
+    7.0
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.7,
+    1,
+    0.55,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 75,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 70,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 75,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 82,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 65,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 70,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -34,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -34,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 400
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "手撑在髋部两侧、指尖朝后，屈肘把身体沉到最低位停住不动；保持腰背平直与均匀呼吸，坚持到规定时间后再推起。",
+  "mistake": {
+    "title": "保持阶段腰腹先垮下去",
+    "fix": "全程夹紧臀部和腹部，用整条身体撑住，而不是靠腰部下坠；撑不住时缩短保持时间。",
+    "basis": "依据源资料常见错误：训练过程中塌腰或撅臀；并按通用等长训练常识补充。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 76,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -16
+        },
+        "far": {
+          "hip": -16
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080 宽，侧面，人物头朝画面左侧。0.33-4.33 秒身体始终停在低位：胸口接近垫面、肘在躯干后方，七帧几乎没有位移；5.00 秒起身体略微抬高，7.67 秒仍处于中低位，全程没有完整起身。因此取整段作为一次底部保持：0.9 秒进入低位，4.33 秒最深，之后缓慢回升但不到顶。膝盖与手的具体落点清晰，小腿角度按同类跪姿俯卧撑拟合。"
+}

@@ -1,0 +1,159 @@
+{
+  "sourceID": "6890560fe97dfc00016448a2",
+  "sourceName": "坐姿哑铃 L 字伸展",
+  "part": "back",
+  "title": "坐姿哑铃 L 字伸展",
+  "variant": "坐在凳上，肘贴腰侧，前臂由水平向外打开 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.55,
+    1.05,
+    1.4,
+    1.65,
+    2.2,
+    2.74
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.8,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -6,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 12,
+          "el": 88,
+          "f": 1,
+          "ff": 1
+        },
+        "far": {
+          "sh": 8,
+          "el": 84,
+          "f": 1,
+          "ff": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 96,
+          "knee": 94
+        },
+        "far": {
+          "hip": 96,
+          "knee": 94
+        }
+      }
+    },
+    "1": {
+      "pelvis": -6,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 18,
+          "el": 148,
+          "f": 1,
+          "ff": 0.72
+        },
+        "far": {
+          "sh": 14,
+          "el": 142,
+          "f": 1,
+          "ff": 0.72
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 96,
+          "knee": 94
+        },
+        "far": {
+          "hip": 96,
+          "knee": 94
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 8,
+      "y": -112
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 112,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 98,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -70,
+      "length": 130,
+      "top": -88
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.75
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.75
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.post",
+      "infraspinatus"
+    ],
+    "secondary": [
+      "trap.mid",
+      "teres"
+    ]
+  },
+  "primaryNames": [
+    "三角肌后束",
+    "上背部"
+  ],
+  "cue": "坐直，肘贴在腰侧，前臂放平。再把前臂向外转开并抬高，后背收一下，然后回到水平，肩不要往上缩。",
+  "mistake": {
+    "title": "打开时肩往耳朵缩",
+    "fix": "肩先沉住，只转动前臂。如果肩跟着抬起来，就减轻重量，让后背去收，而不是用斜方把人吊起来。",
+    "basis": "资料的问题是耸肩。侧面没有单独的耸肩错误参数，用头颈前探和胸口上提来表示肩没稳住。",
+    "level": 1,
+    "override": {
+      "neck": 8,
+      "head": 14,
+      "thorax": 8
+    }
+  },
+  "observation": "侧面，人朝右，坐着，脚踩地。肘贴在腰旁，前臂先放平。1.65 秒左右前臂向外转并明显抬高，2.74 秒回到水平。文字只写向外转，画面里前臂是抬起来的，按画面把前臂画高，并用一点缩短表示同时向外。坐具用平板凳近似。铃比划船小一号。"
+}

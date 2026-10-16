@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "lessons": 9,
+  "checks": [
+    "four phase/caption alignment",
+    "detail mode and side/view commands",
+    "0.5 playback rate",
+    "pause",
+    "reduced-motion manual steps",
+    "hidden-page pause",
+    "message shape",
+    "walking monotonic clock, 0.25 speed, wrap and compatible two-argument renderer"
+  ],
+  "scope": "Isolated playback unit checks; not WKWebView, native App or device acceptance.",
+  "results": [
+    {
+      "lessonID": "back-walking",
+      "passed": true
+    },
+    {
+      "lessonID": "back-roller",
+      "passed": true
+    },
+    {
+      "lessonID": "back-bench-support",
+      "passed": true
+    },
+    {
+      "lessonID": "back-straight-arm",
+      "passed": true
+    },
+    {
+      "lessonID": "back-one-arm-row",
+      "passed": true
+    },
+    {
+      "lessonID": "back-neutral-pulldown",
+      "passed": true
+    },
+    {
+      "lessonID": "back-seated-row",
+      "passed": true
+    },
+    {
+      "lessonID": "back-bent-arm-pulldown",
+      "passed": true
+    },
+    {
+      "lessonID": "back-supported-scapula",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-04T16:05:42.604418+08:00",
+  "topic": "arms",
+  "status": "received_and_bounded_review_passed",
+  "reviewSHA256": "9ee2c9900b49d12117d11cadf319c1a0f0145d1b8c80a4e9d2ce89c4862725a1",
+  "lessons": 8,
+  "verifiedHashReferences": 56,
+  "coordinatorViewed": [
+    "arms-lying-barbell-extension-browser-dom-contact.png",
+    "arms-seated-internal-rotation-curl-browser-dom-contact.png"
+  ],
+  "workerEvidence": "8-course phase/contact review plus3208 deterministic geometric samples and source short windows; no reported blockers",
+  "closedScope": "Discrete critical phase, support/grip, step mapping and loop seam supplementary review",
+  "notClaimed": [
+    "continuous visual playback of every course",
+    "full original video watched",
+    "all final app acceptance",
+    "cleanup authorization"
+  ],
+  "repairRequired": false
+}

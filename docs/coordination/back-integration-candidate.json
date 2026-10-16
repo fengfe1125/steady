@@ -1,0 +1,64 @@
+[
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/implementation/source-fix-20261004-v2/common/current/content/tanchengyi-back.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json",
+    "sha256": "15b2a8eaa08d097bf14f57a2d6a497e5c1466638da8f627471bb475a178a1428",
+    "revisionNote": "D1 v2 / D2 v1; native detail overrides; preserved candidate timing/views/mistakes and 7 other lessons; native pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/animations/back-walking-native.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-walking-native.html",
+    "sha256": "94ddd621bfb6e5a9ce7cdbe8ae07e4f63b3a4fcbd4680d183dafbb5f7ab645fa"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/animations/back-roller-native.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-roller-native.html",
+    "sha256": "ad6e0142885603bea542ed3c1e8017b4e8938e6b9b5aaf59770c2f6954f85789"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/animations/back-bench-support-native.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-bench-support-native.html",
+    "sha256": "43721c1c851805a016c2092111a18fb16231955b00f5d593542f169993828295"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/evidence/final-acceptance/patches/straight-arm-connector-v1/back-straight-arm-native.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-straight-arm-native.html",
+    "sha256": "7b4dbe4007d5fe36531e4944db5dc0f7a8766fb366b08e2551f0b677d7c78c8e",
+    "revisionNote": "final-acceptance scoped repair; coordinator reviewed; native targeted checks pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/animations/back-one-arm-row-native.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-one-arm-row-native.html",
+    "sha256": "d287d5e78063715db8c3fa7fc13c25a2fc66134c77be61a9f69624bce6f608d8"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/implementation/source-fix-20261004-v1/back-neutral-pulldown/back-neutral-pulldown-native.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-neutral-pulldown-native.html",
+    "sha256": "9cc6c0e1312e66e09d5692d4b160d32d65fa565342120a9ab600b91008e2c6fa",
+    "revisionNote": "D1 v2 / D2 v1; native detail overrides; preserved candidate timing/views/mistakes and 7 other lessons; native pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/animations/back-seated-row-native.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-seated-row-native.html",
+    "sha256": "12241d0c9f89bdcda9a4fb19ed4be1e73a3825b1c10eec0379107515b4d7c190"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/implementation/source-fix-20261004-v2/back-bent-arm-pulldown/back-bent-arm-pulldown-native.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-bent-arm-pulldown-native.html",
+    "sha256": "61ee17f60ba10138d4a75174362fa5fd3f6fa703d96eefb6f50e5a784f3efb94",
+    "revisionNote": "D1 v2 / D2 v1; native detail overrides; preserved candidate timing/views/mistakes and 7 other lessons; native pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/animations/back-supported-scapula-native.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-supported-scapula-native.html",
+    "sha256": "02ef4d28bdea6cc28171b3d7018ce82c5479f8d9f22adadf164a4314293f54f9"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/implementation/source-fix-20261004-v2/common/current/animations/back-animations.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-animations.json",
+    "sourceSHA256": "5a7de83efadf7f510695eeb8ee6d9e4d645568508b97272d879630958ab3d01a",
+    "sha256": "0f312c666f0830919265342376ebb7911ccffb7eaf60f0963a030395f94ecc68",
+    "normalization": "manifest wrapper, source timing, view and unilateral controls; bundled walking runtime unchanged; exact BackLesson.detail/mistake copied to native explanations",
+    "revisionNote": "D1 v2 / D2 v1; native detail overrides; preserved candidate timing/views/mistakes and 7 other lessons; native pending"
+  }
+]

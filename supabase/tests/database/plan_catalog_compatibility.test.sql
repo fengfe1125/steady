@@ -1,0 +1,91 @@
+-- Synthetic, transaction-scoped compatibility regression; no production data needed.
+begin;
+create temporary table catalog_checks(label text not null);
+create function pg_temp.check(ok boolean,label text) returns void language plpgsql as $$
+begin if ok is distinct from true then raise exception 'catalog compatibility failed: %',label; end if; insert into catalog_checks values(label); end $$;
+create function pg_temp.c() returns jsonb language sql as $$ select '{"deviceID":"cccccccc-cccc-4ccc-8ccc-cccccccccccc","revision":1,"healthRead":false,"cloudSync":true,"aiProcessing":true,"policyVersion":"2026-09-23"}'::jsonb $$;
+create function pg_temp.push(k text,rid uuid,pid uuid,p jsonb,v int,deleted boolean default false,mid uuid default gen_random_uuid()) returns jsonb language sql as $$
+ select public.sync_push('11111111-1111-4111-8111-111111111111','aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',jsonb_build_object('id',mid,'record',jsonb_build_object('id',rid,'kind',k,'logicalID',case when k='profiles' then 'profile' else rid::text end,'parentID',pid,'payload',p::text,'version',v,'deleted',deleted)),pg_temp.c()) $$;
+insert into auth.users(id) values('11111111-1111-4111-8111-111111111111');
+insert into auth.sessions(id,user_id,created_at,updated_at) values('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa','11111111-1111-4111-8111-111111111111',now(),now());
+select public.set_consents('11111111-1111-4111-8111-111111111111','aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',pg_temp.c());
+
+do $$
+declare
+ pid uuid := '10000000-0000-4000-8000-000000000001';
+ sid uuid := '10000000-0000-4000-8000-000000000002';
+ fid uuid := '10000000-0000-4000-8000-000000000004';
+ mid uuid := '10000000-0000-4000-8000-000000000005';
+ e jsonb := '{"id":"10000000-0000-4000-8000-000000000003","name":"墙壁俯卧撑","prescription":"2组 × 6次","catalogID":"wall-push-up","catalogVersion":1,"templateID":"wall-push-up-main-beginner","role":"main"}';
+ legacy jsonb;
+ s jsonb;
+ p jsonb := '{"metadata":{"source":"generated"},"title":"模板计划","status":"draft","sessions":[],"generationContext":{"experience":"初学者","availableEquipmentIDs":["wall"],"availableMinutes":25}}';
+ r jsonb;
+ snapshot jsonb;
+ rejected boolean := false;
+begin
+ legacy := e - array['catalogID','catalogVersion','templateID','role'];
+ s := jsonb_build_object('metadata',jsonb_build_object('source','generated'),'title','训练','scheduledAt',1791540000000,'minutes',20,'exercises',jsonb_build_array(e));
+ r := pg_temp.push('plans',pid,null,p,0);
+ perform pg_temp.check(r->'record'->>'version'='1','new plan stored');
+ r := pg_temp.push('sessions',sid,pid,s,0);
+ perform pg_temp.check(r->'record'->>'version'='1','new session stored');
+ s := jsonb_set(s,'{exercises}',jsonb_build_array(legacy)) || '{"feedback":{"completed":true,"perceivedEffort":4,"note":"done","recordedAt":1791540100000}}'::jsonb;
+ r := pg_temp.push('sessions',sid,pid,s,1,false,mid);
+ snapshot := (r->'record'->>'payload')::jsonb;
+ perform pg_temp.check(snapshot#>>'{exercises,0,catalogID}'='wall-push-up','legacy feedback preserves stable ID');
+ perform pg_temp.check(snapshot#>>'{exercises,0,templateID}'='wall-push-up-main-beginner','legacy feedback preserves template');
+ perform pg_temp.check(snapshot#>>'{feedback,note}'='done','legacy feedback change persists');
+ perform pg_temp.check((pg_temp.push('sessions',sid,pid,s,1,false,mid)->'record'->>'version')='2','retry remains idempotent');
+ r := pg_temp.push('sessions',sid,pid,s,1);
+ perform pg_temp.check(r->>'conflict'='true','stale edit still conflicts');
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)#>>'{exercises,0,catalogID}'='wall-push-up','conflict returns authoritative linked payload');
+ s := jsonb_set(s,'{scheduledAt}','1791626400000');
+ r := pg_temp.push('sessions',sid,pid,s,2);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)#>>'{exercises,0,templateID}'='wall-push-up-main-beginner','date changes keep template binding');
+ s := jsonb_set(s,'{exercises,0,prescription}','"用户改为一组"');
+ r := pg_temp.push('sessions',sid,pid,s,3);
+ snapshot := (r->'record'->>'payload')::jsonb;
+ perform pg_temp.check(snapshot#>>'{exercises,0,catalogID}'='wall-push-up','prescription change preserves movement');
+ perform pg_temp.check(snapshot#>'{exercises,0,templateID}'='null'::jsonb,'prescription change clears template binding');
+ s := jsonb_set(s,'{exercises}',jsonb_build_array(e));
+ r := pg_temp.push('sessions',sid,pid,s,4);
+ s := jsonb_set(s,'{exercises}',jsonb_build_array(legacy || '{"name":"自定义其他动作"}'::jsonb));
+ r := pg_temp.push('sessions',sid,pid,s,5);
+ snapshot := (r->'record'->>'payload')::jsonb;
+ perform pg_temp.check(snapshot#>'{exercises,0,catalogID}'='null'::jsonb,'legacy rename clears stable ID');
+ perform pg_temp.check(snapshot#>'{exercises,0,catalogVersion}'='null'::jsonb and snapshot#>'{exercises,0,templateID}'='null'::jsonb and snapshot#>'{exercises,0,role}'='null'::jsonb,'rename clears entire link family');
+ s := jsonb_set(s,'{exercises}',jsonb_build_array(e));
+ r := pg_temp.push('sessions',sid,pid,s,6);
+ s := jsonb_set(s,'{exercises}',jsonb_build_array(legacy || '{"catalogID":null}'::jsonb));
+ r := pg_temp.push('sessions',sid,pid,s,7);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)#>'{exercises,0,catalogID}'='null'::jsonb,'explicit null is never resurrected');
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)#>'{exercises,0,templateID}'='null'::jsonb,'explicit unlink clears template too');
+ s := jsonb_set(s,'{exercises}',jsonb_build_array(e || '{"name":"替换动作","catalogID":"replacement","templateID":"replacement-main"}'::jsonb));
+ r := pg_temp.push('sessions',sid,pid,s,8);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)#>>'{exercises,0,catalogID}'='replacement','explicit replacement is not overwritten with old reference');
+ r := pg_temp.push('plans',pid,null,p-'generationContext',1);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'generationContext'=p->'generationContext','legacy plan write preserves generation context');
+ r := pg_temp.push('plans',pid,null,p||'{"generationContext":null}'::jsonb,2);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'generationContext'='null'::jsonb,'new client can clear generation context');
+ r := pg_temp.push('profiles',fid,null,'{"equipment":"健身房","availableEquipmentIDs":["wall","seated-row-machine"]}',0);
+ r := pg_temp.push('profiles',fid,null,'{"equipment":"健身房"}',1);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'availableEquipmentIDs'='["wall","seated-row-machine"]'::jsonb,'legacy same-scene preferences preserve explicit inventory');
+ r := pg_temp.push('profiles',fid,null,'{"equipment":"哑铃"}',2);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'availableEquipmentIDs'='null'::jsonb,'changed scene requires inventory reconfirmation');
+ r := pg_temp.push('profiles',fid,null,'{"equipment":"哑铃","availableEquipmentIDs":[]}',3);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'availableEquipmentIDs'='[]'::jsonb,'explicit empty inventory remains distinct from unknown');
+ begin
+  perform pg_temp.push('sessions',sid,pid,jsonb_set(s,'{exercises}',jsonb_build_array(legacy,legacy)),9);
+ exception when others then rejected := sqlerrm='invalid_input'; end;
+ perform pg_temp.check(rejected,'ambiguous duplicate exercise UUID is rejected');
+ perform pg_temp.check((select version=9 from public.records where id=sid),'rejected write does not advance version');
+ r := pg_temp.push('plans',pid,null,'{}',3,true);
+ perform pg_temp.check(r->'record'->>'deleted'='true','plan deletion stays a tombstone');
+ perform pg_temp.check((select deleted and payload='{}' from public.records where id=sid),'parent deletion still clears child payload');
+ r := pg_temp.push('sessions',sid,pid,s,1,false,mid);
+ perform pg_temp.check(r->'record'->>'deleted'='true','cached pre-delete retry cannot leak previous catalog payload');
+ perform pg_temp.check(not has_function_privilege('authenticated','private.merge_catalog_payload(text,jsonb,jsonb)','EXECUTE'),'client has no direct merge privilege');
+end $$;
+select count(*) as passed_catalog_compatibility_checks from catalog_checks;
+rollback;

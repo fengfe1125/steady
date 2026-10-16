@@ -1,0 +1,153 @@
+{
+  "sourceID": "595f4de5ff247f33e297ea8f",
+  "sourceName": "哑铃耸肩",
+  "part": "back",
+  "title": "哑铃耸肩",
+  "variant": "站立，手臂伸直，肩向后上方提起 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    3.09,
+    3.55,
+    4.0,
+    4.33,
+    4.95,
+    5.57
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.82,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "scapE": 0,
+      "arms": {
+        "near": {
+          "sh": 8,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 6,
+          "el": 6,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 2,
+          "knee": 4
+        },
+        "far": {
+          "hip": 2,
+          "knee": 4
+        }
+      }
+    },
+    "1": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -14,
+      "head": 0,
+      "scapE": 22,
+      "arms": {
+        "near": {
+          "sh": 8,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 6,
+          "el": 6,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 2,
+          "knee": 4
+        },
+        "far": {
+          "hip": 2,
+          "knee": 4
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -2,
+      "y": -190
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 14,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -12,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.upper"
+    ],
+    "secondary": [
+      "trap.mid",
+      "forearm.flex"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌上束",
+    "上背部"
+  ],
+  "cue": "站直，两铃垂在大腿外侧，肘几乎不弯。肩膀向后上方提起，停一下再落下，不要靠屈肘把铃带起来。",
+  "mistake": {
+    "title": "提铃时把肘弯得很深",
+    "fix": "重量减轻，手臂保持伸直，用颈后把肩带起来，不要弯着手臂发力。",
+    "basis": "资料的问题是耸肩时肘弯得过大、手臂在发力。最高点把两侧肘折深。",
+    "level": 1,
+    "override": {
+      "arms": {
+        "near": {
+          "el": 82
+        },
+        "far": {
+          "el": 78
+        }
+      }
+    }
+  },
+  "observation": "侧面，人朝右，身体直立。文字写两脚并拢，画面两脚大约与髋同宽，踝在前后错开一截。五次里取 3.09 秒肩放松、4.33 秒提到最高、5.57 秒落下。手臂保持伸直，斜后方提起用肩沿躯干上移来表示。手柄朝镜头。"
+}

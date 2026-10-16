@@ -1,0 +1,139 @@
+{
+  "sourceID": "6492c132d721f9000174628f",
+  "sourceName": "跪姿钻石半程俯卧撑",
+  "part": "chest",
+  "title": "跪姿钻石半程俯卧撑",
+  "variant": "跪姿钻石 · 只下到屈肘约90度 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    5.7,
+    6.3,
+    6.7,
+    6.97,
+    7.6,
+    8.23
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 70,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 74,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 79,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 400
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "钻石手位放在胸口正下方，屈膝跪撑；下到大臂与地面接近平行、肘约九十度就推回，节奏放慢，肘部不外翻太多。",
+  "mistake": {
+    "title": "半程变成全程，下放过深",
+    "fix": "下到大臂与背部平齐就立刻返程，别贪深度；同时夹住臀部，避免腰部下坠。",
+    "basis": "依据源资料常见错误：训练过程中塌腰或撅臀、伸臂时肘关节超伸锁死。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 70,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080 宽，侧面，人物头朝画面左侧。1.90、5.70、8.23 秒为最高位（头顶约 221-225），6.97 秒最低（头顶约 273），幅度约为全程的一半，符合半程描述；9.50 秒后切换更近机位。取 5.70-8.23 秒一次往复作为完整重复。帧图看不清双手钻石形状，手位与手距按文字资料拟合为胸口正下方、肩后约 14 个单位。"
+}

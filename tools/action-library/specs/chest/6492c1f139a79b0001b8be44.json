@@ -1,0 +1,139 @@
+{
+  "sourceID": "6492c1f139a79b0001b8be44",
+  "sourceName": "钻石俯卧撑底部保持",
+  "part": "chest",
+  "title": "钻石俯卧撑底部保持",
+  "variant": "钻石 · 双手拇指食指相触成三角 · 底部静态保持 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.33,
+    2.0,
+    3.67,
+    5.0,
+    6.33,
+    7.67
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.65,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 87,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -6
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -6
+        }
+      }
+    },
+    "1": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上束",
+    "胸大肌中下部"
+  ],
+  "cue": "双手拇指食指相触撑在胸口正下方，从头到脚保持一条直线，下沉到肘部略高于躯干后停住不动，全程收紧腰腹自然呼吸。",
+  "mistake": {
+    "title": "保持阶段塌腰",
+    "fix": "全程收紧腹部和臀部，让头、肩、髋、踝始终呈一条直线；力量不够可先改做跪姿版本。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀，结合保持类动作的通用训练常识取保持中段示意。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 89,
+      "lumbar": -14,
+      "legs": {
+        "near": {
+          "hip": -10
+        },
+        "far": {
+          "hip": -10
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，侧面，人物朝左，整段 8 秒为一次底部静态保持，12 帧姿态几乎不变。双手在胸口正下方拇指食指相触，肘屈约 90 度且略高于躯干，脚尖着垫为支点。取整段作为一个周期：就位后缓慢加深至最低点再回到原保持深度。角度为人工示意拟合。"
+}

@@ -1,0 +1,55 @@
+{
+  "time": "2026-10-04T16:56:16.148877+08:00",
+  "topics": [
+    {
+      "slug": "arms",
+      "files": 9,
+      "resourcesMatch": true,
+      "reportSHA256": "9ee2c9900b49d12117d11cadf319c1a0f0145d1b8c80a4e9d2ce89c4862725a1"
+    },
+    {
+      "slug": "chest",
+      "files": 18,
+      "resourcesMatch": true,
+      "reportSHA256": "c3d228c9606b2525281237e3703d4f19159ca35ec126b886d2a755cdb9190eef"
+    },
+    {
+      "slug": "shoulders",
+      "files": 13,
+      "resourcesMatch": true,
+      "reportSHA256": "9ab985fd6aa231880fc7191db1ef987be403cb23fcdfdb53084411dbc03d7997"
+    },
+    {
+      "slug": "abs",
+      "files": 13,
+      "resourcesMatch": true,
+      "reportSHA256": "a23c830229ddbc92a2406128a1d28ca2c52333e2ca7e3b89d18dfffb916a61d8"
+    },
+    {
+      "slug": "arms-extra",
+      "files": 12,
+      "resourcesMatch": true,
+      "reportSHA256": "f5879f9282e7fcf23a246782cd9e122bfff74d73cf2edfa1f3965690a61e7c90"
+    },
+    {
+      "slug": "functional",
+      "files": 18,
+      "resourcesMatch": true,
+      "reportSHA256": "1db6e1c44d915a1c20f7df63159de2f634bd4356102f2ea09508e07026aa0622"
+    },
+    {
+      "slug": "legs",
+      "files": 19,
+      "resourcesMatch": true,
+      "reportSHA256": "f252d6989c7a41ffe62d5863119cdb77fef8ccee9ecd38eef4efc482ae3076db"
+    },
+    {
+      "slug": "back",
+      "files": 11,
+      "resourcesMatch": true,
+      "reportSHA256": "ccc995de2967d4be46fd54f9a544e91a4b13bb7b98849d74f5f0dd54770b9ea3"
+    }
+  ],
+  "scope": "Integrated teaching content with documented discrete evidence; no full source/native continuous viewing claim",
+  "cleanup": "Only task-owned reproducible unreferenced caches; retain videos and evidence"
+}

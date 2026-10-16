@@ -1,0 +1,141 @@
+{
+  "sourceID": "595f4f1fff247f33e297eb8c",
+  "sourceName": "弹力带下斜钻石俯卧撑",
+  "part": "chest",
+  "title": "弹力带下斜钻石俯卧撑",
+  "variant": "下斜 · 钻石握距双手于胸口正下方 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    5.74,
+    6.3,
+    6.9,
+    7.27,
+    7.7,
+    8.2
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        }
+      }
+    },
+    "1": {
+      "pelvis": 97,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": -155,
+      "y": -95
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "bench",
+      "x": -230,
+      "length": 90,
+      "top": -88
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "triceps.long"
+    ],
+    "secondary": [
+      "pec.lower",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "肱三头肌"
+  ],
+  "cue": "双手拇指食指相触拼成钻石形，撑在胸口正下方，双脚脚背搭凳、弹力带压在手心下；身体绷直后屈肘贴着躯干下降，让胸口接近双手再推起，肘部不外张。",
+  "mistake": {
+    "title": "塌腰或撅臀，身体不成直线",
+    "fix": "全程夹紧臀部和腹部，从侧面看头、肩、髋、踝呈一条斜线；力量不足时先回到平地钻石俯卧撑。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 92,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 9.2 秒共 3 次，全程侧面机位，人物头朝画面左侧、脚背搭在右侧凳面上，双手在胸口正下方并拢成钻石形，弹力带绕背压在手心下。取后段一次：5.74 秒撑直为顶点，7.27 秒降到胸口接近双手，约 8.2 秒推回顶点。帧 11 时手臂尚未完全伸直，回顶时刻为估计；弹力带未用器材绘制。角度为人工示意拟合。"
+}

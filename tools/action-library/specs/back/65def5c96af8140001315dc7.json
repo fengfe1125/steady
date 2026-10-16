@@ -1,0 +1,150 @@
+{
+  "sourceID": "65def5c96af8140001315dc7",
+  "sourceName": "俯身哑铃顶峰收缩反手划船",
+  "part": "back",
+  "title": "俯身哑铃顶峰收缩反手划船",
+  "variant": "反手，铃收到下腹两侧后停住 · 上身接近水平 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    4.24,
+    5.4,
+    6.66,
+    7.9,
+    9.1,
+    11.4
+  ],
+  "levels": [
+    0,
+    0.48,
+    1,
+    1,
+    0.38,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 78,
+          "el": 20,
+          "f": 1
+        },
+        "far": {
+          "sh": 82,
+          "el": 22,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 68,
+          "knee": 24
+        },
+        "far": {
+          "hip": 64,
+          "knee": 28
+        }
+      }
+    },
+    "1": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": -3,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -6,
+          "el": 136,
+          "f": 1
+        },
+        "far": {
+          "sh": -1,
+          "el": 128,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 68,
+          "knee": 24
+        },
+        "far": {
+          "hip": 64,
+          "knee": 28
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -8,
+      "y": -166
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 26,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 6,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "trap.lower",
+      "lats"
+    ],
+    "secondary": [
+      "biceps",
+      "rhomboid"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中束",
+    "斜方肌下束",
+    "背阔肌"
+  ],
+  "cue": "上身折到接近水平，掌心朝前握铃。屈肘把铃收到小腹两侧并停住，再按原路放下，肘不要离开身体。",
+  "mistake": {
+    "title": "停在上面时腰松成弧",
+    "fix": "停住的时候肚子继续收着，后背保持一条直线，肘仍贴在身侧。",
+    "basis": "资料指出容易弓腰、肘不夹紧。这里在停顿处把腰弯圆。",
+    "level": 1,
+    "override": {
+      "lumbar": 16,
+      "thorax": 12,
+      "neck": 8,
+      "head": 6
+    }
+  },
+  "observation": "侧面，人朝左。和前一个一样，片头停在收紧的位置。取 4.24 秒手臂垂下，6.66 秒收到下腹，7.9 秒仍停着，9.1 秒下放，11.4 秒回到垂下。侧面看不清掌心，反手靠更屈的肘、铃留在小腹前来和贴髋的对握划船区分。头是最高点，pelvis 用 72。"
+}

@@ -1,0 +1,194 @@
+{
+  "sourceID": "6492bccfd721f900017430bd",
+  "sourceName": "跪姿宽距俯卧撑底部保持",
+  "part": "chest",
+  "title": "跪姿宽距俯卧撑底部保持",
+  "variant": "跪姿宽距 · 底部静力等长保持 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.33,
+    1.67,
+    3.0,
+    4.33,
+    5.67,
+    7.0
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.6,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 77,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 21,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 21,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.3": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 22,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 22,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.6": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 22,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 22,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 79,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 23,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 23,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 22,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 22,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 380
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "pec.lower",
+      "triceps.long",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "宽握跪撑屈肘沉到胸口将近贴垫、肘略高于躯干的位置就停住，肩、髋、膝绷成一条斜线，胸与上臂后侧持续发力，全程自然呼吸别松掉。",
+  "mistake": {
+    "title": "保持时塌腰撅臀",
+    "fix": "把注意力放在收紧腹部和臀部上，让肩、髋、膝从头到尾保持在一条斜线上；腰一松就先退回简化版。",
+    "basis": "来源资料常见错误：训练过程中塌腰或撅臀，应全程保持腰背挺直、身体呈一条直线。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 76,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，固定侧面机位，人物朝画面左侧。整段为跪姿宽距俯卧撑的底部等长保持约 7 秒：胸口几乎贴垫、肘关节略高于躯干、双手左右间距约两倍肩宽（横向宽度侧面不可见），肩、髋、膝呈一条斜线。前段膝盖着垫、小腿向后抬起双脚交叉，后段双腿向后伸直、脚背着垫，属保持中的姿势微调，取前期跪姿形态。levels 表达保持期间的轻微下沉与回稳。"
+}

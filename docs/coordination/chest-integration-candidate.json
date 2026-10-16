@@ -1,0 +1,96 @@
+[
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/content/tanchengyi-chest.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json",
+    "sha256": "136954a2798f011288870b5c29595fe2b552fc178c9b76db7b275adcb3888603"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-animations.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-animations.json",
+    "sha256": "afa5dbc908e888a204808788ce5d6566755d481a6923b0fae6d202aba41ca34d",
+    "panelDescriptionsSource": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-panel-descriptions.json",
+    "panelDescriptionsSHA256": "24411d1656b0434b5c2f00c646355e846d8d6a868af1d595795552f45d37c5f9"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-light-march.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-light-march.html",
+    "sha256": "da13dde1702492085029d1d360ab86fe44a564c77e3077c53c9efefc10778c4d"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-roller-t-opening.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-t-opening.html",
+    "sha256": "23bd868b886ebbeb681670642f9343a5e65cc9104cf193f415f99ac2a2e5080c"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-roller-y-raise.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-y-raise.html",
+    "sha256": "b11d7a34cf51f13f77267929b43147944f34fafc653e506f2f4847c494d6ef47"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-roller-supported-opening.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-supported-opening.html",
+    "sha256": "549afd24fcf5c3dae3833188bcdd26eb2efc46cfe08936f98ea9f1b554e96959"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-roller-knee-lift.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-knee-lift.html",
+    "sha256": "f08e3bc7a9c483a2a808de724ac36c3a833e3a1989a1bfd6d783c0c24def126f",
+    "previousSHA256": "4683b9cba9c34ed8504f2d404421606477cd3882eaa8e909acf5ec2b33b65ab6",
+    "revisionNote": "2026-10-04 native screenshot layout repair; awaiting native regression"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-roller-y-press.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-y-press.html",
+    "sha256": "63e6001a0b568d8eb51f36895f1b92706b31bcec83c8e946fe8de9bf4bea8650"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-band-shoulder-circle.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-band-shoulder-circle.html",
+    "sha256": "ba1a669d7dfd64d17a109cf2a6db2fc8b8d4f61e4669bb7cd2613cfd0e953055"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-warmup-press.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-warmup-press.html",
+    "sha256": "f207ab24fcaed6ae90a83e22568c19a302df1e6d71e41a80ba75abb6321aae33"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-parallel-bar-dip.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-parallel-bar-dip.html",
+    "sha256": "09c556edc0d17540383a4070e73038dfe7cdece1b01fbfbce3d3c21fe2874913"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-flat-press.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-flat-press.html",
+    "sha256": "3ba5887077d6f14d7b97b9a1206d3d6b6a9a7c6bc736e715132a16934357431c"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-incline-press.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-incline-press.html",
+    "sha256": "2fe3c2017f03e21e18d934b95349970867500f632505263ecb38c4b0e48d29d9"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-seated-cable-fly.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-seated-cable-fly.html",
+    "sha256": "9459df9ade6074ac7dcbca3a73bc0756661b4b07d1f8e37228cfaf3707004d56"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-wall-push-up.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-wall-push-up.html",
+    "sha256": "60eb7bbf162d1736c209b77edbd3e7e23d280a6dc468ed83ec1d0916f577ce20"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-renderer.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-renderer.js",
+    "sha256": "d6fb1368abab966a0b3788a13bb3d3c25359ebec7da6588cfeff1d1ea6665155"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-errors.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-errors.js",
+    "sha256": "72fe5b3b7a5f6cf52e84b3b071b99c9b2cd8472811100e7034b1bd02903ceaca"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-playback.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-playback.js",
+    "sha256": "d50a34c4d6a8faf6e6a3f4e70a6cf8406c20a9ee48df62543b6df4cd05de8445"
+  }
+]

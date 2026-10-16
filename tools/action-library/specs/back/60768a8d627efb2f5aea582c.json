@@ -1,0 +1,140 @@
+{
+  "sourceID": "60768a8d627efb2f5aea582c",
+  "sourceName": "支架俯卧撑",
+  "part": "back",
+  "title": "支架俯卧撑",
+  "variant": "双手握支架，间距略宽于肩 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    3.78,
+    4.3,
+    4.85,
+    5.15,
+    5.7,
+    6.3
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 11,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 11,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 360
+    },
+    {
+      "type": "pushup_bars",
+      "top": -24
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "erectors"
+    ],
+    "secondary": [
+      "pec.upper",
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌",
+    "竖脊肌"
+  ],
+  "cue": "握住支架，手比肩稍宽。从头到脚绷成一条线，屈肘让胸口靠近地面，再把身体推回原来的高度。",
+  "mistake": {
+    "title": "下去时腰塌、臀翘",
+    "fix": "肚子和屁股收紧，肩、髋、脚保持一条线；撑不住就减小幅度。",
+    "basis": "资料把塌腰和撅臀列为常见错误。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "侧面，头在画面左侧。支架把肩垫高，脚尖在垫上。取第二次：3.78 秒手臂撑直，约 5.2 秒胸口最低，6.3 秒推回。侧面看不出两手究竟宽多少，按资料“比肩略宽”把手放在肩前方一点。俯卧撑支架用 pushup_bars，不是近似。"
+}

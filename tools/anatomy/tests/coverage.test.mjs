@@ -2,15 +2,17 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {lessonInventory, lessonCoverage, selectedTopics} from '../build.mjs';
 
-test('the expected inventory includes all 97 identities independently of existing specs', () => {
+test('the expected inventory includes all 104 identities including seven authored lower-body lessons independently of existing specs', () => {
   const inventory = lessonInventory();
-  assert.equal(inventory.length, 97);
-  assert.equal(inventory.filter(r => r.topic !== 'equipment').length, 83);
+  assert.equal(inventory.length, 104);
+  assert.equal(inventory.filter(r => r.topic !== 'equipment').length, 90);
   assert.equal(inventory.filter(r => r.topic === 'equipment').length, 14);
   const coverage = lessonCoverage([]);
   assert.equal(coverage.complete, false);
-  assert.equal(coverage.coveredLessons, 0);
+  assert.equal(coverage.coveredLessons, 7);
   assert.equal(coverage.missing.length, 97);
+  assert.equal(coverage.authoredPages, 7);
+  assert.equal(inventory.filter(r => r.id.startsWith("legs-basic-")).length, 7);
 });
 
 test('one arms page can cover two lesson IDs without counting it as two pages', () => {

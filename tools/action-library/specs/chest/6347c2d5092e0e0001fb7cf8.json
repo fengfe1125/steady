@@ -1,0 +1,146 @@
+{
+  "sourceID": "6347c2d5092e0e0001fb7cf8",
+  "sourceName": "下斜窄距俯卧撑",
+  "part": "chest",
+  "title": "下斜窄距俯卧撑",
+  "variant": "下斜 · 双脚搭在凳面上抬高 · 双手窄于肩宽 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.52,
+    0.92,
+    1.32,
+    1.56,
+    2.0,
+    2.6
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        }
+      }
+    },
+    "1": {
+      "pelvis": 97,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": -155,
+      "y": -95
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "bench",
+      "x": -240,
+      "length": 150,
+      "top": -88
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手撑地略窄于肩，双脚搭在身后凳面上，收紧核心让身体成一条直线，屈肘下沉到肘与躯干齐平再推起。",
+  "mistake": {
+    "title": "撑起时塌腰、撅臀，身体折成两段",
+    "fix": "先夹紧臀部、收紧腹部再发力推起，让后脑到脚跟始终在一条直线上；撑不住就降低凳面高度。",
+    "basis": "依据源 detail.description 的常见错误条目：推起时把肘部锁死，以及过程中腰部下塌、臀部抬高。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 94,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512 正方形，机位在人物正前方偏低处、沿身体方向远望，画面里能看到脸和双手，头朝向镜头（因此无法判断左右朝向，mirror 取 false）。起始 0.52 秒手臂撑直、身体离地最高，1.56 秒胸口落到垫面附近，2.60 秒回到撑起位；取这一整次重复。垫子是深灰色，垫面上双手间距明显小于肩宽（画面有绿色标注“小于肩宽”），身后有一张金属架凳，双脚搭在凳面上使身体呈下斜，踝部固定在凳面高度不移动。手撑垫、脚搭凳两个接触点全程不动。角度为人工示意拟合，下斜高度按凳面 y=-88 估算。"
+}

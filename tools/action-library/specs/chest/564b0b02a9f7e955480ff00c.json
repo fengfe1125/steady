@@ -1,0 +1,142 @@
+{
+  "sourceID": "564b0b02a9f7e955480ff00c",
+  "sourceName": "分腿俯卧撑",
+  "part": "chest",
+  "title": "分腿俯卧撑",
+  "variant": "分腿 · 双手略宽于肩、两腿向两侧分开踩垫增加支撑面 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.4,
+    3.72,
+    4.05,
+    4.15,
+    4.55,
+    4.91
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 3,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": -3,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 3,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": -3,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus",
+      "abs",
+      "adductors"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌",
+    "肱三头肌"
+  ],
+  "cue": "两手比肩略宽撑在胸口两侧，两腿向两侧分开、脚尖踩住垫子把支撑面拉宽，收紧腰腹后屈肘下沉再推起。",
+  "mistake": {
+    "title": "撑起时塌腰、撅臀，身体不再是直线",
+    "fix": "两腿分开后仍要夹紧臀部和腹部，让肩、髋、踝连成一条直线；腰撑不住就把分开的幅度和次数都减小。",
+    "basis": "依据源 detail.description 的常见错误条目：推起时把肘部锁死，以及过程中腰部下塌、臀部抬高。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512 正方形，侧面机位，人物头朝画面左侧（mirror 取 true），垫子是深灰绿色长条，双手撑垫、脚尖踩垫全程不移位。3.40 秒是手臂撑直的最高点，4.15 秒胸口贴近垫面为最低点，4.91 秒回到最高点，取这一整次重复（全片 3 次，其余采样点分别落在最高点或最低点）。6.42 秒与 7.93 秒的近距离镜头里能清楚看到双脚是朝两侧分开踩住的（一只脚离镜头近、一只远），属于分腿支撑。局限：纯侧面视角下两腿的左右分开只能表现为前后错位，因此用近侧腿与前侧腿髋角的小差异示意，分开幅度本身无法画出。"
+}

@@ -1,0 +1,225 @@
+{
+  "sourceID": "6347c8d537239800016014b4",
+  "sourceName": "跪姿击掌俯卧撑",
+  "part": "chest",
+  "title": "跪姿击掌俯卧撑",
+  "variant": "跪姿 · 爆发推起双手离地胸前击掌 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.42,
+    3.9,
+    4.4,
+    4.94,
+    5.7,
+    7.22
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.55,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 56,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 72,
+          "el": 28
+        },
+        "far": {
+          "sh": 72,
+          "el": 28
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.35": {
+      "pelvis": 68,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 99,
+          "el": 75
+        },
+        "far": {
+          "sh": 99,
+          "el": 75
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 12,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.8": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 115,
+          "el": 101
+        },
+        "far": {
+          "sh": 115,
+          "el": 101
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 22,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 22,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 46,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 96,
+          "el": 149
+        },
+        "far": {
+          "sh": 96,
+          "el": 149
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -10,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": -10,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.55": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 106,
+          "el": 86
+        },
+        "far": {
+          "sh": 106,
+          "el": 86
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 16,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 16,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 380
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "跪撑时从头到膝绷成一条斜线，屈肘压低身体，随即爆发推起让双手离地，在胸前快速击掌，再伸臂撑回垫面。",
+  "mistake": {
+    "title": "塌腰撅臀，腰背下陷",
+    "fix": "全程收紧腹部和臀部，让肩、髋、膝保持在一条斜线上；力量不足时先练普通跪姿俯卧撑，别用塌腰硬撑。",
+    "basis": "来源资料常见错误：训练过程中塌腰或撅臀，伸臂时肘关节超伸锁死。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 76,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，固定侧面机位，人物朝画面左侧，共 7 次，膝盖着垫、小腿向后上方抬起且双脚交叉离地。取 3.42~7.22 秒一轮：3.42 顶部直臂支撑，4.4 屈肘到最低点，4.94 爆发推起、躯干抬起且双手在胸前合掌击掌（此刻双手离地），5.7 双手落回垫面屈肘缓冲，7.22 回到直臂顶部。因击掌阶段双手离地，本条不用手部接触约束，仅固定膝盖支点，手臂角度为按帧人工拟合；手掌在支撑阶段始终落在肩下略前的同一位置。"
+}

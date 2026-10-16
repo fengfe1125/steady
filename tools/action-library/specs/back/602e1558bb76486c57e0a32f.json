@@ -1,0 +1,161 @@
+{
+  "sourceID": "602e1558bb76486c57e0a32f",
+  "sourceName": "俯身小哑铃后伸",
+  "part": "back",
+  "title": "俯身小哑铃后伸",
+  "variant": "手臂几乎不弯，贴着身体向后伸 · 上身接近水平 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    1.79,
+    2.7,
+    3.6,
+    4.25,
+    5.4,
+    6.56
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 74,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 80,
+          "el": 14,
+          "f": 1
+        },
+        "far": {
+          "sh": 84,
+          "el": 16,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 70,
+          "knee": 20
+        },
+        "far": {
+          "hip": 66,
+          "knee": 24
+        }
+      }
+    },
+    "1": {
+      "pelvis": 74,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -10,
+          "el": 16,
+          "f": 1
+        },
+        "far": {
+          "sh": -6,
+          "el": 18,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 70,
+          "knee": 20
+        },
+        "far": {
+          "hip": 66,
+          "knee": 24
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -12,
+      "y": -162
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 20,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 2,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.7
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.7
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.post",
+      "trap.mid",
+      "trap.lower",
+      "lats"
+    ],
+    "secondary": [
+      "rhomboid",
+      "triceps.long"
+    ]
+  },
+  "primaryNames": [
+    "三角肌后束",
+    "斜方肌中束",
+    "斜方肌下束",
+    "背阔肌"
+  ],
+  "cue": "屈髋到后背接近水平。手臂几乎保持伸直，贴着身体向后抬到髋后，停一下再放下，不要向两侧甩开。",
+  "mistake": {
+    "title": "后伸时腰塌，手臂向外甩",
+    "fix": "俯身可以少一点，但后背要直；手臂贴着身体向后，不要向两侧打开。",
+    "basis": "资料同时提到弓腰和手臂过度外展。终点把背弯圆，并把上臂缩短成向外翻。",
+    "level": 1,
+    "override": {
+      "lumbar": 14,
+      "thorax": 10,
+      "neck": 6,
+      "arms": {
+        "near": {
+          "f": 0.48
+        },
+        "far": {
+          "f": 0.48
+        }
+      }
+    }
+  },
+  "observation": "侧面，人朝左，小哑铃。片头停在手臂已经向后的位置。取 1.79 秒手臂垂下，4.25 秒贴着身体伸到髋后，6.56 秒回到垂下。肘角几乎不变，不是划船。手臂没有向两侧打开，所以上臂不缩短。文字写约九十度，头仍是最高点，pelvis 停在 74。"
+}

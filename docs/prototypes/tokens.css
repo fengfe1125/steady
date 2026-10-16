@@ -1,0 +1,48 @@
+/* Steady equipment prototype · semantic colors, native app type, spacing and motion. */
+:root{
+  --color-background:#f5f6f0;
+  --color-paper:#fcfcf8;
+  --color-ink:#253d30;
+  --color-muted:#5c6d60;
+  --color-accent:#376749;
+  --color-accent-ink:#fcfcf8;
+  --color-soft:#e6ecdf;
+  --color-line:#dbe2d4;
+  --color-stage:#eff2e9;
+  --color-outside:#e8ece2;
+  --color-focus:#3b704d;
+  --color-skin:#d7b292;
+  --color-skin-shadow:#b88c70;
+  --color-skin-light:#ecd0b5;
+  --color-skin-finger:#dfbda0;
+  --color-skin-line:#a47c63;
+  --color-skin-nail:#edcdb4;
+  --color-machine:#879182;
+  --color-machine-dark:#46594a;
+  --color-machine-light:#aab5a3;
+  --color-pad:#4a5a4e;
+  --color-trousers:#526057;
+  --color-shoe:#e9eae2;
+  --color-shoe-line:#5c6b5b;
+  --color-shirt:#54765a;
+  --color-shirt-light:#91ac83;
+  --color-pet-body:#b9cd95;
+  --color-pet-stem:#7d9966;
+  --color-pet-leaf:#9ab97c;
+  --color-pet-leaf-dark:#829f68;
+  --color-pet-face:#465e39;
+  --color-pet-shadow:#d0dbc0;
+  --color-warning:#93613f;
+  --color-warning-soft:#e7d8c9;
+  --color-weight:#53684f;
+  --color-diagram-paper:#f7f7f0;
+  --color-clear:transparent;
+  --font-body:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+  --font-display:var(--font-body);
+  --space-xs:4px;--space-sm:8px;--space-md:12px;--space-lg:16px;--space-xl:24px;--space-2xl:32px;
+  --radius-sm:10px;--radius-md:16px;--radius-lg:24px;
+  --text-caption:12px;--text-body:14px;--text-title:32px;
+  --ease-ui:cubic-bezier(.2,.6,.2,1);--dur-ui:160ms;
+  --bg:var(--color-background);--paper:var(--color-paper);--ink:var(--color-ink);--muted:var(--color-muted);--green:var(--color-accent);--soft:var(--color-soft);--line:var(--color-line);--stage:var(--color-stage);--skin:var(--color-skin);--machine:var(--color-machine);--nav:var(--color-soft);
+}
+@media(prefers-color-scheme:dark){:root{--color-background:#1f2c23;--color-paper:#29392b;--color-ink:#e5eddf;--color-muted:#b6c4af;--color-accent:#b7d9a5;--color-accent-ink:#203622;--color-soft:#354b33;--color-line:#45613e;--color-stage:#2c3f2f;--color-outside:#19271e;--color-focus:#c0dea8;--color-diagram-paper:#344935;--color-machine:#94a58d;--color-warning:#e7bd94;}}

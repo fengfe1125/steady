@@ -1,0 +1,21 @@
+{
+  "chest": {
+    "reportSHA256": "c3d228c9606b2525281237e3703d4f19159ca35ec126b886d2a755cdb9190eef",
+    "hashChecks": 169,
+    "hashFailures": [],
+    "reportedLessons": 13,
+    "decision": "Receive worker discrete-cycle findings within stated scope; no new blockers. Owner spot review only; full native continuous visual remains unverified."
+  },
+  "abs": {
+    "reportSHA256": "a23c830229ddbc92a2406128a1d28ca2c52333e2ca7e3b89d18dfffb916a61d8",
+    "hashChecks": 50,
+    "hashFailures": [],
+    "reportedLessons": 10,
+    "decision": "Receive worker discrete-cycle findings within stated scope; no new blockers. Owner spot review only; full native continuous visual remains unverified."
+  },
+  "ownerViewed": [
+    "chest/cycles/chest-warmup-roller-y-press/cycle-and-support.png",
+    "abs/abs-supported-knee-raise-phases.png"
+  ],
+  "time": "2026-10-04T16:31:00.632516+08:00"
+}

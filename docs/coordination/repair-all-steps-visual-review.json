@@ -1,0 +1,61 @@
+{
+  "reviewedAt": "2026-10-04T12:21:52.364877",
+  "testResult": "2 passed, 0 failed, 150.106 seconds",
+  "actualImagesViewed": [
+    {
+      "file": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/repair-all-steps-attachments/EEA7B725-5379-45C0-9EBF-C7E5183F0BE3.png",
+      "name": "repaired-arms-extra-lying-barbell-extension-step-4_0_920FA0BC-5C2A-4260-BA74-8140135F25E2.png",
+      "sha256": "0b22fd83007524bca1a77b9f72775715caef85f6c868628eaf9b6a54cf02a52c"
+    },
+    {
+      "file": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/repair-all-steps-attachments/2ABA316D-ED77-40DA-A53E-BE86197E7BF2.png",
+      "name": "repaired-arms-extra-lying-barbell-extension-step-3_0_0ECF9323-EE78-4265-BBD6-CE64108EE8D3.png",
+      "sha256": "17dafe2b0950dd52fd75894c641e054e684d74edca941b52948898f560cd31d4"
+    },
+    {
+      "file": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/repair-all-steps-attachments/B9995CA7-0CD2-409F-B477-C16F12192F23.png",
+      "name": "repaired-arms-extra-lying-barbell-extension-step-2_0_C4820DEA-98A4-4CD1-BC09-D3D15002F65E.png",
+      "sha256": "4321103eefe74a0fb74318d4f012f1baa5583ef4326e9a0ec9f351fd419c3849"
+    },
+    {
+      "file": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/repair-all-steps-attachments/6E490974-972B-4C22-9381-DC53966B8B7D.png",
+      "name": "repaired-arms-extra-lying-barbell-extension-step-1_0_38FF644D-B81F-44FC-B61E-56EF40B13397.png",
+      "sha256": "226e1e4432e7fc1acb3a2b5212949fcd8c1da4d0f46a894bc9e3aa07d528d7e2"
+    },
+    {
+      "file": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/repair-all-steps-attachments/702E502D-8126-4D44-820C-78E96BE96501.png",
+      "name": "repaired-arms-extra-lying-barbell-extension-step-0_0_742354CC-96E9-4CBD-8189-B5602BE17D3D.png",
+      "sha256": "8e1652f40d58150bb8c4d53f00a94e52ca34429a4ef05e6e461b7ff2e6bb0b23"
+    },
+    {
+      "file": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/repair-all-steps-attachments/ABC24F58-0C01-478B-9659-26F42A60FBFF.png",
+      "name": "repaired-chest-warmup-roller-y-step-3_0_C33DD35A-DCC7-4033-9534-182CA8391827.png",
+      "sha256": "7cc2a8d38e8988cfafcc19f1af0478e34878285dc53736b395c97bce7e131a91"
+    },
+    {
+      "file": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/repair-all-steps-attachments/F01CAD28-C58A-48C9-87B0-6C57A48947AC.png",
+      "name": "repaired-chest-warmup-roller-y-step-2_0_4A06CF6B-4439-4E07-BE73-8317BE87304B.png",
+      "sha256": "a34fd672183447edc2df4f80e0e13cd0fbdaabf062d21783c28c731379c14018"
+    },
+    {
+      "file": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/repair-all-steps-attachments/18A1758E-0FE7-44CB-A5A7-933837EA2B2D.png",
+      "name": "repaired-chest-warmup-roller-y-step-1_0_30B17B46-0BC2-40FC-B408-AF57FC6AA65D.png",
+      "sha256": "5046da6eade9585dc51d8da575a0f1b714bffd96095009d5d10f29d6ee2bc8a0"
+    },
+    {
+      "file": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/repair-all-steps-attachments/E43D6350-85CE-461F-8488-090695CD7F7B.png",
+      "name": "repaired-chest-warmup-roller-y-step-0_0_FB64F3C1-44B8-43AD-8A55-3F4FBEBD119E.png",
+      "sha256": "e2a6f3d22760b0cfe1e16c5deb2bf4655951070b44e6fda7c2c93a9f2252cea5"
+    }
+  ],
+  "displayNote": "Each individual 1206x2622 source image viewed through tool, resized to 942x2048 for model display.",
+  "armsExtra": "Five poses show starting extension, progressive elbow flexion toward head, peak, return and final extension. Shoulder/bench/feet remain stable in these sampled poses. Visible seconds 0.3/1.7/3.0/4.5/5.8.",
+  "chest": "Four poses show preparation, arm elevation, elevated peak and return with torso/roller stable; near arm foreshortened at peak. Visible seconds 0.3/1.7/3.0/4.7.",
+  "acceptedScope": "Default light theme sampled step poses and successful automated per-step time persistence.",
+  "limits": [
+    "No continuous native playback witnessed in this review.",
+    "Steps below fold are not visibly selected in these returned-to-top screenshots; rely only on test assertions for timing.",
+    "One-decimal UI rounds sampled 3.05/4.65/5.85 values; images alone do not prove exact hundredths.",
+    "No new source video coverage or full course acceptance."
+  ]
+}

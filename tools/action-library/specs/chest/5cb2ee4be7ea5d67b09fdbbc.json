@@ -1,0 +1,140 @@
+{
+  "sourceID": "5cb2ee4be7ea5d67b09fdbbc",
+  "sourceName": "跪姿交替俯卧撑",
+  "part": "chest",
+  "title": "跪姿交替俯卧撑",
+  "variant": "跪姿 · 一只手掌靠前、一只靠后（每次还原后互换）· 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    9.5,
+    11.2,
+    13.7,
+    14.88,
+    16.9,
+    18.8
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 22,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "deltoid.lat"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌中下部",
+    "三角肌中束"
+  ],
+  "cue": "跪在垫上，一只手撑得靠前、另一只稍靠后，身体从头到膝成一条直线，屈肘下沉再撑起，还原后把前后两手换过来再来一次。",
+  "mistake": {
+    "title": "两手撑在同一条横线上，等于普通的跪姿俯卧撑",
+    "fix": "刻意让一只手落在胸口前方、另一只落在躯干侧后方，形成一前一后的支撑，交换时保持身体不晃动再下沉。",
+    "basis": "资料要求“一只手在前一只手在后”，两手齐平时就失去了交替俯卧撑对肩胸稳定性的额外刺激。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 27.48 秒，动作节奏偏慢：1.15 秒与 14.88 秒是下沉到最低点，8.02、10.30 秒与 19.46、21.75 秒在顶端手臂伸直。取 9.5 秒顶端 → 14.88 秒最低点 → 18.8 秒回到顶端这一次重复，约 9.3 秒；16.9 秒为返回途中。人物头朝画面左侧、跪在灰绿色垫上，小腿抬起离地、双脚在身后交叠。侧面机位下前后两只手的间距只能看出“一只手明显更靠前”，具体手指落点被身体遮挡，因此两手前后差按画面比例估算；每完成一次，前后手会在顶端互换。"
+}

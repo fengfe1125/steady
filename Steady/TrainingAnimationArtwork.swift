@@ -111,6 +111,11 @@ struct TrainingAnimationArtwork: UIViewRepresentable {
             guard message.frameInfo.isMainFrame, let body = message.body as? [String: Any], let event = body["event"] as? String else { return }
             if event == "ready" {
                 player.failed = false; player.ready = true; sentCommand = nil; sendCommand()
+                #if DEBUG && targetEnvironment(simulator)
+                if ProcessInfo.processInfo.arguments.contains("--video-reference-audit"), player.animation.lessonID.hasPrefix("reference-"), let webView {
+                    Task { await Self.audit(webView, id: player.animation.lessonID) }
+                }
+                #endif
             } else if event == "progress", let time = body["time"] as? Double, time.isFinite {
                 player.time = min(max(time, 0), player.timing.duration)
             } else if event == "layout", player.animation.documentLayout == true,
@@ -136,5 +141,61 @@ struct TrainingAnimationArtwork: UIViewRepresentable {
         func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) { fail() }
         func webViewWebContentProcessDidTerminate(_ webView: WKWebView) { fail() }
         private func fail() { player.failed = true; player.ready = false; player.pause() }
+
+        #if DEBUG && targetEnvironment(simulator)
+        /// Explicit opt-in QA probe; runs in the same WKWebView used by the teaching screen.
+        private static func audit(_ web: WKWebView, id: String) async {
+            var report: [String: Any] = ["id": id, "engine": "iOS WKWebView"]
+            let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            func js(_ code: String) async throws -> Any { try await web.evaluateJavaScript(code) as Any }
+            func pause() async throws { try await Task.sleep(for: .milliseconds(500)) }
+            do {
+                _ = try await js("window.__auditErrors=[]; window.__auditMaxContact=0;")
+                report["geometry"] = try await js(#"""
+                (()=>{const spec=SteadyReferenceLesson,SA=SteadyAnatomy,errors=[];let maxContact=0,prev;
+                const dist=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
+                for(let i=0;i<=100;i++){
+                  setLessonState({mode:'motion',playing:false,seekTime:spec.timing.duration*i/100,seekRevision:1000+i});
+                  const s=SteadyLessonRenderedSamples()[0].sample,j=s.joints;
+                  for(const [side,l] of Object.entries(j.legs)){const a=s.pose.ik?.ankle?.[side];if(a){const d=dist(l.A,a);maxContact=Math.max(maxContact,d);if(d>.25)errors.push('support '+i);}}
+                  for(const [side,a] of Object.entries(j.arms)){if(Math.abs(dist(a.S,a.E)-64*(s.pose.arms[side].f??1))>.1)errors.push('length '+i);if(prev&&dist(a.H,prev.arms[side].H)>18)errors.push('jump '+i);}
+                  const b=document.querySelector('#motion svg').getBoundingClientRect();
+                  for(const p of document.querySelectorAll('#motion .figure path')){const q=p.getBoundingClientRect();if(q.width&&q.height&&(q.left<b.left-3||q.top<b.top-3||q.right>b.right+3||q.bottom>b.bottom+3))errors.push('clipped '+i);}
+                  prev=j;
+                }
+                return {samples:101,maxContact,errors:[...new Set(errors)]};})()
+                """#)
+                _ = try await js("setLessonState({mode:'motion',playing:true,speed:1,seekTime:0,seekRevision:2001})")
+                try await pause()
+                report["normal"] = try await js("SteadyLessonPlaybackState()")
+                _ = try await js("setLessonState({mode:'motion',playing:false})")
+                report["pauseStart"] = try await js("SteadyLessonPlaybackState()")
+                try await pause()
+                report["pauseEnd"] = try await js("SteadyLessonPlaybackState()")
+                _ = try await js("setLessonState({mode:'motion',playing:true,speed:0.5,seekTime:0,seekRevision:2002})")
+                try await pause()
+                report["slow"] = try await js("SteadyLessonPlaybackState()")
+                for mode in ["motion", "detail", "mistakes"] {
+                    _ = try await js("setLessonState({mode:'\(mode)',playing:false,seekTime:SteadyReferenceLesson.timing.effortEnd,seekRevision:2003})")
+                    try await pause()
+                    let snapshot = try await web.takeSnapshot(configuration: nil)
+                    try snapshot.pngData()?.write(to: directory.appendingPathComponent("\(id)-\(mode).png"))
+                    report[mode] = try await js("SteadyLessonPlaybackState()")
+                }
+                _ = try await js("setLessonState({mode:'detail',playing:false,dark:true})")
+                try await pause()
+                let dark = try await web.takeSnapshot(configuration: nil)
+                try dark.pngData()?.write(to: directory.appendingPathComponent("\(id)-dark.png"))
+                report["detailFrames"] = try await js("document.querySelectorAll('#detail figure').length")
+                report["detailFits"] = try await js("Array.from(document.querySelectorAll('#detail figure')).every(f=>f.getBoundingClientRect().bottom<=innerHeight+1)")
+                _ = try await js("stopLesson()")
+                report["stopped"] = try await js("SteadyLessonPlaybackState()")
+            } catch { report["error"] = String(describing: error) }
+            if let data = try? JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys]) {
+                try? data.write(to: directory.appendingPathComponent("\(id)-audit.json"))
+            }
+        }
+        #endif
+
     }
 }

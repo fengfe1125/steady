@@ -1,0 +1,160 @@
+{
+  "sourceID": "62f36045a692660001972b3f",
+  "sourceName": "3 秒支撑下落",
+  "part": "chest",
+  "title": "3 秒支撑下落",
+  "variant": "标准俯卧撑 · 三秒慢速离心下放至胸部贴垫 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.5,
+    1.6,
+    2.7,
+    3.5,
+    5.2,
+    7.0
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.75,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 76,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -20
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -20
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 85,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -10
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -10
+        }
+      }
+    },
+    "1": {
+      "pelvis": 92,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "abs",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "双手撑在胸口两侧、略宽于肩，收腹夹臀让肩、髋、踝连成一条直线；用三秒把胸口慢慢送到垫面，全程咬住发力，别让身体自然掉下去。",
+  "mistake": {
+    "title": "下落失控，髋部先塌下去",
+    "fix": "跟着三秒节奏走，全程收紧腹部与臀部，让肩、髋、踝保持在一条线上；控制不住就减小下放深度或改跪姿。",
+    "basis": "依据源 detail.description 的常见错误条目（放下去的速度过快、缺少主动控制）；控制不住节奏时髋部会先沉、身体折成两段，属通用训练常识。",
+    "level": 0.6,
+    "override": {
+      "pelvis": 88,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080、时长 8.56 秒，但 12 张帧图全是同一个肩臂特写：镜头从人物斜后方俯拍，只能看到后脑、肩和撑在深色垫子上的那只手，画面左侧是垫外的浅色地面。帧图上叠加了绿色标注线，用于示意上臂与地面的垂直关系、前臂走向以及肘部向下、向后的移动路径（其中 2~6 秒与 8~12 秒的标注相同，说明这段是静态讲解画面）。因此完整身体姿态在画面中看不到，起点（撑起）到终点（胸口贴垫）的躯干角度是按文字说明“俯身撑在瑜伽垫上、侧面成一条直线、双手略宽于肩”并结合标准俯卧撑的常用数值拟合的，下放时长取文字里的三秒。视频里人物的朝向无法从特写判断，mirror 按同类侧面示范默认取 true。"
+}

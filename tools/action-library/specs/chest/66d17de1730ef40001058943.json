@@ -1,0 +1,142 @@
+{
+  "sourceID": "66d17de1730ef40001058943",
+  "sourceName": "瑞士球手撑俯卧撑",
+  "part": "chest",
+  "title": "瑞士球手撑俯卧撑",
+  "variant": "双手撑健身球 · 脚尖着垫 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.63,
+    1.4,
+    3.6,
+    4.41,
+    5.7,
+    6.93
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 53,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -44
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -44
+        }
+      }
+    },
+    "1": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -30
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -30
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -92,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -92,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "ball",
+      "under": "hands",
+      "r": 44
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "triceps.long",
+      "triceps.lat"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "两手比肩稍宽撑在球顶，指尖扣住球面，从头到踵绷成一条直线；屈肘让胸口缓缓贴近球，再推回直臂，全程核心收紧不让球乱晃。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "收紧腹部和臀部，让肩、髋、踝始终保持一条直线，控制球不要前后滚动。",
+    "basis": "来源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 58,
+      "lumbar": -20,
+      "legs": {
+        "near": {
+          "hip": -16
+        },
+        "far": {
+          "hip": -16
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面，人物头朝画面左、脚在右，约 10 秒处机位切到斜前方，故只取侧面段。取第 1 次：0.63 秒直臂撑球顶，4.41 秒胸口接近球面、肘约 90 度，6.93 秒推回直臂。双手在肩下略前撑球顶，脚尖撑垫为支点。球面柔软、手位略有下陷，角度为人工示意拟合。"
+}

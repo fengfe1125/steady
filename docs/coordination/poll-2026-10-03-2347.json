@@ -1,0 +1,55 @@
+{
+  "time": "2026-10-03T23:47:00+08:00",
+  "drafts": [
+    {
+      "topic": "arms",
+      "course_id": "tanchengyi-arms",
+      "lessons": 7,
+      "duplicates": 0
+    },
+    {
+      "topic": "chest",
+      "course_id": "tanchengyi-chest",
+      "lessons": 10,
+      "duplicates": 0
+    },
+    {
+      "topic": "shoulders",
+      "course_id": "tanchengyi-shoulders",
+      "lessons": 11,
+      "duplicates": 0
+    },
+    {
+      "topic": "abs",
+      "course_id": "tanchengyi-abs",
+      "lessons": 10,
+      "duplicates": 0
+    },
+    {
+      "topic": "arms-extra",
+      "course_id": "tanchengyi-arms-extra",
+      "lessons": 7,
+      "duplicates": 0
+    },
+    {
+      "topic": "functional",
+      "course_id": "functional-lower-limb",
+      "lessons": 12,
+      "duplicates": 0
+    },
+    {
+      "topic": "legs",
+      "course_id": "tanchengyi-legs",
+      "lessons": 13,
+      "duplicates": 0
+    },
+    {
+      "topic": "back",
+      "course_id": "tanchengyi-back",
+      "lessons": 9,
+      "duplicates": 0
+    }
+  ],
+  "public_swift_changes": [],
+  "accepted": []
+}

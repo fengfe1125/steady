@@ -1,0 +1,17 @@
+{
+  "Steady/EquipmentArtworkRuntime.js": "83cb306b8a0c8e69a4adfd992567f9f13b3bba13ed56a96de8bc93179c6f64d4",
+  "Sources/SteadyCore/AnimatedTrainingCollection.swift": "84027be8482a72c9c4ac5ebc5e5ff723654d0ac0224145768825891b703a9bf6",
+  "Steady/AnimatedTrainingViews.swift": "2c966f179ee8a7973612f30572ecc1ccd18c7134c5d1b593d6df94333135f0ee",
+  "Steady/TrainingAnimationArtwork.swift": "afe567df11a753d131c4632fc11ed9311d628a8a7bc9f6e1e70878cbe9e76bad",
+  "Steady/UIReviewView.swift": "a1de2669e85a6bfea6d6577cbe4be13b99eb05562457c556f42a299987f15727",
+  "Steady/SettingsOnboarding.swift": "81f3dc9db5241187851ea26483f58514ad041b930dbac23afee2d2312c04923a",
+  "Package.swift": "94fc2c5d3878133bc007f4d66191bc96d159c2f227e8ac7086e2036851549a17",
+  "Sources/SteadyCore/EquipmentLesson.swift": "cb2b5d2ffea39fa2a74fb4e299ff0564de465c720cbd0a31ef2524b679c8e6a0",
+  "Sources/SteadyCore/EquipmentLessonDefinition.swift": "d350a3a738c6579fd565a810aaa9cd19ebd4f1c4131aef3229d680728054ffcd",
+  "Sources/SteadyCore/ArmTrainingCourse.swift": "ce96ed0a28915187121daf8becea27e2f0879ce1115f7add18b20284cfcb06f8",
+  "Steady/ArmTrainingCourseView.swift": "9a17066ea1a0b0e6f1ffef2df45117ff426f8e8d7be7635defeb9ab63d634495",
+  "Steady/TrainingCollections.swift": "63c7eb0e4825c73f1d00cab2f8090b01eb552a30db498776371bfe60150404b2",
+  "Tests/SteadyCoreTests/AnimatedTrainingCollectionTests.swift": "ea001426b60858b080588516f40b8f54724c16e81be95ba8394cb3f85fd817b8",
+  "SteadyUITests/SteadyUITests.swift": "403180e223e2edb96681bbbb8096bb1deb368827226bbe6323d4802bbb681ee5",
+  "Steady/TrendsCoach.swift": "6ee2dd4d518324ecd8e565f695bd0cd3d840b1bfe3062b765338679c65a7aa3e"
+}

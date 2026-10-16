@@ -1,0 +1,138 @@
+{
+  "sourceID": "55cc42cc3e9880c23def0345",
+  "sourceName": "跪姿释手俯卧撑",
+  "part": "chest",
+  "title": "跪姿释手俯卧撑",
+  "variant": "跪姿 · 胸触垫后双手离地再推起 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    2.85,
+    3.4,
+    3.95,
+    4.48,
+    4.9,
+    5.3
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 84,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 64,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 69,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 400
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat"
+    ],
+    "secondary": [
+      "pec.lower",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌"
+  ],
+  "cue": "跪撑后屈肘让胸口轻触垫面，短暂松开双手再放回原位，接着用力把身体推回直臂状态；下落要慢，落地要轻。",
+  "mistake": {
+    "title": "下落太快，整个人砸向垫子",
+    "fix": "下落阶段用手臂和胸部缓慢控制速度，触垫前减力，松手时间很短；控制不住就先练常规跪姿俯卧撑。",
+    "basis": "依据源资料常见错误：下落时速度过快、训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080 宽，侧面，人物头朝画面左侧，穿黑上衣灰裤。1.22 秒与 3.67-4.48 秒身体贴近垫面（头顶约 270-272，胸口贴垫、双手松开），2.04-2.85 秒与 5.30-6.11 秒为直臂高位（头顶约 212-219）；6.93 秒后切换更近机位。取 2.85-5.30 秒一次完整下落与推起。JSON 中手仍按撑地处理，离地瞬间由程序以胸口贴垫表现，松手动作在要点文字中说明。"
+}

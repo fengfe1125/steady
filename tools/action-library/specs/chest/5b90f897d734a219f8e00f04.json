@@ -1,0 +1,127 @@
+{
+  "sourceID": "5b90f897d734a219f8e00f04",
+  "sourceName": "瑜伽球右侧卧推",
+  "part": "chest",
+  "title": "瑜伽球右侧卧推",
+  "variant": "上背靠瑜伽球 · 哑铃卧推 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    1.24,
+    1.9,
+    2.6,
+    2.9,
+    3.3,
+    3.9
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.8,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 0
+        },
+        "far": {
+          "sh": 90,
+          "el": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 20,
+          "el": 95
+        },
+        "far": {
+          "sh": 20,
+          "el": 95
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 20,
+      "y": -119
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 130,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 118,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "ball",
+      "x": -75,
+      "r": 46
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.7
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.7
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌中下部"
+  ],
+  "cue": "上背稳稳靠住瑜伽球，双脚踩实地面、臀部抬起与躯干同高；小臂保持垂直把哑铃落向胸侧，再沿原路推起，全程收紧核心稳住球。",
+  "mistake": {
+    "title": "挺腰借力，腰部反弓",
+    "fix": "收紧腹部和臀部，肋骨下沉、骨盆保持中立，推起时躯干贴住球不要晃动。",
+    "basis": "通用训练常识：球上卧推常见借力错误为腰椎过伸把躯干顶起。",
+    "level": 0.5,
+    "override": {
+      "lumbar": -20
+    }
+  },
+  "observation": "主视频侧面，人物头朝画面左、双脚朝右，共 5 次。取第 1 次：1.24 秒双臂伸直、哑铃在胸正上方，2.9 秒哑铃落到胸侧、肘约 90 度，3.73 秒推回顶端。上背贴球顶、髋部抬起成桥，双脚踩地屈膝约 90 度。7 秒后人物在球上位置后移、躯干转为较直立，该段未选取。哑铃较小，角度为人工示意拟合。"
+}

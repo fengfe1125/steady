@@ -1,0 +1,44 @@
+{
+  "completedAt": "2026-10-04T16:36:51.310673+08:00",
+  "actualTests": 1,
+  "failures": 0,
+  "seconds": 28.775,
+  "exportedPNG": 10,
+  "ownerViewedContactSheet": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-hip-cycle-png/running-six-contact.png",
+  "contactSHA256": "883aadb517a3a53f86e32039b34c81885742d4119aee0b9b3240705eef86fb2c",
+  "samples": [
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-hip-cycle-png/5DCC54A7-B634-4746-987C-3B909B51E102.png",
+      "sha256": "2d654f23094adf8cf389d44ce9701ffd2d250774c7af44fa1f73c478c0e85226",
+      "visibleSeconds": 1.7
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-hip-cycle-png/F0635C99-F065-4988-A29B-0880B119E27F.png",
+      "sha256": "3f632800f542f2c35983e8dbe47f00040b28d873625ef3156fe374e32288617f",
+      "visibleSeconds": 2.7
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-hip-cycle-png/0CBA84B5-02EC-4017-9C7E-7804315C6E65.png",
+      "sha256": "67361196796adf89eb69fbeb0bb68051379430bd1a32aec8be9c72b0e54604b1",
+      "visibleSeconds": 3.7
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-hip-cycle-png/30D68C7B-BAFF-4005-AA8F-76D587E1C2F3.png",
+      "sha256": "f38e94aa266e490671bc3a7594cd2a736a04a64608307b75d390944d8c3aaf3a",
+      "visibleSeconds": 4.6
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-hip-cycle-png/BDA8AB42-1051-44FC-B1F0-BCA3AE37B5F3.png",
+      "sha256": "231ae132f6dd5ce0becdc5ac5189007a2943e0d01d076847c7ac43033a430f10",
+      "visibleSeconds": 5.6
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-hip-cycle-png/786AEAF8-ADDB-4185-8F5F-CC027EA2DFB9.png",
+      "sha256": "0b55255d54f87d541543a4c03a1795f8003ee44bc0667f0dd36857e1befab54c",
+      "visibleSeconds": 0.6
+    }
+  ],
+  "decision": "Actual native player advanced through a wrap without seeking; sampled frames show takeoff, supported high hold, descent and low single-leg next-cycle start. No sample shows old free-leg-drop/high-reset defect. Pause and speed/step interactions passed.",
+  "limits": "Six discrete native playback screenshots, not continuous viewing or frame-exact proof at 5999→0ms; exact seam checked separately in repair-v1 geometry.",
+  "publicRendererSHA256": "925097ae54177d6bec1a56b2d2d864c6a00a490ed1c799e5477e347975198ab8"
+}

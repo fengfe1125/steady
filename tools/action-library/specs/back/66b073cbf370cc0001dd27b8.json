@@ -1,0 +1,165 @@
+{
+  "sourceID": "66b073cbf370cc0001dd27b8",
+  "sourceName": "哑铃俯卧宽距划船",
+  "part": "back",
+  "title": "哑铃俯卧宽距划船",
+  "variant": "掌心朝下 · 肘向外打开到肩高 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    7.7,
+    8.7,
+    9.9,
+    10.78,
+    11.3,
+    11.9
+  ],
+  "levels": [
+    0,
+    0.36,
+    0.8,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": 68,
+          "el": 8,
+          "f": 1
+        },
+        "far": {
+          "sh": 74,
+          "el": 12,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 8,
+          "ankle": 10
+        },
+        "far": {
+          "hip": 8,
+          "knee": 12,
+          "ankle": 10
+        }
+      }
+    },
+    "1": {
+      "pelvis": 60,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -4,
+          "el": 100,
+          "f": 0.48
+        },
+        "far": {
+          "sh": 6,
+          "el": 92,
+          "f": 0.55
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 8,
+          "ankle": 10
+        },
+        "far": {
+          "hip": 8,
+          "knee": 12,
+          "ankle": 10
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 6,
+      "y": -124
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": -112,
+        "y": -19,
+        "foot": 8,
+        "bend": -1
+      },
+      "far": {
+        "x": -126,
+        "y": -19,
+        "foot": 8,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -36,
+      "length": 78,
+      "top": -102,
+      "back": {
+        "x": 18,
+        "angle": -58,
+        "length": 168
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.85
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.85
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "trap.mid"
+    ],
+    "secondary": [
+      "rhomboid",
+      "deltoid.post",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "中背部"
+  ],
+  "cue": "胸口贴在斜垫上，掌心朝下。大臂向两侧打开，把铃拉到肩高附近，肘大约成直角，再慢慢放下。",
+  "mistake": {
+    "title": "拉起时耸肩",
+    "fix": "肩放下来，肘向外打开到肩高就停，不要把肩头抬向耳朵。",
+    "basis": "资料的常见问题是动作里出现耸肩。侧面用头颈前伸来表示。",
+    "level": 1,
+    "override": {
+      "neck": 6,
+      "head": 16,
+      "thorax": 10
+    }
+  },
+  "observation": "斜凳约三十度，头在右，腿基本伸直、脚在低端。斜前方 1.54 秒肘已经向外打开；侧面 7.7 秒手臂垂下、片正对镜头，10.78 秒肘到肩高、铃在肩前而不是髋旁。宽距用上臂缩短表示肘朝镜头打开，和贴身收到髋旁的反手划船不同。可调节凳用带靠背的长凳。角度为人工拟合。"
+}

@@ -121,6 +121,7 @@ struct EquipmentLessonView: View {
                         else if player.mode == .detail { detailNotes }
                         else { mistakeNotes }
                     }.id("player")
+                    VideoReferenceTeachingLink(existingLessonID: lesson.rawValue)
                     guide(scroll: scroll)
                     selfCheck.id("selfCheck")
                     sources
@@ -393,6 +394,65 @@ struct EquipmentLessonView: View {
                     }
                 }.font(.footnote).padding(.vertical, 8)
             }.font(.footnote) }
+        }
+    }
+}
+
+/// Illustrated action library for one body part: grouped rows with icons, each opening the lesson player.
+struct ActionLibraryView: View {
+    let part: String
+    @State private var query = ""
+    private var groups: [ActionLibraryGroup] { (try? ActionLibrary.groups(part: part)) ?? [] }
+
+    var body: some View {
+        let shown = groups.compactMap { group -> ActionLibraryGroup? in
+            let rows = query.isEmpty ? group.entries : group.entries.filter { $0.title.localizedCaseInsensitiveContains(query) || $0.equipment.contains { $0.contains(query) } }
+            return rows.isEmpty ? nil : ActionLibraryGroup(title: group.title, entries: rows)
+        }
+        List {
+            if query.isEmpty {
+                Section { Text("按器材分组，点开看动作动画、分解图和易错点。\n只用于学习动作，组数和次数按你的计划。").foregroundStyle(SteadyTheme.secondary) }
+            }
+            if groups.isEmpty {
+                ContentUnavailableView("动作库暂时无法打开", systemImage: "book.closed")
+            } else if shown.isEmpty {
+                ContentUnavailableView.search(text: query)
+            }
+            ForEach(shown) { group in
+                Section("\(group.title) · \(group.entries.count)") {
+                    ForEach(group.entries) { entry in
+                        // Destination-style links like the other coach lists: a value link's
+                        // navigationDestination is not honoured inside this destination-pushed page.
+                        NavigationLink { ActionLibraryLessonView(entry: entry) } label: {
+                            HStack(spacing: 16) {
+                                // Drawn from the lesson's own animation at its working position (tools/action-library/icons.mjs).
+                                Image(entry.iconName).resizable().scaledToFit()
+                                    .frame(width: 52, height: 52).background(SteadyTheme.soft)
+                                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                                    .accessibilityHidden(true)
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(entry.title).font(.headline)
+                                    Text(entry.lesson.summary).font(.caption).foregroundStyle(SteadyTheme.secondary).lineLimit(2)
+                                }
+                            }.padding(.vertical, 4)
+                        }.accessibilityIdentifier("actionLibrary_\(entry.id)")
+                    }
+                }
+            }
+        }
+        .journalSurface().navigationTitle("\(ActionLibrary.title(part: part))动作库")
+        .searchable(text: $query, prompt: "搜索动作或器材")
+    }
+}
+
+/// Builds the lesson player only when the row is opened, not for every visible row.
+struct ActionLibraryLessonView: View {
+    let entry: ActionLibraryEntry
+    var body: some View {
+        if let url = entry.artworkURL {
+            AnimatedTrainingLessonView(lesson: entry.lesson, animation: entry.animation, resourceURL: url, runtime: .bundled)
+        } else {
+            ContentUnavailableView("动作暂时无法打开", systemImage: "book.closed")
         }
     }
 }

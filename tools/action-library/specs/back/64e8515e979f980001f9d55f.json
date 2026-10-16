@@ -1,0 +1,161 @@
+{
+  "sourceID": "64e8515e979f980001f9d55f",
+  "sourceName": "俯身哑铃触地划船",
+  "part": "back",
+  "title": "俯身哑铃触地划船",
+  "variant": "对握，最低点铃碰到地面，拉起时上身略抬起 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    1.3,
+    1.55,
+    1.9,
+    2.17,
+    3.05,
+    3.91
+  ],
+  "levels": [
+    0,
+    0.55,
+    0.86,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 4,
+      "thorax": 2,
+      "neck": -10,
+      "head": -8,
+      "arms": {
+        "near": {
+          "sh": 72,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 76,
+          "el": 8,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 68,
+          "knee": 16
+        },
+        "far": {
+          "hip": 64,
+          "knee": 20
+        }
+      }
+    },
+    "1": {
+      "pelvis": 68,
+      "lumbar": 0,
+      "thorax": -5,
+      "neck": -12,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": -20,
+          "el": 108,
+          "f": 1
+        },
+        "far": {
+          "sh": -16,
+          "el": 104,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 58,
+          "knee": 18
+        },
+        "far": {
+          "hip": 54,
+          "knee": 22
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 10,
+      "y": -130
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 28,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.85
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.85
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "trap.lower",
+      "lats"
+    ],
+    "secondary": [
+      "rhomboid",
+      "erectors",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中下束",
+    "背阔肌"
+  ],
+  "cue": "对握，最低点让铃碰到地面。再快速把肘收到腹侧，上身跟着略抬起一点，停一下，然后放回触地。",
+  "mistake": {
+    "title": "触地时腰塌下去，肘也向外撇",
+    "fix": "铃可以轻轻点地，后背仍保持平直；拉起时两肘贴住身侧，不要把髋甩高。",
+    "basis": "资料点名弓腰和肘没有夹紧。错误放在最低点，背弯得更多，同时上臂向外翻。",
+    "level": 0.05,
+    "override": {
+      "lumbar": 18,
+      "thorax": 12,
+      "neck": 6,
+      "arms": {
+        "near": {
+          "f": 0.55,
+          "el": 30
+        },
+        "far": {
+          "f": 0.55,
+          "el": 32
+        }
+      }
+    }
+  },
+  "observation": "侧面，头朝右。1.3 秒手臂垂下、铃靠近地面，2.17 秒肘收到腹侧且上身比最低点略抬，3.91 秒回到垂下。骨盆从七十八度收到六十八度，髋放得比普通屈髋低一些，头在最低点仍高于髋。铃画在手里，最低点铃底接近地面；按头仍要高于髋的限制，没有把身体折过水平。对握在侧面看不出掌心。"
+}

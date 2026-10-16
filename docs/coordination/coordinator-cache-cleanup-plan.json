@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/modules",
+    "bytes": 61697829,
+    "files": 90,
+    "symlinks": [],
+    "reason": "Coordinator task-owned compiler/module and package cache; rebuildable; no app runtime dependency"
+  },
+  {
+    "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/swiftpm",
+    "bytes": 50605906,
+    "files": 179,
+    "symlinks": [],
+    "reason": "Coordinator task-owned compiler/module and package cache; rebuildable; no app runtime dependency"
+  }
+]

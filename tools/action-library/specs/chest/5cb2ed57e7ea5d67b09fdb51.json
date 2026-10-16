@@ -1,0 +1,152 @@
+{
+  "sourceID": "5cb2ed57e7ea5d67b09fdb51",
+  "sourceName": "鳄鱼爬",
+  "part": "chest",
+  "title": "鳄鱼爬",
+  "variant": "双手前后错位 · 平板爬行 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    8.54,
+    9.2,
+    10.0,
+    10.9,
+    11.7,
+    12.33
+  ],
+  "levels": [
+    0,
+    0.2,
+    0.75,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 0,
+          "el": 0
+        },
+        "far": {
+          "sh": 0,
+          "el": 0
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 32,
+          "knee": 88,
+          "ankle": 20
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 0,
+          "el": 0
+        },
+        "far": {
+          "sh": 0,
+          "el": 0
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -12,
+          "knee": 0,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "far",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 18,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.ant",
+      "obliques"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "三角肌前束",
+    "腹斜肌"
+  ],
+  "cue": "双手一前一后撑住垫面，身体绷成一条斜线；一侧腿屈膝收向胸口，再向后蹬直，双腿交替像爬行一样前进，全程核心收紧不塌腰。",
+  "mistake": {
+    "title": "爬行中塌腰",
+    "fix": "把注意力放在核心上，收紧腹部和臀部，让肩、髋、踝始终保持一条直线，避免肩膀耸起代偿。",
+    "basis": "源资料提示易耸肩、力量应放在核心；塌腰为爬行支撑类的常见代偿，取通用训练常识在收腿阶段示意。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -18
+    }
+  },
+  "observation": "主视频 1080×1080，侧面，人物朝左，全程向前爬行，约 12 步。双手前后错位撑垫（画面近侧手在前），交替收膝、后蹬。取 8.54–12.33 秒一步：近侧腿屈膝收向胸口，随后向后伸直并抬起，远侧脚全程点垫支撑。动画原地演示一个收腿-后伸周期，未表现整体前移。角度为人工示意拟合。"
+}

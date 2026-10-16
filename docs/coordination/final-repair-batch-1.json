@@ -1,0 +1,58 @@
+{
+  "changes": [
+    {
+      "topic": "functional",
+      "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/final-acceptance/repair-v1/functional-renderer.js",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-renderer.js",
+      "before": "d6712bd82be63aa7be77b189eebd54ab91282bb47a5ea3627385c437243010d9",
+      "after": "925097ae54177d6bec1a56b2d2d864c6a00a490ed1c799e5477e347975198ab8"
+    },
+    {
+      "topic": "functional",
+      "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/final-acceptance/repair-v1/functional-single-leg-hip-thrust.html",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-single-leg-hip-thrust.html",
+      "before": "0c0dd36e1a091b6705eb013150908fc69043afe9578950351bfcf0fbe0edbfe0",
+      "after": "8dfc8addc6b854abf1028a0945a1ed99a67893b4416f6029e67fc1009f0ab385"
+    },
+    {
+      "topic": "functional",
+      "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/final-acceptance/repair-v1/functional-animations.json",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-animations.json",
+      "before": "5f79102ad0ce1ffba4a09bf90cb4dfc67a60a71ae87c6ff2dc19efc70ddabd0f",
+      "after": "6cd9ca915dc62e0d5110759aabee81c2348f257f7925c719a8bdb8a59863f255"
+    },
+    {
+      "topic": "back",
+      "source": "/Volumes/Developer/Projects/steady/docs/verification/training-back/evidence/final-acceptance/patches/straight-arm-connector-v1/back-straight-arm-native.html",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-straight-arm-native.html",
+      "before": "a98cfdd8080b053c34994d2e531ab3f26561469a55ca0b9937a74914a21561e8",
+      "after": "7b4dbe4007d5fe36531e4944db5dc0f7a8766fb366b08e2551f0b677d7c78c8e"
+    },
+    {
+      "topic": "arms-extra",
+      "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/evidence/final-acceptance/patches/F03-public-complete.json",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-complete-animations.json",
+      "before": "2511a7531fb032eb4a91d24e08b57b653e6e3810ce2d6f1e1136881d3a454715",
+      "after": "22b84cddfbcf0dc6d5ae945b643e4afbead7660b3346516f8c919dc6ab9f3524"
+    }
+  ],
+  "scope": "functional3 lessons + back connector + arms-extra evidence attribution only",
+  "viewedEvidence": [
+    "functional3 before-after sheets",
+    "back four-phase before-after",
+    "arms-extra original08:56 frame"
+  ],
+  "native": {
+    "run": "final-repair-batch-1",
+    "actualTests": 4,
+    "failures": 0,
+    "seconds": 107.572,
+    "pngs": 12,
+    "coordinatorViewed": [
+      "57238485-BAD3-469E-A636-DFA96E949324.png",
+      "37229BEF-DDB8-428F-8937-A7066E87232F.png"
+    ],
+    "observations": "Back3s connector visible; hip thrust1.1s single-leg low setup and new instruction visible. Four tests verify loading/step seek/three modes. Not native continuous seam visual review."
+  },
+  "sourceFrozenCopies": "unchanged; arms-extra source copies require owner sync"
+}

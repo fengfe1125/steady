@@ -1,0 +1,141 @@
+{
+  "sourceID": "5b90fadba29e342ee240f407",
+  "sourceName": "牛角包俯卧撑",
+  "part": "chest",
+  "title": "牛角包俯卧撑",
+  "variant": "牛角包负重 · 双手撑包面 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.53,
+    3.85,
+    4.55,
+    4.8,
+    5.25,
+    5.7
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 70,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -28
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -28
+        }
+      }
+    },
+    "1": {
+      "pelvis": 81,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -13
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -13
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": 0
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -35,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -35,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "sandbag",
+      "x": 0,
+      "w": 120,
+      "h": 32
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手按稳包面，肩到踵保持一条直线，屈肘贴近身侧下沉，胸口轻触包面后发力推回。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "收紧腹部和臀部，让肩、髋、踵保持同一直线；控制不住时减轻包的重量或改为跪姿完成。",
+    "basis": "源 detail.description 常见错误：全程未保持身体直线，腰部代偿。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 78,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面，人物头朝画面左，共 5 次。双手按在平放牛角包的弧顶上，包高约 16cm，手撑点全程不动；脚尖着地，画面无瑜伽垫。选第 3 次：3.53 秒手臂撑直为顶部，约 4.8 秒胸口接近包面为最低，约 5.7 秒回到顶部，与前后帧吻合。5.89 秒起镜头拉远，人物和包在画面中变小。包的长度比 bosu 近似图形长，看不清处为最低点胸口与包面的准确间距。 （器材改为牛角包软沙袋造型。）"
+}

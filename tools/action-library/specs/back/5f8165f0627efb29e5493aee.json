@@ -1,0 +1,134 @@
+{
+  "sourceID": "5f8165f0627efb29e5493aee",
+  "sourceName": "吊杠保持",
+  "part": "back",
+  "title": "吊杠保持",
+  "variant": "直臂悬垂 · 双腿伸直离地 · 只把身体收紧 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.43,
+    1.3,
+    2.4,
+    7.4,
+    8.7,
+    9.85
+  ],
+  "levels": [
+    0,
+    0.6,
+    1,
+    1,
+    0.35,
+    0
+  ],
+  "poses": {
+    "0": {
+      "x": -4,
+      "y": -217,
+      "pelvis": -3,
+      "lumbar": 3,
+      "thorax": 3,
+      "neck": -12,
+      "head": 0,
+      "scapE": 6,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 2,
+          "knee": 4
+        },
+        "far": {
+          "hip": 4,
+          "knee": 6
+        }
+      }
+    },
+    "1": {
+      "x": -3,
+      "y": -224,
+      "pelvis": -4,
+      "lumbar": -1,
+      "thorax": -2,
+      "neck": -14,
+      "head": 0,
+      "scapE": 1,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 3,
+          "knee": 5
+        },
+        "far": {
+          "hip": 1,
+          "knee": 3
+        }
+      }
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 0,
+        "y": -430,
+        "bend": 1
+      },
+      "far": {
+        "x": 0,
+        "y": -430,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "pullup_bar",
+      "x": 0,
+      "top": -430
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "rhomboid"
+    ],
+    "secondary": [
+      "trap.upper",
+      "lats",
+      "forearm.flex"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中部",
+    "菱形肌"
+  ],
+  "cue": "双手抓牢，双脚离地。腹部轻轻收住，肩不要完全松垮，身体稳稳悬着，呼吸保持顺畅。",
+  "mistake": {
+    "title": "整个人松垮地挂着",
+    "fix": "双腿可以伸直挂着，但腹部和肩带要轻轻收住，身体不要塌成一段软的。",
+    "basis": "资料把全身松弛列为常见问题，要求悬垂时保持紧绷。",
+    "level": 1,
+    "override": {
+      "lumbar": 14,
+      "thorax": 10,
+      "neck": 6,
+      "head": 8,
+      "pelvis": 6
+    }
+  },
+  "observation": "侧面，人朝右。直臂抓杠，双腿伸直并拢、自然下垂，脚离地。取 0.43 秒到 9.85 秒：先略收紧，然后长时间停住。幅度很小，没有做成引体。杠和双手在 -430，髋比原来上移 40，避免伸直的脚碰到地面。侧面看不出握距。角度为人工拟合。"
+}

@@ -1,0 +1,159 @@
+{
+  "sourceID": "56038745331e338262f3d318",
+  "sourceName": "跪姿俯卧撑后坐",
+  "part": "chest",
+  "title": "跪姿俯卧撑后坐",
+  "variant": "跪姿 · 推起后臀部后坐至小腿 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.94,
+    4.5,
+    5.06,
+    6.19,
+    7.31,
+    8.44
+  ],
+  "levels": [
+    0,
+    0.2,
+    0.5,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 100,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -22,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 120,
+          "knee": 120,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 120,
+          "knee": 125,
+          "ankle": 25
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 90,
+          "knee": 105,
+          "ankle": 20
+        },
+        "far": {
+          "hip": 90,
+          "knee": 110,
+          "ankle": 20
+        }
+      }
+    },
+    "1": {
+      "pelvis": 112,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 112,
+          "knee": 100,
+          "ankle": 20
+        },
+        "far": {
+          "hip": 112,
+          "knee": 105,
+          "ankle": 20
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 55,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 55,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 380
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "膝盖与脚背搭垫，双手落在胸口两侧；屈肘把胸口压向垫面后撑起，再把臀部向后坐向脚跟，让手臂与躯干被拉成一条斜线。",
+  "mistake": {
+    "title": "塌腰，髋部往下坠",
+    "fix": "全程收紧腹部与臀部，让肩、髋、膝保持在一条斜线上；撑不住时减少次数，别用腰去代偿。",
+    "basis": "通用训练常识：跪姿俯卧撑最常见的代偿就是腰背下塌、髋部掉向垫面。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 92,
+      "lumbar": -20,
+      "legs": {
+        "near": {
+          "hip": 62
+        },
+        "far": {
+          "hip": 62
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，固定侧面机位、略微俯拍，人物朝画面左侧，只有膝盖、脚背与手掌接触垫面。12 帧覆盖 0.56~12.94 秒，节奏是「撑起—下压—撑起—臀部后坐」四拍一轮：0.56 撑起、1.69 胸口贴垫、2.81 撑起、3.94 后坐，如此往复。取 3.94~8.44 秒这一整轮：3.94 秒臀部坐在小腿上、双臂向前伸远，5.06 秒回到撑起位，6.19 秒屈肘到最低点，7.31 秒推起，8.44 秒再次后坐。手掌与膝盖在整轮里位置基本不动，后坐时躯干折向大腿、头低下。躯干与四肢角度为人工示意拟合。"
+}

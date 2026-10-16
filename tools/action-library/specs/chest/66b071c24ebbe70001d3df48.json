@@ -1,0 +1,158 @@
+{
+  "sourceID": "66b071c24ebbe70001d3df48",
+  "sourceName": "下斜哑铃卧推",
+  "part": "chest",
+  "title": "下斜哑铃卧推",
+  "variant": "下斜凳 · 脚勾滚轴 · 哑铃 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    7.79,
+    8.1,
+    8.5,
+    8.71,
+    9.1,
+    9.62
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -112,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 70,
+          "el": 10
+        },
+        "far": {
+          "sh": 70,
+          "el": 10
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 75,
+          "knee": 100
+        },
+        "far": {
+          "hip": 75,
+          "knee": 100
+        }
+      }
+    },
+    "1": {
+      "pelvis": -112,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 5,
+          "el": 95
+        },
+        "far": {
+          "sh": 5,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 75,
+          "knee": 100
+        },
+        "far": {
+          "hip": 75,
+          "knee": 100
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 10,
+      "y": -119
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 92,
+        "y": -80,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 80,
+        "y": -80,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -20,
+      "length": 90,
+      "top": -88,
+      "back": {
+        "x": -10,
+        "angle": 112,
+        "length": 150
+      }
+    },
+    {
+      "type": "roller",
+      "x": 92,
+      "y": -72,
+      "r": 11
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌中下部"
+  ],
+  "cue": "双脚勾稳滚轴仰卧在下斜凳上，肩胛后缩贴凳；小臂垂直地面把哑铃落到下胸两侧，再向中间合拢推起，顶端微屈肘停一拍，腰部贴凳不拱起。",
+  "mistake": {
+    "title": "肩膀前引，上背离开凳面",
+    "fix": "全程肩胛骨后缩下沉，推起时胸发力而不探肩，让上背始终平贴凳面。",
+    "basis": "来源资料常见错误：推起时肩膀前引，上背部没有平贴凳面。",
+    "level": 0.5,
+    "override": {
+      "thorax": 12,
+      "lumbar": 5
+    }
+  },
+  "observation": "主视频约 7 秒后为纯正侧面，人物头朝画面右（下斜低端），用镜像处理。双脚勾在凳子高端滚轴上、屈膝约 100 度，滚轴垫用泡沫轴器材近似绘制。共约 4 次，取一次：7.79 秒双臂伸直、哑铃在下胸正上方，8.71 秒哑铃落到下胸两侧、肘约 95 度，9.62 秒推回顶端。角度为人工示意拟合。"
+}

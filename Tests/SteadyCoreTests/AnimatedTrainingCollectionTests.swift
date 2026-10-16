@@ -8,7 +8,7 @@ struct AnimatedTrainingCollectionTests {
             AnimatedTrainingCatalog.armsExtraCandidate(), AnimatedTrainingCatalog.chestCandidate(),
             AnimatedTrainingCatalog.backCandidate(), AnimatedTrainingCatalog.abdominalCandidate(),
             AnimatedTrainingCatalog.legsCandidate(), AnimatedTrainingCatalog.functionalCandidate()]
-        #expect(collections.map { $0.collection.lessons.count }.reduce(0, +) == 83)
+        #expect(collections.map { $0.collection.lessons.count }.reduce(0, +) == 90)
         let canonical = try Data(contentsOf: collections[0].resourceDirectory.appendingPathComponent(AnimatedTrainingCatalog.anatomyEngine))
         let engine = try #require(String(data: canonical, encoding: .utf8))
         #expect(engine.contains("SteadyLessonRenderedSamples"))
@@ -55,7 +55,7 @@ struct AnimatedTrainingCollectionTests {
 
     @Test func legsPreviewCrossingAndRejectOutOfStepPreview() throws {
         let candidate = try AnimatedTrainingCatalog.legsCandidate()
-        #expect(candidate.collection.lessons.count == 13)
+        #expect(candidate.collection.lessons.count == 20)
         #expect(candidate.runtime == .bundled)
         let cross = try #require(candidate.animations["legs-90-90-leg-extension"])
         #expect(abs(cross.steps[1].previewSeconds - 7.0 / 3) < 0.000001)

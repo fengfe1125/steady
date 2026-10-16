@@ -54,6 +54,14 @@ public protocol CoachService: Sendable {
     func report(for summary: DailySummary, history: [DailySummary]) async throws -> HealthReport
     func answer(question: String, summary: DailySummary?, messages: [ChatMessage]) -> AsyncThrowingStream<CoachEvent, Error>
     func planDraft(preferences: UserPreferences) async throws -> TrainingPlan
+    func planDraft(preferences: UserPreferences, programKind: String?) async throws -> TrainingPlan
+}
+
+public extension CoachService {
+    func planDraft(preferences: UserPreferences, programKind: String?) async throws -> TrainingPlan {
+        guard programKind == nil else { throw ServiceError.notConfigured }
+        return try await planDraft(preferences: preferences)
+    }
 }
 
 @MainActor public protocol PlanRepository {
@@ -79,6 +87,7 @@ public struct DemoSyncService: SyncService {
 }
 
 public struct SyncDetails: Sendable {
+    public var workoutSyncAvailable: Bool? = nil
     public var lastSync: Date?
     public var pending: Int
     public init(lastSync: Date? = nil, pending: Int = 0) { self.lastSync = lastSync; self.pending = pending }

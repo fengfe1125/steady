@@ -1,0 +1,159 @@
+{
+  "sourceID": "6010e67e627efb40894148e3",
+  "sourceName": "俯身哑铃后伸",
+  "part": "back",
+  "title": "俯身哑铃后伸",
+  "variant": "肘几乎不弯，两臂贴身向髋后伸直 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.65,
+    1.1,
+    1.55,
+    1.93,
+    2.55,
+    3.23
+  ],
+  "levels": [
+    0,
+    0.38,
+    0.78,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 68,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": -6,
+      "arms": {
+        "near": {
+          "sh": 66,
+          "el": 14,
+          "f": 1
+        },
+        "far": {
+          "sh": 70,
+          "el": 16,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 58,
+          "knee": 18
+        },
+        "far": {
+          "hip": 54,
+          "knee": 22
+        }
+      }
+    },
+    "1": {
+      "pelvis": 68,
+      "lumbar": 0,
+      "thorax": -6,
+      "neck": -14,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": -18,
+          "el": 16,
+          "f": 1
+        },
+        "far": {
+          "sh": -14,
+          "el": 18,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 58,
+          "knee": 18
+        },
+        "far": {
+          "hip": 54,
+          "knee": 22
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -4,
+      "y": -172
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 24,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 4,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "trap.mid",
+      "rhomboid"
+    ],
+    "secondary": [
+      "deltoid.post",
+      "erectors"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "上背部",
+    "中背部"
+  ],
+  "cue": "屈髋后头仍高于髋。两臂微屈垂下，再整条胳膊贴着身侧向后伸，肘的弯度不要变大，到髋后停一下。",
+  "mistake": {
+    "title": "后伸时背拱起来，胳膊向外甩",
+    "fix": "少折一点髋，后背拉直；胳膊贴着身侧往后走，不要向两边打开。",
+    "basis": "资料写后伸时容易弓背，也容易把胳膊向外展开。最高点用拱背加上臂缩短来示意。",
+    "level": 1,
+    "override": {
+      "lumbar": 16,
+      "thorax": 12,
+      "neck": 4,
+      "arms": {
+        "near": {
+          "f": 0.5,
+          "el": 40
+        },
+        "far": {
+          "f": 0.5,
+          "el": 42
+        }
+      }
+    }
+  },
+  "observation": "侧面，头朝右。0.65 秒手臂垂在身下，1.93 秒几乎伸直地收到髋后，3.23 秒放下。肘的弯度前后差不多，这是它和划船的差别。文字写约九十度；画面头仍是最高点，骨盆用六十八度，比水平略高，没有超过七十五度。拳心相对，侧面用朝向镜头的铃来表示。"
+}

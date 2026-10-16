@@ -1,0 +1,140 @@
+{
+  "sourceID": "5a0138861e8274673a17dcee",
+  "sourceName": "跪姿窄距俯卧撑",
+  "part": "chest",
+  "title": "跪姿窄距俯卧撑",
+  "variant": "跪姿 + 手距略窄于肩 + 匀速发力 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.27,
+    0.65,
+    0.95,
+    1.15,
+    1.75,
+    2.4
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 63,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 66,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 71,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "跪撑在垫上，两手放在胸口下方、间距比肩窄一些，身体从肩到膝是一条直线；屈臂下沉到胸口有拉长感，再伸臂把自己推回起点。",
+  "mistake": {
+    "title": "塌腰撅臀，支撑线散掉",
+    "fix": "全程收住腹部与臀部，让躯干保持一条直线；肘部保持微屈，不要在最高点把关节顶死。",
+    "basis": "源资料把伸臂时肘部顶死与下落途中腰背失控并列成常见问题；本条选后一项，并保留肘部微屈的要求，细节来自通用训练常识。",
+    "level": 0.45,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，机位在人物的前上方，俯视细节，画面上同时能看到后脑、双手与身后翘起的鞋底。0.27 秒与 2.40 秒双臂伸直、胸口抬起是最高点，0.80 至 1.33 秒胸口明显下沉、肘向后弯是最低点，动作节奏约两秒一次。头脸朝向在这个机位看不清楚，镜像按同系列跪姿俯卧撑（头朝画面左）取 true。选 0.27→2.40 秒这一次：1.15 秒到最低点。窄握的间距可以从画面上量到，确认略窄于肩。"
+}

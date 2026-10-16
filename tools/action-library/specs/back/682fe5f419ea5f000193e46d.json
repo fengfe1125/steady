@@ -1,0 +1,152 @@
+{
+  "sourceID": "682fe5f419ea5f000193e46d",
+  "sourceName": "仰卧瑞士球胸部伸展",
+  "part": "back",
+  "title": "仰卧瑞士球胸部伸展",
+  "variant": "侧面 · 上背靠球 · 两臂放在头上方",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.4,
+    1.7,
+    3.0,
+    4.2,
+    6.0,
+    7.5
+  ],
+  "levels": [
+    0,
+    0.45,
+    0.8,
+    1,
+    0.7,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -86,
+      "lumbar": -6,
+      "thorax": -8,
+      "neck": -18,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": 150,
+          "el": 8
+        },
+        "far": {
+          "sh": 150,
+          "el": 8
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 80,
+          "knee": 95
+        },
+        "far": {
+          "hip": 80,
+          "knee": 95
+        }
+      }
+    },
+    "1": {
+      "pelvis": -94,
+      "lumbar": -12,
+      "thorax": -12,
+      "neck": -24,
+      "head": -8,
+      "arms": {
+        "near": {
+          "sh": 164,
+          "el": 4
+        },
+        "far": {
+          "sh": 164,
+          "el": 4
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 88,
+          "knee": 90
+        },
+        "far": {
+          "hip": 88,
+          "knee": 90
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 20,
+      "y": -118
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 130,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 116,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -20,
+      "length": 240
+    },
+    {
+      "type": "ball",
+      "x": -70,
+      "r": 52
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "erectors"
+    ],
+    "secondary": [
+      "pec.lower",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸肌上束",
+    "竖脊肌"
+  ],
+  "cue": "上背靠在球上，屈膝踩实。两臂伸直放到头的后上方，再放松地让胸口打开一点，头可以轻轻后仰，呼吸保持顺畅。",
+  "mistake": {
+    "title": "手臂弯着，胸口没有打开",
+    "fix": "肘伸直，让手臂继续往头的后方走，胸口跟着松开，不要把肩往前兜。",
+    "basis": "这是拉伸，常见问题是手臂没伸直、胸椎没有后伸。侧面把肘弯和含胸画出来。",
+    "level": 1,
+    "override": {
+      "thorax": 10,
+      "lumbar": 6,
+      "arms": {
+        "near": {
+          "sh": 118,
+          "el": 72
+        },
+        "far": {
+          "sh": 118,
+          "el": 72
+        }
+      }
+    }
+  },
+  "observation": "侧面，头在画面左侧，屈膝，脚掌踩在垫上。上背搭在球上，手臂从头顶方向伸出去。整段大约 8 秒，姿势变化不大，像是慢慢沉进拉伸再停住。取从较平到胸口更打开的这一下。球托的是上背，不是做卧推那种髋抬平。"
+}

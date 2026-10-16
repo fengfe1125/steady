@@ -1,0 +1,159 @@
+{
+  "sourceID": "6010e85cbb7648290a1d05d9",
+  "sourceName": "俯身哑铃反手划船",
+  "part": "back",
+  "title": "俯身哑铃反手划船",
+  "variant": "反手、肘贴肋骨，从悬垂拉到大腿根 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.6,
+    1.05,
+    1.5,
+    1.8,
+    2.4,
+    3.0
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.82,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 52,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": 54,
+          "el": 8,
+          "f": 1
+        },
+        "far": {
+          "sh": 58,
+          "el": 10,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 46,
+          "knee": 16
+        },
+        "far": {
+          "hip": 44,
+          "knee": 18
+        }
+      }
+    },
+    "1": {
+      "pelvis": 52,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": -34,
+          "el": 114,
+          "f": 1
+        },
+        "far": {
+          "sh": -30,
+          "el": 110,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 46,
+          "knee": 16
+        },
+        "far": {
+          "hip": 44,
+          "knee": 18
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 4,
+      "y": -178
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 18,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -2,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "trap.mid",
+      "rhomboid"
+    ],
+    "secondary": [
+      "biceps",
+      "trap.lower"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "上背部",
+    "中背部"
+  ],
+  "cue": "膝软着，上身折到头仍明显高于髋。反手把铃收到大腿根旁边，肘贴住身侧，停一下再放回悬垂。",
+  "mistake": {
+    "title": "背拱圆了，两肘也向外撇",
+    "fix": "少折一点髋，后背拉直；上拉时两肘贴住肋骨，不要把铃甩起来。",
+    "basis": "资料点名弓腰和肘没有贴住身体。最高点把背弯圆，并把上臂缩短成向外翻。",
+    "level": 1,
+    "override": {
+      "lumbar": 16,
+      "thorax": 10,
+      "neck": 6,
+      "arms": {
+        "near": {
+          "el": 70,
+          "f": 0.55
+        },
+        "far": {
+          "el": 68,
+          "f": 0.55
+        }
+      }
+    }
+  },
+  "observation": "侧面，头朝右，头是最高点。文字写俯身约九十度，画面更接近四十五度屈髋，所以骨盆用五十二度，没有画成水平。取 0.6 秒手臂垂下、1.8 秒肘贴身收到大腿根、3.0 秒回到垂下。反手在侧面看不出掌心，靠肘贴着身体、拉到髋旁来区分。双脚前后只错开一点。没有凳子。"
+}

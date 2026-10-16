@@ -1,0 +1,194 @@
+{
+  "sourceID": "643e0b77cce11000010e708b",
+  "sourceName": "俯撑右侧顶峰收缩哑铃划船",
+  "part": "back",
+  "title": "俯撑右侧顶峰收缩哑铃划船",
+  "variant": "单臂贴身收到髋旁，顶端停约两秒 · 前后脚相距不大 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    5.21,
+    6.7,
+    8.19,
+    9.69,
+    10.5,
+    11.17
+  ],
+  "levels": [
+    0,
+    0.5,
+    1,
+    0.95,
+    0.35,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    },
+    "0.55": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 4,
+          "el": 70,
+          "f": 1
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    },
+    "1": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -30,
+          "el": 100,
+          "f": 1
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 18,
+      "y": -168
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 104,
+        "y": -100,
+        "flat": true,
+        "bend": 1
+      }
+    },
+    "ankle": {
+      "near": {
+        "x": 14,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -14,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "hands": {
+    "far": "open"
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": 94,
+      "length": 72,
+      "top": -100,
+      "back": {
+        "x": 160,
+        "angle": -4,
+        "length": 105
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid",
+      "trap.mid"
+    ],
+    "secondary": [
+      "biceps",
+      "teres",
+      "trap.lower"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "中背部"
+  ],
+  "cue": "肘贴着体侧向后画一半圆，铃收到髋旁后再停两秒。放下时沿原路回去，手到身下仍微微屈肘。",
+  "mistake": {
+    "title": "拉起时腰背先拱了",
+    "fix": "髋别往下掉，胸口方向保持不变，只让肘绕向髋侧。",
+    "basis": "资料里弓背会把压力堆到下背，这里在上拉中途把躯干弯圆。",
+    "level": 0.6,
+    "override": {
+      "lumbar": 16,
+      "thorax": 8
+    }
+  },
+  "observation": "侧面，头朝右。2.23 秒铃已在髋旁，不能当起点。改取 5.21 秒垂臂、8.19 秒到髋旁并停到 9.69 秒、11.17 秒放下。前后脚只错开约二十八个单位。躯干比水平高约二十五度，撑凳手臂在肩下。贴身收肘，上臂不缩短。"
+}

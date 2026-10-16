@@ -1,0 +1,141 @@
+{
+  "sourceID": "595f4f21ff247f33e297eb8e",
+  "sourceName": "交替单脚支撑俯卧撑",
+  "part": "chest",
+  "title": "交替单脚支撑俯卧撑",
+  "variant": "标准距 · 下落时单腿向体侧伸展、只有一脚支撑 · 左右交替 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    1.68,
+    2.1,
+    2.6,
+    2.79,
+    3.3,
+    3.91
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 75,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": -18,
+          "knee": 14,
+          "ankle": 10
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "abs",
+      "obliques"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌",
+    "肱三头肌"
+  ],
+  "cue": "双手略宽于肩、肘部内收，下落的同时把一条腿向体侧伸直抬起，只留一脚撑地，胸口贴近垫面后夹胸推起并收回腿。",
+  "mistake": {
+    "title": "身体没绷直，塌腰或臀部撅得过高",
+    "fix": "先收紧腹部和臀部，把身体锁成一个整体再下落；宁可缩短幅度，也不要让腰胯先掉下去。",
+    "basis": "依据源 detail.description：常见错误是身体没有绷成一个平面，腰部下塌或者臀部抬得过高。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512 正方形，机位在人物侧前方、距离较远，人物头朝画面左侧（mirror 取 true）；后半段镜头拉近，能看到腿部细节。垫子是深灰绿色长条。1.68 秒双手撑直、身体抬起为最高点，2.79 秒胸口贴近垫面为最低点，3.91 秒又回到最高点，取这一整次重复（全片约 6 次）。最低点时可清楚看到：一条腿伸直向体侧张开、离地，只剩另一只脚的鞋尖压在垫上；回到最高点时两脚又并拢踩垫。两只手全程撑在肩下同一位置不动。主要运动方向仍在前后方向，因此按侧面示范；单腿外展在纯侧面视角下只能表现为该腿抬离支撑面。"
+}

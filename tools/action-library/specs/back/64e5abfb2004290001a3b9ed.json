@@ -1,0 +1,225 @@
+{
+  "sourceID": "64e5abfb2004290001a3b9ed",
+  "sourceName": "俯卧撑 + 哑铃交替划船",
+  "part": "back",
+  "title": "俯卧撑 + 哑铃交替划船",
+  "variant": "先俯卧撑再左右轮流划船 · 脚尖撑地 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.76,
+    1.55,
+    2.27,
+    5.3,
+    6.05,
+    6.81
+  ],
+  "levels": [
+    0,
+    0.18,
+    0.35,
+    1,
+    0.65,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 82,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 0,
+          "el": 108
+        },
+        "far": {
+          "sh": 6,
+          "el": 102
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -8
+        },
+        "far": {
+          "hip": 2,
+          "knee": 2,
+          "ankle": -16
+        }
+      }
+    },
+    "0.18": {
+      "pelvis": 74,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 32,
+          "el": 76
+        },
+        "far": {
+          "sh": 38,
+          "el": 70
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -22
+        },
+        "far": {
+          "hip": 2,
+          "knee": 2,
+          "ankle": -30
+        }
+      }
+    },
+    "0.35": {
+      "pelvis": 68,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 20
+        },
+        "far": {
+          "sh": 70,
+          "el": 14
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -36
+        },
+        "far": {
+          "hip": 2,
+          "knee": 2,
+          "ankle": -42
+        }
+      }
+    },
+    "0.65": {
+      "pelvis": 68,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -8,
+          "el": 108
+        },
+        "far": {
+          "sh": 70,
+          "el": 14
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -36
+        },
+        "far": {
+          "hip": 2,
+          "knee": 2,
+          "ankle": -42
+        }
+      }
+    },
+    "1": {
+      "pelvis": 68,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 20
+        },
+        "far": {
+          "sh": -12,
+          "el": 112
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -36
+        },
+        "far": {
+          "hip": 2,
+          "knee": 2,
+          "ankle": -42
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -155,
+      "y": -5
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -200,
+      "length": 420
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "lats"
+    ],
+    "secondary": [
+      "triceps.long",
+      "rhomboid",
+      "deltoid.post"
+    ]
+  },
+  "primaryNames": [
+    "胸肌",
+    "背阔肌"
+  ],
+  "cue": "双手撑在哑铃上先屈肘做一次俯卧撑，撑稳后再左右轮流把铃收到髋旁，髋不要跟着转。",
+  "mistake": {
+    "title": "划船时髋和胸跟着转开",
+    "fix": "支撑那只手把肩压住，肚子收紧，只有拉铃的手臂在动。",
+    "basis": "资料指出身体会跟着上拉的手臂旋转，这里把髋抬起、胸椎转开。",
+    "level": 0.82,
+    "override": {
+      "pelvis": 54,
+      "lumbar": -12,
+      "thorax": 10
+    }
+  },
+  "observation": "侧面，头朝右，两脚尖撑在垫上，脚跟抬起，腿是直的。双手各握一只哑铃，铃片落在垫面上，不是悬空。0.76 秒是俯卧撑最低点。2.27 秒手臂撑直。一侧先把铃收到髋旁，另一侧再拉，支撑的那只手仍按在自己的铃上。手会离开垫面，所以没有把两只手锁成接触点。哑铃就是 dumbbell，轴朝镜头。"
+}

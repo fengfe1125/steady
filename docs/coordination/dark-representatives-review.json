@@ -1,0 +1,146 @@
+{
+  "scope": "8 representative courses only; dark native three-mode snapshots and second-step assertions",
+  "tests": {
+    "executed": 8,
+    "failures": 0,
+    "seconds": 207.706,
+    "result": ".cache/build/training-dark-representatives.xcresult"
+  },
+  "visualReview": {
+    "contactSheets": 8,
+    "individualImages": [
+      "F022459E-1B9A-4A73-A957-28F5F94D5114.png",
+      "C3A2A6E8-BF7A-4CDC-A424-5DD29A125C8B.png"
+    ],
+    "findings": [
+      {
+        "topic": "legs",
+        "issue": "White mistake card inherits near-white body text; unreadable in dark mode. Motion green label/arrow has poor contrast.",
+        "status": "Returned to exclusive legs worker; not integrated."
+      }
+    ],
+    "limits": "Other seven contact sheets look broadly readable; not full-resolution typography acceptance, not full-course or continuous-animation acceptance."
+  },
+  "attachments": [
+    {
+      "name": "all-abs-supine-crunch-mistakes_0_9F929656-69A6-4FF0-AA98-19E4746C113D.png",
+      "file": "2ACF8FF0-AA56-4E0E-848F-66AE6141BE68.png",
+      "sha256": "5b893440a3c0503e26f6101e683016909ff80f007cc54c152e9e728877a9e39c"
+    },
+    {
+      "name": "all-abs-supine-crunch-detail_0_D5604DB3-7041-43B5-A706-0A20FD23A48A.png",
+      "file": "71BBD1D8-542D-4EBC-A509-8B89B5EF0585.png",
+      "sha256": "52dfb01572a058e4d1f8c88dac66356ea764c94d5b68698c9dc22253cb97f376"
+    },
+    {
+      "name": "all-abs-supine-crunch-motion_0_667518C1-3E88-4ECD-88AC-A131F2A1BC40.png",
+      "file": "DF504B71-95D1-4DC1-87B0-959BA627C9A7.png",
+      "sha256": "554f2d0a7cc04f98f8fbcd384b60e07e2b3639e0a597565bfbc114ca07d7e944"
+    },
+    {
+      "name": "all-arms-extra-lying-barbell-extension-mistakes_0_73EFAC45-2495-4D6F-B68C-4EA5F9478DD0.png",
+      "file": "F690A4B7-E7AA-438D-9269-F90084596674.png",
+      "sha256": "e5b97df9e7f132adae4f962f36890890d33c084803574360d4c3e856eeb02cd1"
+    },
+    {
+      "name": "all-arms-extra-lying-barbell-extension-detail_0_84F456A7-7644-4C5D-9F47-DB9E584A4FC6.png",
+      "file": "4F6D4695-0204-4728-B577-A9777196234D.png",
+      "sha256": "0057b8d4f52c39648cb40b33bae876e71e68a2bbf597e5826d020a6274fa103d"
+    },
+    {
+      "name": "all-arms-extra-lying-barbell-extension-motion_0_5CB79F29-5F21-4986-BCF8-2B9F199C439E.png",
+      "file": "A1EB638F-F0B6-4EE5-BBFB-1122B5E4F559.png",
+      "sha256": "863074feabc5122bdaacaa6b18ebfc09081730e785a3d6f7e1f7a0a336c90a0e"
+    },
+    {
+      "name": "all-arms-warmup-triceps-mistakes_0_BCCDA53A-A43A-4F46-B4E0-1F71476A98E3.png",
+      "file": "23394977-9EBF-4146-B053-B0D527060077.png",
+      "sha256": "42835f9988c0d586e9a4a4be1df336556c455553cb6cd4ea1f744554894e7855"
+    },
+    {
+      "name": "all-arms-warmup-triceps-detail_0_05706EF9-4A3C-4F46-BE18-1E2ED68F58FD.png",
+      "file": "60734C0E-F346-4618-BAE1-A80AFCDEEEEB.png",
+      "sha256": "32acc2233dfe598cc610c730de4934636e1aff60a127912781f1e71ab2c1a7b7"
+    },
+    {
+      "name": "all-arms-warmup-triceps-motion_0_BD3B2B3A-5F1B-4456-BDFD-2B0A1EC81A6A.png",
+      "file": "D2F61A50-0E63-4869-B7BF-1A167E5984A6.png",
+      "sha256": "70fc49f8650c2a44869c03fb69ec4ea93456e149ff355681716c981e8e7dc872"
+    },
+    {
+      "name": "all-back-one-arm-row-mistakes_0_75B21A8A-7A29-42E1-AC08-BB1EF1566B07.png",
+      "file": "A50CC01A-3C64-4F2D-BCFE-BABC6CDBACF2.png",
+      "sha256": "7e0053f4745877e84b3b922cd9e235adf7a7b258e791990a4bd35d042dd2b911"
+    },
+    {
+      "name": "all-back-one-arm-row-detail_0_6A6FB309-E5F7-4DCA-A078-64A1EB37E44A.png",
+      "file": "78031C2B-142F-404B-B0CC-B4F5949CD6F7.png",
+      "sha256": "c4b5aca27131f44b608a25fd62317881eae6fde98ec50bc134322662daae5c51"
+    },
+    {
+      "name": "all-back-one-arm-row-motion_0_D89570C2-93EC-42D6-A61A-CBE8ABCD1B08.png",
+      "file": "37C7D30A-36DC-443B-BCB6-3A9E51EDFE36.png",
+      "sha256": "578f4d5ed9cc63cf474e6249211298defaa5f237f3e0942acf4793f4fb4d7190"
+    },
+    {
+      "name": "all-chest-warmup-roller-y-mistakes_0_4518B438-67C6-444B-A049-EEEBF5715403.png",
+      "file": "F8FD6C9D-914F-42A5-8CDA-488C8BD2DCF8.png",
+      "sha256": "9f1e4fb173731904a32b671d9b1f3fcf7e6aa5a137124621140e8835ffe768ac"
+    },
+    {
+      "name": "all-chest-warmup-roller-y-detail_0_FCA57C77-8DA7-4D72-949E-16A2D399BBAA.png",
+      "file": "F9905C7D-A7DF-47B2-92EA-0A49B42A032E.png",
+      "sha256": "eacd2e6b6800ff63d55998efc25215851b2525d2588f6cd21fa2c63a99cb08eb"
+    },
+    {
+      "name": "all-chest-warmup-roller-y-motion_0_DE017E64-D5B7-4B69-A33D-1B9935274665.png",
+      "file": "F4A7CE07-426C-44F2-A889-06C24549A11A.png",
+      "sha256": "ef6fbc101b8745f9d9a5918d1cd60d98bc8f20ac9bfab7b4ddfcf30b8048a998"
+    },
+    {
+      "name": "all-functional-cooldown-calf-stretch-mistakes_0_2810D82A-6553-4ADC-9BC9-7AE3EB20679B.png",
+      "file": "54066779-A968-4089-8898-6640E01DE022.png",
+      "sha256": "53266cb836ce127886a196f5c6532145b213c02bc9fa6a0efe42e1a63b1c654f"
+    },
+    {
+      "name": "all-functional-cooldown-calf-stretch-detail_0_52351F42-1BD0-4566-AF4E-44C74A3B30F5.png",
+      "file": "1577F426-10F1-4B13-922D-BC5D125A1558.png",
+      "sha256": "757eeb8e9c0e3e1e21a89844fcbd0696a61f0aa7b4e89ff6638cf0d705c9c421"
+    },
+    {
+      "name": "all-functional-cooldown-calf-stretch-motion_0_8F17FFD3-C014-406D-A3F5-B77FF6B33325.png",
+      "file": "04C67B8D-1A8D-44BC-8275-E5B8BC49831A.png",
+      "sha256": "ac01cbc093d853077a7b252a99243a22a5608bf7537f4c0a667a421db41d400d"
+    },
+    {
+      "name": "all-legs-90-90-leg-extension-mistakes_0_EA8E62BF-B750-4DCD-AFC0-79FA395A4EDE.png",
+      "file": "F022459E-1B9A-4A73-A957-28F5F94D5114.png",
+      "sha256": "327cc48c1c6bcada003bc056597722fa2d455e33cba54d67ed14ccc50fb7ed55"
+    },
+    {
+      "name": "all-legs-90-90-leg-extension-detail_0_7AC942BB-2115-4B71-B01B-DA19B5B9DAB6.png",
+      "file": "34D4089A-92D6-4ED2-9EF1-66EF32D0FE02.png",
+      "sha256": "596ef5e6c2e9ee7325b09de45d499fea60d1a8a8694fde6d769cdfa24ca1041f"
+    },
+    {
+      "name": "all-legs-90-90-leg-extension-motion_0_B4DE2EB3-583F-4AB1-A3CC-0BEE7F72EE3E.png",
+      "file": "C3A2A6E8-BF7A-4CDC-A424-5DD29A125C8B.png",
+      "sha256": "04af59805473b7a6c694fc5d1d1ee4a14e2b0d8f79b2882543d3f7f8ef732634"
+    },
+    {
+      "name": "all-shoulders-dumbbell-press-mistakes_0_4C0A8452-B3C8-478F-BF63-4DE815F53785.png",
+      "file": "D27E48A9-DA7A-48A8-8991-6BB05FDA9A4D.png",
+      "sha256": "f31648be03afb1873e29e1a2d0cb3473faef0eae5355e7ea26b1204ad6c9c3f4"
+    },
+    {
+      "name": "all-shoulders-dumbbell-press-detail_0_2A4B1E14-2BCE-40AF-8691-A8374C6858DE.png",
+      "file": "0901EB95-52E1-417A-8E79-CDDA1E351FC2.png",
+      "sha256": "8e4fda50201af8fd1ba37db186bdfdfd2ed247badafc07e986815c3efd36d817"
+    },
+    {
+      "name": "all-shoulders-dumbbell-press-motion_0_5CEFBC8B-1EE0-4810-8846-8107A2866CAD.png",
+      "file": "9569E3CB-E5C2-4FC4-BD2A-8A988F074ED3.png",
+      "sha256": "9bcffeb53d96d5374d1bc23caf0fa23ddf655c460c5a3289e5c8bd603fcec22f"
+    }
+  ]
+}

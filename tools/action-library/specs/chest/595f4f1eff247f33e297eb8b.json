@@ -1,0 +1,141 @@
+{
+  "sourceID": "595f4f1eff247f33e297eb8b",
+  "sourceName": "弹力带下斜俯卧撑",
+  "part": "chest",
+  "title": "弹力带下斜俯卧撑",
+  "variant": "下斜 · 双脚垫高脚背搭凳 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    4.96,
+    5.8,
+    6.7,
+    7.25,
+    7.6,
+    8.02
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.55,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        }
+      }
+    },
+    "1": {
+      "pelvis": 97,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": -155,
+      "y": -95
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "bench",
+      "x": -230,
+      "length": 90,
+      "top": -88
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌"
+  ],
+  "cue": "弹力带绕过后背压在手心下，双脚脚背搭在凳面上、双手略宽于肩撑垫；收紧核心让身体成一条斜线，屈肘降到胸口接近垫面再推起，肘部伸直但不锁死。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "收紧腹部和臀部，让肩、髋、踝保持一条斜线；核心撑不住时改做平地俯卧撑。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 92,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 9.2 秒共 3 次，全程侧面机位，人物头朝画面左侧、脚背搭在右侧凳面上，双手撑垫略宽于肩，弹力带绕过背部。取后段一次：4.96 秒手臂撑直为顶点，7.25 秒降到胸口接近垫面，8.02 秒推回顶点。脚背与凳面、手掌与垫面为固定接触点。远处帧较模糊，帧间最低点时刻为估计；弹力带器材表无对应类型未画出。"
+}

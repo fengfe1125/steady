@@ -1,0 +1,33 @@
+{
+  "fileKey": "APLEefE2UxG4Vhd6W25zTl",
+  "page": "52:2",
+  "board": "78:151",
+  "url": "https://www.figma.com/design/APLEefE2UxG4Vhd6W25zTl?node-id=78-151",
+  "screens": {
+    "A": "78:158",
+    "B": "78:214",
+    "C": "78:262"
+  },
+  "screenshot": "docs/screenshots/plans-redesign/three-options.png",
+  "scope": "Design options only; native app unchanged. Preserve native TabView.",
+  "options": {
+    "A": "去除欢迎背景，留白分隔，独立主操作",
+    "B": "欢迎、空状态、按钮统一在一个完整淡绿卡片中",
+    "C": "小型手写页头与原生列表分组"
+  },
+  "validation": "Full board screenshot visually reviewed after auto-layout height correction. Noto Sans SC, SF Pro and Long Cang font families checked.",
+  "selected": "A",
+  "selectedTitle": "计划",
+  "selectedScreenshot": "docs/screenshots/plans-redesign/option-a-selected.png",
+  "implementation": {
+    "file": "Steady/Plans.swift",
+    "status": "implemented",
+    "screenshots": [
+      "docs/screenshots/plans-redesign/implemented-actual.png",
+      "docs/screenshots/plans-redesign/implemented-dark.png",
+      "docs/screenshots/plans-redesign/implemented-large.png"
+    ],
+    "verification": "Simulator and signed iPhone Debug builds passed; light, dark and accessibility size screenshots inspected. Native list, navigation and tab retained. No automated tap-through UI verification in this pass.",
+    "deviceInstall": "Installed and launched successfully on paired iPhone; bundle com.jiwo.steady, installation databaseSequenceNumber 4480. No uninstall or data cleanup performed."
+  }
+}

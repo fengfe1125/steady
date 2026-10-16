@@ -1,0 +1,140 @@
+{
+  "sourceID": "6492c1ca39a79b0001b8bc5e",
+  "sourceName": "跪姿离心爆发钻石俯卧撑",
+  "part": "chest",
+  "title": "跪姿离心爆发钻石俯卧撑",
+  "variant": "跪姿 + 双手拇指食指相触成菱形 · 慢放后爆发推起 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.49,
+    4.55,
+    5.65,
+    6.48,
+    7.05,
+    7.7
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 81,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 64,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 69,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -16,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -16,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower",
+      "triceps.long"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "serratus",
+      "triceps.lat"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "两手指尖相对在胸口下方摆成菱形，肘沿身体两侧向后弯；用三秒把胸口送到双手之间，再快速撑起回到最高点。",
+  "mistake": {
+    "title": "撅臀塌腰，胸口送不下去",
+    "fix": "先夹紧臀部把骨盆收住，让身体保持一条直线，再把胸口往双手之间送；下不去就先缩小幅度。",
+    "basis": "源资料把伸臂时肘部顶死与下落途中腰背失控并列成常见问题；本条选后一项做错误姿态，其余细节来自通用训练常识。",
+    "level": 0.6,
+    "override": {
+      "pelvis": 76,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，纯侧面机位，人物头朝画面左侧，mirror 取 true；膝与小腿压垫，双脚在身后交叉上翘。0.50 与 3.49 秒伸臂撑起为最高点，6.48 秒胸口几乎贴垫、双手并拢在胸口正下方、肘向后收，是最低点，8.47 秒已经推起。故选 3.49→7.70 秒这一次，下落约三秒、推起不足一秒。菱形手型在侧视角只能看出双手位于胸口正下方，指间形成的三角形无法从画面确认。"
+}

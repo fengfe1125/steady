@@ -1,0 +1,151 @@
+{
+  "sourceID": "689091505a170e00016dd5bf",
+  "sourceName": "壶铃平地卧推",
+  "part": "back",
+  "title": "壶铃平地卧推",
+  "variant": "仰卧屈膝，肘在身侧推到手臂接近竖直 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    0.56,
+    1.67,
+    2.3,
+    2.77,
+    3.89,
+    5
+  ],
+  "levels": [
+    0,
+    0.45,
+    0.86,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "x": 0,
+      "y": -36,
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": -6,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -38,
+          "el": 128,
+          "f": 0.58
+        },
+        "far": {
+          "sh": -36,
+          "el": 124,
+          "f": 0.58
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 102
+        },
+        "far": {
+          "hip": 56,
+          "knee": 106
+        }
+      }
+    },
+    "1": {
+      "x": 0,
+      "y": -36,
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": -8,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 82,
+          "el": 14,
+          "f": 1
+        },
+        "far": {
+          "sh": 84,
+          "el": 16,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 102
+        },
+        "far": {
+          "hip": 56,
+          "knee": 106
+        }
+      }
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 112,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 98,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -200,
+      "length": 380
+    },
+    {
+      "type": "kettlebell",
+      "hand": "near"
+    },
+    {
+      "type": "kettlebell",
+      "hand": "far"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "erectors",
+      "rhomboid",
+      "trap.mid"
+    ],
+    "secondary": [
+      "pec.upper",
+      "pec.lower",
+      "triceps.long",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "竖脊肌",
+    "菱形肌",
+    "斜方肌中束"
+  ],
+  "cue": "仰卧屈膝，肩胛收住贴垫。底部上臂斜向身侧、前臂竖直，再推到两臂接近垂直于地面，肘不要锁死。",
+  "mistake": {
+    "title": "推起时肩膀耸向耳朵",
+    "fix": "肩胛先沉到垫上再推，脖子不要往前顶，胸口保持打开。",
+    "basis": "资料把发力时耸肩列为问题。侧面用头前伸和上胸上抬来示意。",
+    "level": 1,
+    "override": {
+      "neck": 6,
+      "head": 12,
+      "thorax": 8
+    }
+  },
+  "observation": "侧面，头在画面右侧，所以镜像。屈膝约九十度，脚踩垫。0.56 秒上臂大约与地面成四十五度、肘在身侧，前臂接近竖直；2.77 秒两臂接近垂直，肘仍微屈；5.00 秒回到底部。文字写大臂与身体约七十度，画面更接近四十五度，按画面。壶铃垂在手下。资料主练写的是胸椎，肌群用竖脊肌、菱形肌和斜方肌中束来对应挺胸收肩胛。"
+}

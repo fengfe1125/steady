@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-04T17:22:17.552480+08:00",
+  "receipts": [
+    {
+      "slug": "arms",
+      "receipt": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/evidence/cleanup-final.json",
+      "receiptSHA256": "80dfe164e90bc4650ab4c98db4668e1866225dd6457a06185949c268324259e9",
+      "reportedStatus": "authorized_owned_rebuildable_cache_cleanup_complete_standby",
+      "deletionPathsVerifiedAbsent": 55,
+      "logicalBytesRemoved": 30948562,
+      "receiptIsFinal": true
+    },
+    {
+      "slug": "chest",
+      "receipt": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/evidence/cleanup-final.json",
+      "receiptSHA256": "dab427e651822befcf7472b5ed9a578f356799a3c00fe704f8cc1ccbc5142c2b",
+      "reportedStatus": "complete",
+      "deletionPathsVerifiedAbsent": 8,
+      "logicalBytesRemoved": 81495852,
+      "receiptIsFinal": true
+    },
+    {
+      "slug": "shoulders",
+      "receipt": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/evidence/cleanup-final.json",
+      "receiptSHA256": "c62dc41efde27af34e5b481d472dec2dcb14c99e3e3c7a4ddde88afd582beef5",
+      "reportedStatus": "scoped-cache-cleanup-complete",
+      "deletionPathsVerifiedAbsent": 132,
+      "logicalBytesRemoved": 93823734,
+      "receiptIsFinal": true
+    },
+    {
+      "slug": "abs",
+      "receipt": "/Volumes/Developer/Projects/steady/docs/verification/training-abs/evidence/cleanup-final.json",
+      "receiptSHA256": "fdbf45fc57bf1352c1002206d18b74663f25df4657ea3564c4e690fff8803c41",
+      "reportedStatus": "completed-authorized-local-cache-cleanup-standing-by",
+      "deletionPathsVerifiedAbsent": 110,
+      "logicalBytesRemoved": 81459181,
+      "receiptIsFinal": true
+    },
+    {
+      "slug": "arms-extra",
+      "receipt": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/evidence/cleanup-final.json",
+      "receiptSHA256": "7d1b3b2b8ed9adfded50aef357ef547c4160ffd7d8f2272801933107852796cb",
+      "reportedStatus": "complete-awaiting-further-instructions",
+      "deletionPathsVerifiedAbsent": 309,
+      "logicalBytesRemoved": 222139008,
+      "receiptIsFinal": true
+    },
+    {
+      "slug": "legs",
+      "receipt": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/cleanup-final.json",
+      "receiptSHA256": "02b494bcf824c68277ab22a2beeedcf6b9e1a397c5022b47293b3ad630057418",
+      "reportedStatus": "complete",
+      "deletionPathsVerifiedAbsent": 2,
+      "logicalBytesRemoved": 148290683,
+      "receiptIsFinal": true
+    },
+    {
+      "slug": "back",
+      "receipt": "/Volumes/Developer/Projects/steady/docs/verification/training-back/evidence/cleanup-final.json",
+      "receiptSHA256": "4139638c01874186da7b42ca12dd5544403b23f4054d892fd98a06e003205e4d",
+      "reportedStatus": "receipt-present",
+      "deletionPathsVerifiedAbsent": 3,
+      "logicalBytesRemoved": 163597619,
+      "receiptIsFinal": true
+    },
+    {
+      "slug": "functional",
+      "receipt": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/cleanup-final.json",
+      "receiptSHA256": "dc7e2cc67629dbc470b07335d4cc5bb0b15149195f1a2bee34bc0e429ada34c4",
+      "reportedStatus": "completed_waiting_for_further_instruction",
+      "deletionPathsVerifiedAbsent": 2,
+      "logicalBytesRemoved": 193700164,
+      "receiptIsFinal": true
+    }
+  ],
+  "topicLogicalBytesRemovedVerified": 1015454803,
+  "coordinatorLogicalBytesRemoved": 112303735,
+  "runtimeResourceFilesSHA256Verified": 113,
+  "pendingTopics": [],
+  "pendingDocumentation": [],
+  "completedAll": true,
+  "totalLogicalBytesRemoved": 1127758538
+}

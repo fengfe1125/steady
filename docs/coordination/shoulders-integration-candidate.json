@@ -1,0 +1,78 @@
+[
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/content/tanchengyi-shoulders.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json",
+    "sha256": "b81e45e5986bfc840a05f99b4e457bc447c94f0477c40fa0834da7a74f974c1b"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-lightCardio.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-lightCardio.html",
+    "sha256": "d34be24af18e86b9d71c8a9c1d7c18445d66e8ef1020ad6d8de6c56463bee40a"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-bandPassThrough.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-bandPassThrough.html",
+    "sha256": "2ed95435b6d333da95f279cf2916b9ebea40581ad036e5cf3b88871b8dbc374f",
+    "previousSHA256": "81acb0d062b97900d3cab65dff69e709780198515eba046858ba986ccd942584",
+    "revisionNote": "SHN-02/03/04 layout revision; native regression pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-trxY.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-trxY.html",
+    "sha256": "4e5abb8a9d8a0ee7c62fb61185fe08a8de40e3286ccaf2f08de0af86cd9f17e7"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-proneScapularLift.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-proneScapularLift.html",
+    "sha256": "82e51a69605c9b2df352a83dba47738cc38051e2b15b7820f88dd7a0c899c5c1",
+    "previousSHA256": "b0fbcf6667a2459e52c7fa9e393486334894ed6ef447133efc0d7ceab151f6ac",
+    "revisionNote": "SHN-02/03/04 layout revision; native regression pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-trxW.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-trxW.html",
+    "sha256": "24e219d37b6a59bf1a145b1e4e21fdb10cb004bff83aa1bb6dfd2ec8998bc732"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-bentOverExtension.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-bentOverExtension.html",
+    "sha256": "1320b12ae19b1a4f07205900c77ba3f5af1a26c40680ab10a00dd5a636109a04"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/evidence/final-acceptance/patch-candidate/shoulders-seatedReverseFly.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-seatedReverseFly.html",
+    "sha256": "277ac41293ccb1625f9b674ec9f0a9cc5220e0901030b2c3469fd75708e300e9",
+    "revisionNote": "Final scoped repair; batch 2 native six tests passed; owner viewed motion PNG at second step."
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-seatedPress.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-seatedPress.html",
+    "sha256": "9ce540b902f1f9868251049490bd11f10dfb4baf2e058dd4f20c2737564c8361",
+    "previousSHA256": "0e3d05f97efa99a4c86bd9a5644c5edbc1e17ccaeacc153d71e7825a294ed4e4",
+    "revisionNote": "SHN-02/03/04 layout revision; native regression pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-seatedSinglePress.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-seatedSinglePress.html",
+    "sha256": "b51808c49cfb63104aa66838e65d6285713cbee1e612028a8b8c42c3e58ac3ec"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-lateralRaise.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-lateralRaise.html",
+    "sha256": "055445c9fbece6ae55fa120b96e316ace9bcb4795acc83bcc49e00ddf704765a"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-frontRaise.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-frontRaise.html",
+    "sha256": "b15368051fc9685f6b7ed8c9ae67beb835ebd2bd729661f969b3082cf0ec0d79"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/animations/shoulders-animations.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-animations.json",
+    "sourceSHA256": "20a0365e5e97a3af216c8f1e19177f96c7d5b18fdfd90dd5f5706fc007b40e57",
+    "sha256": "621a77336ecdabf1956f89d37dd2ddde3a7f5e7e37d83a454ce2d45190beee96",
+    "normalization": "Add .html, seconds declaration and exact per-lesson timing from verified runtime-step harness; lesson steps/evidence unchanged",
+    "explanationsSourceSHA256": "4a95cf3a91a09a336642bdbc0061aa5aa6c5ddeb916e9f47db9d8c2afcafb6b9",
+    "normalizationNote": "Preserve candidate timing/view metadata; add original panel captions/key instructions as native detailExplanation and mistakeExplanation."
+  }
+]

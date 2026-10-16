@@ -1,0 +1,103 @@
+[
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/content/tanchengyi-functional-lower-limb.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json",
+    "sha256": "391c61090f8cfc2bfb2a64197fce633c993019ab3765f37a77194cc9c79f481b",
+    "sourceSHA256": "5a5c35476794734deac43d426a6aff3dc0102fc1e0983b12c960e5b3568c45b0",
+    "normalization": "Three reviewed rotation text replacements; proposal and source review retained in coordination"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-warmup-frog.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-warmup-frog.html",
+    "sha256": "86fe764b2f8c32103cce5d135edd6b68c792de57dcc290e0cb9299975f010e9a"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-warmup-supported-frog.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-warmup-supported-frog.html",
+    "sha256": "effa372e07b733f18abf3f3ee26870b604ba4144e6639f3f50f72b983c6cef5f"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-warmup-lunge-control.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-warmup-lunge-control.html",
+    "sha256": "9ecf80e18bf1e15b3098254496e2d54bbfa2ceee54e64e495d4176e336c18f9e"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-warmup-supported-rotation.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-warmup-supported-rotation.html",
+    "sha256": "0c2493467a275cffa06ea00c75805ed39304ebe91041b01831e4301864fce4fb"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/final-acceptance/repair-v1/functional-single-leg-hip-thrust.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-single-leg-hip-thrust.html",
+    "sha256": "8dfc8addc6b854abf1028a0945a1ed99a67893b4416f6029e67fc1009f0ab385",
+    "revisionNote": "final-acceptance scoped repair; coordinator reviewed; native targeted checks pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/coordination/final-caption-resources/functional-dumbbell-lunge-press.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-dumbbell-lunge-press.html",
+    "sha256": "a12e8c0bcd3e712a01395b92213d51a55154c0660d67153566770bf950b3d146",
+    "revisionNote": "Owner final lunge-press whole-cycle caption consistency fix; geometry unchanged"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-seated-dumbbell-press.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-seated-dumbbell-press.html",
+    "sha256": "9ae8840d66a9c0016fb0c2f71aa681f51f8628ebcd331a8600d8d173feff5731"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-dumbbell-romanian-deadlift.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-dumbbell-romanian-deadlift.html",
+    "sha256": "cf13c5c4b20968bee7d1dd815072538d50734fd9044ce98588622e1cfd471127"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-alternating-lunge.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-alternating-lunge.html",
+    "sha256": "fb600107226a9199194604cd9653c5eb39ae4021260cd7e55b3c06ade82208d4"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-cooldown-walk.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-cooldown-walk.html",
+    "sha256": "953c4123ef68cae2bc7b1a88c025d0e0ec049692f3686db069fd7882fc56d63d"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-cooldown-calf-stretch.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-cooldown-calf-stretch.html",
+    "sha256": "edddcd996a243f5b6096ef8eb4399050dbd364d92b592727a1b6527b4a9bcb13"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-cooldown-hamstring-stretch.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-cooldown-hamstring-stretch.html",
+    "sha256": "6991945af28f3addfd76da23ddb511b92fe12be694e3feb4ab0e81777b29e0f1"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/coordination/final-caption-resources/functional-renderer.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-renderer.js",
+    "sha256": "99b00057525400815eaa4ddbf78abb598554a908de212cd08817e0585d078616",
+    "revisionNote": "Owner final lunge-press whole-cycle caption consistency fix; geometry unchanged"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-runtime.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-runtime.js",
+    "sha256": "414c681dcd28de5df63599fed3f8ae7470ce93815ddcdf542c31fbf5996d4475"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/final-acceptance/FN-TEXT-01/functional-animations.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-animations.json",
+    "sourceSHA256": "e2dce69df214260879303411745bf0695562b78aa4c50442427193fc69a373ed",
+    "sha256": "bab46713cfdece7b082178d1592c1089965bef6d28913b8909e30fb5b0674a03",
+    "normalization": "collectionID/timeUnit/timing/documentLayout preserved; rotation steps from revision; 08:41 caption independently corrected",
+    "panelDescriptionsSource": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-panel-descriptions.json",
+    "panelDescriptionsSHA256": "359634171872b03866cc55c6226b9a6e36088184778e36cb747ab9a3fadba3a1",
+    "revisionNote": "FN-TEXT-01 four instruction strings only; native step verification pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-teaching-panels.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-teaching-panels.js",
+    "sha256": "9a7083c45a59bbc7d7d5757b72cdc7f6b7bc63ed286dceef5899851ffb4ea4b3"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-teaching-panels.css",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-teaching-panels.css",
+    "sha256": "3f56a7f9a2a76fc3af7dd5db173413c77917d2c7e3ca5769846a1995fabb0a8b",
+    "revisionNote": "Single CSS marker suppression; native verification pending"
+  }
+]

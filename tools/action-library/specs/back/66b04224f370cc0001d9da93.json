@@ -1,0 +1,149 @@
+{
+  "sourceID": "66b04224f370cc0001d9da93",
+  "sourceName": "壶铃俯身交替划船",
+  "part": "back",
+  "title": "壶铃俯身交替划船",
+  "variant": "屈髋约五十度，一次只拉一侧，肘贴身 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.6,
+    1.15,
+    1.55,
+    1.79,
+    2.35,
+    2.99
+  ],
+  "levels": [
+    0,
+    0.42,
+    0.86,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 54,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": 58,
+          "el": 10,
+          "f": 1
+        },
+        "far": {
+          "sh": 62,
+          "el": 12,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 48,
+          "knee": 20
+        },
+        "far": {
+          "hip": 44,
+          "knee": 24
+        }
+      }
+    },
+    "1": {
+      "pelvis": 54,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": -14,
+          "el": 110,
+          "f": 1
+        },
+        "far": {
+          "sh": 62,
+          "el": 12,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 48,
+          "knee": 20
+        },
+        "far": {
+          "hip": 44,
+          "knee": 24
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 0,
+      "y": -174
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 22,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 4,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "kettlebell",
+      "hand": "near"
+    },
+    {
+      "type": "kettlebell",
+      "hand": "far"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats"
+    ],
+    "secondary": [
+      "rhomboid",
+      "biceps",
+      "erectors"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌"
+  ],
+  "cue": "屈髋，头仍明显高于髋，两只壶铃先垂在身前。一次只把一侧收到髋旁，肘贴住身体，另一只留在下面，再换边。",
+  "mistake": {
+    "title": "放下时肩膀没有向前送",
+    "fix": "放到底时让肩胛松开、手臂垂直，再从背部把肘拉上来。",
+    "basis": "资料写最低点肩没有前引。起点把上胸和头抬起来、手臂提前弯一下来示意。",
+    "level": 0.08,
+    "override": {
+      "neck": 8,
+      "head": 10,
+      "thorax": 8,
+      "arms": {
+        "near": {
+          "el": 36
+        }
+      }
+    }
+  },
+  "observation": "侧面，人朝右。躯干大约四十五到五十度，头明显高于髋，不是平行于地面，骨盆五十四度。0.60 秒两臂垂下，1.79 秒近侧肘贴身收到髋旁，约 2.99 秒放下；另一侧是下一次。壶铃用 kettlebell，铃身默认垂在手下。"
+}
