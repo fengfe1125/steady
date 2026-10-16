@@ -284,7 +284,8 @@ import CryptoKit
         XCTAssertEqual(playback.label, "播放动画")
         for mode in ["motion", "detail", "mistakes"] {
             if mode != "motion" { tap(app.buttons["lessonMode_\(mode)"]) }
-            let canvas = app.otherElements["lessonArtwork"]
+            // The canvas carries an accessibility action, so it is exposed as a Button, not Other.
+            let canvas = app.descendants(matching: .any)["lessonArtwork"]
             XCTAssertTrue(canvas.waitForExistence(timeout: 5))
             XCTAssertGreaterThan(canvas.frame.width, app.frame.width * 0.75)
             XCTAssertEqual(canvas.frame.height, canvas.frame.width, accuracy: 1,
