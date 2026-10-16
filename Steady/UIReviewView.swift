@@ -24,6 +24,7 @@ struct UIReviewView: View {
                 if let library = ExerciseLibrary.shared, let entry = library.entry(id: "edb-0025") {
                     NavigationStack { LibraryExerciseDetail(entry: entry, library: library) { _ in } }
                 }
+            case "plate-inventory": NavigationStack { PlateInventoryView() }
             case "settings": NavigationStack { SettingsView(model: model) }
             case "account": NavigationStack { AccountConnectionsView(model: model) }
             case "login": NavigationStack { EmailLoginView(model: model) }
@@ -297,6 +298,25 @@ private struct LowerBodyHistoryFixture: View {
             try check(WorkoutProgression.suggestion(move: template.moves[0], history: model.workoutLogs)?.weightKG == 12.5, "progression target")
             try check(model.startWorkout(template) != nil, "start next session")
             try check(model.workoutLogs.count == 2, "distinct history")
+        } else if phase == "engine" {
+            // Barbell history a week ago, then a live session with one record set and an untouched squat for the warm-up ramp.
+            guard let library = ExerciseLibrary.shared, let benchEntry = library.entry(id: "edb-0025"), let squatEntry = library.entry(id: "edb-0043") else { throw ServiceError.invalidResponse }
+            var bench = WorkoutMove(library: benchEntry); bench.target.minReps = 5; bench.target.maxReps = 8; bench.target.weightKG = 60; bench.target.incrementKG = 2.5
+            var squat = WorkoutMove(library: squatEntry); squat.target.minReps = 5; squat.target.maxReps = 8; squat.target.weightKG = 80; squat.target.incrementKG = 2.5
+            let template = WorkoutTemplate(title: "杠铃力量", moves: [bench, squat])
+            try check(model.saveWorkoutTemplate(template), "template save")
+            let weekAgo = Date().addingTimeInterval(-7 * 86400)
+            var past = try WorkoutLog(template: template, now: weekAgo)
+            for (e, kg) in [(0, 57.5), (1, 77.5)] { for i in past.exercises[e].sets.indices {
+                past.exercises[e].sets[i].weightKG = kg; past.exercises[e].sets[i].reps = e == 0 ? 8 : 6; past.exercises[e].sets[i].completedAt = weekAgo.addingTimeInterval(Double(60 * (i + 1)))
+            } }
+            past.finish(at: weekAgo.addingTimeInterval(3000))
+            try check(model.saveWorkout(past, creating: true), "history save")
+            try check(model.startWorkout(template) != nil, "start")
+            guard var log = model.ongoingWorkout else { throw ServiceError.invalidResponse }
+            log.exercises[0].sets[0].weightKG = 60; log.exercises[0].sets[0].reps = 8; log.exercises[0].sets[0].completedAt = Date()
+            try check(model.saveWorkout(log), "record set save")
+            try check(WorkoutRecords.records(in: log, history: model.workoutLogs)[log.exercises[0].sets[0].id]?.count == 2, "record detected")
         } else { throw ServiceError.invalidInput("Unknown smoke phase") }
         let result: [String: Any] = ["phase": phase, "passedChecks": checks, "logs": model.workoutLogs.count]
         try JSONSerialization.data(withJSONObject: result, options: [.sortedKeys]).write(to: URL.documentsDirectory.appending(path: "workout-smoke-" + phase + ".json"))
