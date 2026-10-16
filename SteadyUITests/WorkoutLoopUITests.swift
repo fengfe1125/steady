@@ -47,4 +47,22 @@ import XCTest
         XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label BEGINSWITH %@", "上次：")).firstMatch.waitForExistence(timeout: 5))
         screenshot("workout-next-performance")
     }
+
+    func testLibraryMoveCanBeSearchedReadAndAdded() {
+        launch(reset: true)
+        tap(app.buttons["newWorkout"])
+        tap(app.buttons["addWorkoutMove"])
+        app.segmentedControls["moveScope"].buttons["动作库"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 10))
+        search.tap(); search.typeText("glwt")
+        let row = app.buttons["libraryMove_edb-0025"]
+        XCTAssertTrue(row.waitForExistence(timeout: 10))
+        row.tap()
+        XCTAssertTrue(app.staticTexts["杠铃卧推"].waitForExistence(timeout: 5))
+        screenshot("library-detail")
+        tap(app.buttons["addLibraryMove"])
+        XCTAssertTrue(app.staticTexts["杠铃卧推"].waitForExistence(timeout: 5))
+        screenshot("library-move-added")
+    }
 }

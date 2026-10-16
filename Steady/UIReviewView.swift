@@ -14,6 +14,16 @@ struct UIReviewView: View {
                     WorkoutRunView(model: model, id: log.id)
                 } else { WorkoutHubView(model: model) }
             }
+            case "exercise-library":
+                if let library = ExerciseLibrary.shared {
+                    let args = ProcessInfo.processInfo.arguments
+                    let search = args.firstIndex(of: "--library-search").flatMap { args.indices.contains($0 + 1) ? args[$0 + 1] : nil } ?? ""
+                    NavigationStack { List { LibraryMoveSection(library: library, search: search) { _ in } }.navigationTitle("选择动作").journalSurface() }
+                }
+            case "exercise-library-detail":
+                if let library = ExerciseLibrary.shared, let entry = library.entry(id: "edb-0025") {
+                    NavigationStack { LibraryExerciseDetail(entry: entry, library: library) { _ in } }
+                }
             case "settings": NavigationStack { SettingsView(model: model) }
             case "account": NavigationStack { AccountConnectionsView(model: model) }
             case "login": NavigationStack { EmailLoginView(model: model) }

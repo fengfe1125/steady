@@ -89,6 +89,10 @@ private struct WorkoutMovePicker: View {
     @State private var equipment = ""
     @State private var customName = ""
     @State private var metric: WorkoutMetric = .weightReps
+    @State private var scope = Scope.catalog
+    @State private var library: ExerciseLibrary?
+    @State private var libraryUnavailable = false
+    private enum Scope: Hashable { case catalog, library }
     private let catalog = try? ExerciseCatalog.load(version: 2)
     var matches: [CatalogExercise] {
         catalog?.exercises.filter { e in
@@ -98,32 +102,60 @@ private struct WorkoutMovePicker: View {
     var body: some View {
         List {
             Section {
-                Picker("器材筛选", selection: $equipment) {
-                    Text("全部器材").tag("")
-                    ForEach(catalog?.equipment ?? []) { Text($0.name).tag($0.id) }
+                Picker("动作来源", selection: $scope) {
+                    Text("审核目录").tag(Scope.catalog)
+                    Text("动作库").tag(Scope.library)
+                }.pickerStyle(.segmented).accessibilityIdentifier("moveScope")
+            }
+            if scope == .library {
+                if let library {
+                    LibraryMoveSection(library: library, search: search) { add($0); dismiss() }
+                } else if libraryUnavailable {
+                    Text("动作库暂时无法读取，仍可使用审核目录或自定义动作。")
+                } else {
+                    HStack { ProgressView(); Text("正在载入动作库") }
                 }
-                Text("手动选择动作前，请查看教学并确认自己能舒适完成。").font(.footnote).foregroundStyle(.secondary)
+                customSection
+            } else {
+                catalogSections
             }
-            Section("自定义动作 · 暂无教学") {
-                TextField("动作名称", text: $customName).accessibilityIdentifier("customMoveName")
-                Picker("记录方式", selection: $metric) { ForEach(WorkoutMetric.allCases, id: \.self) { Text($0.title).tag($0) } }
-                Button("添加自定义动作") { add(WorkoutMove(name: customName.trimmingCharacters(in: .whitespacesAndNewlines), metric: metric)); dismiss() }
-                    .disabled(customName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty).accessibilityIdentifier("addCustomMove")
+        }.navigationTitle("选择动作").searchable(text: $search, prompt: scope == .library ? "中文、拼音或英文名称" : "名称或别名")
+            .toolbar { ToolbarItem(placement: .cancellationAction) { Button("关闭") { dismiss() } } }
+            .task(id: scope) {
+                guard scope == .library, library == nil else { return }
+                library = await Task.detached { ExerciseLibrary.shared }.value
+                libraryUnavailable = library == nil
             }
-            Section("动作目录（\(matches.count)）") {
-                if catalog == nil { Text("动作目录无法读取，仍可添加自定义动作。") }
-                ForEach(matches) { entry in
-                    if entry.status == "approved" {
-                        Button(entry.name) { add(WorkoutMove(catalog: entry, version: 2)); dismiss() }.accessibilityIdentifier("pickMove_\(entry.id)")
-                    } else {
-                        NavigationLink { ExerciseTeachingDestination(reference: entry.defaultTeaching) } label: {
-                            VStack(alignment: .leading) { Text(entry.name); Text("仅供学习 · 查看教学").font(.caption).foregroundStyle(.secondary) }
-                        }
+    }
+    private var customSection: some View {
+        Section("自定义动作 · 暂无教学") {
+            TextField("动作名称", text: $customName).accessibilityIdentifier("customMoveName")
+            Picker("记录方式", selection: $metric) { ForEach(WorkoutMetric.allCases, id: \.self) { Text($0.title).tag($0) } }
+            Button("添加自定义动作") { add(WorkoutMove(name: customName.trimmingCharacters(in: .whitespacesAndNewlines), metric: metric)); dismiss() }
+                .disabled(customName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty).accessibilityIdentifier("addCustomMove")
+        }
+    }
+    @ViewBuilder private var catalogSections: some View {
+        Section {
+            Picker("器材筛选", selection: $equipment) {
+                Text("全部器材").tag("")
+                ForEach(catalog?.equipment ?? []) { Text($0.name).tag($0.id) }
+            }
+            Text("手动选择动作前，请查看教学并确认自己能舒适完成。").font(.footnote).foregroundStyle(.secondary)
+        }
+        customSection
+        Section("动作目录（\(matches.count)）") {
+            if catalog == nil { Text("动作目录无法读取，仍可添加自定义动作。") }
+            ForEach(matches) { entry in
+                if entry.status == "approved" {
+                    Button(entry.name) { add(WorkoutMove(catalog: entry, version: 2)); dismiss() }.accessibilityIdentifier("pickMove_\(entry.id)")
+                } else {
+                    NavigationLink { ExerciseTeachingDestination(reference: entry.defaultTeaching) } label: {
+                        VStack(alignment: .leading) { Text(entry.name); Text("仅供学习 · 查看教学").font(.caption).foregroundStyle(.secondary) }
                     }
                 }
             }
-        }.navigationTitle("选择动作").searchable(text: $search, prompt: "名称或别名")
-            .toolbar { ToolbarItem(placement: .cancellationAction) { Button("关闭") { dismiss() } } }
+        }
     }
 }
 
@@ -153,6 +185,9 @@ private struct WorkoutMoveEditor: View {
             }
             Section("教学与来源") {
                 if let teaching = move.teaching { NavigationLink("查看动作教学") { ExerciseTeachingDestination(reference: teaching) } }
+                else if move.libraryID != nil {
+                    NavigationLink("查看动作说明") { LibraryMoveDetailLoader(identity: move.identity) }.accessibilityIdentifier("libraryMoveDetail")
+                }
                 else { Text("此动作暂无已关联的教学") }
                 if let text = move.prescription { Text(text).font(.footnote) }
             }
