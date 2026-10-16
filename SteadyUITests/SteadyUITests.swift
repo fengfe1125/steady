@@ -832,8 +832,10 @@ import CryptoKit
     private func candidateFlow(_ route: String, _ id: String) {
         app.launchArguments = ["--ui-preview", route]
         app.launch()
-        let lesson = app.buttons["animatedLesson_\(id)"]
-        XCTAssertTrue(lesson.waitForExistence(timeout: 15)); tap(lesson)
+        // List rows below the fold do not exist on iOS 26 until scrolled to, so wait for the
+        // collection itself and let tap(_:) scroll down to the lesson.
+        XCTAssertTrue(app.navigationBars.firstMatch.waitForExistence(timeout: 15))
+        tap(app.buttons["animatedLesson_\(id)"])
         let playback = app.buttons["trainingPlayback"]
         XCTAssertTrue(playback.waitForExistence(timeout: 15))
         expectation(for: NSPredicate(format: "enabled == true"), evaluatedWith: playback)
