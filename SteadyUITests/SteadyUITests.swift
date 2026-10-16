@@ -210,7 +210,13 @@ import CryptoKit
         XCTAssertEqual(app.buttons["trainingSpeed"].label, "恢复 1×")
         let slider = app.sliders["动作进度"]
         XCTAssertTrue(slider.isEnabled)
-        slider.adjust(toNormalizedSliderPosition: 0.65)
+        // Seek into the other half of the cycle from where playback paused; a fixed 0.65
+        // failed whenever the pause itself landed on that same tenth of a second.
+        let parts = paused.components(separatedBy: "/")
+        let pausedSeconds = Double(parts[0].trimmingCharacters(in: .whitespaces)) ?? 0
+        let duration = Double(parts.last?.replacingOccurrences(of: "秒", with: "").trimmingCharacters(in: .whitespaces) ?? "") ?? 0
+        XCTAssertGreaterThan(duration, 0)
+        slider.adjust(toNormalizedSliderPosition: pausedSeconds / max(duration, 1) < 0.5 ? 0.8 : 0.2)
         XCTAssertNotEqual(time.label, paused)
         XCTAssertEqual(playback.label, "播放")
         capture("anatomy-shoulder-native-seek")
