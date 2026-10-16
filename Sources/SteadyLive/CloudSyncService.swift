@@ -7,9 +7,12 @@ import SteadyCore
     private let store: DeviceRepository
     private var status: SyncState = .idle
     private var running = false
+    private var workoutSyncAvailable: Bool?
     public init(cloud: CloudClient, store: DeviceRepository) { self.cloud = cloud; self.store = store }
     public func state() async -> SyncState { status }
-    public func details() async -> SyncDetails { (try? store.details()) ?? SyncDetails() }
+    public func details() async -> SyncDetails {
+        var details = (try? store.details()) ?? SyncDetails(); details.workoutSyncAvailable = workoutSyncAvailable; return details
+    }
     public func restoreHistory() async throws { try await sync() }
     public func retry() async throws { try await sync() }
     public func clearCloudRecords() async throws {
@@ -29,7 +32,11 @@ import SteadyCore
             let _: ConsentReply = try await cloud.call("consents", body: consent, expectedUser: userID)
             guard consent.cloudSync else { status = .idle; return }
             status = .syncing
-            for mutation in try store.pending() {
+            // Discover server capabilities before uploading new record kinds. Old servers
+            // ignore the request header and continue syncing all legacy records normally.
+            let supported = try await pullHistory(consent: consent, userID: userID, epoch: epoch)
+            workoutSyncAvailable = supported.contains("workoutLogs") && supported.contains("workoutTemplates")
+            for mutation in try store.pending() where supported.contains(mutation.record.kind.rawValue) {
                 try check(epoch)
                 do {
                     let reply: PushReply = try await cloud.call("sync-push", body: PushBody(mutation: mutation, consent: consent), expectedUser: userID)
@@ -37,18 +44,23 @@ import SteadyCore
                     try store.accept(reply.record, mutationID: reply.conflict ? nil : mutation.id)
                 } catch { if store.epoch == epoch { try store.fail(mutation) }; throw error }
             }
-            var cursor = try store.cursor(), hasMore = true
-            while hasMore {
-                try check(epoch)
-                let reply: PullReply = try await cloud.call("sync-pull", body: PullBody(cursor: cursor, consent: consent), expectedUser: userID)
-                try check(epoch)
-                for record in reply.records { try store.accept(record) }
-                cursor = reply.cursor; hasMore = reply.hasMore
-                try store.finishPull(cursor: cursor)
-            }
+            _ = try await pullHistory(consent: consent, userID: userID, epoch: epoch)
             status = .idle
         } catch is CancellationError { status = .idle; throw CancellationError() }
         catch { status = .failed(error.localizedDescription); throw error }
+    }
+    private func pullHistory(consent: DeviceConsent, userID: UUID, epoch: Int) async throws -> [String] {
+        var cursor = try store.cursor(), hasMore = true, supported: [String] = []
+        while hasMore {
+            try check(epoch)
+            let reply: PullReply = try await cloud.call("sync-pull", body: PullBody(cursor: cursor, consent: consent), expectedUser: userID)
+            try check(epoch)
+            for record in reply.records { try store.accept(record) }
+            guard reply.cursor >= cursor, !reply.hasMore || reply.cursor > cursor else { throw ServiceError.invalidResponse }
+            cursor = reply.cursor; hasMore = reply.hasMore; supported = reply.supportedKinds
+            try store.finishPull(cursor: cursor)
+        }
+        return supported
     }
     private func check(_ epoch: Int) throws {
         try Task.checkCancellation()
@@ -58,7 +70,7 @@ import SteadyCore
     private struct PushBody: Encodable, Sendable { var mutation: PendingMutation; var consent: DeviceConsent }
     private struct PushReply: Decodable, Sendable { var record: CloudRecord; var conflict: Bool }
     private struct PullBody: Encodable, Sendable { var cursor: Int; var consent: DeviceConsent }
-    private struct PullReply: Decodable, Sendable { var records: [CloudRecord]; var cursor: Int; var hasMore: Bool }
+    private typealias PullReply = SyncPullPage
 }
 
 /// A cancellable connectivity signal. Sync remains best-effort and never claims background delivery.

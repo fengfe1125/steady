@@ -1,0 +1,12 @@
+{
+  "workerReport": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-css-prone-review/root-closeout-check.json",
+  "workerReportSHA256": "f50ea6bd5d0cc0d691bd8e5dd71318df401e66c02e30090ebb776bea31fdfa14",
+  "reportedCoverage": 39,
+  "coordinatorAdditionalViewed": [
+    "6FAF6B9E-0D01-4FC9-B80E-6AF9B3E47E8F.png",
+    "61956CD1-76BB-414B-BD55-2A84F0252A63.png",
+    "630BB0BE-E019-4304-8CE2-66FE70F25899.png"
+  ],
+  "finding": "All three labels readable at 2-second dark native sample, close to body/arrow. Full-cycle clearance unverified. Prone label readable, ambiguous leader already returned for v2.",
+  "overallAccepted": false
+}

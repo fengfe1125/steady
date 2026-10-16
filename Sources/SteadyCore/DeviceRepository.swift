@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 public enum RecordKind: String, Codable, CaseIterable, Sendable {
-    case profiles, summaries, reports, conversations, messages, plans, sessions, notes
+    case profiles, summaries, reports, conversations, messages, plans, sessions, notes, workoutTemplates, workoutLogs
     public var order: Int { Self.allCases.firstIndex(of: self)! }
 }
 public struct CloudRecord: Codable, Sendable {
@@ -54,7 +54,7 @@ public struct RecordConflict: Identifiable, Sendable {
 }
 
 /// All live records and outbox envelopes share a single explicit transaction boundary.
-@MainActor public final class DeviceRepository: PlanRepository, JournalRepository {
+@MainActor public final class DeviceRepository: PlanRepository, JournalRepository, WorkoutRepository {
     private let container: ModelContainer
     private let context: ModelContext
     public private(set) var partition = "guest"
@@ -282,6 +282,35 @@ public struct RecordConflict: Identifiable, Sendable {
         context.insert(row)
         if record.kind == .plans || record.kind == .conversations {
             for child in try rows().map(decoded).filter({ $0.parentID == record.id && !$0.deleted }) { try restoreAsNew(child, parent: restored.id) }
+        }
+    }
+    public func workoutTemplates() throws -> [WorkoutTemplate] {
+        try values(WorkoutTemplate.self, kind: .workoutTemplates).sorted { $0.metadata.updatedAt > $1.metadata.updatedAt }
+    }
+    public func workoutLogs() throws -> [WorkoutLog] {
+        try values(WorkoutLog.self, kind: .workoutLogs).sorted { $0.startedAt > $1.startedAt }
+    }
+    public func saveWorkoutTemplate(_ value: WorkoutTemplate) throws {
+        try value.validate()
+        guard try WireCodec.encoder().encode(value).count <= 240000 else { throw ServiceError.invalidInput("模板内容过大，请减少动作。") }
+        try transaction { try put(value, kind: .workoutTemplates, logicalID: value.id.uuidString, id: value.id) }
+    }
+    public func saveWorkoutLog(_ value: WorkoutLog) throws {
+        try value.validate()
+        guard try WireCodec.encoder().encode(value).count <= 240000 else { throw ServiceError.invalidInput("训练记录过大，请减少组数或备注。") }
+        try transaction {
+            let logs = try workoutLogs()
+            if value.isOngoing, !logs.contains(where: { $0.id == value.id }), logs.contains(where: { $0.isOngoing }) {
+                throw ServiceError.invalidInput("请先继续或结束当前训练。")
+            }
+            try put(value, kind: .workoutLogs, logicalID: value.id.uuidString, id: value.id)
+        }
+    }
+    public func deleteWorkout(id: UUID, template: Bool) throws {
+        try transaction {
+            let kind: RecordKind = template ? .workoutTemplates : .workoutLogs
+            guard let value = try rows().map(decoded).first(where: { $0.id == id && $0.kind == kind && !$0.deleted }) else { return }
+            try put([String: String](), kind: kind, logicalID: value.logicalID, id: id, deleted: true)
         }
     }
     public func hasGuestRecords() throws -> Bool { try !rows(in: "guest").filter { (try? decoded($0).kind) != .profiles }.isEmpty }

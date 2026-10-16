@@ -6,6 +6,11 @@ import SteadyCore
     var journal: JournalState
     var summaries: [DailySummary] = []
     var plans: [TrainingPlan] = []
+    var workoutTemplates: [WorkoutTemplate] = []
+    var workoutLogs: [WorkoutLog] = []
+    @ObservationIgnored let workoutStore: any WorkoutRepository
+    var workoutLoopEnabled: Bool { !UserDefaults.standard.bool(forKey: "disableWorkoutLoop") }
+    var ongoingWorkout: WorkoutLog? { workoutLogs.first { $0.isOngoing } }
     var scenario: DemoScenario = .normal
     var error: String?
     var busy: String?
@@ -39,7 +44,8 @@ import SteadyCore
     init(health: any HealthDataService = DemoHealthDataService(),
          coach: any CoachService = DemoCoachService(delay: .milliseconds(550)),
          auth: any AuthService = DemoAuthService(), sync: any SyncService = DemoSyncService(),
-         planStore: any PlanRepository, journalStore: any JournalRepository, liveStore: DeviceRepository? = nil) throws {
+         planStore: any PlanRepository, journalStore: any JournalRepository, liveStore: DeviceRepository? = nil, workoutStore: (any WorkoutRepository)? = nil) throws {
+        self.workoutStore = try workoutStore ?? liveStore ?? DeviceRepository(inMemory: true)
         self.liveStore = liveStore; self.isDemo = liveStore == nil
         self.health = health; self.coach = coach; self.auth = auth; self.sync = sync
         self.planStore = planStore; self.journalStore = journalStore
@@ -51,6 +57,7 @@ import SteadyCore
             }
         }
         plans = try planStore.plans()
+        try reloadWorkouts()
     }
 
     var today: DailySummary? { summaries.last }
@@ -134,6 +141,7 @@ import SteadyCore
         request?.cancel(); request = nil; requestID = nil; busy = nil; syncTask?.cancel()
         liveStore.select(userID: user)
         draft = nil; presentedReport = nil; activeConversationID = nil; showChat = false; showPlanForm = false
+        syncDetails = SyncDetails()
         try reloadLocal(); ensureToday()
         if wasOnboarded && !journal.preferences.onboardingComplete { journal.preferences.onboardingComplete = true; try journalStore.save(journal) }
         canImportGuest = try user != nil && liveStore.hasGuestRecords()
@@ -145,9 +153,10 @@ import SteadyCore
         }
     }
     private func reloadLocal() throws {
-        journal = try journalStore.load(); plans = try planStore.plans()
+        journal = try journalStore.load(); plans = try planStore.plans(); try reloadWorkouts()
         if let liveStore {
-            summaries = Array(try liveStore.summaries().suffix(30)); syncDetails = try liveStore.details(); conflicts = try liveStore.conflicts()
+            let workoutCapability = syncDetails.workoutSyncAvailable
+            summaries = Array(try liveStore.summaries().suffix(30)); syncDetails = try liveStore.details(); syncDetails.workoutSyncAvailable = workoutCapability; conflicts = try liveStore.conflicts()
         }
     }
     func scheduleSync() {
@@ -262,6 +271,19 @@ import SteadyCore
         do {
             var updated = plan
             let previous = plans.first { $0.id == plan.id }
+            if plan.generationContext != nil {
+                guard !plan.sessions.isEmpty, plan.sessions.count <= 7,
+                      Set(plan.sessions.map(\.id)).count == plan.sessions.count,
+                      Set(plan.sessions.map { Calendar.current.startOfDay(for: $0.scheduledAt) }).count == plan.sessions.count else {
+                    throw ServiceError.invalidInput("请检查训练日期，避免同一天重复安排。")
+                }
+            }
+            if plan.generationContext?.programKind == "lowerBodyBasics", plan.generationContext?.rulesVersion == 2 { try ExerciseCatalog.forPlan(plan).validateLowerBodyDates(plan) }
+            let arrangementChanged = previous == nil || plan.generationContext != previous?.generationContext || plan.sessions.contains { session in
+                guard let old = previous?.sessions.first(where: { $0.id == session.id }) else { return true }
+                return old.exercises != session.exercises || old.minutes != session.minutes
+            }
+            if arrangementChanged, plan.generationContext != nil { try ExerciseCatalog.forPlan(plan).validate(plan) }
             for session in plan.sessions where previous?.sessions.first(where: { $0.id == session.id }) != session {
                 try updated.updateSession(session)
             }
@@ -380,12 +402,14 @@ import SteadyCore
             }
         }
     }
-    func generatePlan(_ preferences: UserPreferences) {
+    func generatePlan(_ preferences: UserPreferences, programKind: String? = nil) {
         let scenario = scenario
         begin(isDemo ? "正在生成演示草案" : "正在生成训练草案") { [self] in
             let plan: TrainingPlan
-            if isDemo, let demo = coach as? DemoCoachService { plan = try await demo.planDraft(preferences: preferences, scenario: scenario) }
-            else { plan = try await coach.planDraft(preferences: preferences) }
+            let catalog = try ExerciseCatalog.load(version: programKind == "lowerBodyBasics" ? 2 : 1)
+            let requestPreferences = catalog.preferencesForGeneration(preferences)
+            if isDemo, let demo = coach as? DemoCoachService { plan = try await demo.planDraft(preferences: requestPreferences, scenario: scenario, programKind: programKind) }
+            else { plan = try await coach.planDraft(preferences: requestPreferences, programKind: programKind) }
             try Task.checkCancellation()
             if savePlan(plan) { savePreferences(preferences); draft = plan }
         }
@@ -406,6 +430,7 @@ import SteadyCore
         do {
             for plan in try planStore.plans() { try planStore.delete(id: plan.id) }
             plans = try planStore.plans()
+        try reloadWorkouts()
             if saveJournal(JournalState()) {
                 scenario = .normal; draft = nil; presentedReport = nil; activeConversationID = nil
                 showChat = false; showPlanForm = false; notice = nil

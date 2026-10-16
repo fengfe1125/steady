@@ -1,0 +1,189 @@
+{
+  "sourceID": "595f4e7eff247f33e297eb1b",
+  "sourceName": "健身球 A 字伸展",
+  "part": "back",
+  "title": "健身球 A 字伸展",
+  "variant": "俯身压球，手臂向后上方抬起并略向外 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    13.9,
+    14.45,
+    15.05,
+    15.37,
+    16.1,
+    16.83
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.75,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 92,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": 158,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 155,
+          "el": 8,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 10,
+          "ankle": -6
+        },
+        "far": {
+          "hip": 16,
+          "knee": 14,
+          "ankle": -4
+        }
+      }
+    },
+    "1": {
+      "pelvis": 92,
+      "lumbar": -2,
+      "thorax": -2,
+      "neck": -14,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": -18,
+          "el": 8,
+          "f": 0.72,
+          "ff": 0.8
+        },
+        "far": {
+          "sh": -21,
+          "el": 10,
+          "f": 0.72,
+          "ff": 0.8
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 10,
+          "ankle": -6
+        },
+        "far": {
+          "hip": 16,
+          "knee": 14,
+          "ankle": -4
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 92,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": 70,
+          "el": 8,
+          "f": 0.42,
+          "ff": 0.5
+        },
+        "far": {
+          "sh": 67,
+          "el": 10,
+          "f": 0.42,
+          "ff": 0.5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 10,
+          "ankle": -6
+        },
+        "far": {
+          "hip": 16,
+          "knee": 14,
+          "ankle": -4
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -16,
+      "y": -110
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": -155,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -132,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -200,
+      "length": 400
+    },
+    {
+      "type": "ball",
+      "x": 18,
+      "r": 52
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.post",
+      "trap.mid",
+      "trap.lower"
+    ],
+    "secondary": [
+      "lats",
+      "rhomboid"
+    ]
+  },
+  "primaryNames": [
+    "三角肌后束",
+    "斜方肌"
+  ],
+  "cue": "腹部压在球上，腰背保持平。手臂从身前向后上方抬，同时略向外打开，抬到最高处停一下再放下。",
+  "mistake": {
+    "title": "抬臂时上身跟着掀起来",
+    "fix": "腹压实在球上，只动肩膀和手臂，胸口不要跟着甩高。",
+    "basis": "资料里的常见问题是身子起伏太大，下背跟着帮忙。",
+    "level": 0.65,
+    "override": {
+      "pelvis": 70,
+      "lumbar": 16,
+      "thorax": 10,
+      "neck": 6,
+      "head": 8
+    }
+  },
+  "observation": "侧面，头在画面左侧，腹压在球上，脚在身后分开踩地。前半段手臂幅度小；后半段镜头更近，仍是侧面。取 13.9 秒手臂在身前，15.4 秒抬向身后上方，16.8 秒放下。侧面看不清外展到底多少，用上臂缩短表示大约 45 度向外。健身球用 ball，不是近似。"
+}

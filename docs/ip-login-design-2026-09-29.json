@@ -1,0 +1,44 @@
+{
+  "fileKey": "APLEefE2UxG4Vhd6W25zTl",
+  "pageId": "40:2",
+  "flows": [
+    {
+      "key": "A 小叶獭 · 手绘",
+      "login": "41:3",
+      "code": "44:113",
+      "letter": "44:188",
+      "contentBottom": 752
+    },
+    {
+      "key": "B 叶芽精灵 · 手绘",
+      "login": "41:54",
+      "code": "44:216",
+      "letter": "44:281",
+      "contentBottom": 752
+    },
+    {
+      "key": "C 小团子 · 手绘",
+      "login": "41:99",
+      "code": "44:307",
+      "letter": "44:366",
+      "contentBottom": 752
+    },
+    {
+      "key": "D 小叶獭 · 柔和立体",
+      "login": "41:141",
+      "code": "44:392",
+      "letter": "44:465",
+      "contentBottom": 752
+    }
+  ],
+  "stage": "IP direction review",
+  "fonts": [
+    "Noto Sans SC",
+    "Caveat"
+  ],
+  "animation": {
+    "breathing": "3 seconds, translationY 0/-3/0",
+    "letter": "0.7 seconds, translation +65/-45, fade out"
+  },
+  "codeChanged": false
+}

@@ -1336,6 +1336,494 @@
       ],
       "detailExplanation": "图中编号\n① 胸腹、骨盆和大腿贴垫\n② 屈膝弯举，大腿不抬\n③ 勾脚，后踝抵住滚垫\n\n红色 · 主要发力：腘绳肌\n浅红 · 协同：腓肠肌、腹直肌\n\n虚线人形：起始姿势 · 绿色箭头：动作方向",
       "mistakeExplanation": "左图 · 正确示范：胸腹贴稳，由膝弯举\n\n右图 · 错误示范：抬髋、挺腰借力\n\n调整方法：降低重量，重新贴稳胸腹、骨盆与大腿；回程保留滚垫贴合和腿后侧张力。\n\n琥珀色圈 / 箭头 / 叉号：需要避免的位置；右图红色为此时被迫发力的肌肉"
+    },
+    {
+      "lessonID": "legs-basic-chair-sit-to-stand",
+      "resource": "legs-basic-chair-sit-to-stand.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "准备环境",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "椅子靠稳，双脚能平放地面，身后留出坐回空间。"
+        },
+        {
+          "title": "起始姿势",
+          "startSeconds": 1,
+          "endSeconds": 2,
+          "instruction": "坐在椅子前部，双脚约髋宽，躯干轻向前倾。"
+        },
+        {
+          "title": "执行动作",
+          "startSeconds": 2,
+          "endSeconds": 4,
+          "instruction": "双脚压地，用腿缓慢站起；不甩手借力。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 4,
+          "endSeconds": 5,
+          "instruction": "站直即可，不向后顶腰。"
+        },
+        {
+          "title": "受控返回",
+          "startSeconds": 5,
+          "endSeconds": 7,
+          "instruction": "屈髋屈膝，控制臀部坐回椅面，不向后跌坐。"
+        },
+        {
+          "title": "安全结束",
+          "startSeconds": 7,
+          "endSeconds": 8,
+          "instruction": "最后一次坐稳后休息，再起身离开椅子。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+          "checked": "2026-10-10：动作版本、支撑条件与动作要点；不复制原文图片或视频。"
+        },
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine",
+          "checked": "固定组次休息为产品派生默认；8秒动画仅用于教学。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 2000,
+        "effortEnd": 4000,
+        "returnStart": 5000,
+        "returnEnd": 7000,
+        "duration": 8000
+      },
+      "detailExplanation": "四幅图依次显示起始、移动中、可控终点和返回。\n膝与脚尖同向，整脚掌踩稳。\n红色区域仅示意主要肌群，不表示测量结果。",
+      "mistakeExplanation": "左图正确：受控落座。\n右图错误：向后跌坐。\n调整：缩小幅度并放慢，确保臀部先找到椅面。",
+      "primaryMuscles": [
+        "股四头肌",
+        "臀大肌"
+      ],
+      "secondaryMuscles": [],
+      "stretchMuscles": []
+    },
+    {
+      "lessonID": "legs-basic-floor-glute-bridge",
+      "resource": "legs-basic-floor-glute-bridge.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "准备环境",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "确认能安全躺下和起身，地面平整防滑。"
+        },
+        {
+          "title": "起始姿势",
+          "startSeconds": 1,
+          "endSeconds": 2,
+          "instruction": "仰卧屈膝，双脚约髋宽踩地，肩背和双臂落地。"
+        },
+        {
+          "title": "执行动作",
+          "startSeconds": 2,
+          "endSeconds": 4,
+          "instruction": "轻收腹，呼气并收臀抬髋；肩背和双脚保持支撑。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 4,
+          "endSeconds": 5,
+          "instruction": "到肩、髋、膝形成舒适斜线即停，不抬到腰部反弓。"
+        },
+        {
+          "title": "受控返回",
+          "startSeconds": 5,
+          "endSeconds": 7,
+          "instruction": "吸气并缓慢将臀部放回地面。"
+        },
+        {
+          "title": "安全结束",
+          "startSeconds": 7,
+          "endSeconds": 8,
+          "instruction": "臀部完全落地后侧身，用手支撑坐起再起身。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/",
+          "checked": "2026-10-10：动作版本、支撑条件与动作要点；不复制原文图片或视频。"
+        },
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine",
+          "checked": "固定组次休息为产品派生默认；8秒动画仅用于教学。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 2000,
+        "effortEnd": 4000,
+        "returnStart": 5000,
+        "returnEnd": 7000,
+        "duration": 8000
+      },
+      "detailExplanation": "四幅图依次显示起始、移动中、可控终点和返回。\n肩背和双脚保持接地，发力来自臀部。\n红色区域仅示意主要肌群，不表示测量结果。",
+      "mistakeExplanation": "左图正确：髋伸展、腰不过伸。\n右图错误：抬髋过高而顶腰。\n调整：先收腹，减少抬起高度，保持肩背和脚底接触。",
+      "primaryMuscles": [
+        "臀大肌"
+      ],
+      "secondaryMuscles": [],
+      "stretchMuscles": []
+    },
+    {
+      "lessonID": "legs-basic-supported-calf-raise",
+      "resource": "legs-basic-supported-calf-raise.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "准备环境",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "检查固定支撑物牢固，不用会滑动的轻椅。"
+        },
+        {
+          "title": "起始姿势",
+          "startSeconds": 1,
+          "endSeconds": 2,
+          "instruction": "双脚平放、约髋宽，一手轻扶固定支撑，身体直立。"
+        },
+        {
+          "title": "执行动作",
+          "startSeconds": 2,
+          "endSeconds": 4,
+          "instruction": "缓慢抬起两侧脚跟，前脚掌和脚趾保持接地。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 4,
+          "endSeconds": 5,
+          "instruction": "停在能稳住的高度；不向支撑物前扑。"
+        },
+        {
+          "title": "受控返回",
+          "startSeconds": 5,
+          "endSeconds": 7,
+          "instruction": "脚跟缓慢落回地面，不弹跳。"
+        },
+        {
+          "title": "安全结束",
+          "startSeconds": 7,
+          "endSeconds": 8,
+          "instruction": "双脚落稳后再松开手，原地休息。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+          "checked": "2026-10-10：动作版本、支撑条件与动作要点；不复制原文图片或视频。"
+        },
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine",
+          "checked": "固定组次休息为产品派生默认；8秒动画仅用于教学。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 2000,
+        "effortEnd": 4000,
+        "returnStart": 5000,
+        "returnEnd": 7000,
+        "duration": 8000
+      },
+      "detailExplanation": "四幅图依次显示起始、移动中、可控终点和返回。\n脚跟升降，前脚掌不离开地面。\n红色区域仅示意主要肌群，不表示测量结果。",
+      "mistakeExplanation": "左图正确：前掌固定、轻扶稳定。\n右图错误：抬脚趾或向前扑。\n调整：缩小抬升幅度，保持前掌接地，手只辅助平衡。",
+      "primaryMuscles": [
+        "腓肠肌",
+        "比目鱼肌"
+      ],
+      "secondaryMuscles": [],
+      "stretchMuscles": []
+    },
+    {
+      "lessonID": "legs-basic-bodyweight-squat",
+      "resource": "legs-basic-bodyweight-squat.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "准备环境",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "留出足够空间，选择平整防滑地面。"
+        },
+        {
+          "title": "起始姿势",
+          "startSeconds": 1,
+          "endSeconds": 2,
+          "instruction": "双脚约肩宽，脚尖自然略向外，双臂向前保持平衡。"
+        },
+        {
+          "title": "执行动作",
+          "startSeconds": 2,
+          "endSeconds": 4,
+          "instruction": "髋向后坐，同时屈膝；整脚掌保持踩地。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 4,
+          "endSeconds": 5,
+          "instruction": "在脚跟不抬、躯干可控的深度停住，不追求统一蹲深。"
+        },
+        {
+          "title": "受控返回",
+          "startSeconds": 5,
+          "endSeconds": 7,
+          "instruction": "双脚压地，髋膝一同伸展回到站立。"
+        },
+        {
+          "title": "安全结束",
+          "startSeconds": 7,
+          "endSeconds": 8,
+          "instruction": "站稳后放松双臂，正常呼吸并休息。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.acefitness.org/resources/everyone/exercise-library/135/bodyweight-squat/",
+          "checked": "2026-10-10：动作版本、支撑条件与动作要点；不复制原文图片或视频。"
+        },
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine",
+          "checked": "固定组次休息为产品派生默认；8秒动画仅用于教学。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 2000,
+        "effortEnd": 4000,
+        "returnStart": 5000,
+        "returnEnd": 7000,
+        "duration": 8000
+      },
+      "detailExplanation": "四幅图依次显示起始、移动中、可控终点和返回。\n膝盖沿脚尖方向移动，不突然内扣。\n红色区域仅示意主要肌群，不表示测量结果。",
+      "mistakeExplanation": "左图正确：整脚掌踩稳。\n右图错误：脚跟抬起且身体前扑。\n调整：降低下蹲深度；若仍不稳，回到椅子坐站学习。",
+      "primaryMuscles": [
+        "股四头肌",
+        "臀大肌"
+      ],
+      "secondaryMuscles": [],
+      "stretchMuscles": []
+    },
+    {
+      "lessonID": "legs-basic-supported-split-squat",
+      "resource": "legs-basic-supported-split-squat.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "准备环境",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "固定支撑在身体前侧，确认不滑动；先练较小范围。"
+        },
+        {
+          "title": "起始姿势",
+          "startSeconds": 1,
+          "endSeconds": 2,
+          "instruction": "前后分腿、一手轻扶，前脚整掌和后脚前掌着地。"
+        },
+        {
+          "title": "执行动作",
+          "startSeconds": 2,
+          "endSeconds": 4,
+          "instruction": "双脚位置不变，屈膝降低身体；后膝朝地面移动。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 4,
+          "endSeconds": 5,
+          "instruction": "停在前脚踩稳、骨盆可控的范围，不强求后膝触地。"
+        },
+        {
+          "title": "受控返回",
+          "startSeconds": 5,
+          "endSeconds": 7,
+          "instruction": "前腿发力回到分腿站姿，手不拉扯身体。"
+        },
+        {
+          "title": "安全结束",
+          "startSeconds": 7,
+          "endSeconds": 8,
+          "instruction": "先站稳，再扶着支撑将双脚并回；换侧重新就位。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/lunge/vid-20084662",
+          "checked": "2026-10-10：动作版本、支撑条件与动作要点；不复制原文图片或视频。"
+        },
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine",
+          "checked": "固定组次休息为产品派生默认；8秒动画仅用于教学。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 2000,
+        "effortEnd": 4000,
+        "returnStart": 5000,
+        "returnEnd": 7000,
+        "duration": 8000
+      },
+      "detailExplanation": "四幅图依次显示起始、移动中、可控终点和返回。\n前脚整掌与后脚前掌固定；同一侧完成后再换侧。\n红色区域仅示意主要肌群，不表示测量结果。",
+      "mistakeExplanation": "左图正确：脚位固定、骨盆稳定。\n右图错误：前脚跟抬起且膝向内倒。\n调整：缩小幅度，调整步距；重新确认前脚整掌承重。",
+      "primaryMuscles": [
+        "股四头肌",
+        "臀大肌"
+      ],
+      "secondaryMuscles": [],
+      "stretchMuscles": []
+    },
+    {
+      "lessonID": "legs-basic-side-lying-hip-abduction",
+      "resource": "legs-basic-side-lying-hip-abduction.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "准备环境",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "确认能安全上下地面，侧卧处平整、空间足够。"
+        },
+        {
+          "title": "起始姿势",
+          "startSeconds": 1,
+          "endSeconds": 2,
+          "instruction": "侧卧，肩与骨盆上下叠放，下臂支持头部，双腿伸直。"
+        },
+        {
+          "title": "执行动作",
+          "startSeconds": 2,
+          "endSeconds": 4,
+          "instruction": "呼气，缓慢抬起上侧腿；膝盖保持朝前，不向天花板翻转。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 4,
+          "endSeconds": 5,
+          "instruction": "骨盆开始侧倾前停止；不追求抬得越高越好。"
+        },
+        {
+          "title": "受控返回",
+          "startSeconds": 5,
+          "endSeconds": 7,
+          "instruction": "吸气并受控落回上侧腿，不让腿自由下落。"
+        },
+        {
+          "title": "安全结束",
+          "startSeconds": 7,
+          "endSeconds": 8,
+          "instruction": "腿完全落回后翻身换侧；结束后用手支撑起身。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.acefitness.org/resources/everyone/exercise-library/38/side-lying-hip-abduction/",
+          "checked": "2026-10-10：动作版本、支撑条件与动作要点；不复制原文图片或视频。"
+        },
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine",
+          "checked": "固定组次休息为产品派生默认；8秒动画仅用于教学。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 2000,
+        "effortEnd": 4000,
+        "returnStart": 5000,
+        "returnEnd": 7000,
+        "duration": 8000
+      },
+      "detailExplanation": "四幅图依次显示起始、移动中、可控终点和返回。\n抬的是上侧腿，骨盆不跟着滚动。\n红色区域仅示意主要肌群，不表示测量结果。",
+      "mistakeExplanation": "左图正确：骨盆叠放、抬腿适量。\n右图错误：抬腿过高带动骨盆翻转。\n调整：减小幅度，保持两侧髋上下叠放，膝盖朝前。",
+      "primaryMuscles": [
+        "臀中肌"
+      ],
+      "secondaryMuscles": [],
+      "stretchMuscles": []
+    },
+    {
+      "lessonID": "legs-basic-unloaded-hip-hinge",
+      "resource": "legs-basic-unloaded-hip-hinge.html",
+      "durationSeconds": 8,
+      "steps": [
+        {
+          "title": "准备环境",
+          "startSeconds": 0,
+          "endSeconds": 1,
+          "instruction": "不拿哑铃，身后留出臀部后移空间。"
+        },
+        {
+          "title": "起始姿势",
+          "startSeconds": 1,
+          "endSeconds": 2,
+          "instruction": "双脚约髋宽，膝微屈，双手轻放髋部。"
+        },
+        {
+          "title": "执行动作",
+          "startSeconds": 2,
+          "endSeconds": 4,
+          "instruction": "臀部向后推，躯干随髋前倾，膝弯曲幅度基本保持。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 4,
+          "endSeconds": 5,
+          "instruction": "到大腿后侧出现轻张力且背部可控的位置停住。"
+        },
+        {
+          "title": "受控返回",
+          "startSeconds": 5,
+          "endSeconds": 7,
+          "instruction": "双脚压地，髋部向前回到直立；不向后反弓。"
+        },
+        {
+          "title": "安全结束",
+          "startSeconds": 7,
+          "endSeconds": 8,
+          "instruction": "站稳放松；能稳定完成后才考虑学习负重RDL。"
+        }
+      ],
+      "evidence": [
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/",
+          "checked": "2026-10-10：动作版本、支撑条件与动作要点；不复制原文图片或视频。"
+        },
+        {
+          "origin": "supplemental",
+          "referenceURL": "https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine",
+          "checked": "固定组次休息为产品派生默认；8秒动画仅用于教学。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 2000,
+        "effortEnd": 4000,
+        "returnStart": 5000,
+        "returnEnd": 7000,
+        "duration": 8000
+      },
+      "detailExplanation": "四幅图依次显示起始、移动中、可控终点和返回。\n这是髋部折叠，动画膝盖只保持轻微弯曲。\n红色区域仅示意主要肌群，不表示测量结果。",
+      "mistakeExplanation": "左图正确：髋向后折、背部稳定。\n右图错误：屈膝变深蹲或弯腰找地面。\n调整：减少前倾幅度，先让臀部向后移动，不追求双手触地。",
+      "primaryMuscles": [
+        "臀大肌",
+        "腘绳肌"
+      ],
+      "secondaryMuscles": [],
+      "stretchMuscles": []
     }
   ]
 }

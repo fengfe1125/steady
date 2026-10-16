@@ -1,0 +1,182 @@
+{
+  "sourceID": "6074044abb76481fe5c0e235",
+  "sourceName": "俯卧右侧胸部拉伸",
+  "part": "chest",
+  "title": "俯卧右侧胸部拉伸",
+  "variant": "侧卧 · 下侧臂贴地伸展 · 上侧手胸前撑地推起 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.38,
+    4.6,
+    5.5,
+    6.38,
+    7.5,
+    8.62
+  ],
+  "levels": [
+    0,
+    0.1,
+    0.75,
+    1,
+    0.6,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 166,
+          "el": 0,
+          "f": 0.35
+        },
+        "far": {
+          "sh": 30,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -10,
+          "knee": 0,
+          "ankle": 0
+        },
+        "far": {
+          "hip": -14,
+          "knee": 78,
+          "ankle": 0
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 76,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 156,
+          "el": 0,
+          "f": 0.35
+        },
+        "far": {
+          "sh": 30,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -14,
+          "knee": 0,
+          "ankle": 0
+        },
+        "far": {
+          "hip": -14,
+          "knee": 78,
+          "ankle": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 146,
+          "el": 0,
+          "f": 0.35
+        },
+        "far": {
+          "sh": 30,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -18,
+          "knee": 0,
+          "ankle": 0
+        },
+        "far": {
+          "hip": -14,
+          "knee": 78,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -90,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -15,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -230,
+      "length": 440
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "右侧卧，下侧右臂贴地伸直，左手在胸前撑地；慢慢推起胸口并稍转体，右胸出现明显牵拉感后保持，均匀呼吸别憋气。",
+  "mistake": {
+    "title": "胸口没有推起，拉伸不到位",
+    "fix": "撑地的左手发力，把胸口推向天花板方向并稍转体，右胸有明显牵拉感再保持。",
+    "basis": "通用训练常识：胸口不推起时胸大肌得不到有效牵拉。",
+    "level": 0.85,
+    "override": {
+      "pelvis": 80,
+      "legs": {
+        "near": {
+          "hip": -10
+        }
+      },
+      "arms": {
+        "near": {
+          "sh": 162,
+          "el": 0,
+          "f": 0.35
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512，侧面，人物右侧卧在瑜伽垫上、头朝画面左侧（输出用镜像模板）。0.38~4.88 秒保持准备位：下侧右臂贴地伸直、指向头顶方向，上侧左手屈肘、手掌在胸前撑地，远侧腿屈膝、脚离地；约 5.6~6.4 秒左手推地、胸口推起加深拉伸并保持到结尾。视频只做一次且结束保持打开位，JSON 按推起-还原一次循环建模，结尾还原为示意。下侧手臂全程贴地不离地，上侧手用 contacts 固定在胸前垫面；角度为人工示意拟合。 （Claude 统筹修正：向侧面伸展的手臂用透视缩短 f 0.35，锚点移到画面内，屈膝腿 hip -14 避免膝盖穿地。）"
+}

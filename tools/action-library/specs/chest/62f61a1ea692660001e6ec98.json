@@ -1,0 +1,134 @@
+{
+  "sourceID": "62f61a1ea692660001e6ec98",
+  "sourceName": "右侧跪姿弓箭俯卧撑",
+  "part": "chest",
+  "title": "右侧跪姿弓箭俯卧撑",
+  "variant": "跪姿弓箭手俯卧撑 · 全程下降到肘部高于躯干 · 双手远宽于肩 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    2.3,
+    3.0,
+    4.2,
+    4.9,
+    5.9,
+    6.9
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "neck": -10,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "neck": -10,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 20,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌"
+  ],
+  "cue": "膝跪在垫上，双手比两倍肩宽还开；一侧手臂撑在肩下，另一侧撑得更远。屈肘下到肘尖高于躯干再推回，躯干像一块板不塌。",
+  "mistake": {
+    "title": "下落过程中塌腰、臀部往下沉",
+    "fix": "先把腹部和臀部收紧再下放，让肩、髋、膝连成一条斜线；注意力放在胸口下沉而不是腰往下掉。",
+    "basis": "依据资料常见错误：伸臂时肘关节超伸锁死，过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 76,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 7.88 秒。这一组的 12 帧是一段极近距离的特写：画面里只有一侧肩、上臂、肘与前臂贴着浅色面，并叠加了绿色示意线和箭头（肩部一段弧线、肘部一条向下的虚线箭头），完全看不到头部以下的全身、瑜伽垫和膝支撑点，因此无法从帧图读出躯干角度和支撑细节；其中 frame05 与 frame06、frame11 与 frame12 两两完全相同。姿态角度依动作名称与文字资料（跪姿、双手远宽于肩、下放到肘高于躯干）拟合，取 2.3~6.9 秒这一次完整重复。看不清的部分已按上说明保留。"
+}

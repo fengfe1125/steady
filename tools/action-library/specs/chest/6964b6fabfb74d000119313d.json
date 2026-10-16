@@ -1,0 +1,132 @@
+{
+  "sourceID": "6964b6fabfb74d000119313d",
+  "sourceName": "跪姿药球前推",
+  "part": "chest",
+  "title": "跪姿药球前推",
+  "variant": "高跪姿 · 双手胸前推球 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    4.0,
+    5.5,
+    6.5,
+    7.04,
+    7.6,
+    8.12
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 45,
+          "el": 95
+        },
+        "far": {
+          "sh": 45,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 90,
+          "ankle": -30
+        },
+        "far": {
+          "hip": 0,
+          "knee": 90,
+          "ankle": -30
+        }
+      }
+    },
+    "1": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 5
+        },
+        "far": {
+          "sh": 90,
+          "el": 5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 90,
+          "ankle": -30
+        },
+        "far": {
+          "hip": 0,
+          "knee": 90,
+          "ankle": -30
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -20,
+      "y": -8
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "ball",
+      "between": true,
+      "r": 20,
+      "kind": "medicine",
+      "dx": 12
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.ant",
+      "pec.upper"
+    ],
+    "secondary": [
+      "abs",
+      "triceps.long"
+    ]
+  },
+  "primaryNames": [
+    "三角肌前束",
+    "胸大肌上部"
+  ],
+  "cue": "双膝跪地大腿立直，双手抱球收在胸前，肋骨下沉别挺腰，向前把球匀速推到手臂伸直并停一秒，再控制着拉回胸前，全程骨盆不要晃。",
+  "mistake": {
+    "title": "推球时塌腰挺腹、身体后仰",
+    "fix": "夹紧臀部、收住肋骨，想象胸骨向下压再推球；躯干始终保持直立，靠手臂前推而不是腰背代偿。",
+    "basis": "源 detail 常见错误：前推时腰部前顶、身体后仰，用腰椎代偿。",
+    "level": 0.5,
+    "override": {
+      "lumbar": -14
+    }
+  },
+  "observation": "主视频侧面，人物高跪姿、面朝画面右侧，双手抱一只深色药球在胸前，反复前推至手臂伸直再收回（0.54、7.04 秒附近为推出到位，其余帧多收在胸前）。取 4.0-8.12 秒一次前推-收回。药球在画面中随手移动，器材位置固定，按胸前与伸出之间的中间点示意绘制。膝盖着地为支点，脚背贴垫、脚趾点地。角度为人工示意拟合。 （Claude 统筹修正：药球改为夹在双手之间随手移动。）"
+}

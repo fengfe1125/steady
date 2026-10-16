@@ -1,0 +1,157 @@
+{
+  "sourceID": "60768e77bb764803084fd7f8",
+  "sourceName": "支架跪姿深度俯卧撑保持",
+  "part": "chest",
+  "title": "支架跪姿深度俯卧撑保持",
+  "variant": "跪姿 · 支架 · 最低点等长保持 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    0.4,
+    2.0,
+    3.5,
+    5.0,
+    6.8,
+    8.6
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.7,
+    1,
+    0.65,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 56,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 78,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 83,
+          "ankle": 25
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 65,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 72,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 77,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 66,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 71,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "pushup_bars",
+      "top": -24
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上束",
+    "胸大肌外侧"
+  ],
+  "cue": "跪垫握支架缓慢下沉，让胸口贴近垫面、肘部低过躯干，到位后全身绷住静态保持，呼吸节奏不要乱。",
+  "mistake": {
+    "title": "保持时塌腰，髋部下坠",
+    "fix": "保持阶段继续收紧腹部和臀部，让肩、髋、膝维持一条直线，坚持不住就提前结束。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 66,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "侧面视角，人物头朝画面左侧，双膝跪垫、双手撑俯卧撑支架，全程为一次最低点保持：前段约0.4秒处于稍高的底部，随后缓慢下沉，约5秒后达到胸口几乎贴垫的最低点并保持到视频结束。小腿向后上方抬起、双脚交叠。等长动作起伏很小，姿态差异为人工示意拟合。"
+}

@@ -1,0 +1,139 @@
+{
+  "sourceID": "564b0b02a9f7e955480fefe5",
+  "sourceName": "弹力带俯卧撑",
+  "part": "chest",
+  "title": "弹力带俯卧撑",
+  "variant": "弹力带绕背加阻 · 双手稍宽于肩 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    6.8,
+    7.5,
+    8.5,
+    8.9,
+    9.5,
+    9.94
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.85,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌外侧"
+  ],
+  "cue": "把弹力带绕过背后压在肩胛位置，双手稍宽于肩撑地；身体从头到脚绷成直线，屈肘下沉到胸口接近垫面，再发力推回直臂，顶端肘部保留微屈不要锁死。",
+  "mistake": {
+    "title": "下沉时塌腰，腹部先掉下去",
+    "fix": "全程收紧腹部和臀部，让肩、髋、踝保持一条直线；力量不足时先换成跪姿完成。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 12.6 秒共 5 次，侧面，人物面朝画面左侧，弹力带绕过背部、两端握在双手。取 6.8-9.9 秒一次完整下上：6.8 秒直臂撑起，8.9 秒屈肘到胸口接近垫面，9.9 秒推回直臂。双手比肩稍宽，侧面机位看不出实际间距，已如实说明；脚尖着垫为支点，全程手、脚不移动。"
+}

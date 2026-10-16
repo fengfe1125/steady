@@ -1,0 +1,183 @@
+{
+  "sourceID": "5f83d172627efb29e55f8f17",
+  "sourceName": "俯卧撑交替摸肩",
+  "part": "chest",
+  "title": "俯卧撑交替摸肩",
+  "variant": "标准距俯卧撑 + 起身时单手拍对侧肩 · 左右交替 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    1.92,
+    2.45,
+    2.9,
+    3.02,
+    3.55,
+    4.12
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 75,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 30,
+          "el": 150,
+          "f": 0.85
+        },
+        "far": {
+          "sh": 90,
+          "el": 0
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 75,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 131,
+          "el": 50
+        },
+        "far": {
+          "sh": 90,
+          "el": 0
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 156,
+          "el": 148
+        },
+        "far": {
+          "sh": 62,
+          "el": 96
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌",
+    "肱三头肌"
+  ],
+  "cue": "撑起后立刻抬起一只手去够对侧肩膀，撑地那侧手臂保持伸直、髋不要左右晃，再把手放回垫上做下一次。",
+  "mistake": {
+    "title": "撑起时塌腰、撅臀，身体折成两截",
+    "fix": "先夹紧臀部和腹部再发力，让后脑到脚跟连成一条线；宁可少做几次，也不要靠塌腰借力。",
+    "basis": "依据源 detail.description 的常见错误条目：推起时锁死肘部，以及过程中腰部下塌、臀部抬高。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 78,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512 正方形，侧面机位，人物头朝画面左侧（mirror 取 true），垫子是深灰绿色长条，双脚脚尖始终踩在垫上。全片 4 次重复、左右手交替拍肩：1.92 秒与 4.12 秒都能看到一只手离开垫面折向胸口（拍对侧肩位），3.02 秒是俯卧撑最低点、胸口接近垫面，2.48 秒与 3.57 秒是最高点撑直位。这里取 1.92 → 3.02 → 4.12 这一整次重复。拍肩时只有一手撑地，因此只把一直撑垫的那只手写成固定接触点，拍肩那只手用姿态角度表示；拍肩在纯侧面视角下表现为手臂折向胸前，无法表现“拍对侧”的横向细节。"
+}

@@ -1,0 +1,36 @@
+{
+  "time": "2026-10-04T16:52:32.991735+08:00",
+  "publicInputs": {
+    "Steady/TrainingCollections.swift": "63c7eb0e4825c73f1d00cab2f8090b01eb552a30db498776371bfe60150404b2",
+    "Steady/TrendsCoach.swift": "6ee2dd4d518324ecd8e565f695bd0cd3d840b1bfe3062b765338679c65a7aa3e",
+    "Steady/SettingsOnboarding.swift": "81f3dc9db5241187851ea26483f58514ad041b930dbac23afee2d2312c04923a",
+    "SteadyUITests/SteadyUITests.swift": "403180e223e2edb96681bbbb8096bb1deb368827226bbe6323d4802bbb681ee5"
+  },
+  "coreTests": 9,
+  "coreFailures": 0,
+  "firstNativeBatch": {
+    "tests": 4,
+    "failures": 0,
+    "seconds": 130.736,
+    "exportedPNG": 19,
+    "limitation": "Navigation actions/attachments correspond to earlier preview helper, despite newly compiled source. Do not count as formal Coach path verification."
+  },
+  "navigationRetry": {
+    "tests": 2,
+    "failures": 0,
+    "seconds": 75.888,
+    "actualCoachTap": true,
+    "actualTrainingCollectionsTap": true,
+    "allEightFirstLessonsReady": true,
+    "exportedPNG": 10
+  },
+  "ownerViewed": [
+    "formal-training-integration-png/8723AC4B-EB5F-44DD-8A76-BF50659A79D4.png",
+    "formal-training-integration-png/26E2F32D-53BE-4C7B-9C3C-4D15DD25EE5E.png",
+    "formal-training-navigation-retry-png/0A60379B-8F1F-4E71-90FD-62F169DF5092.png"
+  ],
+  "visualResult": "Lunge press corrected whole-cycle caption visible; leg reference page separates original video from supplemental sources.",
+  "phoneInstalled": false,
+  "cleanupAuthorized": false,
+  "formalEntryValidation": "passed; owner viewed collection list in actual Coach navigation. All eight topics navigated; original video button absent in lessons, present in settings references."
+}

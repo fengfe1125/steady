@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-04T15:55:34.215557+08:00",
+  "workerStatus": "8 active at snapshot",
+  "blockers": [
+    {
+      "lessonID": "functional-single-leg-hip-thrust",
+      "issue": "End single-leg lowering pose differs from two-feet setup at next cycle; need explicit smooth reset or repeat state plus consistent final-step instruction."
+    },
+    {
+      "lessonID": "functional-cooldown-walk",
+      "issue": "Gait at5999/6000ms differs from0ms; repeating phase must align."
+    },
+    {
+      "lessonID": "functional-seated-dumbbell-press",
+      "issue": "At second-step preview1.7s dumbbell is already elevated while instruction says shoulder-front; worker to reconcile source-grounded phase instruction."
+    }
+  ],
+  "coordinatorViewed": [
+    {
+      "path": "docs/verification/training-functional/evidence/final-acceptance/functional-single-leg-hip-thrust-phase-and-seam.png",
+      "sha256": "2fa075360420d9fcc4d5cecf11c8477660e44f73763326859c7c9b894629e426"
+    },
+    {
+      "path": "docs/verification/training-functional/evidence/final-acceptance/functional-cooldown-walk-phase-and-seam.png",
+      "sha256": "53ca4fbccd552746b37cd4d76d6019714e8ed90095327a41fb758b7c1f6b8bfc"
+    },
+    {
+      "path": "docs/verification/training-functional/evidence/final-acceptance/functional-seated-dumbbell-press-phase-and-seam.png",
+      "sha256": "aab7d70ac6e96792ec55c45e1c60aaa7cb57a5a02fd1554675b778c78c98b1b3"
+    }
+  ],
+  "evidenceLimit": "Three discrete phase-and-seam contact sheets reviewed, not continuous video; first resized1560x1856 to1440x1713. Current manifest step text independently read.",
+  "action": "Worker authorized minimal three-lesson isolated patch, before-after evidence and other-nine preservation. No public resources changed. Arms/shoulders instructed to stop repeated slow browser retries and close owned unused pages.",
+  "nativeTestsAfterPatch": [
+    "testTrainingAll_functional_single_leg_hip_thrust",
+    "testTrainingAll_functional_cooldown_walk",
+    "testTrainingAll_functional_seated_dumbbell_press"
+  ]
+}

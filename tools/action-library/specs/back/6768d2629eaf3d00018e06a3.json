@@ -1,0 +1,155 @@
+{
+  "sourceID": "6768d2629eaf3d00018e06a3",
+  "sourceName": "俯身哑铃反手划船脉冲",
+  "part": "back",
+  "title": "俯身哑铃反手划船脉冲",
+  "variant": "反手停在顶端，只在髋旁做小幅度脉冲 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    4.58,
+    4.82,
+    5.05,
+    5.22,
+    5.4,
+    5.59
+  ],
+  "levels": [
+    0,
+    0.48,
+    0.82,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 48,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -12,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": -8,
+          "el": 100,
+          "f": 1
+        },
+        "far": {
+          "sh": -4,
+          "el": 96,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 42,
+          "knee": 20
+        },
+        "far": {
+          "hip": 40,
+          "knee": 22
+        }
+      }
+    },
+    "1": {
+      "pelvis": 48,
+      "lumbar": -2,
+      "thorax": -6,
+      "neck": -14,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": -26,
+          "el": 130,
+          "f": 1
+        },
+        "far": {
+          "sh": -22,
+          "el": 126,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 42,
+          "knee": 20
+        },
+        "far": {
+          "hip": 40,
+          "knee": 22
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 2,
+      "y": -180
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 22,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 2,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats"
+    ],
+    "secondary": [
+      "rhomboid",
+      "trap.mid",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌"
+  ],
+  "cue": "上身只折到大约四十五度。铃先收到髋旁，不要放回悬垂，在这个高度做短促的小幅上提再松半寸。",
+  "mistake": {
+    "title": "脉冲时腰松了，肘离开身体",
+    "fix": "幅度可以更小，后背保持平直，两肘始终贴住身侧。",
+    "basis": "资料把弓腰和肘没贴住写在一起。脉冲最高点用拱背加上臂外翻来示意。",
+    "level": 1,
+    "override": {
+      "lumbar": 14,
+      "thorax": 10,
+      "arms": {
+        "near": {
+          "el": 70,
+          "f": 0.55
+        },
+        "far": {
+          "el": 66,
+          "f": 0.55
+        }
+      }
+    }
+  },
+  "observation": "侧面，头朝右。和完整反手划船不同，十二帧里手臂几乎一直停在髋旁，只是小幅起伏，结尾才看见一次放下。取 4.58 到 5.59 秒一次脉冲：起点已经屈肘，终点再往上收一截。文字和画面都是约四十五度屈髋，骨盆用四十八度。肘贴身，没有画成宽距。"
+}

@@ -1,0 +1,145 @@
+{
+  "sourceID": "66d1678aeea0f00001bcc4e2",
+  "sourceName": "波速球平面俯卧撑",
+  "part": "chest",
+  "title": "波速球平面俯卧撑",
+  "variant": "双手撑波速球平面 · 平面朝上 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.1,
+    4.1,
+    5.6,
+    6.9,
+    7.5,
+    8.1
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -37,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -37,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "bosu",
+      "x": 70,
+      "flip": true
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手撑稳球面平台，间距稍宽于肩，身体从头到脚绷成一条直线，屈肘下沉到胸口接近球面，再发力推回顶端。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "收紧腹部和臀部，让肩、髋、踝始终在一条直线上；控制不住时可以先减少下沉深度。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面，人物头朝画面左，约 9.4 秒后机位稍转向正面但仍是侧向动作。共 2 次重复，取第 1 次：3.1 秒手臂撑直在顶部，6.9 秒胸口接近球面最低点，8.17 秒回到顶部。双手全程撑在波速球平面（平面朝上）不移动，脚尖着垫为支点；侧面看不出双手实际间距，远侧肢体被身体遮挡，按常规略宽于肩处理。角度为人工示意拟合。"
+}

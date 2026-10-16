@@ -1,0 +1,171 @@
+{
+  "sourceID": "66b0741df370cc0001dd2e5e",
+  "sourceName": "哑铃上斜俯卧耸肩",
+  "part": "back",
+  "title": "哑铃上斜俯卧耸肩",
+  "variant": "胸口贴斜垫 · 手臂伸直 · 肩沿斜垫上提 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.41,
+    0.82,
+    1.05,
+    1.23,
+    1.62,
+    2.04
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.8,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "scapE": 0,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 68,
+          "el": 6,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 8,
+          "ankle": 10
+        },
+        "far": {
+          "hip": 8,
+          "knee": 12,
+          "ankle": 10
+        }
+      }
+    },
+    "1": {
+      "pelvis": 60,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -14,
+      "head": 0,
+      "scapE": 18,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 68,
+          "el": 6,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 8,
+          "ankle": 10
+        },
+        "far": {
+          "hip": 8,
+          "knee": 12,
+          "ankle": 10
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 6,
+      "y": -124
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": -112,
+        "y": -19,
+        "foot": 8,
+        "bend": -1
+      },
+      "far": {
+        "x": -126,
+        "y": -19,
+        "foot": 8,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -36,
+      "length": 78,
+      "top": -102,
+      "back": {
+        "x": 18,
+        "angle": -58,
+        "length": 168
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.85
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.85
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.upper",
+      "trap.mid"
+    ],
+    "secondary": [
+      "trap.lower",
+      "rhomboid"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌上束",
+    "上背部"
+  ],
+  "cue": "胸口贴住斜垫，手臂伸直垂着铃。肩膀顺着斜垫往头的方向提起，肘不要跟着弯，停一下再落下。",
+  "mistake": {
+    "title": "耸肩时把肘弯得很深",
+    "fix": "重量减轻，手臂保持伸直，用颈后把铃提起来，不要靠屈肘。",
+    "basis": "资料的常见问题是耸肩时肘弯得过大，手臂在发力。",
+    "level": 1,
+    "override": {
+      "arms": {
+        "near": {
+          "el": 78
+        },
+        "far": {
+          "el": 74
+        }
+      }
+    }
+  },
+  "observation": "和同组俯卧划船同一张斜凳，头在右侧，腿基本伸直、脚在低端。斜前方几帧手臂一直垂着，位移很小，符合耸肩而不是划船。取 0.41 秒肩放松、1.23 秒肩上提、2.04 秒落回。侧面用肩沿躯干上移表示斜后方耸肩，肘保持伸直。可调节凳用带靠背的长凳近似三十度。角度为人工拟合。"
+}

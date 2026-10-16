@@ -1,0 +1,137 @@
+{
+  "sourceID": "6492bc1339a79b0001b87aca",
+  "sourceName": "跪姿底部暂停俯卧撑",
+  "part": "chest",
+  "title": "跪姿底部暂停俯卧撑",
+  "variant": "跪姿 · 手略宽于肩 · 底部停顿 2~3 秒 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    8.91,
+    9.6,
+    10.8,
+    11.4,
+    12.5,
+    13.7
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    1,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 380
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "pec.lower",
+      "triceps.long",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "两膝跪垫、小腿向后抬起，两手撑在胸部两侧、略宽于肩；屈肘下压到肘略高于躯干就停住两三秒，保持张力再推起，肘伸直但别锁死，腰背全程挺直。",
+  "mistake": {
+    "title": "底部停不住，塌腰撅臀",
+    "fix": "停顿时更要收紧腹部和臀部，肩、髋、膝保持一条斜线；撑不住就缩短停顿时间，肘伸直不要超伸锁死。",
+    "basis": "来源资料常见错误：伸臂时肘关节超伸锁死、训练中塌腰或撅臀，底部停顿阶段尤其容易变形。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，固定侧面机位，人物朝画面左侧。视频前段腿部较直、近似标准俯卧撑；8.9 秒起转为清晰的跪姿（膝着垫、小腿向后上方抬起、脚离地），与标题和资料一致，故按跪姿绘制。取 8.91~13.7 秒一轮：8.91 跪姿顶部直臂，随后约两秒下压，11.4 到达肘略高于躯干的底部，11.4~12.5 姿态几乎不动（停顿），13.7 推回顶部。双手撑于胸部两侧、间距比肩略宽，手掌全程固定；膝盖着垫为支点。角度为人工示意拟合。"
+}

@@ -1,0 +1,146 @@
+{
+  "sourceID": "648ab31068aa7d0001676e8f",
+  "sourceName": "跪姿上斜离心爆发俯卧撑",
+  "part": "chest",
+  "title": "跪姿上斜离心爆发俯卧撑",
+  "variant": "跪姿 · 撑凳面 · 3 秒慢落 + 快速推起 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.5,
+    1.3,
+    3.4,
+    3.9,
+    4.3,
+    5.2
+  ],
+  "levels": [
+    0,
+    0.08,
+    0.9,
+    1,
+    0.35,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 40,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 55,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -88,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -88,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 200
+    },
+    {
+      "type": "bench",
+      "x": 50,
+      "length": 120,
+      "top": -88
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "手撑凳面跪稳，用整整 3 秒把胸口送到凳子边缘，触底后立刻爆发发力把身体弹回起点，慢落快起才是重点。",
+  "mistake": {
+    "title": "离心段控制不住，身体自由落体砸向凳子",
+    "fix": "下放时始终保持胸部和手臂的张力，数满 3 秒再触底，让肌肉而不是重力来完成下落这一段。",
+    "basis": "资料“常见错误”：训练过程中塌腰或撅臀，离心失去控制时就表现为整体下沉、先塌腰掉髋。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 52,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 11.96 秒。抽到的 12 帧里 0.50 与 4.49 秒是左前方 3/4 视角、8.47 与 11.46 秒是侧面机位，画面都停在手臂伸直的顶端，说明离心段偏慢而推起很快、底部几乎不停留。双手撑在凳面、双膝跪垫、小腿向后斜伸且脚离垫，支撑点全程不移动。节奏按资料“3 秒下落 + 快速推起”推定，取第一个完整重复。"
+}

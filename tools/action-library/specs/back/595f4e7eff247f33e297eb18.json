@@ -1,0 +1,153 @@
+{
+  "sourceID": "595f4e7eff247f33e297eb18",
+  "sourceName": "健身球 I 字伸展",
+  "part": "back",
+  "title": "健身球 I 字伸展",
+  "variant": "俯身压球，手臂抬到和身体成一条直线 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    6.82,
+    7.4,
+    8,
+    8.34,
+    9.1,
+    9.86
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.75,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 92,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": 128,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 125,
+          "el": 8,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 10,
+          "ankle": -6
+        },
+        "far": {
+          "hip": 16,
+          "knee": 14,
+          "ankle": -4
+        }
+      }
+    },
+    "1": {
+      "pelvis": 92,
+      "lumbar": -2,
+      "thorax": -2,
+      "neck": -14,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": 174,
+          "el": 4,
+          "f": 1
+        },
+        "far": {
+          "sh": 171,
+          "el": 6,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 10,
+          "ankle": -6
+        },
+        "far": {
+          "hip": 16,
+          "knee": 14,
+          "ankle": -4
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -16,
+      "y": -110
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": -155,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -132,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -200,
+      "length": 400
+    },
+    {
+      "type": "ball",
+      "x": 18,
+      "r": 52
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.upper",
+      "trap.mid",
+      "trap.lower"
+    ],
+    "secondary": [
+      "deltoid.post",
+      "rhomboid"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌"
+  ],
+  "cue": "腹部压住球，脚分开踩稳。手臂从身前抬到和躯干成一条直线，肘保持伸直，停一下再放下。",
+  "mistake": {
+    "title": "抬臂时上身跟着掀起来",
+    "fix": "腹压实在球上，只动肩膀和手臂，胸口不要跟着甩高。",
+    "basis": "资料里的常见问题是身子起伏太大，下背跟着帮忙。",
+    "level": 0.65,
+    "override": {
+      "pelvis": 70,
+      "lumbar": 16,
+      "thorax": 10,
+      "neck": 6,
+      "head": 8
+    }
+  },
+  "observation": "侧面，头在画面左侧。6.82 秒手臂垂在身前接近垫面，8.34 秒抬到和身体差不多高、伸向前方，9.86 秒又放下。躯干大致水平，头不高于髋。后面镜头拉近，仍从侧面看。健身球用 ball，不是近似。"
+}

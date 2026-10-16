@@ -1,0 +1,145 @@
+{
+  "sourceID": "5a1d5c0fc29b24627de97554",
+  "sourceName": "瑜伽砖跪姿俯卧撑",
+  "part": "chest",
+  "title": "瑜伽砖跪姿俯卧撑",
+  "variant": "瑜伽砖垫高双手 · 跪姿 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.73,
+    2.18,
+    4.0,
+    5.09,
+    7.6,
+    9.9
+  ],
+  "levels": [
+    0,
+    0.45,
+    0.9,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 59,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 74,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -30,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -30,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "box",
+      "under": "hands",
+      "width": 70,
+      "top": -30
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "triceps.long"
+    ],
+    "secondary": [
+      "triceps.lat",
+      "deltoid.ant",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌中下部",
+    "肱三头肌"
+  ],
+  "cue": "双膝跪垫，两手撑稳瑜伽砖，收紧腹臀让头到膝成一条斜线，屈肘下压到肘约与肩同高，再发力推回直臂。",
+  "mistake": {
+    "title": "塌腰，腰部往下塌陷",
+    "fix": "全程收紧腹部和臀部，保持腰背平直像一块板；感觉腰部吃力就缩小下压幅度。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀，需全程腰背挺直。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面，人物朝画面左，共 7 次。取第 1 次：0.73 秒直臂顶部，2.18 秒下降中，3.64~6.55 秒在底部附近，之后推起，9.46 秒接近顶部、约 9.9 秒回到直臂。双膝跪垫为支点，小腿向后上方抬起、脚离地；10.91 秒特写显示每手一块瑜伽砖、砖面比垫面高约 15 厘米（按帧估计 top -30），砖块横向间距比肩略宽但侧面无法精确判断。角度为人工示意拟合。"
+}

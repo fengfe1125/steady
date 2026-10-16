@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-04T17:33:15.980940+08:00",
+  "simulator": {
+    "tests": 3,
+    "failures": 0,
+    "seconds": 109.19,
+    "resultBundle": "docs/coordination/.cache/build/phone-delivery-simulator.xcresult"
+  },
+  "build": "succeeded",
+  "install": "succeeded",
+  "launch": "succeeded",
+  "runningAfterLaunch": true,
+  "device": "iPhone 17",
+  "transportObserved": "localNetwork",
+  "bundleID": "com.jiwo.steady",
+  "bundledResourceSHA256Matches": 113,
+  "sourceSnapshot": "docs/coordination/phone-delivery-inputs.json",
+  "limits": [
+    "Physical-device installation and process launch verified; no new full physical-device UI or continuous animation review."
+  ],
+  "automation": "remains paused"
+}

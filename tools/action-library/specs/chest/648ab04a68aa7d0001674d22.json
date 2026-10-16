@@ -1,0 +1,140 @@
+{
+  "sourceID": "648ab04a68aa7d0001674d22",
+  "sourceName": "快速宽距俯卧撑",
+  "part": "chest",
+  "title": "快速宽距俯卧撑",
+  "variant": "宽距 · 双手约两倍肩宽 · 约 1 秒 1 次不停顿 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.92,
+    4.1,
+    4.3,
+    4.46,
+    4.7,
+    4.92
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.88,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 77,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -3
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -3
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 13,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 13,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手撑在肩部斜前下方、间距约两倍肩宽，臀腹收紧让身体像一块板，胸口快碰垫面就弹回，手肘伸直但不要顶死。",
+  "mistake": {
+    "title": "髋部下沉，腰塌下去",
+    "fix": "下落和推起时都把腹部和臀部夹紧，让肩、髋、踝始终是一条直线；撑不住就先减速，别让腰先垮。",
+    "basis": "源 detail.description 常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 85,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频为侧面机位，人物头朝画面左侧，故 mirror 置 true，全程手撑垫面、脚尖为支点，双手位置不动。节奏很快：把每帧躯干最高点到垫面的像素距离做成序列后，用周期 1.0 秒的正弦＋缓慢漂移项拟合，残差明显小于 2 秒周期，视频 9.96 秒内约完成 10 次，与资料『一秒一次』一致。拟合给出每次的最高点约在 0.93、1.93、2.93…秒，最低点约在 0.43、1.43、2.43…秒；据此取 3.93 秒撑起→4.43 秒胸口最低→4.93 秒回到撑起这一次，画面中 2.90 秒（最高）、4.57 秒（最低）、5.40 秒（最低）三帧与推算吻合。为快速动作，帧间隔 0.83 秒与周期接近，单帧相位靠拟合而非目测确定。双手间距在侧面视角无法读出，按资料『约两倍肩宽』处理，接触点取在肩部正下方略前。起点 pelvis 取 77：手部接触点按起点肩位固定，pelvis 越大肩越低、离手越近，77° 比模板 75° 再把肩压低一点，为手臂可达留出余量。角度为按侧面轮廓人工拟合，不是逐点测量。"
+}

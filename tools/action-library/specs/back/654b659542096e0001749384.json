@@ -1,0 +1,165 @@
+{
+  "sourceID": "654b659542096e0001749384",
+  "sourceName": "俯撑右侧哑铃顶峰收缩宽距划船",
+  "part": "back",
+  "title": "俯撑右侧哑铃顶峰收缩宽距划船",
+  "variant": "宽距单臂拉到顶后停两秒再放下 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    3.52,
+    4.2,
+    4.8,
+    5.4,
+    6.9,
+    7.55
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.86,
+    1,
+    0.9,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    },
+    "1": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -30,
+          "el": 100,
+          "f": 0.55
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 18,
+      "y": -168
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 104,
+        "y": -100,
+        "flat": true,
+        "bend": 1
+      }
+    },
+    "ankle": {
+      "near": {
+        "x": 8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "hands": {
+    "far": "open"
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": 94,
+      "length": 72,
+      "top": -100,
+      "back": {
+        "x": 160,
+        "angle": -4,
+        "length": 105
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.post",
+      "trap.mid",
+      "trap.lower"
+    ],
+    "secondary": [
+      "rhomboid",
+      "teres"
+    ]
+  },
+  "primaryNames": [
+    "三角肌后束",
+    "斜方肌中下束"
+  ],
+  "cue": "肘向外侧拉到明显高于后背，在那里数两秒，肩胛夹紧，再把铃放回身下，底部不要完全卸力。",
+  "mistake": {
+    "title": "停在最高点时肩膀耸向耳朵",
+    "fix": "停住的时候把肩往下沉，只让肘和肩胛在动，脖子保持原来的长度。",
+    "basis": "资料要求全程别把肩抬向耳朵。侧面没有耸肩参数，用头颈前探来示意。",
+    "level": 1,
+    "override": {
+      "neck": 8,
+      "head": 14,
+      "thorax": 6
+    }
+  },
+  "observation": "侧面，头朝右。1.51 秒已经是顶端。改从 3.52 秒垂臂拉起，5.4 秒到 6.9 秒停在髋旁，7.55 秒放下。躯干约比水平高二十五度，双脚并排，撑凳手臂竖直在肩下。宽距用上臂缩短，和贴身划船分开；这一条靠顶端多停来区分。"
+}

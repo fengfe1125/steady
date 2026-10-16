@@ -14,14 +14,24 @@ import SteadyLive
             if let index = arguments.firstIndex(of: "--ui-preview"), arguments.indices.contains(index + 1) {
                 let screen = arguments[index + 1]
                 let model: AppModel
-                if ["login", "account", "settings"].contains(screen) {
+                if screen == "workout" {
+                    let store = try DeviceRepository(url: URL.documentsDirectory.appending(path: "SteadyWorkoutQA.store"))
+                    if arguments.contains("--reset-workout-qa") { try store.purgeCurrentPartition() }
+                    model = try AppModel(planStore: store, journalStore: store, liveStore: store)
+                } else if ["login", "account", "settings"].contains(screen) {
                     let store = try DeviceRepository(inMemory: true)
                     model = try AppModel(planStore: store, journalStore: store, liveStore: store)
+                } else if arguments.contains("--ui-persistent-lower") {
+                    model = try AppModel(planStore: LocalPlanRepository(), journalStore: LocalJournalRepository(), workoutStore: DeviceRepository(url: URL.documentsDirectory.appending(path: "SteadyDemoWorkouts.store")))
+                    if arguments.contains("--reset-lower") { model.reset() }
                 } else {
                     model = try AppModel(planStore: LocalPlanRepository(inMemory: true), journalStore: LocalJournalRepository(inMemory: true))
                 }
                 var preferences = model.journal.preferences; preferences.onboardingComplete = true
                 _ = model.savePreferences(preferences)
+                if screen == "workout", let index = arguments.firstIndex(of: "--workout-smoke"), arguments.indices.contains(index + 1) {
+                    try WorkoutLoopSmoke.run(model: model, phase: arguments[index + 1])
+                }
                 model.selectedTab = ["today": 0, "trends": 1, "coach": 2, "plans": 3][screen] ?? 0
                 _model = State(initialValue: model)
                 return
@@ -30,7 +40,7 @@ import SteadyLive
             let demo = arguments.contains("--demo") || arguments.contains("--ui-testing-reset")
             let model: AppModel
             if demo {
-                model = try AppModel(planStore: LocalPlanRepository(), journalStore: LocalJournalRepository())
+                model = try AppModel(planStore: LocalPlanRepository(), journalStore: LocalJournalRepository(), workoutStore: DeviceRepository(url: URL.documentsDirectory.appending(path: "SteadyDemoWorkouts.store")))
                 if arguments.contains("--ui-testing-reset") { model.reset() }
             } else {
                 let qa = arguments.contains("--ui-testing-live")
@@ -58,6 +68,7 @@ import SteadyLive
             if let model {
                 appContent(model).environment(\.locale, Locale(identifier: "zh_CN"))
                     .task { await model.observeAuth() }
+                    .onChange(of: model.authState) { _, _ in WorkoutNotifications.cancel() }
                     .task {
                         for await online in Connectivity().updates() { if online { model.scheduleSync() } }
                     }

@@ -1,0 +1,160 @@
+{
+  "sourceID": "64818ba0e5c9cb0001f78291",
+  "sourceName": "5 秒支撑下落",
+  "part": "chest",
+  "title": "5 秒支撑下落",
+  "variant": "标准俯卧撑 · 五秒超慢离心下放、胸部贴垫后收膝起身 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.66,
+    2.0,
+    3.3,
+    4.6,
+    5.9,
+    7.22
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.8,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -20
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -20
+        }
+      }
+    },
+    "0.5": {
+      "pelvis": 84,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -11,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -10
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -10
+        }
+      }
+    },
+    "1": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "手掌撑在胸口两侧、比肩略宽，头到脚跟绷成一条直线；用五秒把胸口压到垫上，速度越慢越好，起身可以借收膝的省力方式。",
+  "mistake": {
+    "title": "下放过快，髋部先掉导致塌腰",
+    "fix": "跟着五秒的节奏一点点放，全程夹紧臀部和腹部；一旦感觉髋部先往下掉，就停住重新摆好直线再继续。",
+    "basis": "依据源 detail.description 的常见错误条目（放下去的速度过快、缺少主动控制）；离心阶段一旦失控，腰椎会先过度前凸、髋部先沉，属通用训练常识。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080、时长 15.76 秒，侧面机位，人物头朝画面左侧（需镜像），铺灰色瑜伽垫。全程约 3 次重复：0.7 秒在撑起位（手臂伸直、身体成一条直线、脚尖踩垫），1.9 秒开始弯肘，3.3 秒胸口接近垫面，4.6 秒胸部贴垫（趴地），5.9 秒收膝回到跪姿借力起身，7.2 秒重新回到撑起位；随后 9.9 秒下放中段、11.2 秒再次贴垫、12.5 秒趴地停留、13.8 秒收膝、15.1 秒回到撑起位。5.9 秒前后镜头拉近、构图变化，但人物姿态连续。我取 0.66→4.60→7.22 秒这一轮作为一个完整重复，下放时长（约 4 秒）与文字里的“五秒”同量级。手距“比肩略宽”在纯侧面视角里看不出实际宽度，只能通过在肩前留出更多前移量来近似。"
+}

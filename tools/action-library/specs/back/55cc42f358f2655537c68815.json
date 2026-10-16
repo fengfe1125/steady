@@ -1,0 +1,141 @@
+{
+  "sourceID": "55cc42f358f2655537c68815",
+  "sourceName": "健身球静态山羊挺身",
+  "part": "back",
+  "title": "健身球静态山羊挺身",
+  "variant": "侧面 · 停在接近水平 · 只轻轻起伏",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    0.4,
+    1.6,
+    3.0,
+    4.5,
+    6.2,
+    7.6
+  ],
+  "levels": [
+    0,
+    0.7,
+    1,
+    1,
+    0.55,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 176,
+          "el": 8
+        },
+        "far": {
+          "sh": 180,
+          "el": 10
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 6,
+          "knee": 4
+        },
+        "far": {
+          "hip": 4,
+          "knee": 6
+        }
+      }
+    },
+    "1": {
+      "pelvis": 80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": 170,
+          "el": 6
+        },
+        "far": {
+          "sh": 174,
+          "el": 8
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 6,
+          "knee": 4
+        },
+        "far": {
+          "hip": 4,
+          "knee": 6
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -16,
+      "y": -128
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": -168,
+        "y": -40,
+        "foot": -46,
+        "bend": -1
+      },
+      "far": {
+        "x": -166,
+        "y": -40,
+        "foot": -46,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -230,
+      "length": 460
+    },
+    {
+      "type": "ball",
+      "x": 36,
+      "r": 66
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "erectors"
+    ],
+    "secondary": [
+      "glute.max",
+      "hamstrings"
+    ]
+  },
+  "primaryNames": [
+    "竖脊肌"
+  ],
+  "cue": "肚子留在球顶，腿向后伸直，脚尖点在垫上。胸口维持在水平附近，只再抬起大约十度，不要做成大幅度的起落。手臂朝前方伸着。",
+  "mistake": {
+    "title": "撑不住，胸口往下掉",
+    "fix": "如果维持不久，就把那一点起伏再缩小，胸口仍停在水平附近，不要往下塌。",
+    "basis": "资料提醒重心太靠前时脚会抬起来。侧面改画成胸口下掉、腰变弯，脚仍点在垫上。",
+    "level": 0,
+    "override": {
+      "pelvis": 106,
+      "lumbar": 6,
+      "thorax": 2
+    }
+  },
+  "observation": "侧面，头朝左。球心在腹部下方，不在大腿下面。全程躯干停在水平附近：低点髋到肩是 0°，高点只比水平高 10°。腿伸直、脚尖点地。片长约 8 秒，只保持一次，动画里只留这一点起伏。"
+}

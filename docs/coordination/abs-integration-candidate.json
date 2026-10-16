@@ -1,0 +1,81 @@
+{
+  "topic": "abs",
+  "status": "debug-candidate-native-error-explanation-added-awaiting-regression",
+  "basis": "Coordinator reviewed coverage and per-lesson evidence, representative original frames, all ten static animation review sheets and revised marching states. Local rework closed. Source sampled, not continuously watched.",
+  "pending": [
+    "Native explanation regression and visual review",
+    "Full cycle and appearance coverage",
+    "Formal coach/settings acceptance",
+    "Remaining source coverage"
+  ],
+  "cacheCleanupAuthorized": false,
+  "files": [
+    {
+      "source": "docs/verification/training-abs/content/tanchengyi-abs.json",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json",
+      "sha256": "f1018b38f26dabf73354f808c47edcfc0cc3d287af0151c8c9fec7331a840d1b"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-animations.json",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-animations.json",
+      "sha256": "88cb1e00e072f88cd71891c5411d2b68de526bf040333f83cd3d47001f87ad21",
+      "normalization": "Added mistakeExplanation from verified evidence/abs-native-explanations.json; source manifest unchanged.",
+      "explanationSourceSHA256": "195bae6e7cc9b25cf9c160718293064ad648aeb3ac6cac59515b541170727be6"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-hanging-leg-raise.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-hanging-leg-raise.html",
+      "sha256": "6376d6b6cc8eadc7dc39d9fd08a38f0ffa2c5c0c3b1dc1a624e4dd30e8f139c2"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-kneeling-ab-wheel.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-kneeling-ab-wheel.html",
+      "sha256": "a93eb40d2025f8454f7caad0eed5042ceaa1c0ff5f730165fdb00b6928a4ff7b"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-prone-abdominal-stretch.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-prone-abdominal-stretch.html",
+      "sha256": "fcfcad04187bc20659bdd2300e065b83f7ed6997b5031b91b24764c5ec0d2183"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-side-biased-crunch.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-side-biased-crunch.html",
+      "sha256": "e62ccdb2ed5437d9dba6a4346984b5e2a968f20dddcc9079d9f67ba2688373ab"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-sling-knee-raise.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-sling-knee-raise.html",
+      "sha256": "61c232f89c137cb07766ae92b31ee86fe05102d7e318b6fdce56ac367c15aee0"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-supine-crunch.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-supine-crunch.html",
+      "sha256": "5ab13550e8f9336c41bd450a30ff75aa8a6dc4083b85f9b800ce85b2148ea29d"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-supported-knee-raise.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-supported-knee-raise.html",
+      "sha256": "e261a2be1966f2b254651ba8999a4e1caf5fc9c3f166e1b77c98f6cdb01fd847"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-warmup-cat-cow.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-warmup-cat-cow.html",
+      "sha256": "20ca48b3ebf0bbf154de47eaec86518fe2c777c8812a0e4964028b8b46d8cc7b"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-warmup-marching.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-warmup-marching.html",
+      "sha256": "6860262e57d7c316623aeb39a65c74e470b201353c3c42f226a3f824b39c079a"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-warmup-pelvic-tilt.html",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-warmup-pelvic-tilt.html",
+      "sha256": "9acec3e1760cc18e508c5986609ad2ab4002a8b2649bf3fbdce7c0bb965e9f1e"
+    },
+    {
+      "source": "docs/verification/training-abs/animations/abs-renderer.js",
+      "destination": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-renderer.js",
+      "sha256": "389140ed72ee563e9e8560a7cdd929dea2ab1931c758dd22056579929e8ba2b2"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "sourceName": "跪姿右侧背部拉伸",
+  "part": "back",
+  "title": "跪姿右侧背部拉伸",
+  "variant": "跪坐 · 臀部落回脚跟 · 上身贴向大腿 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.4,
+    1.15,
+    2.3,
+    3.4,
+    3.9,
+    4.3
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.78,
+    1,
+    0.55,
+    0
+  ],
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "poses": {
+    "0": {
+      "pelvis": 96,
+      "lumbar": 2,
+      "thorax": 0,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 176,
+          "el": 6
+        },
+        "far": {
+          "sh": 176,
+          "el": 6
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 158,
+          "knee": 155
+        },
+        "far": {
+          "hip": 158,
+          "knee": 155
+        }
+      }
+    },
+    "1": {
+      "pelvis": 102,
+      "lumbar": 2,
+      "thorax": 0,
+      "neck": -10,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": 188,
+          "el": 4
+        },
+        "far": {
+          "sh": 188,
+          "el": 4
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 164,
+          "knee": 155
+        },
+        "far": {
+          "hip": 164,
+          "knee": 155
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -20,
+      "y": -12
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "erectors"
+    ],
+    "secondary": [
+      "obliques",
+      "rhomboid"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "竖脊肌"
+  ],
+  "cue": "跪下去，臀部向脚跟坐，两臂向前滑，上身再放松地沉低，让后背被拉长。",
+  "mistake": {
+    "title": "臀部悬在脚后跟上方",
+    "fix": "在臀和脚跟之间垫高一点，先让骨盆能坐下，再把上身放下去。",
+    "basis": "资料说明腰背太紧时臀部挨不到脚跟，可以垫毛巾或书。",
+    "level": 1,
+    "override": {
+      "pelvis": 60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 120,
+          "el": 20
+        },
+        "far": {
+          "sh": 120,
+          "el": 20
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 85,
+          "knee": 120
+        },
+        "far": {
+          "hip": 85,
+          "knee": 120
+        }
+      }
+    }
+  },
+  "observation": "婴儿式。膝屈约 155，髋屈从 158 到 164，小腿折回垫上，臀落在脚跟附近（髋比踝只靠前约 11）。头在终点靠近垫面，所以 pelvis 到 102；头已经低于髋，可以超过 75。若髋只停在 140，躯干还抬着，臀会离开脚跟。向左侧倒在侧面里看不出来。4.3 秒后换机位，两段都是保持，返回沿进入的路径折回。",
+  "sourceID": "586cfdb7124816784056bfd3"
+}

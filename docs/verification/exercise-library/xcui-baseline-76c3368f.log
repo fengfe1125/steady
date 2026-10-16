@@ -1,0 +1,11 @@
+SteadyUITests/ExerciseCatalogUITests.swift:95: error: -[SteadyUITests.ExerciseCatalogUITests testEquipmentRequiresConfirmationAndSceneChangeClearsIt] : failed - 找不到可点击元素："bodyweightOnly" Button
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testEquipmentRequiresConfirmationAndSceneChangeClearsIt]' failed (48.512 seconds).
+SteadyUITests/ExerciseCatalogUITests.swift:48: error: -[SteadyUITests.ExerciseCatalogUITests testGeneratePreviewReplaceConfirmAndRestart] : failed - 找不到可点击元素："equipmentOption_plate-loaded-chest-press" Switch
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testGeneratePreviewReplaceConfirmAndRestart]' failed (76.933 seconds).
+SteadyUITests/ExerciseCatalogUITests.swift:153: error: -[SteadyUITests.ExerciseCatalogUITests testGymSearchSelectionsSurviveSearchAndReopening] : failed - 找不到可点击元素："confirmEquipment" Button
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testGymSearchSelectionsSurviveSearchAndReopening]' failed (41.057 seconds).
+	 Executed 3 tests, with 3 failures (0 unexpected) in 166.502 (166.506) seconds
+Test Case '-[SteadyUITests.WorkoutLoopUITests testOfflineTrainingRestartAndNextPerformance]' passed (40.170 seconds).
+	 Executed 1 test, with 0 failures (0 unexpected) in 40.170 (40.171) seconds
+	 Executed 4 tests, with 3 failures (0 unexpected) in 206.673 (206.679) seconds
+	 Executed 4 tests, with 3 failures (0 unexpected) in 206.673 (206.681) seconds

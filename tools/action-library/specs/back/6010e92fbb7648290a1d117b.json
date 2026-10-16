@@ -1,0 +1,149 @@
+{
+  "sourceID": "6010e92fbb7648290a1d117b",
+  "sourceName": "俯身哑铃宽距划船",
+  "part": "back",
+  "title": "俯身哑铃宽距划船",
+  "variant": "肘向两侧打开，上臂收到接近垂直于身体 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.59,
+    1.0,
+    1.45,
+    1.76,
+    2.35,
+    2.94
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.82,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 56,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": 56,
+          "el": 8,
+          "f": 1
+        },
+        "far": {
+          "sh": 60,
+          "el": 10,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 50,
+          "knee": 18
+        },
+        "far": {
+          "hip": 46,
+          "knee": 22
+        }
+      }
+    },
+    "1": {
+      "pelvis": 56,
+      "lumbar": 0,
+      "thorax": -5,
+      "neck": -14,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": 10,
+          "el": 76,
+          "f": 0.48
+        },
+        "far": {
+          "sh": 14,
+          "el": 72,
+          "f": 0.5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 50,
+          "knee": 18
+        },
+        "far": {
+          "hip": 46,
+          "knee": 22
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 0,
+      "y": -176
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 20,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 0,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "rhomboid"
+    ],
+    "secondary": [
+      "trap.lower",
+      "deltoid.post",
+      "lats"
+    ]
+  },
+  "primaryNames": [
+    "上背部",
+    "中背部"
+  ],
+  "cue": "屈髋后两臂先垂下。拉起时肘向两侧翻开，上臂收到差不多和身体垂直，停一下再放下，不要把肘夹进腰侧。",
+  "mistake": {
+    "title": "拉起时把背弓圆",
+    "fix": "少折一点髋，胸口保持打开；肘可以向外，但后背不要塌成圆弧。",
+    "basis": "宽距这一式的可见问题是弓腰。资料里那句肘没夹紧和宽肘路径相反，所以错误示意只画拱背。",
+    "level": 1,
+    "override": {
+      "lumbar": 16,
+      "thorax": 12,
+      "neck": 6,
+      "head": 6
+    }
+  },
+  "observation": "侧面，头朝右。0.59 秒手臂垂下，1.76 秒肘向两侧打开、铃收到下肋高度，2.94 秒放下。宽距靠上臂缩短（f 约 0.5）表示肘向外，和反手贴肘的划船不是同一条手臂路径。文字写约九十度，画面头明显高于髋，骨盆用五十六度。后半段换了更近的机位，姿态相同。"
+}

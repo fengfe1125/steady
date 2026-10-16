@@ -1,0 +1,148 @@
+{
+  "sourceID": "64e85117979f980001f9d1d7",
+  "sourceName": "俯身哑铃 V 字划船",
+  "part": "back",
+  "title": "俯身哑铃 V 字划船",
+  "variant": "双手合握一只哑铃，从两膝之间拉到下肋 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    3.07,
+    3.55,
+    4.0,
+    4.45,
+    5.05,
+    5.54
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.8,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 48,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": 52,
+          "el": 16
+        },
+        "far": {
+          "sh": 52,
+          "el": 16
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 42,
+          "knee": 18
+        },
+        "far": {
+          "hip": 40,
+          "knee": 20
+        }
+      }
+    },
+    "1": {
+      "pelvis": 48,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": -40,
+          "el": 120
+        },
+        "far": {
+          "sh": -40,
+          "el": 120
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 42,
+          "knee": 18
+        },
+        "far": {
+          "hip": 40,
+          "knee": 20
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 0,
+      "y": -180
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 16,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -4,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "trap.lower",
+      "lats"
+    ],
+    "secondary": [
+      "rhomboid",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中下束",
+    "背阔肌"
+  ],
+  "cue": "双手一起握住一只铃，先垂在两膝之间。夹着肘把它收到下肋，稍停再放下，后背不要塌。",
+  "mistake": {
+    "title": "弓着腰，两肘也向外撇",
+    "fix": "少折一点髋，后背拉直；上拉时两肘贴住身侧，像要夹住一根杆。",
+    "basis": "资料点名弓腰和肘没夹紧。最高点把背弯圆，并把上臂缩短成向外翻。",
+    "level": 1,
+    "override": {
+      "lumbar": 14,
+      "thorax": 8,
+      "arms": {
+        "near": {
+          "el": 70,
+          "f": 0.6
+        },
+        "far": {
+          "el": 70,
+          "f": 0.6
+        }
+      }
+    }
+  },
+  "observation": "侧面，头朝右，头明显最高。原片是两手合握一只哑铃，从两膝之间拉到下胸，不是左右各一只。远侧手臂跟近侧同一角度，铃只画在近侧手上。上身比之前抬高，髋角大约四十八度。"
+}

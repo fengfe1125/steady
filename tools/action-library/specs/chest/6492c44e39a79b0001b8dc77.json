@@ -1,0 +1,139 @@
+{
+  "sourceID": "6492c44e39a79b0001b8dc77",
+  "sourceName": "右侧底部暂停弓箭俯卧撑",
+  "part": "chest",
+  "title": "底部暂停弓箭俯卧撑",
+  "variant": "弓箭俯卧撑 · 一臂屈一臂伸 · 底部停顿 2~3 秒 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    10.27,
+    11.48,
+    12.0,
+    12.69,
+    13.3,
+    13.9
+  ],
+  "levels": [
+    0,
+    0.85,
+    1,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 45,
+        "y": -5,
+        "flat": true,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手撑得比两倍肩宽还多，手指略朝外；重心压向一侧，那条手臂屈肘把身体放到肘略高于躯干，另一臂伸直，底部停两三秒再推回。",
+  "mistake": {
+    "title": "塌腰撅臀，躯干没有保持一条直线",
+    "fix": "下沉之前先收紧腹部和臀部，让肩、髋、支撑脚保持一条直线；撑到顶端时肘部留一点弯曲，不要向后锁死。",
+    "basis": "源资料常见错误：伸臂时肘关节超伸锁死，训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 14.5 秒，全程侧面机位，人物头朝画面左侧，因此镜像；9 秒前后机位换成白墙背景、人物更清楚。取 10.27 秒手臂伸直的顶端、11.48 秒到 12.69 秒之间胸口贴近垫面的底部停顿、13.9 秒推回顶端这一轮。手掌平按垫面、全程不移动，两只手的摆放明显比普通俯卧撑宽。侧面机位看不出重心横向压向屈臂一侧的位移，屈臂与伸臂的差异用两个撑点的前后距离近似表达。"
+}

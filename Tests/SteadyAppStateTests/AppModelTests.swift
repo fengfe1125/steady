@@ -52,7 +52,7 @@ private actor HealthConnectionStub: HealthDataService {
 
 @Test @MainActor func failedConfirmationDoesNotDismissResumedDraft() async throws {
     let model = try AppModel(planStore: FailingPlans(), journalStore: MemoryJournal())
-    let plan = try await DemoCoachService(delay: .zero).planDraft(preferences: UserPreferences(), scenario: .normal)
+    let plan = try await DemoCoachService(delay: .zero).planDraft(preferences: { var p = UserPreferences(); p.availableEquipmentIDs = ["wall"]; return p }(), scenario: .normal)
     #expect(model.draft == nil)
     #expect(!model.confirmDraft(plan))
     #expect(model.error != nil)
@@ -68,7 +68,7 @@ private actor HealthConnectionStub: HealthDataService {
     model.generateReport(); try await awaitIdle(model)
     #expect(model.journal.reports.count == 2)
     #expect(model.presentedReport != nil)
-    model.generatePlan(UserPreferences()); try await awaitIdle(model)
+    model.generatePlan({ var p = UserPreferences(); p.availableEquipmentIDs = ["wall"]; return p }()); try await awaitIdle(model)
     let draft = try #require(model.draft)
     #expect(model.confirmedPlans.isEmpty)
     #expect(model.confirmDraft(draft))
@@ -146,4 +146,83 @@ private struct SignedInAuth: AuthService {
     #expect(model.journal.preferences.goal == "updated elsewhere")
     #expect(model.journal.preferences.cloudSync)
     #expect(model.journal.preferences.aiProcessing == edited.aiProcessing)
+}
+
+@Test @MainActor func catalogPlanSavesHistoricalFeedbackButRejectsDuplicateDates() throws {
+    let store = try LocalPlanRepository(inMemory: true)
+    var preferences = UserPreferences(); preferences.availableEquipmentIDs = ["wall"]
+    var plan = try ExerciseCatalog.load().demoPlan(preferences: preferences, today: DemoData.today, calendar: DemoData.calendar)
+    plan.sessions[0].exercises[1].catalogID = "future-exercise"
+    plan.sessions[0].exercises[1].catalogVersion = 99
+    try store.save(plan)
+    let model = try AppModel(planStore: store, journalStore: MemoryJournal())
+    plan.sessions[0].feedback = try WorkoutFeedback(completed: true, perceivedEffort: 3, note: "历史计划反馈")
+    #expect(model.savePlan(plan))
+    #expect(model.plans.first?.sessions[0].exercises[1].catalogID == "future-exercise")
+    var invalid = plan
+    invalid.sessions[1].scheduledAt = invalid.sessions[0].scheduledAt
+    #expect(!model.savePlan(invalid))
+    #expect(model.plans.first?.sessions[1].scheduledAt == plan.sessions[1].scheduledAt)
+    plan.sessions[0].exercises[1] = Exercise(name: "旧端改名后的动作", prescription: "新的文字说明")
+    #expect(model.savePlan(plan))
+}
+
+@Test @MainActor func lowerBodyDatesCannotBypassRecoveryCheckAndSnapshotsStayReadable() async throws {
+    let catalog = try ExerciseCatalog.load(version: 2)
+    var preferences = UserPreferences(); preferences.availableEquipmentIDs = []; preferences.availableMinutes = 30
+    preferences.movementConditions = (catalog.conditions ?? []).map { .init(conditionID: $0.id, version: $0.version, status: .ready) }
+    let store = try LocalPlanRepository(inMemory: true), journal = MemoryJournal()
+    let model = try AppModel(planStore: store, journalStore: journal)
+    var plan = try catalog.demoPlan(preferences: preferences, today: DemoData.today, calendar: DemoData.calendar)
+    #expect(model.savePlan(plan))
+    let snapshot = plan.generationContext
+    var revoked = preferences; revoked.movementConditions = []
+    #expect(model.savePreferences(revoked))
+    plan.sessions[0].feedback = try WorkoutFeedback(completed: true, perceivedEffort: 4, note: "条件变化后的历史反馈")
+    #expect(model.savePlan(plan))
+    #expect(model.plans.first?.generationContext == snapshot)
+    let originalDate = plan.sessions[1].scheduledAt
+    plan.sessions[1].scheduledAt = Calendar.current.date(byAdding: .day, value: 1, to: plan.sessions[0].scheduledAt)!
+    #expect(!model.savePlan(plan))
+    #expect(model.plans.first?.sessions[1].scheduledAt == originalDate)
+    #expect(model.plans.first?.sessions[0].feedback?.note == "条件变化后的历史反馈")
+}
+
+@Test @MainActor func unknownFutureRuleKeepsHistoricalFeedbackReadable() throws {
+    let catalog = try ExerciseCatalog.load(version: 2)
+    var p = UserPreferences(); p.availableEquipmentIDs = []; p.availableMinutes = 30
+    p.movementConditions = (catalog.conditions ?? []).map { .init(conditionID: $0.id, version: $0.version, status: .ready) }
+    var plan = try catalog.demoPlan(preferences: p, today: DemoData.today, calendar: DemoData.calendar)
+    plan.generationContext?.rulesVersion = 999
+    let first = plan.sessions[0]
+    let third = WorkoutSession(title: first.title, scheduledAt: DemoData.calendar.date(byAdding: .day, value: 6, to: first.scheduledAt)!, minutes: first.minutes, exercises: first.exercises)
+    plan.sessions.append(third)
+    let store = try LocalPlanRepository(inMemory: true); try store.save(plan)
+    let model = try AppModel(planStore: store, journalStore: MemoryJournal())
+    plan.sessions[0].feedback = try WorkoutFeedback(completed: true, perceivedEffort: 3, note: "未知规则历史反馈")
+    #expect(model.savePlan(plan))
+    #expect(model.plans.first?.sessions.count == 3)
+    #expect(model.plans.first?.generationContext?.rulesVersion == 999)
+}
+
+@Test @MainActor func legacyGenerationProjectsNewEquipmentWithoutOverwritingPreferences() async throws {
+    let model = try AppModel(coach: DemoCoachService(delay: .zero), planStore: LocalPlanRepository(inMemory: true), journalStore: MemoryJournal())
+    var p = UserPreferences(); p.availableEquipmentIDs = ["stable-chair", "wall"]
+    #expect(model.savePreferences(p))
+    model.generatePlan(p); try await awaitIdle(model)
+    #expect(model.draft != nil)
+    #expect(model.draft?.generationContext?.availableEquipmentIDs == ["wall"])
+    #expect(model.journal.preferences.availableEquipmentIDs == ["stable-chair", "wall"])
+}
+
+@Test @MainActor func futureConditionRecordsRemainSavedButDoNotBlockCurrentGeneration() async throws {
+    let catalog = try ExerciseCatalog.load(version: 2)
+    let model = try AppModel(coach: DemoCoachService(delay: .zero), planStore: LocalPlanRepository(inMemory: true), journalStore: MemoryJournal())
+    var p = UserPreferences(); p.availableEquipmentIDs = []; p.availableMinutes = 30
+    p.movementConditions = (catalog.conditions ?? []).map { .init(conditionID: $0.id, version: $0.version, status: .ready) }
+    p.movementConditions?.append(.init(conditionID: "future-condition", version: 9, status: .ready))
+    model.generatePlan(p, programKind: "lowerBodyBasics"); try await awaitIdle(model)
+    #expect(model.draft != nil)
+    #expect(model.draft?.generationContext?.movementConditions?.contains { $0.conditionID == "future-condition" } == false)
+    #expect(model.journal.preferences.movementConditions?.contains { $0.conditionID == "future-condition" } == true)
 }

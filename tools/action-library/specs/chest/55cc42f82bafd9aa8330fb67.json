@@ -1,0 +1,144 @@
+{
+  "sourceID": "55cc42f82bafd9aa8330fb67",
+  "sourceName": "屈腿仰卧后撑",
+  "part": "chest",
+  "title": "屈腿仰卧后撑",
+  "variant": "屈腿踩地 · 双手撑凳沿 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    9.5,
+    9.95,
+    10.55,
+    10.77,
+    11.4,
+    12.03
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 5,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -25,
+          "el": 5
+        },
+        "far": {
+          "sh": -25,
+          "el": 5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 85,
+          "knee": 85,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 85,
+          "knee": 85,
+          "ankle": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 12,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -65,
+          "el": 90
+        },
+        "far": {
+          "sh": -65,
+          "el": 90
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 95,
+          "knee": 75,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 95,
+          "knee": 75,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hand",
+    "side": "near",
+    "at": {
+      "x": 0,
+      "y": -92
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 150,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 140,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -150,
+      "length": 160,
+      "top": -88
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.upper"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "pec.lower"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌上部"
+  ],
+  "cue": "双手掌根撑住凳沿，屈膝双脚踩地；屈肘让身体贴凳沿下沉到大臂接近平行，再用上臂后侧发力撑起，肘不完全锁死。",
+  "mistake": {
+    "title": "下沉时耸肩、脖子前伸",
+    "fix": "掌根撑凳、主动沉肩绷住肩带，下沉时保持挺胸，脖颈不要向前探。",
+    "basis": "源资料强调肩部全程保持紧绷、用掌根撑凳沿；耸肩缩脖为凳上臂屈伸通用错误。",
+    "level": 0.5,
+    "override": {
+      "neck": 2,
+      "head": 12,
+      "thorax": 8
+    }
+  },
+  "observation": "主视频 1080×1080，侧面，人物朝左（已镜像），共 5 次，前段远景后段近景。取近景段一次重复：9.50 秒手臂撑直为顶点，10.77 秒沿凳沿沉到最低、屈肘约 90 度，12.03 秒撑回顶点。双手撑凳沿、双脚踩地全程不移动，屈膝约 90 度；无负重。角度为人工示意拟合。"
+}

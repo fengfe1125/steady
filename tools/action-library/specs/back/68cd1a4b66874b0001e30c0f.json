@@ -1,0 +1,159 @@
+{
+  "sourceID": "68cd1a4b66874b0001e30c0f",
+  "sourceName": "仰卧哑铃肩外旋",
+  "part": "back",
+  "title": "仰卧哑铃肩外旋",
+  "variant": "仰卧 · 大臂打开贴地 · 前臂从朝上外旋到接近地面 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.56,
+    1.05,
+    1.45,
+    1.67,
+    2.2,
+    2.78
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.8,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 0,
+          "el": 90,
+          "f": 0.38
+        },
+        "far": {
+          "sh": 0,
+          "el": 90,
+          "f": 0.38
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 75,
+          "knee": 88
+        },
+        "far": {
+          "hip": 70,
+          "knee": 84
+        }
+      }
+    },
+    "1": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 0,
+          "el": 152,
+          "f": 0.38
+        },
+        "far": {
+          "sh": 0,
+          "el": 152,
+          "f": 0.38
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 75,
+          "knee": 88
+        },
+        "far": {
+          "hip": 70,
+          "knee": 84
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 8,
+      "y": -36
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 128,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 110,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -220,
+      "length": 400
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "infraspinatus"
+    ],
+    "secondary": [
+      "teres",
+      "deltoid.post"
+    ]
+  },
+  "primaryNames": [
+    "冈下肌"
+  ],
+  "cue": "仰卧屈膝，大臂打开贴在垫上，前臂先朝上，再向外转到快要碰到地面，肘不要离开身侧。",
+  "mistake": {
+    "title": "外旋时肘离开垫子往上抬",
+    "fix": "肘一直贴着垫子，只让前臂画弧，大臂不要跟着抬起来。",
+    "basis": "资料要求手臂稳定、不要晃。这里把上臂抬离身侧，前臂的弧就变了。",
+    "level": 0.7,
+    "override": {
+      "arms": {
+        "near": {
+          "sh": 35,
+          "el": 110,
+          "f": 0.7
+        },
+        "far": {
+          "sh": 35,
+          "el": 110,
+          "f": 0.7
+        }
+      }
+    }
+  },
+  "observation": "侧面，头朝左仰卧，膝弯曲，脚踩垫。大臂向两侧打开，朝向镜头，所以用缩短系数表示。前臂从竖直放到朝头的一侧、接近垫面。0.56 秒前臂朝上，1.67 秒放到低处，2.78 秒回到朝上。两侧一起动，侧面会叠在一起。哑铃就是 dumbbell，各一只，没有近似。"
+}

@@ -1,0 +1,106 @@
+{
+  "tests": {
+    "executed": 6,
+    "failures": 0,
+    "seconds": 191.035
+  },
+  "visualReview": "Coordinator viewed 6 contact sheets containing all 18 native screenshots. Native summary/body/playback text grows and wraps; representative step seeking and mode switching pass.",
+  "limits": [
+    "Contact sheets are not individual full-resolution typography inspection.",
+    "HTML/SVG teaching labels in arms, arms-extra, chest and functional stay small compared with native Dynamic Type; do not count these as full large-text teaching acceptance.",
+    "Below-fold large-text explanations, continuous motion, dark-large combination, legs and back not covered."
+  ],
+  "followup": "Audit native scalable explanation coverage and scroll lower content before closing large-text acceptance.",
+  "attachments": [
+    {
+      "file": "B1CD4440-3913-41DA-B4EC-86C442ED8EF6.png",
+      "name": "all-abs-supine-crunch-mistakes_0_EA0EEE86-2C27-4915-BF91-9100F906BDBB.png",
+      "sha256": "ab9ff5b3664376dcabe8558d8d1e6faf884053af816d69c751a62746dd096eac"
+    },
+    {
+      "file": "0D524702-0FC7-4CF6-AF5E-60DD21B0164A.png",
+      "name": "all-abs-supine-crunch-detail_0_B9FD9577-E743-4FE6-A612-92C5B167A6AC.png",
+      "sha256": "61c4f38cc1e2c72c4ed6ad1f0bfbfcfdccfe155caf6a2be72f3158209d0aa0a2"
+    },
+    {
+      "file": "23258818-0F80-4D92-B30B-C61A227A11CD.png",
+      "name": "all-abs-supine-crunch-motion_0_8827F969-312D-47F5-BBD9-0431E82F33BF.png",
+      "sha256": "1502f0609ed775990ba273dc529a1f81c2e34fe448d3fb8da995a7baaf542025"
+    },
+    {
+      "file": "EA56BFA1-B27E-4B3D-B7CA-CA7ED2E8FC89.png",
+      "name": "all-arms-extra-lying-barbell-extension-mistakes_0_C6DA95BA-7359-4A92-8190-C3739A035993.png",
+      "sha256": "bb3ae181849889fd9b2cab8bca0269d0342f358add33b654c718be41079df85f"
+    },
+    {
+      "file": "08919253-3B2B-44DB-A459-221668041DA1.png",
+      "name": "all-arms-extra-lying-barbell-extension-detail_0_3564F6BA-3C0E-440F-A3A3-3B9C8D67D6EC.png",
+      "sha256": "17511c7a75b61123ef4c3d9a196e050506e899babe4f79b6d40712182b9a58b8"
+    },
+    {
+      "file": "FC77C533-58C3-4C2B-8CBB-1B9F0C6AAACC.png",
+      "name": "all-arms-extra-lying-barbell-extension-motion_0_86E63B6C-942A-4790-913F-4E871B92625B.png",
+      "sha256": "cbe5e2535bc4bfce216fe1ad963e97ccb2b0df5341185686343b029508ddda25"
+    },
+    {
+      "file": "83B54D4D-322E-4B8E-9503-FF2BAD304717.png",
+      "name": "all-arms-warmup-triceps-mistakes_0_597FCA9F-1404-4F10-B41D-9A297BD12290.png",
+      "sha256": "4d41c464bfde482be12ad6809f65cf5358890a6a2a5ae183038cb517b3abe753"
+    },
+    {
+      "file": "B71CCDC2-B9F7-457F-9F5A-5F138ECED1FC.png",
+      "name": "all-arms-warmup-triceps-detail_0_D9E9FFC5-813E-4624-8B13-48E9FC6646CE.png",
+      "sha256": "4b8c76a70bd1bb79e51d49f2dc8d689ff073dff6bef5952d9df4977d8a132cbd"
+    },
+    {
+      "file": "10B9F7C3-15B7-4CA0-B8B5-60C26C705D05.png",
+      "name": "all-arms-warmup-triceps-motion_0_C1C33C54-B86B-4C94-811B-C78A669E1269.png",
+      "sha256": "eeed2d1bf5f99024d1c7b099dbda9f64d4e62d27d519c707301b893ebd625c16"
+    },
+    {
+      "file": "9EAC7F7B-5C8E-41E3-93E7-8475B9DC228E.png",
+      "name": "all-chest-warmup-roller-y-mistakes_0_1F63B301-564F-46DD-A9E6-A186A1561B45.png",
+      "sha256": "c6a72f7070523b1687402b5d27ac89c7ec1f5abc200846000246c7fa12948de9"
+    },
+    {
+      "file": "C2E30D39-F01A-4FDA-AFBB-A026ED6A1F2A.png",
+      "name": "all-chest-warmup-roller-y-detail_0_5D85522B-1E34-4C47-BB89-B6D8D549833F.png",
+      "sha256": "d8994ffa78b4a912e0b658eee103b3191cc907b9236341eda646ea2f293b9f92"
+    },
+    {
+      "file": "E940F33F-4312-4CAB-97BD-DF46EC12BB23.png",
+      "name": "all-chest-warmup-roller-y-motion_0_C0900D6C-6C08-49A9-8306-51B5C39A64AA.png",
+      "sha256": "e99ba85b4853bab5fa3d59f2de1b1cb276f15cc1bd1b081256864442f50fecf1"
+    },
+    {
+      "file": "C47537CC-E8A1-4865-B4CE-862A9821DAA4.png",
+      "name": "all-functional-cooldown-calf-stretch-mistakes_0_97EB4E6D-B5D3-455A-A937-6455C82A3BFE.png",
+      "sha256": "5f65ca702cfe7302eabf3508e252f15fd7201177a4e128bb5274b2351d0ddfeb"
+    },
+    {
+      "file": "FAD2DAAC-9D69-4E4B-AD3C-644F6AE0AD1F.png",
+      "name": "all-functional-cooldown-calf-stretch-detail_0_8DE89F97-5807-4F27-8866-71D9E90B477F.png",
+      "sha256": "cc885e4b6ee7eb18552754c2e6004b82eeee3f630bdd84e29f42c836ec97f305"
+    },
+    {
+      "file": "25ACB39E-3287-4AB2-AD83-1586DA511F6B.png",
+      "name": "all-functional-cooldown-calf-stretch-motion_0_5482EEA1-8A44-4F8B-A8B0-42B51B6E045D.png",
+      "sha256": "7b4d288eceb3eb58eb01e41dfe697a32e019a13827a854bfe28ab420b44ddbc6"
+    },
+    {
+      "file": "7534ECFF-7662-4724-9324-0FF4A6C9814C.png",
+      "name": "all-shoulders-dumbbell-press-mistakes_0_7D9ADC2A-C30E-41BE-AEC7-939E54853720.png",
+      "sha256": "26f499f2f9095b3cb231d1d8d057d4d715b167be2f1f1522d245be655a66471f"
+    },
+    {
+      "file": "71425EF3-954E-4967-8860-9ACE4173E7D4.png",
+      "name": "all-shoulders-dumbbell-press-detail_0_1472757C-6E8D-4F93-A85A-52D0246553EF.png",
+      "sha256": "857b0991c580e17a8fcdc5020009b385802751d0422dd9db7c1b5fbbfbea194b"
+    },
+    {
+      "file": "6DC54E6B-0876-4925-973D-389C11D626FD.png",
+      "name": "all-shoulders-dumbbell-press-motion_0_219AD2E1-BA75-4771-8359-9BCA5A24A029.png",
+      "sha256": "389c2c51f6e0a78364e88a1e7a706ca08541e87370a5b9abdfb1770dd9ced94f"
+    }
+  ]
+}

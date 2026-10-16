@@ -1,0 +1,159 @@
+{
+  "sourceID": "65def4c5c8776a0001abff9f",
+  "sourceName": "俯身哑铃顶峰收缩划船",
+  "part": "back",
+  "title": "俯身哑铃顶峰收缩划船",
+  "variant": "对握，两肘贴身收到髋旁后停住 · 上身接近水平 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    4.19,
+    5.2,
+    6.5,
+    7.8,
+    8.95,
+    10.17
+  ],
+  "levels": [
+    0,
+    0.5,
+    1,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 74,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 80,
+          "el": 16,
+          "f": 1
+        },
+        "far": {
+          "sh": 84,
+          "el": 18,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 70,
+          "knee": 22
+        },
+        "far": {
+          "hip": 66,
+          "knee": 26
+        }
+      }
+    },
+    "1": {
+      "pelvis": 74,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -18,
+          "el": 114,
+          "f": 1
+        },
+        "far": {
+          "sh": -14,
+          "el": 108,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 70,
+          "knee": 22
+        },
+        "far": {
+          "hip": 66,
+          "knee": 26
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -12,
+      "y": -162
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 22,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 4,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid"
+    ],
+    "secondary": [
+      "trap.mid",
+      "biceps",
+      "erectors"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "菱形肌"
+  ],
+  "cue": "屈髋到后背接近水平，头仍是最高点。两肘贴住身侧把铃收到髋旁，停住再慢慢放回，后背不要拱起来。",
+  "mistake": {
+    "title": "后背拱圆，两肘也离开身体",
+    "fix": "少折一点髋，先把后背拉直；上拉时两肘贴住肋骨两侧，不要向外翻。",
+    "basis": "资料把弓腰和肘没夹紧列在一起。最高点把背弯圆，并把上臂缩短成向外翻。",
+    "level": 1,
+    "override": {
+      "lumbar": 14,
+      "thorax": 10,
+      "neck": 6,
+      "head": 4,
+      "arms": {
+        "near": {
+          "f": 0.55,
+          "el": 70
+        },
+        "far": {
+          "f": 0.55,
+          "el": 74
+        }
+      }
+    }
+  },
+  "observation": "侧面，人朝左，所以镜像。开头停在顶端，不能把第一帧当起点。取 4.19 秒手臂垂下，6.5 秒收到髋旁，7.8 秒仍停在上面，8.95 秒正在放下，10.17 秒回到垂下。对握，两肘贴身，没有凳子。文字写俯身约九十度，但头仍是最高点，按说明把 pelvis 停在 74，没有画成头低于髋。"
+}

@@ -1,0 +1,5 @@
+Test Case '-[SteadyUITests.WorkoutLoopUITests testLibraryMoveCanBeSearchedReadAndAdded]' passed (19.348 seconds).
+Test Case '-[SteadyUITests.WorkoutLoopUITests testOfflineTrainingRestartAndNextPerformance]' passed (39.860 seconds).
+	 Executed 2 tests, with 0 failures (0 unexpected) in 59.208 (59.211) seconds
+	 Executed 2 tests, with 0 failures (0 unexpected) in 59.208 (59.211) seconds
+	 Executed 2 tests, with 0 failures (0 unexpected) in 59.208 (59.212) seconds

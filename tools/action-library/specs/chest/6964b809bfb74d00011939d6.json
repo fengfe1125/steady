@@ -1,0 +1,136 @@
+{
+  "sourceID": "6964b809bfb74d00011939d6",
+  "sourceName": "药球俯卧撑",
+  "part": "chest",
+  "title": "药球俯卧撑",
+  "variant": "双手撑药球两侧 · 窄支撑 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.55,
+    3.3,
+    6.8,
+    9.29,
+    10.8,
+    12.3
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.7,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 86,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -6
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -6
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -49,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -49,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "ball",
+      "x": 65,
+      "r": 22,
+      "kind": "medicine"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.lower",
+      "triceps.long"
+    ],
+    "secondary": [
+      "triceps.lat",
+      "deltoid.ant",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌外侧",
+    "肱三头肌"
+  ],
+  "cue": "双手按在药球两侧包住球面，双脚后伸绷成一条直线，屈肘缓慢下放到胸口接近球的高度，再用胸和肱三头肌把身体推起，全程稳住球不让它滚动。",
+  "mistake": {
+    "title": "球面晃动带动身体塌腰",
+    "fix": "先夹紧臀部和腹部把身体锁成直线，手肘保持贴近躯干约三四十度，控制下放速度；球不稳就先减小幅度或改膝撑。",
+    "basis": "源 detail 常见错误：药球不稳导致身体左右晃动、塌腰。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 86,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频为头顶俯拍机位，画面自带骨架描边叠加层：人物双手按在一只大药球两侧，做一次非常缓慢的俯卧撑，0.55 秒直臂在顶，之后匀速下放，9.29 秒胸口接近球、手肘明显外展，随后推起，12.57 秒回到直臂。系统不支持俯拍视角，改用侧面示意：双手位置按撑在球顶拟合，肘外展细节在侧面不可见。球直径较大，半径按表中药球上限取值。角度为人工示意拟合。"
+}

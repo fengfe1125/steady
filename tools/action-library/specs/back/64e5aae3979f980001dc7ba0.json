@@ -1,0 +1,158 @@
+{
+  "sourceID": "64e5aae3979f980001dc7ba0",
+  "sourceName": "俯身哑铃离心反手划船",
+  "part": "back",
+  "title": "俯身哑铃离心反手划船",
+  "variant": "反手贴肘拉起，再用将近三秒放回悬垂 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    3.36,
+    3.85,
+    4.4,
+    4.7,
+    6.05,
+    7.39
+  ],
+  "levels": [
+    0,
+    0.55,
+    0.9,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 58,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": 56,
+          "el": 12,
+          "f": 1
+        },
+        "far": {
+          "sh": 60,
+          "el": 14,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 52,
+          "knee": 20
+        },
+        "far": {
+          "hip": 48,
+          "knee": 24
+        }
+      }
+    },
+    "1": {
+      "pelvis": 58,
+      "lumbar": -2,
+      "thorax": -6,
+      "neck": -14,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": -22,
+          "el": 104,
+          "f": 1
+        },
+        "far": {
+          "sh": -18,
+          "el": 100,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 52,
+          "knee": 20
+        },
+        "far": {
+          "hip": 48,
+          "knee": 24
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 8,
+      "y": -174
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 26,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 6,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "trap.lower",
+      "lats"
+    ],
+    "secondary": [
+      "rhomboid",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中下束",
+    "背阔肌"
+  ],
+  "cue": "反手把铃收到腹侧，肘贴住身体。到顶后不要马上掉下来，用大约三秒把铃放回悬垂，肘始终夹着。",
+  "mistake": {
+    "title": "下放时背拱圆，肘也松开",
+    "fix": "重量减轻到能慢慢放下。后背保持平，两肘贴着肋骨一起下降。",
+    "basis": "资料点名弓腰和肘没有夹紧。错误放在下放中段，背弯圆并且上臂向外翻。",
+    "level": 0.55,
+    "override": {
+      "lumbar": 16,
+      "thorax": 10,
+      "neck": 4,
+      "arms": {
+        "near": {
+          "f": 0.55,
+          "el": 55
+        },
+        "far": {
+          "f": 0.55,
+          "el": 52
+        }
+      }
+    }
+  },
+  "observation": "侧面，头朝右。同一姿势大约每四秒回来一次：3.36 秒手臂在下方，4.7 秒收到腹侧，7.39 秒才放回，下放明显比拉起长，接近文字里的三秒。骨盆五十八度，头仍最高；文字写九十度，画面没有折成水平。肘贴身，拉得比普通反手划船略高、略少折到髋后。反手掌心在侧面看不清。"
+}

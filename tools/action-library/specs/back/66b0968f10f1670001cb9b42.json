@@ -1,0 +1,143 @@
+{
+  "sourceID": "66b0968f10f1670001cb9b42",
+  "sourceName": "史密斯俯身正手划船",
+  "part": "back",
+  "title": "史密斯俯身正手划船",
+  "variant": "正手握杆 · 肘向两侧打开收到下胸 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.55,
+    1.05,
+    1.38,
+    1.55,
+    2.1,
+    2.55
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 50,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 52,
+          "el": 4,
+          "f": 1
+        },
+        "far": {
+          "sh": 52,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 46,
+          "knee": 16
+        },
+        "far": {
+          "hip": 44,
+          "knee": 18
+        }
+      }
+    },
+    "1": {
+      "pelvis": 50,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -22,
+          "el": 128,
+          "f": 0.58
+        },
+        "far": {
+          "sh": -22,
+          "el": 128,
+          "f": 0.58
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 46,
+          "knee": 16
+        },
+        "far": {
+          "hip": 44,
+          "knee": 18
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -16,
+      "y": -180
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 14,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -6,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "smith",
+      "x": 69
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "trap.mid"
+    ],
+    "secondary": [
+      "rhomboid",
+      "deltoid.post",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "斜方肌中束"
+  ],
+  "cue": "掌心朝下握住杆，屈髋后把肘向两侧翻开，沿导轨收到下胸，不要耸肩。",
+  "mistake": {
+    "title": "含胸把杆拉成圆背",
+    "fix": "胸口保持打开，肘往外翻的同时后背仍是平的，杆只沿导轨上下。",
+    "basis": "资料指出弓背和肘没有打开，这里把上背弯成弧，和正手翻肘的正确画法对照。",
+    "level": 0.4,
+    "override": {
+      "lumbar": 14,
+      "thorax": 14,
+      "neck": 8,
+      "head": 6
+    }
+  },
+  "observation": "侧面，头朝右，头仍是最高点。比反手那条更接近水平一点，膝微屈，双脚分开但侧面只错开少许。0.50 秒杆在身前低处、手臂伸直，1.50 秒肘向外收到下胸。正手在侧面用上臂缩短（肘朝镜头）表示翻肘，杆的高度也比反手更高。器材是 smith，没有近似。"
+}

@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-04T15:42:48.340573+08:00",
+  "trigger": "用户要求立即加快并恢复八窗口工作",
+  "workers": [
+    {
+      "slug": "arms",
+      "threadID": "01a101fd-6d41-7393-b1c9-d575a08ff799",
+      "verifiedStatus": "active",
+      "exclusiveOutput": "docs/verification/training-arms/evidence/final-acceptance/"
+    },
+    {
+      "slug": "chest",
+      "threadID": "01a101fe-4f89-7a32-af8e-1869cce40003",
+      "verifiedStatus": "active",
+      "exclusiveOutput": "docs/verification/training-chest/evidence/final-acceptance/"
+    },
+    {
+      "slug": "shoulders",
+      "threadID": "01a101fe-dcbb-73a2-9d7c-ee41c5c5a3d1",
+      "verifiedStatus": "active",
+      "exclusiveOutput": "docs/verification/training-shoulders/evidence/final-acceptance/"
+    },
+    {
+      "slug": "abs",
+      "threadID": "01a10200-a72f-7413-a5b9-54a834347526",
+      "verifiedStatus": "active",
+      "exclusiveOutput": "docs/verification/training-abs/evidence/final-acceptance/"
+    },
+    {
+      "slug": "arms-extra",
+      "threadID": "01a10201-7754-72a0-b77e-3a1fe197b206",
+      "verifiedStatus": "active",
+      "exclusiveOutput": "docs/verification/training-arms-extra/evidence/final-acceptance/"
+    },
+    {
+      "slug": "functional",
+      "threadID": "01a10202-0939-7ad0-a2fa-e39f32a73791",
+      "verifiedStatus": "active",
+      "exclusiveOutput": "docs/verification/training-functional/evidence/final-acceptance/"
+    },
+    {
+      "slug": "legs",
+      "threadID": "01a101ff-de90-7b93-92be-b7b5817171d1",
+      "verifiedStatus": "active",
+      "exclusiveOutput": "docs/verification/training-legs/evidence/final-acceptance/"
+    },
+    {
+      "slug": "back",
+      "threadID": "01a101fa-0fd7-7e92-a1b8-408a97167395",
+      "verifiedStatus": "active",
+      "exclusiveOutput": "docs/verification/training-back/evidence/final-acceptance/"
+    }
+  ],
+  "scope": "Per-lesson full action phase review and targeted source uncertainty checks; no repeated passed tests. Honest sampled versus continuous evidence. Minimal isolated patches for blockers only.",
+  "ownerScope": [
+    "shared collection entry",
+    "Settings-only references",
+    "native integration regression",
+    "final acceptance and authorized cleanup"
+  ],
+  "frozenPublicInputs": true
+}

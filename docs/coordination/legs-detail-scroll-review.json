@@ -1,0 +1,28 @@
+{
+  "tests": "2 actually executed, 0 failures, 71.286 seconds",
+  "viewed": [
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/legs-detail-scroll-retry-attachments/137DABFF-7115-497D-AD8E-33BD252720F5.png",
+      "sha256": "e855fc10e5045588f0ee33ee359ee2e267dbb96ba5fb33f024eface3ec849936"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/legs-detail-scroll-retry-attachments/9DA07C2C-0132-4100-BD68-6929E218225B.png",
+      "sha256": "f79f3f5ad5cfe6030c04f1cbe81c1e9e92964a68852e950e1fb14afe79867bd3"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/legs-detail-scroll-retry-attachments/C73E4B32-5097-471F-9475-43BE0243B359.png",
+      "sha256": "d54de6d8fdef12464027e67e7b9dbf80cb3ca466e653e6e6cc1adf672a0abade"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/legs-detail-scroll-retry-attachments/1113ADB3-B9DB-4E4F-9BE4-FC5B4E40E13B.png",
+      "sha256": "558ad7fe16bd0db4c59d084db041acc1186922ee7501115616f316849d238960"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/legs-detail-scroll-retry-attachments/EDD31F98-1921-49E3-AA52-D13862B46990.png",
+      "sha256": "dfba0679dc05198a9368b052c5b68aa33916ed11881df21b50402bc67650fd30"
+    }
+  ],
+  "passedScope": "Default light, two detail pages scroll past full text to training arrangement and return to visible motion artwork at 0 seconds.",
+  "issue": "Hip-flexion orange label partly covered by lower leg at zero seconds; sent for label-only repair.",
+  "limits": "No continuous playback verification; not all13 detail pages or entire native text below arrangement."
+}

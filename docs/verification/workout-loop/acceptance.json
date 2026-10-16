@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-16",
+  "branch": "codex/workout-loop",
+  "sourceBaseline": "/Volumes/Developer/Projects/steady-backups/20261016-150026",
+  "reference": {
+    "path": "/Volumes/Developer/Projects/openGym-reference",
+    "commit": "e348fc17c42c7e9a211c5972e573ad3698190ee2",
+    "codeOrMediaImported": false
+  },
+  "swift": {
+    "passed": 112,
+    "core": 87,
+    "live": 5,
+    "appState": 20
+  },
+  "edge": {
+    "passed": 32,
+    "typecheck": "passed"
+  },
+  "localDatabase": {
+    "workoutTransport": 14,
+    "legacyCompatibility": 27,
+    "auth": "isolated test stubs"
+  },
+  "hostedDatabase": {
+    "workoutTransport": 14,
+    "legacyCompatibility": 27,
+    "transactionRolledBack": true,
+    "recordsBefore": 55,
+    "recordsAfter": 55,
+    "syntheticWorkoutRecordsRemaining": 0,
+    "migration": "20261016073215_workout_records"
+  },
+  "deployment": {
+    "project": "steady-internal",
+    "sync-push": {
+      "version": 6,
+      "status": "ACTIVE",
+      "verifyJWT": true,
+      "sourceMatches": true
+    },
+    "sync-pull": {
+      "version": 6,
+      "status": "ACTIVE",
+      "verifyJWT": true,
+      "sourceMatches": true
+    },
+    "otherFunctionsChanged": false
+  },
+  "backup": {
+    "file": "/Users/sakura/Documents/SteadyBackups/steady-hosted-20261016T072711Z.tar.gpg",
+    "restoreVerified": true,
+    "restoredRecords": 55
+  },
+  "ios": {
+    "simulatorBuild": "passed",
+    "uiTestTargetBuild": "passed",
+    "iphonePlatformUnsignedBuild": "passed",
+    "simulatorInstallLaunch": "passed",
+    "crossProcessPersistenceSmokeChecks": 17,
+    "smokeIsUIInteractionTest": false,
+    "screenshots": [
+      "ios-begin.png",
+      "ios-finish.png",
+      "ios-repeat.png",
+      "ios-dark-large-text.png"
+    ]
+  },
+  "notAccepted": [
+    "full XCUI interaction: Xcode cannot discover custom temporary device set",
+    "physical iPhone install / complete workout: paired iPhone unavailable",
+    "lock-screen notification delivery and refusal",
+    "flight-mode / full reconnect UI",
+    "small-screen and large-type interaction",
+    "real signed-in two-device end-to-end cloud sync"
+  ],
+  "sourceFiles": {
+    "Sources/SteadyCore/Workout.swift": "2d1a27e61c8d2fca3ef50e5f901e6c52f802e7536ae188caf1c12f64942feb8e",
+    "Sources/SteadyLive/SyncPullPage.swift": "1e7234aaeab6eef19e19e9b0dad1fbc3ad13cb4ffd8f542fee026af227fc2951",
+    "Steady/WorkoutViews.swift": "148ad67c446c88c846a8123a0254ae63307a385df0e84cad7d8871c601e576f2",
+    "Steady/WorkoutState.swift": "5eae6389272d85f1911e3b707a2d4db55ea6f96e015fca01164021f432aea3ca",
+    "Steady/WorkoutNotifications.swift": "9107a0cd213e53730beca3dc7ac865a2a013226791a9b116b57333d8010cc385",
+    "supabase/functions/_shared/workout.ts": "73efbaab537311017c1dedde50728172c1beec66a509c8cc47bc63f3d6184165",
+    "supabase/functions/sync-pull/index.ts": "579754a80f11daf648eb92e7c67774cdfd5c080921ca49fbbfcbea2624e43f24",
+    "supabase/functions/_shared/schema.ts": "911358300898bdbbc56f222c9838accd41424cdf2e1e9899ef930c8adfcae8f5",
+    "supabase/migrations/20261016073215_workout_records.sql": "da224d560e0d330d02c883a31ab1138c86c4d7dedc1d39a4885426b176551b1e"
+  }
+}

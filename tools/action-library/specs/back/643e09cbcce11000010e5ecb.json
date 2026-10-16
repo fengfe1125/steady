@@ -1,0 +1,150 @@
+{
+  "sourceID": "643e09cbcce11000010e5ecb",
+  "sourceName": "俯身哑铃顶峰收缩宽距划船",
+  "part": "back",
+  "title": "俯身哑铃顶峰收缩宽距划船",
+  "variant": "宽距，提铃时两肘向外侧打开并停住 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    3.47,
+    4.46,
+    5.45,
+    6.43,
+    7.7,
+    9.3
+  ],
+  "levels": [
+    0,
+    0.5,
+    1,
+    1,
+    0.36,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 73,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 78,
+          "el": 12,
+          "f": 1
+        },
+        "far": {
+          "sh": 82,
+          "el": 14,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 68,
+          "knee": 20
+        },
+        "far": {
+          "hip": 64,
+          "knee": 24
+        }
+      }
+    },
+    "1": {
+      "pelvis": 73,
+      "lumbar": 0,
+      "thorax": -5,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -6,
+          "el": 78,
+          "f": 0.52
+        },
+        "far": {
+          "sh": -2,
+          "el": 74,
+          "f": 0.52
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 68,
+          "knee": 20
+        },
+        "far": {
+          "hip": 64,
+          "knee": 24
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -10,
+      "y": -164
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 24,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 2,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "rhomboid",
+      "deltoid.post"
+    ],
+    "secondary": [
+      "trap.lower",
+      "lats"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中束",
+    "菱形肌",
+    "三角肌后束"
+  ],
+  "cue": "俯身时头仍高于髋。向上让两肘向身体两侧打开，收到与后背齐平后停住，再控制着放下。",
+  "mistake": {
+    "title": "拉到顶时上背塌成弧",
+    "fix": "先把胸口轻轻抬起，后背保持平直，肩头不要缩向耳朵。",
+    "basis": "资料要求挺胸、不要耸肩，并把弓腰列为常见问题。侧面用含胸弓背来表示。",
+    "level": 1,
+    "override": {
+      "lumbar": 16,
+      "thorax": 12,
+      "neck": 8,
+      "head": 8
+    }
+  },
+  "observation": "侧面，人朝左。3.47 秒手臂垂在身下，5.45 秒两肘向外侧打开并收到与背齐平，6.43 秒仍停着，7.7 秒正在放下，9.3 秒回到垂下。侧面量不出左右握距，上臂缩短表示肘向外翻。这一式的正确做法就是肘向外，所以错误示意画弓背，不画成肘没夹紧。头是最高点，pelvis 73。"
+}

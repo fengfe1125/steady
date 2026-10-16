@@ -1,0 +1,80 @@
+{
+  "createdAt": "2026-10-04T16:28:55.577391+08:00",
+  "files": [
+    {
+      "name": "legs-warmup-renderer.js",
+      "candidatePath": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/final-acceptance/copyable/candidate/legs-warmup-renderer.js",
+      "publicDestination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-renderer.js",
+      "beforeSHA256": "685ea2c854d8e715a7c3f4eecd6c98b2886b30f00f3d81f347624615251f78d4",
+      "candidateSHA256": "b505c51d905cce1c5c0f48649078bd94bd32144e4baa63f9033b5838e209fdcb",
+      "candidateBytes": 15195,
+      "patchPath": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/final-acceptance/copyable/legs-warmup-renderer.js.patch",
+      "patchSHA256": "85db78a62bf56f574f6f7d8f9c2599d6e444bd1b2f88b8ba734237134afce924",
+      "affectedLessonIDs": [
+        "legs-frog-rock",
+        "legs-frog-hip-rotation",
+        "legs-90-90-switch",
+        "legs-90-90-leg-extension"
+      ]
+    },
+    {
+      "name": "legs-playback.js",
+      "candidatePath": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/final-acceptance/copyable/candidate/legs-playback.js",
+      "publicDestination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-playback.js",
+      "beforeSHA256": "525edd7ada92d3b0d30cf4bc6bc7188c9734caef5b62bc75b1bf97574355840a",
+      "candidateSHA256": "a3af5924f49a889df4293284ba3194a9f460bb78e4f95fd78c76c4fb40fcfee3",
+      "candidateBytes": 13703,
+      "patchPath": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/final-acceptance/copyable/legs-playback.js.patch",
+      "patchSHA256": "fb5f69a7cbf52878d7c3b749cb955d5721924f2145f3b5bbf8731f91ed2c5197",
+      "affectedLessonIDs": [
+        "legs-hip-flexion"
+      ]
+    },
+    {
+      "candidatePath": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/evidence/final-acceptance/patch-candidate/shoulders-seatedReverseFly.html",
+      "publicDestination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-seatedReverseFly.html",
+      "beforeSHA256": "3d358ac402e45b43af862eb170c345d3f875ec010453ae813f9e289a278df914",
+      "candidateSHA256": "277ac41293ccb1625f9b674ec9f0a9cc5220e0901030b2c3469fd75708e300e9"
+    }
+  ],
+  "review": "Owner viewed four warmup after frames, reverse-fly 18-pose sequence and before/after detail panels; inspected exact diffs and before/after hashes. Not continuous video viewing.",
+  "nativeStatus": "passed",
+  "actualTests": 6,
+  "failures": 0,
+  "seconds": 161.001,
+  "exportedPNG": 18,
+  "ownerActuallyViewed": [
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-repair-batch-2-png/114E8757-88B9-43AC-A42C-A090CEA1FD21.png",
+      "sha256": "d7c4d659232693a0e4fdec6c3c1c1466bbea62e5f5b3bc0a31ba6fa33f8ff43c",
+      "name": "all-legs-90-90-leg-extension-motion_0_AFEB834E-A825-4D50-A3F4-A5E5BE542EA7.png"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-repair-batch-2-png/E8188C15-8A17-4B05-A49E-67324779E841.png",
+      "sha256": "c9515ba2bc661d9faadf25c06dc68a0b4f4e9876d76802e7f0ac9988b4e7edd8",
+      "name": "all-legs-90-90-switch-motion_0_EADD525A-78BF-441A-A7A9-2C8A652B4B98.png"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-repair-batch-2-png/BFF97BD2-5871-4982-BCC3-0777D0550422.png",
+      "sha256": "a97e7c84d24188c8bdd4783c8aaabb837700f2413672606a10258fe33c6b17ad",
+      "name": "all-legs-frog-hip-rotation-motion_0_A5FB2025-61E8-45D5-8525-E941861AEB39.png"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-repair-batch-2-png/D8683099-7608-4F87-B718-CFF8653CBEF6.png",
+      "sha256": "87e686806ee10289cc1f12db81725682c03836b847a49687998bac4bdaff7418",
+      "name": "all-legs-frog-rock-motion_0_C7E19F43-ACE8-49C1-B4BB-3757391E6220.png"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-repair-batch-2-png/FD7D0EAC-16D3-4531-9A86-4B1E8D39F6C7.png",
+      "sha256": "9c8af62553785c7c0d68d06b3b96c99a67ac6c2131691036a1c3baa6f6f2b6d8",
+      "name": "all-legs-hip-flexion-motion_0_9C0E1404-941F-47B0-B1A7-F7C5D4DDB128.png"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/final-repair-batch-2-png/30A8E1A1-FC36-463B-B7D7-8ED89B6D8ED0.png",
+      "sha256": "0a337dae6c99068b685cddc7c8329d927a0e7bb17c3b6437f2c8f163efe7af69",
+      "name": "all-shoulders-machine-reverse-fly-motion_0_4A250A54-1115-465F-BF66-88875CAEFB87.png"
+    }
+  ],
+  "visualDecision": "All four warmup labels clear of the body at tested second-step poses; hip-flexion text agrees; reverse-fly has slight bend and attached hands at 1.7s. Scoped fixes closed. Not full continuous native visual acceptance.",
+  "completedAt": "2026-10-04T16:33:02.201439+08:00"
+}

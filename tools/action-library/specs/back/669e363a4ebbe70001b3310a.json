@@ -1,0 +1,139 @@
+{
+  "sourceID": "669e363a4ebbe70001b3310a",
+  "sourceName": "澳式引体",
+  "part": "back",
+  "title": "澳式引体",
+  "variant": "低杠 · 身体斜向绷直 · 脚跟撑地 · 拉到胸口靠近杠 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    1.25,
+    2.15,
+    3.2,
+    3.9,
+    5.3,
+    6.6
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.82,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 50,
+      "lumbar": 2,
+      "thorax": 2,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 16,
+          "ankle": -8
+        },
+        "far": {
+          "hip": 8,
+          "knee": 18,
+          "ankle": -8
+        }
+      }
+    },
+    "1": {
+      "pelvis": 38,
+      "lumbar": -2,
+      "thorax": -8,
+      "neck": -10,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 0.72
+        },
+        "far": {
+          "f": 0.72
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 18,
+          "ankle": -6
+        },
+        "far": {
+          "hip": 6,
+          "knee": 20,
+          "ankle": -6
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "heel",
+    "side": "near",
+    "at": {
+      "x": -120,
+      "y": -16
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 20,
+        "y": -270,
+        "bend": -1
+      },
+      "far": {
+        "x": 20,
+        "y": -270,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "pullup_bar",
+      "x": 20,
+      "top": -270
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid"
+    ],
+    "secondary": [
+      "biceps",
+      "teres",
+      "trap.mid"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "菱形肌"
+  ],
+  "cue": "脚跟撑地，身体从头到脚绷成一条斜线。肩胛先向中间收，再把胸口拉向低杠，放下时肩不要完全松开。",
+  "mistake": {
+    "title": "只用手臂拉，肩胛不收",
+    "fix": "起拉时先让肩胛向中间靠拢，胸口跟着上去，不要光弯胳膊。",
+    "basis": "资料指出常见问题是背部没有主动后缩，手臂先疲劳。",
+    "level": 0.85,
+    "override": {
+      "thorax": 16,
+      "lumbar": 8,
+      "neck": 6,
+      "head": 6
+    }
+  },
+  "observation": "文字是低杠下身体成直线的划船。宽景里人很小、接近直立，斜躺幅度看不清，所以身体画得比较陡，而不是贴地平躺。侧面低杠、脚跟着地，用来表现文字里的直线拉起。取大约 1.25 秒到 6.6 秒的一次，最低点手臂没有完全伸死。膝可弯来调难度，这里按帧里腿基本伸直来画。角度为人工拟合。"
+}

@@ -1,0 +1,138 @@
+{
+  "sourceID": "56038745331e338262f3d356",
+  "sourceName": "蜘蛛俯卧撑",
+  "part": "chest",
+  "title": "蜘蛛俯卧撑",
+  "variant": "动态变式 · 一侧膝盖向前外侧摆动至肘旁 · 双手间距与肩同宽 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    1.05,
+    1.76,
+    2.3,
+    2.46,
+    2.8,
+    3.16
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 75,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 86,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 18,
+          "knee": 100,
+          "ankle": 20
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -6
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "far",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus",
+      "iliopsoas"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "支撑好后用一侧腿向前外侧摆出去、膝盖送到同侧肘旁，同时屈肘把胸口压向垫面；再用上部胸肌把身体推回支撑位，两侧轮换。",
+  "mistake": {
+    "title": "只把腿摆出来，身体几乎不下沉、也不蹬地",
+    "fix": "先让腿向前蹬地带动身体前扑，同时屈肘把胸口压到接近垫面，让上胸真正承担制动和推起的负荷。",
+    "basis": "源 detail.description 常见错误：胸肌上侧受力太轻，动作强度不足；解决：加大双腿蹬地的爆发力。",
+    "level": 0.9,
+    "override": {
+      "pelvis": 76,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    }
+  },
+  "observation": "该动作的 12 张视频帧同样是肩臂局部特写（背面视角，叠加绿色示意线与向下箭头，示意手肘沿身体向下、向后移动），第 6 张只拍到肩胸与一个示意点，第 12 张为全黑无效帧。帧图中看不到完整身体、垫面与腿部，因此支撑关系与腿部动作依据文字资料（手脚俯撑、屈膝、向前蹬地并侧向迈出一条腿、上胸制动）按标准俯卧撑侧面机位还原。视频 8.44 秒未标注重复次数，帧间隔约 0.7 秒，节奏按约 2 秒一次估计。摆动腿一侧的脚会离地，所以支点选在另一侧（far）的脚尖上，避免支撑点被腿带走。"
+}

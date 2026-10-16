@@ -1,5 +1,7 @@
 import { calendarOffset,buildPlan,buildReport,facts,metadata,modelRequest,statistics,validateRequest } from "./coach.ts";
 import { aiRequest,validatePayload } from "./schema.ts";
+import { generate } from "./generate.ts";
+import { exerciseCatalog as lowerCatalog } from "./generated/exercise-catalog-v2.ts";
 function assert(ok:unknown,message="assertion failed"):asserts ok {if(!ok)throw new Error(message);}
 function rejects(work:()=>unknown){let threw=false;try{work();}catch{threw=true;}assert(threw);}
 const s={metadata:{...metadata("healthKit"),revision:2},dayKey:"2026-09-23",timeZoneID:"Asia/Shanghai",date:Date.now(),weightKG:70,sleepMinutes:420,steps:5000,activeMinutes:20};
@@ -59,5 +61,64 @@ Deno.test("DeepSeek HTTP failure and timeout stop AI requests",async()=>{
   globalThis.fetch=originalFetch;
   if(originalKey===undefined) Deno.env.delete("DEEPSEEK_API_KEY");
   else Deno.env.set("DEEPSEEK_API_KEY",originalKey);
+ }
+});
+
+Deno.test("generate boundary classifies malformed model output without changing input or deliberate failures",async()=>{
+ const originalFetch=globalThis.fetch;
+ const environment=["SUPABASE_URL","SUPABASE_SERVICE_ROLE_KEY","DEEPSEEK_API_KEY","STEADY_PLAN_CATALOG_ENABLED","STEADY_LOWER_BODY_ENABLED"];
+ const originalEnvironment=new Map(environment.map(key=>[key,Deno.env.get(key)]));
+ const userID=crypto.randomUUID(),sessionID=crypto.randomUUID();
+ const token=`e30.${btoa(JSON.stringify({session_id:sessionID}))}.synthetic`;
+ let content="",malformedEnvelope=false,providerCalls=0;
+ const completions:boolean[]=[];
+ try {
+  Deno.env.set("SUPABASE_URL","https://synthetic-project.supabase.co");
+  Deno.env.set("SUPABASE_SERVICE_ROLE_KEY","synthetic-server-key");
+  Deno.env.set("DEEPSEEK_API_KEY","synthetic-provider-key");
+  Deno.env.set("STEADY_PLAN_CATALOG_ENABLED","true");
+  Deno.env.set("STEADY_LOWER_BODY_ENABLED","true");
+  globalThis.fetch=(input,init)=>{
+   const url=typeof input==="string"?input:input instanceof URL?input.href:input.url;
+   if(url.endsWith("/auth/v1/user"))return Promise.resolve(Response.json({id:userID}));
+   if(url.includes("/rest/v1/rpc/")) {
+    if(url.endsWith("/finish_ai"))completions.push(JSON.parse(init!.body as string).ok);
+    return Promise.resolve(Response.json({accepted:true}));
+   }
+   if(url==="https://api.deepseek.com/chat/completions") {
+    providerCalls++;
+    return Promise.resolve(malformedEnvelope?new Response("{"):
+     Response.json({choices:[{finish_reason:"stop",message:{content}}],usage:{prompt_tokens:1,completion_tokens:1}}));
+   }
+   throw new Error("unexpected synthetic test request");
+  };
+  const base=request();
+  const lower=aiRequest.parse({...base,planCatalogVersion:2,programKind:"lowerBodyBasics",preferences:{...base.preferences!,
+   availableEquipmentIDs:["stable-chair","fixed-support"],movementConditions:lowerCatalog.conditions.map(c=>({conditionID:c.id,version:c.version,status:"ready"}))}});
+  const misclassifiedRole={title:"下肢基础",sessions:[0,3].map(dayOffset=>({title:"训练",dayOffset,exercises:[
+   {exerciseID:"march-in-place",role:"warmup"},{exerciseID:"unloaded-hip-hinge",role:"preparation"},
+   {exerciseID:"chair-sit-to-stand",role:"main"},{exerciseID:"floor-glute-bridge",role:"main"},{exerciseID:"walk",role:"cooldown"}]}))};
+  const cases=[
+   {name:"malformed content JSON",route:"plan-draft" as const,body:JSON.stringify(base),content:"{",status:502,code:"invalid_output",calls:1},
+   {name:"malformed provider envelope JSON",route:"plan-draft" as const,body:JSON.stringify(base),content:"{}",status:502,code:"invalid_output",calls:1,envelope:true},
+   {name:"invalid plan shape",route:"plan-draft" as const,body:JSON.stringify(base),content:"{}",status:502,code:"invalid_output",calls:1},
+   {name:"training slot confused with role",route:"plan-draft" as const,body:JSON.stringify(lower),content:JSON.stringify(misclassifiedRole),status:502,code:"invalid_output",calls:1},
+   {name:"invalid report shape",route:"report" as const,body:JSON.stringify(base),content:"{}",status:502,code:"invalid_output",calls:1},
+   {name:"deliberate unavailable result",route:"plan-draft" as const,body:JSON.stringify(lower),content:'{"unavailable":true}',status:400,code:"plan_conditions_insufficient",calls:1},
+   {name:"invalid user request shape",route:"plan-draft" as const,body:JSON.stringify({...base,preferences:{...base.preferences!,availableMinutes:"30"}}),content:"{}",status:400,code:"invalid_input",calls:0},
+   {name:"malformed user request JSON",route:"plan-draft" as const,body:"{",content:"{}",status:400,code:"invalid_input",calls:0},
+  ];
+  for(const test of cases) {
+   content=test.content;malformedEnvelope=test.envelope??false;providerCalls=0;completions.length=0;
+   const response=await generate(test.route)(new Request(`https://synthetic.test/${test.route}`,{method:"POST",
+    headers:{authorization:`Bearer ${token}`,"content-type":"application/json"},body:test.body}));
+   const result=await response.json();
+   assert(response.status===test.status&&result.code===test.code,`${test.name}: HTTP ${response.status}/${result.code}`);
+   assert(providerCalls===test.calls,`${test.name}: provider boundary`);
+   assert(JSON.stringify(completions)===JSON.stringify(test.calls?[false]:[]),`${test.name}: failed completion bookkeeping`);
+  }
+ } finally {
+  globalThis.fetch=originalFetch;
+  for(const key of environment) {const value=originalEnvironment.get(key);if(value===undefined)Deno.env.delete(key);else Deno.env.set(key,value);}
  }
 });

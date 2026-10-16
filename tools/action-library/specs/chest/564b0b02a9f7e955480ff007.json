@@ -1,0 +1,139 @@
+{
+  "sourceID": "564b0b02a9f7e955480ff007",
+  "sourceName": "简易俯卧撑",
+  "part": "chest",
+  "title": "简易俯卧撑",
+  "variant": "跪姿 · 双膝着垫、小腿抬起 · 手掌间距略宽于肩 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    2.54,
+    3.4,
+    4.6,
+    5.1,
+    5.8,
+    6.6
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 78,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 82,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 84,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 62,
+          "ankle": 22
+        },
+        "far": {
+          "hip": 0,
+          "knee": 66,
+          "ankle": 22
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双膝跪在垫上、小腿抬起，双手略宽于肩撑在胸侧；屈肘让胸口沉到接近垫面，再用胸部发力把上身推起，髋部始终跟着身体走。",
+  "mistake": {
+    "title": "跪姿塌腰，肚皮先落到垫上",
+    "fix": "收紧腹部与臀部，让肩、髋、膝保持一条直线，宁可减小下放深度也不要让腰塌下去。",
+    "basis": "源 detail.description 常见错误：伸臂时肘关节超伸锁死，训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频侧面固定机位，人物头朝画面左侧，故 mirror 为 true。视频 12.18 秒约 3 次重复，每次约 4 秒，节奏是慢下快上。取第 1 次：2.54 秒为推起最高点（手臂伸直、肩髋膝成一条线，小腿抬起约 45°），约 5.10 秒为最低点（胸口几乎贴垫），6.60 秒回到最高点。双膝着垫是唯一支点，脚尖离地；手掌撑在胸侧略宽于肩、位置全程固定。第 9 张之后的机位略有偏移，但支撑关系不变。"
+}

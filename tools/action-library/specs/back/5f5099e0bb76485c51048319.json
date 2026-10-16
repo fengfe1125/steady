@@ -1,0 +1,135 @@
+{
+  "sourceID": "5f5099e0bb76485c51048319",
+  "sourceName": "双杠反向划船",
+  "part": "back",
+  "title": "双杠反向划船",
+  "variant": "低双杠 · 双脚踩地 · 身体成一条斜线 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.65,
+    1.15,
+    1.65,
+    1.95,
+    2.6,
+    3.24
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.82,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 16,
+          "knee": 20
+        },
+        "far": {
+          "hip": 26,
+          "knee": 36
+        }
+      }
+    },
+    "1": {
+      "pelvis": 42,
+      "lumbar": -2,
+      "thorax": -6,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 0.75
+        },
+        "far": {
+          "f": 0.75
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 18,
+          "knee": 30
+        },
+        "far": {
+          "hip": 18,
+          "knee": 30
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "heel",
+    "side": "near",
+    "at": {
+      "x": -100,
+      "y": -4
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 20,
+        "y": -210,
+        "bend": 1
+      },
+      "far": {
+        "x": 20,
+        "y": -210,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "chest_parallelBars",
+      "x": 0,
+      "top": -210
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid"
+    ],
+    "secondary": [
+      "trap.mid",
+      "trap.lower",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "菱形肌"
+  ],
+  "cue": "两脚踩稳，身体从头到脚绷成一条斜线。先收肩胛，再把胸口送向杠，放下时不要一下子松掉。",
+  "mistake": {
+    "title": "含胸拉，肩胛没有夹住",
+    "fix": "胸口向前送，两肩向后收，再弯肘。重量太大时把脚挪近一点，把身体调陡。",
+    "basis": "资料要求肩胛主动后缩，避免手臂先发力。",
+    "level": 1,
+    "override": {
+      "thorax": 14,
+      "lumbar": 6,
+      "neck": 6,
+      "head": 4
+    }
+  },
+  "observation": "侧面，低双杠。0.65 秒身体接近水平、手臂较直、两脚踩地；1.95 秒髋抬高、胸口靠近杠；3.24 秒回到低位。膝只略弯。脚跟固定在画面左侧，头朝画面右侧。脸朝上的斜躺用正的躯干角来画，身体大约比水平陡一截，否则直臂够不到杠。侧面看不出握距。角度为人工拟合。"
+}

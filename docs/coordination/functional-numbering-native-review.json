@@ -1,0 +1,23 @@
+{
+  "test": "2 passed, 55.233 seconds",
+  "imagesActuallyViewed": [
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/functional-numbering-css-attachments/E04CCA80-EA3A-4C50-9D07-2ADDFF4F81ED.png",
+      "sha256": "852be321111d07f76abcb5f59710df672baa014c57fa1d43a8597ff54de208b3"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/functional-numbering-css-attachments/38C62A69-DB94-4C7E-A053-13C473E5091C.png",
+      "sha256": "a177752dbe33bd38f30a5ada57832164cd7bcdcd3e8446e9cd89f1ce54fe5c75"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/functional-numbering-css-attachments/0C78BEF2-7BE1-4E53-B255-7F11C2D000B3.png",
+      "sha256": "8609dd5706429a01d036d5b5acb2386046e17e6e57760ad44afedd2f5d433860"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/build/functional-numbering-css-attachments/A773292F-A0D0-479E-9673-E2476EFAB2E1.png",
+      "sha256": "599da9d51220e3d046164e1daefe6b147a53c1d751b06de333e5c6b7a73d3348"
+    }
+  ],
+  "result": "Default light theme calf and hip-thrust detail/correct comparison list duplicate numbers gone, self-authored numbers retained.",
+  "limits": "Other lessons not re-rendered; lower error panels not visible in these first-screen images; new post-CSS scroll checks pending."
+}

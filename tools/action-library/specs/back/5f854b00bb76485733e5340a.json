@@ -1,0 +1,135 @@
+{
+  "sourceID": "5f854b00bb76485733e5340a",
+  "sourceName": "单腿支撑反向划船",
+  "part": "back",
+  "title": "单腿支撑反向划船",
+  "variant": "低双杠 · 单脚撑地 · 另一腿伸直抬起 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.64,
+    1.15,
+    1.6,
+    1.92,
+    2.55,
+    3.2
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.82,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 58,
+      "lumbar": 1,
+      "thorax": 1,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 18,
+          "knee": 22
+        },
+        "far": {
+          "hip": -8,
+          "knee": 10
+        }
+      }
+    },
+    "1": {
+      "pelvis": 44,
+      "lumbar": -1,
+      "thorax": -5,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 0.78
+        },
+        "far": {
+          "f": 0.78
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 16,
+          "knee": 26
+        },
+        "far": {
+          "hip": -6,
+          "knee": 12
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "heel",
+    "side": "near",
+    "at": {
+      "x": -108,
+      "y": -4
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 18,
+        "y": -206,
+        "bend": 1
+      },
+      "far": {
+        "x": 18,
+        "y": -206,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "chest_parallelBars",
+      "x": -4,
+      "top": -206
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "trap.mid"
+    ],
+    "secondary": [
+      "rhomboid",
+      "trap.lower",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "斜方肌中部"
+  ],
+  "cue": "一只脚撑地，另一条腿伸直抬离地面。身体保持斜线，把胸口拉向低杠，放下时肩不要完全松开。",
+  "mistake": {
+    "title": "肩不收，只把胳膊弯起来",
+    "fix": "先把肩胛向后夹，胸口再靠近杠。抬着的那条腿保持伸直，不要用甩腿代替背部。",
+    "basis": "资料指出常见问题是背部没有主动后缩，手臂先疲劳。",
+    "level": 1,
+    "override": {
+      "thorax": 12,
+      "lumbar": 8,
+      "neck": 4,
+      "head": 4
+    }
+  },
+  "observation": "侧面。低双杠下身体接近水平，脸朝上。近侧脚踩地，远侧腿伸直、脚离地。0.64 秒手臂较直、身体较低，1.92 秒胸口更靠近杠，3.2 秒回到低位。支撑脚在画面左侧，头朝右，抬起的是远侧腿。侧面看不出握距。角度为人工拟合。"
+}

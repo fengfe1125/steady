@@ -1,0 +1,115 @@
+{
+  "reviewedAt": "2026-10-04T12:34:39.917612",
+  "viewed": "26 offline PNGs in seven contact sheets; hip-flexion detail/mistakes additionally individually opened",
+  "sourceImages": [
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-90-90-hip-rise-detail.png",
+      "sha256": "855876b53690f84b722959ded70c519af9a40e53300b252dee14f70f730cf41b"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-90-90-hip-rise-mistakes.png",
+      "sha256": "59105f232338335f0b209a707315f74d555f2c6d0fc61836ae1e8c822f06d523"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-90-90-leg-extension-detail.png",
+      "sha256": "6eacb8fd987e987010c5c21d1a119c140c103caa8a9eceba477b7a6f2ad7ecb5"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-90-90-leg-extension-mistakes.png",
+      "sha256": "62eebae933684f48e72f43c1760b44f14aa54bc9c82619ff9666e3b7199fd90e"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-90-90-switch-detail.png",
+      "sha256": "f4f07363f1870896c0d52e77c4b190475ead5a327e2c0284af907785cc6007a8"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-90-90-switch-mistakes.png",
+      "sha256": "83886927801f852f456978e3d2231459161dd43cc9d6fc159d7dc7881f9e952f"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-bulgarian-split-squat-detail.png",
+      "sha256": "98eee8938dbf173681b6e642d776efd38321b25536b047dfc1f0d33b567a89e1"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-bulgarian-split-squat-mistakes.png",
+      "sha256": "2fae2b2f01ca06dc0ef78a017423a0dc1eee1e026d2b109174ca852a73d493e4"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-calf-raise-detail.png",
+      "sha256": "7fafb1cd6e45022e0422e406aee7f3cb0d23195d7638ed82f61b0179444bb0d6"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-calf-raise-mistakes.png",
+      "sha256": "0fb3574439447631c47bfda578961a135df976081e8ab28f93e924df2b41fe87"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-dumbbell-deadlift-detail.png",
+      "sha256": "43489999ba6fcae5ccf7ae69e1f84c8470d019be66de7f978aebbf9f1e093f8c"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-dumbbell-deadlift-mistakes.png",
+      "sha256": "672aa26387f332a16d9b30e2251e632b1a29f05d6ae4fbd35df027bb039bf703"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-frog-hip-rotation-detail.png",
+      "sha256": "c7dc7b55d2b7aa7cec5f64bcf1e129549a043bc04431622c080f0583897e5285"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-frog-hip-rotation-mistakes.png",
+      "sha256": "b7f122a0a772f3d7b86861567870c78b943123d82c202c2455a87d638f1c7014"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-frog-rock-detail.png",
+      "sha256": "b790bd72e826ef7192dfa0dd3bb8d1437a97beaee1e6f5f5ac7809559337d0d2"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-frog-rock-mistakes.png",
+      "sha256": "cdc9e1b750aa572c16aec85a310c1480bc3667bbe82ccda7655913e17a0be1a7"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-general-warmup-detail.png",
+      "sha256": "99e21fc48a982f8953719caced63e731dad3a27f14addcde961a4e86e593f99a"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-general-warmup-mistakes.png",
+      "sha256": "83a9090c4439be5a9fe38e31e17119e28b1c6636f5212d13a6458e2be5004949"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-hip-adduction-detail.png",
+      "sha256": "a2892788871ba367eaf4e40f3556e92d30215728eff8c87a381f7f1437c20d4b"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-hip-adduction-mistakes.png",
+      "sha256": "e4a59494a434fb17f6f782f89fdb31659e5a3bfc21bc2041cae11d8cc487da78"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-hip-flexion-detail.png",
+      "sha256": "e07d696c4f485eee6cffdfda41abcbb7816e307b6c8bd5cdfd791c78eaf86e21"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-hip-flexion-mistakes.png",
+      "sha256": "7d489f70d5f3f3e9ee26daf6dcb6db20f510f7c06f678680da62a1e368e9d7ec"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-lunge-rotation-detail.png",
+      "sha256": "856a1c0d635d263c5d5fa0e53b9f959e88acbd8a1b577c0b1f7210822470d205"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-lunge-rotation-mistakes.png",
+      "sha256": "cc20fe5d66a8f039cd4ea5282125b906234b3b24aaf5aa2d01e1ce2c088ba3a0"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-prone-leg-curl-detail.png",
+      "sha256": "3a168e4c8dcc46373b00af6b1562f5ad891f0ccb0638f2f63406eccda7ccc29b"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-diagram-revision/rendered/legs-prone-leg-curl-mistakes.png",
+      "sha256": "af749c940cff01d942125c1b9fe3b6755af6cc821a5305e7ad2e126aba1ade52"
+    }
+  ],
+  "findings": "Dedicated support/joint diagrams and visibly different error geometry across all13; errors labeled supplemental; long four-position leg-extension diagram requires native height review.",
+  "independentChecks": "13 lessons/26 diagrams passed; both runtimes 2626 samples each match original pose/SVG SHA. writeFileSync redirected to coordinator cache; printed original report paths are not actual output destinations.",
+  "checkOutput": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/legs-review/independent",
+  "candidate": "14 runtime files and normalized manifest copied; previewTimeSeconds, timingMilliseconds and documentLayout preserved",
+  "native": "13 tests started, not yet accepted"
+}

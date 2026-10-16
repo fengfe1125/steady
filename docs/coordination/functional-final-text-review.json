@@ -1,0 +1,24 @@
+{
+  "file": {
+    "resource": "functional-animations.json",
+    "publicPath": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-animations.json",
+    "candidatePath": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/final-acceptance/FN-TEXT-01/functional-animations.json",
+    "beforeBytes": 31509,
+    "afterBytes": 31629,
+    "beforeSHA256": "6cd9ca915dc62e0d5110759aabee81c2348f257f7925c719a8bdb8a59863f255",
+    "afterSHA256": "bab46713cfdece7b082178d1592c1089965bef6d28913b8909e30fb5b0674a03",
+    "patchPath": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/final-acceptance/FN-TEXT-01/functional-animations.json.patch",
+    "structuralDiffPath": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/final-acceptance/FN-TEXT-01/structural-diff.json"
+  },
+  "review": "Owner viewed four before/after poses; independently proved exactly four instruction strings changed. Other JSON unchanged.",
+  "nativeStatus": "Four-step test passed before caption-only followup",
+  "actualTests": 1,
+  "failures": 0,
+  "seconds": 70.611,
+  "exportedPNG": 4,
+  "ownerViewed": [
+    "9E63C293-4894-4A9A-AAFE-3B2E9F3DAD4B.png",
+    "18A006B8-7DC8-4C13-9F8E-B9ED0CE0F3AF.png"
+  ],
+  "followup": "functional-caption-consistency.json; native formal integration running"
+}

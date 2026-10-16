@@ -1,0 +1,140 @@
+{
+  "sourceID": "6347cc07092e0e0001fc8fec",
+  "sourceName": "离心爆发俯卧撑",
+  "part": "chest",
+  "title": "离心爆发俯卧撑",
+  "variant": "标准距 · 慢速离心下放、快速推起 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    2.49,
+    3.15,
+    4.05,
+    4.49,
+    4.95,
+    5.48
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 77,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 88,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -3
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -3
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "撑好以后花两三秒把胸口慢慢压向垫面，手肘贴着身体两侧走，到达最低点再用较快的速度推回撑起位，全程绷住腰腹。",
+  "mistake": {
+    "title": "离心下放时髋部先沉、腰背折下去",
+    "fix": "下放的速度再慢一点，把腹部和臀部同时收紧，用肩、髋、踝一条线的姿势去接住体重，腰不要先垮。",
+    "basis": "源 detail.description 常见错误：训练过程中塌腰或撅臀；离心阶段最容易因制动不住而塌腰。",
+    "level": 0.6,
+    "override": {
+      "pelvis": 86,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -20
+        },
+        "far": {
+          "hip": -20
+        }
+      }
+    }
+  },
+  "observation": "侧面机位，人物头朝左，mirror 为 true，手撑垫、脚尖为支点，双手位置全程不动。资料标注视频 11.96 秒、4 次，即周期 2.99 秒；我对每帧躯干最高点做正弦＋漂移拟合，最佳周期也是 2.99 秒（1.495 秒是它的采样混叠，同样能拟合，但取长周期）。从帧上看，撑起位（手臂伸直、身体最高）出现在 0.50、2.49、5.48、8.47、11.46 秒，最低点出现在 1.50、4.49、7.48、10.47 秒，即下放约占 2 秒、推起约占 1 秒，是典型的离心放慢、向心发力快的节奏。取 2.49 秒撑起→4.49 秒降到最低→5.48 秒推回撑起这一次。角度为人工按侧面轮廓拟合。起点 pelvis 统一取 77：撑起位帧图上躯干约抬离水平 15°（对应 pelvis 约 75），此处取 77 让肩再低一点，为手部接触点的手臂可达留出余量。"
+}

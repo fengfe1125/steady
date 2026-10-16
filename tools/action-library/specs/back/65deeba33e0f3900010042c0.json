@@ -1,0 +1,150 @@
+{
+  "sourceID": "65deeba33e0f3900010042c0",
+  "sourceName": "弓步右侧单臂划船",
+  "part": "back",
+  "title": "弓步右侧单臂划船",
+  "variant": "右腿在后，左手扶左膝，右手匀速划船 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.63,
+    1.26,
+    1.89,
+    2.52,
+    3.4,
+    4.4
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.82,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 62,
+          "el": 8,
+          "f": 1
+        },
+        "far": {
+          "sh": 40,
+          "el": 30,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 38,
+          "knee": 22
+        },
+        "far": {
+          "hip": 88,
+          "knee": 78
+        }
+      }
+    },
+    "1": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -26,
+          "el": 108,
+          "f": 1
+        },
+        "far": {
+          "sh": 40,
+          "el": 30,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 38,
+          "knee": 22
+        },
+        "far": {
+          "hip": 88,
+          "knee": 78
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -6,
+      "y": -160
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 63,
+        "y": -110,
+        "bend": 1
+      }
+    },
+    "ankle": {
+      "near": {
+        "x": -84,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 40,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "trap.mid"
+    ],
+    "secondary": [
+      "rhomboid",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "中背部"
+  ],
+  "cue": "右脚后退成弓步，左手按在左膝上。右手把铃从垂直位收到下肋，上身角度不要变，再原路放下。",
+  "mistake": {
+    "title": "上身松掉，背弓成一团",
+    "fix": "重量放在前腿上，左手把胸口撑住。拉的时候后背保持直，不要塌进弓步里。",
+    "basis": "资料的问题是身体发软。最高点把腰和胸画圆，让塌下来一眼能看见，扶膝的手仍然留在膝盖上。",
+    "level": 1,
+    "override": {
+      "lumbar": 16,
+      "thorax": 12,
+      "neck": 8,
+      "head": 6
+    }
+  },
+  "observation": "侧面，人朝右。右腿在后、左腿在前，左手扶在左膝上，右手提一只铃。头仍高于髋，骨盆 62，大约比水平高二十八度。0.63 秒手臂垂下，约 2.5 秒收到下肋，4.40 秒放下。上下用时接近，没有故意拖长下放。没有凳子。"
+}

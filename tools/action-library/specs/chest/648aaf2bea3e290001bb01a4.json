@@ -1,0 +1,196 @@
+{
+  "sourceID": "648aaf2bea3e290001bb01a4",
+  "sourceName": "跪姿宽距5秒俯撑下落",
+  "part": "chest",
+  "title": "跪姿宽距5秒俯撑下落",
+  "variant": "跪姿宽距 · 5 秒离心慢降至胸部贴地 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    4.19,
+    5.4,
+    6.58,
+    9.3,
+    11.8,
+    13.76
+  ],
+  "levels": [
+    0,
+    0.35,
+    1,
+    0.9,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 22,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 22,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.35": {
+      "pelvis": 68,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 12,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 56,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.9": {
+      "pelvis": 58,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 2,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 2,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.45": {
+      "pelvis": 70,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 14,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 14,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 12,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 380
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "跪撑宽握、两手间距约两倍肩宽，绷紧躯干后默数五秒匀速下压，让胸口缓缓贴向垫面，全程保持推撑张力，到底后用轻松的方式撑回起点。",
+  "mistake": {
+    "title": "下落节奏太快，没有控制",
+    "fix": "按五秒的节奏匀速下降，肩、髋、膝始终一条斜线，保持胸部和大臂后侧持续发力；撑不住就减小下落幅度。",
+    "basis": "来源资料常见错误：下落速度太快、没有发力控制，应按节奏倒数五秒缓慢下落。",
+    "level": 0.55,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -20,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，固定侧面机位，人物朝画面左侧，跪姿平板支撑、双手左右间距约两倍肩宽（横向宽度侧面不可见），膝盖着垫。取 4.19~13.76 秒一轮：4.19 胸口贴垫的底部，随后约两秒推回，6.58 直臂顶部并保持到 8.97，之后按五秒节奏匀速下落，11.37 过半程，13.76 胸口再次贴垫。后段几帧双脚放低贴垫、与前期双脚交叉抬起略有差异，已按主要形态取双脚交叉。手掌全程固定在肩前同一位置。"
+}

@@ -1,0 +1,161 @@
+{
+  "sourceID": "60112248bb76487d85bd7320",
+  "sourceName": "俯撑右侧哑铃划船",
+  "part": "back",
+  "title": "俯撑右侧哑铃划船",
+  "variant": "单手撑凳 · 近侧脚在前 · 肘收到髋旁 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.44,
+    0.85,
+    1.15,
+    1.32,
+    1.75,
+    2.21
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.82,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 60,
+          "el": 4,
+          "f": 1
+        },
+        "far": {
+          "sh": 4,
+          "el": 2,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 68,
+          "knee": 12
+        },
+        "far": {
+          "hip": 64,
+          "knee": 14
+        }
+      }
+    },
+    "1": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -22,
+          "el": 88,
+          "f": 1
+        },
+        "far": {
+          "sh": 4,
+          "el": 2,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 68,
+          "knee": 12
+        },
+        "far": {
+          "hip": 64,
+          "knee": 14
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -8,
+      "y": -170
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 105,
+        "y": -88,
+        "flat": true,
+        "bend": -1
+      }
+    },
+    "ankle": {
+      "near": {
+        "x": 68,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 42,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "hands": {
+    "far": "open"
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": 91,
+      "length": 110,
+      "top": -88
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "trap.mid"
+    ],
+    "secondary": [
+      "rhomboid",
+      "biceps",
+      "deltoid.post"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "斜方肌中束"
+  ],
+  "cue": "一只手撑在肩的正下方，脚前后错开，另一只手把哑铃收到髋旁，支撑臂不要跟着弯。",
+  "mistake": {
+    "title": "最低点含胸，拉起时背是圆的",
+    "fix": "先把后背放平，肩在最低点略向前送开，再把肘收到身侧。",
+    "basis": "资料写了最低点肩没有前引，以及腰腹松了会驼背。这里把胸椎弯成弓。",
+    "level": 0.15,
+    "override": {
+      "lumbar": 14,
+      "thorax": 12,
+      "neck": 6,
+      "head": 4
+    }
+  },
+  "observation": "侧面，头朝右，头仍略高于髋。躯干接近水平，骨盆约七十二度，没有让头低于髋。远侧手掌平放在凳面上，腕在肩的正下方，肘几乎伸直。近侧脚在前、远侧脚在后，膝只微屈，不是跪着。0.44 秒哑铃垂在凳沿前方，片不切进垫面；1.32 秒肘收到髋旁，2.21 秒回到垂下。凳身够长，不是一根柱子。哑铃就是 dumbbell，没有近似。"
+}

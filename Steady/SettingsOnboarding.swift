@@ -19,6 +19,8 @@ struct SettingsView: View {
     @Bindable var model: AppModel
     @State private var preferences = UserPreferences()
     @State private var originalPreferences = UserPreferences()
+    @State private var conditionPreferences = UserPreferences()
+    @State private var showingConditions = false
     @State private var confirmReset = false
     @State private var confirmLocal = false
     @State private var confirmCloud = false
@@ -37,6 +39,16 @@ struct SettingsView: View {
                 Button("保存隐私偏好") {
                     if model.applyPrivacyPreferences(preferences, original: originalPreferences) { preferences = model.journal.preferences; originalPreferences = preferences; model.notice = "偏好已保存。" }
                 }
+            }
+            Section("训练动作条件") {
+                Button("查看和修改动作条件") { conditionPreferences = model.journal.preferences; showingConditions = true }
+                    .accessibilityIdentifier("settingsMovementConditions")
+                    .sheet(isPresented: $showingConditions) {
+                        MovementConditionsView(preferences: $conditionPreferences) {
+                            var saved = model.journal.preferences; saved.movementConditions = conditionPreferences.movementConditions
+                            return model.savePreferences(saved)
+                        }
+                    }
             }
             if model.isDemo {
                 Section("演示场景") {

@@ -1,0 +1,140 @@
+{
+  "sourceID": "6347d056092e0e0001fd11ca",
+  "sourceName": "窄距击掌俯卧撑",
+  "part": "chest",
+  "title": "窄距击掌俯卧撑",
+  "variant": "窄距 · 双手间距小于肩宽 · 推起后胸前击掌 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.4,
+    0.8,
+    1.05,
+    1.2,
+    1.62,
+    1.99
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -22
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -22
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 2,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 2,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手收窄到小于肩宽、撑在肩下；屈肘下放到胸口贴近垫面，再一口气爆发推起，让身体短暂腾空、双手在胸前相碰后回到支撑位。",
+  "mistake": {
+    "title": "腰背塌下去，髋部先落向垫面",
+    "fix": "收紧腹部与臀部，让肩、髋、踝保持在一条直线上；推起时手臂伸到接近伸直即可，不要靠塌腰去换取高度。",
+    "basis": "源 detail.description 常见错误：伸臂时肘关节超伸锁死，训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频为侧面固定机位，人物头朝画面左侧，故 mirror 为 true；视频 9.56 秒内约 6 次重复。取第 1 次：0.40 秒为最低点（屈肘、胸口逼近垫面），1.20 秒为推起最高点（手臂伸直、身体成直线）。12 张帧图恰好都落在最高点与最低点上，未捕捉到双手离地击掌的瞬间，因此腾空与击掌在姿态上按动作常识示意。手掌撑于肩下略窄处、脚尖蹬垫两个支撑点全程未移动。"
+}

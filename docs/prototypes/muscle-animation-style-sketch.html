@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>动作动画风格草图</title>
+<style>
+:root{--bg:#f6f8f2;--card:#fdfef9;--ink:#2c4633;--muted:#606f5d;--line:#d6dfce;--soft:#ebf1e3;--accent:#376749;--red:#d9362f;--red-soft:#ef9a92}
+:root[data-theme=dark]{--bg:#151c18;--card:#202a23;--ink:#e3ecdf;--muted:#abb9a7;--line:#425342;--soft:#283a2b;--accent:#b4c9a8;--red:#ff5b50;--red-soft:#b9625b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1180px;margin:0 auto;padding:28px 16px 56px}
+.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:650}
+h1{font-size:26px;margin:6px 0 6px;letter-spacing:-.01em}
+.lede{color:var(--muted);margin:0 0 20px;font-size:15px;line-height:1.55;max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:12px;margin:0;display:flex;flex-direction:column}
+.card svg{display:block;width:100%;height:auto;border-radius:16px}
+.card figcaption{padding:12px 6px 4px;font-size:14px;line-height:1.5;color:var(--muted)}
+.card figcaption b{display:flex;align-items:center;gap:8px;color:var(--ink);font-size:16px;margin-bottom:2px}
+.badge{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:8px;background:var(--soft);color:var(--accent);font-size:13px;font-weight:700}
+.panel{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:16px}
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:999px;padding:7px 14px;cursor:pointer}
+button[aria-pressed=true]{background:var(--accent);color:var(--card);border-color:var(--accent)}
+input[type=range]{flex:1;min-width:160px;accent-color:var(--accent)}
+.time{font-variant-numeric:tabular-nums;font-size:13px;color:var(--muted);min-width:72px;text-align:right}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;margin-top:14px}
+.step{border:1px solid var(--line);border-radius:14px;padding:10px 12px;font-size:13px;line-height:1.45;color:var(--muted);transition:background .2s,border-color .2s}
+.step b{display:block;color:var(--ink);font-size:14px;margin-bottom:2px}
+.step.on{background:var(--soft);border-color:var(--accent)}
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px 18px;margin-top:14px;font-size:14px;line-height:1.5}
+.legend div{display:flex;gap:10px;align-items:flex-start}
+.dot{flex:none;width:14px;height:14px;border-radius:5px;margin-top:3px}
+.legend small{color:var(--muted);display:block}
+.fine{font-size:13px;color:var(--muted);margin-top:14px;line-height:1.55}
+
+/* ---------- per-style artwork tokens ---------- */
+svg.st-anatomy{--stage:#f6f2ec;--skin:#f4ede5;--skin2:#e9dfd4;--edge:#8a7c70;--detail:#c7b7a8;--p:#d8302a;--p-dark:#93201b;--s:#ee8a80;--metal:#4a4f55;--metal2:#2f3338;--metal-face:#6b7178;--label:#3b332d;--guide:#b6a597}
+:root[data-theme=dark] svg.st-anatomy{--stage:#26231f;--skin:#3b3530;--skin2:#332d28;--edge:#b3a395;--detail:#665b51;--p:#ff4a3f;--p-dark:#ffb0a8;--s:#b85c55;--metal:#a6adb4;--metal2:#7c838a;--metal-face:#c7cdd3;--label:#efe6dd;--guide:#7d7064}
+svg.st-mannequin{--stage:#edf0f2;--b1:#bfc5cc;--b2:#e6e9ec;--edge:#8e959d;--detail:#9aa1a9;--p:#ff3b30;--p-dark:#c4180f;--s:#ff9b93;--metal:#3b4046;--metal2:#25292e;--metal-face:#5d646b;--label:#2a2f34;--guide:#a2aab2}
+:root[data-theme=dark] svg.st-mannequin{--stage:#1d2125;--b1:#4a5159;--b2:#737b84;--edge:#2b3035;--detail:#3a4148;--p:#ff4d42;--p-dark:#ffc2bd;--s:#b8554e;--metal:#aeb5bc;--metal2:#80878e;--metal-face:#d0d5da;--label:#e9ecef;--guide:#59626b}
+svg.st-brand{--stage:#eff2e9;--skin:#d9b393;--skin2:#c49a7a;--edge:#8b6a55;--shirt:#54765a;--shirt2:#91ac83;--shorts:#3f5045;--shoe:#eceee6;--shoe-edge:#5c6b5b;--hair:#2d3b31;--p:#e2392f;--p-dark:#a3211a;--s:#f29a8f;--metal:#46594a;--metal2:#2f3d32;--metal-face:#6d806f;--label:#2c4633;--guide:#9fb092}
+:root[data-theme=dark] svg.st-brand{--stage:#29352c;--skin:#c9a283;--skin2:#a8826a;--edge:#5b4537;--shirt:#6f9475;--shirt2:#b4c9a8;--shorts:#1e2a22;--shoe:#cfd4c8;--shoe-edge:#3a473b;--hair:#121a14;--p:#ff5246;--p-dark:#ffc2bb;--s:#c06a60;--metal:#b4c9a8;--metal2:#879c7c;--metal-face:#d8e4cf;--label:#e3ecdf;--guide:#5f7360}
+
+svg .stage{fill:var(--stage)}
+svg .edge{stroke:var(--edge);stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round}
+svg .detail{fill:none;stroke:var(--detail);stroke-width:1;stroke-linecap:round}
+svg .m-p{fill:var(--p);fill-opacity:var(--act,1)}
+svg .m-s{fill:var(--s);fill-opacity:var(--act2,1)}
+svg .fiber{fill:none;stroke:var(--p-dark);stroke-width:.7;stroke-linecap:round;opacity:calc(var(--act,1)*.55)}
+svg .lbl{font:600 13px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:var(--label)}
+svg .lbl-sub{font:500 11px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;fill:var(--label);opacity:.7}
+svg .leader{fill:none;stroke:var(--label);stroke-width:1;opacity:.55}
+svg .guide{fill:none;stroke:var(--guide);stroke-width:1.6;stroke-dasharray:1 5;stroke-linecap:round}
+svg .metal{fill:var(--metal);stroke:var(--metal2);stroke-width:1;stroke-linejoin:round}
+svg .metal-face{fill:var(--metal-face);stroke:var(--metal2);stroke-width:1;stroke-linejoin:round}
+svg .shadow{fill:#000;opacity:.07}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">STEADY · 训练合集动画重做</div>
+  <h1>风格草图：哑铃侧平举</h1>
+  <p class="lede">三种风格用的是同一套骨骼和肌肉。红色是主要发力的肌肉，浅红是协同肌；红色深浅随手臂抬高变化（越接近水平，肩部负荷越大）。挑一个风格，我就用这套系统重画所有训练合集动作。</p>
+
+  <section class="grid" id="grid"></section>
+
+  <section class="panel">
+    <div class="controls">
+      <button id="play" aria-pressed="true">暂停</button>
+      <button id="slow" aria-pressed="false">慢速 0.5×</button>
+      <input id="scrub" type="range" min="0" max="6000" step="10" value="0" aria-label="动画进度">
+      <span class="time" id="time">0.0 / 6.0 秒</span>
+      <button id="theme" aria-pressed="false">深色预览</button>
+    </div>
+    <div class="steps" id="steps"></div>
+    <div class="legend">
+      <div><span class="dot" style="background:var(--red)"></span><span><b>主要发力 · 三角肌中束</b><small>肩膀外侧，负责把手臂向两侧抬起</small></span></div>
+      <div><span class="dot" style="background:var(--red-soft)"></span><span><b>协同 · 三角肌前束</b><small>略向前抬时一起参与；冈上肌在深层，图中不画</small></span></div>
+      <div><span class="dot" style="background:var(--line)"></span><span><b>保持放松 · 斜方肌上束</b><small>不耸肩，脖子两侧不紧绷</small></span></div>
+    </div>
+    <p class="fine">动作依据：双臂向两侧略向前（约 20°）抬起，肘部始终微屈、略高于手腕，抬到肩高附近即可；躯干稳定不后仰。正面视角里“略向前”体现为手臂轻微缩短，正式版可以再加一个俯视小图说明路径。</p>
+  </section>
+</main>
+
+<script>
+(() => {
+'use strict';
+/* ---------------- timing (same as lesson manifest) ---------------- */
+const T = {effortStart:600, effortEnd:2800, returnStart:3300, returnEnd:5700, duration:6000};
+const STEPS = [
+  {title:'两侧准备', s:0, e:600, text:'站稳，哑铃在身体两侧，肘部微屈。'},
+  {title:'略向前抬起', s:600, e:2800, text:'双臂向两侧略向前抬，肘带动手。'},
+  {title:'可控高度', s:2800, e:3300, text:'抬到肩高附近停一下，不耸肩。'},
+  {title:'缓缓落下', s:3300, e:6000, text:'控制着放回两侧，躯干不摇摆。'}
+];
+function progress(t){
+  if (t < T.effortStart || t >= T.returnEnd) return 0;
+  if (t < T.effortEnd) return (1 - Math.cos(Math.PI*(t-T.effortStart)/(T.effortEnd-T.effortStart)))/2;
+  if (t < T.returnStart) return 1;
+  return (1 + Math.cos(Math.PI*(t-T.returnStart)/(T.returnEnd-T.returnStart)))/2;
+}
+
+/* ---------------- shared rig (figure coords, centre x = 160) ---------------- */
+const RAD = Math.PI/180, TH0 = 10, TH1 = 86, PLANE = 20*RAD;
+const SHOULDER = {x:200, y:95}, UPPER = 64, FORE = 55, OX = 40; // OX: figure offset inside 400-wide stage
+function pose(p){
+  const th = (TH0 + (TH1-TH0)*p)*RAD;
+  const px = Math.sin(th)*Math.cos(PLANE), py = Math.cos(th);           // scapular plane, projected to front view
+  const f = Math.hypot(px, py), thp = Math.atan2(px, py)/RAD;
+  const load = Math.sin(th)/Math.sin(TH1*RAD);                         // shoulder torque ∝ sin(abduction)
+  return {p, thp, f, lift:4*p, beta:6*p, bulge:p, act:.22 + .78*load};
+}
+const armMatrix = q => new DOMMatrix().translate(SHOULDER.x, SHOULDER.y - q.lift).rotate(-q.thp).scale(1, q.f);
+const handPoint = q => armMatrix(q).translate(0, UPPER).rotate(q.beta).transformPoint(new DOMPoint(0, FORE));
+
+/* ---------------- path helpers ---------------- */
+const mx = x => +(320 - x).toFixed(2);
+function mirrored(start, segs){
+  let d = `M${start[0]},${start[1]}`;
+  segs.forEach(s => { d += `C${s[0]},${s[1]} ${s[2]},${s[3]} ${s[4]},${s[5]}`; });
+  const pts = [start, ...segs.map(s => [s[4], s[5]])];
+  for (let i = segs.length-1; i >= 0; i--) {
+    const s = segs[i], prev = pts[i];
+    d += `C${mx(s[2])},${s[3]} ${mx(s[0])},${s[1]} ${mx(prev[0])},${prev[1]}`;
+  }
+  return d + 'Z';
+}
+const MIRROR = 'translate(320 0) scale(-1 1)';
+const both = inner => `<g>${inner}</g><g transform="${MIRROR}">${inner}</g>`;
+
+/* ---------------- static geometry ---------------- */
+const BODY = mirrored([160,60], [
+  [165,60,170,61,171,64],[172,69,172,73,174,77],[182,81,193,83,201,88],[204,96,200,110,198,120],
+  [197,136,193,152,191,168],[190,180,197,190,199,204],[202,226,199,258,194,282],[192,292,199,302,199,318],
+  [199,333,190,343,188,352],[190,359,197,365,198,371],[198,376,182,377,172,375],[168,372,170,362,172,352],
+  [167,338,166,318,170,300],[172,292,170,286,170,280],[168,252,165,228,161,210],[160.7,209,160.3,209,160,209]]);
+const HEAD = mirrored([160,18], [[171,18,178,27,178,38],[178,48,175,55,170,60],[167,63,163,65,160,65]]);
+const EAR = 'M177,38C181,36 183,44 178,49';
+const DETAIL = [ // right half, mirrored
+  'M171,58C168,66 166,73 163,80', 'M164,82C175,80 187,83 197,88',
+  'M191,128C188,130 186,133 185,137','M192,138C189,140 187,143 186,147','M191,148C189,150 187,153 186,156',
+  'M172,137C176,152 176,176 172,196C170,202 166,208 162,212',
+  'M161,151C165,152 170,151 174,149','M161,166C165,167 170,166 175,165','M161,181C165,182 169,181 174,180',
+  'M187,141C189,156 189,170 188,182','M191,187C186,197 176,206 166,214',
+  'M194,212C186,232 177,252 171,272','M186,218C188,240 186,262 182,280','M197,234C196,250 193,266 190,278',
+  'M172,258C166,266 166,276 172,284','M176,284C180,281 186,282 187,287C187,292 182,295 178,293C175,291 174,287 176,284Z',
+  'M184,300C187,318 185,334 181,348','M171,304C169,314 169,324 171,333','M165,224C168,236 170,246 170,254'
+].map(d => `<path class="detail" d="${d}"/>`).join('');
+const DETAIL_CENTER = '<path class="detail" d="M160,86L160,130M160,136L160,206"/><ellipse class="detail" cx="160" cy="190" rx="1.6" ry="2.4"/>';
+
+/* arm-local shapes: origin at shoulder joint, +y down the humerus, +x lateral */
+const ARM = 'M-13,-4C-13,10 -13,20 -12.5,30C-12,42 -10,54 -9,64L9,64C10,52 12.5,40 13,28C13.5,16 12,4 6,-6Z';
+const ARM_EDGE = 'M-13,-4C-13,10 -13,20 -12.5,30C-12,42 -10,54 -9,64M13,16C13.4,28 12,44 9,64';
+const ARM_DETAIL = ['M-8,24C-10,36 -8,50 -3,60','M5,30C7,40 6,52 3,60','M11,38C11,48 10,56 8,62'];
+const FOREARM = 'M-9,-6C-10.5,6 -9.5,18 -7.5,30C-6.5,38 -5.5,44 -5,49L5,49C5.5,42 7,34 9,24C10.5,14 11,4 9,-6Z';
+const FOREARM_EDGE = 'M-9.2,-2C-10.5,8 -9.5,18 -7.5,30C-6.5,38 -5.5,44 -5,49M9.4,-2C11,6 10.5,14 9,24C7,34 5.5,42 5,49';
+const FOREARM_DETAIL = ['M7,2C8,14 5,26 2,40','M-6,4C-6,16 -4,30 -3,42'];
+const FIST = 'M-6.5,46C-8.5,52 -8.5,58 -5.5,62C-1.5,65 4,65 7,61C9,56 8.5,50 6.5,46Z';
+const THUMB = 'M-5,50C-2,48 3,49 6,52';
+const DELT_ANT = 'M-15,-3C-11,-9 -7,-11 -3,-11C2,8 4.5,22 5.5,31C3,27 -2,18 -8,10C-12,5 -15,1 -15,-3Z';
+const DELT_LAT = 'M-3,-11C6,-13 15,-8 17,1C18.5,10 15,22 9,31C8,33 6,33 5.5,31C4.5,22 2,8 -3,-11Z';
+const DELT_FIBERS = ['M1,-10C6,2 7,18 6,30','M6,-11C11,2 10,18 7,30','M11,-9C15,2 13,18 8,30','M15,-4C17,6 14,20 8,30'];
+const ANT_FIBERS = ['M-12,-4C-6,6 0,18 5,30','M-8,-8C-3,4 2,18 5,30'];
+const SHIRT = mirrored([160,92], [[166,92,171,88,174,79],[177,79,180,80,183,81],[186,96,190,110,197,121],
+  [196,136,193,152,191,168],[190,180,194,190,195,198],[186,201,172,202,160,202]]);
+const SHORTS = mirrored([160,194], [[172,194,184,193,192,192],[196,196,199,200,200,206],[202,222,202,238,200,252],
+  [192,256,178,256,167,252],[165,238,163,224,161,216],[160.7,216,160.3,216,160,216]]);
+const SHOE = 'M170,354C171,349 188,348 190,354C195,360 199,366 199,371C199,377 168,378 167,373C166,366 169,360 170,354Z';
+const HAIR = 'M141,38C138,22 149,13 161,13C174,13 182,22 179,38C176,30 170,25 160,25C151,25 144,30 141,38Z';
+
+function hex(cx, cy, r){
+  const pts = [0,60,120,180,240,300].map(a => `${(cx + r*Math.cos(a*RAD)).toFixed(1)},${(cy + r*Math.sin(a*RAD)).toFixed(1)}`);
+  return pts.join(' ');
+}
+// handle runs front-to-back; camera sits above the figure, so the near plate drops away from a high vanishing point
+const VP = {x:160, y:-80}, PLATE_GAP = 8;
+const plate = cls => `<polygon class="metal ${cls}-rim" points=""/><polygon class="metal-face ${cls}-face" points=""/>`;
+function hexAt(c, r){ return [0,60,120,180,240,300].map(a => `${(c.x + r*Math.cos(a*RAD)).toFixed(1)},${(c.y + r*Math.sin(a*RAD)).toFixed(1)}`).join(' '); }
+function dumbbell(h){
+  const dx = h.x - VP.x, dy = h.y - VP.y, L = Math.hypot(dx, dy), ux = dx/L, uy = dy/L;
+  const at = k => ({x:h.x + ux*k, y:h.y + uy*k});
+  return {back:at(-PLATE_GAP), backRim:at(-PLATE_GAP-3), front:at(PLATE_GAP+3), frontRim:at(PLATE_GAP)};
+}
+
+/* ---------------- style builders ---------------- */
+const paths = (list, cls) => list.map(d => `<path class="${cls}" d="${d}"/>`).join('');
+
+function armMarkup(s){
+  // s: style flags
+  const lines = s.lines ? paths(ARM_DETAIL, 'detail') : '';
+  const fLines = s.lines ? paths(FOREARM_DETAIL, 'detail') : '';
+  const fibers = s.fibers ? `<g clip-path="url(#${s.id}-clipLat)">${paths(DELT_FIBERS,'fiber')}</g><g clip-path="url(#${s.id}-clipAnt)">${paths(ANT_FIBERS,'fiber')}</g>` : '';
+  return `
+    ${s.pec ? `<path class="pec ${s.pecCls}" d=""/>` : ''}
+    <g class="db-back">${plate('pb')}<path class="handle" d="" stroke="var(--metal2)" stroke-width="5" stroke-linecap="round"/></g>
+    <g class="arm">
+      <path d="${ARM}" fill="${s.armFill}"/><path d="${ARM_EDGE}" fill="none" class="edge"/>${lines}
+      <g class="fore">
+        <path d="${FOREARM}" fill="${s.armFill}"/><path d="${FOREARM_EDGE}" fill="none" class="edge"/>${fLines}
+        <path d="${FIST}" fill="${s.handFill}" class="edge"/>
+        <path d="${THUMB}" class="detail" style="stroke:var(--edge);opacity:.6"/>
+      </g>
+      <g class="delt">
+        <path d="${DELT_ANT}" fill="${s.deltBase}" class="edge"/>
+        <path d="${DELT_LAT}" fill="${s.deltBase}" class="edge"/>
+        <g ${s.glow ? `filter="url(#${s.id}-glow)"` : ''}>
+          <path d="${DELT_ANT}" class="m-s"/>
+          <path d="${DELT_LAT}" class="m-p"/>
+        </g>
+        ${fibers}
+        <path d="${DELT_ANT}" fill="none" class="edge" style="stroke-width:${s.deltEdge}"/>
+        <path d="${DELT_LAT}" fill="none" class="edge" style="stroke-width:${s.deltEdge}"/>
+      </g>
+    </g>
+    <g class="db-front">${plate('pf')}</g>`;
+}
+
+function defs(s){
+  return `<defs>
+    <clipPath id="${s.id}-clipLat" clipPathUnits="userSpaceOnUse"><path d="${DELT_LAT}"/></clipPath>
+    <clipPath id="${s.id}-clipAnt" clipPathUnits="userSpaceOnUse"><path d="${DELT_ANT}"/></clipPath>
+    <linearGradient id="${s.id}-body" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="var(--b1)"/><stop offset=".45" stop-color="var(--b2)"/><stop offset=".55" stop-color="var(--b2)"/><stop offset="1" stop-color="var(--b1)"/></linearGradient>
+    <linearGradient id="${s.id}-limb" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="var(--b1)"/><stop offset=".55" stop-color="var(--b2)"/><stop offset="1" stop-color="var(--b1)"/></linearGradient>
+    <radialGradient id="${s.id}-head" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="var(--b2)"/><stop offset="1" stop-color="var(--b1)"/></radialGradient>
+    <filter id="${s.id}-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="${s.id}-arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M1,1L8,5L1,9" fill="none" stroke="var(--guide)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>`;
+}
+
+function figure(s){
+  let body = '', head = '';
+  if (s.kind === 'anatomy') {
+    body = `<path d="${BODY}" fill="var(--skin)" class="edge"/>${both(DETAIL)}${DETAIL_CENTER}`;
+    head = `<path d="${HEAD}" fill="var(--skin)" class="edge"/>${both(`<path d="${EAR}" fill="var(--skin)" class="edge"/>`)}`;
+  } else if (s.kind === 'mannequin') {
+    body = `<path d="${BODY}" fill="url(#${s.id}-body)" class="edge"/><g opacity=".45">${both(DETAIL)}${DETAIL_CENTER}</g>`;
+    head = `<path d="${HEAD}" fill="url(#${s.id}-head)" class="edge"/>`;
+  } else {
+    body = `<path d="${BODY}" fill="var(--skin)" class="edge" style="stroke:var(--skin2)"/>
+      <path d="${SHORTS}" fill="var(--shorts)" stroke="var(--shorts)" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M161,216L161,240" stroke="#000" stroke-opacity=".18"/>
+      <path d="${SHIRT}" fill="var(--shirt)" stroke="var(--shirt)" stroke-width="2.4" stroke-linejoin="round"/>
+      ${both(`<path d="M174,80C178,80 181,80 183,81" stroke="var(--shirt2)" stroke-width="2" fill="none"/><path d="M186,96C190,110 194,117 197,121" stroke="var(--shirt2)" stroke-width="2" fill="none" stroke-linecap="round"/>`)}
+      <path d="M160,92C166,92 171,88 174,79M160,92C154,92 149,88 146,79" stroke="var(--shirt2)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      ${both(`<path d="${SHOE}" fill="var(--shoe)" stroke="var(--shoe-edge)" stroke-width="1.3"/><path d="M167,371C176,374 191,374 199,369" stroke="var(--shoe-edge)" stroke-width="1.3" fill="none"/>`)}`;
+    head = `<path d="${HEAD}" fill="var(--skin)"/>${both(`<path d="${EAR}" fill="var(--skin)" stroke="var(--skin2)" stroke-width="1.2"/>`)}
+      <path d="${HAIR}" fill="var(--hair)"/>
+      <circle cx="153.5" cy="42" r="1.7" fill="var(--hair)"/><circle cx="166.5" cy="42" r="1.7" fill="var(--hair)"/>
+      <path d="M155,53C158,55.5 162,55.5 165,53" stroke="var(--edge)" stroke-width="1.4" fill="none" stroke-linecap="round"/>`;
+  }
+  const side = armMarkup(s);
+  return `
+    <ellipse class="shadow" cx="160" cy="376" rx="62" ry="5"/>
+    ${body}
+    <g class="side">${side}</g><g class="side" transform="${MIRROR}">${side}</g>
+    ${head}`;
+}
+
+const STYLES = [
+  {id:'a', kind:'anatomy', cls:'st-anatomy', name:'解剖肌群', note:'像医学插图：全身画出主要肌群轮廓，发力肌肉带肌纤维走向。信息量最大、最“专业”。',
+   armFill:'var(--skin)', handFill:'var(--skin)', deltBase:'var(--skin)', lines:true, fibers:true, pec:true, pecCls:'detail', deltEdge:1.2},
+  {id:'b', kind:'mannequin', cls:'st-mannequin', name:'灰模高亮', note:'中性灰色人台，只有发力肌肉发红光。干净现代，一眼只看到重点。',
+   armFill:`url(#b-limb)`, handFill:`url(#b-limb)`, deltBase:`url(#b-limb)`, lines:false, fibers:false, pec:true, pecCls:'detail', glow:true, deltEdge:.8},
+  {id:'c', kind:'brand', cls:'st-brand', name:'品牌插画', note:'延续 App 的浅绿配色，人物穿背心短裤，肩膀露出来、直接标红。最亲切，和现有界面最统一。',
+   armFill:'var(--skin)', handFill:'var(--skin)', deltBase:'var(--skin)', lines:false, fibers:false, pec:false, deltEdge:0}
+];
+
+/* ---------------- build cards ---------------- */
+const grid = document.getElementById('grid');
+const svgs = STYLES.map(s => {
+  const fig = document.createElement('figure'); fig.className = 'card';
+  fig.innerHTML = `
+    <svg class="${s.cls}" viewBox="0 0 400 400" role="img" aria-label="哑铃侧平举 · ${s.name}">
+      ${defs(s)}
+      <rect class="stage" x="0" y="0" width="400" height="400" rx="20"/>
+      <path class="guide traj" d=""/>
+      <g transform="translate(${OX} 0)">${figure(s)}</g>
+      <path class="leader lead-r" d=""/><circle class="pin-r" r="2.6" fill="var(--label)"/>
+      <path class="leader lead-l" d=""/><circle class="pin-l" r="2.6" fill="var(--label)"/>
+      <text class="lbl" x="380" y="30" text-anchor="end">三角肌中束</text>
+      <text class="lbl-sub" x="380" y="45" text-anchor="end">主要发力</text>
+      <text class="lbl" x="20" y="30">三角肌前束</text>
+      <text class="lbl-sub" x="20" y="45">协同</text>
+    </svg>
+    <figcaption><b><span class="badge">${s.id.toUpperCase()}</span>${s.name}</b>${s.note}</figcaption>`;
+  grid.appendChild(fig);
+  const svg = fig.querySelector('svg');
+  // static trajectory guide (right hand path, pushed outward from the shoulder)
+  const pts = [];
+  for (let i = 0; i <= 24; i++) {
+    const q = pose(.1 + .86*i/24), h = handPoint(q), sx = SHOULDER.x, sy = SHOULDER.y - q.lift;
+    const dx = h.x - sx, dy = h.y - sy, L = Math.hypot(dx, dy), k = 1 + 17/L;
+    pts.push(`${(sx + dx*k + OX).toFixed(1)},${(sy + dy*k).toFixed(1)}`);
+  }
+  svg.querySelector('.traj').setAttribute('d', 'M' + pts.join('L'));
+  return {svg, s,
+    arms: svg.querySelectorAll('.arm'), fores: svg.querySelectorAll('.fore'), delts: svg.querySelectorAll('.delt'),
+    backs: svg.querySelectorAll('.db-back'), fronts: svg.querySelectorAll('.db-front'), pecs: svg.querySelectorAll('.pec'),
+    traj: svg.querySelector('.traj'), leadR: svg.querySelector('.lead-r'), leadL: svg.querySelector('.lead-l'),
+    pinR: svg.querySelector('.pin-r'), pinL: svg.querySelector('.pin-l')};
+});
+
+/* ---------------- per-frame update ---------------- */
+const stepsEl = document.getElementById('steps');
+stepsEl.innerHTML = STEPS.map((st,i) => `<div class="step" data-i="${i}"><b>${i+1} · ${st.title}</b>${st.text}</div>`).join('');
+const stepNodes = [...stepsEl.children];
+
+function render(t){
+  const q = pose(progress(t));
+  const M = armMatrix(q);
+  const armT = `translate(${SHOULDER.x} ${(SHOULDER.y - q.lift).toFixed(2)}) rotate(${(-q.thp).toFixed(2)}) scale(1 ${q.f.toFixed(4)})`;
+  const foreT = `translate(0 ${UPPER}) rotate(${q.beta.toFixed(2)})`;
+  const deltT = `scale(${(1 + .12*q.bulge).toFixed(3)} ${(1 - .05*q.bulge).toFixed(3)})`;
+  const h = handPoint(q), db = dumbbell(h);
+  // pectoral lateral border follows the humerus (anterior axillary fold)
+  const I = M.transformPoint(new DOMPoint(-7, 17));
+  const cx = (I.x + 184)/2 + 5, cy = (I.y + 133)/2 + 6;
+  const pec = `M161,86C172,86 186,88 194,92L${I.x.toFixed(1)},${I.y.toFixed(1)}Q${cx.toFixed(1)},${cy.toFixed(1)} 184,133C176,135 166,134 161,129`;
+  const lat = M.transformPoint(new DOMPoint(12, 6)), ant = M.transformPoint(new DOMPoint(-5, 6));
+  const phase = t >= T.effortStart && t < T.effortEnd ? 'up' : (t >= T.returnStart && t < T.returnEnd ? 'down' : '');
+  for (const v of svgs) {
+    v.svg.style.setProperty('--act', q.act.toFixed(3));
+    v.svg.style.setProperty('--act2', (.12 + .55*q.act).toFixed(3));
+    v.arms.forEach(n => n.setAttribute('transform', armT));
+    v.fores.forEach(n => n.setAttribute('transform', foreT));
+    v.delts.forEach(n => n.setAttribute('transform', deltT));
+    v.svg.querySelectorAll('.pb-rim').forEach(n => n.setAttribute('points', hexAt(db.backRim, 8.5)));
+    v.svg.querySelectorAll('.pb-face').forEach(n => n.setAttribute('points', hexAt(db.back, 8.5)));
+    v.svg.querySelectorAll('.pf-rim').forEach(n => n.setAttribute('points', hexAt(db.frontRim, 9)));
+    v.svg.querySelectorAll('.pf-face').forEach(n => n.setAttribute('points', hexAt(db.front, 9)));
+    v.svg.querySelectorAll('.handle').forEach(n => n.setAttribute('d', `M${db.back.x.toFixed(1)},${db.back.y.toFixed(1)}L${db.frontRim.x.toFixed(1)},${db.frontRim.y.toFixed(1)}`));
+    v.pecs.forEach(n => n.setAttribute('d', pec));
+    const rx = lat.x + OX, ry = lat.y, lx = mx(ant.x) + OX, ly = ant.y;
+    v.leadR.setAttribute('d', `M372,52L${(rx+6).toFixed(1)},${(ry-4).toFixed(1)}`);
+    v.pinR.setAttribute('cx', rx.toFixed(1)); v.pinR.setAttribute('cy', ry.toFixed(1));
+    v.leadL.setAttribute('d', `M28,52L${(lx-6).toFixed(1)},${(ly-4).toFixed(1)}`);
+    v.pinL.setAttribute('cx', lx.toFixed(1)); v.pinL.setAttribute('cy', ly.toFixed(1));
+    v.traj.removeAttribute('marker-start'); v.traj.removeAttribute('marker-end');
+    v.traj.style.opacity = phase ? 1 : .45;
+    if (phase === 'up') v.traj.setAttribute('marker-end', `url(#${v.s.id}-arrow)`);
+    if (phase === 'down') v.traj.setAttribute('marker-start', `url(#${v.s.id}-arrow)`);
+  }
+  stepNodes.forEach((n,i) => n.classList.toggle('on', t >= STEPS[i].s && t < STEPS[i].e));
+  scrub.value = Math.round(t);
+  timeEl.textContent = `${(t/1000).toFixed(1)} / ${(T.duration/1000).toFixed(1)} 秒`;
+}
+
+/* ---------------- playback ---------------- */
+const playBtn = document.getElementById('play'), slowBtn = document.getElementById('slow');
+const scrub = document.getElementById('scrub'), timeEl = document.getElementById('time');
+let time = 0, playing = true, speed = 1, last = null;
+function frame(now){
+  const dt = last === null ? 0 : Math.min(now - last, 100); last = now;
+  if (playing) { time = (time + dt*speed) % T.duration; render(time); }
+  requestAnimationFrame(frame);
+}
+playBtn.onclick = () => { playing = !playing; playBtn.textContent = playing ? '暂停' : '播放'; playBtn.setAttribute('aria-pressed', playing); };
+slowBtn.onclick = () => { speed = speed === 1 ? .5 : 1; slowBtn.setAttribute('aria-pressed', speed !== 1); };
+scrub.oninput = () => { time = +scrub.value; playing = false; playBtn.textContent = '播放'; playBtn.setAttribute('aria-pressed', false); render(time); };
+document.getElementById('theme').onclick = e => {
+  const dark = document.documentElement.dataset.theme !== 'dark';
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  e.currentTarget.setAttribute('aria-pressed', dark);
+};
+render(0);
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

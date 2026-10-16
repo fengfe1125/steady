@@ -1,0 +1,32 @@
+BEGIN
+CREATE TABLE
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+INSERT 0 2
+INSERT 0 2
+    set_consents    
+--------------------
+ {"accepted": true}
+(1 row)
+
+    set_consents    
+--------------------
+ {"accepted": true}
+(1 row)
+
+DO
+                                                        set_config                                                         
+---------------------------------------------------------------------------------------------------------------------------
+ {"sub":"22222222-2222-4222-8222-222222222222","session_id":"bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb","role":"authenticated"}
+(1 row)
+
+SET
+DO
+RESET
+ passed_workout_transport_checks 
+---------------------------------
+                              14
+(1 row)
+
+ROLLBACK
