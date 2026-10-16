@@ -6,7 +6,14 @@ import XCTest
     override func setUpWithError() throws { continueAfterFailure = false }
 
     private func tap(_ element: XCUIElement, file: StaticString = #filePath, line: UInt = #line) {
-        for _ in 0..<16 {
+        // iOS 26 hides the sheet's 确认 while its search field is active; the search's own
+        // 关闭 sits in the same navigation bar, so only use it while the keyboard is focused there.
+        // Reading `identifier` needs the element to exist, so match the query description instead.
+        if !element.exists, "\(element)".contains("confirmEquipment"), app.keyboards.firstMatch.exists,
+           let exit = app.navigationBars["确认可用器材"].buttons.matching(NSPredicate(format: "label == %@", "关闭")).allElementsBoundByIndex.last {
+            exit.tap(); _ = element.waitForExistence(timeout: 3)
+        }
+        for attempt in 0..<24 {
             if element.exists && (element.identifier == "confirmEquipment" || element.label == "关闭") && element.isHittable {
                 Thread.sleep(forTimeInterval: 0.6); element.tap(); Thread.sleep(forTimeInterval: 0.6); return
             }
@@ -25,7 +32,10 @@ import XCTest
                     return
                 }
             }
+            // Lazy List rows that scrolled away do not exist, so after reaching the bottom
+            // search back upwards instead of swiping up forever.
             if element.exists && element.frame.midY <= top { app.swipeDown() }
+            else if !element.exists && attempt >= 8 { app.swipeDown() }
             else { app.swipeUp() }
         }
         XCTFail("找不到可点击元素：\(element)", file: file, line: line)

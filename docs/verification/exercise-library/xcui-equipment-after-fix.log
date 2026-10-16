@@ -1,0 +1,6 @@
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testEquipmentRequiresConfirmationAndSceneChangeClearsIt]' passed (60.585 seconds).
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testGeneratePreviewReplaceConfirmAndRestart]' passed (156.195 seconds).
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testGymSearchSelectionsSurviveSearchAndReopening]' passed (42.237 seconds).
+	 Executed 3 tests, with 0 failures (0 unexpected) in 259.017 (259.020) seconds
+	 Executed 3 tests, with 0 failures (0 unexpected) in 259.017 (259.021) seconds
+	 Executed 3 tests, with 0 failures (0 unexpected) in 259.017 (259.022) seconds
