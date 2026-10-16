@@ -151,6 +151,14 @@ import CryptoKit
     func testEquipmentLargeComplete_seated_shoulder_press() { auditEquipmentLargeComplete("seated-shoulder-press") }
     func testEquipmentLargeComplete_single_arm_dumbbell_row() { auditEquipmentLargeComplete("single-arm-dumbbell-row") }
 
+    /// The `coach` preview shows CoachView in its own NavigationStack, without the tab bar;
+    /// testActionLibraryOpensLesson covers reaching it through the 教练 tab.
+    private func openCoachPreview() {
+        app.launchArguments = ["--ui-preview", "coach"]
+        app.launch()
+        XCTAssertTrue(app.navigationBars["你的教练"].waitForExistence(timeout: 15))
+    }
+
     func startFresh(live: Bool = false) {
         app.launchArguments = live ? ["--ui-testing-live", "--reset-live-qa"] : ["--ui-testing-reset"]
         app.launch()
@@ -655,10 +663,7 @@ import CryptoKit
     }
 
     private func auditUnifiedCollections(_ topics: [String]) {
-        app.launchArguments = ["--ui-preview", "coach"]
-        app.launch()
-        XCTAssertTrue(app.tabBars.buttons["教练"].waitForExistence(timeout: 15))
-        tap(app.tabBars.buttons["教练"])
+        openCoachPreview()
         tap(app.buttons["trainingCollections"])
         capture("formal-training-collections")
         for topic in topics {
@@ -902,10 +907,7 @@ import CryptoKit
 
 
     private func equipmentFlow(_ id: String, _ title: String, _ effort: String, _ detail: String, effortDetail: String = "配重上升", returnDetail: String = "配重下降") {
-        app.launchArguments = ["--ui-preview", "coach"]
-        app.launch()
-        let coachTab = app.tabBars.buttons["教练"]
-        XCTAssertTrue(coachTab.waitForExistence(timeout: 15)); tap(coachTab)
+        openCoachPreview()
         tap(app.buttons["equipmentLibrary"])
         XCTAssertTrue(app.navigationBars["健身房器材"].waitForExistence(timeout: 10))
         tap(app.buttons["equipmentLesson_\(id)"])
@@ -1183,9 +1185,7 @@ import CryptoKit
 
     func testAllEquipmentReturnFromBackground() {
         for id in equipmentPreviewIDs {
-            app.launchArguments = ["--ui-preview", "coach"]
-            app.launch()
-            tap(app.tabBars.buttons["教练"])
+            openCoachPreview()
             tap(app.buttons["equipmentLibrary"])
             tap(app.buttons["equipmentLesson_\(id)"])
             let playback = app.buttons["lessonPlayback"]
