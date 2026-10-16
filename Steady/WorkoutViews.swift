@@ -135,7 +135,9 @@ private struct WorkoutMovePicker: View {
                 .disabled(customName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty).accessibilityIdentifier("addCustomMove")
         }
     }
+    // Custom entry sits right under the scope switch so its button stays above the keyboard.
     @ViewBuilder private var catalogSections: some View {
+        customSection
         Section {
             Picker("器材筛选", selection: $equipment) {
                 Text("全部器材").tag("")
@@ -143,7 +145,6 @@ private struct WorkoutMovePicker: View {
             }
             Text("手动选择动作前，请查看教学并确认自己能舒适完成。").font(.footnote).foregroundStyle(.secondary)
         }
-        customSection
         Section("动作目录（\(matches.count)）") {
             if catalog == nil { Text("动作目录无法读取，仍可添加自定义动作。") }
             ForEach(matches) { entry in
