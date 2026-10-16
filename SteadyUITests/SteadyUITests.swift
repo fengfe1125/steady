@@ -315,11 +315,13 @@ import CryptoKit
     func testTrainingCandidateLegs() { candidateFlow("legs-animation-collection", "legs-general-warmup") }
     func testTrainingCandidateBack() { candidateFlow("back-animation-collection", "back-walking") }
 
-    func testTrainingBackRowViews() { backViewsFlow("back-one-arm-row", unilateral: true) }
-    func testTrainingBackPulldownViews() { backViewsFlow("back-bent-arm-pulldown", unilateral: true) }
-    func testTrainingBackScapulaViews() { backViewsFlow("back-supported-scapula", unilateral: false) }
+    func testTrainingBackRowViews() { backViewsFlow("back-one-arm-row") }
+    func testTrainingBackPulldownViews() { backViewsFlow("back-bent-arm-pulldown") }
+    func testTrainingBackScapulaViews() { backViewsFlow("back-supported-scapula") }
 
-    private func backViewsFlow(_ id: String, unilateral: Bool) {
+    /// The back lessons are redrawn with the shared anatomy renderer (tools/anatomy). It draws one
+    /// side view and drops availableViews / supportsSideSelection, so neither picker may appear.
+    private func backViewsFlow(_ id: String) {
         app.launchArguments = ["--ui-preview", "back-animation-collection"]
         app.launch()
         let lesson = app.buttons["animatedLesson_\(id)"]
@@ -329,24 +331,19 @@ import CryptoKit
         XCTAssertTrue(playback.waitForExistence(timeout: 15))
         expectation(for: NSPredicate(format: "enabled == true"), evaluatedWith: playback)
         waitForExpectations(timeout: 20)
-        XCTAssertEqual(app.segmentedControls["trainingSide"].exists, unilateral)
-        XCTAssertTrue(app.segmentedControls["trainingView"].buttons[unilateral ? "斜侧" : "背面"].isSelected)
+        XCTAssertFalse(app.segmentedControls["trainingView"].exists)
+        XCTAssertFalse(app.segmentedControls["trainingSide"].exists)
         tap(app.buttons["trainingStep_2"])
+        XCTAssertEqual(playback.label, "播放")
         XCTAssertEqual(app.staticTexts["trainingTime"].label, "5.0 / 10.0 秒")
         for _ in 0..<5 { app.swipeDown() }
-        for side in unilateral ? ["左侧", "右侧"] : ["双侧"] {
-            if unilateral { tap(app.segmentedControls["trainingSide"].buttons[side]) }
-            for view in ["斜侧", "侧面", "背面"] {
-                tap(app.segmentedControls["trainingView"].buttons[view])
-                XCTAssertTrue(app.segmentedControls["trainingView"].buttons[view].isSelected)
-                XCTAssertEqual(playback.label, "播放")
-                XCTAssertEqual(app.staticTexts["trainingTime"].label, "5.0 / 10.0 秒")
-                capture("\(id)-\(side)-\(view)")
-            }
-        }
+        XCTAssertEqual(app.staticTexts["trainingTime"].label, "5.0 / 10.0 秒")
+        capture("\(id)-side")
         tap(app.segmentedControls.buttons["细节图解"])
+        XCTAssertTrue(app.staticTexts["trainingDetailExplanation"].label.contains("①"))
         capture("\(id)-detail")
         tap(app.segmentedControls.buttons["错误对照"])
+        XCTAssertTrue(app.staticTexts["trainingMistakeExplanation"].exists)
         capture("\(id)-mistakes")
         app.terminate()
     }
