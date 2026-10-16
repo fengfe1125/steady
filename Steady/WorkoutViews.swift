@@ -204,6 +204,7 @@ struct WorkoutRunView: View {
     @State private var note = ""
     @State private var effort = 5
     @State private var notifications = UserDefaults.standard.bool(forKey: WorkoutNotifications.key)
+    @State private var library: ExerciseLibrary?
     @Environment(\.dismiss) private var dismiss
     private var log: WorkoutLog? { model.workoutLogs.first { $0.id == id } }
     private func persist(_ value: WorkoutLog) -> Bool {
@@ -237,6 +238,13 @@ struct WorkoutRunView: View {
                         Text("历史修改会重新计算统计和下次建议。原计划反馈保持独立。").font(.footnote).foregroundStyle(.secondary)
                     }
                 }
+                if !log.isOngoing, let library, case let trained = MuscleMapPanel.trained(in: log, library: library), !trained.target.isEmpty {
+                    Section {
+                        MuscleMapPanel(target: trained.target, secondary: trained.secondary, label: library.label)
+                    } header: { Text("本次练到的肌群") } footer: {
+                        if log.exercises.contains(where: { $0.move.libraryID == nil }) { Text("只统计动作库中的动作；审核目录和自定义动作暂未标注肌群。") }
+                    }.accessibilityIdentifier("workoutMuscleMap")
+                }
                 ForEach(log.exercises) { exercise in
                     exerciseSection(exercise, log: log)
                 }
@@ -251,6 +259,11 @@ struct WorkoutRunView: View {
         }.navigationTitle(log?.title ?? "训练").navigationBarTitleDisplayMode(.inline).journalSurface()
             .toolbar { ToolbarItem(placement: .cancellationAction) { Button("关闭") { dismiss() } } }
             .onAppear { note = log?.note ?? ""; effort = log?.effort ?? 5 }
+            .task(id: log?.isOngoing) {
+                // The library is decoded off the main actor, and only once a finished log has library moves.
+                guard library == nil, let log, !log.isOngoing, log.exercises.contains(where: { $0.move.libraryID != nil }) else { return }
+                library = await Task.detached { ExerciseLibrary.shared }.value
+            }
             .sheet(item: $editing) { route in
                 if let current = self.log, let e = current.exercises.first(where: { $0.id == route.exercise }), let s = e.sets.first(where: { $0.id == route.id }) {
                     NavigationStack { WorkoutSetEditor(move: e.move, value: s) { value in

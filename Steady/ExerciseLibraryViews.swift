@@ -17,11 +17,11 @@ struct LibraryExerciseDetail: View {
                 }
                 LabeledContent("部位", value: library.label(entry.bodyPart))
                 LabeledContent("器材", value: library.label(entry.equipment))
-                LabeledContent("主要肌群", value: library.label(entry.target))
-                if !entry.secondaryMuscles.isEmpty {
-                    LabeledContent("协同肌群", value: entry.secondaryMuscles.map(library.label).joined(separator: "、"))
-                }
                 LabeledContent("默认记录", value: entry.metric.title + (entry.perSide ? " · 左右分别" : ""))
+            }
+            Section("练到的肌群") {
+                MuscleMapPanel(target: [entry.target], secondary: entry.secondaryMuscles, label: library.label)
+                    .accessibilityIdentifier("libraryMuscleMap")
             }
             Section {
                 ForEach(Array((english ? entry.englishSteps : entry.steps).enumerated()), id: \.offset) { index, step in
@@ -42,6 +42,9 @@ struct LibraryExerciseDetail: View {
             }
             Section {
                 NavigationLink("来源与许可") { ExerciseLibrarySourceView(source: library.source) }
+                if let map = MuscleMapArtwork.shared {
+                    NavigationLink("肌肉图来源与许可") { MuscleMapSourceView(source: map.source) }
+                }
             }
         }.navigationTitle("动作说明").navigationBarTitleDisplayMode(.inline).journalSurface()
     }
@@ -61,6 +64,22 @@ struct ExerciseLibrarySourceView: View {
                 Text(source.licenseText).font(.caption.monospaced()).textSelection(.enabled)
             }
         }.navigationTitle("来源与许可").navigationBarTitleDisplayMode(.inline).journalSurface()
+    }
+}
+
+struct MuscleMapSourceView: View {
+    let source: MuscleMapArtwork.Source
+    var body: some View {
+        List {
+            Section {
+                Text(source.title)
+                Text(source.scope).font(.footnote)
+                LabeledContent("版本", value: "\(source.tag) · \(source.commit.prefix(12))").font(.footnote.monospaced())
+            }
+            Section("\(source.license) 许可") {
+                Text(source.licenseText).font(.caption.monospaced()).textSelection(.enabled)
+            }
+        }.navigationTitle("肌肉图来源").navigationBarTitleDisplayMode(.inline).journalSurface()
     }
 }
 

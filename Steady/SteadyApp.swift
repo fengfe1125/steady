@@ -32,6 +32,7 @@ import SteadyLive
                 if screen == "workout", let index = arguments.firstIndex(of: "--workout-smoke"), arguments.indices.contains(index + 1) {
                     try WorkoutLoopSmoke.run(model: model, phase: arguments[index + 1])
                 }
+                if screen == "workout-finished-library" { try WorkoutLoopSmoke.seedFinishedLibraryWorkout(model: model) }
                 model.selectedTab = ["today": 0, "trends": 1, "coach": 2, "plans": 3][screen] ?? 0
                 _model = State(initialValue: model)
                 return
