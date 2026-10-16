@@ -404,7 +404,7 @@ import CryptoKit
     func testTrainingAll_functional_dumbbell_lunge_press() { auditCandidate("functional-animation-collection", "functional-dumbbell-lunge-press", expectedSeconds: 1.7) }
     func testTrainingAll_functional_seated_dumbbell_press() { auditCandidate("functional-animation-collection", "functional-seated-dumbbell-press", expectedSeconds: 1.7) }
     func testTrainingAll_functional_dumbbell_romanian_deadlift() { auditCandidate("functional-animation-collection", "functional-dumbbell-romanian-deadlift", expectedSeconds: 1.7) }
-    func testTrainingAll_functional_alternating_lunge() { auditCandidate("functional-animation-collection", "functional-alternating-lunge", expectedSeconds: 1.7) }
+    func testTrainingAll_functional_alternating_lunge() { auditCandidate("functional-animation-collection", "functional-alternating-lunge", expectedSeconds: 1.0) }
     func testTrainingAll_functional_cooldown_walk() { auditCandidate("functional-animation-collection", "functional-cooldown-walk", expectedSeconds: 1.7) }
     func testTrainingAll_functional_cooldown_calf_stretch() { auditCandidate("functional-animation-collection", "functional-cooldown-calf-stretch", expectedSeconds: 1.7) }
     func testTrainingAll_functional_cooldown_hamstring_stretch() { auditCandidate("functional-animation-collection", "functional-cooldown-hamstring-stretch", expectedSeconds: 1.7) }
