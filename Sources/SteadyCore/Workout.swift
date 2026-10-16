@@ -188,6 +188,209 @@ public enum WorkoutProgression {
         return ProgressionSuggestion(weightKG: weight + increment, reason: "上次所有正式组均达到 \(move.target.maxReps) 次；按你设置的 \(increment) kg 步长，建议下次 \(weight + increment) kg。需确认后应用。")
     }
 }
+/// Estimated one-rep max from a single set. Public formulas: Brzycki (w × 36 / (37 − r)) up to 10 reps,
+/// Epley (w × (1 + r / 30)) above; the two agree exactly at 10 reps, so the switch has no jump.
+/// Sets above 20 reps are too far from a single to estimate and return nil.
+public enum OneRepMax {
+    public static let maxReps = 20
+    public static func epley(weightKG: Double, reps: Int) -> Double? {
+        guard weightKG.isFinite, weightKG > 0, reps >= 1 else { return nil }
+        return reps == 1 ? weightKG : weightKG * (1 + Double(reps) / 30)
+    }
+    public static func brzycki(weightKG: Double, reps: Int) -> Double? {
+        guard weightKG.isFinite, weightKG > 0, (1...10).contains(reps) else { return nil }
+        return weightKG * 36 / Double(37 - reps)
+    }
+    public static func estimate(weightKG: Double, reps: Int) -> Double? {
+        guard reps <= maxReps else { return nil }
+        return reps <= 10 ? brzycki(weightKG: weightKG, reps: reps) : epley(weightKG: weightKG, reps: reps)
+    }
+    /// Completed working sets only; warm-ups never count.
+    public static func estimate(_ set: SetLog) -> Double? {
+        guard !set.warmup, set.completedAt != nil, let weight = set.weightKG, let reps = set.reps else { return nil }
+        return estimate(weightKG: weight, reps: reps)
+    }
+    /// Best estimate across a move's history, matched like `WorkoutProgression.previous` (identity, metric, perSide, loadBasis).
+    public static func best(move: WorkoutMove, history: [WorkoutLog]) -> Double? {
+        guard move.metric == .weightReps else { return nil }
+        let key = RecordKey(move)
+        return history.flatMap { $0.exercises.filter { RecordKey($0.move) == key }.flatMap(\.sets) }.compactMap(estimate).max()
+    }
+}
+
+/// Records are compared only between logs of the same identity, metric, perSide and loadBasis,
+/// so a per-side dumbbell entry never competes with a total-load one.
+public struct RecordKey: Hashable, Sendable {
+    public var identity: String
+    public var metric: WorkoutMetric
+    public var perSide: Bool
+    public var loadBasis: LoadBasis
+    public init(_ move: WorkoutMove) { identity = move.identity; metric = move.metric; perSide = move.perSide; loadBasis = move.loadBasis }
+}
+public struct PersonalRecord: Equatable, Sendable {
+    public enum Kind: String, Equatable, Sendable { case heaviestWeight, mostReps, bestEstimatedOneRM }
+    public var kind: Kind
+    public var value: Double
+    public var previous: Double
+    /// For `.mostReps` on weighted moves: the weight the reps were done at.
+    public var weightKG: Double?
+    public var title: String {
+        switch kind {
+        case .heaviestWeight: "最大重量 \(value.formatted()) kg（此前 \(previous.formatted()) kg）"
+        case .mostReps: (weightKG.map { "\($0.formatted()) kg 及以上" } ?? "") + "最多次数 \(Int(value)) 次（此前 \(Int(previous)) 次）"
+        case .bestEstimatedOneRM: "预估 1RM \(WorkoutRecords.format(value)) kg（此前 \(WorkoutRecords.format(previous)) kg）"
+        }
+    }
+}
+public enum WorkoutRecords {
+    private struct Lift { var weight: Double?; var reps: Int }
+    private static let epsilon = 0.0001
+    /// Estimated kilograms to at most one decimal; logged weights keep their own precision.
+    public static func format(_ kg: Double) -> String { ((kg * 10).rounded() / 10).formatted(.number.precision(.fractionLength(0...1))) }
+    private static func lift(_ set: SetLog, metric: WorkoutMetric) -> Lift? {
+        guard !set.warmup, set.completedAt != nil, let reps = set.reps else { return nil }
+        switch metric {
+        case .weightReps: return set.weightKG.map { Lift(weight: $0, reps: reps) }
+        case .reps: return Lift(weight: nil, reps: reps)
+        case .duration: return nil
+        }
+    }
+    /// Records a completed working set beats, measured against `baseline` (earlier working sets of the same key).
+    /// An empty baseline yields nothing: a first-ever set is a starting point, not a record. Ties are not records.
+    /// "Most reps" on a weighted move means more reps than any earlier set at this weight or heavier,
+    /// and needs at least one earlier set at that weight or heavier.
+    static func records(for set: SetLog, metric: WorkoutMetric, baseline: [SetLog]) -> [PersonalRecord] {
+        guard let current = lift(set, metric: metric) else { return [] }
+        let earlier = baseline.compactMap { lift($0, metric: metric) }
+        guard !earlier.isEmpty else { return [] }
+        var found: [PersonalRecord] = []
+        if let weight = current.weight {
+            if weight > 0, let top = earlier.compactMap(\.weight).max(), weight > top + epsilon {
+                found.append(PersonalRecord(kind: .heaviestWeight, value: weight, previous: top))
+            }
+            let atOrAbove = earlier.filter { ($0.weight ?? 0) >= weight - epsilon }
+            if let most = atOrAbove.map(\.reps).max(), current.reps > most {
+                found.append(PersonalRecord(kind: .mostReps, value: Double(current.reps), previous: Double(most), weightKG: weight))
+            }
+            if let estimate = OneRepMax.estimate(weightKG: weight, reps: current.reps),
+               let best = earlier.compactMap({ lift in lift.weight.flatMap { OneRepMax.estimate(weightKG: $0, reps: lift.reps) } }).max(), estimate > best + epsilon {
+                found.append(PersonalRecord(kind: .bestEstimatedOneRM, value: estimate, previous: best))
+            }
+        } else if let most = earlier.map(\.reps).max(), current.reps > most {
+            found.append(PersonalRecord(kind: .mostReps, value: Double(current.reps), previous: Double(most)))
+        }
+        return found
+    }
+    /// Records set in `log`, keyed by set ID. History is every other finished log that started earlier;
+    /// within `log`, each set is also compared with the sets of the same key completed before it,
+    /// so repeating a record weight on the next set is not flagged again.
+    public static func records(in log: WorkoutLog, history: [WorkoutLog]) -> [UUID: [PersonalRecord]] {
+        let prior = history.filter { $0.id != log.id && !$0.isOngoing && $0.startedAt < log.startedAt }
+        var baseline: [RecordKey: [SetLog]] = [:]
+        for past in prior { for exercise in past.exercises { baseline[RecordKey(exercise.move), default: []] += exercise.sets } }
+        let current = log.exercises.flatMap { exercise in exercise.sets.enumerated().map { (exercise.move, $0.offset, $0.element) } }
+            .filter { $0.2.completedAt != nil }
+            .sorted { ($0.2.completedAt!, $0.1) < ($1.2.completedAt!, $1.1) }
+        var result: [UUID: [PersonalRecord]] = [:]
+        for (move, _, set) in current {
+            let key = RecordKey(move)
+            let found = records(for: set, metric: move.metric, baseline: baseline[key] ?? [])
+            if !found.isEmpty { result[set.id] = found }
+            baseline[key, default: []].append(set)
+        }
+        return result
+    }
+}
+
+public struct WarmupSet: Equatable, Sendable {
+    public var weightKG: Double
+    public var reps: Int
+}
+/// A ramp of lighter sets before the working weight. Only a suggestion: the app adds nothing until the user confirms.
+public enum WarmupRamp {
+    public static let steps: [(fraction: Double, reps: Int)] = [(0.4, 8), (0.6, 5), (0.8, 3)]
+    public static func round(_ kg: Double, toIncrement increment: Double) -> Double {
+        guard increment.isFinite, increment > 0 else { return kg }
+        return ((kg / increment).rounded() * increment * 1000).rounded() / 1000
+    }
+    /// Each step is rounded to `incrementKG`, raised to `minimumKG` (an empty bar), and dropped when it would not be
+    /// lighter than the working weight or would repeat the previous step's weight.
+    public static func suggest(workingWeightKG: Double, incrementKG: Double, minimumKG: Double = 0) -> [WarmupSet] {
+        guard workingWeightKG.isFinite, workingWeightKG > 0, incrementKG.isFinite, incrementKG > 0 else { return [] }
+        var result: [WarmupSet] = []
+        for step in steps {
+            let weight = max(minimumKG, round(workingWeightKG * step.fraction, toIncrement: incrementKG))
+            guard weight > 0, weight < workingWeightKG - 0.0001 else { continue }
+            if let last = result.last, abs(last.weightKG - weight) < 0.0001 { continue }
+            result.append(WarmupSet(weightKG: weight, reps: step.reps))
+        }
+        return result
+    }
+}
+
+/// The user's bar and plates, kept only in local preferences on this device (never synced).
+public struct PlateInventory: Codable, Equatable, Sendable {
+    public struct Plate: Codable, Equatable, Hashable, Sendable {
+        public var weightKG: Double
+        public var pairs: Int
+        public init(weightKG: Double, pairs: Int) { self.weightKG = weightKG; self.pairs = pairs }
+    }
+    public var barKG: Double
+    public var plates: [Plate]
+    public init(barKG: Double, plates: [Plate]) { self.barKG = barKG; self.plates = plates }
+    public static let standard = PlateInventory(barKG: 20, plates: [25, 20, 15, 10, 5, 2.5, 1.25].map { Plate(weightKG: $0, pairs: $0 == 25 ? 4 : 2) })
+}
+public struct PlateLoad: Equatable, Sendable {
+    public var barKG: Double
+    /// One side of the bar, heaviest first.
+    public var perSide: [Double]
+    public var totalKG: Double { barKG + perSide.reduce(0, +) * 2 }
+    /// Target minus what the plates can make; 0 when exact.
+    public var shortfallKG: Double
+}
+public enum PlateMath {
+    /// Library and catalog equipment that takes standard plates on a free bar. Smith machines are left out: their bar weight varies by model.
+    public static let barbellEquipment: Set<String> = ["barbell", "olympic barbell", "ez barbell", "trap bar", "ez-bar"]
+    public static func loadsPlates(_ move: WorkoutMove, catalog: ExerciseCatalog?, library: ExerciseLibrary?) -> Bool {
+        guard move.metric == .weightReps, move.loadBasis == .total else { return false }
+        if let id = move.catalogID, let entry = catalog?.exercise(id: id) { return !barbellEquipment.isDisjoint(with: entry.equipment) }
+        if let entry = library?.entry(identity: move.identity) { return barbellEquipment.contains(entry.equipment) }
+        return false
+    }
+    /// Plates per side for `targetKG` using at most the owned pairs: the fewest plates that reach the closest weight
+    /// not above the target (heavier plates first on ties). Nil when the target is below the bar or the input is invalid.
+    public static func load(targetKG: Double, inventory: PlateInventory) -> PlateLoad? {
+        let unit = 10.0 // grams per step; covers 1.25 kg and 0.5 kg plates exactly
+        func steps(_ kg: Double) -> Int { Int((kg * 1000 / unit).rounded()) }
+        guard targetKG.isFinite, inventory.barKG.isFinite, inventory.barKG >= 0, targetKG <= 1000, targetKG + 0.0001 >= inventory.barKG else { return nil }
+        let plates = inventory.plates.filter { $0.weightKG.isFinite && $0.weightKG > 0 && $0.pairs > 0 }
+        let pieces = plates.flatMap { Array(repeating: steps($0.weightKG), count: min($0.pairs, 50)) }.sorted(by: >)
+        let goal = max(0, steps((targetKG - inventory.barKG) / 2))
+        let gcd = pieces.reduce(0) { a, b in var (x, y) = (a, b); while y != 0 { (x, y) = (y, x % y) }; return x }
+        guard gcd > 0 else { return PlateLoad(barKG: inventory.barKG, perSide: [], shortfallKG: Double(goal * 2) * unit / 1000) }
+        let size = goal / gcd
+        var best: [[Int]?] = Array(repeating: nil, count: size + 1)
+        best[0] = []
+        func better(_ a: [Int], than b: [Int]?) -> Bool {
+            guard let b else { return true }
+            return a.count != b.count ? a.count < b.count : a.lexicographicallyPrecedes(b, by: >)
+        }
+        for piece in pieces {
+            let p = piece / gcd
+            guard p <= size else { continue }
+            for s in stride(from: size, through: p, by: -1) {
+                if let base = best[s - p] {
+                    let candidate = (base + [piece]).sorted(by: >)
+                    if better(candidate, than: best[s]) { best[s] = candidate }
+                }
+            }
+        }
+        let reached = (0...size).last { best[$0] != nil } ?? 0
+        let side = (best[reached] ?? []).map { Double($0) * unit / 1000 }
+        let shortfall = max(0, (targetKG - inventory.barKG - side.reduce(0, +) * 2) * 1000).rounded() / 1000
+        return PlateLoad(barKG: inventory.barKG, perSide: side, shortfallKG: shortfall)
+    }
+}
 @MainActor public protocol WorkoutRepository: AnyObject {
     func workoutTemplates() throws -> [WorkoutTemplate]
     func workoutLogs() throws -> [WorkoutLog]
