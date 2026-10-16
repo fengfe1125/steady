@@ -1,0 +1,18 @@
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testAllTeachingTopicsRouteFromPlanOffline]' passed (90.498 seconds).
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testDefaultSceneShowsEntireEquipmentInventory]' passed (28.850 seconds).
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testEditingCustomPrescriptionAndRestoringTemplateWithLargeText]' passed (18.784 seconds).
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testEmptyReplacementAndUnavailableResourceExplainNextStep]' passed (13.615 seconds).
+/Volumes/Developer/Projects/steady/SteadyUITests/ExerciseCatalogUITests.swift:95: error: -[SteadyUITests.ExerciseCatalogUITests testEquipmentRequiresConfirmationAndSceneChangeClearsIt] : failed - 找不到可点击元素："bodyweightOnly" Button
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testEquipmentRequiresConfirmationAndSceneChangeClearsIt]' failed (50.038 seconds).
+/Volumes/Developer/Projects/steady/SteadyUITests/ExerciseCatalogUITests.swift:48: error: -[SteadyUITests.ExerciseCatalogUITests testGeneratePreviewReplaceConfirmAndRestart] : failed - 找不到可点击元素："equipmentOption_plate-loaded-chest-press" Switch
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testGeneratePreviewReplaceConfirmAndRestart]' failed (80.615 seconds).
+/Volumes/Developer/Projects/steady/SteadyUITests/ExerciseCatalogUITests.swift:153: error: -[SteadyUITests.ExerciseCatalogUITests testGymSearchSelectionsSurviveSearchAndReopening] : failed - 找不到可点击元素："confirmEquipment" Button
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testGymSearchSelectionsSurviveSearchAndReopening]' failed (42.940 seconds).
+Test Case '-[SteadyUITests.ExerciseCatalogUITests testLegacyPreviewAndUnknownIdentityDoNotGuess]' passed (14.670 seconds).
+	 Executed 8 tests, with 3 failures (0 unexpected) in 340.010 (340.021) seconds
+Test Case '-[SteadyUITests.WorkoutLoopUITests testLibraryMoveCanBeSearchedReadAndAdded]' passed (19.061 seconds).
+/Volumes/Developer/Projects/steady/SteadyUITests/WorkoutLoopUITests.swift:16: error: -[SteadyUITests.WorkoutLoopUITests testOfflineTrainingRestartAndNextPerformance] : failed - Unreachable control: "addCustomMove" Button
+Test Case '-[SteadyUITests.WorkoutLoopUITests testOfflineTrainingRestartAndNextPerformance]' failed (38.239 seconds).
+	 Executed 2 tests, with 1 failure (0 unexpected) in 57.300 (57.302) seconds
+	 Executed 10 tests, with 4 failures (0 unexpected) in 397.311 (397.324) seconds
+	 Executed 10 tests, with 4 failures (0 unexpected) in 397.311 (397.327) seconds
