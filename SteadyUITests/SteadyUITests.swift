@@ -1234,7 +1234,12 @@ import CryptoKit
         capture("03-Chat")
         tap(launcher)
         tap(app.buttons["chooseEquipment"])
-        app.switches["equipmentOption_wall"].coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
+        // 墙面 is in the last section, under the full gym inventory; iOS 26 List rows
+        // below the fold do not exist until they are scrolled into view.
+        let wall = app.switches["equipmentOption_wall"]
+        for _ in 0..<20 where !(wall.exists && wall.isHittable) { app.swipeUp() }
+        XCTAssertTrue(wall.waitForExistence(timeout: 5))
+        wall.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
         tap(app.buttons["confirmEquipment"])
         tap(app.buttons["generatePlan"])
         XCTAssertTrue(app.navigationBars["你的训练草案"].waitForExistence(timeout: 10))

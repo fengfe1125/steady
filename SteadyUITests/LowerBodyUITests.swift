@@ -171,6 +171,10 @@ import XCTest
         capture("lower-equipment-selected-before-save")
         tap(app.buttons["confirmEquipment"])
         tap(app.buttons["chooseEquipment"])
+        // The reopened sheet starts at the top again, and iOS 26 List rows below the fold do
+        // not exist, so reading their values without scrolling back fails.
+        for _ in 0..<8 where !(chair.exists && support.exists) { app.swipeUp() }
+        XCTAssertTrue(chair.waitForExistence(timeout: 5)); XCTAssertTrue(support.exists)
         XCTAssertEqual(chair.value as? String, "1"); XCTAssertEqual(support.value as? String, "1")
         capture("lower-equipment-explicit-chair-support")
         tap(app.buttons["confirmEquipment"])
