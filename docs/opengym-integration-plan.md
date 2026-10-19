@@ -86,6 +86,14 @@ openGym 的 5,632 个动作之所以快，是因为动画是从 Gym visual 买�
 9. 同模式 / 同肌群替换动作。
 10. 从 Strong / Hevy CSV 导入历史，按名称匹配到库 ID，匹配不上的转为自定义动作。
 
+**第一批（1–3 项）已完成，分支 `claude/workout-engine-batch1`，基于 `claude/exercise-library`。** 不改 `WorkoutMove` / `SetLog` / `ExerciseLog` / `WorkoutLog` 和 Supabase，全部由已有记录推导，杠铃片只存本机偏好。
+- 预估 1RM：`OneRepMax`（`Workout.swift`），10 次及以下用 Brzycki、以上用 Epley（两者在 10 次时相等，没有跳变），超过 20 次不估算；只算已完成的正式组。
+- PR：`WorkoutRecords.records(in:history:)`，按 identity、metric、perSide、loadBasis 分开比较；历史只取更早开始、已结束的训练；第一次做的动作不算纪录，持平不算；"最多次数"指在该重量及更重的重量下次数最多；同一次训练里重复同样成绩不再提示。训练页在组下显示"新纪录"，顶部汇总条数。
+- 热身：`WarmupRamp`，按目标重量（没有目标时用上次正式组最重重量）的 40/60/80%、8/5/3 次，按动作步长取整（未设置按 2.5 kg），杠铃动作不低于空杆；只显示建议，点"加入这 N 组热身"才写入未完成的热身组。
+- 杠铃片：`PlateMath`，按拥有的副数求每侧最少片数（凑不准时取不超过目标的最接近值）；只对目录和动作库里的杠铃 / 曲杆 / 六角杠且按总重量记录的动作显示；杆重和片数在"杠铃片设置"里改，存 `UserDefaults`，不同步。
+- 验收：`swift test --filter WorkoutEngineTests`（21 项，含同步字段形状守卫）；截图见 `docs/verification/workout-engine-batch1/`（`--ui-preview workout --reset-workout-qa --workout-smoke engine`，可加 `--ui-scroll move:<identity>`；`--ui-preview plate-inventory`）。
+- 尚未完成：自定义动作无法判断是否用杠铃，不显示杠铃片；热身组目前没有单独的休息时长；XCUI 点击用例。
+
 ### 阶段 4：动画覆盖率（持续进行）
 
 - 统计库动作在训练记录中的使用频率，每批取前 N 个，用现有 `tools/anatomy` / `tools/video-svg` 制作动画，素材只用自有来源。

@@ -205,22 +205,32 @@ struct WorkoutRunView: View {
     @State private var note = ""
     @State private var effort = 5
     @State private var notifications = UserDefaults.standard.bool(forKey: WorkoutNotifications.key)
+    @State private var plateMoves: Set<String> = []
+    @State private var plateSettings = false
+    @State private var skippedWarmups: Set<UUID> = []
+    @AppStorage(PlateInventoryStore.key) private var plateData = Data()
     @Environment(\.dismiss) private var dismiss
     private var log: WorkoutLog? { model.workoutLogs.first { $0.id == id } }
+    private var inventory: PlateInventory { PlateInventoryStore.decode(plateData) }
     private func persist(_ value: WorkoutLog) -> Bool {
         let saved = model.saveWorkout(value)
         if saved { WorkoutNotifications.update(deadline: value.restUntil) }
         return saved
     }
     var body: some View {
-        List {
+        ScrollViewReader { proxy in List {
             if let log {
+                let records = WorkoutRecords.records(in: log, history: model.workoutLogs)
                 Section {
                     TimelineView(.periodic(from: .now, by: 1)) { context in
                         Text("已练 \(Int(log.elapsed(at: context.date)) / 60) 分钟 · \(log.completedSets) 组已记录")
                         if log.remainingRest(at: context.date) > 0 {
                             Text("休息剩余 \(log.remainingRest(at: context.date)) 秒").font(.title2).monospacedDigit().accessibilityIdentifier("restCountdown")
                         }
+                    }
+                    if !records.isEmpty {
+                        Label("这次刷新了 \(records.count) 组个人纪录", systemImage: "trophy.fill")
+                            .foregroundStyle(SteadyTheme.primary).accessibilityIdentifier("workoutRecordSummary")
                     }
                     if log.isOngoing {
                         HStack {
@@ -239,7 +249,7 @@ struct WorkoutRunView: View {
                     }
                 }
                 ForEach(log.exercises) { exercise in
-                    exerciseSection(exercise, log: log)
+                    exerciseSection(exercise, log: log, records: records)
                 }
                 Section("训练感受") {
                     Stepper("主观强度 \(effort)/10", value: $effort, in: 1...10)
@@ -249,12 +259,20 @@ struct WorkoutRunView: View {
                 }
                 if log.isOngoing { Section { Button("放弃这次训练", role: .destructive) { discard = true } } }
             } else { Text("没有找到这次训练，请返回刷新。").foregroundStyle(.secondary) }
+        }
+        #if DEBUG && targetEnvironment(simulator)
+        .task {
+            // Screenshot review only: `--ui-scroll move:<identity>` brings an exercise into view.
+            let args = ProcessInfo.processInfo.arguments
+            if let i = args.firstIndex(of: "--ui-scroll"), args.indices.contains(i + 1) { try? await Task.sleep(for: .milliseconds(600)); proxy.scrollTo(args[i + 1], anchor: .top) }
+        }
+        #endif
         }.navigationTitle(log?.title ?? "训练").navigationBarTitleDisplayMode(.inline).journalSurface()
             .toolbar { ToolbarItem(placement: .cancellationAction) { Button("关闭") { dismiss() } } }
             .onAppear { note = log?.note ?? ""; effort = log?.effort ?? 5 }
             .sheet(item: $editing) { route in
                 if let current = self.log, let e = current.exercises.first(where: { $0.id == route.exercise }), let s = e.sets.first(where: { $0.id == route.id }) {
-                    NavigationStack { WorkoutSetEditor(move: e.move, value: s) { value in
+                    NavigationStack { WorkoutSetEditor(move: e.move, value: s, plates: plateMoves.contains(e.move.identity)) { value in
                         guard var next = self.log, let ei = next.exercises.firstIndex(where: { $0.id == route.exercise }), let si = next.exercises[ei].sets.firstIndex(where: { $0.id == route.id }) else { return false }
                         next.exercises[ei].sets[si] = value
                         if next.status == .active { next.restUntil = Date().addingTimeInterval(Double(e.move.target.restSeconds)) }
@@ -262,6 +280,11 @@ struct WorkoutRunView: View {
                         return persist(next)
                     } }
                 }
+            }
+            .sheet(isPresented: $plateSettings) { NavigationStack { PlateInventoryView() } }
+            .task(id: log?.exercises.map(\.move.identity)) {
+                let moves = log?.exercises.map(\.move) ?? []
+                plateMoves = await Task.detached { PlateInventoryStore.plateLoadedIdentities(moves) }.value
             }
             .confirmationDialog("结束这次训练？未完成的组会保留，记录为部分完成。", isPresented: $finish) {
                 Button("结束并保存") { if var next = log { next.note = note; next.effort = effort; next.finish(); _ = persist(next) } }
@@ -271,9 +294,29 @@ struct WorkoutRunView: View {
             }
             .alert("暂时无法保存", isPresented: Binding(get: { model.error != nil }, set: { if !$0 { model.error = nil } })) { Button("知道了") { model.error = nil } } message: { Text(model.error ?? "") }
     }
-    @ViewBuilder private func exerciseSection(_ exercise: ExerciseLog, log: WorkoutLog) -> some View {
+    /// Finished logs that started before this one: the baseline for records and estimates.
+    private func priorLogs(_ log: WorkoutLog) -> [WorkoutLog] {
+        model.workoutLogs.filter { $0.id != log.id && !$0.isOngoing && $0.startedAt < log.startedAt }
+    }
+    /// A ramp only while nothing has been done yet; based on the confirmed target, else last time's top working set.
+    private func warmupPlan(_ exercise: ExerciseLog, log: WorkoutLog) -> (note: String, sets: [WarmupSet])? {
+        let move = exercise.move
+        guard log.status == .active, move.metric == .weightReps, !skippedWarmups.contains(exercise.id),
+              !exercise.sets.contains(where: { $0.warmup || $0.completedAt != nil }) else { return nil }
+        let previous = WorkoutProgression.previous(move: move, history: model.workoutLogs.filter { $0.id != log.id })?
+            .sets.filter { !$0.warmup && $0.completedAt != nil }.compactMap(\.weightKG).max()
+        guard let working = move.target.weightKG ?? previous else { return nil }
+        let increment = move.target.incrementKG ?? 2.5
+        let sets = WarmupRamp.suggest(workingWeightKG: working, incrementKG: increment, minimumKG: plateMoves.contains(move.identity) ? inventory.barKG : 0)
+        guard !sets.isEmpty else { return nil }
+        let basis = move.target.weightKG != nil ? "目标 \(working.formatted()) kg" : "上次正式组 \(working.formatted()) kg"
+        let rounding = move.target.incrementKG != nil ? "按步长 \(increment.formatted()) kg 取整" : "未设置步长，按 2.5 kg 取整"
+        return ("按\(basis)的 40% / 60% / 80%，\(rounding)。确认后才会加入。", sets)
+    }
+    @ViewBuilder private func exerciseSection(_ exercise: ExerciseLog, log: WorkoutLog, records: [UUID: [PersonalRecord]]) -> some View {
+        let plates = plateMoves.contains(exercise.move.identity)
         Section(exercise.move.name) {
-            Text(targetText(exercise.move)).font(.footnote).foregroundStyle(.secondary)
+            Text(targetText(exercise.move)).font(.footnote).foregroundStyle(.secondary).id("move:" + exercise.move.identity)
             if exercise.move.metric == .weightReps { Text(exercise.move.loadBasis.title).font(.caption) }
             if let previous = WorkoutProgression.previous(move: exercise.move, history: model.workoutLogs.filter { $0.id != log.id }) {
                 Text("上次：" + previous.sets.filter { !$0.warmup && $0.completedAt != nil }.map { setSummary($0, metric: exercise.move.metric) }.joined(separator: "；")).font(.footnote)
@@ -285,15 +328,56 @@ struct WorkoutRunView: View {
                     if let i = next.exercises.firstIndex(where: { $0.id == exercise.id }) { next.exercises[i].move.target.weightKG = suggestion.weightKG; _ = persist(next) }
                 }
             }
+            if exercise.move.metric == .weightReps {
+                let best = OneRepMax.best(move: exercise.move, history: priorLogs(log))
+                let today = exercise.sets.compactMap(OneRepMax.estimate).max()
+                if best != nil || today != nil {
+                    Text("预估 1RM：" + [best.map { "此前最佳 \(WorkoutRecords.format($0)) kg" }, today.map { "本次 \(WorkoutRecords.format($0)) kg" }].compactMap { $0 }.joined(separator: " · "))
+                        .font(.footnote).accessibilityIdentifier("estimatedOneRM")
+                }
+            }
+            if plates {
+                if let kg = exercise.move.target.weightKG { Text("目标 \(kg.formatted()) kg：" + plateLine(kg, inventory: inventory)).font(.footnote).accessibilityIdentifier("targetPlates") }
+                Button { plateSettings = true } label: {
+                    Label("杠铃杆 \(inventory.barKG.formatted()) kg · 按本机杠铃片计算", systemImage: "slider.horizontal.3").font(.footnote)
+                }.accessibilityIdentifier("plateSettings")
+            }
+            if let plan = warmupPlan(exercise, log: log) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Label("热身建议", systemImage: "flame").font(.subheadline.weight(.medium)).foregroundStyle(SteadyTheme.primary)
+                    ForEach(Array(plan.sets.enumerated()), id: \.offset) { _, warmup in
+                        Text("\(warmup.weightKG.formatted()) kg × \(warmup.reps) 次" + (plates ? " · " + plateLine(warmup.weightKG, inventory: inventory) : "")).font(.footnote)
+                    }
+                    Text(plan.note).font(.caption).foregroundStyle(SteadyTheme.secondary)
+                }.accessibilityElement(children: .combine).accessibilityIdentifier("warmupSuggestion")
+                Button("加入这 \(plan.sets.count) 组热身") {
+                    var next = log
+                    if let i = next.exercises.firstIndex(where: { $0.id == exercise.id }) {
+                        let sides: [WorkoutSide] = exercise.move.perSide ? [.left, .right] : [.both]
+                        let added = plan.sets.flatMap { warmup in sides.map { side in
+                            var value = SetLog(side: side); value.warmup = true; value.weightKG = warmup.weightKG; value.reps = warmup.reps; return value
+                        } }
+                        next.exercises[i].sets.insert(contentsOf: added, at: 0); _ = persist(next)
+                    }
+                }.accessibilityIdentifier("addWarmups")
+                Button("这次不热身") { skippedWarmups.insert(exercise.id) }.foregroundStyle(SteadyTheme.secondary)
+            }
             if let teaching = exercise.move.teaching { NavigationLink("查看动作教学") { ExerciseTeachingDestination(reference: teaching) } }
             else { Text("此动作暂无已关联的教学").font(.caption).foregroundStyle(.secondary) }
             ForEach(Array(exercise.sets.enumerated()), id: \.element.id) { index, set in
+                let number = exercise.sets[...index].filter { $0.warmup == set.warmup && $0.side == set.side }.count
                 Button { editing = SetRoute(exercise: exercise.id, id: set.id) } label: {
-                    HStack {
-                        Text("\(set.warmup ? "热身" : "正式") \(index + 1)\(sideLabel(set.side))")
-                        Spacer()
-                        Text(set.completedAt == nil ? "记录本组" : setSummary(set, metric: exercise.move.metric))
-                        if set.completedAt != nil { Image(systemName: "checkmark.circle.fill") }
+                    VStack(alignment: .leading, spacing: 4) {
+                        HStack {
+                            Text("\(set.warmup ? "热身" : "正式") \(number)\(sideLabel(set.side))")
+                            Spacer()
+                            Text(set.completedAt == nil ? (set.warmup && set.weightKG != nil ? "建议 " + setSummary(set, metric: exercise.move.metric) : "记录本组") : setSummary(set, metric: exercise.move.metric))
+                            if set.completedAt != nil { Image(systemName: "checkmark.circle.fill") }
+                        }
+                        if let found = records[set.id] {
+                            Label("新纪录：" + found.map(\.title).joined(separator: "；"), systemImage: "trophy.fill")
+                                .font(.caption).foregroundStyle(SteadyTheme.primary).accessibilityIdentifier("personalRecord_\(index)")
+                        }
                     }.foregroundStyle(.primary)
                 }.accessibilityIdentifier("workoutSet_\(index)")
                     .disabled(log.status == .paused)
@@ -333,7 +417,9 @@ private func setSummary(_ set: SetLog, metric: WorkoutMetric) -> String {
 private struct WorkoutSetEditor: View {
     let move: WorkoutMove
     @State var value: SetLog
+    var plates = false
     var save: (SetLog) -> Bool
+    @AppStorage(PlateInventoryStore.key) private var plateData = Data()
     @State private var error: String?
     @State private var timerStart: Date?
     @Environment(\.dismiss) private var dismiss
@@ -342,6 +428,7 @@ private struct WorkoutSetEditor: View {
             Section(move.name + sideLabel(value.side)) {
                 Toggle("热身组", isOn: $value.warmup)
                 if move.metric == .weightReps { TextField(move.loadBasis.title, value: $value.weightKG, format: .number).keyboardType(.decimalPad).accessibilityIdentifier("setWeight") }
+                if plates, let kg = value.weightKG { Text(plateLine(kg, inventory: PlateInventoryStore.decode(plateData))).font(.footnote).accessibilityIdentifier("setPlates") }
                 if move.metric == .duration {
                     TextField("实际秒数", value: $value.durationSeconds, format: .number).keyboardType(.numberPad).accessibilityIdentifier("setDuration")
                     if let start = timerStart { TimelineView(.periodic(from: .now, by: 1)) { context in Text("计时 \(max(0, Int(context.date.timeIntervalSince(start)))) 秒").monospacedDigit() } }
@@ -352,6 +439,9 @@ private struct WorkoutSetEditor: View {
                 else { TextField("实际次数", value: $value.reps, format: .number).keyboardType(.numberPad).accessibilityIdentifier("setReps") }
                 Text("目标：" + targetText(move)).font(.footnote).foregroundStyle(.secondary)
                 if let kg = move.target.weightKG, move.metric == .weightReps { Text("已确认目标：\(kg.formatted()) kg").font(.footnote) }
+                if move.metric == .weightReps, !value.warmup, let kg = value.weightKG, let reps = value.reps, let estimate = OneRepMax.estimate(weightKG: kg, reps: reps) {
+                    Text("本组预估 1RM \(WorkoutRecords.format(estimate)) kg（\(reps <= 10 ? "Brzycki" : "Epley") 公式，仅供参考）").font(.footnote).foregroundStyle(.secondary)
+                }
             }
             Button("确认完成并保存") {
                 var next = value
@@ -417,5 +507,60 @@ private struct WorkoutMovementHistory: View {
                 }
             }
         }.navigationTitle(move.name)
+    }
+}
+
+/// Bar and plates live only in this device's preferences; workout records and their sync shape are unchanged.
+enum PlateInventoryStore {
+    static let key = "workoutPlateInventory"
+    static func decode(_ data: Data) -> PlateInventory { (try? JSONDecoder().decode(PlateInventory.self, from: data)) ?? .standard }
+    static func encode(_ value: PlateInventory) -> Data { value == .standard ? Data() : (try? JSONEncoder().encode(value)) ?? Data() }
+    /// Reads the catalog and library off the main thread; only free-bar barbell moves qualify.
+    nonisolated static func plateLoadedIdentities(_ moves: [WorkoutMove]) -> Set<String> {
+        let library = moves.contains { $0.libraryID != nil } ? ExerciseLibrary.shared : nil
+        var catalogs: [Int: ExerciseCatalog] = [:]
+        var result: Set<String> = []
+        for move in moves {
+            var catalog: ExerciseCatalog?
+            if let version = move.catalogVersion {
+                if catalogs[version] == nil { catalogs[version] = try? ExerciseCatalog.load(version: version) }
+                catalog = catalogs[version]
+            }
+            if PlateMath.loadsPlates(move, catalog: catalog, library: library) { result.insert(move.identity) }
+        }
+        return result
+    }
+}
+private func plateLine(_ kg: Double, inventory: PlateInventory) -> String {
+    guard let load = PlateMath.load(targetKG: kg, inventory: inventory) else { return "低于杠铃杆的 \(inventory.barKG.formatted()) kg" }
+    let side = load.perSide.isEmpty ? "空杆" : "每侧 " + load.perSide.map { $0.formatted() }.joined(separator: " + ") + " kg"
+    return side + (load.shortfallKG > 0 ? "（现有杠铃片最多凑到 \(load.totalKG.formatted()) kg）" : "")
+}
+
+struct PlateInventoryView: View {
+    @AppStorage(PlateInventoryStore.key) private var plateData = Data()
+    @Environment(\.dismiss) private var dismiss
+    private var inventory: Binding<PlateInventory> {
+        Binding(get: { PlateInventoryStore.decode(plateData) }, set: { plateData = PlateInventoryStore.encode($0) })
+    }
+    var body: some View {
+        Form {
+            Section {
+                Stepper("杠铃杆 \(inventory.wrappedValue.barKG.formatted()) kg", value: inventory.barKG, in: 0...50, step: 2.5)
+                    .accessibilityIdentifier("barWeight")
+            } header: { Text("杠铃杆") } footer: { Text("标准杆通常为 20 kg，女子杆 15 kg，曲杆和短杆更轻。") }
+            Section("杠铃片 · 每副两片") {
+                ForEach(inventory.wrappedValue.plates.indices, id: \.self) { index in
+                    let plate = inventory.wrappedValue.plates[index]
+                    Stepper("\(plate.weightKG.formatted()) kg · \(plate.pairs) 副", value: inventory.plates[index].pairs, in: 0...20)
+                }
+            }
+            Section {
+                Button("恢复默认（20 kg 杆，每种 2 副，25 kg 4 副）") { plateData = Data() }.disabled(plateData.isEmpty)
+            } footer: {
+                Text("只保存在这台设备上，不随训练记录同步。两侧加同样的杠铃片；凑不准时取不超过目标的最接近重量。")
+            }
+        }.navigationTitle("杠铃片设置").navigationBarTitleDisplayMode(.inline).journalSurface()
+            .toolbar { ToolbarItem(placement: .confirmationAction) { Button("完成") { dismiss() } } }
     }
 }
