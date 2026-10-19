@@ -1,0 +1,161 @@
+{
+  "sourceID": "5763d3b011fc5077c3acf599",
+  "sourceName": "俯身右侧哑铃划船",
+  "part": "back",
+  "title": "俯身右侧哑铃划船",
+  "variant": "左手撑凳，右脚在后，肘贴着身侧拉起 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    6.06,
+    6.5,
+    7.05,
+    7.41,
+    8.05,
+    8.75
+  ],
+  "levels": [
+    0,
+    0.32,
+    0.78,
+    1,
+    0.4,
+    0
+  ],
+  "hands": {
+    "far": "open"
+  },
+  "poses": {
+    "0": {
+      "pelvis": 66,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 66,
+          "el": 8,
+          "f": 1
+        },
+        "far": {
+          "sh": 14,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 58,
+          "knee": 16
+        },
+        "far": {
+          "hip": 64,
+          "knee": 12
+        }
+      }
+    },
+    "1": {
+      "pelvis": 66,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -26,
+          "el": 104,
+          "f": 1
+        },
+        "far": {
+          "sh": 14,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 58,
+          "knee": 16
+        },
+        "far": {
+          "hip": 64,
+          "knee": 12
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 18,
+      "y": -168
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 108,
+        "y": -100,
+        "flat": true,
+        "bend": 1
+      }
+    },
+    "ankle": {
+      "near": {
+        "x": -6,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 20,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": 78,
+      "length": 120,
+      "top": -100
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid"
+    ],
+    "secondary": [
+      "biceps",
+      "trap.mid",
+      "teres"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "菱形肌"
+  ],
+  "cue": "左手撑在凳上，右脚往后错开半步。铃先垂在肩下，肩稍向前送，再把肘贴着身侧拉到略高于后背，慢慢放回。",
+  "mistake": {
+    "title": "最低处背是圆的，肩没有送出去",
+    "fix": "铃落到最低时让肩往前一点，胸口保持打开，再贴着身侧拉起来。",
+    "basis": "资料指出最低点若肩不前引，往上拉时背用不上力。侧面用上背变圆来表示肩没有打开。",
+    "level": 0.12,
+    "override": {
+      "lumbar": 14,
+      "thorax": 12,
+      "neck": 6,
+      "head": 6
+    }
+  },
+  "observation": "侧面，头朝右，头是最高点。左手撑凳，右手持铃，右脚在后、左脚更靠前，两脚前后相差大约一个脚掌。取 6.06 秒手臂垂下，到 7.41 秒铃收到髋旁，8.75 秒放回。肘贴着躯干，没有向外翻。躯干比水平略高。凳是平的，长度够托住撑着的那只手。角度是示意拟合。"
+}

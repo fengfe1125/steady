@@ -443,16 +443,6 @@
   "digest": "b599ca5607d821d8b37e702dff8e12f96293221712ab9d21474d30fc993e3f8f",
   "status": "approved"
  },
- "5979cae611fc50467bd124d9": {
-  "digest": "a5a1c9c54d7cfb85f407bd3e17cba053ecf51cc588c93499a56526872f54247a",
-  "status": "rejected",
-  "note": "侧面看不出外旋：原片上臂向两侧抬到与肩同高，屈肘 90°，小臂从指向前方转到竖直向上；侧面里上臂看起来是向前抬，像前平举。改用正面视角（`\"view\": \"front\"`，站姿照抄模板 G 的 x/y/legs/contacts）：两侧上臂 `abd` 约 90；起点小臂指向镜头，用小臂透视缩短 `ff` 约 0.25 表示；终点 `el` 约 90、`ff` 1，小臂竖直向上。做完看 preview-detail.png，确认能看出小臂从“缩短的一小段”转成竖直。"
- },
- "6890560fe97dfc00016448a2": {
-  "digest": "1d660bae300e2a59fed1beafba56fb34abbbbe2ad82fceba8e437ad9b0bd99f9",
-  "status": "rejected",
-  "note": "侧面看不出 L 字外旋：原片坐姿，上臂贴住体侧、屈肘 90°，小臂从指向前方向外打开到两侧；侧面里小臂只是前后移动。改用正面视角坐姿（PROMPT M 节的坐姿写法：`y` -126、`legs` `{\"abd\": 14, \"knee\": 8, \"f\": 0.28}`、坐的 box）：上臂 `abd` 约 10；起点小臂指向镜头（`ff` 约 0.25），终点小臂水平向外（`el` 约 90、`ff` 1）。做完看 preview-detail.png 确认能看出向外打开。"
- },
  "65deeba33e0f3900010042c0": {
   "digest": "96f4163eb00d2534fe13bf01f36162cad1abf91a22043402d19f257602415948",
   "status": "approved"
@@ -511,6 +501,61 @@
  },
  "54af5ef25c5f72d2058c5b73": {
   "digest": "9be771ff3261d1565e5c4d216b47e34143d1640861060733629c08c2ba9606e6",
+  "status": "approved"
+ },
+ "5979cae611fc50467bd124d9": {
+  "digest": "1cbecbdc184820bcb6ca354845f713f0d8814557dc8c3b45afa0e3d98433708d",
+  "status": "approved"
+ },
+ "6890560fe97dfc00016448a2": {
+  "digest": "baebb5d3e96861f2d9e80c9fe1ccd53573ebb0a5ac027f0c34c43b1a9bd96569",
+  "status": "approved"
+ },
+ "681c7d915815710001d7ed96": {
+  "digest": "b8f9225952cd3d1630d4f6b16a1abc294762f8a1e246aa7adca3d69f38647a22",
+  "status": "rejected",
+  "note": "两个问题。① 侧屈时上方那只手离开了头，悬在头外侧大约一个头宽的位置（第 2~4 张最明显），和 cue 里写的“指尖贴在耳侧”不符：每个姿态都要单独调两侧手臂的 `abd`/`el`，让两只手始终贴在耳侧，不要两个姿态照抄同一组手臂角度。② 一次动画只侧向一边，循环播放时永远是同一侧，看不出“交替”。参考 lane-11/01 哑铃俯身交替划船，把两侧都放进一次动画：姿态 0 `lean` -18（侧向一边）、姿态 1 `lean` 18（侧向另一边），`levels` 例如 [0, 0.3, 0.7, 1, 0.5, 0]，中途会自然经过正中；`times` 改成覆盖一次完整的左右侧屈。我试过这组 lean 能通过检查。做完看 preview-detail.png，确认四张图里手都贴着头、左右两侧都出现。"
+ },
+ "66a739ae4ebbe7000141e5fb": {
+  "digest": "a819003cc43e511797f02b7aecafe24c37a304e574b341ef8e9a139e69cbe76d",
+  "status": "rejected",
+  "note": "视角选错了：帧图是从人的身后拍的（看得到后背和后脑勺，人面向器械），observation 里写的“人面向镜头”不对。正面视角画出来的是胸和腹肌，着色的只剩二头肌，背阔肌完全看不见。按 PROMPT 模板 K 改成 `\"view\": \"back\"`（V 把变体：`\"grip\": \"v\"`，姿态 0 `abd` 172 `el` 4、姿态 1 `abd` 20 `el` 150），其余写法不用动；我把现在的 JSON 只改 view 试渲染过，背阔肌能正常显示。observation 改成如实描述机位。"
+ },
+ "5763d3b011fc5077c3acf599": {
+  "digest": "90d90c9adee651611fd361a48ed6724e6dba4b3ef140c7350c04624c3558dc0b",
+  "status": "rejected",
+  "note": "支撑方式不对：帧图里左膝和左手都撑在凳面上，右腿向后伸直踩地，躯干接近水平；现在画成双脚站地、只用手撑凳的俯身划船，observation 里“左脚更靠前”也和帧图不符。参考同 lane 的 04 号（返工后的写法）：`anchor` 用 `{\"point\": \"knee\", \"side\": \"far\", ...}` 把左膝固定在凳面上，far 腿 `knee` 约 110 让小腿水平贴在凳面上，凳子加长到能托住整条小腿（例如 `\"x\": -40, \"length\": 230`），near 腿向后伸直、脚踩地，`pelvis` 约 78~85 让躯干接近水平。和 04 的区别要保留：这个动作肘贴着身体往髋部拉，上臂不缩短（`f` 1）。"
+ },
+ "66b075c75568440001811970": {
+  "digest": "9d0f08d5d6fe7d2b393d399342ada82be2a7cf7330f9658fecb30ace6e755051",
+  "status": "rejected",
+  "note": "跪在凳上的那条腿没有落在凳面上：膝盖只碰到凳子最左端，小腿和脚悬在凳子外面的空中（每张图都能看到）。帧图里左膝和整条小腿都压在凳面上。改法（我试渲染过，能通过检查）：凳子改成 `{\"type\": \"bench\", \"x\": -40, \"length\": 230, \"top\": -100}`，两个姿态的 far 腿 `knee` 都改成 110，小腿就会水平贴在凳面上、脚背落在凳尾。其他不用动。"
+ },
+ "66b0733c4ebbe70001d3fc96": {
+  "digest": "c594c99e2725e9f46fd5dbc9757928f5cd61af3151d1a67b49c99716bc814ec7",
+  "status": "approved"
+ },
+ "595f4ebeff247f33e297eb4c": {
+  "digest": "006e45a65c017165c68f0c30ec5986df4057ec6a8e0eb6606568af328e1e1894",
+  "status": "rejected",
+  "note": "俯视画法下两条腿向身后伸直，整体看起来就是趴在凳上的俯卧反向飞鸟，和已通过的 lane-06/04 俯卧哑铃反向飞鸟几乎一样，看不出是“坐着、胸口压在大腿上”。改法（我试渲染过）：两个姿态的 `legs` r/l 都改成 `{\"abd\": 8, \"knee\": 28, \"f\": 0.12, \"fs\": 0.5}`，腿缩到髋下面，不再像平趴；起点手臂改成垂向地面的透视缩短 `{\"abd\": 10, \"el\": 10, \"f\": 0.35}`，表示两臂垂在小腿旁边，再向两侧打开。observation 里写明俯视看不到坐姿折叠，用缩短的腿示意。"
+ },
+ "66a738fbf370cc00014afc77": {
+  "digest": "0ab23c3be0da44796f6175b4efe96d001345671044a544ea3c1ec89608cbbfd8",
+  "status": "rejected",
+  "note": "视角选错了：帧图是从人的身后拍的（看得到后背和后脑勺，人面向器械），observation 里写的“人面向镜头”不对。正面视角着色的只剩二头肌，宽距下拉主练的背阔肌完全看不见。按 PROMPT 模板 K 改成 `\"view\": \"back\"`（宽距变体：姿态 0 `abd` 155 `el` 15、姿态 1 `abd` 55 `el` 105，`\"grip\": \"bar\"`），我把现在的 JSON 只改 view 试渲染过，背阔肌能正常显示。observation 改成如实描述机位。"
+ },
+ "66a7381c5568440001eeb23a": {
+  "digest": "183fe560c61e72e3441db0fee58ebe5dfbc36f626ae34943b5d0180b7c4afa7f",
+  "status": "rejected",
+  "note": "视角选错了：帧图是从人的身后拍的（看得到后背和后脑勺，人面向器械），observation 里写的“人面向镜头”不对。正面视角着色的只剩二头肌，背部肌群完全看不见。按 PROMPT 模板 K 改成 `\"view\": \"back\"`，保留现在和 02 号 V 把的区别（握距更宽、拉到胸口时肘更开）。改完和 02、07 放在一起看 preview-detail.png，确认三种握法一眼能分开。observation 改成如实描述机位。"
+ },
+ "669e69c9f370cc0001bf8b6e": {
+  "digest": "0421668b74063506ec062ab1de8dbc118400d322443cf00647d4c79beaa1ad1c",
+  "status": "approved"
+ },
+ "5f509beb627efb45267b6e70": {
+  "digest": "ab0268595995bf29022f8bf96b5e5e38dac63db6a78eb6a7af4cb1c13569623a",
   "status": "approved"
  }
 }

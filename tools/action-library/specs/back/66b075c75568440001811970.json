@@ -1,0 +1,157 @@
+{
+  "sourceID": "66b075c75568440001811970",
+  "sourceName": "哑铃俯撑右侧宽距划船",
+  "part": "back",
+  "title": "哑铃俯撑右侧宽距划船",
+  "variant": "左膝左手撑凳，右脚踩地，拉起时肘向外翻 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    1.49,
+    2.05,
+    2.7,
+    3.15,
+    3.8,
+    4.47
+  ],
+  "levels": [
+    0,
+    0.34,
+    0.8,
+    1,
+    0.42,
+    0
+  ],
+  "hands": {
+    "far": "open"
+  },
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 78,
+          "el": 8,
+          "f": 1
+        },
+        "far": {
+          "sh": 8,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 20,
+          "knee": 50
+        },
+        "far": {
+          "hip": 100,
+          "knee": 90
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -22,
+          "el": 100,
+          "f": 0.55
+        },
+        "far": {
+          "sh": 8,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 20,
+          "knee": 50
+        },
+        "far": {
+          "hip": 100,
+          "knee": 90
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "far",
+    "at": {
+      "x": 60,
+      "y": -103
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 148,
+        "y": -100,
+        "flat": true,
+        "bend": 1
+      }
+    },
+    "ankle": {
+      "near": {
+        "x": -8,
+        "y": -19,
+        "foot": 0,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": 36,
+      "length": 150,
+      "top": -100
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "rhomboid",
+      "deltoid.post"
+    ],
+    "secondary": [
+      "lats",
+      "biceps",
+      "infraspinatus"
+    ]
+  },
+  "primaryNames": [
+    "上背部",
+    "三角肌后束"
+  ],
+  "cue": "左膝和左手撑在凳面上，右脚踩在地上。铃先垂着，再把肘朝身体外侧翻开，拉到略高于后背就放下，后腰不要塌。",
+  "mistake": {
+    "title": "拉的时候背拱起来，腰没有撑住",
+    "fix": "先把腹部收住，胸口和后脑保持一条线，做不到就少俯一点，不要为了拉高而把背上弓。",
+    "basis": "资料写到腰腹没收紧时会弯腰驼背。侧面用上背变圆来表示。",
+    "level": 0.55,
+    "override": {
+      "lumbar": 12,
+      "thorax": 10,
+      "neck": 4,
+      "head": 4
+    }
+  },
+  "observation": "侧面，头朝右。左膝和左手都在凳面上，右脚在凳后踩地，右手持铃。和同组双脚站地的划船不同，支撑是膝而不是两只脚。宽距从侧面看不出左右间距，拉起时上臂缩短，表示肘向外翻。取 1.49 秒手臂垂下到约 3.15 秒拉高，4.47 秒放回。角度是示意拟合。"
+}
