@@ -151,6 +151,14 @@ import CryptoKit
     func testEquipmentLargeComplete_seated_shoulder_press() { auditEquipmentLargeComplete("seated-shoulder-press") }
     func testEquipmentLargeComplete_single_arm_dumbbell_row() { auditEquipmentLargeComplete("single-arm-dumbbell-row") }
 
+    /// The `coach` preview shows CoachView in its own NavigationStack, without the tab bar;
+    /// testActionLibraryOpensLesson covers reaching it through the 教练 tab.
+    private func openCoachPreview() {
+        app.launchArguments = ["--ui-preview", "coach"]
+        app.launch()
+        XCTAssertTrue(app.navigationBars["你的教练"].waitForExistence(timeout: 15))
+    }
+
     func startFresh(live: Bool = false) {
         app.launchArguments = live ? ["--ui-testing-live", "--reset-live-qa"] : ["--ui-testing-reset"]
         app.launch()
@@ -202,7 +210,13 @@ import CryptoKit
         XCTAssertEqual(app.buttons["trainingSpeed"].label, "恢复 1×")
         let slider = app.sliders["动作进度"]
         XCTAssertTrue(slider.isEnabled)
-        slider.adjust(toNormalizedSliderPosition: 0.65)
+        // Seek into the other half of the cycle from where playback paused; a fixed 0.65
+        // failed whenever the pause itself landed on that same tenth of a second.
+        let parts = paused.components(separatedBy: "/")
+        let pausedSeconds = Double(parts[0].trimmingCharacters(in: .whitespaces)) ?? 0
+        let duration = Double(parts.last?.replacingOccurrences(of: "秒", with: "").trimmingCharacters(in: .whitespaces) ?? "") ?? 0
+        XCTAssertGreaterThan(duration, 0)
+        slider.adjust(toNormalizedSliderPosition: pausedSeconds / max(duration, 1) < 0.5 ? 0.8 : 0.2)
         XCTAssertNotEqual(time.label, paused)
         XCTAssertEqual(playback.label, "播放")
         capture("anatomy-shoulder-native-seek")
@@ -276,7 +290,8 @@ import CryptoKit
         XCTAssertEqual(playback.label, "播放动画")
         for mode in ["motion", "detail", "mistakes"] {
             if mode != "motion" { tap(app.buttons["lessonMode_\(mode)"]) }
-            let canvas = app.otherElements["lessonArtwork"]
+            // The canvas carries an accessibility action, so it is exposed as a Button, not Other.
+            let canvas = app.descendants(matching: .any)["lessonArtwork"]
             XCTAssertTrue(canvas.waitForExistence(timeout: 5))
             XCTAssertGreaterThan(canvas.frame.width, app.frame.width * 0.75)
             XCTAssertEqual(canvas.frame.height, canvas.frame.width, accuracy: 1,
@@ -306,11 +321,13 @@ import CryptoKit
     func testTrainingCandidateLegs() { candidateFlow("legs-animation-collection", "legs-general-warmup") }
     func testTrainingCandidateBack() { candidateFlow("back-animation-collection", "back-walking") }
 
-    func testTrainingBackRowViews() { backViewsFlow("back-one-arm-row", unilateral: true) }
-    func testTrainingBackPulldownViews() { backViewsFlow("back-bent-arm-pulldown", unilateral: true) }
-    func testTrainingBackScapulaViews() { backViewsFlow("back-supported-scapula", unilateral: false) }
+    func testTrainingBackRowViews() { backViewsFlow("back-one-arm-row") }
+    func testTrainingBackPulldownViews() { backViewsFlow("back-bent-arm-pulldown") }
+    func testTrainingBackScapulaViews() { backViewsFlow("back-supported-scapula") }
 
-    private func backViewsFlow(_ id: String, unilateral: Bool) {
+    /// The back lessons are redrawn with the shared anatomy renderer (tools/anatomy). It draws one
+    /// side view and drops availableViews / supportsSideSelection, so neither picker may appear.
+    private func backViewsFlow(_ id: String) {
         app.launchArguments = ["--ui-preview", "back-animation-collection"]
         app.launch()
         let lesson = app.buttons["animatedLesson_\(id)"]
@@ -320,24 +337,19 @@ import CryptoKit
         XCTAssertTrue(playback.waitForExistence(timeout: 15))
         expectation(for: NSPredicate(format: "enabled == true"), evaluatedWith: playback)
         waitForExpectations(timeout: 20)
-        XCTAssertEqual(app.segmentedControls["trainingSide"].exists, unilateral)
-        XCTAssertTrue(app.segmentedControls["trainingView"].buttons[unilateral ? "斜侧" : "背面"].isSelected)
+        XCTAssertFalse(app.segmentedControls["trainingView"].exists)
+        XCTAssertFalse(app.segmentedControls["trainingSide"].exists)
         tap(app.buttons["trainingStep_2"])
+        XCTAssertEqual(playback.label, "播放")
         XCTAssertEqual(app.staticTexts["trainingTime"].label, "5.0 / 10.0 秒")
         for _ in 0..<5 { app.swipeDown() }
-        for side in unilateral ? ["左侧", "右侧"] : ["双侧"] {
-            if unilateral { tap(app.segmentedControls["trainingSide"].buttons[side]) }
-            for view in ["斜侧", "侧面", "背面"] {
-                tap(app.segmentedControls["trainingView"].buttons[view])
-                XCTAssertTrue(app.segmentedControls["trainingView"].buttons[view].isSelected)
-                XCTAssertEqual(playback.label, "播放")
-                XCTAssertEqual(app.staticTexts["trainingTime"].label, "5.0 / 10.0 秒")
-                capture("\(id)-\(side)-\(view)")
-            }
-        }
+        XCTAssertEqual(app.staticTexts["trainingTime"].label, "5.0 / 10.0 秒")
+        capture("\(id)-side")
         tap(app.segmentedControls.buttons["细节图解"])
+        XCTAssertTrue(app.staticTexts["trainingDetailExplanation"].label.contains("①"))
         capture("\(id)-detail")
         tap(app.segmentedControls.buttons["错误对照"])
+        XCTAssertTrue(app.staticTexts["trainingMistakeExplanation"].exists)
         capture("\(id)-mistakes")
         app.terminate()
     }
@@ -398,7 +410,7 @@ import CryptoKit
     func testTrainingAll_functional_dumbbell_lunge_press() { auditCandidate("functional-animation-collection", "functional-dumbbell-lunge-press", expectedSeconds: 1.7) }
     func testTrainingAll_functional_seated_dumbbell_press() { auditCandidate("functional-animation-collection", "functional-seated-dumbbell-press", expectedSeconds: 1.7) }
     func testTrainingAll_functional_dumbbell_romanian_deadlift() { auditCandidate("functional-animation-collection", "functional-dumbbell-romanian-deadlift", expectedSeconds: 1.7) }
-    func testTrainingAll_functional_alternating_lunge() { auditCandidate("functional-animation-collection", "functional-alternating-lunge", expectedSeconds: 1.7) }
+    func testTrainingAll_functional_alternating_lunge() { auditCandidate("functional-animation-collection", "functional-alternating-lunge", expectedSeconds: 1.0) }
     func testTrainingAll_functional_cooldown_walk() { auditCandidate("functional-animation-collection", "functional-cooldown-walk", expectedSeconds: 1.7) }
     func testTrainingAll_functional_cooldown_calf_stretch() { auditCandidate("functional-animation-collection", "functional-cooldown-calf-stretch", expectedSeconds: 1.7) }
     func testTrainingAll_functional_cooldown_hamstring_stretch() { auditCandidate("functional-animation-collection", "functional-cooldown-hamstring-stretch", expectedSeconds: 1.7) }
@@ -655,10 +667,7 @@ import CryptoKit
     }
 
     private func auditUnifiedCollections(_ topics: [String]) {
-        app.launchArguments = ["--ui-preview", "coach"]
-        app.launch()
-        XCTAssertTrue(app.tabBars.buttons["教练"].waitForExistence(timeout: 15))
-        tap(app.tabBars.buttons["教练"])
+        openCoachPreview()
         tap(app.buttons["trainingCollections"])
         capture("formal-training-collections")
         for topic in topics {
@@ -829,8 +838,10 @@ import CryptoKit
     private func candidateFlow(_ route: String, _ id: String) {
         app.launchArguments = ["--ui-preview", route]
         app.launch()
-        let lesson = app.buttons["animatedLesson_\(id)"]
-        XCTAssertTrue(lesson.waitForExistence(timeout: 15)); tap(lesson)
+        // List rows below the fold do not exist on iOS 26 until scrolled to, so wait for the
+        // collection itself and let tap(_:) scroll down to the lesson.
+        XCTAssertTrue(app.navigationBars.firstMatch.waitForExistence(timeout: 15))
+        tap(app.buttons["animatedLesson_\(id)"])
         let playback = app.buttons["trainingPlayback"]
         XCTAssertTrue(playback.waitForExistence(timeout: 15))
         expectation(for: NSPredicate(format: "enabled == true"), evaluatedWith: playback)
@@ -902,10 +913,7 @@ import CryptoKit
 
 
     private func equipmentFlow(_ id: String, _ title: String, _ effort: String, _ detail: String, effortDetail: String = "配重上升", returnDetail: String = "配重下降") {
-        app.launchArguments = ["--ui-preview", "coach"]
-        app.launch()
-        let coachTab = app.tabBars.buttons["教练"]
-        XCTAssertTrue(coachTab.waitForExistence(timeout: 15)); tap(coachTab)
+        openCoachPreview()
         tap(app.buttons["equipmentLibrary"])
         XCTAssertTrue(app.navigationBars["健身房器材"].waitForExistence(timeout: 10))
         tap(app.buttons["equipmentLesson_\(id)"])
@@ -1183,9 +1191,7 @@ import CryptoKit
 
     func testAllEquipmentReturnFromBackground() {
         for id in equipmentPreviewIDs {
-            app.launchArguments = ["--ui-preview", "coach"]
-            app.launch()
-            tap(app.tabBars.buttons["教练"])
+            openCoachPreview()
             tap(app.buttons["equipmentLibrary"])
             tap(app.buttons["equipmentLesson_\(id)"])
             let playback = app.buttons["lessonPlayback"]
@@ -1228,7 +1234,12 @@ import CryptoKit
         capture("03-Chat")
         tap(launcher)
         tap(app.buttons["chooseEquipment"])
-        app.switches["equipmentOption_wall"].coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
+        // 墙面 is in the last section, under the full gym inventory; iOS 26 List rows
+        // below the fold do not exist until they are scrolled into view.
+        let wall = app.switches["equipmentOption_wall"]
+        for _ in 0..<20 where !(wall.exists && wall.isHittable) { app.swipeUp() }
+        XCTAssertTrue(wall.waitForExistence(timeout: 5))
+        wall.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
         tap(app.buttons["confirmEquipment"])
         tap(app.buttons["generatePlan"])
         XCTAssertTrue(app.navigationBars["你的训练草案"].waitForExistence(timeout: 10))
