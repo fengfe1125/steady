@@ -65,11 +65,19 @@ openGym 的 5,632 个动作之所以快，是因为动画是从 Gym visual 买�
 
 **尚未完成**：中文名人工审核；XCUI 点击用例；真机上首次加载的耗时测量。
 
-### 阶段 2：肌肉图（约 1 周）
+### 阶段 2：肌肉图（前两处已完成，分支 `claude/muscle-map`）
 
 - 引入 MuscleMap（MIT）的 Swift 路径数据，放进 `SteadyCore` 或作为 SPM 依赖，附 MIT 声明。
 - 三处使用：动作详情页高亮主/次肌群；训练结束页显示本次练到的部位；趋势页按周显示各肌群训练量。
 - 遵守现有动画规范：肌肉图是独立视图，**不叠加在教学动画的人物上**，肌群名称用原生文字放在图下方。
+
+**实际做法**
+- 来源：`melihcolpan/MuscleMap` 标签 `1.9.0`（提交 `3aa662bd`），LICENSE 为 MIT（© 2026 Melih Colpan）。没有加 SPM 依赖，只把男性正面、背面两个路径数据文件原样放进 `tools/muscle-map/source/`（附 LICENSE，三个文件都核对 SHA-256）。MuscleMap 的视图、渲染器、配色和多语言文件都没有引入；女性模型暂未引入（App 里没有性别设置）。
+- `tools/muscle-map/build.mjs` 生成 `Sources/SteadyCore/Resources/MuscleMap/muscle-map.v1.json`，LICENSE 原文放在同一目录并随 App 打包；`--check` 检查是否过期，`--refresh <MuscleMap 目录>` 核对哈希后更新。
+- `SteadyCore/SVGPath.swift` 是 Steady 自己写的 SVG 路径解析（含圆弧转贝塞尔），`MuscleMap.swift` 负责分层（基础 / 细分 / 装饰）和高亮，`MuscleRegions.swift` 把动作库的 50 个肌群 ID 对应到图上区域：7 个就近表示的写明原因（如肱肌画在肱二头肌上），无法画出的只有"心肺"，同样逐条列出。新出现的 ID 两边都没有时测试会失败。
+- 界面：动作库详情页新增"练到的肌群"（主要肌群深色，协同肌群浅色，名称用原生文字放在图下方）和"肌肉图来源与许可"页；训练结束页新增"本次练到的肌群"，只统计有已完成正式组的动作库动作。颜色只用 `SteadyTheme` 的 primary / line / secondary，深浅色模式自动切换。
+- 验收：`swift test --filter "MuscleMapTests|SVGPathTests"`、`node --test tools/muscle-map/build.test.mjs`；截图在 `docs/verification/muscle-map/`（`--ui-preview exercise-library-detail` 与 `--ui-preview workout-finished-library`，浅色和深色各一张）。
+- **尚未完成**：趋势页按周的肌群训练量；审核目录动作的肌群标注（可经 `equivalents.json` 借用对应库动作的肌群）；女性模型。
 
 ### 阶段 3：训练引擎补齐（约 2–3 周，可拆分并行）
 

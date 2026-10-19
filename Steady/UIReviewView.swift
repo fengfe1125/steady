@@ -14,6 +14,8 @@ struct UIReviewView: View {
                     WorkoutRunView(model: model, id: log.id)
                 } else { WorkoutHubView(model: model) }
             }
+            case "workout-finished-library":
+                if let log = model.workoutLogs.first { NavigationStack { WorkoutRunView(model: model, id: log.id) } }
             case "exercise-library":
                 if let library = ExerciseLibrary.shared {
                     let args = ProcessInfo.processInfo.arguments
@@ -260,6 +262,20 @@ private struct LowerBodyHistoryFixture: View {
 #if DEBUG && targetEnvironment(simulator)
 /// Synthetic, isolated iOS persistence smoke. Not a replacement for XCUI interaction.
 @MainActor enum WorkoutLoopSmoke {
+    /// A finished in-memory workout of three library moves, for the finish screen's muscle map.
+    static func seedFinishedLibraryWorkout(model: AppModel) throws {
+        let library = try ExerciseLibrary.load()
+        let moves = ["edb-0314", "edb-0150", "edb-0043"].compactMap(library.entry(id:)).map(WorkoutMove.init(library:))
+        guard moves.count == 3 else { throw ServiceError.invalidResponse }
+        var log = try WorkoutLog(template: WorkoutTemplate(title: "动作库示例训练", moves: moves), now: Date().addingTimeInterval(-2400))
+        for e in log.exercises.indices {
+            for s in log.exercises[e].sets.indices {
+                log.exercises[e].sets[s].weightKG = 20; log.exercises[e].sets[s].reps = 10; log.exercises[e].sets[s].completedAt = Date()
+            }
+        }
+        log.effort = 6; log.finish()
+        guard model.saveWorkout(log, creating: true) else { throw ServiceError.invalidResponse }
+    }
     static func run(model: AppModel, phase: String) throws {
         var checks = 0
         func check(_ ok: Bool, _ label: String) throws {
