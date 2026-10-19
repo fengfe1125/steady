@@ -1,0 +1,193 @@
+{
+  "sourceID": "654b652658dd4600016dd253",
+  "sourceName": "俯撑右侧哑铃离心爆发宽距划船",
+  "part": "back",
+  "title": "俯撑右侧哑铃离心爆发宽距划船",
+  "variant": "宽距单臂，向上很快、放下故意放慢 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    3.53,
+    4.7,
+    5.15,
+    5.55,
+    6.7,
+    7.57
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.8,
+    1,
+    0.35,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    },
+    "1": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -30,
+          "el": 100,
+          "f": 0.55
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    },
+    "0.4": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -8,
+          "el": 72,
+          "f": 0.62
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 18,
+      "y": -168
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 104,
+        "y": -100,
+        "flat": true,
+        "bend": 1
+      }
+    },
+    "ankle": {
+      "near": {
+        "x": 8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "hands": {
+    "far": "open"
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": 94,
+      "length": 72,
+      "top": -100,
+      "back": {
+        "x": 160,
+        "angle": -4,
+        "length": 105
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.post",
+      "trap.mid",
+      "trap.lower"
+    ],
+    "secondary": [
+      "rhomboid",
+      "lats"
+    ]
+  },
+  "primaryNames": [
+    "三角肌后束",
+    "斜方肌中下束"
+  ],
+  "cue": "铃从身下快速向外上方带到肘高于后背，到顶后用三秒左右才放回。下落时肘仍向外，不要直接松掉。",
+  "mistake": {
+    "title": "下放时腰跟着拱起来",
+    "fix": "放铃只动肩和肘，髋和胸口的高度别变，后背仍像一块板。",
+    "basis": "资料里下放阶段容易把腰弓起来，用躯干额外弯曲来示意。",
+    "level": 0.55,
+    "override": {
+      "lumbar": 16,
+      "thorax": 8
+    }
+  },
+  "observation": "侧面，头朝右。1.51 秒铃已经在髋旁，不能当起点。改取 3.53 秒手臂垂下、5.55 秒拉到髋旁、7.57 秒再垂下。向上写得陡、放下写得长。肘向外用上臂缩短。躯干约比水平高二十五度，双脚并排，撑凳手臂在肩下。"
+}

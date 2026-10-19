@@ -1,0 +1,163 @@
+{
+  "sourceID": "662a13175c2c850001dd788c",
+  "sourceName": "提膝助力引体",
+  "part": "back",
+  "title": "提膝助力引体",
+  "variant": "正手略宽 · 上拉时提膝借力 · 终点胸口靠近横杠 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.53,
+    2.3,
+    4.5,
+    5.81,
+    8.9,
+    12.05
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.78,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "x": -8,
+      "y": -217,
+      "pelvis": 6,
+      "lumbar": 4,
+      "thorax": 2,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 24,
+          "knee": 48,
+          "ankle": 8
+        },
+        "far": {
+          "hip": 16,
+          "knee": 58,
+          "ankle": 8
+        }
+      }
+    },
+    "0.42": {
+      "x": 0,
+      "y": -258,
+      "pelvis": -8,
+      "lumbar": 6,
+      "thorax": -2,
+      "neck": -8,
+      "head": 2,
+      "arms": {
+        "near": {
+          "f": 0.7
+        },
+        "far": {
+          "f": 0.7
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 128,
+          "knee": 135,
+          "ankle": 12
+        },
+        "far": {
+          "hip": 118,
+          "knee": 128,
+          "ankle": 12
+        }
+      }
+    },
+    "1": {
+      "x": 12,
+      "y": -312,
+      "pelvis": -24,
+      "lumbar": -2,
+      "thorax": -10,
+      "neck": -6,
+      "head": 4,
+      "arms": {
+        "near": {
+          "f": 0.52
+        },
+        "far": {
+          "f": 0.52
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 16,
+          "knee": 28,
+          "ankle": 6
+        },
+        "far": {
+          "hip": 8,
+          "knee": 36,
+          "ankle": 6
+        }
+      }
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 0,
+        "y": -430,
+        "bend": 1
+      },
+      "far": {
+        "x": 0,
+        "y": -430,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "pullup_bar",
+      "x": 0,
+      "top": -430
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "biceps"
+    ],
+    "secondary": [
+      "iliopsoas",
+      "rhomboid",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "肱二头肌"
+  ],
+  "cue": "正手挂在杠下。上拉时把膝盖收到身前借一点力，身体稍后仰，胸口送到横杠前，再慢慢放回伸直。",
+  "mistake": {
+    "title": "到顶含胸，只靠屈肘",
+    "fix": "接近横杠时把胸口挺上去，肩放下来，不要只靠手臂把身体甩高。",
+    "basis": "资料写明到顶容易含胸，手臂出的力过多。",
+    "level": 1,
+    "override": {
+      "thorax": 16,
+      "pelvis": -4,
+      "y": -286
+    }
+  },
+  "observation": "斜侧的宽景。取 0.53 秒手臂伸直、膝微屈，上拉中段膝盖收到身前，5.81 秒身体抬高、胸口靠近横杠，约 12 秒回到悬垂。横杠抬高，避免伸直的脚碰到地面。正手间距侧面看不出，按略宽于肩记。提膝出现在上拉途中，到顶后腿又放下，所以加了中间姿态。"
+}

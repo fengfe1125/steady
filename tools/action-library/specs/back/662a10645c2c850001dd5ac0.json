@@ -1,0 +1,158 @@
+{
+  "sourceID": "662a10645c2c850001dd5ac0",
+  "sourceName": "吊杠摆荡",
+  "part": "back",
+  "title": "吊杠摆荡",
+  "variant": "直臂悬垂 · 身体前后摆 · 屈膝 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    2.33,
+    3.4,
+    5.1,
+    6.07,
+    7.05,
+    7.93
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "x": 0,
+      "y": -176,
+      "pelvis": -14,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 22,
+          "knee": 70
+        },
+        "far": {
+          "hip": 16,
+          "knee": 80
+        }
+      }
+    },
+    "0.5": {
+      "x": -2,
+      "y": -178,
+      "pelvis": -2,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 68
+        },
+        "far": {
+          "hip": 6,
+          "knee": 78
+        }
+      }
+    },
+    "1": {
+      "x": 0,
+      "y": -176,
+      "pelvis": 14,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -4,
+          "knee": 62
+        },
+        "far": {
+          "hip": -10,
+          "knee": 74
+        }
+      }
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 0,
+        "y": -390,
+        "bend": 1
+      },
+      "far": {
+        "x": 0,
+        "y": -390,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "pullup_bar",
+      "x": 0,
+      "top": -390
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid"
+    ],
+    "secondary": [
+      "trap.mid",
+      "abs",
+      "forearm.flex"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "菱形肌"
+  ],
+  "cue": "直臂抓住单杠，身体像钟摆前后摆。往前时腿留在身后，往后时小腿荡到身前，中间不要把腰松开。",
+  "mistake": {
+    "title": "摆到一半腰松了",
+    "fix": "全程把腹部收住，身体保持连贯的一条弧线，不要在垂直位置塌腰停顿。",
+    "basis": "资料指出摆动容易不连贯，需要核心收着才能接上下一次。",
+    "level": 0.5,
+    "override": {
+      "lumbar": 12,
+      "thorax": 8,
+      "neck": 4,
+      "head": 6
+    }
+  },
+  "observation": "侧面，人朝右，正手悬垂，膝弯曲，脚不着地。约 2.33 秒身体后倒、腿在身前，4.2 秒前后回到垂直，6.07 秒身体前摆、腿留在身后，7.93 秒又回到后倒。取这一次完整摆荡。肘几乎不弯。侧面看不出确切握距，按略宽于肩理解。角度为人工拟合。"
+}

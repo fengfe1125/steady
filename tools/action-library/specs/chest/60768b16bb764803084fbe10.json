@@ -1,0 +1,138 @@
+{
+  "sourceID": "60768b16bb764803084fbe10",
+  "sourceName": "支架跪姿俯卧撑",
+  "part": "chest",
+  "title": "支架跪姿俯卧撑",
+  "variant": "跪姿 · 俯卧撑支架 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    7.2,
+    7.8,
+    8.7,
+    9.12,
+    10.2,
+    11.04
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -26,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "pushup_bars",
+      "top": -24
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上束",
+    "胸大肌外侧"
+  ],
+  "cue": "双膝跪垫、小腿向后抬起，双手握支架放在胸口两侧，屈肘下沉到肘部接近躯干高度再推直，躯干保持一条斜线。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "收紧腹部和臀部，让肩、髋、膝保持一条直线，力量不够就减小下沉幅度。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "侧面视角，人物头朝画面左侧，双膝跪在垫上、小腿向后上方抬起，双手撑俯卧撑支架，共3次，底和顶各有停顿。取7.20~11.04秒一次完整重复：7.20秒手臂撑直、肩高于髋，9.12秒下沉到肘部与躯干同高并停约1秒，11.04秒回到顶部。角度为人工示意拟合。"
+}

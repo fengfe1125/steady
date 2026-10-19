@@ -1,0 +1,31 @@
+{
+  "copied": [
+    {
+      "source": "docs/verification/training-legs/evidence/native-label-revision/resources/animations/legs-warmup-frog-rock.html",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-frog-rock.html",
+      "sha256": "b4600e5ac20ac6b76bd76bbbda0474886c46e1d483b8b008809559be23e2552b"
+    },
+    {
+      "source": "docs/verification/training-legs/evidence/native-label-revision/resources/animations/legs-main-calf-raise.html",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-calf-raise.html",
+      "sha256": "adc01a09a91d4a56531ea7247b51b318d2cbfde13185b6b8307cadca334b6176"
+    },
+    {
+      "source": "docs/verification/training-legs/evidence/native-label-revision/resources/animations/legs-main-dumbbell-rdl.html",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-dumbbell-rdl.html",
+      "sha256": "6628b816adeed08b6618dd863bc6ffa277b518b6dba1057def1e9eed45a3ec15"
+    },
+    {
+      "source": "docs/verification/training-legs/evidence/native-label-revision/resources/animations/legs-main-hip-flexion.html",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-hip-flexion.html",
+      "sha256": "97f40d040302139367c235c06e8b94e9cd2f9304efe9ac8df5c99233933cc1ad"
+    },
+    {
+      "source": "docs/verification/training-legs/evidence/native-label-revision/resources/animations/legs-main-renderer.js",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-renderer.js",
+      "sha256": "46e54e8f673510fc1cd888e4e6e5659965c38ae1e06a65b09be941b17967841f"
+    }
+  ],
+  "review": "Exact limited text/annotation/layer diff inspected. Coordinator viewed rdl-motion-3000 and hip-flexion-motion-0 offline PNG; source reports 5252 pose samples and 26 figures unchanged. Native pending.",
+  "darkPatchIncluded": false
+}

@@ -1,0 +1,221 @@
+{
+  "sourceID": "5c0e44f3a29e340410e97655",
+  "sourceName": "哑铃俯卧撑交替划船",
+  "part": "back",
+  "title": "哑铃俯卧撑交替划船",
+  "variant": "两手撑铃，先落到胸口再撑起，然后单侧划到髋旁 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    3.6,
+    3.85,
+    4.05,
+    4.9,
+    5.25,
+    5.61
+  ],
+  "levels": [
+    0,
+    0.2,
+    0.4,
+    1,
+    0.78,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 34.8,
+          "el": 87.5,
+          "f": 1
+        },
+        "far": {
+          "sh": 42.8,
+          "el": 86.9,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 2,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "0.4": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -11.7,
+          "el": 135.8,
+          "f": 1
+        },
+        "far": {
+          "sh": -0.3,
+          "el": 142.2,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 2,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    },
+    "0.65": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 34.8,
+          "el": 87.5,
+          "f": 1
+        },
+        "far": {
+          "sh": 42.8,
+          "el": 86.9,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 2,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -38,
+          "el": 96,
+          "f": 1
+        },
+        "far": {
+          "sh": 42.8,
+          "el": 86.9,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -16
+        },
+        "far": {
+          "hip": 2,
+          "knee": 0,
+          "ankle": -16
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 116,
+        "y": -14,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 340
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "pec.upper",
+      "rhomboid"
+    ],
+    "secondary": [
+      "erectors",
+      "biceps",
+      "pec.lower"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "胸大肌上部",
+    "菱形肌"
+  ],
+  "cue": "两手握住地上的哑铃。先把胸口放到接近垫面再撑直，然后一侧提铃到髋旁，髋不要跟着掉下去。",
+  "mistake": {
+    "title": "提铃时髋掉下去",
+    "fix": "先把肚子和臀部收紧，肩、髋、脚保持一条直线，再抬起一只铃。",
+    "basis": "资料几乎没有列出错误。按俯卧撑提铃时常见的塌腰来示意。",
+    "level": 1,
+    "override": {
+      "lumbar": -14,
+      "legs": {
+        "near": {
+          "hip": -8
+        },
+        "far": {
+          "hip": -8
+        }
+      }
+    }
+  },
+  "observation": "侧面，人朝左。0.80 秒和 4.05 秒胸口接近垫面，3.20 秒和 4.90 秒才是撑直后的单侧划船。这一轮取 4.05 秒下落、4.90 秒划船：3.6 秒两臂撑直，4.05 秒低点（pelvis 89，照模板 B，手仍握铃），撑起后再把靠近镜头的铃提到髋旁，5.61 秒放回。低点在去程和回程都会经过，因为进度只能沿同一条姿态往返。另一侧是下一轮。"
+}

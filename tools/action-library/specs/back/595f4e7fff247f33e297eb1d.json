@@ -1,0 +1,153 @@
+{
+  "sourceID": "595f4e7fff247f33e297eb1d",
+  "sourceName": "健身球 Y W 伸展",
+  "part": "back",
+  "title": "健身球 Y W 伸展",
+  "variant": "先举成 Y，再屈肘夹成 W · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    3.86,
+    4.3,
+    4.7,
+    4.96,
+    6.5,
+    8.26
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.75,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 92,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": 156,
+          "el": 6,
+          "f": 0.68
+        },
+        "far": {
+          "sh": 153,
+          "el": 8,
+          "f": 0.68
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 92,
+      "lumbar": -2,
+      "thorax": -2,
+      "neck": -14,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": 112,
+          "el": 102,
+          "f": 0.55
+        },
+        "far": {
+          "sh": 109,
+          "el": 104,
+          "f": 0.55
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -16,
+      "y": -110
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": -165.4,
+        "y": -19,
+        "foot": 0,
+        "bend": 1
+      },
+      "far": {
+        "x": -165.4,
+        "y": -19,
+        "foot": 0,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -200,
+      "length": 400
+    },
+    {
+      "type": "ball",
+      "x": 18,
+      "r": 52
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.upper",
+      "trap.mid",
+      "trap.lower"
+    ],
+    "secondary": [
+      "rhomboid",
+      "deltoid.post"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌"
+  ],
+  "cue": "先把手臂举到斜上方，大约和身体呈一个 Y。再屈肘，把上臂向内夹紧，停一下后伸直还原。",
+  "mistake": {
+    "title": "抬臂时上身跟着掀起来",
+    "fix": "腹压实在球上，只动肩膀和手臂，胸口不要跟着甩高。",
+    "basis": "资料里的常见问题是身子起伏太大，下背跟着帮忙。",
+    "level": 0.65,
+    "override": {
+      "pelvis": 70,
+      "lumbar": 16,
+      "thorax": 10,
+      "neck": 6,
+      "head": 8
+    }
+  },
+  "observation": "侧面，头在画面左侧。3.86 秒手臂斜向上举（画面左侧抬高），4.96 秒肘弯、前伸变短，8.26 秒又举回去。和单纯 Y 字不同，终点是屈肘而不是继续伸直。外展角度侧面看不清。双腿伸直，脚尖踩在垫上，球在腹部下面。健身球用 ball，不是近似。"
+}

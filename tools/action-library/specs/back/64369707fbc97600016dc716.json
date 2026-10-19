@@ -1,0 +1,126 @@
+{
+  "sourceName": "跪姿肩胛骨前伸后缩",
+  "part": "back",
+  "title": "跪姿肩胛骨前伸后缩",
+  "variant": "跪姿 · 臂前平举 · 肩胛前送再后夹 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.42,
+    1.25,
+    2.15,
+    2.96,
+    3.4,
+    3.81
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "poses": {
+    "0": {
+      "pelvis": 12,
+      "lumbar": 8,
+      "thorax": 12,
+      "neck": -8,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 108,
+          "el": 16
+        },
+        "far": {
+          "sh": 108,
+          "el": 16
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 100
+        },
+        "far": {
+          "hip": 10,
+          "knee": 105
+        }
+      }
+    },
+    "1": {
+      "pelvis": 6,
+      "lumbar": -4,
+      "thorax": -14,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 46,
+          "el": 52
+        },
+        "far": {
+          "sh": 46,
+          "el": 52
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 100
+        },
+        "far": {
+          "hip": 10,
+          "knee": 105
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -24,
+      "y": -8
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "trap.lower"
+    ],
+    "secondary": [
+      "rhomboid",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中部",
+    "斜方肌下部"
+  ],
+  "cue": "跪直，手臂向前平举、肘微屈。先把肩胛送到最前并停住，再向后夹紧，腰不要跟着晃。",
+  "mistake": {
+    "title": "夹肩时腰跟着前后晃",
+    "fix": "肚子轻轻收住，只让肩胛在胸廓上滑动。",
+    "basis": "资料指出的常见问题是腰跟着肩一起晃。",
+    "level": 1,
+    "override": {
+      "pelvis": 30,
+      "lumbar": 16
+    }
+  },
+  "observation": "侧面才能看见手臂前送和收回。用身体横向长度对过帧：0.42 秒和 3.81 秒最长（臂向前送、上背圆一点），2.96 秒最短（臂收回、胸口打开）。一个来回约 3.4 秒，第一段里有两次。这是跪直，不是俯身，pelvis 保持接近竖直（6–12），没有用俯身那档的 50–90。7.2 秒后换机位。朝向按画面里手臂伸向右侧，不镜像。",
+  "sourceID": "64369707fbc97600016dc716"
+}

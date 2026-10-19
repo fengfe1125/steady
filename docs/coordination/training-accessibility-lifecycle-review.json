@@ -1,0 +1,22 @@
+{
+  "run": "training-accessibility-lifecycle-retry",
+  "actualTests": 2,
+  "failures": 0,
+  "seconds": 36.174,
+  "coordinatorViewedPNGs": [
+    "16BBF916-61AE-4A27-B76E-5EDFB9425576.png",
+    "49FCC9C5-117F-4053-9717-C372075DCC9F.png"
+  ],
+  "verified": [
+    "background Home and foreground resume preserves paused state, manual play resumes time",
+    "DEBUG simulator static mode disables play and still allows second step at1.7s with stable timer"
+  ],
+  "limits": [
+    "one abs warmup representative",
+    "debug flag tests reduction branch, not actual OS setting delivery or live OS toggle",
+    "screenshots resized to942x2048",
+    "full-cycle visual and source-video acceptance still pending"
+  ],
+  "initialFailure": "read-only environment key rejected at compile; replaced with DEBUG simulator-only override while preserving system flag and release behavior",
+  "publicHashesMatch": true
+}

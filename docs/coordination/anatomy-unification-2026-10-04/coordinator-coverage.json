@@ -1,0 +1,52 @@
+{
+  "coverage": {
+    "scope": "all 8 collections + 14 equipment",
+    "expectedLessons": 97,
+    "coveredLessons": 97,
+    "uniquePages": 96,
+    "complete": true,
+    "missing": [],
+    "topics": {
+      "shoulders": {
+        "expected": 11,
+        "covered": 11
+      },
+      "arms": {
+        "expected": 8,
+        "covered": 8
+      },
+      "arms-extra": {
+        "expected": 7,
+        "covered": 7
+      },
+      "chest": {
+        "expected": 13,
+        "covered": 13
+      },
+      "back": {
+        "expected": 9,
+        "covered": 9
+      },
+      "abs": {
+        "expected": 10,
+        "covered": 10
+      },
+      "legs": {
+        "expected": 13,
+        "covered": 13
+      },
+      "functional": {
+        "expected": 12,
+        "covered": 12
+      },
+      "equipment": {
+        "expected": 14,
+        "covered": 14
+      }
+    }
+  },
+  "status": "covered",
+  "limits": [
+    "Inventory only; generated pages, rendering, playback and native UI are not tested."
+  ]
+}

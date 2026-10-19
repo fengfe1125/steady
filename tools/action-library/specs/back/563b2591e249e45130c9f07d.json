@@ -1,0 +1,143 @@
+{
+  "sourceName": "肩部深层激活",
+  "part": "back",
+  "title": "肩部深层激活",
+  "variant": "坐姿 · 双臂前举再屈肘立起小臂 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    1.34,
+    1.62,
+    2.0,
+    2.24,
+    2.7,
+    3.14
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -6,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 86,
+          "el": 14,
+          "ff": 1
+        },
+        "far": {
+          "sh": 86,
+          "el": 14,
+          "ff": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 90,
+          "knee": 90
+        },
+        "far": {
+          "hip": 90,
+          "knee": 90
+        }
+      }
+    },
+    "1": {
+      "pelvis": -6,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 86,
+          "el": 96,
+          "ff": 1
+        },
+        "far": {
+          "sh": 86,
+          "el": 96,
+          "ff": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 90,
+          "knee": 90
+        },
+        "far": {
+          "hip": 90,
+          "knee": 90
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 0,
+      "y": -110
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 95,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 83,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "box",
+      "x": -45,
+      "width": 110,
+      "top": -96
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "infraspinatus",
+      "deltoid.post"
+    ],
+    "secondary": [
+      "teres",
+      "trap.mid"
+    ]
+  },
+  "primaryNames": [
+    "冈下肌",
+    "三角肌后束"
+  ],
+  "cue": "坐直，两臂抬到肩高并伸向身前，再只屈手肘，把小臂立起来，肘尖留在原地。",
+  "mistake": {
+    "title": "上翻时双肩耸起",
+    "fix": "先把肩峰往下压，再让小臂单独转动。",
+    "basis": "资料指出耸肩和肩里发响是常见问题。侧面没有耸肩参数，用头颈前探来表现。",
+    "level": 1,
+    "override": {
+      "neck": 8,
+      "head": 14,
+      "thorax": 8
+    }
+  },
+  "observation": "原片坐在椅子上，两臂伸向身前再屈肘把小臂立起，不是向两侧打开。侧面才能看见这前伸。腿和髋支点用坐姿高位下拉那组：髋 90、膝 90，髋放在 -110，脚下加坐箱，双脚踩实。取第一段 1.34 秒手臂前伸到 2.24 秒小臂立起，再回到 3.14 秒。约 5.8 秒后切近景。握拳，手不写成张开。",
+  "sourceID": "563b2591e249e45130c9f07d"
+}

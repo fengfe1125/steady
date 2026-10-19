@@ -1,0 +1,29 @@
+{
+  "time": "2026-10-04T16:57:51.301694+08:00",
+  "deleted": [
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/modules",
+      "bytes": 61697829,
+      "files": 90,
+      "symlinks": [],
+      "reason": "Coordinator task-owned compiler/module and package cache; rebuildable; no app runtime dependency",
+      "deleted": true
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/coordination/.cache/swiftpm",
+      "bytes": 50605906,
+      "files": 179,
+      "symlinks": [],
+      "reason": "Coordinator task-owned compiler/module and package cache; rebuildable; no app runtime dependency",
+      "deleted": true
+    }
+  ],
+  "releasedLogicalBytes": 112303735,
+  "resourceFilesVerifiedUnchanged": 113,
+  "retained": [
+    "DerivedData and built app for follow-up verification",
+    "All xcresult logs PNG and acceptance reports",
+    "All source media and required evidence"
+  ],
+  "internalDiskDeleted": false
+}

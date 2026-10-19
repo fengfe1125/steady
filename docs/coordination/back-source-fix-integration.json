@@ -1,0 +1,40 @@
+{
+  "sealedChecks": {
+    "v1": 61,
+    "v2": 73
+  },
+  "viewed": "D1 v2 three-view four-phase PNGs; same outlet post visible oblique/side, rear occlusion remains. D2 v1 four-phase previously viewed.",
+  "files": [
+    {
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-bent-arm-pulldown-native.html",
+      "sha256": "61ee17f60ba10138d4a75174362fa5fd3f6fa703d96eefb6f50e5a784f3efb94"
+    },
+    {
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-neutral-pulldown-native.html",
+      "sha256": "9cc6c0e1312e66e09d5692d4b160d32d65fa565342120a9ab600b91008e2c6fa"
+    },
+    {
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json",
+      "sha256": "15b2a8eaa08d097bf14f57a2d6a497e5c1466638da8f627471bb475a178a1428"
+    },
+    {
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-animations.json",
+      "sha256": "0f312c666f0830919265342376ebb7911ccffb7eaf60f0963a030395f94ecc68"
+    }
+  ],
+  "limits": "Discrete source frames only; native full-cycle, alternate views/sides, dark and large text remain pending. Not final acceptance.",
+  "nativeReview": {
+    "run": "back-source-fix-v2",
+    "executed": 2,
+    "failures": 0,
+    "durationSeconds": 53.721,
+    "exportedPNG": 6,
+    "viewedPNG": [
+      "BCA936A1-8BB8-4D0A-95A5-14F25FAB37DA.png",
+      "100F1DB4-F34A-4455-9373-F39175966C98.png",
+      "68A0AA37-4E04-4839-900A-B7166CA8D235.png",
+      "3E1D04A6-94A2-4C83-8388-E6144A7A666C.png"
+    ],
+    "finding": "Native 3-second oblique motion and detail: D1 support hand holds outlet post; D2 single cable connected to shared handle frame; matching numbered native explanations readable."
+  }
+}

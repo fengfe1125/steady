@@ -1,0 +1,27 @@
+{
+  "time": "2026-10-03T22:57:00+08:00",
+  "draft_checks": [
+    {
+      "topic": "shoulders",
+      "lessons": 12,
+      "issues": []
+    },
+    {
+      "topic": "abs",
+      "lessons": 10,
+      "issues": []
+    },
+    {
+      "topic": "arms-extra",
+      "lessons": 7,
+      "issues": []
+    },
+    {
+      "topic": "legs",
+      "lessons": 13,
+      "issues": []
+    }
+  ],
+  "changed_public_swift": [],
+  "accepted": []
+}

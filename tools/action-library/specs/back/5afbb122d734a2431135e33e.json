@@ -1,0 +1,160 @@
+{
+  "sourceID": "5afbb122d734a2431135e33e",
+  "sourceName": "俯身锤式小哑铃划船",
+  "part": "back",
+  "title": "俯身锤式小哑铃划船",
+  "variant": "锤式对握，上身只前倾约四十五度 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    0.58,
+    1.5,
+    2.4,
+    2.95,
+    3.6,
+    4.4
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.78,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 48,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 54,
+          "el": 18,
+          "f": 1
+        },
+        "far": {
+          "sh": 58,
+          "el": 20,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 40,
+          "knee": 22
+        },
+        "far": {
+          "hip": 36,
+          "knee": 26
+        }
+      }
+    },
+    "1": {
+      "pelvis": 48,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -24,
+          "el": 108,
+          "f": 1
+        },
+        "far": {
+          "sh": -20,
+          "el": 102,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 40,
+          "knee": 22
+        },
+        "far": {
+          "hip": 36,
+          "knee": 26
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 0,
+      "y": -182
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 14,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -4,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.7
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.7
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid"
+    ],
+    "secondary": [
+      "biceps",
+      "trap.mid",
+      "erectors"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "菱形肌"
+  ],
+  "cue": "上身只前倾到大约四十五度，头明显高于髋。对握小铃，肘贴身收到腰侧，稍停再放下。",
+  "mistake": {
+    "title": "弓着腰，肘向外撇",
+    "fix": "上身少折一点，后背拉直；上拉时两肘贴住身侧。",
+    "basis": "资料把弓腰和肘没夹紧写在一起。最高点弯腰，并把肘画成向外翻。",
+    "level": 1,
+    "override": {
+      "lumbar": 14,
+      "thorax": 10,
+      "neck": 4,
+      "arms": {
+        "near": {
+          "f": 0.52,
+          "el": 68
+        },
+        "far": {
+          "f": 0.52,
+          "el": 72
+        }
+      }
+    }
+  },
+  "observation": "侧面，人朝左，小哑铃，对握。0.58 秒手臂垂在身前，2.95 秒肘贴身收到腰侧，4.4 秒回到垂下。上身明显比接近水平的划船更立，大约四十五度前倾，pelvis 48，头是最高点。顶端只略停，肘没有向外翻。"
+}

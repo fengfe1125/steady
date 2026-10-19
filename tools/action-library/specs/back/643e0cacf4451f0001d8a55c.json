@@ -1,0 +1,153 @@
+{
+  "sourceID": "643e0cacf4451f0001d8a55c",
+  "sourceName": "俯身哑铃划船保持",
+  "part": "back",
+  "title": "俯身哑铃划船保持",
+  "variant": "双臂夹肘收到腹侧后一直维持收缩 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.4,
+    1.6,
+    2.9,
+    4.2,
+    6.2,
+    7.5
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.72,
+    1,
+    0.88,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 66,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -10,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": 8,
+          "el": 88
+        },
+        "far": {
+          "sh": 12,
+          "el": 92
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 58,
+          "knee": 22
+        },
+        "far": {
+          "hip": 54,
+          "knee": 26
+        }
+      }
+    },
+    "1": {
+      "pelvis": 66,
+      "lumbar": -2,
+      "thorax": -8,
+      "neck": -12,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": -18,
+          "el": 118
+        },
+        "far": {
+          "sh": -14,
+          "el": 122
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 58,
+          "knee": 22
+        },
+        "far": {
+          "hip": 54,
+          "knee": 26
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -6,
+      "y": -174
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 18,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -4,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid",
+      "trap.mid"
+    ],
+    "secondary": [
+      "biceps",
+      "trap.lower"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "中背部"
+  ],
+  "cue": "两肘夹在身侧，铃停在腰腹旁边。在这个位置继续往上收半寸，停住，呼吸保持均匀，后背不要松成弧。",
+  "mistake": {
+    "title": "保持时腰松了，肘也离开身体",
+    "fix": "时间可以缩短，但后背要直，两肘始终贴住肋骨两侧。",
+    "basis": "资料把弓腰和肘不夹紧写在一起，保持阶段用拱背加手臂外翻来示意。",
+    "level": 0.7,
+    "override": {
+      "lumbar": 18,
+      "thorax": 12,
+      "arms": {
+        "near": {
+          "f": 0.5,
+          "el": 60
+        },
+        "far": {
+          "f": 0.5,
+          "el": 64
+        }
+      }
+    }
+  },
+  "observation": "侧面，头朝右。整段 8 秒轮廓几乎不变，5 秒后只是换了机位，所以没有画从悬垂拉起的全程，只在已经收到腹侧的姿势上再夹紧一次。上身比 V 字划船略高一点，肘收得更靠近肋骨。双脚分开，侧面只能看成一小段前后错位。"
+}

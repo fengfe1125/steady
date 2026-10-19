@@ -1,0 +1,71 @@
+[
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/content/tanchengyi-arms-extra.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/tanchengyi-arms-extra.json",
+    "sha256": "2424ba40b7fd1b07dc2d9376b808aecb1efe84c0166bcefd49de333bac1a6dfc"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-warmup-aerobic.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-warmup-aerobic.html",
+    "sha256": "527517bd248430e90e06d0d844abfccb4a2480d5ee101f70672afa4dc7889f01"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-warmup-mobility.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-warmup-mobility.html",
+    "sha256": "7c83995645752e16aaeb80bda316461d523aff6171ac98d5c3ff4a80926acece"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-warmup-rehearsal.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-warmup-rehearsal.html",
+    "sha256": "2451e48cba716c4079ae675952e9380220846074a1fe3ee702d81e4122b89106",
+    "previousSHA256": "703d4bc53d2e49b8ef295413423bb0fa6b5521438a27252cdbb36a07368378c2",
+    "revisionNote": "2026-10-04 native screenshot layout repair; awaiting native regression"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-cable-pushdown.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-cable-pushdown.html",
+    "sha256": "d1251c166a7f5591748662689d2624e4c0898ab63860e64417ebfe13897064dd",
+    "previousSHA256": "e490364bcd72ee9d6ce43567f510a6e2a737f841882b54a2d7e0f1472fb79d32",
+    "revisionNote": "2026-10-04 native screenshot layout repair; awaiting native regression"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-seated-cable-curl.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-seated-cable-curl.html",
+    "sha256": "eb7f9ac4620aa9b050bda267c48a0ff73e4c303f3256a21e5321373040a628d7"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-lying-barbell-extension.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-lying-barbell-extension.html",
+    "sha256": "e174d9e5e314d293e6ef14167f40fd62b1ac6d4a9b8d737ee15189a1a7a896d4"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-standing-barbell-curl.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-standing-barbell-curl.html",
+    "sha256": "69820bdd64059dfe25738b00d338e1b2bb8cc93767f7725e70343868bf9f42f0"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-artwork-renderer.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-artwork-renderer.js",
+    "sha256": "2e89be3038a615f26cabd742d1803d9b13c8a6a8a679e6d475228a1fb9b99519"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-artwork-runtime.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-artwork-runtime.js",
+    "sha256": "42e395ec9661446d30e691764e92682dba399822df96832e7400a5513c58f5fb"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-warmup-runtime.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-warmup-runtime.js",
+    "sha256": "ae340a4e5f6383cc147db50b10db5909519a704ee99a508e89728daae1d91c6e"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/evidence/final-acceptance/patches/F03-public-complete.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-complete-animations.json",
+    "sourceSHA256": "5175e7c4294f79dab2935f398659bb8815351b291b96d666778ecdbd6c075045",
+    "sha256": "22b84cddfbcf0dc6d5ae945b643e4afbead7660b3346516f8c919dc6ab9f3524",
+    "normalization": "Explicit seconds, reviewed 6-second timing and per-lesson injected runtime; content and steps unchanged",
+    "panelDescriptionsSource": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-panel-descriptions.json",
+    "panelDescriptionsSHA256": "88fc37ea73fcef57a800446d8ebecc579a34a803cfc71a6a6ec75a9d5ffa0f8b",
+    "revisionNote": "final-acceptance scoped repair; coordinator reviewed; native targeted checks pending"
+  }
+]

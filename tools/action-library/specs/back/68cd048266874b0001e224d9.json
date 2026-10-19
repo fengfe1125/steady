@@ -1,0 +1,159 @@
+{
+  "sourceID": "68cd048266874b0001e224d9",
+  "sourceName": "俯身哑铃外旋",
+  "part": "back",
+  "title": "俯身哑铃外旋",
+  "variant": "肘保持约九十度，前臂由下向外旋开 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.56,
+    1.15,
+    2.15,
+    2.77,
+    3.35,
+    3.89
+  ],
+  "levels": [
+    0,
+    0.32,
+    0.74,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 50,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": 20,
+          "el": 62,
+          "f": 1
+        },
+        "far": {
+          "sh": 24,
+          "el": 58,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 44,
+          "knee": 16
+        },
+        "far": {
+          "hip": 42,
+          "knee": 18
+        }
+      }
+    },
+    "1": {
+      "pelvis": 50,
+      "lumbar": 0,
+      "thorax": -3,
+      "neck": -14,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": 18,
+          "el": 118,
+          "f": 0.82
+        },
+        "far": {
+          "sh": 22,
+          "el": 114,
+          "f": 0.82
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 44,
+          "knee": 16
+        },
+        "far": {
+          "hip": 42,
+          "knee": 18
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 6,
+      "y": -180
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 16,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -4,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.75
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.75
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "infraspinatus",
+      "deltoid.post"
+    ],
+    "secondary": [
+      "teres",
+      "trap.mid"
+    ]
+  },
+  "primaryNames": [
+    "上背部"
+  ],
+  "cue": "上身约四十五度，肘先弯成直角，铃垂在大腿前。再把前臂向外旋开，肘的位置尽量不动，然后慢慢转回来。",
+  "mistake": {
+    "title": "整条胳膊甩起来，肘伸直了",
+    "fix": "肘先固定在约直角，只转动前臂；做不到就减轻重量，不要把这做成划船。",
+    "basis": "这个动作靠肩袖慢慢外旋。错误示意改成肘伸直、整条胳膊向前甩，和原动作一眼能分开。",
+    "level": 1,
+    "override": {
+      "arms": {
+        "near": {
+          "sh": 70,
+          "el": 18,
+          "f": 1
+        },
+        "far": {
+          "sh": 74,
+          "el": 20,
+          "f": 1
+        }
+      },
+      "neck": 6,
+      "head": 8
+    }
+  },
+  "observation": "侧面，头朝右，屈髋大约四十五度，头是最高点。0.56 秒前臂垂向大腿前，2.77 秒前臂旋到接近水平，3.89 秒转回。模型没有单独的前臂旋转轴，外旋近似成肘位置基本不动、前臂从下向前抬起，并略把上臂缩短表示向外。铃比划船小一号。"
+}

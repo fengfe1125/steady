@@ -1,0 +1,167 @@
+{
+  "sourceID": "654b649842096e0001748881",
+  "sourceName": "俯撑右侧哑铃宽距划船",
+  "part": "back",
+  "title": "俯撑右侧哑铃宽距划船",
+  "variant": "单手撑凳，提铃时肘向身体外侧翻开 · 双脚并排 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    2.11,
+    2.42,
+    2.72,
+    2.95,
+    3.4,
+    3.79
+  ],
+  "levels": [
+    0,
+    0.32,
+    0.74,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    },
+    "1": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -30,
+          "el": 100,
+          "f": 0.55
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 18,
+      "y": -168
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 104,
+        "y": -100,
+        "flat": true,
+        "bend": 1
+      }
+    },
+    "ankle": {
+      "near": {
+        "x": 8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "hands": {
+    "far": "open"
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": 94,
+      "length": 72,
+      "top": -100,
+      "back": {
+        "x": 160,
+        "angle": -4,
+        "length": 105
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "deltoid.post",
+      "trap.mid",
+      "trap.lower"
+    ],
+    "secondary": [
+      "rhomboid",
+      "lats",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "三角肌后束",
+    "斜方肌中下束"
+  ],
+  "cue": "同侧手撑稳凳面，铃先垂在肩下。向上时让肘往身体外侧打开，到与后背齐平就慢慢放回，底部留一点张力。",
+  "mistake": {
+    "title": "最低处肩还缩着，背没被拉开",
+    "fix": "铃落到最低时让肩往前送一点，肩胛张开，再向外拉起来。",
+    "basis": "资料指出最低点若肩不前引，往上拉时背部用不上力。侧面用上背变圆来表现没拉开。",
+    "level": 0.15,
+    "override": {
+      "lumbar": 14,
+      "thorax": 12,
+      "neck": 6,
+      "head": 6
+    }
+  },
+  "observation": "侧面，头朝右，头最高。躯干比水平高约二十五度，双脚并排，撑凳的手臂竖直在肩下。取 2.1 秒手臂垂下到 3.0 秒铃到髋旁再放下。宽距从侧面看不出左右间距，上臂缩短表示肘向外翻。凳只托住撑地那只手的掌根，垂着的铃在凳端靠头一侧，铃片不压进垫面。"
+}

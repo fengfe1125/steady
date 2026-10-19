@@ -36,3 +36,9 @@ backups/
 # Xcode user-specific state
 **/xcuserdata/
 *.xcuserstate
+
+# Overnight action-library watchdog state
+tools/action-library/ops/*.log
+tools/action-library/ops/*heartbeat
+tools/action-library/ops/*.lock*
+tools/action-library/__pycache__/

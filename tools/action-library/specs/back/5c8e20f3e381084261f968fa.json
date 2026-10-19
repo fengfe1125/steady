@@ -1,0 +1,141 @@
+{
+  "sourceID": "5c8e20f3e381084261f968fa",
+  "sourceName": "壶铃俯身划船",
+  "part": "back",
+  "title": "壶铃俯身划船",
+  "variant": "躯干接近水平，两手一起把壶铃收到髋旁 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.46,
+    0.9,
+    1.2,
+    1.39,
+    1.85,
+    2.32
+  ],
+  "levels": [
+    0,
+    0.42,
+    0.86,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "x": 0,
+      "y": -180,
+      "pelvis": 74,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 78,
+          "el": 8,
+          "f": 1
+        },
+        "far": {
+          "sh": 82,
+          "el": 10,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 70,
+          "knee": 16
+        },
+        "far": {
+          "hip": 66,
+          "knee": 18
+        }
+      }
+    },
+    "1": {
+      "x": 0,
+      "y": -180,
+      "pelvis": 74,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -18,
+          "el": 112,
+          "f": 1
+        },
+        "far": {
+          "sh": -14,
+          "el": 108,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 70,
+          "knee": 16
+        },
+        "far": {
+          "hip": 66,
+          "knee": 18
+        }
+      }
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 16,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 2,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "kettlebell",
+      "hand": "near"
+    },
+    {
+      "type": "kettlebell",
+      "hand": "far"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid"
+    ],
+    "secondary": [
+      "erectors",
+      "biceps",
+      "hamstrings"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "菱形肌"
+  ],
+  "cue": "屈髋到后背接近水平，两膝只留一点弯曲。两手一起把壶铃收到髋旁，肘贴住身侧，停一下再垂下去。",
+  "mistake": {
+    "title": "膝盖完全绷直，髋也被顶高",
+    "fix": "膝保持微屈，髋的高度不要往上顶，后背的角度先稳住再拉。",
+    "basis": "资料把膝关节伸直写成错误。脚固定时把髋抬高，腿会被拉得更直。",
+    "level": 1,
+    "override": {
+      "y": -192
+    }
+  },
+  "observation": "侧面，人朝右。躯干接近水平，头仍略高，骨盆七十四度。0.46 秒两臂垂下，1.39 秒两肘贴身收到髋旁，2.32 秒放下。画面里膝看起来几乎是直的，文字要求微屈，所以示范只留小幅屈膝。壶铃垂在手下。没有用髋锚点，这样错误示意才能把髋抬高、把膝拉直。"
+}

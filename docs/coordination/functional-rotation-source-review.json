@@ -1,0 +1,33 @@
+{
+  "reviewedAt": "2026-10-04T06:57:00+08:00",
+  "scope": "Coordinator directly viewed three saved source frames and read indicated ASR passages; not continuous video/audio review.",
+  "frames": [
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/media/source/frame-0521.jpg",
+      "sha256": "0c8b04c0c5609b7cad10870ad0f28c5a76d57c51d0c1f8ba4728a7e1b54c3904",
+      "videoTime": "08:41",
+      "visuallyReadCaption": "不要弯腰"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/media/source/frame-0536.jpg",
+      "sha256": "6f2975dfd86b480c50bc8dd0d20b365d4f20eb358e94c93029ae3f431bf2fdc3",
+      "videoTime": "08:56",
+      "visuallyReadCaption": "向左最大幅度旋转"
+    },
+    {
+      "path": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/media/source/frame-0551.jpg",
+      "sha256": "929aca287c53e833e491a83aa48ed63cc7ed367811e7acab63531cab80af2ff4",
+      "videoTime": "09:11",
+      "visuallyReadCaption": "向右最大幅度旋转"
+    }
+  ],
+  "asrFile": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/.cache/audio/functional-source-tiny.srt",
+  "asrPassages": [
+    "08:33-08:46 support-position/body-rotation wording",
+    "10:40-10:58 eyes follow fingers wording"
+  ],
+  "decision": "Accept proposal to replace unsupported pelvis prescription with body rotation and supported stance wording; correct 08:41 historical caption attribution to do not bend waist. Do not infer pelvis fixed or mandatory rotation from these frames.",
+  "proposal": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/implementation/rotation-course-text-proposal.json",
+  "applicationStatus": "Applied only to Reviewed candidate course three details and animation evidence 08:41; worker source frozen unchanged.",
+  "sourceLimits": "ASR is machine transcript with errors, not proof of direct listening or exhaustive absence of a statement across the whole video."
+}

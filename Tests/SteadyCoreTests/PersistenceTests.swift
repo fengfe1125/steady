@@ -9,7 +9,7 @@ import Testing
         defer { try? FileManager.default.removeItem(at: directory) }
         let url = directory.appending(path: "plans.store")
         let coach = DemoCoachService(delay: .milliseconds(1))
-        var plan = try await coach.planDraft(preferences: UserPreferences(), scenario: .normal)
+        var plan = try await coach.planDraft(preferences: { var p = UserPreferences(); p.availableEquipmentIDs = ["wall"]; return p }(), scenario: .normal)
         try plan.confirm()
         var workout = plan.sessions[0]
         workout.feedback = try WorkoutFeedback(completed: true, perceivedEffort: 5, note: "持久化测试备注")

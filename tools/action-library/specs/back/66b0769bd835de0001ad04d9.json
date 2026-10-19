@@ -1,0 +1,156 @@
+{
+  "sourceID": "66b0769bd835de0001ad04d9",
+  "sourceName": "上斜俯卧宽距杠铃划船",
+  "part": "back",
+  "title": "上斜俯卧宽距杠铃划船",
+  "variant": "胸口贴约三十度斜垫 · 宽握杠铃 · 肘向两侧 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    7.48,
+    8.5,
+    9.6,
+    10.47,
+    11.05,
+    11.7
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.78,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 60,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 2,
+      "arms": {
+        "near": {
+          "sh": 66,
+          "el": 8,
+          "f": 1
+        },
+        "far": {
+          "sh": 70,
+          "el": 10,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 8,
+          "ankle": 10
+        },
+        "far": {
+          "hip": 8,
+          "knee": 12,
+          "ankle": 10
+        }
+      }
+    },
+    "1": {
+      "pelvis": 60,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -42,
+          "el": 118,
+          "f": 0.68
+        },
+        "far": {
+          "sh": -36,
+          "el": 112,
+          "f": 0.68
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 12,
+          "knee": 8,
+          "ankle": 10
+        },
+        "far": {
+          "hip": 8,
+          "knee": 12,
+          "ankle": 10
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 6,
+      "y": -124
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": -112,
+        "y": -19,
+        "foot": 8,
+        "bend": -1
+      },
+      "far": {
+        "x": -126,
+        "y": -19,
+        "foot": 8,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -36,
+      "length": 78,
+      "top": -102,
+      "back": {
+        "x": 18,
+        "angle": -58,
+        "length": 168
+      }
+    },
+    {
+      "type": "barbell",
+      "r": 26
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats"
+    ],
+    "secondary": [
+      "trap.mid",
+      "rhomboid",
+      "deltoid.post",
+      "biceps"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌"
+  ],
+  "cue": "胸口贴在斜垫上，脚踩在低的那头。宽握把杠从身下拉到上胸附近，肘向两侧打开，再慢慢放回。",
+  "mistake": {
+    "title": "拉起时肩往耳朵缩",
+    "fix": "肩头沉住，只把肘打开到约直角，脖子不要跟着短一截。",
+    "basis": "资料的常见问题是动作里出现耸肩。侧面用头颈前伸来表示。",
+    "level": 1,
+    "override": {
+      "neck": 8,
+      "head": 14,
+      "thorax": 8
+    }
+  },
+  "observation": "可调节凳画成带靠背的长凳，斜度大约三十度。前半段是斜前方，杠已经离身不远；7.48 秒侧面手臂垂下、10.47 秒肘弯、片到上胸旁。头在画面右侧，所以不翻转。腿基本伸直，脚在垫子低的一头着地。宽握从侧面看不出手距，用上臂缩短表示肘朝镜头打开。杠铃片略缩小，避免挡住胸口。角度为人工拟合。"
+}

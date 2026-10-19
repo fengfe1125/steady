@@ -1,0 +1,140 @@
+{
+  "sourceID": "648ab16468aa7d0001675ae0",
+  "sourceName": "跪姿离心爆发窄距俯卧撑",
+  "part": "chest",
+  "title": "跪姿离心爆发窄距俯卧撑",
+  "variant": "跪姿 + 手距窄于肩 + 三秒慢放后爆发推起 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    3.4,
+    4.45,
+    5.55,
+    6.3,
+    6.85,
+    7.45
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 65,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 70,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "两手放在胸口下方、间距比肩窄，肘贴着身体往后走；先用三秒慢慢把胸口放到垫面附近，再靠上臂后侧把身体顶起来。",
+  "mistake": {
+    "title": "塌腰撅臀，身体从中间断开",
+    "fix": "把肋骨往下压、臀部收紧，让身体从肩到膝是一条直线；宁可少下几厘米，也不要让腰塌下去。",
+    "basis": "源资料把撑起时肘部顶死与下落途中腰背失控并列成常见问题；本条选后一项做错误姿态，其余细节来自通用训练常识。",
+    "level": 0.8,
+    "override": {
+      "pelvis": 78,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，纯侧面机位，人物头朝画面左侧，mirror 取 true；膝与小腿压在垫上、双脚在身后交叉上翘。0.49 与 3.40 秒双臂伸直为最高点，6.30 秒胸口贴近垫面、肘向后收，是最低点，之后到 7.45 秒左右回到最高点。故选 3.40→7.45 秒这一次，下落接近三秒、回起不到一秒。窄握造成的两手间距在侧视角看不见，只能用肩下略靠后的手部固定点来近似，这一点无法在画面中直接确认。"
+}

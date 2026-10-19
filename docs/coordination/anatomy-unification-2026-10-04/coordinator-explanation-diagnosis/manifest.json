@@ -1,0 +1,35 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9126FF47-F174-47B2-BC46-4AB43F71EECD",
+        "deviceName" : "Steady Training QA",
+        "exportedFileName" : "FB44E9EF-FC69-44C3-976F-FB3869AED843.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "anatomy-equipment-light-mistakes_0_DCADD053-4516-4F1E-AC73-87C32DE402DF.png",
+        "timestamp" : 1791137854.567
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9126FF47-F174-47B2-BC46-4AB43F71EECD",
+        "deviceName" : "Steady Training QA",
+        "exportedFileName" : "7A8CCE44-DFB8-4F73-96AD-A5A3731A480E.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "anatomy-equipment-light-detail_0_24B827EE-35E3-4365-BD29-396F2E5DE601.png",
+        "timestamp" : 1791137852.383
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9126FF47-F174-47B2-BC46-4AB43F71EECD",
+        "deviceName" : "Steady Training QA",
+        "exportedFileName" : "9751293E-9305-44A8-8179-CA3A19DB7E0B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "anatomy-equipment-light-motion_0_C8593A3F-FA11-4184-8D96-9B974FCD4A04.png",
+        "timestamp" : 1791137850.159
+      }
+    ],
+    "testIdentifier" : "SteadyUITests/testAnatomyEquipmentSquarePanelsLight()",
+    "testIdentifierURL" : "test://com.apple.xcode/Steady/SteadyUITests/SteadyUITests/testAnatomyEquipmentSquarePanelsLight"
+  }
+]

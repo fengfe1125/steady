@@ -1,0 +1,137 @@
+{
+  "sourceID": "66b0905d556844000182fa95",
+  "sourceName": "悬挂带绳上俯卧撑",
+  "part": "chest",
+  "title": "悬挂带绳上俯卧撑",
+  "variant": "双脚挂带悬空 · 下斜俯卧撑 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.41,
+    1.5,
+    2.8,
+    3.66,
+    4.7,
+    5.8
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        }
+      }
+    },
+    "1": {
+      "pelvis": 97,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "far",
+    "at": {
+      "x": -155,
+      "y": -95
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "triceps.long",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "双脚分别套进悬挂带、脚离地，双手撑在肩部正下方，从头到踝绷成一条直线；收紧腰腹，屈肘让胸口接近垫面，再发力推回起点，脚尖始终向前勾住带子。",
+  "mistake": {
+    "title": "腰腹松懈，髋部下塌",
+    "fix": "夹臀收腹，让肩、髋、踝始终成一条直线；核心撑不住时立即结束组次，避免腰部代偿酸痛。",
+    "basis": "源资料常见错误：腹肌力竭后仍继续坚持，导致腰部酸疼。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 92,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，侧面，人物朝右。取 0.41 秒手臂撑直、双脚挂在身后悬挂带中、身体呈一条下斜直线为起点，3.66 秒屈肘降至最低点为终点，约 5.8 秒推回顶部。双手撑地位置全程不变，脚被带子吊起、位置基本固定。悬挂架与带子无法用现有器材类型准确绘制（带子应连到脚踝而非手），故未画出，仅保留瑜伽垫。角度为人工示意拟合。"
+}

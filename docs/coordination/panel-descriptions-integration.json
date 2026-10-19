@@ -1,0 +1,152 @@
+{
+  "status": "candidate-integrated-four-large-representatives-verified",
+  "files": [
+    {
+      "slug": "arms",
+      "count": 8,
+      "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-panel-descriptions.json",
+      "sourceSHA256": "1291175c574b7a863f9c9db4c849b7485891d4a514822dd33b568b7a25f37848",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-animations.json",
+      "sha256": "47abb4aefaa0098755d2b4426505806440f306324b767c48d5ed6bcef3a33311"
+    },
+    {
+      "slug": "chest",
+      "count": 13,
+      "source": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/animations/chest-panel-descriptions.json",
+      "sourceSHA256": "24411d1656b0434b5c2f00c646355e846d8d6a868af1d595795552f45d37c5f9",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-animations.json",
+      "sha256": "afa5dbc908e888a204808788ce5d6566755d481a6923b0fae6d202aba41ca34d"
+    },
+    {
+      "slug": "arms-extra",
+      "count": 7,
+      "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/animations/arms-extra-panel-descriptions.json",
+      "sourceSHA256": "88fc37ea73fcef57a800446d8ebecc579a34a803cfc71a6a6ec75a9d5ffa0f8b",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-complete-animations.json",
+      "sha256": "2511a7531fb032eb4a91d24e08b57b653e6e3810ce2d6f1e1136881d3a454715"
+    },
+    {
+      "slug": "functional",
+      "count": 12,
+      "source": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/animations/functional-panel-descriptions.json",
+      "sourceSHA256": "359634171872b03866cc55c6226b9a6e36088184778e36cb747ab9a3fadba3a1",
+      "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-animations.json",
+      "sha256": "5f79102ad0ce1ffba4a09bf90cb4dfc67a60a71ae87c6ff2dc19efc70ddabd0f"
+    }
+  ],
+  "scope": "Only 80 explanation strings across 40 lessons; existing normalized data and all other resources preserved. First pass completed arms/chest then stopped on arms-extra filename; second pass used receipt paths and completed all four.",
+  "nativeRun": {
+    "name": "four-panels-large",
+    "session": 96019,
+    "expectedTests": 4,
+    "status": "passed",
+    "scope": "Four representative courses at accessibility3; native paragraph existence and scrolling to end, with screenshots. Other 36 courses and dark appearance not covered.",
+    "executedTests": 4,
+    "failures": 0,
+    "durationSeconds": 200.233,
+    "exportedPNG": 33
+  },
+  "visualReview": {
+    "viewedPNG": [
+      {
+        "file": "5049F743-EAE0-4BD7-8BFE-58CF9385B4D0.png",
+        "sha256": "9baa1c50623adeb24984ae7565a6c7b27f5819296fb9ff70d072cc40dca44d61"
+      },
+      {
+        "file": "01DE4FF7-9D05-4994-BDDF-1186A255348D.png",
+        "sha256": "b8d930e2fbcbb81f1b536ed5e9198854c8b6a9d3f1b0475a94517e02a878228f"
+      },
+      {
+        "file": "3F5535FE-8E48-4B7F-B382-FBD6EECC05ED.png",
+        "sha256": "6ded5fc78f3d1b2e4365e6c868239641b796cf79bb2c3ef978831f6c8a978490"
+      },
+      {
+        "file": "6A19DC36-EEC8-40C6-B22D-C6D6ADA249E2.png",
+        "sha256": "e432afeb3d1a827b386bce808d7e2e83877d4da773488d5498ea5f7d06a67aad"
+      },
+      {
+        "file": "2896CE41-8C16-43C5-B46C-63B3D376DE46.png",
+        "sha256": "5ffc08b41c1a2eb69b360f8071707e38fd262ac2e51fc5f3aa4961be967878f8"
+      },
+      {
+        "file": "464FF01C-3F31-456E-8B73-71ED4E1D500C.png",
+        "sha256": "6da3c50491a1986879e41548d4e2114ff2500bc09bc90e85ef1b26de937dd382"
+      },
+      {
+        "file": "15511F9C-FA8B-4C0E-B991-823D0425B369.png",
+        "sha256": "8945b3c8342b4ba5bff989498172ba94414179860aab2de3af6a418cb82d6c47"
+      },
+      {
+        "file": "6110B219-84CA-448C-A379-1ACC4942D08F.png",
+        "sha256": "07b5725c9cad06cd90b6ac401b2baf39ad9872e5d75b7da73eda9bd1a5f62bf6"
+      },
+      {
+        "file": "AA0BD963-E814-43D4-98E9-535F5C3300A1.png",
+        "sha256": "0aa866b9afd29548038be83f99a707cb606825ffe118ea3cfb3a7bbda1e22775"
+      },
+      {
+        "file": "0DB081FA-B37F-4CE0-BF37-49CD1BA06110.png",
+        "sha256": "70ec714bf4533c499cb6543d9f2ff962718aa1494ed245109b4673e5c78a6c20"
+      }
+    ],
+    "finding": "Four representative detail/mistake native paragraphs visibly enlarged and wrapping; end punctuation and next section visible. Arms longer paragraph checked across overlapping scroll frames. Diagram labels remain small but equivalent native descriptions are available. Image viewer resized 1206x2622 to 942x2048.",
+    "limits": "Only four courses in light accessibility3. Other 36 courses, dark large text, VoiceOver navigation and full animation cycles remain unverified."
+  },
+  "darkLargeRun": {
+    "name": "four-panels-dark-large",
+    "expectedTests": 4,
+    "session": 41951,
+    "status": "passed",
+    "scope": "Same four representative paragraphs, dark accessibility3 and scroll-to-end.",
+    "executedTests": 4,
+    "failures": 0,
+    "durationSeconds": 204.716,
+    "exportedPNG": 33
+  },
+  "darkLargeVisualReview": {
+    "viewedPNG": [
+      {
+        "file": "DCE105D3-C576-4E30-A3EA-B578239583B7.png",
+        "sha256": "f342f9f7eb84a0b730d069b21a413174970ce5c6cf6512aed116242422840a3b"
+      },
+      {
+        "file": "97FB963D-F3A5-45CB-A3B9-5833D77CD3FF.png",
+        "sha256": "f7352f5d9d42769158eba2dc91ea1d056211eff8b5e60456796029844aaa9a2e"
+      },
+      {
+        "file": "BD66BE2D-FC78-4DE9-B7DC-E4772C0B6402.png",
+        "sha256": "69271818c43d056a27b06e0037bbfa33fd0a6f23479f1802becbe57091c06144"
+      },
+      {
+        "file": "178E77D4-4595-40ED-9C8A-8C831601EAEC.png",
+        "sha256": "a53b71ae94caca3ecb2f9998553258f3359099df7fff7508b14613a2a3a0aa9d"
+      },
+      {
+        "file": "04E97E9E-1973-4A3E-BD28-BA6C79B75DDE.png",
+        "sha256": "40595de14fab86ecf58bd7d93377e219f0b0dbe2edea261089408c258c3ce059"
+      },
+      {
+        "file": "F3954E3E-AA93-47EE-98B4-2DA5E45F7668.png",
+        "sha256": "3a6e12046760f59f44b0e5a317d8bc1e5f15b964ae6417d4a5ab419cfe9587a5"
+      },
+      {
+        "file": "291DAA69-3D4F-4571-BABB-A1331CE4E522.png",
+        "sha256": "acbbca54377543e57aecaf597a647f2f90ab2294719164df7504a820565f56d0"
+      },
+      {
+        "file": "46A503DF-F638-4175-BAB6-B6BDBDD542B1.png",
+        "sha256": "4c7631f3c182de953a69e8131fc1a9d0ea74af61f874ea6f0e1eb54f372d5a7c"
+      },
+      {
+        "file": "28B8B407-5CC3-429C-B37C-FEDDA82E3450.png",
+        "sha256": "7a39947be5a80bc5ac50746a06fa5c1cc9238a4236c9f4209f575d82ced88f24"
+      },
+      {
+        "file": "7EC38B10-9A9E-4246-AFDB-C4C6B29C8411.png",
+        "sha256": "5e51cdb216c4bb5339400db180e09b26a83d7a01904e61f2daaa3604127fe3b4"
+      }
+    ],
+    "finding": "Four detail/mistake paragraphs readable as enlarged white native text on dark background, wrapping and ends accessible. Arms checked across overlapping scroll screenshots. No clipping within native paragraph observed.",
+    "limits": "Four representatives only, no full-cycle or VoiceOver acceptance; viewer resized images."
+  }
+}

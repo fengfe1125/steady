@@ -1,0 +1,158 @@
+{
+  "sourceID": "641e967d0c4e6a0001cf0e05",
+  "sourceName": "支撑交替哑铃划船",
+  "part": "back",
+  "title": "支撑交替哑铃划船",
+  "variant": "双手撑铃成平板，单侧把铃收到髋旁 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    3.01,
+    4.21,
+    5.05,
+    5.42,
+    6.55,
+    7.7
+  ],
+  "levels": [
+    0,
+    0.42,
+    0.86,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 38,
+          "el": 93,
+          "f": 1
+        },
+        "far": {
+          "sh": 30,
+          "el": 93,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 6,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": -3,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -50,
+          "el": 110,
+          "f": 1
+        },
+        "far": {
+          "sh": 30,
+          "el": 93,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -17
+        },
+        "far": {
+          "hip": 6,
+          "knee": 0,
+          "ankle": -17
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 100,
+        "y": -18,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -200,
+      "length": 400
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "rhomboid"
+    ],
+    "secondary": [
+      "erectors",
+      "biceps",
+      "trap.mid"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "菱形肌"
+  ],
+  "cue": "两手握住垫上的哑铃，脚尖撑地，从头到脚保持平直。一侧把铃收到髋旁，肘高于后背，髋不要跟着拧。",
+  "mistake": {
+    "title": "提铃时髋跟着拧开",
+    "fix": "先把腹部和臀部收住，肩和两侧髋保持正对，再抬起一只铃。",
+    "basis": "资料指出上拉时身体会跟着转。侧面用两侧髋一高一低、胸椎扭转来示意。",
+    "level": 1,
+    "override": {
+      "lumbar": 8,
+      "thorax": 8,
+      "legs": {
+        "near": {
+          "hip": 16
+        },
+        "far": {
+          "hip": -12
+        }
+      }
+    }
+  },
+  "observation": "侧面偏后，人朝左，所以镜像。撑在两只哑铃上的高平板，脚尖着垫，没有下放到胸口。3.01 秒两臂撑住，5.42 秒靠近镜头的一侧把铃收到髋旁、肘高于后背，约 7.7 秒放回；另一侧在相邻重复里做。侧面看不出脚比肩宽多少，远侧脚只稍错开。角度按平板模板拟合。"
+}

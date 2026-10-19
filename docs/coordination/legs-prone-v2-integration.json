@@ -1,0 +1,27 @@
+{
+  "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-prone-leader-v2/resources/animations/legs-main-renderer.js",
+  "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-renderer.js",
+  "beforeSHA256": "0c4f63541ccf6fdf213d9adfaddaa4f2542fe332cc57c21e72e74244831c374e",
+  "afterSHA256": "ce0aaa88fb36901f43395aa5a6787080965452981d26b08f08ef3a94603b4daa",
+  "exactChange": "remove one 41-byte fixed leader path; all other bytes identical",
+  "coordinatorViewed": [
+    "prone-motion-2300-dark.png",
+    "prone-motion-0-light.png"
+  ],
+  "native": {
+    "run": "legs-prone-v2-native",
+    "actualTests": 2,
+    "failures": 0,
+    "seconds": 54.861,
+    "exportedPNGs": 6,
+    "coordinatorViewed": [
+      "216DEB67-A92E-43B8-BBD5-2F5E71276744.png",
+      "9CF8CF12-640D-4B63-BA27-C52CAA6DDC8D.png"
+    ],
+    "finding": "At native 2.0 sec in light and dark, floating leader absent and full label readable. Display resized 1206x2622 to 942x2048. Only local leader issue closed; no full cycle or large text acceptance."
+  },
+  "additionalChecksPlanned": {
+    "reduceMotion": "DEBUG simulator-only computed override alongside systemReduceMotion, no system setting changed; not a test of actual OS setting delivery.",
+    "background": "Start playback, Home, reactivate, verify paused timer and explicit manual resume."
+  }
+}

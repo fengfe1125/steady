@@ -1,0 +1,137 @@
+{
+  "sourceID": "5d28081ee7ea5d76eea531ee",
+  "sourceName": "反向健腹轮训练",
+  "part": "back",
+  "title": "反向健腹轮训练",
+  "variant": "俯卧，把轮拉向腹部，下背轻轻反弓 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    3.44,
+    4,
+    4.55,
+    4.96,
+    5.35,
+    5.73
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.45,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 88,
+      "lumbar": -4,
+      "thorax": -2,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 162,
+          "el": 6
+        },
+        "far": {
+          "sh": 160,
+          "el": 8
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 80,
+      "lumbar": -12,
+      "thorax": -6,
+      "neck": -10,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": 95,
+          "el": 70
+        },
+        "far": {
+          "sh": 93,
+          "el": 72
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": -8,
+          "knee": 0
+        },
+        "far": {
+          "hip": -8,
+          "knee": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -10,
+      "y": -30
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -200,
+      "length": 430
+    },
+    {
+      "type": "ball",
+      "between": true,
+      "r": 14,
+      "dy": 4
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "erectors"
+    ],
+    "secondary": [
+      "rhomboid",
+      "biceps",
+      "trap.mid"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "竖脊肌"
+  ],
+  "cue": "脸朝下趴稳，手臂伸直扶住轮。把轮拉近肚子，下背只轻轻拱起，胸口离开垫面一点，再慢慢放长。",
+  "mistake": {
+    "title": "轮子拉得太近，腰拱过头",
+    "fix": "拉到下背刚有收缩就停，不要为了行程把腰折得很深。",
+    "basis": "资料说回拉太长会让腰不舒服，幅度收到微微反弓即可。",
+    "level": 1,
+    "override": {
+      "pelvis": 66,
+      "lumbar": -22,
+      "thorax": -8,
+      "legs": {
+        "near": {
+          "hip": -22
+        },
+        "far": {
+          "hip": -22
+        }
+      }
+    }
+  },
+  "observation": "侧面，头在画面左侧。俯卧，脚在身后，双腿贴着垫。取一次从伸直到拉回：3.44 秒手臂伸向前、身体较平，4.96 秒轮靠近躯干、胸口抬高，5.73 秒又放长。健腹轮没有模型，用夹在双手之间、半径 14 的球近似，球跟着双手沿垫面移动。"
+}

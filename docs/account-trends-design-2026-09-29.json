@@ -1,0 +1,60 @@
+{
+  "fileKey": "APLEefE2UxG4Vhd6W25zTl",
+  "pageId": "31:2",
+  "phase": "design-review",
+  "screens": {
+    "signedIn": "32:2",
+    "settings": "33:2",
+    "signedOut": "33:29",
+    "login": "33:50",
+    "delete": "33:67",
+    "codeSent": "33:85",
+    "deleteCode": "33:102",
+    "deleteConfirm": "33:115",
+    "import": "33:128",
+    "deleted": "33:141",
+    "reading": "34:36",
+    "syncing": "34:55",
+    "trend": "34:77",
+    "trendEmpty": "34:105",
+    "trendOne": "34:115"
+  },
+  "variants": [
+    {
+      "id": "36:79",
+      "name": "账户与连接 / 深色",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "36:106",
+      "name": "账户与连接 / 小屏",
+      "width": 375,
+      "height": 812
+    },
+    {
+      "id": "36:133",
+      "name": "账户与连接 / 大字号",
+      "width": 393,
+      "height": 852
+    }
+  ],
+  "prototypeLinks": 38,
+  "verification": {
+    "fonts": "Noto Sans SC",
+    "screenshotsReviewed": [
+      "signedIn",
+      "signedOut",
+      "settings",
+      "login",
+      "deleteConfirm",
+      "trend",
+      "dark",
+      "small",
+      "largeType"
+    ],
+    "nativeCodeChanged": false,
+    "prototypeClicked": false
+  },
+  "next": "User design confirmation before native implementation"
+}

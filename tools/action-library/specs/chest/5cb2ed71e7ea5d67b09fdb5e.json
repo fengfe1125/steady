@@ -1,0 +1,196 @@
+{
+  "sourceID": "5cb2ed71e7ea5d67b09fdb5e",
+  "sourceName": "跪姿平移俯卧撑",
+  "part": "chest",
+  "title": "跪姿平移俯卧撑",
+  "variant": "跪姿 · 单手侧移宽窄交替俯卧撑 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    5.21,
+    5.7,
+    6.2,
+    6.7,
+    7.4,
+    8.19
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.75,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 56,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.3": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 8,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 8,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.75": {
+      "pelvis": 72,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 16,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 16,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -6,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 22,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 22,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    },
+    "0.4": {
+      "pelvis": 66,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 10,
+          "knee": 84,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 14,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 380
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "双手先并拢撑在胸口正下方，把一只手向侧方滑出后屈肘俯身，肘略高于躯干再推起，把手滑回中间，换另一侧交替进行，全程腰背挺直。",
+  "mistake": {
+    "title": "塌腰撅臀",
+    "fix": "全程收紧腹臀，让肩、髋、膝保持一条斜线；肘伸直即可、不要超伸锁死，重心跟着滑出的手走。",
+    "basis": "来源资料常见错误：伸臂时肘关节超伸锁死、训练中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，固定侧面机位（末段略拉近），人物朝画面左侧，共 6 次。动作流程：双手并拢撑于胸口下方→一只手向侧方平移→做一次跪姿俯卧撑→推起后手滑回，左右交替；平移是左右横向动作，在侧面视角不可见，已按资料写入要点。膝盖着垫、小腿向后上方抬起且双脚交叉。取 5.21~8.19 秒一轮：5.21 直臂顶部、6.7 屈肘至最低、8.19 回到顶部，一轮内双手位置保持不动。"
+}

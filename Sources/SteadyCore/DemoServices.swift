@@ -103,7 +103,7 @@ public struct DemoCoachService: CoachService {
         }
     }
 
-    public func planDraft(preferences: UserPreferences, scenario: DemoScenario) async throws -> TrainingPlan {
+    public func planDraft(preferences: UserPreferences, scenario: DemoScenario, programKind: String? = nil) async throws -> TrainingPlan {
         guard (10...90).contains(preferences.availableMinutes),
               !preferences.goal.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             throw ServiceError.invalidInput("请填写目标，并设置10–90分钟可用时间。")
@@ -113,16 +113,8 @@ public struct DemoCoachService: CoachService {
         guard preferences.limitations.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             throw ServiceError.invalidInput("演示教练无法评估运动限制。请先咨询专业人士，不自动生成适配方案。")
         }
-        let sessions = [0, 2, 4].map { offset in
-            WorkoutSession(title: "轻量全身", scheduledAt: DemoData.calendar.date(byAdding: .day, value: offset, to: DemoData.today)!,
-                minutes: preferences.availableMinutes, exercises: [
-                    Exercise(name: "舒适步行", prescription: "热身5分钟"),
-                    Exercise(name: "自重深蹲", prescription: "2组 × 8次，量力而行"),
-                    Exercise(name: "墙壁俯卧撑", prescription: "2组 × 8次"),
-                    Exercise(name: "轻松整理", prescription: "舒缓活动5分钟")
-                ])
-        }
-        return TrainingPlan(title: "\(preferences.goal) · 演示草案", sessions: sessions)
+        let catalog = try ExerciseCatalog.load(version: programKind == "lowerBodyBasics" ? 2 : 1)
+        return try catalog.demoPlan(preferences: catalog.preferencesForGeneration(preferences), today: DemoData.today, calendar: DemoData.calendar)
     }
 }
 
@@ -138,4 +130,5 @@ public extension DemoCoachService {
         answer(question: question, summary: summary, scenario: .normal)
     }
     func planDraft(preferences: UserPreferences) async throws -> TrainingPlan { try await planDraft(preferences: preferences, scenario: .normal) }
+    func planDraft(preferences: UserPreferences, programKind: String?) async throws -> TrainingPlan { try await planDraft(preferences: preferences, scenario: .normal, programKind: programKind) }
 }

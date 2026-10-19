@@ -1,0 +1,150 @@
+{
+  "sourceID": "56f3b35c11fc502da240d2bc",
+  "sourceName": "小哑铃钻石卧推",
+  "part": "chest",
+  "title": "小哑铃钻石卧推",
+  "variant": "窄距 · 双哑铃全程并拢 · 大臂贴身 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    11.79,
+    12.4,
+    13.3,
+    13.8,
+    15.1,
+    16.4
+  ],
+  "levels": [
+    0,
+    0.15,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "x": 0,
+      "y": -36,
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 90,
+          "el": 10
+        },
+        "far": {
+          "sh": 90,
+          "el": 10
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        }
+      }
+    },
+    "1": {
+      "x": 0,
+      "y": -36,
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 20,
+          "el": 95
+        },
+        "far": {
+          "sh": 20,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 115,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 102,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.7
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.7
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "pec.lower"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "屈膝仰卧踩实垫面，两只哑铃竖直并拢像一颗钻石，推在胸口正上方；下沉时大臂全程贴紧躯干两侧、肘部落到垫面附近，再用胸和肱三头肌沿竖直轨迹推回并拢的起点。",
+  "mistake": {
+    "title": "推起时肩膀前送、上背拱起离垫",
+    "fix": "肩胛骨后缩下沉贴住垫子，靠肘部伸展推起哑铃，不要用肩膀向前顶的力量。",
+    "basis": "源 detail 常见错误：发力时肩膀前送借力，解决为肩胛骨后缩下沉并保持。",
+    "level": 0.5,
+    "override": {
+      "pelvis": -84,
+      "lumbar": -10
+    }
+  },
+  "observation": "主视频 1080×1080，侧面，人物头朝画面左侧，屈膝仰卧，共 5 次。取第 5 次：11.79 秒并拢的哑铃推至胸口正上方，13.8 秒前后屈肘下沉到大臂贴身、接近垫面，随后推回，16.4 秒的回到顶端为估计值（视频在 15.95 秒仍处于上升途中）。哑铃并拢的窄距特征在侧视里不可见，已写入 variant；双脚全程不动。"
+}

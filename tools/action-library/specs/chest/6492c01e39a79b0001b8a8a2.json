@@ -1,0 +1,140 @@
+{
+  "sourceID": "6492c01e39a79b0001b8a8a2",
+  "sourceName": "底部暂停腰侧俯卧撑",
+  "part": "chest",
+  "title": "底部暂停腰侧俯卧撑",
+  "variant": "腰侧 · 双手撑在腰胯两侧、指尖朝后 · 底部停顿 2~3 秒 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    5.29,
+    5.9,
+    6.35,
+    6.55,
+    7.75,
+    9.8
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.88,
+    1,
+    0.95,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -19
+        }
+      }
+    },
+    "1": {
+      "pelvis": 89,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -40,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -40,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手撑在腰胯两侧、指尖朝后，肩胛夹紧让身体绷直；屈肘下沉到肘部高于躯干，停两三秒，再用胸和大臂后侧把身体推回。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "收紧腹部与臀部，让肩、髋、踝保持在一条直线上；撑不住时把双手收回肩下、改成普通跪姿窄距俯卧撑。",
+    "basis": "源 detail 的“常见错误”条目把腰背塌陷、臀部翘起列为典型问题。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 84,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 1080×1080，侧面机位，人物头朝画面左侧（mirror=true）。前 9 秒亮背景、后段画面变暗，动作不变；共 3 次重复，每次最低点停顿约 1.2 秒。取第 2 次：5.29 秒撑到最高点，6.47 秒降到最低（胸口接近垫面），7.65 秒仍在最低点，约 9.8 秒回到最高点。双手明显撑在腰胯两侧、位于肩的后方（侧面看手在髋部下方），指尖朝后，脚尖着垫不移动。侧面看不出双手间距，dx=-40 是按画面里“手在肩后约一个躯干横向距离”估的，具体数值没有把握。"
+}

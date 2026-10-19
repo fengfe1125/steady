@@ -1,0 +1,726 @@
+[
+  {
+    "id": "bodyweight-squat",
+    "existingLessonID": "legs-basic-bodyweight-squat",
+    "compatible": true,
+    "sourceID": "564b0b02a9f7e955480feff2",
+    "variant": "前伸手臂 · 侧面示范",
+    "keyframeSeconds": [
+      10.25,
+      10.75,
+      11.35,
+      11.95,
+      13,
+      13.75
+    ],
+    "lesson": {
+      "id": "reference-bodyweight-squat",
+      "title": "自重深蹲 · 变体示范",
+      "summary": "前伸手臂 · 侧面示范。比例和角度为教学示意。",
+      "equipment": "无需额外器械",
+      "origin": "supplemental",
+      "dosage": "本页用于动作学习；训练组数、次数与用量沿用你的原计划。",
+      "frames": [],
+      "preparation": [
+        {
+          "title": "动作变体",
+          "detail": "前伸手臂 · 侧面示范。与原教学并列展示，训练计划和用量不变。"
+        }
+      ],
+      "steps": [
+        {
+          "title": "动作要点",
+          "detail": "整脚踩稳，髋膝一起弯曲，双臂保持前伸。"
+        }
+      ],
+      "cues": [
+        {
+          "title": "控制",
+          "detail": "跟随分解姿势观察支撑与轨迹，动作速度不代表训练用量。"
+        }
+      ],
+      "mistakes": [
+        {
+          "title": "脚跟抬起，身体向前失去支撑",
+          "detail": "减小下蹲幅度，重新踩稳整个脚底。"
+        }
+      ],
+      "supplements": [
+        {
+          "title": "绘制说明",
+          "detail": "SVG 为重新绘制；错误对照为教学补充。"
+        }
+      ],
+      "checks": [
+        "支撑点稳定",
+        "动作受控，器材不脱手"
+      ],
+      "references": []
+    },
+    "animation": {
+      "lessonID": "reference-bodyweight-squat",
+      "resource": "reference-bodyweight-squat.html",
+      "durationSeconds": 3.5,
+      "steps": [
+        {
+          "title": "起始",
+          "startSeconds": 0,
+          "endSeconds": 0.5,
+          "previewTimeSeconds": 0,
+          "instruction": "整脚踩稳，髋膝一起弯曲，双臂保持前伸。"
+        },
+        {
+          "title": "开始移动",
+          "startSeconds": 0.5,
+          "endSeconds": 1.0999999999999996,
+          "previewTimeSeconds": 0.5,
+          "instruction": "整脚踩稳，髋膝一起弯曲，双臂保持前伸。"
+        },
+        {
+          "title": "接近终点",
+          "startSeconds": 1.0999999999999996,
+          "endSeconds": 1.6999999999999993,
+          "previewTimeSeconds": 1.0999999999999996,
+          "instruction": "整脚踩稳，髋膝一起弯曲，双臂保持前伸。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 1.6999999999999993,
+          "endSeconds": 2.75,
+          "previewTimeSeconds": 1.6999999999999993,
+          "instruction": "整脚踩稳，髋膝一起弯曲，双臂保持前伸。"
+        },
+        {
+          "title": "控制返回",
+          "startSeconds": 2.75,
+          "endSeconds": 3.45,
+          "previewTimeSeconds": 2.75,
+          "instruction": "整脚踩稳，髋膝一起弯曲，双臂保持前伸。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.45,
+          "endSeconds": 3.5,
+          "previewTimeSeconds": 3.499,
+          "instruction": "整脚踩稳，髋膝一起弯曲，双臂保持前伸。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 500,
+        "effortEnd": 1699.9999999999993,
+        "returnStart": 1699.9999999999993,
+        "returnEnd": 3499,
+        "duration": 3500
+      },
+      "detailExplanation": "整脚踩稳，髋膝一起弯曲，双臂保持前伸。\n四幅图分别对应起始、移动中、终点和返回。红色仅为主要肌群示意。",
+      "mistakeExplanation": "左：正确支撑。右：脚跟抬起，身体向前失去支撑。\n减小下蹲幅度，重新踩稳整个脚底。\n错误姿势为补充教学示意。",
+      "primaryMuscles": [
+        "股四头肌",
+        "臀大肌"
+      ]
+    }
+  },
+  {
+    "id": "supine-crunch",
+    "existingLessonID": "abs-supine-crunch",
+    "compatible": false,
+    "sourceID": "55cc42efb312f5f484e89acd",
+    "variant": "手肘外展 · 回落至垫面",
+    "keyframeSeconds": [
+      3.3,
+      3.8,
+      4.25,
+      4.7,
+      5.7,
+      6.5
+    ],
+    "lesson": {
+      "id": "reference-supine-crunch",
+      "title": "仰卧卷腹 · 变体示范",
+      "summary": "手肘外展 · 回落至垫面。比例和角度为教学示意。",
+      "equipment": "无需额外器械",
+      "origin": "supplemental",
+      "dosage": "本页用于动作学习；训练组数、次数与用量沿用你的原计划。",
+      "frames": [],
+      "preparation": [
+        {
+          "title": "动作变体",
+          "detail": "手肘外展 · 回落至垫面。与原教学并列展示，训练计划和用量不变。"
+        }
+      ],
+      "steps": [
+        {
+          "title": "动作要点",
+          "detail": "肩背短程卷起，骨盆和双脚保持支撑，手轻放头侧。"
+        }
+      ],
+      "cues": [
+        {
+          "title": "控制",
+          "detail": "跟随分解姿势观察支撑与轨迹，动作速度不代表训练用量。"
+        }
+      ],
+      "mistakes": [
+        {
+          "title": "只抬头颈，肩背没有随之卷起",
+          "detail": "减小幅度，手不拉头，让肩背随卷腹一起抬起。"
+        }
+      ],
+      "supplements": [
+        {
+          "title": "绘制说明",
+          "detail": "SVG 为重新绘制；错误对照为教学补充。"
+        }
+      ],
+      "checks": [
+        "支撑点稳定",
+        "动作受控，器材不脱手"
+      ],
+      "references": []
+    },
+    "animation": {
+      "lessonID": "reference-supine-crunch",
+      "resource": "reference-supine-crunch.html",
+      "durationSeconds": 3.2,
+      "steps": [
+        {
+          "title": "起始",
+          "startSeconds": 0,
+          "endSeconds": 0.5,
+          "previewTimeSeconds": 0,
+          "instruction": "肩背短程卷起，骨盆和双脚保持支撑，手轻放头侧。"
+        },
+        {
+          "title": "开始移动",
+          "startSeconds": 0.5,
+          "endSeconds": 0.9500000000000002,
+          "previewTimeSeconds": 0.5,
+          "instruction": "肩背短程卷起，骨盆和双脚保持支撑，手轻放头侧。"
+        },
+        {
+          "title": "接近终点",
+          "startSeconds": 0.9500000000000002,
+          "endSeconds": 1.4000000000000004,
+          "previewTimeSeconds": 0.9500000000000002,
+          "instruction": "肩背短程卷起，骨盆和双脚保持支撑，手轻放头侧。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 1.4000000000000004,
+          "endSeconds": 2.4000000000000004,
+          "previewTimeSeconds": 1.4000000000000004,
+          "instruction": "肩背短程卷起，骨盆和双脚保持支撑，手轻放头侧。"
+        },
+        {
+          "title": "控制返回",
+          "startSeconds": 2.4000000000000004,
+          "endSeconds": 3.1500000000000004,
+          "previewTimeSeconds": 2.4000000000000004,
+          "instruction": "肩背短程卷起，骨盆和双脚保持支撑，手轻放头侧。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.1500000000000004,
+          "endSeconds": 3.2,
+          "previewTimeSeconds": 3.1990000000000003,
+          "instruction": "肩背短程卷起，骨盆和双脚保持支撑，手轻放头侧。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 500,
+        "effortEnd": 1400.0000000000005,
+        "returnStart": 1400.0000000000005,
+        "returnEnd": 3199,
+        "duration": 3200
+      },
+      "detailExplanation": "肩背短程卷起，骨盆和双脚保持支撑，手轻放头侧。\n四幅图分别对应起始、移动中、终点和返回。红色仅为主要肌群示意。",
+      "mistakeExplanation": "左：正确支撑。右：只抬头颈，肩背没有随之卷起。\n减小幅度，手不拉头，让肩背随卷腹一起抬起。\n错误姿势为补充教学示意。",
+      "primaryMuscles": [
+        "腹直肌"
+      ]
+    }
+  },
+  {
+    "id": "dumbbell-goblet-squat",
+    "existingLessonID": "dumbbell-goblet-squat",
+    "compatible": true,
+    "sourceID": "56f3b35c11fc502da240d2c5",
+    "variant": "胸前持铃 · 侧面示意",
+    "keyframeSeconds": [
+      3.7,
+      4.3,
+      4.8,
+      5.4,
+      6.1,
+      6.8
+    ],
+    "lesson": {
+      "id": "reference-dumbbell-goblet-squat",
+      "title": "哑铃高脚杯深蹲 · 变体示范",
+      "summary": "胸前持铃 · 侧面示意。比例和角度为教学示意。",
+      "equipment": "哑铃",
+      "origin": "supplemental",
+      "dosage": "本页用于动作学习；训练组数、次数与用量沿用你的原计划。",
+      "frames": [],
+      "preparation": [
+        {
+          "title": "动作变体",
+          "detail": "胸前持铃 · 侧面示意。与原教学并列展示，训练计划和用量不变。"
+        }
+      ],
+      "steps": [
+        {
+          "title": "动作要点",
+          "detail": "双手包住上端铃头，哑铃贴近胸前；下蹲时保持整脚支撑。"
+        }
+      ],
+      "cues": [
+        {
+          "title": "控制",
+          "detail": "跟随分解姿势观察支撑与轨迹，动作速度不代表训练用量。"
+        }
+      ],
+      "mistakes": [
+        {
+          "title": "哑铃远离胸前，手臂向前伸出",
+          "detail": "先减轻重量，把哑铃收回胸前，再做可控下蹲。"
+        }
+      ],
+      "supplements": [
+        {
+          "title": "绘制说明",
+          "detail": "SVG 为重新绘制；错误对照为教学补充。"
+        }
+      ],
+      "checks": [
+        "支撑点稳定",
+        "动作受控，器材不脱手"
+      ],
+      "references": []
+    },
+    "animation": {
+      "lessonID": "reference-dumbbell-goblet-squat",
+      "resource": "reference-dumbbell-goblet-squat.html",
+      "durationSeconds": 3.0999999999999996,
+      "steps": [
+        {
+          "title": "起始",
+          "startSeconds": 0,
+          "endSeconds": 0.5999999999999996,
+          "previewTimeSeconds": 0,
+          "instruction": "双手包住上端铃头，哑铃贴近胸前；下蹲时保持整脚支撑。"
+        },
+        {
+          "title": "开始移动",
+          "startSeconds": 0.5999999999999996,
+          "endSeconds": 1.0999999999999996,
+          "previewTimeSeconds": 0.5999999999999996,
+          "instruction": "双手包住上端铃头，哑铃贴近胸前；下蹲时保持整脚支撑。"
+        },
+        {
+          "title": "接近终点",
+          "startSeconds": 1.0999999999999996,
+          "endSeconds": 1.7000000000000002,
+          "previewTimeSeconds": 1.0999999999999996,
+          "instruction": "双手包住上端铃头，哑铃贴近胸前；下蹲时保持整脚支撑。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 1.7000000000000002,
+          "endSeconds": 2.3999999999999995,
+          "previewTimeSeconds": 1.7000000000000002,
+          "instruction": "双手包住上端铃头，哑铃贴近胸前；下蹲时保持整脚支撑。"
+        },
+        {
+          "title": "控制返回",
+          "startSeconds": 2.3999999999999995,
+          "endSeconds": 3.05,
+          "previewTimeSeconds": 2.3999999999999995,
+          "instruction": "双手包住上端铃头，哑铃贴近胸前；下蹲时保持整脚支撑。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.05,
+          "endSeconds": 3.0999999999999996,
+          "previewTimeSeconds": 3.0989999999999998,
+          "instruction": "双手包住上端铃头，哑铃贴近胸前；下蹲时保持整脚支撑。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 599.9999999999997,
+        "effortEnd": 1700.0000000000002,
+        "returnStart": 1700.0000000000002,
+        "returnEnd": 3098.9999999999995,
+        "duration": 3099.9999999999995
+      },
+      "detailExplanation": "双手包住上端铃头，哑铃贴近胸前；下蹲时保持整脚支撑。\n四幅图分别对应起始、移动中、终点和返回。红色仅为主要肌群示意。",
+      "mistakeExplanation": "左：正确支撑。右：哑铃远离胸前，手臂向前伸出。\n先减轻重量，把哑铃收回胸前，再做可控下蹲。\n错误姿势为补充教学示意。",
+      "primaryMuscles": [
+        "股四头肌",
+        "臀大肌"
+      ]
+    }
+  },
+  {
+    "id": "dumbbell-lateral-raise",
+    "existingLessonID": "shoulders-lateral-raise",
+    "compatible": true,
+    "sourceID": "5979cae611fc50467bd124da",
+    "variant": "双臂同步 · 正面示范",
+    "keyframeSeconds": [
+      11.8,
+      12.25,
+      12.75,
+      13.15,
+      13.65,
+      14.4
+    ],
+    "lesson": {
+      "id": "reference-dumbbell-lateral-raise",
+      "title": "哑铃侧平举 · 变体示范",
+      "summary": "双臂同步 · 正面示范。比例和角度为教学示意。",
+      "equipment": "哑铃",
+      "origin": "supplemental",
+      "dosage": "本页用于动作学习；训练组数、次数与用量沿用你的原计划。",
+      "frames": [],
+      "preparation": [
+        {
+          "title": "动作变体",
+          "detail": "双臂同步 · 正面示范。与原教学并列展示，训练计划和用量不变。"
+        }
+      ],
+      "steps": [
+        {
+          "title": "动作要点",
+          "detail": "肘微屈，双臂向两侧抬至肩高附近，躯干不摆动。"
+        }
+      ],
+      "cues": [
+        {
+          "title": "控制",
+          "detail": "跟随分解姿势观察支撑与轨迹，动作速度不代表训练用量。"
+        }
+      ],
+      "mistakes": [
+        {
+          "title": "抬手同时耸肩",
+          "detail": "降低重量，让肩远离耳朵，控制抬起和下放。"
+        }
+      ],
+      "supplements": [
+        {
+          "title": "绘制说明",
+          "detail": "SVG 为重新绘制；错误对照为教学补充。"
+        }
+      ],
+      "checks": [
+        "支撑点稳定",
+        "动作受控，器材不脱手"
+      ],
+      "references": []
+    },
+    "animation": {
+      "lessonID": "reference-dumbbell-lateral-raise",
+      "resource": "reference-dumbbell-lateral-raise.html",
+      "durationSeconds": 2.5999999999999996,
+      "steps": [
+        {
+          "title": "起始",
+          "startSeconds": 0,
+          "endSeconds": 0.4499999999999993,
+          "previewTimeSeconds": 0,
+          "instruction": "肘微屈，双臂向两侧抬至肩高附近，躯干不摆动。"
+        },
+        {
+          "title": "开始移动",
+          "startSeconds": 0.4499999999999993,
+          "endSeconds": 0.9499999999999993,
+          "previewTimeSeconds": 0.4499999999999993,
+          "instruction": "肘微屈，双臂向两侧抬至肩高附近，躯干不摆动。"
+        },
+        {
+          "title": "接近终点",
+          "startSeconds": 0.9499999999999993,
+          "endSeconds": 1.3499999999999996,
+          "previewTimeSeconds": 0.9499999999999993,
+          "instruction": "肘微屈，双臂向两侧抬至肩高附近，躯干不摆动。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 1.3499999999999996,
+          "endSeconds": 1.8499999999999996,
+          "previewTimeSeconds": 1.3499999999999996,
+          "instruction": "肘微屈，双臂向两侧抬至肩高附近，躯干不摆动。"
+        },
+        {
+          "title": "控制返回",
+          "startSeconds": 1.8499999999999996,
+          "endSeconds": 2.55,
+          "previewTimeSeconds": 1.8499999999999996,
+          "instruction": "肘微屈，双臂向两侧抬至肩高附近，躯干不摆动。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 2.55,
+          "endSeconds": 2.5999999999999996,
+          "previewTimeSeconds": 2.5989999999999998,
+          "instruction": "肘微屈，双臂向两侧抬至肩高附近，躯干不摆动。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 449.9999999999993,
+        "effortEnd": 1349.9999999999995,
+        "returnStart": 1349.9999999999995,
+        "returnEnd": 2598.9999999999995,
+        "duration": 2599.9999999999995
+      },
+      "detailExplanation": "肘微屈，双臂向两侧抬至肩高附近，躯干不摆动。\n四幅图分别对应起始、移动中、终点和返回。红色仅为主要肌群示意。",
+      "mistakeExplanation": "左：正确支撑。右：抬手同时耸肩。\n降低重量，让肩远离耳朵，控制抬起和下放。\n错误姿势为补充教学示意。",
+      "primaryMuscles": [
+        "三角肌中束"
+      ]
+    }
+  },
+  {
+    "id": "seated-leg-press",
+    "existingLessonID": "seated-leg-press",
+    "compatible": false,
+    "sourceID": "68dbefbf00fbc00001d5a7b5",
+    "variant": "固定踏板 · 移动座椅",
+    "keyframeSeconds": [
+      0.6,
+      1.3,
+      2,
+      2.4,
+      3.2,
+      4.4
+    ],
+    "lesson": {
+      "id": "reference-seated-leg-press",
+      "title": "坐姿腿举 · 变体示范",
+      "summary": "固定踏板 · 移动座椅。比例和角度为教学示意。",
+      "equipment": "移动座椅腿举机",
+      "origin": "supplemental",
+      "dosage": "本页用于动作学习；训练组数、次数与用量沿用你的原计划。",
+      "frames": [],
+      "preparation": [
+        {
+          "title": "动作变体",
+          "detail": "固定踏板 · 移动座椅。与原教学并列展示，训练计划和用量不变。"
+        }
+      ],
+      "steps": [
+        {
+          "title": "动作要点",
+          "detail": "脚底贴住固定踏板；伸腿时座椅后移，背臀跟随靠垫。"
+        }
+      ],
+      "cues": [
+        {
+          "title": "控制",
+          "detail": "跟随分解姿势观察支撑与轨迹，动作速度不代表训练用量。"
+        }
+      ],
+      "mistakes": [
+        {
+          "title": "脚跟离开踏板，只用前脚掌蹬",
+          "detail": "缩小行程，重新让整脚贴稳踏板。"
+        }
+      ],
+      "supplements": [
+        {
+          "title": "绘制说明",
+          "detail": "SVG 为重新绘制；错误对照为教学补充。"
+        }
+      ],
+      "checks": [
+        "支撑点稳定",
+        "动作受控，器材不脱手"
+      ],
+      "references": []
+    },
+    "animation": {
+      "lessonID": "reference-seated-leg-press",
+      "resource": "reference-seated-leg-press.html",
+      "durationSeconds": 3.8000000000000003,
+      "steps": [
+        {
+          "title": "起始",
+          "startSeconds": 0,
+          "endSeconds": 0.7000000000000001,
+          "previewTimeSeconds": 0,
+          "instruction": "脚底贴住固定踏板；伸腿时座椅后移，背臀跟随靠垫。"
+        },
+        {
+          "title": "开始移动",
+          "startSeconds": 0.7000000000000001,
+          "endSeconds": 1.4,
+          "previewTimeSeconds": 0.7000000000000001,
+          "instruction": "脚底贴住固定踏板；伸腿时座椅后移，背臀跟随靠垫。"
+        },
+        {
+          "title": "接近终点",
+          "startSeconds": 1.4,
+          "endSeconds": 1.7999999999999998,
+          "previewTimeSeconds": 1.4,
+          "instruction": "脚底贴住固定踏板；伸腿时座椅后移，背臀跟随靠垫。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 1.7999999999999998,
+          "endSeconds": 2.6,
+          "previewTimeSeconds": 1.7999999999999998,
+          "instruction": "脚底贴住固定踏板；伸腿时座椅后移，背臀跟随靠垫。"
+        },
+        {
+          "title": "控制返回",
+          "startSeconds": 2.6,
+          "endSeconds": 3.7500000000000004,
+          "previewTimeSeconds": 2.6,
+          "instruction": "脚底贴住固定踏板；伸腿时座椅后移，背臀跟随靠垫。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.7500000000000004,
+          "endSeconds": 3.8000000000000003,
+          "previewTimeSeconds": 3.7990000000000004,
+          "instruction": "脚底贴住固定踏板；伸腿时座椅后移，背臀跟随靠垫。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 700.0000000000001,
+        "effortEnd": 1799.9999999999998,
+        "returnStart": 1799.9999999999998,
+        "returnEnd": 3799.0000000000005,
+        "duration": 3800.0000000000005
+      },
+      "detailExplanation": "脚底贴住固定踏板；伸腿时座椅后移，背臀跟随靠垫。\n四幅图分别对应起始、移动中、终点和返回。红色仅为主要肌群示意。",
+      "mistakeExplanation": "左：正确支撑。右：脚跟离开踏板，只用前脚掌蹬。\n缩小行程，重新让整脚贴稳踏板。\n错误姿势为补充教学示意。",
+      "primaryMuscles": [
+        "股四头肌",
+        "臀大肌"
+      ]
+    }
+  },
+  {
+    "id": "seated-shoulder-press",
+    "existingLessonID": "seated-shoulder-press",
+    "compatible": false,
+    "sourceID": "68dbed4105da460001a4e4a9",
+    "variant": "双侧摆臂 · 正面示意",
+    "keyframeSeconds": [
+      0,
+      0.5,
+      1.1,
+      1.8,
+      2.5,
+      3.5
+    ],
+    "lesson": {
+      "id": "reference-seated-shoulder-press",
+      "title": "坐姿器械推肩 · 变体示范",
+      "summary": "双侧摆臂 · 正面示意。比例和角度为教学示意。",
+      "equipment": "双侧摆臂推肩机",
+      "origin": "supplemental",
+      "dosage": "本页用于动作学习；训练组数、次数与用量沿用你的原计划。",
+      "frames": [],
+      "preparation": [
+        {
+          "title": "动作变体",
+          "detail": "双侧摆臂 · 正面示意。与原教学并列展示，训练计划和用量不变。"
+        }
+      ],
+      "steps": [
+        {
+          "title": "动作要点",
+          "detail": "背臀贴靠，手握把手沿器械摆臂推起，缓缓返回。"
+        }
+      ],
+      "cues": [
+        {
+          "title": "控制",
+          "detail": "跟随分解姿势观察支撑与轨迹，动作速度不代表训练用量。"
+        }
+      ],
+      "mistakes": [
+        {
+          "title": "臀部抬离座垫借力",
+          "detail": "减轻阻力，背臀保持支撑，在可控范围推举。"
+        }
+      ],
+      "supplements": [
+        {
+          "title": "绘制说明",
+          "detail": "SVG 为重新绘制；错误对照为教学补充。"
+        }
+      ],
+      "checks": [
+        "支撑点稳定",
+        "动作受控，器材不脱手"
+      ],
+      "references": []
+    },
+    "animation": {
+      "lessonID": "reference-seated-shoulder-press",
+      "resource": "reference-seated-shoulder-press.html",
+      "durationSeconds": 3.5,
+      "steps": [
+        {
+          "title": "起始",
+          "startSeconds": 0,
+          "endSeconds": 0.5,
+          "previewTimeSeconds": 0,
+          "instruction": "背臀贴靠，手握把手沿器械摆臂推起，缓缓返回。"
+        },
+        {
+          "title": "开始移动",
+          "startSeconds": 0.5,
+          "endSeconds": 1.1,
+          "previewTimeSeconds": 0.5,
+          "instruction": "背臀贴靠，手握把手沿器械摆臂推起，缓缓返回。"
+        },
+        {
+          "title": "接近终点",
+          "startSeconds": 1.1,
+          "endSeconds": 1.8,
+          "previewTimeSeconds": 1.1,
+          "instruction": "背臀贴靠，手握把手沿器械摆臂推起，缓缓返回。"
+        },
+        {
+          "title": "可控终点",
+          "startSeconds": 1.8,
+          "endSeconds": 2.5,
+          "previewTimeSeconds": 1.8,
+          "instruction": "背臀贴靠，手握把手沿器械摆臂推起，缓缓返回。"
+        },
+        {
+          "title": "控制返回",
+          "startSeconds": 2.5,
+          "endSeconds": 3.45,
+          "previewTimeSeconds": 2.5,
+          "instruction": "背臀贴靠，手握把手沿器械摆臂推起，缓缓返回。"
+        },
+        {
+          "title": "还原",
+          "startSeconds": 3.45,
+          "endSeconds": 3.5,
+          "previewTimeSeconds": 3.499,
+          "instruction": "背臀贴靠，手握把手沿器械摆臂推起，缓缓返回。"
+        }
+      ],
+      "timingMilliseconds": {
+        "effortStart": 500,
+        "effortEnd": 1800,
+        "returnStart": 1800,
+        "returnEnd": 3499,
+        "duration": 3500
+      },
+      "detailExplanation": "背臀贴靠，手握把手沿器械摆臂推起，缓缓返回。\n四幅图分别对应起始、移动中、终点和返回。红色仅为主要肌群示意。",
+      "mistakeExplanation": "左：正确支撑。右：臀部抬离座垫借力。\n减轻阻力，背臀保持支撑，在可控范围推举。\n错误姿势为补充教学示意。",
+      "primaryMuscles": [
+        "三角肌前束",
+        "三角肌中束"
+      ]
+    }
+  }
+]

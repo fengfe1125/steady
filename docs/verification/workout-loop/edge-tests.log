@@ -1,0 +1,51 @@
+------- pre-test output -------
+(node:56182) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+----- pre-test output end -----
+running 1 test from ./supabase/functions/_shared/catalog-plan-parity_test.ts
+fixed lower-body candidate and budget fixture matches backend across equipment and condition variants ... ok (4ms)
+------- post-test output -------
+(node:56182) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+----- post-test output end -----
+running 21 tests from ./supabase/functions/_shared/catalog-plan_test.ts
+catalog rollout is disabled by default without breaking legacy generation ... ok (18ms)
+catalog requests require explicit known equipment and an unmodified audited combination ... ok (315µs)
+prompt only includes approved compatible role templates ... ok (258µs)
+catalog plan expands canonical content, preserves IDs and calculates template duration ... ok (951µs)
+catalog plan rejects missing phases, wrong order, duplicate movement/day and invented selections ... ok (1ms)
+schema accepts legacy absence and new explicit null while rejecting unknown properties ... ok (440µs)
+sync validates explicit catalog claims, dosage binding and duplicate UUIDs ... ok (4ms)
+catalog selections cannot exceed duration or use unavailable equipment ... ok (419µs)
+unsupported targets produce an explicit unavailable result instead of an upper-body substitute ... ok (386µs)
+sync preserves opaque historical IDs, versions and templates without weakening new generation ... ok (4ms)
+v2 request version and program are paired without changing v1 or legacy contracts ... ok (997µs)
+v2 filters equipment experience and exact ready conditions before prompt creation ... ok (736µs)
+v2 expands canonical doses with transition time and complete confirmation history ... ok (593µs)
+v2 requires two calendar-separated sessions and base pairs before auxiliary movements ... ok (1ms)
+v2 unilateral work is counted on both sides and enforces experience set caps ... ok (1ms)
+v2 transition overhead cannot be omitted or audited doses shrunk to fit ... ok (568µs)
+v2 sync preserves future condition and context values while checking known movement dosage ... ok (6ms)
+v2 warmups and cooldowns are explicitly lower-body appropriate ... ok (1ms)
+v2 budget trims only optional auxiliaries and recalculates transition overhead ... ok (1ms)
+v2 auxiliary alternatives cannot occupy the same training slot twice ... ok (1ms)
+v2 provider examples are valid complete combinations for each actual scene ... ok (3ms)
+------- post-test output -------
+(node:56182) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+----- post-test output end -----
+running 7 tests from ./supabase/functions/_shared/coach_test.ts
+missing metrics never become zero; evidence stays versioned ... ok (1ms)
+report rejects invented evidence and replaces quantitative prose ... ok (590µs)
+plan rejects unavailable equipment, restrictions, duplicates and oversized sessions ... ok (500µs)
+sync payload rejects demo records and mismatched identity ... ok (1ms)
+training dates follow local calendar across daylight saving ... ok (603µs)
+DeepSeek HTTP failure and timeout stop AI requests ... ok (27ms)
+generate boundary classifies malformed model output without changing input or deliberate failures ... ok (8ms)
+------- post-test output -------
+(node:56182) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+----- post-test output end -----
+running 3 tests from ./supabase/functions/_shared/workout_test.ts
+workout template and actual completed log validate ... ok (4ms)
+reject missing actuals, duplicate sets, invalid state, side and identity ... ok (7ms)
+legacy clients never receive new kinds and cursors keep advancing ... ok (70µs)
+
+ok | 32 passed | 0 failed (351ms)
+

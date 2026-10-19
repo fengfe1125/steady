@@ -1,0 +1,143 @@
+{
+  "sourceID": "68908f4ce97dfc00016628a0",
+  "sourceName": "俯身哑铃 A 字伸展",
+  "part": "back",
+  "title": "俯身哑铃 A 字伸展",
+  "variant": "屈髋后双臂沿身体向后伸直，肘几乎不弯 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    2.77,
+    3.4,
+    3.95,
+    4.45,
+    5.0,
+    5.55
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.78,
+    1,
+    0.3,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 58,
+      "lumbar": 2,
+      "thorax": 0,
+      "neck": -10,
+      "head": -6,
+      "arms": {
+        "near": {
+          "sh": 64,
+          "el": 12
+        },
+        "far": {
+          "sh": 68,
+          "el": 14
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 48,
+          "knee": 22
+        },
+        "far": {
+          "hip": 44,
+          "knee": 26
+        }
+      }
+    },
+    "1": {
+      "pelvis": 58,
+      "lumbar": 0,
+      "thorax": -6,
+      "neck": -12,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": -8,
+          "el": 10
+        },
+        "far": {
+          "sh": -4,
+          "el": 12
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 48,
+          "knee": 22
+        },
+        "far": {
+          "hip": 44,
+          "knee": 26
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": -8,
+      "y": -176
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 28,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 6,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "trap.lower",
+      "rhomboid"
+    ],
+    "secondary": [
+      "deltoid.post",
+      "erectors"
+    ]
+  },
+  "primaryNames": [
+    "上背部"
+  ],
+  "cue": "膝微屈，上身前倾但头仍高于髋。两臂从身下向后伸直，到髋后方最高处停一下，肩别往上提。",
+  "mistake": {
+    "title": "向后伸的时候肩耸起来",
+    "fix": "伸的幅度可以小一点，肩头保持原位，只让手臂往髋后走。",
+    "basis": "资料写后伸时容易耸肩，侧面把头颈前探画出来。",
+    "level": 1,
+    "override": {
+      "neck": 8,
+      "head": 14,
+      "thorax": 8
+    }
+  },
+  "observation": "侧面，头朝右，人比划船那几条站得更直，上身只是前倾，不是折成水平。手臂向后伸开会把身体轮廓拉宽：约 2.8 秒手臂在身下，4.4 秒前后伸到最后，5 秒又收回。膝是软的，双脚前后只错开一点。没有凳子。"
+}

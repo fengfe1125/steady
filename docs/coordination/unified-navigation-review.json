@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-04T15:47:28.034019+08:00",
+  "scope": "Unified eight-topic navigation and settings references; DEBUG simulator preview only until acceptance",
+  "changes": [
+    "AnimatedTrainingTopic shared eight-topic directory",
+    "AnimatedTrainingCollectionsView lists independent arms and arms-extra with exact course counts",
+    "Settings reference section uses same directory and stable identifiers",
+    "Collection equipment and training note preserved in animated view",
+    "Native navigation tests cover all eight lesson entries and all eight source reference pages"
+  ],
+  "run": "training-unified-navigation",
+  "session": 10679,
+  "expectedTests": 3,
+  "result": "passed",
+  "reviewedResourcesChanged": false,
+  "formalEntryPromoted": false,
+  "actualTests": 3,
+  "failures": 0,
+  "seconds": 103.369,
+  "pngCount": 16,
+  "coordinatorViewed": [
+    "E8BF8793-4558-45A6-96D0-1B769071FB7D.png",
+    "B472147C-C189-47FC-8F9B-0B4DDFEB0005.png"
+  ],
+  "visualScope": "Arms and back reference first viewports only, resized from1206x2622 to942x2048; no link destination visit, no claim of full16 PNG visual review."
+}

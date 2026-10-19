@@ -16,6 +16,8 @@ public struct CloudCoachService: CoachService {
         var preferences: UserPreferences?
         var today: Date = Date()
         var timeZoneID = TimeZone.current.identifier
+        var planCatalogVersion: Int?
+        var programKind: String?
     }
     private func context() async throws -> (DeviceConsent, UUID, Int) {
         try await MainActor.run {
@@ -43,14 +45,21 @@ public struct CloudCoachService: CoachService {
         return result
     }
     public func planDraft(preferences: UserPreferences) async throws -> TrainingPlan {
+        try await planDraft(preferences: preferences, programKind: nil)
+    }
+    public func planDraft(preferences: UserPreferences, programKind: String?) async throws -> TrainingPlan {
         guard preferences.limitations.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { throw ServiceError.invalidInput("存在运动限制，请先咨询专业人士，不自动生成训练方案。") }
+        let catalog = try ExerciseCatalog.load(version: programKind == "lowerBodyBasics" ? 2 : 1)
+        let requestPreferences = catalog.preferencesForGeneration(preferences)
+        try catalog.validateContext(PlanGenerationContext(preferences: requestPreferences, programKind: programKind))
         let (consent, user, epoch) = try await context()
         try await authorize(consent, user: user)
-        var safePreferences = preferences; safePreferences.metadata.source = .manual
-        let result: TrainingPlan = try await cloud.call("plan-draft", body: Request(consent: consent, preferences: safePreferences), expectedUser: user)
+        var safePreferences = requestPreferences; safePreferences.metadata.source = .manual
+        let result: TrainingPlan = try await cloud.call("plan-draft", body: Request(consent: consent, preferences: safePreferences, planCatalogVersion: catalog.catalogVersion, programKind: programKind), expectedUser: user)
         try await check(epoch)
         guard result.status == .draft, !result.sessions.isEmpty, result.sessions.count <= 7,
               result.sessions.allSatisfy({ (10...preferences.availableMinutes).contains($0.minutes) && !$0.exercises.isEmpty }) else { throw ServiceError.invalidResponse }
+        try catalog.validateGeneratedPlan(result, preferences: safePreferences)
         return result
     }
     public func answer(question: String, summary: DailySummary?, messages: [ChatMessage]) -> AsyncThrowingStream<CoachEvent, Error> {

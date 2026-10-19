@@ -162,6 +162,20 @@ import CryptoKit
         XCTAssertTrue(app.buttons["settings"].waitForExistence(timeout: 10))
     }
 
+    /// Coach tab → 胸部动作库 → first move must open its lesson player.
+    func testActionLibraryOpensLesson() {
+        startFresh()
+        tap(app.tabBars.buttons["教练"])
+        tap(app.buttons["actionLibrary_chest"])
+        XCTAssertTrue(app.navigationBars["胸部动作库"].waitForExistence(timeout: 10), "动作库列表没有打开")
+        capture("action-library-list")
+        let first = app.buttons["actionLibrary_648a8e8a68aa7d000165d38e"]
+        XCTAssertTrue(first.waitForExistence(timeout: 10), "列表里没有第一个动作")
+        tap(first)
+        XCTAssertTrue(app.navigationBars["90° 跪姿宽距俯卧撑"].waitForExistence(timeout: 10), "点动作没有进入动作页")
+        capture("action-library-lesson")
+    }
+
     func testTrainingCandidateAbs() { candidateFlow("abs-collection", "abs-warmup-marching") }
     func testTrainingCandidateChest() { candidateFlow("chest-animation-collection", "chest-warmup-march") }
     func testTrainingCandidateArms() { candidateFlow("arms-animation-collection", "arms-warmup-triceps") }
@@ -1213,16 +1227,21 @@ import CryptoKit
         waitForExpectations(timeout: 30)
         capture("03-Chat")
         tap(launcher)
+        tap(app.buttons["chooseEquipment"])
+        app.switches["equipmentOption_wall"].coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
+        tap(app.buttons["confirmEquipment"])
         tap(app.buttons["generatePlan"])
         XCTAssertTrue(app.navigationBars["你的训练草案"].waitForExistence(timeout: 10))
-        tap(app.buttons["替换深蹲为坐站练习"].firstMatch)
+        tap(app.buttons["exerciseLesson"].firstMatch)
+        XCTAssertTrue(app.buttons["trainingPlayback"].waitForExistence(timeout: 10) || app.buttons["lessonPlayback"].waitForExistence(timeout: 10))
+        app.navigationBars.buttons.firstMatch.tap()
         capture("04-Draft")
         tap(app.buttons["confirmPlan"])
         if app.buttons["关闭"].firstMatch.waitForExistence(timeout: 3) { app.buttons["关闭"].firstMatch.tap() }
         app.tabBars.buttons["计划"].tap()
         XCTAssertTrue(app.buttons["workoutRow"].firstMatch.waitForExistence(timeout: 5))
         tap(app.buttons["workoutRow"].firstMatch)
-        XCTAssertTrue(app.staticTexts["坐站练习"].exists)
+        XCTAssertTrue(app.buttons["exerciseLesson"].firstMatch.exists)
         tap(app.buttons["recordFeedback"])
         app.textFields["feedbackNote"].tap(); app.textFields["feedbackNote"].typeText("完成后感觉轻松")
         tap(app.buttons["saveFeedback"])

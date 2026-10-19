@@ -1,0 +1,36 @@
+[
+  {
+    "topic": "shoulders",
+    "lessons": 12,
+    "mapped": 12,
+    "issues": [],
+    "note": "resource uses basename without .html; accepted for integration normalization"
+  },
+  {
+    "topic": "abs",
+    "lessons": 10,
+    "mapped": 10,
+    "issues": []
+  },
+  {
+    "topic": "arms-extra",
+    "lessons": 7,
+    "mapped": 7,
+    "issues": []
+  },
+  {
+    "topic": "functional",
+    "lessons": 12,
+    "mapped": 10,
+    "issues": [
+      "functional-warmup-supported-frog: missing mapping",
+      "functional-single-leg-hip-thrust: missing mapping"
+    ]
+  },
+  {
+    "topic": "legs",
+    "lessons": 13,
+    "mapped": 13,
+    "issues": []
+  }
+]

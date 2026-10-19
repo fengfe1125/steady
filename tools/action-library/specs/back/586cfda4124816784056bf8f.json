@@ -1,0 +1,120 @@
+{
+  "sourceName": "站姿肩部深层激活",
+  "part": "back",
+  "title": "站姿肩部深层激活",
+  "variant": "站姿 · 上臂抬平、前臂绕肘上翻 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    4.0,
+    4.5,
+    4.95,
+    5.25,
+    5.9,
+    6.6
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.8,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 82,
+          "el": 28,
+          "ff": 0.48
+        },
+        "far": {
+          "sh": 82,
+          "el": 28,
+          "ff": 0.48
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 2
+        }
+      }
+    },
+    "1": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 82,
+          "el": 92,
+          "ff": 1
+        },
+        "far": {
+          "sh": 82,
+          "el": 92,
+          "ff": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 2
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "heel",
+    "side": "near",
+    "at": {
+      "x": -8,
+      "y": 0
+    }
+  },
+  "muscles": {
+    "primary": [
+      "infraspinatus",
+      "deltoid.post"
+    ],
+    "secondary": [
+      "teres",
+      "trap.mid"
+    ]
+  },
+  "primaryNames": [
+    "冈下肌",
+    "三角肌后束"
+  ],
+  "cue": "站直收住肚子，上臂抬到肩高并屈肘，前臂先放平，再绕着肘尖向上翻，肩不要跟着抬。",
+  "mistake": {
+    "title": "翻臂时肩膀抬向耳朵",
+    "fix": "先把肩峰往下压，再让前臂单独转动。",
+    "basis": "资料指出耸肩和肩里发响是常见问题。侧面没有耸肩参数，用头颈前探来表现。",
+    "level": 1,
+    "override": {
+      "neck": 8,
+      "head": 14,
+      "thorax": 8
+    }
+  },
+  "observation": "全身轮廓很窄，上臂若在正面打开会把身体拉得很宽，所以用侧面。约 5 次重复、每次 2.7 秒左右。取第一段里 4.0–6.6 秒这一次：前臂从朝镜头的方向翻到竖直。7.4 秒后换到更近的机位。握拳，所以手不写成张开。",
+  "sourceID": "586cfda4124816784056bf8f"
+}

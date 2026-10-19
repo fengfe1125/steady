@@ -1,0 +1,141 @@
+{
+  "sourceID": "5f841405627efb29e561fc4b",
+  "sourceName": "悬垂 L 字引体",
+  "part": "back",
+  "title": "悬垂 L 字引体",
+  "variant": "正手略宽于肩 · 双腿抬平伸直 · 下颌过杠 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    2.95,
+    3.6,
+    4.5,
+    5.2,
+    6.7,
+    8.01
+  ],
+  "levels": [
+    0,
+    0.35,
+    0.82,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "x": -4,
+      "y": -177,
+      "pelvis": -2,
+      "lumbar": 2,
+      "thorax": 0,
+      "neck": -12,
+      "head": 0,
+      "arms": {
+        "near": {
+          "f": 1
+        },
+        "far": {
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 98,
+          "knee": 6,
+          "ankle": -10
+        },
+        "far": {
+          "hip": 94,
+          "knee": 8,
+          "ankle": -10
+        }
+      }
+    },
+    "1": {
+      "x": 8,
+      "y": -252,
+      "pelvis": -16,
+      "lumbar": 0,
+      "thorax": -6,
+      "neck": -8,
+      "head": 2,
+      "arms": {
+        "near": {
+          "f": 0.55
+        },
+        "far": {
+          "f": 0.55
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 108,
+          "knee": 8,
+          "ankle": -8
+        },
+        "far": {
+          "hip": 102,
+          "knee": 10,
+          "ankle": -8
+        }
+      }
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 0,
+        "y": -390,
+        "bend": 1
+      },
+      "far": {
+        "x": 0,
+        "y": -390,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "pullup_bar",
+      "x": 0,
+      "top": -390
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "lats",
+      "abs"
+    ],
+    "secondary": [
+      "iliopsoas",
+      "biceps",
+      "rhomboid"
+    ]
+  },
+  "primaryNames": [
+    "背阔肌",
+    "腹直肌"
+  ],
+  "cue": "先把两条腿抬到水平并伸直，挂成 L。再屈肘把胸口带向横杠，腿不要掉下来，过杠后停一下再放下。",
+  "mistake": {
+    "title": "上拉时腿掉下去",
+    "fix": "下腹一直绷住，大腿保持接近水平，不要为了拉高而把腿放下来。",
+    "basis": "资料要求全程收腹，腿尽量伸直并稳住。",
+    "level": 1,
+    "override": {
+      "legs": {
+        "near": {
+          "hip": 28,
+          "knee": 42
+        },
+        "far": {
+          "hip": 22,
+          "knee": 48
+        }
+      }
+    }
+  },
+  "observation": "主镜头从身后拍，能看到后背；腿向前抬平，背面骨架看不出 L，所以改用侧面。取 2.95 秒手臂伸直、腿已抬平，到 5.2 秒下颌过杠，8.01 秒回到伸直悬垂。正手、间距略宽于肩，侧面两手叠在杠的同一点。后半段切了更近的机位，这一次重复用的是前段。角度为人工拟合。"
+}

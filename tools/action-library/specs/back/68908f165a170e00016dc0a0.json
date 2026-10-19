@@ -1,0 +1,132 @@
+{
+  "sourceID": "68908f165a170e00016dc0a0",
+  "sourceName": "站姿哑铃 A 字伸展",
+  "part": "back",
+  "title": "站姿哑铃 A 字伸展",
+  "variant": "站直，两臂伸直向后收到髋后 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.56,
+    1.05,
+    1.45,
+    1.68,
+    2.2,
+    2.8
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.82,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 8,
+          "el": 8,
+          "f": 1
+        },
+        "far": {
+          "sh": 10,
+          "el": 8,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 4
+        }
+      }
+    },
+    "1": {
+      "pelvis": -2,
+      "lumbar": 0,
+      "thorax": -6,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -46,
+          "el": 4,
+          "f": 1
+        },
+        "far": {
+          "sh": -42,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 2
+        },
+        "far": {
+          "hip": 0,
+          "knee": 4
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "heel",
+    "side": "near",
+    "at": {
+      "x": -8,
+      "y": 0
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "rhomboid"
+    ],
+    "secondary": [
+      "deltoid.post",
+      "trap.lower"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中束",
+    "菱形肌"
+  ],
+  "cue": "站直，铃先垂在大腿旁。呼气时两臂伸直向后摆到髋后，胸口打开，肩不要往耳朵缩，再慢慢放回身侧。",
+  "mistake": {
+    "title": "向后摆时肩膀耸起",
+    "fix": "先把肩膀沉下去，再让手臂向后走；感觉肩胛往中间靠，而不是脖子用力。",
+    "basis": "资料把耸肩写成主要问题。侧面没有肩胛上提参数，用头前伸和上胸抬起来示意。",
+    "level": 1,
+    "override": {
+      "neck": 6,
+      "head": 12,
+      "thorax": 8
+    }
+  },
+  "observation": "侧面，人朝右。0.56 秒手臂垂在身侧，1.68 秒两臂伸直收到髋后，2.80 秒回到身侧。肘几乎不弯，躯干保持直立，只是胸口稍打开。A 字在侧面看成两臂向后、手低于肩。"
+}

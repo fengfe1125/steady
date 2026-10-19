@@ -1,0 +1,140 @@
+{
+  "sourceID": "595f4f12ff247f33e297eb80",
+  "sourceName": "半程俯卧撑",
+  "part": "chest",
+  "title": "半程俯卧撑",
+  "variant": "半程幅度 · 最低点肘屈约 90 度 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    1.84,
+    2.37,
+    3.42,
+    3.95,
+    5.0,
+    5.53
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.8,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 77,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -17
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -17
+        }
+      }
+    },
+    "1": {
+      "pelvis": 86,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -6
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -6
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "triceps.lat",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "胸大肌中下部"
+  ],
+  "cue": "双手略比肩宽撑在肩的前下方，肘部向身体两侧收住；躯干像一块板整体下沉到肘约九十度，停顿一下再推回顶端。",
+  "mistake": {
+    "title": "塌腰或撅臀，躯干没绷成一条直线",
+    "fix": "开始下沉前先收紧腹部和臀部，让肩、髋、踝一起升降；幅度宁可做小一点，也不要让腰塌下去或者臀部拱起来。",
+    "basis": "源资料常见错误：身体没有绷直，塌腰或臀部太高。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 83,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 6.32 秒，近景侧面固定机位，人物头朝画面左侧。画面只能看到躯干和手臂，脚部出画。共两次起伏，取第二次：1.84 秒撑到最高位，中间缓降，3.95 秒到最低位（肘约九十度），5.53 秒推回最高位。手掌平贴垫面、全程不移动，手指朝前略外展。顶端肘部仍保留一点弯曲，最低点胸口离垫面仍有一段距离，所以整体幅度为半程。"
+}

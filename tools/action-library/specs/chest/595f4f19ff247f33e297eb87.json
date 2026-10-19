@@ -1,0 +1,143 @@
+{
+  "sourceID": "595f4f19ff247f33e297eb87",
+  "sourceName": "健身球下斜俯卧撑",
+  "part": "chest",
+  "title": "健身球下斜俯卧撑",
+  "variant": "小腿搭健身球垫高下肢 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    6.74,
+    7.15,
+    7.6,
+    7.9,
+    8.5,
+    9.12
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        }
+      }
+    },
+    "1": {
+      "pelvis": 97,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": -155,
+      "y": -95
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "ball",
+      "x": -150,
+      "r": 46
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "deltoid.ant"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上束",
+    "胸大肌外侧"
+  ],
+  "cue": "小腿搭稳健身球、双手撑垫比肩稍宽，身体绷成一条微斜的直线，屈肘下沉到肘与躯干同高再推起，核心全程收紧稳住球。",
+  "mistake": {
+    "title": "塌腰，髋部先掉下去",
+    "fix": "收紧腹部和臀部，让肩、髋、踝保持一条直线，球晃动厉害就先用固定凳子代替。",
+    "basis": "源资料常见错误：训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 92,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "侧面视角，人物头朝画面左侧，小腿前侧搭在健身球顶上、脚悬在球后方，双手撑垫，共3次。取6.74~9.12秒一次完整重复：6.74秒直臂撑起、身体从头到踝成斜线，7.9秒前后下沉到胸口接近垫面，9.12秒推回顶部。球的位置基本不动。角度为人工示意拟合。"
+}

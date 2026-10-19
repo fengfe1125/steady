@@ -1,0 +1,70 @@
+-- Synthetic transaction only: verify actual sync_push and nested legacy merging.
+begin;
+create temporary table condition_checks(label text not null);
+create function pg_temp.check(ok boolean,label text) returns void language plpgsql as $$
+begin if ok is distinct from true then raise exception 'condition compatibility failed: %',label; end if; insert into condition_checks values(label); end $$;
+create function pg_temp.c() returns jsonb language sql as $$ select '{"deviceID":"cccccccc-cccc-4ccc-8ccc-cccccccccccc","revision":1,"healthRead":false,"cloudSync":true,"aiProcessing":true,"policyVersion":"2026-09-23"}'::jsonb $$;
+create function pg_temp.push(k text,rid uuid,p jsonb,v int,deleted boolean default false,mid uuid default gen_random_uuid()) returns jsonb language sql as $$
+ select public.sync_push('11111111-1111-4111-8111-111111111111','aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',jsonb_build_object('id',mid,'record',jsonb_build_object('id',rid,'kind',k,'logicalID',case when k='profiles' then 'profile' else rid::text end,'payload',p::text,'version',v,'deleted',deleted)),pg_temp.c()) $$;
+insert into auth.users(id) values('11111111-1111-4111-8111-111111111111');
+insert into auth.sessions(id,user_id,created_at,updated_at) values('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa','11111111-1111-4111-8111-111111111111',now(),now());
+select public.set_consents('11111111-1111-4111-8111-111111111111','aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',pg_temp.c());
+do $$
+declare
+ fid uuid := '20000000-0000-4000-8000-000000000001';
+ pid uuid := '20000000-0000-4000-8000-000000000002';
+ mid uuid := '20000000-0000-4000-8000-000000000003';
+ conditions jsonb := '[{"conditionID":"hip-hinge","version":1,"status":"ready"},{"conditionID":"future-condition","version":999,"status":"unsure"}]';
+ context jsonb := '{"experience":"初学者","availableEquipmentIDs":["wall"],"availableMinutes":25,"programKind":"lowerBodyBasics","rulesVersion":2}';
+ p jsonb;
+ r jsonb;
+ snapshot jsonb;
+begin
+ context := context || jsonb_build_object('movementConditions',conditions);
+ p := jsonb_build_object('equipment','健身房','availableEquipmentIDs','["wall"]'::jsonb,'movementConditions',conditions);
+ r := pg_temp.push('profiles',fid,p,0);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'movementConditions'=conditions,'initial condition history stored');
+ r := pg_temp.push('profiles',fid,p-'movementConditions',1,false,mid);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'movementConditions'=conditions,'v1 profile omission preserves known and future conditions');
+ perform pg_temp.check(pg_temp.push('profiles',fid,p-'movementConditions',1,false,mid)=r,'condition merge acknowledgement is idempotent');
+ perform pg_temp.check(pg_temp.push('profiles',fid,p,1)->>'conflict'='true','stale condition write still conflicts');
+ r := pg_temp.push('profiles',fid,'{"equipment":"自重"}',2);
+ snapshot := (r->'record'->>'payload')::jsonb;
+ perform pg_temp.check(snapshot->'movementConditions'=conditions,'scene change preserves confirmation history');
+ perform pg_temp.check(snapshot->'availableEquipmentIDs'='null'::jsonb,'scene change still clears unconfirmed inventory');
+ r := pg_temp.push('profiles',fid,'{"equipment":"自重","movementConditions":[]}',3);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'movementConditions'='[]'::jsonb,'explicit empty condition list replaces old history');
+ r := pg_temp.push('profiles',fid,'{"equipment":"自重","movementConditions":null}',4);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'movementConditions'='null'::jsonb,'explicit null clears condition history');
+ r := pg_temp.push('profiles',fid,'{"equipment":"自重"}',5);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'movementConditions'='null'::jsonb,'legacy omission does not resurrect cleared history');
+ p := jsonb_build_object('generationContext',context);
+ r := pg_temp.push('plans',pid,p,0);
+ r := pg_temp.push('plans',pid,'{}',1);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'generationContext'=context,'pre-catalog writer preserves complete context');
+ r := pg_temp.push('plans',pid,jsonb_build_object('generationContext',context-array['movementConditions','programKind','rulesVersion']),2);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'generationContext'=context,'v1 nested context preserves every missing v2 extension');
+ r := pg_temp.push('plans',pid,'{"generationContext":{"experience":"偶尔运动","availableEquipmentIDs":[],"availableMinutes":30,"movementConditions":null}}',3);
+ snapshot := (r->'record'->>'payload')::jsonb;
+ perform pg_temp.check(snapshot#>'{generationContext,movementConditions}'='null'::jsonb,'nested explicit null only clears conditions');
+ perform pg_temp.check(snapshot#>>'{generationContext,programKind}'='lowerBodyBasics' and snapshot#>>'{generationContext,rulesVersion}'='2','other nested omissions remain preserved');
+ perform pg_temp.check(snapshot#>>'{generationContext,experience}'='偶尔运动','legacy base context edits still persist');
+ r := pg_temp.push('plans',pid,jsonb_build_object('generationContext',context||'{"programKind":"futureProgram","rulesVersion":999}'::jsonb),4);
+ r := pg_temp.push('plans',pid,jsonb_build_object('generationContext',context-array['movementConditions','programKind','rulesVersion']),5);
+ snapshot := (r->'record'->>'payload')::jsonb;
+ perform pg_temp.check(snapshot#>>'{generationContext,programKind}'='futureProgram' and snapshot#>>'{generationContext,rulesVersion}'='999','unknown historical program fields stay opaque');
+ r := pg_temp.push('plans',pid,'{"generationContext":{"experience":"初学者","availableEquipmentIDs":[],"availableMinutes":25,"programKind":null,"rulesVersion":null}}',6);
+ snapshot := (r->'record'->>'payload')::jsonb;
+ perform pg_temp.check(snapshot#>'{generationContext,programKind}'='null'::jsonb and snapshot#>'{generationContext,rulesVersion}'='null'::jsonb,'explicit nested program clears are not restored');
+ perform pg_temp.check(snapshot#>'{generationContext,movementConditions}'=conditions,'explicit program clears do not delete omitted condition history');
+ r := pg_temp.push('plans',pid,'{"generationContext":null}',7);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'generationContext'='null'::jsonb,'explicit whole context null is authoritative');
+ r := pg_temp.push('plans',pid,'{}',8);
+ perform pg_temp.check(((r->'record'->>'payload')::jsonb)->'generationContext'='null'::jsonb,'legacy omission after whole clear stays cleared');
+ r := pg_temp.push('plans',pid,'{}',9,true);
+ perform pg_temp.check(r->'record'->>'deleted'='true' and (r->'record'->>'payload')::jsonb='{}'::jsonb,'tombstone bypasses compatibility restoration');
+ perform pg_temp.check(not has_function_privilege('authenticated','private.merge_catalog_payload(text,jsonb,jsonb)','EXECUTE'),'authenticated has no direct merge access');
+ perform pg_temp.check(not has_function_privilege('anon','private.merge_catalog_payload(text,jsonb,jsonb)','EXECUTE'),'anonymous has no direct merge access');
+end $$;
+select count(*) as passed_condition_compatibility_checks from condition_checks;
+rollback;

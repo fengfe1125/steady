@@ -1,0 +1,34 @@
+{
+  "runId": "steady-ios-v1",
+  "fileKey": "APLEefE2UxG4Vhd6W25zTl",
+  "url": "https://www.figma.com/design/APLEefE2UxG4Vhd6W25zTl",
+  "team": "jiwo",
+  "phase": "prototype-verified",
+  "step": "native-ui-acceptance-pending",
+  "figmaFont": "Noto Sans SC (user approved); native app keeps system font",
+  "collections": {
+    "primitives": "VariableCollectionId:2:2",
+    "color": "VariableCollectionId:2:3",
+    "layout": "VariableCollectionId:2:4"
+  },
+  "modes": {"value": "2:0", "light": "2:1", "dark": "2:2", "layout": "2:3"},
+  "variables": {
+    "paper": "VariableID:2:5", "white": "VariableID:2:6", "ink": "VariableID:2:7",
+    "muted": "VariableID:2:8", "green": "VariableID:2:9", "night": "VariableID:2:10",
+    "surface": "VariableID:2:11", "light": "VariableID:2:12", "dim": "VariableID:2:13",
+    "mint": "VariableID:2:14", "background": "VariableID:2:15", "card": "VariableID:2:16",
+    "primary": "VariableID:2:17", "secondary": "VariableID:2:18", "accent": "VariableID:2:19",
+    "onAccent": "VariableID:2:20", "space/sm": "VariableID:2:21", "space/md": "VariableID:2:22",
+    "space/lg": "VariableID:2:23", "radius/card": "VariableID:2:24", "radius/button": "VariableID:2:25"
+  },
+  "pages": {"Cover":"0:1", "Getting Started":"2:30", "Foundations":"2:31", "Components":"2:32", "Cards":"2:33", "Utilities":"2:34", "Prototype":"2:35"},
+  "cover": {"frame":"2:36", "texts":["2:37","2:38","2:39","2:40"]},
+  "documentation": {"gettingStarted":"4:2", "foundations":"4:8", "metricCard":"4:22"},
+  "components": {"MetricCard":"4:33", "available":"4:25", "missing":"4:29", "SteadyButton":"8:2"},
+  "metricProperties": {"title":"Title#4:3", "value":"Value#4:4", "detail":"Detail#4:5"},
+  "screens": {"today":"5:2", "report":"9:11", "chat":"9:16", "form":"9:21", "draft":"9:26", "plans":"11:50", "workout":"11:67", "feedback":"11:84", "completed":"26:254"},
+  "todayChildren": ["5:3","5:4","5:5","5:6","5:7","5:11","5:15"],
+  "completedSteps": ["discovery", "tokens", "approved-local-controls", "29-screen-state-frames", "dark-small-large-type-screenshots", "browser-main-flow-to-completed", "native-framework-and-ui", "17-swift-tests"],
+  "pendingValidations": ["native-full-flow-after-navigation-fix", "native-offline-restart-ui", "native-dark-large-type-small-screen", "physical-device"],
+  "blocker": "Figma library/font substitutions approved and resolved. Native UI runner and simulator readiness are unstable; prior tests failed at chat focus/navigation. Fixes compile, full UI pass not yet obtained. See implementation-status.md."
+}

@@ -1,0 +1,10 @@
+{
+  "sealedFilesValidated": 61,
+  "coordinatorViewed": [
+    "back-bent-arm-pulldown/proof/back-bent-arm-pulldown-four-phases.png",
+    "back-neutral-pulldown/proof/back-neutral-pulldown-four-phases.png"
+  ],
+  "decision": "Hold integration. D1 support hand appears on opposite upright from cable outlet, unlike reviewed source frames. Return for source/three-view spatial check and scoped v2 correction.",
+  "otherFindings": "D2 common attachment visible; native verification pending. Existing candidate native detail explanations still describe floor support and independent handles; both require replacement at integration.",
+  "productChanges": false
+}

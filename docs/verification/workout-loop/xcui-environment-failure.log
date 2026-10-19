@@ -1,0 +1,60 @@
+Command line invocation:
+    /Volumes/Developer/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Steady.xcodeproj -scheme Steady -destination "platform=iOS Simulator,id=753D8373-D0FE-4F96-9B6B-996ECCFA8A3E" -destination-timeout 5 -derivedDataPath /Volumes/Developer/Xcode/steady-workout-build "-only-testing:SteadyUITests/WorkoutLoopUITests" test -DVTCoreSimulatorDeviceSetPath=/private/tmp/SteadyWorkoutSimulators
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  SteadyCore: /Volumes/Developer/Projects/steady @ local
+  swift-issue-reporting: https://github.com/pointfreeco/swift-issue-reporting @ 2.1.1
+  swift-clocks: https://github.com/pointfreeco/swift-clocks @ 1.1.1
+  xctest-dynamic-overlay: https://github.com/pointfreeco/xctest-dynamic-overlay @ 1.13.1
+  swift-http-types: https://github.com/apple/swift-http-types.git @ 1.8.0
+  swift-asn1: https://github.com/apple/swift-asn1.git @ 1.7.3
+  Supabase: https://github.com/supabase/supabase-swift.git @ 2.55.2
+  swift-concurrency-extras: https://github.com/pointfreeco/swift-concurrency-extras @ 1.4.1
+  swift-crypto: https://github.com/apple/swift-crypto.git @ 4.5.2
+
+2026-10-16 15:18:45.429 xcodebuild[55552:18891887] Writing error result bundle to /var/folders/q5/sgdmg7m52r38r3wx2knqcy2h0000gn/T/ResultBundle_2026-16-10_15-18-0045.xcresult
+xcodebuild: error: Unable to find a device matching the provided destination specifier:
+		{ platform:iOS Simulator, id:753D8373-D0FE-4F96-9B6B-996ECCFA8A3E }
+
+	The requested device could not be found because no available devices matched the request.
+
+	Destinations compatible with the "Steady" scheme:
+		{ platform:macOS, arch:arm64, variant:Designed for [iPad,iPhone], id:00008132-0001241C1E50401C, name:My Mac }
+		{ platform:iOS, arch:arm64, id:00008150-000254221E13401C, name:sakura }
+		{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device }
+		{ platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+		{ platform:iOS Simulator, arch:arm64, id:B9301F45-81C4-4C46-9E91-D13F437AE00E, OS:26.5, name:Murmur Account Isolated QA }
+		{ platform:iOS Simulator, arch:arm64, id:B69050F6-56AD-4FE1-AB4C-0527E73BE192, OS:26.5, name:Murmur Diary QA }
+		{ platform:iOS Simulator, arch:arm64, id:7FDF0086-71AC-4949-8B6A-E4524FD18DD5, OS:26.5, name:Murmur Diary Small QA }
+		{ platform:iOS Simulator, arch:arm64, id:4BC52FFF-BF03-4129-85F9-FC0B33492CD6, OS:26.5, name:Murmur Diary iPad Final QA }
+		{ platform:iOS Simulator, arch:arm64, id:4A9E8B86-5EB4-4D6D-8133-D79A4860862F, OS:26.5, name:Murmur Diary iPad QA }
+		{ platform:iOS Simulator, arch:arm64, id:2CE1980B-E1F2-48BE-BC54-CB88FF0FD794, OS:26.5, name:Murmur External Migration iPhone QA }
+		{ platform:iOS Simulator, arch:arm64, id:0A820A0A-9A04-4239-9235-34C419B72C04, OS:26.5, name:PhotoArchive QA }
+		{ platform:iOS Simulator, arch:arm64, id:A6F3D8B1-CB2C-4765-945B-4A98786D5BBA, OS:26.5, name:PhotoArchive Rebuild QA 20261012 }
+		{ platform:iOS Simulator, arch:arm64, id:E5A85044-8050-46B9-9879-CB389CFDDE5E, OS:26.5, name:PhotoArchive Small QA }
+		{ platform:iOS Simulator, arch:arm64, id:24C9B898-CA31-4EEB-B66D-A06A20F9FF43, OS:26.5, name:Steady Catalog QA 20261010 }
+		{ platform:iOS Simulator, arch:arm64, id:DED7CACD-82E0-4CD6-A0C2-CAFF96236A2B, OS:26.5, name:Steady Functional QA }
+		{ platform:iOS Simulator, arch:arm64, id:0BBC87BE-3CBF-4825-A982-9843A7614E2F, OS:26.5, name:Steady QA }
+		{ platform:iOS Simulator, arch:arm64, id:B88DF74A-29CF-4112-8C46-D1D818B1F787, OS:26.5, name:Steady Reference Equipment QA }
+		{ platform:iOS Simulator, arch:arm64, id:9126FF47-F174-47B2-BC46-4AB43F71EECD, OS:26.5, name:Steady Training QA }
+		{ platform:iOS Simulator, arch:arm64, id:C363874E-687F-4E55-B13C-27B828F06668, OS:26.5, name:Unison Phase3 Large }
+		{ platform:iOS Simulator, arch:arm64, id:2B7B967B-BB67-422F-8DE7-58E2A886DCEE, OS:26.5, name:Unison Phase3 Small }
+		{ platform:iOS Simulator, arch:arm64, id:878B5705-F0EB-4F01-B4CA-97CFDFBDAFF0, OS:26.5, name:Unison Phase3 iPad }
+		{ platform:iOS Simulator, arch:arm64, id:8AE0D3CB-69F4-4864-9E9B-31DB83AC69FA, OS:26.5, name:iPad (A16) }
+		{ platform:iOS Simulator, arch:arm64, id:93609E99-3906-4FAE-809E-2FE850720603, OS:26.5, name:iPad Air 11-inch (M4) }
+		{ platform:iOS Simulator, arch:arm64, id:7CC8900B-268A-496A-8337-20AD145E4E2B, OS:26.5, name:iPad Air 13-inch (M4) }
+		{ platform:iOS Simulator, arch:arm64, id:121F2305-FA01-4583-8759-581CE33A9D08, OS:26.5, name:iPad Pro 11-inch (M5) }
+		{ platform:iOS Simulator, arch:arm64, id:CACFBFEA-4158-45AE-BBDD-45C6C44AAD1A, OS:26.5, name:iPad Pro 13-inch (M5) }
+		{ platform:iOS Simulator, arch:arm64, id:936A16FE-9035-4C10-A6B0-9E45E9DDFC5F, OS:26.5, name:iPad mini (A17 Pro) }
+		{ platform:iOS Simulator, arch:arm64, id:60F5FFDE-4888-4198-9EC5-488D79284D4B, OS:26.5, name:iPhone 17 }
+		{ platform:iOS Simulator, arch:arm64, id:C2C4B805-608B-4323-80CA-D1C3F52E1461, OS:26.5, name:iPhone 17 Pro }
+		{ platform:iOS Simulator, arch:arm64, id:ED2438DB-CD1B-4ECA-B158-D7C966E2C6E3, OS:26.5, name:iPhone 17 Pro }
+		{ platform:iOS Simulator, arch:arm64, id:A315ACD5-DD9C-423B-8AEC-D52ED78870F5, OS:26.5, name:iPhone 17 Pro Max }
+		{ platform:iOS Simulator, arch:arm64, id:719987D5-3DB9-45A9-A02C-FF3905C55A38, OS:26.5, name:iPhone 17e }
+		{ platform:iOS Simulator, arch:arm64, id:4A55CD28-5AA6-4C47-814E-6CBAEC5B5272, OS:26.5, name:iPhone Air }
+
+	Destinations incompatible with the "Steady" scheme:
+		{ platform:macOS, arch:arm64e, id:00008132-0001241C1E50401C, name:My Mac, error:My Mac’s macOS platform doesn’t match Steady.app’s supported platforms. You can change Steady.app’s Base SDK or Supported Platforms to support My Mac. }

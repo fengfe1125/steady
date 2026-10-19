@@ -1,0 +1,149 @@
+{
+  "sourceID": "643e0ad9cce11000010e6a0e",
+  "sourceName": "俯身哑铃离心爆发宽距划船",
+  "part": "back",
+  "title": "俯身哑铃离心爆发宽距划船",
+  "variant": "肘向外快拉到肩平面，再花约三秒放下 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    3.44,
+    3.72,
+    4.12,
+    4.42,
+    5.9,
+    7.38
+  ],
+  "levels": [
+    0,
+    0.7,
+    0.93,
+    1,
+    0.38,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 55,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -12,
+      "head": -4,
+      "arms": {
+        "near": {
+          "sh": 58,
+          "el": 6,
+          "f": 1
+        },
+        "far": {
+          "sh": 62,
+          "el": 8,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 48,
+          "knee": 16
+        },
+        "far": {
+          "hip": 44,
+          "knee": 20
+        }
+      }
+    },
+    "1": {
+      "pelvis": 55,
+      "lumbar": -2,
+      "thorax": -6,
+      "neck": -14,
+      "head": -2,
+      "arms": {
+        "near": {
+          "sh": 6,
+          "el": 70,
+          "f": 0.42
+        },
+        "far": {
+          "sh": 10,
+          "el": 66,
+          "f": 0.45
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 48,
+          "knee": 16
+        },
+        "far": {
+          "hip": 44,
+          "knee": 20
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 2,
+      "y": -176
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 14,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "rhomboid"
+    ],
+    "secondary": [
+      "trap.lower",
+      "deltoid.post",
+      "lats"
+    ]
+  },
+  "primaryNames": [
+    "上背部",
+    "中背部"
+  ],
+  "cue": "两臂先垂直。肘向两侧快收到差不多和身体垂直的位置，停一下，再用大约三秒放回悬垂，肩不要跟着缩上去。",
+  "mistake": {
+    "title": "快拉时胸口拱起，肩缩向耳朵",
+    "fix": "先定住上身角度再发力。快的只是肘向外打开，肩头离耳朵远一点，放下时同样慢。",
+    "basis": "资料里可见的问题是弓腰。宽肘本来就要向外，所以错误只画拱背和头颈前探，不把肘画成夹紧。",
+    "level": 0.75,
+    "override": {
+      "lumbar": 16,
+      "thorax": 10,
+      "neck": 8,
+      "head": 10
+    }
+  },
+  "observation": "侧面，头朝右。3.44 秒手臂垂下，4.42 秒肘已经向外翻到接近肩高，7.38 秒才放回，下放大约三秒，上升不到一秒。宽距用上臂缩短表示肘向两侧，比普通宽距划船拉得更高、放下更慢。文字写九十度，画面头仍最高，骨盆五十五度。结尾换机位后能看见一次手臂完全垂直。"
+}

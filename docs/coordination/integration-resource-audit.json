@@ -1,0 +1,1131 @@
+{
+  "scope": "Read-only delivery inventory. Not acceptance; workers may still revise. Preserve per-topic runtime timing and do not inject a second runtime.",
+  "topics": [
+    {
+      "slug": "arms",
+      "course": "docs/verification/training-arms/content/tanchengyi-arms.json",
+      "manifest": "docs/verification/training-arms/animations/arms-animations.json",
+      "courseSHA256": "196d1ad4855693cad8542369e74c43817ba8ccd24e422803bd7049e9143e6d91",
+      "manifestSHA256": "f2b8805b8fab2591e6b253762fa29795e2f6c1315324eeb0c2259cc89dd11d05",
+      "lessons": 7,
+      "animations": 7,
+      "unmapped": [],
+      "extraMappings": [],
+      "duplicateMappings": false,
+      "resources": [
+        {
+          "lessonID": "arms-warmup-triceps",
+          "resource": "arms-single-cable-extension.html",
+          "exists": true,
+          "sha256": "160c1731b49d7a425e4e1aa10a9b91267765c64e084b15512cdf9af6cfbcdb99",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 8,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-single-cable-extension",
+          "resource": "arms-single-cable-extension.html",
+          "exists": true,
+          "sha256": "160c1731b49d7a425e4e1aa10a9b91267765c64e084b15512cdf9af6cfbcdb99",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 8,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-lying-barbell-extension",
+          "resource": "arms-lying-barbell-extension.html",
+          "exists": true,
+          "sha256": "85184c8acc3ff8cd979844076c6080d08e8b27457c058dd893279a072a675e98",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 8,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-seated-cable-curl",
+          "resource": "arms-seated-cable-curl.html",
+          "exists": true,
+          "sha256": "dfb865a149c82a81afc34cf1fddab62492d60f45624cbefe1abd92bb1edec544",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 8,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-incline-dumbbell-curl",
+          "resource": "arms-incline-dumbbell-curl.html",
+          "exists": true,
+          "sha256": "7fc8b03a88a6116ccd3cb9c64e05ad2f3f4d62df554ae4c8b7686af359b591e9",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 8,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-overhead-single-cable-extension",
+          "resource": "arms-overhead-single-cable-extension.html",
+          "exists": true,
+          "sha256": "a514a3a6afbe95fbb52c1827f7ef4a8eaf92b5d068a48402eb1e29de9bf3248e",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 8,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-seated-internal-rotation-curl",
+          "resource": "arms-seated-internal-rotation-curl.html",
+          "exists": true,
+          "sha256": "84ecff944bcd58923ca758e3bede624f8a80e8c720eb9d3f2ac790d3cbae12ab",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 8,
+          "stepCount": 5
+        }
+      ]
+    },
+    {
+      "slug": "chest",
+      "course": "docs/verification/training-chest/content/tanchengyi-chest.json",
+      "manifest": "docs/verification/training-chest/animations/chest-animations.json",
+      "courseSHA256": "238a5d3639e4bb683082c809bb64d7e1d4fd55f0c9fcf9b54c07702c4f67ea1b",
+      "manifestSHA256": "6858fc5a9d72fc5ac2e9374982bc28687d5c9c0fe167b40d9c23f02cf26465ea",
+      "lessons": 10,
+      "animations": 10,
+      "unmapped": [],
+      "extraMappings": [],
+      "duplicateMappings": false,
+      "resources": [
+        {
+          "lessonID": "chest-warmup-march",
+          "resource": "chest-light-march.html",
+          "exists": true,
+          "sha256": "da13dde1702492085029d1d360ab86fe44a564c77e3077c53c9efefc10778c4d",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "chest-warmup-roller-t",
+          "resource": "chest-roller-t-opening.html",
+          "exists": true,
+          "sha256": "bb8821f78ba69a483e1897276b1e6c60c97205b55098ca12e3df4b85e6631e2c",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "chest-warmup-roller-support",
+          "resource": "chest-roller-supported-opening.html",
+          "exists": true,
+          "sha256": "549afd24fcf5c3dae3833188bcdd26eb2efc46cfe08936f98ea9f1b554e96959",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "chest-warmup-band",
+          "resource": "chest-band-shoulder-circle.html",
+          "exists": true,
+          "sha256": "ba1a669d7dfd64d17a109cf2a6db2fc8b8d4f61e4669bb7cd2613cfd0e953055",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "chest-warmup-press",
+          "resource": "chest-warmup-press.html",
+          "exists": true,
+          "sha256": "f207ab24fcaed6ae90a83e22568c19a302df1e6d71e41a80ba75abb6321aae33",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "chest-parallel-bar-dip",
+          "resource": "chest-parallel-bar-dip.html",
+          "exists": true,
+          "sha256": "09c556edc0d17540383a4070e73038dfe7cdece1b01fbfbce3d3c21fe2874913",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "chest-flat-press",
+          "resource": "chest-flat-press.html",
+          "exists": true,
+          "sha256": "3ba5887077d6f14d7b97b9a1206d3d6b6a9a7c6bc736e715132a16934357431c",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "chest-incline-machine-press",
+          "resource": "chest-incline-press.html",
+          "exists": true,
+          "sha256": "2fe3c2017f03e21e18d934b95349970867500f632505263ecb38c4b0e48d29d9",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "chest-seated-cable-fly",
+          "resource": "chest-seated-cable-fly.html",
+          "exists": true,
+          "sha256": "9459df9ade6074ac7dcbca3a73bc0756661b4b07d1f8e37228cfaf3707004d56",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "chest-wall-push-up",
+          "resource": "chest-wall-push-up.html",
+          "exists": true,
+          "sha256": "60eb7bbf162d1736c209b77edbd3e7e23d280a6dc468ed83ec1d0916f577ce20",
+          "scripts": [
+            "chest-renderer.js",
+            "chest-errors.js",
+            "chest-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        }
+      ]
+    },
+    {
+      "slug": "shoulders",
+      "course": "docs/verification/training-shoulders/content/tanchengyi-shoulders.json",
+      "manifest": "docs/verification/training-shoulders/animations/shoulders-animations.json",
+      "courseSHA256": "4a5de61cc60b45408ac1c3233f41d28f195c9fa44dd5a38ec83cc6ed5f9d79e7",
+      "manifestSHA256": "3d21d608e66a6d16c4d75ca843cd4b7ec5c69c882e93ffb67ccaaad611b2ef21",
+      "lessons": 11,
+      "animations": 11,
+      "unmapped": [],
+      "extraMappings": [],
+      "duplicateMappings": false,
+      "resources": [
+        {
+          "lessonID": "shoulders-light-warmup",
+          "resource": "shoulders-lightCardio.html",
+          "exists": true,
+          "sha256": "9fcc9bd1160bd3dba20faa76d118bc6d9308072ec1bb11a9f759292014c6b7cb",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-band-pass-through",
+          "resource": "shoulders-bandPassThrough.html",
+          "exists": true,
+          "sha256": "83a5de17b5bf29b9ccb960da734d83bd7ce50a0e59e640ebb46f2ff711350185",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-trx-y",
+          "resource": "shoulders-trxY.html",
+          "exists": true,
+          "sha256": "d21db0a523f43450d2e309b1b47190bb88a8dffef39d968129817edcfff878df",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-prone-scapular-lift",
+          "resource": "shoulders-proneScapularLift.html",
+          "exists": true,
+          "sha256": "bece962dcf6993f4a40cdf94d224aba49727bdd9a022f5504d0e08da9a61c5c1",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-trx-w",
+          "resource": "shoulders-trxW.html",
+          "exists": true,
+          "sha256": "0ee4fc8c177b4e5fc1a66d739979cf78171f81436a514fa022102af39d7d3bcc",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-bent-extension",
+          "resource": "shoulders-bentOverExtension.html",
+          "exists": true,
+          "sha256": "930015fd554397aede8f646382879011a72b6903ef26d3a6c3b2dff4733b0c40",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-machine-reverse-fly",
+          "resource": "shoulders-seatedReverseFly.html",
+          "exists": true,
+          "sha256": "55d3ac7015c223ed6e157816f11979ba70992d45707560299bdd8e6247233ed9",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-dumbbell-press",
+          "resource": "shoulders-seatedPress.html",
+          "exists": true,
+          "sha256": "580dd1146f64e34a7901a6b1537bbd3e7592561c9627dfb869569ba7badcca05",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-single-dumbbell-press",
+          "resource": "shoulders-seatedSinglePress.html",
+          "exists": true,
+          "sha256": "ac8876d8c9429d45bc2b9d446b4668fa4852f762cb7b7c21d1b60547f9b09725",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 8.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-lateral-raise",
+          "resource": "shoulders-lateralRaise.html",
+          "exists": true,
+          "sha256": "07d6d239fb7dd70e2742d396d8dde343a624ea745ef03fcd0c4ba802f7046e80",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "shoulders-front-raise",
+          "resource": "shoulders-frontRaise.html",
+          "exists": true,
+          "sha256": "5b6cab71878be382e669912785a111859c5cae06bc2563b56ebb8bf2f9a779ef",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6.0,
+          "stepCount": 4
+        }
+      ]
+    },
+    {
+      "slug": "abs",
+      "course": "docs/verification/training-abs/content/tanchengyi-abs.json",
+      "manifest": "docs/verification/training-abs/animations/abs-animations.json",
+      "courseSHA256": "e8b631b909394256b83be1dcd2d02d38782d96240883445bb20d3bb34a34c9ec",
+      "manifestSHA256": "d548a039bf065914753dd0e45883c25eeb8daececfd5660827a019a88cae8586",
+      "lessons": 10,
+      "animations": 10,
+      "unmapped": [],
+      "extraMappings": [],
+      "duplicateMappings": false,
+      "resources": [
+        {
+          "lessonID": "abs-warmup-marching",
+          "resource": "abs-warmup-marching.html",
+          "exists": true,
+          "sha256": "6860262e57d7c316623aeb39a65c74e470b201353c3c42f226a3f824b39c079a",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "abs-warmup-cat-cow",
+          "resource": "abs-warmup-cat-cow.html",
+          "exists": true,
+          "sha256": "20ca48b3ebf0bbf154de47eaec86518fe2c777c8812a0e4964028b8b46d8cc7b",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "abs-warmup-pelvic-tilt",
+          "resource": "abs-warmup-pelvic-tilt.html",
+          "exists": true,
+          "sha256": "9acec3e1760cc18e508c5986609ad2ab4002a8b2649bf3fbdce7c0bb965e9f1e",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "abs-hanging-leg-raise",
+          "resource": "abs-hanging-leg-raise.html",
+          "exists": true,
+          "sha256": "6376d6b6cc8eadc7dc39d9fd08a38f0ffa2c5c0c3b1dc1a624e4dd30e8f139c2",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "abs-sling-knee-raise",
+          "resource": "abs-sling-knee-raise.html",
+          "exists": true,
+          "sha256": "61c232f89c137cb07766ae92b31ee86fe05102d7e318b6fdce56ac367c15aee0",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "abs-supported-knee-raise",
+          "resource": "abs-supported-knee-raise.html",
+          "exists": true,
+          "sha256": "e261a2be1966f2b254651ba8999a4e1caf5fc9c3f166e1b77c98f6cdb01fd847",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "abs-supine-crunch",
+          "resource": "abs-supine-crunch.html",
+          "exists": true,
+          "sha256": "5ab13550e8f9336c41bd450a30ff75aa8a6dc4083b85f9b800ce85b2148ea29d",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "abs-side-biased-crunch",
+          "resource": "abs-side-biased-crunch.html",
+          "exists": true,
+          "sha256": "e62ccdb2ed5437d9dba6a4346984b5e2a968f20dddcc9079d9f67ba2688373ab",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "abs-kneeling-ab-wheel",
+          "resource": "abs-kneeling-ab-wheel.html",
+          "exists": true,
+          "sha256": "a93eb40d2025f8454f7caad0eed5042ceaa1c0ff5f730165fdb00b6928a4ff7b",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "abs-prone-abdominal-stretch",
+          "resource": "abs-prone-abdominal-stretch.html",
+          "exists": true,
+          "sha256": "fcfcad04187bc20659bdd2300e065b83f7ed6997b5031b91b24764c5ec0d2183",
+          "scripts": [
+            "abs-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        }
+      ]
+    },
+    {
+      "slug": "arms-extra",
+      "course": "docs/verification/training-arms-extra/content/tanchengyi-arms-extra.json",
+      "manifest": "docs/verification/training-arms-extra/animations/arms-extra-complete-animations.json",
+      "courseSHA256": "e1e096ed99fe0c884c167dfa602b4f61760c5b19c93b95d100e45e9e5852f1e3",
+      "manifestSHA256": "a753f15bc9de5fe01f1d3d7c0c4c7201307916bfc30f232207c76b30d80f60fd",
+      "lessons": 7,
+      "animations": 7,
+      "unmapped": [],
+      "extraMappings": [],
+      "duplicateMappings": false,
+      "resources": [
+        {
+          "lessonID": "arms-extra-warmup-aerobic",
+          "resource": "arms-extra-warmup-aerobic.html",
+          "exists": true,
+          "sha256": "d62098e7a9b70c2bfce70663871953d6f334174e0ed3e3dd8fd1b19927dd2a5c",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 6,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-extra-warmup-mobility",
+          "resource": "arms-extra-warmup-mobility.html",
+          "exists": true,
+          "sha256": "7c83995645752e16aaeb80bda316461d523aff6171ac98d5c3ff4a80926acece",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 6,
+          "stepCount": 9
+        },
+        {
+          "lessonID": "arms-extra-warmup-rehearsal",
+          "resource": "arms-extra-warmup-rehearsal.html",
+          "exists": true,
+          "sha256": "703d4bc53d2e49b8ef295413423bb0fa6b5521438a27252cdbb36a07368378c2",
+          "scripts": [
+            "arms-extra-artwork-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-extra-cable-pushdown",
+          "resource": "arms-extra-cable-pushdown.html",
+          "exists": true,
+          "sha256": "e490364bcd72ee9d6ce43567f510a6e2a737f841882b54a2d7e0f1472fb79d32",
+          "scripts": [
+            "arms-extra-artwork-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-extra-seated-cable-curl",
+          "resource": "arms-extra-seated-cable-curl.html",
+          "exists": true,
+          "sha256": "453263ebdac5ef4ab8042c064aea876c886ca80919d7fc48d376135a00372654",
+          "scripts": [
+            "arms-extra-artwork-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-extra-lying-barbell-extension",
+          "resource": "arms-extra-lying-barbell-extension.html",
+          "exists": true,
+          "sha256": "2ec388c459ab2597122c85d89d1aa16ff5768e4d11dc54d58fd2c3724c1de55a",
+          "scripts": [
+            "arms-extra-artwork-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 5
+        },
+        {
+          "lessonID": "arms-extra-standing-barbell-curl",
+          "resource": "arms-extra-standing-barbell-curl.html",
+          "exists": true,
+          "sha256": "69820bdd64059dfe25738b00d338e1b2bb8cc93767f7725e70343868bf9f42f0",
+          "scripts": [
+            "arms-extra-artwork-renderer.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 5
+        }
+      ]
+    },
+    {
+      "slug": "functional",
+      "course": "docs/verification/training-functional/content/tanchengyi-functional-lower-limb.json",
+      "manifest": "docs/verification/training-functional/animations/functional-animations.json",
+      "courseSHA256": "5a5c35476794734deac43d426a6aff3dc0102fc1e0983b12c960e5b3568c45b0",
+      "manifestSHA256": "28a8f026aa1ae7349b4d8285a16855b38bef6e8a186e0f238b45549984d91cf1",
+      "lessons": 12,
+      "animations": 12,
+      "unmapped": [],
+      "extraMappings": [],
+      "duplicateMappings": false,
+      "resources": [
+        {
+          "lessonID": "functional-warmup-frog",
+          "resource": "functional-warmup-frog.html",
+          "exists": true,
+          "sha256": "7aff6181bf26a94606ab5c79db96d3ae67938358b3d9a024765ffea0baae412e",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-warmup-supported-frog",
+          "resource": "functional-warmup-supported-frog.html",
+          "exists": true,
+          "sha256": "78bbd92da3fbce70218280900502b51f42252813fec77a0555d5315a9799d148",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-warmup-lunge-control",
+          "resource": "functional-warmup-lunge-control.html",
+          "exists": true,
+          "sha256": "a23f011f9b32dd7c231211db4f79c2fd23821e909588ad2b47b16844b131ffea",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-warmup-supported-rotation",
+          "resource": "functional-warmup-supported-rotation.html",
+          "exists": true,
+          "sha256": "466ca54e3f77b40eb492e1ae57e5b9b6889b53b58c26c8471b988f1766897457",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-single-leg-hip-thrust",
+          "resource": "functional-single-leg-hip-thrust.html",
+          "exists": true,
+          "sha256": "4a78da0c790756f4b75e619a8ba68f31ce421f7a3c7cb02eb40be50cdc0cd43e",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 7
+        },
+        {
+          "lessonID": "functional-dumbbell-lunge-press",
+          "resource": "functional-dumbbell-lunge-press.html",
+          "exists": true,
+          "sha256": "acaf03415c8cbea908761c261081d3e68a5a7c2231fd1123aa43283411a59f55",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-seated-dumbbell-press",
+          "resource": "functional-seated-dumbbell-press.html",
+          "exists": true,
+          "sha256": "bd79a8eb01bb7529f8dc520693e73b18fcf386f5d5e468f854e1bdba8099b3d2",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-dumbbell-romanian-deadlift",
+          "resource": "functional-dumbbell-romanian-deadlift.html",
+          "exists": true,
+          "sha256": "a9603f9bee000e18ff7e62cb67daf34b7f8bac5e82f33166f3870aea0d40d48d",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-alternating-lunge",
+          "resource": "functional-alternating-lunge.html",
+          "exists": true,
+          "sha256": "95bcc8e9f13165a7ee464116ae9461c6421690d51502c72fe9b5b897ac7a34b4",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-cooldown-walk",
+          "resource": "functional-cooldown-walk.html",
+          "exists": true,
+          "sha256": "de6ab7f7ac2996ab21c52158bac38221211c167e74e1e004be068d5e32a3480a",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-cooldown-calf-stretch",
+          "resource": "functional-cooldown-calf-stretch.html",
+          "exists": true,
+          "sha256": "8ba0f7860ee81e7c8002a73394d1697c55f6ef4cf38807b06eec5e43b8c4328e",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "functional-cooldown-hamstring-stretch",
+          "resource": "functional-cooldown-hamstring-stretch.html",
+          "exists": true,
+          "sha256": "c3a3250ce42df7b481493d40e91586102fd58a62ba75553934f7e4cfd767a187",
+          "scripts": [
+            "functional-renderer.js",
+            "functional-runtime.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        }
+      ]
+    },
+    {
+      "slug": "legs",
+      "course": "docs/verification/training-legs/content/tanchengyi-legs.json",
+      "manifest": "docs/verification/training-legs/animations/legs-animations.json",
+      "courseSHA256": "3a5613c7da02a8727c0da1803289ac650124efb23b62ac0882d7eb8ae0b9faf7",
+      "manifestSHA256": "b7eb9627e44f0d1929deef2eea529f95ef0fa4a5c2a78755bf73449bf062594c",
+      "lessons": 13,
+      "animations": 13,
+      "unmapped": [],
+      "extraMappings": [],
+      "duplicateMappings": false,
+      "resources": [
+        {
+          "lessonID": "legs-general-warmup",
+          "resource": "legs-warmup-general.html",
+          "exists": true,
+          "sha256": "8aff39f99887d5641f8fa4b481ce396daa7bd301887a9889ec88d6a7d8170a8f",
+          "scripts": [
+            "legs-warmup-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-frog-rock",
+          "resource": "legs-warmup-frog-rock.html",
+          "exists": true,
+          "sha256": "81919e3982c5561f767c982c02d00f245a786949d69b3a18a885564a584f9596",
+          "scripts": [
+            "legs-warmup-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-frog-hip-rotation",
+          "resource": "legs-warmup-hip-rotation.html",
+          "exists": true,
+          "sha256": "14058e3c4fed596b34147f1cac614dd139c8beb6c6da9343cdfd9918f41931e0",
+          "scripts": [
+            "legs-warmup-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-lunge-rotation",
+          "resource": "legs-warmup-lunge-rotation.html",
+          "exists": true,
+          "sha256": "5188d9b2f13383ebee831562ad3647b31bc50401f2480b018435b3b036f1c7c0",
+          "scripts": [
+            "legs-warmup-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-90-90-switch",
+          "resource": "legs-warmup-90-90-switch.html",
+          "exists": true,
+          "sha256": "90a338fa867232a900c2edf325eb6b12783e48f5132d817a667c8e7da0eb352d",
+          "scripts": [
+            "legs-warmup-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-90-90-hip-rise",
+          "resource": "legs-warmup-90-90-hip-rise.html",
+          "exists": true,
+          "sha256": "e6259b89ec02cd58613486be32d15edca5d605ed3e4b2a8b256d6f332f20be64",
+          "scripts": [
+            "legs-warmup-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-90-90-leg-extension",
+          "resource": "legs-warmup-90-90-leg-extension.html",
+          "exists": true,
+          "sha256": "5a8f18374ce4c311918d9e77d4c1ff53267d48e72b751908836b52612445e89e",
+          "scripts": [
+            "legs-warmup-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-calf-raise",
+          "resource": "legs-main-calf-raise.html",
+          "exists": true,
+          "sha256": "b63231458770c8fd2f23069eb185d73b7bc372f3622992da8803eda9dbbb891a",
+          "scripts": [
+            "legs-main-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-hip-adduction",
+          "resource": "legs-main-hip-adduction.html",
+          "exists": true,
+          "sha256": "e92abecf4b9525e2d08119ab7edf0008c044cbe8aa82dda7def78d1961fe168c",
+          "scripts": [
+            "legs-main-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-bulgarian-split-squat",
+          "resource": "legs-main-bulgarian-split-squat.html",
+          "exists": true,
+          "sha256": "4f4d09f595cfe3fc7b49678947d870908fbb6c485e8253d64cd3675348057801",
+          "scripts": [
+            "legs-main-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-dumbbell-deadlift",
+          "resource": "legs-main-dumbbell-rdl.html",
+          "exists": true,
+          "sha256": "c485f62c21bca348bf89e07943f3842e403abda32cb1401b5151b1c93d94ed45",
+          "scripts": [
+            "legs-main-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-hip-flexion",
+          "resource": "legs-main-hip-flexion.html",
+          "exists": true,
+          "sha256": "be9fbb4c28c6414d26a98b013050175b2454e47875dd04bc0f34a67403109b29",
+          "scripts": [
+            "legs-main-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "legs-prone-leg-curl",
+          "resource": "legs-main-prone-leg-curl.html",
+          "exists": true,
+          "sha256": "0fecad6626e53bd1f6304f6a4822f92722b9bc553d0cb2206c131abcd101746d",
+          "scripts": [
+            "legs-main-renderer.js",
+            "legs-playback.js"
+          ],
+          "missingScripts": [],
+          "selfContainedPlayer": false,
+          "durationSeconds": 6,
+          "stepCount": 4
+        }
+      ]
+    },
+    {
+      "slug": "back",
+      "course": "docs/verification/training-back/content/tanchengyi-back.json",
+      "manifest": "docs/verification/training-back/animations/back-animations.json",
+      "courseSHA256": "047f362eaa401d4941163cf9f4d4da0c1e1ee8a98a6023c7383ac4d337f9c0b4",
+      "manifestSHA256": "6801475b6938640f05e7475d4aeeef5d1e00b58cfb77a582c8a312ae49c2b411",
+      "lessons": 9,
+      "animations": 9,
+      "unmapped": [],
+      "extraMappings": [],
+      "duplicateMappings": false,
+      "resources": [
+        {
+          "lessonID": "back-walking",
+          "resource": "back-walking-native.html",
+          "exists": true,
+          "sha256": "74386de30e2b9704a1f3459ee5984a9f787b5fddf57f8f427689ef0902f74d92",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 10,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "back-roller",
+          "resource": "back-roller-native.html",
+          "exists": true,
+          "sha256": "ad6e0142885603bea542ed3c1e8017b4e8938e6b9b5aaf59770c2f6954f85789",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 10,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "back-bench-support",
+          "resource": "back-bench-support-native.html",
+          "exists": true,
+          "sha256": "43721c1c851805a016c2092111a18fb16231955b00f5d593542f169993828295",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 10,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "back-straight-arm",
+          "resource": "back-straight-arm-native.html",
+          "exists": true,
+          "sha256": "a98cfdd8080b053c34994d2e531ab3f26561469a55ca0b9937a74914a21561e8",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 10,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "back-one-arm-row",
+          "resource": "back-one-arm-row-native.html",
+          "exists": true,
+          "sha256": "d287d5e78063715db8c3fa7fc13c25a2fc66134c77be61a9f69624bce6f608d8",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 10,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "back-neutral-pulldown",
+          "resource": "back-neutral-pulldown-native.html",
+          "exists": true,
+          "sha256": "f1916c4bc6ba9f849b944726fcfd9edd2878f79be41799c664a57f8edb380148",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 10,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "back-seated-row",
+          "resource": "back-seated-row-native.html",
+          "exists": true,
+          "sha256": "12241d0c9f89bdcda9a4fb19ed4be1e73a3825b1c10eec0379107515b4d7c190",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 10,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "back-bent-arm-pulldown",
+          "resource": "back-bent-arm-pulldown-native.html",
+          "exists": true,
+          "sha256": "066f7904967468b124ca506e62702ed195b99ed37603ccdc4beeef3057736ba8",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 10,
+          "stepCount": 4
+        },
+        {
+          "lessonID": "back-supported-scapula",
+          "resource": "back-supported-scapula-native.html",
+          "exists": true,
+          "sha256": "02ef4d28bdea6cc28171b3d7018ce82c5479f8d9f22adadf164a4314293f54f9",
+          "scripts": [],
+          "missingScripts": [],
+          "selfContainedPlayer": true,
+          "durationSeconds": 10,
+          "stepCount": 4
+        }
+      ]
+    }
+  ]
+}

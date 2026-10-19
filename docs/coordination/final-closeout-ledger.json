@@ -1,0 +1,95 @@
+{
+  "updatedAt": "2026-10-04T17:22:40.535427+08:00",
+  "topics": [
+    {
+      "slug": "arms",
+      "receiptFiles": 9,
+      "hashFailures": [],
+      "finalReport": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/evidence/final-acceptance/final-review.json",
+      "finalReportSHA256": "9ee2c9900b49d12117d11cadf319c1a0f0145d1b8c80a4e9d2ce89c4862725a1",
+      "scopedRepairState": "No known remaining hard defect after scoped repairs",
+      "wholeProductAccepted": false
+    },
+    {
+      "slug": "chest",
+      "receiptFiles": 18,
+      "hashFailures": [],
+      "finalReport": "/Volumes/Developer/Projects/steady/docs/verification/training-chest/evidence/final-acceptance/final-review.json",
+      "finalReportSHA256": "c3d228c9606b2525281237e3703d4f19159ca35ec126b886d2a755cdb9190eef",
+      "scopedRepairState": "No known remaining hard defect after scoped repairs",
+      "wholeProductAccepted": false
+    },
+    {
+      "slug": "shoulders",
+      "receiptFiles": 13,
+      "hashFailures": [],
+      "finalReport": "/Volumes/Developer/Projects/steady/docs/verification/training-shoulders/evidence/final-acceptance/final-review.json",
+      "finalReportSHA256": "9ab985fd6aa231880fc7191db1ef987be403cb23fcdfdb53084411dbc03d7997",
+      "scopedRepairState": "No known remaining hard defect after scoped repairs",
+      "wholeProductAccepted": false
+    },
+    {
+      "slug": "abs",
+      "receiptFiles": 13,
+      "hashFailures": [],
+      "finalReport": "/Volumes/Developer/Projects/steady/docs/verification/training-abs/evidence/final-acceptance/final-review.json",
+      "finalReportSHA256": "a23c830229ddbc92a2406128a1d28ca2c52333e2ca7e3b89d18dfffb916a61d8",
+      "scopedRepairState": "No known remaining hard defect after scoped repairs",
+      "wholeProductAccepted": false
+    },
+    {
+      "slug": "arms-extra",
+      "receiptFiles": 12,
+      "hashFailures": [],
+      "finalReport": "/Volumes/Developer/Projects/steady/docs/verification/training-arms-extra/evidence/final-acceptance/final-review.json",
+      "finalReportSHA256": "f5879f9282e7fcf23a246782cd9e122bfff74d73cf2edfa1f3965690a61e7c90",
+      "scopedRepairState": "No known remaining hard defect after scoped repairs",
+      "wholeProductAccepted": false
+    },
+    {
+      "slug": "functional",
+      "receiptFiles": 18,
+      "hashFailures": [],
+      "finalReport": "/Volumes/Developer/Projects/steady/docs/verification/training-functional/evidence/final-acceptance/final-review.json",
+      "finalReportSHA256": "1db6e1c44d915a1c20f7df63159de2f634bd4356102f2ea09508e07026aa0622",
+      "scopedRepairState": "FN-TEXT-01 four instructions integrated; four-step native test passed. Whole-cycle caption followup integrated, targeted native test passed in formal integration batch.",
+      "wholeProductAccepted": false
+    },
+    {
+      "slug": "legs",
+      "receiptFiles": 19,
+      "hashFailures": [],
+      "finalReport": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/final-acceptance/final-review.json",
+      "finalReportSHA256": "f252d6989c7a41ffe62d5863119cdb77fef8ccee9ecd38eef4efc482ae3076db",
+      "scopedRepairState": "No known remaining hard defect after scoped repairs",
+      "wholeProductAccepted": false
+    },
+    {
+      "slug": "back",
+      "receiptFiles": 11,
+      "hashFailures": [],
+      "finalReport": "/Volumes/Developer/Projects/steady/docs/verification/training-back/evidence/final-acceptance/final-review.json",
+      "finalReportSHA256": "ccc995de2967d4be46fd54f9a544e91a4b13bb7b98849d74f5f0dd54770b9ea3",
+      "scopedRepairState": "No known remaining hard defect after scoped repairs",
+      "wholeProductAccepted": false
+    }
+  ],
+  "remaining": [],
+  "limits": [
+    "Existing frame/ASR/source evidence is not complete continuous source-video viewing",
+    "Native screenshot sampling is not continuous video watching"
+  ],
+  "activeNativeRun": null,
+  "completedNativeSupplement": "final-hip-cycle-review.json",
+  "coreValidation": {
+    "tests": 9,
+    "failures": 0,
+    "log": "docs/coordination/.cache/build/formal-training-core.log"
+  },
+  "formalEntryState": "Integrated and verified via actual Coach navigation (2 native tests), settings references and lunge press (prior 4-test batch), core 9 tests",
+  "acceptanceRecord": "docs/coordination/final-acceptance.md",
+  "cleanupState": "All eight scoped cleanup receipts independently checked; 1127758538 logical bytes removed including coordinator; 113 runtime resource SHA unchanged",
+  "scopedAcceptanceCompleted": true,
+  "automationState": "PAUSED (automation_update confirmed)",
+  "closeoutCompleted": true
+}

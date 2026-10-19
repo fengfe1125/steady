@@ -1,0 +1,122 @@
+{
+  "sourceID": "66b0781cd835de0001ad29fa",
+  "sourceName": "双杠负重臂屈伸",
+  "part": "chest",
+  "title": "双杠负重臂屈伸",
+  "variant": "双杠 · 脚勾哑铃负重 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.5,
+    1.4,
+    2.9,
+    3.6,
+    4.9,
+    6.48
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.8,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 12,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -8,
+          "el": 5
+        },
+        "far": {
+          "sh": -8,
+          "el": 5
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 10,
+          "knee": 80
+        },
+        "far": {
+          "hip": 10,
+          "knee": 80
+        }
+      }
+    },
+    "1": {
+      "pelvis": 28,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -55,
+          "el": 95
+        },
+        "far": {
+          "sh": -55,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 20,
+          "knee": 85
+        },
+        "far": {
+          "hip": 20,
+          "knee": 85
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hand",
+    "side": "near",
+    "at": {
+      "x": 0,
+      "y": -196
+    }
+  },
+  "equipment": [
+    {
+      "type": "chest_parallelBars",
+      "x": 0,
+      "top": -190
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "pec.lower"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "triceps.lat"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "双手握杠撑直身体、微微前倾，屈膝交叠、脚上挂好负重；缓慢屈肘下沉到肘与肩齐平，再发力撑回直臂，全程身体稳定不晃。",
+  "mistake": {
+    "title": "身体过度前倾",
+    "fix": "保持躯干基本正直、只微微前倾，下沉靠屈肘完成，不要靠上身前扑借力。",
+    "basis": "来源资料常见错误：身体过度前倾或后仰，解决为保持身体基本正直。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 45,
+      "thorax": 5
+    }
+  },
+  "observation": "主视频约 8 秒后为纯正侧面，人物面朝画面右，共约 3 次，取第 1 次：0.50 秒直臂支撑在杠上，3.6 秒下沉到肘约 90 度，6.48 秒撑回直臂。屈膝小腿后交叠、双脚勾住一只哑铃负重；哑铃与器械靠背垫在侧面器材里没有对应画法，未绘制，实际负重约与小腿同悬。角度为人工示意拟合。"
+}

@@ -1,0 +1,140 @@
+{
+  "sourceID": "648ab51368aa7d00016786e3",
+  "sourceName": "右侧离心爆发弓箭俯卧撑",
+  "part": "chest",
+  "title": "离心爆发弓箭俯卧撑",
+  "variant": "宽距 · 一臂屈一臂伸 · 三秒慢下快上 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    4.49,
+    5.48,
+    6.3,
+    6.48,
+    7.0,
+    7.48
+  ],
+  "levels": [
+    0,
+    0.5,
+    0.95,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 77,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -21
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -21
+        }
+      }
+    },
+    "1": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -1
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -1
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 10,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 40,
+        "y": -5,
+        "flat": true,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "摆成弓箭式，两手间距超过两倍肩宽；用约三秒把胸口慢慢降到贴近垫面，另一臂全程伸直，到最低点后快速发力推回顶端。",
+  "mistake": {
+    "title": "塌腰撅臀，躯干没有绷成一条直线",
+    "fix": "下降之前先收紧腹部和臀部，让肩、髋、支撑脚保持在一条线上；推到顶端时肘部留一点弯曲，不要向后锁死。",
+    "basis": "源资料常见错误：伸臂时肘关节超伸锁死，训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 85,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 11.96 秒，0~7.5 秒是侧面平视机位，8 秒起换成更近的机位，人物头朝画面左侧，因此镜像。能看到不超过两次完整的慢下快上，取 4.49 秒在顶端、6.48 秒降到最低点、7.48 秒快速推回顶端这一轮。手掌全程平按垫面不移动，两手间距明显超过两倍肩宽。后段身体停在低位的那一段是换机位时的保持画面，爆发推起的一瞬间没有拍到双手离地。"
+}

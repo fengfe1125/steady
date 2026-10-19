@@ -22,6 +22,7 @@ public struct CloudClient: Sendable {
         request.setValue("Bearer \(session.accessToken)", forHTTPHeaderField: "Authorization")
         request.setValue(configuration.publishableKey, forHTTPHeaderField: "apikey")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        if route == "sync-pull" { request.setValue(RecordKind.allCases.map(\.rawValue).joined(separator: ","), forHTTPHeaderField: "X-Steady-Record-Kinds") }
         request.httpBody = try WireCodec.encoder().encode(body)
         return request
     }
@@ -41,6 +42,10 @@ public struct CloudClient: Sendable {
             case "rate_limited": throw ServiceError.invalidInput("今日生成次数已用完，请明天再试。")
             case "request_in_progress": throw ServiceError.invalidInput("已有生成任务正在执行，请稍后重试。")
             case "duplicate_request": throw ServiceError.invalidInput("这个请求已处理。若结果未收到，请主动发起新的生成。")
+            case "lower_body_disabled": throw ServiceError.invalidInput("下肢基础编排尚未在服务端启用，已有计划和教学仍可使用。")
+            case "plan_catalog_disabled": throw ServiceError.invalidInput("新版动作计划尚未在服务端启用，已有计划和教学仍可使用。")
+            case "plan_equipment_required": throw ServiceError.invalidInput("请先确认本次可用的具体器械。")
+            case "plan_conditions_insufficient": throw ServiceError.invalidInput("这些条件下暂时没有完整的审核模板组合，请调整训练目标、器械或可用时间。")
             case "insufficient_data": throw ServiceError.invalidInput("没有足够的健康数据，请先读取健康记录。")
             case "account_deleting": throw ServiceError.invalidInput("账户删除尚未完成，请在设置中继续处理。")
             default:

@@ -1,0 +1,32 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+import {specs} from './specs.mjs';
+const root=fileURLToPath(new URL('../../',import.meta.url));
+const output=path.join(root,'Sources/SteadyCore/Resources/TrainingCollections/VideoReferences');
+const sources=JSON.parse(fs.readFileSync(path.join(root,'docs/verification/video-svg-phase1/sources.json')));
+const args=process.argv.slice(2),onlyIndex=args.indexOf('--only');
+const ids=onlyIndex>=0?args[onlyIndex+1]?.split(','):specs.map(s=>s.id);
+if(!ids?.length||ids.some(id=>!specs.some(s=>s.id===id)))throw Error('Use --only with exact comma-separated action IDs');
+// App copy never mentions the source videos (same rule as tools/action-library/export.mjs): source timing stays in
+// keyframeSeconds and the dossier, never in visible text. The runtime is code, so only the Chinese wording is checked there.
+const shipped=(name,text,banned=/原片|视频|Keep/)=>{if(banned.test(text))throw Error(name+' mentions the source videos');return text;};
+export function progress(times,values,t){let i=0;while(i<times.length-2&&times[i+1]<t)i++;const slopes=times.slice(1).map((x,k)=>(values[k+1]-values[k])/(x-times[k]));const slope=k=>k===0||k===times.length-1?0:slopes[k-1]*slopes[k]<=0?0:2/(1/slopes[k-1]+1/slopes[k]);const h=times[i+1]-times[i],u=Math.max(0,Math.min(1,(t-times[i])/h));return (2*u**3-3*u*u+1)*values[i]+(u**3-2*u*u+u)*h*slope(i)+(-2*u**3+3*u*u)*values[i+1]+(u**3-u*u)*h*slope(i+1);}
+export function authored(s){const times=s.times.map(t=>(t-s.times[0])*1000),duration=times.at(-1),poses={},keys=[];
+for(let t=0;t<duration;t+=20){const p=progress(times,s.levels,t);poses['f'+t]=s.makePose(p);keys.push({t,pose:'f'+t,p});}poses.start=s.makePose(0);poses.peak=s.makePose(1);keys.push({t:duration-.001,pose:'start',p:0});
+return {id:'reference-'+s.id,title:s.title,view:s.view,mirror:s.mirror,hands:s.key==='squat'?{near:'open',far:'open'}:undefined,motionGuide:false,equipment:s.equipment,muscles:s.muscles,poses,track:{keys},timing:{effortStart:times[1],effortEnd:times[3],returnStart:times[3],returnEnd:times[5]-1,duration},camera:s.key==='crunch'?{t:80,b:60,side:14}:undefined,
+referenceFrames:[0,2,3,4].map((i,k)=>({time:times[i],caption:['起始','移动中','终点','返回'][k]})),
+source:{id:s.sourceID,variant:s.variant},detailExplanation:s.cue+'\n四幅图分别对应起始、移动中、终点和返回。红色仅为主要肌群示意。',mistakeExplanation:'左：正确支撑。右：'+s.error+'。\n'+s.fix+'\n错误姿势为补充教学示意。',primaryMuscles:s.primary,
+mistake:{good:'peak',pose:s.bad(),goodText:'正确示范',text:'错误示意',fix:s.fix,marks:[],camera:{side:18}}};}
+fs.mkdirSync(output,{recursive:true});
+// Shared renderer is built in isolation: existing anatomy lesson bundles are untouched.
+const engine=path.join(root,'tools/anatomy/engine');const core=fs.readdirSync(engine).filter(n=>/^\d.*\.js$/.test(n)&&n!=='70-lesson.js').sort().map(n=>fs.readFileSync(path.join(engine,n),'utf8')).join('\n');
+const runtime=core+'\n'+fs.readFileSync(new URL('./equipment.js',import.meta.url),'utf8')+'\n'+fs.readFileSync(new URL('./runtime.js',import.meta.url),'utf8');
+fs.writeFileSync(path.join(output,'video-reference-runtime.js'),shipped('video-reference-runtime.js',runtime,/原片|视频/));
+let records=fs.existsSync(path.join(output,'lessons.json'))?JSON.parse(fs.readFileSync(path.join(output,'lessons.json'))):[];
+for(const s of specs.filter(s=>ids.includes(s.id))){const spec=authored(s),resource=spec.id+'.html';const json=JSON.stringify(spec).replace(/</g,'\\u003c');fs.writeFileSync(path.join(output,resource),shipped(resource,`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'"><title>${s.title}</title></head><body><main id="motion" class="panel"></main><main id="detail" class="panel" hidden></main><main id="mistakes" class="panel" hidden></main><script>window.SteadyReferenceLesson=${json};</script><script src="video-reference-runtime.js"></script></body></html>`));
+const duration=spec.timing.duration/1000,st=s.times.map(t=>t-s.times[0]);const titles=['起始','开始移动','接近终点','可控终点','控制返回','还原'];const boundaries=[0,st[1],st[2],st[3],st[4],duration-.05,duration];const source=sources.find(x=>x.key===s.key);
+const record={id:s.id,existingLessonID:s.lessonID,compatible:s.compatible,sourceID:s.sourceID,variant:s.variant,keyframeSeconds:s.times,
+lesson:{id:spec.id,title:s.title+' · 变体示范',summary:s.variant+'。比例和角度为教学示意。',equipment:s.key==='goblet'||s.key==='lateral'?'哑铃':s.key==='legpress'?'移动座椅腿举机':s.key==='shoulderpress'?'双侧摆臂推肩机':'无需额外器械',origin:'supplemental',dosage:'本页用于动作学习；训练组数、次数与用量沿用你的原计划。',frames:[],preparation:[{title:'动作变体',detail:s.variant+'。与原教学并列展示，训练计划和用量不变。'}],steps:[{title:'动作要点',detail:s.cue}],cues:[{title:'控制',detail:'跟随分解姿势观察支撑与轨迹，动作速度不代表训练用量。'}],mistakes:[{title:s.error,detail:s.fix}],supplements:[{title:'绘制说明',detail:'SVG 为重新绘制；错误对照为教学补充。'}],checks:['支撑点稳定','动作受控，器材不脱手'],references:[]},
+animation:{lessonID:spec.id,resource,durationSeconds:duration,steps:titles.map((title,i)=>({title,startSeconds:boundaries[i],endSeconds:boundaries[i+1],previewTimeSeconds:Math.min(st[i],duration-.001),instruction:s.cue})),timingMilliseconds:spec.timing,detailExplanation:spec.detailExplanation,mistakeExplanation:spec.mistakeExplanation,primaryMuscles:s.primary}};
+records=records.filter(r=>r.id!==s.id);records.push(record);
+const dossier={...source,keyframeSeconds:s.times,cycle:[s.times[0],s.times.at(-1)],existingLessonID:s.lessonID,compatible:s.compatible,observation:s.observation,errorBasis:s.errorBasis,angleMethod:'manual illustrative fitting; not biomechanical measurement',contacts:s.key==='legpress'?['fixed plate','moving seat/back','hand grips']:s.key==='shoulderpress'?['fixed seat','fixed feet','pivoted handles']:['feet/support','hand equipment if present']};fs.writeFileSync(path.join(root,'docs/verification/video-svg-phase1',s.key,'dossier.json'),JSON.stringify(dossier,null,2));}
+records.sort((a,b)=>specs.findIndex(s=>s.id===a.id)-specs.findIndex(s=>s.id===b.id));fs.writeFileSync(path.join(output,'lessons.json'),shipped('lessons.json',JSON.stringify(records,null,2)));console.log('Built',ids.join(', '));

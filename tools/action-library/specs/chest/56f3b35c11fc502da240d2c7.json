@@ -1,0 +1,150 @@
+{
+  "sourceID": "56f3b35c11fc502da240d2c7",
+  "sourceName": "小哑铃臀桥支撑卧推",
+  "part": "chest",
+  "title": "小哑铃臀桥支撑卧推",
+  "variant": "臀桥姿态 · 上背撑垫 · 哑铃对握卧推 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    9.79,
+    10.15,
+    10.65,
+    10.94,
+    11.5,
+    12.09
+  ],
+  "levels": [
+    0,
+    0.2,
+    0.8,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "x": 0,
+      "y": -60,
+      "pelvis": -80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 100,
+          "el": 10
+        },
+        "far": {
+          "sh": 100,
+          "el": 10
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 21,
+          "knee": 110,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 21,
+          "knee": 110,
+          "ankle": 0
+        }
+      }
+    },
+    "1": {
+      "x": 0,
+      "y": -60,
+      "pelvis": -80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 30,
+          "el": 95
+        },
+        "far": {
+          "sh": 30,
+          "el": 95
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 21,
+          "knee": 110,
+          "ankle": 0
+        },
+        "far": {
+          "hip": 21,
+          "knee": 110,
+          "ankle": 0
+        }
+      }
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 90,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 78,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z",
+      "size": 0.7
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z",
+      "size": 0.7
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "pec.lower",
+      "deltoid.ant",
+      "triceps.long",
+      "glute.max"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "屈膝踩地后收紧臀部把髋顶起，让大腿与躯干连成一条斜线并保持住，上背贴垫支撑；对握哑铃放在胸口上方，肘部向身体两侧下沉到大臂约七十分角，再把哑铃垂直推回胸口正上方。",
+  "mistake": {
+    "title": "推起时肩膀前送、上背离开垫子",
+    "fix": "肩胛骨后缩下沉压住垫面，靠胸部发力推哑铃，髋部的高度全程不变。",
+    "basis": "源 detail 常见错误：发力时肩膀前送借力，要求肩胛骨后缩下沉并保持。",
+    "level": 0.3,
+    "override": {
+      "pelvis": -70,
+      "lumbar": -8
+    }
+  },
+  "observation": "主视频 1080×1080，侧面，人物头朝画面左侧，臀桥姿态保持、髋部全程顶高，共 5 次。取第 4~5 次间一个完整循环：9.79 秒哑铃推至胸口正上方、小臂竖直，10.94 秒屈肘下沉到大臂贴近躯干两侧，12.09 秒推回顶端。双脚位置与髋部高度全程不变；后半段镜头有推近，身体角度按前半段同姿态拟合。"
+}

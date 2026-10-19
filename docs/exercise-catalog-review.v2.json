@@ -1,0 +1,2528 @@
+{
+  "schemaVersion": 2,
+  "catalogVersion": 2,
+  "catalogHash": "1ddcfc24f5b72f28b0f764a58743c506837725fd49e720c78673371a8ab627ee",
+  "counts": {
+    "teachingIdentities": 104,
+    "canonicalExercises": 92,
+    "approvedExercises": 39,
+    "learningOnlyExercises": 53,
+    "learningOnlyTeachings": 4,
+    "equipment": 41,
+    "templates": 42,
+    "conditions": 15,
+    "lowerBodyExercises": 16
+  },
+  "lineage": {
+    "historicalTeachingIdentities": 97,
+    "addedTeachingIdentities": 7
+  },
+  "historicalCatalogHash": "86292e526103697d6e9ac58f4199062b325fddbd214183ca7b7517ae251207d4",
+  "editSource": "Sources/SteadyCore/Resources/TrainingCollections/exercise-catalog.v2.json",
+  "exportCommand": "node scripts/export-exercise-catalog.mjs",
+  "verifyCommand": "node scripts/export-exercise-catalog.mjs --check",
+  "testCommand": "node --test scripts/exercise-catalog.test.mjs",
+  "scope": "The historical catalog is retained byte-for-byte. Sixteen lower-body identities are condition-gated, including seven new supplemental teachings. Fifteen have main templates; the unloaded hinge is preparation only.",
+  "dosagePolicy": "Public exercise teaching plus general beginner guidance supports a product-derived supplemental starting template, not expert personal review or clinical validation. Dose and setup estimates are not animation timing.",
+  "estimatePolicy": "sets * reps * 4 * sides + (sets - 1) * rest + setup + (perSide ? sets * 15 : 0). Each round completes both sides before rest. The plan engine separately adds 30 seconds between exercises.",
+  "conditions": [
+    {
+      "id": "basic-squat",
+      "version": 1,
+      "title": "我能控制徒手下蹲与站起",
+      "detail": "已看动作教学；双脚踩稳，能在舒适幅度下蹲并站起，膝盖方向可控，不需要借力或忍痛。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-basic-bodyweight-squat"
+      }
+    },
+    {
+      "id": "chair-rise",
+      "version": 1,
+      "title": "我能缓慢坐下并从椅子站起",
+      "detail": "能靠双腿从适合自己高度的椅子站起，再控制坐回；不向后摔坐，不需要别人扶起，没有疼痛或头晕。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-basic-chair-sit-to-stand"
+      }
+    },
+    {
+      "id": "hip-hinge",
+      "version": 1,
+      "title": "我能用髋部完成徒手折叠",
+      "detail": "已学习徒手髋铰链；能连续完成10次受控屈髋与站起，脊柱位置稳定，动作不是弯腰代偿或深蹲，没有疼痛。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-basic-unloaded-hip-hinge"
+      }
+    },
+    {
+      "id": "dumbbell-control",
+      "version": 1,
+      "title": "我能稳妥拿起、控制和放回轻哑铃",
+      "detail": "已知道本动作怎样拿放哑铃；能选择轻负荷并全程握稳，不需要甩动或憋气完成；器械周围有足够空间。",
+      "teaching": {
+        "kind": "equipment",
+        "lessonID": "dumbbell-goblet-squat"
+      }
+    },
+    {
+      "id": "floor-access",
+      "version": 1,
+      "title": "我能安全上下地并保持躺姿",
+      "detail": "地面平整、干燥防滑、空间足够；我能自行躺下和起身，并保持舒适的仰卧或侧卧姿势，无疼痛或头晕；垫子可选。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-basic-floor-glute-bridge"
+      }
+    },
+    {
+      "id": "split-stance",
+      "version": 1,
+      "title": "我能控制前后分腿站姿",
+      "detail": "前后错步后仍能保持平衡，能小幅屈膝并站起；前脚持续踩稳，膝盖方向可控，必要时扶住已确认的支撑物。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-basic-supported-split-squat"
+      }
+    },
+    {
+      "id": "balance-standing",
+      "version": 1,
+      "title": "我能不扶物完成双脚提踵",
+      "detail": "在平整地面双脚站稳后，能不借助手扶物小幅抬起和放下脚跟；没有明显摇晃或疼痛。做不到时选择扶稳版本。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-calf-raise"
+      }
+    },
+    {
+      "id": "support-stable",
+      "version": 1,
+      "title": "扶住的物件固定且能承重",
+      "detail": "本次使用固定、不滑动、不倾倒且适合手扶的支撑物；已轻扶试稳，能扶住完成站姿动作。已确认坐椅不自动等于支撑物合格。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-basic-supported-calf-raise"
+      }
+    },
+    {
+      "id": "chair-stable",
+      "version": 1,
+      "title": "坐站椅子的高度和稳定性合适",
+      "detail": "椅子结实、无轮、无扶手、不会滑动或倾倒；坐下双脚可平放地面，膝部约直角，周围没有障碍。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-basic-chair-sit-to-stand"
+      }
+    },
+    {
+      "id": "leg-press-setup",
+      "version": 1,
+      "title": "我会设置坐姿腿举机",
+      "detail": "已按器械说明调整座位、起点和负荷，双脚能稳放踏板，腰背有支撑；知道安全起停，并用轻负荷试过可控幅度。",
+      "teaching": {
+        "kind": "equipment",
+        "lessonID": "seated-leg-press"
+      }
+    },
+    {
+      "id": "seated-curl-setup",
+      "version": 1,
+      "title": "我会设置坐姿腿弯举机",
+      "detail": "已将膝部对准转轴，调好大腿固定垫和小腿滚垫，握稳把手；知道负荷和起停设置，并用轻负荷确认动作可控。",
+      "teaching": {
+        "kind": "equipment",
+        "lessonID": "seated-leg-curl"
+      }
+    },
+    {
+      "id": "prone-curl-setup",
+      "version": 1,
+      "title": "我会设置俯卧腿弯举机",
+      "detail": "能稳定上下俯卧训练垫；膝部与转轴位置合适，小腿滚垫不压跟腱，髋部可贴稳；已按器械说明试过轻负荷。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-prone-leg-curl"
+      }
+    },
+    {
+      "id": "leg-extension-setup",
+      "version": 1,
+      "title": "我会设置坐姿腿屈伸机",
+      "detail": "已调整靠背和座位，将膝部对准器械转轴、滚垫放在合适的小腿位置；能稳定坐住并以轻负荷控制伸膝与回程。",
+      "teaching": {
+        "kind": "equipment",
+        "lessonID": "seated-leg-extension"
+      }
+    },
+    {
+      "id": "hip-adduction-setup",
+      "version": 1,
+      "title": "我会设置髋内收机",
+      "detail": "已按器械说明调好靠背、腿垫、起始开度和负荷；能保持骨盆坐稳，在舒适范围内受控并腿与回程。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-hip-adduction"
+      }
+    },
+    {
+      "id": "rear-support-stable",
+      "version": 1,
+      "title": "后脚支架稳定且我会摆放后脚",
+      "detail": "后脚抬高滚垫支架固定、不会滑动，支撑高度适合；能自行摆好和离开后脚，前脚踩稳，不因支撑过高而失去平衡。",
+      "teaching": {
+        "kind": "collection",
+        "topic": "legs",
+        "lessonID": "legs-bulgarian-split-squat"
+      }
+    }
+  ],
+  "knownGaps": [
+    "Readiness is self-confirmed, not an observed technique assessment.",
+    "Replacement compatibility never bypasses equipment, experience, readiness, programme structure or time validation.",
+    "The lowerBodyBasics programme must select its main work only from lower-body slots; the inherited upper-body approval is not eligibility for that programme.",
+    "Actual pace, additional rest or setup can make a session longer than its planning estimate.",
+    "This catalogue is not an injury rehabilitation prescription, full-body programme or guaranteed individual result."
+  ],
+  "approved": [
+    {
+      "id": "march-in-place",
+      "name": "原地轻松踏步",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [],
+      "templates": [
+        {
+          "id": "march-in-place-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 180
+        }
+      ],
+      "teachingCount": 3,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-warmup-marching；原用量：Steady补充：约3分钟，按舒适节奏进行。；课程来源：https://www.douyin.com/video/7657365167379023973；https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/",
+      "reason": "取腹部补充热身的3分钟；胸部3–5分钟与肩部2–3分钟只作为同动作其他教学。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "walk",
+      "name": "轻松步行",
+      "roles": [
+        "warmup",
+        "cooldown"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [],
+      "templates": [
+        {
+          "id": "walk-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 300
+        },
+        {
+          "id": "walk-cooldown-v1",
+          "role": "cooldown",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 300
+        }
+      ],
+      "teachingCount": 3,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json#back-walking；原用量：补充建议：5–10分钟，轻松开始，再逐渐加快。；课程来源：https://www.douyin.com/video/7647176615788911793；Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-cooldown-walk；原用量：补充建议：逐渐减慢步速，持续 5–10 分钟；依据 American Heart Association 的放松建议。；课程来源：https://www.douyin.com/video/7688311849762979057；https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/warm-up-cool-down",
+      "reason": "暖身和放松分别采用现有5–10分钟建议的下界；原课程保留各自目的。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "abs-warmup-cat-cow",
+      "name": "猫牛式活动",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [
+        {
+          "id": "abs-warmup-cat-cow-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 90
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-warmup-cat-cow；原用量：Steady补充：轻柔做6～8次；动作之间自然呼吸。；课程来源：https://www.douyin.com/video/7657365167379023973；https://www.acefitness.org/resources/everyone/exercise-library/15/cat-cow/",
+      "reason": "采用已标为Steady补充的6–8次下界，安排单组；不用通用抗阻建议补齐额外组数。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "abs-warmup-pelvic-tilt",
+      "name": "仰卧骨盆控制",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [
+        {
+          "id": "abs-warmup-pelvic-tilt-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 90
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-warmup-pelvic-tilt；原用量：Steady补充：小幅度做6～8次，先熟悉腹部控制。；课程来源：https://www.douyin.com/video/7657365167379023973；https://www.acefitness.org/resources/everyone/exercise-library/7/supine-pelvic-tilts/",
+      "reason": "采用已标为Steady补充的6–8次下界，安排单组；不用通用抗阻建议补齐额外组数。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "back-roller",
+      "name": "跪姿泡沫轴肩胛前推",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "foam-roller",
+        "mat"
+      ],
+      "templates": [
+        {
+          "id": "back-roller-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 120
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json#back-roller；原用量：补充建议：先做1组6–8次，小幅、受控。；课程来源：https://www.douyin.com/video/7647176615788911793；https://professional.heart.org/en/science-news/resistance-exercise-training-in-individuals-with-and-without-cardiovascular-disease-2023-update/top-things-to-know；https://www.nsca.com/contentassets/fb8a7be6eb174934bb8844703c4de4cc/ptq-10.1.3-how-to-manipulate-rest-intervals-to-maixmize-strength-training-effectiveness.pdf",
+      "reason": "用量沿用课程已标注的App补充范围；次数取下界、休息取明确值或上界。复杂单侧/支撑版本限有经验者，不能仅凭目标标签开放。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "back-bench-support",
+      "name": "凳支撑跪姿肘屈伸",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "flat-bench",
+        "mat"
+      ],
+      "templates": [
+        {
+          "id": "back-bench-support-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 120
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json#back-bench-support；原用量：补充建议：1组4–6次；肩不舒服时缩小幅度或短时静态支撑。；课程来源：https://www.douyin.com/video/7647176615788911793；https://professional.heart.org/en/science-news/resistance-exercise-training-in-individuals-with-and-without-cardiovascular-disease-2023-update/top-things-to-know；https://www.nsca.com/contentassets/fb8a7be6eb174934bb8844703c4de4cc/ptq-10.1.3-how-to-manipulate-rest-intervals-to-maixmize-strength-training-effectiveness.pdf",
+      "reason": "用量沿用课程已标注的App补充范围；次数取下界、休息取明确值或上界。复杂单侧/支撑版本限有经验者，不能仅凭目标标签开放。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "back-straight-arm",
+      "name": "直臂下压 · 适应",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "cable-station",
+        "straight-cable-bar"
+      ],
+      "templates": [
+        {
+          "id": "back-straight-arm-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 150
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json#back-straight-arm；原用量：补充建议：轻负荷1组8–12次；先找稳定的路径。；课程来源：https://www.douyin.com/video/7647176615788911793；https://professional.heart.org/en/science-news/resistance-exercise-training-in-individuals-with-and-without-cardiovascular-disease-2023-update/top-things-to-know；https://www.nsca.com/contentassets/fb8a7be6eb174934bb8844703c4de4cc/ptq-10.1.3-how-to-manipulate-rest-intervals-to-maixmize-strength-training-effectiveness.pdf",
+      "reason": "用量沿用课程已标注的App补充范围；次数取下界、休息取明确值或上界。复杂单侧/支撑版本限有经验者，不能仅凭目标标签开放。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "back-one-arm-row",
+      "name": "单手绳索划船",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "cable-station",
+        "single-cable-handle",
+        "flat-bench"
+      ],
+      "templates": [
+        {
+          "id": "back-one-arm-row-main-v1",
+          "role": "main",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 480
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json#back-one-arm-row；原用量：补充建议：每侧1–2组×8–12次，组间约2分钟；先轻负荷预演。；课程来源：https://www.douyin.com/video/7647176615788911793；https://professional.heart.org/en/science-news/resistance-exercise-training-in-individuals-with-and-without-cardiovascular-disease-2023-update/top-things-to-know；https://www.nsca.com/contentassets/fb8a7be6eb174934bb8844703c4de4cc/ptq-10.1.3-how-to-manipulate-rest-intervals-to-maixmize-strength-training-effectiveness.pdf",
+      "reason": "用量沿用课程已标注的App补充范围；次数取下界、休息取明确值或上界。复杂单侧/支撑版本限有经验者，不能仅凭目标标签开放。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "back-neutral-pulldown",
+      "name": "对握高位钢索下拉",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "lat-pulldown-machine",
+        "neutral-pulldown-handle"
+      ],
+      "templates": [
+        {
+          "id": "back-neutral-pulldown-main-v1",
+          "role": "main",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 300
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json#back-neutral-pulldown；原用量：补充建议：1–2组×8–12次，组间约2分钟。；课程来源：https://www.douyin.com/video/7647176615788911793；https://professional.heart.org/en/science-news/resistance-exercise-training-in-individuals-with-and-without-cardiovascular-disease-2023-update/top-things-to-know；https://www.nsca.com/contentassets/fb8a7be6eb174934bb8844703c4de4cc/ptq-10.1.3-how-to-manipulate-rest-intervals-to-maixmize-strength-training-effectiveness.pdf",
+      "reason": "用量沿用课程已标注的App补充范围；次数取下界、休息取明确值或上界。复杂单侧/支撑版本限有经验者，不能仅凭目标标签开放。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "back-bent-arm-pulldown",
+      "name": "坐地单手高位钢索下压（屈肘）",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "cable-station",
+        "single-cable-handle",
+        "mat"
+      ],
+      "templates": [
+        {
+          "id": "back-bent-arm-pulldown-main-v1",
+          "role": "main",
+          "experiences": [
+            "规律运动"
+          ],
+          "estimatedSeconds": 480
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json#back-bent-arm-pulldown；原用量：补充建议：每侧1–2组×8–12次，组间约2分钟；先小范围学习。；课程来源：https://www.douyin.com/video/7647176615788911793；https://professional.heart.org/en/science-news/resistance-exercise-training-in-individuals-with-and-without-cardiovascular-disease-2023-update/top-things-to-know；https://www.nsca.com/contentassets/fb8a7be6eb174934bb8844703c4de4cc/ptq-10.1.3-how-to-manipulate-rest-intervals-to-maixmize-strength-training-effectiveness.pdf",
+      "reason": "用量沿用课程已标注的App补充范围；次数取下界、休息取明确值或上界。复杂单侧/支撑版本限有经验者，不能仅凭目标标签开放。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "back-supported-scapula",
+      "name": "胸口支撑肩胛后缩",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "dual-cable-station",
+        "pair-cable-handles",
+        "adjustable-bench"
+      ],
+      "templates": [
+        {
+          "id": "back-supported-scapula-main-v1",
+          "role": "main",
+          "experiences": [
+            "规律运动"
+          ],
+          "estimatedSeconds": 300
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json#back-supported-scapula；原用量：补充建议：1–2组×8–12次，组间1–2分钟；收紧时短暂停顿。；课程来源：https://www.douyin.com/video/7647176615788911793；https://professional.heart.org/en/science-news/resistance-exercise-training-in-individuals-with-and-without-cardiovascular-disease-2023-update/top-things-to-know；https://www.nsca.com/contentassets/fb8a7be6eb174934bb8844703c4de4cc/ptq-10.1.3-how-to-manipulate-rest-intervals-to-maixmize-strength-training-effectiveness.pdf",
+      "reason": "用量沿用课程已标注的App补充范围；次数取下界、休息取明确值或上界。复杂单侧/支撑版本限有经验者，不能仅凭目标标签开放。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "seated-cable-row",
+      "name": "坐姿低位中立窄握划船",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "seated-row-machine"
+      ],
+      "templates": [
+        {
+          "id": "seated-cable-row-main-v1",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 300
+        }
+      ],
+      "teachingCount": 2,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json#back-seated-row；原用量：补充建议：1–2组×8–12次，组间约2分钟。；课程来源：https://www.douyin.com/video/7647176615788911793",
+      "reason": "两课均为窄V把、低位出线、脚踏支撑和稳定坐姿；采用背课明确补充范围的2组×8次、120秒休息，旧器械课仅作另一教学。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "chest-warmup-roller-t",
+      "name": "滚轴俯卧T位抬臂",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat",
+        "foam-roller"
+      ],
+      "templates": [
+        {
+          "id": "chest-warmup-roller-t-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 150
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-warmup-roller-t；原用量：补充起点：1组 × 6–8次可控抬臂，休息30–45秒。；课程来源：https://www.douyin.com/video/7650309381392785073；https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/",
+      "reason": "采用已标为补充起点的1组6次和45秒休息；一般热身资料不声称直接验证本动作剂量。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "chest-warmup-roller-y",
+      "name": "滚轴俯卧Y位抬臂",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat",
+        "foam-roller"
+      ],
+      "templates": [
+        {
+          "id": "chest-warmup-roller-y-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 150
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-warmup-roller-y；原用量：示范为20次。补充入门可先1组6–8次，休息30–45秒；按动作控制调整。；课程来源：https://www.douyin.com/video/7650309381392785073；https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/",
+      "reason": "采用已标为补充起点的1组6次和45秒休息；一般热身资料不声称直接验证本动作剂量。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "chest-warmup-roller-y-press",
+      "name": "滚轴俯卧Y字推举",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat",
+        "foam-roller"
+      ],
+      "templates": [
+        {
+          "id": "chest-warmup-roller-y-press-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 150
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-warmup-roller-y-press；原用量：补充起点：1组 × 6–8次可控推举，休息30–45秒。；课程来源：https://www.douyin.com/video/7650309381392785073；https://www.acefitness.org/continuing-education/certified/august-2023/8398/the-ultimate-ace-workout-an-evidence-based-approach-to-programming-and-class-design/",
+      "reason": "采用已标为补充起点的1组6次和45秒休息；一般热身资料不声称直接验证本动作剂量。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "chest-warmup-band",
+      "name": "宽握弹力带肩环绕",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "light-resistance-band"
+      ],
+      "templates": [
+        {
+          "id": "chest-warmup-band-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 240
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-warmup-band；原用量：2组 × 每组15次。休息30–45秒为补充起点；不适或失去控制时减少次数和幅度。；课程来源：https://www.douyin.com/video/7650309381392785073",
+      "reason": "采用课程2组15次；45秒是课程明确标注的App补充休息，不归为原视频剂量。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "seated-chest-press",
+      "name": "配重式坐姿推胸",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "chest-press-machine"
+      ],
+      "templates": [
+        {
+          "id": "seated-chest-press-warmup-v1",
+          "role": "warmup",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 180
+        }
+      ],
+      "teachingCount": 2,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-warmup-press；原用量：补充起点：1–2组 × 8–10次轻松试推；组间休息45–60秒。保留充分余力。；课程来源：https://www.douyin.com/video/7650309381392785073",
+      "reason": "只开放既有轻负重试练的warmup角色，取1组8次与60秒休息；旧器械课本身没有主练剂量，暂不开放main。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "chest-flat-press",
+      "name": "片载坐姿平推",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "plate-loaded-chest-press"
+      ],
+      "templates": [
+        {
+          "id": "chest-flat-press-main-v1",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 300
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-flat-press；原用量：补充起点：2组 × 8–12次；组间休息120秒，可按恢复延长。；课程来源：https://www.douyin.com/video/7650309381392785073；https://acsm.org/resistance-training-guidelines-update-2026/",
+      "reason": "采用现有课程补充起点的2组8次；休息取120秒。ACSM用于一般持续性和个体化原则，不作为本动作专项验证。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "chest-incline-machine-press",
+      "name": "片载上斜推胸",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "plate-loaded-incline-chest-press"
+      ],
+      "templates": [
+        {
+          "id": "chest-incline-machine-press-main-v1",
+          "role": "main",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 300
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-incline-machine-press；原用量：补充起点：2组 × 8–12次；组间休息120秒，可按恢复延长。；课程来源：https://www.douyin.com/video/7650309381392785073；https://acsm.org/resistance-training-guidelines-update-2026/",
+      "reason": "采用现有课程补充起点的2组8次；休息取120秒。ACSM用于一般持续性和个体化原则，不作为本动作专项验证。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "chest-seated-cable-fly",
+      "name": "坐姿低位绳索夹胸",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dual-cable-station",
+        "pair-cable-handles",
+        "adjustable-bench"
+      ],
+      "templates": [
+        {
+          "id": "chest-seated-cable-fly-main-v1",
+          "role": "main",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 300
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-seated-cable-fly；原用量：补充起点：2组 × 8–12次；组间休息90–120秒。；课程来源：https://www.douyin.com/video/7650309381392785073；https://acsm.org/resistance-training-guidelines-update-2026/",
+      "reason": "采用现有课程补充起点的2组8次；休息取120秒。ACSM用于一般持续性和个体化原则，不作为本动作专项验证。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "wall-push-up",
+      "name": "墙壁俯卧撑",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "wall"
+      ],
+      "templates": [
+        {
+          "id": "wall-push-up-main-v1",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 180
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-wall-push-up；原用量：补充起点：2组 × 6–8次；组间休息60秒。动作稳定后逐渐增加次数。；课程来源：https://www.douyin.com/video/7650309381392785073；https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/modified-pushup/vid-20084674",
+      "reason": "采用课程已标补充起点的2组6次、60秒休息；动作身份就是现有chest-wall-push-up，不新增教学。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "functional-dumbbell-romanian-deadlift",
+      "name": "双哑铃罗马尼亚硬拉",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells"
+      ],
+      "trainingSlot": "hipDominant",
+      "requiredConditions": [
+        "hip-hinge",
+        "dumbbell-control"
+      ],
+      "replacementIDs": [
+        "floor-glute-bridge"
+      ],
+      "templates": [
+        {
+          "id": "functional-dumbbell-romanian-deadlift-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 214
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-dumbbell-romanian-deadlift；原用量：组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。；课程来源：https://www.douyin.com/video/7688311849762979057；v2补充模板依据：https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "functional-cooldown-calf-stretch",
+      "name": "扶墙小腿拉伸",
+      "roles": [
+        "cooldown"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "wall"
+      ],
+      "templates": [
+        {
+          "id": "functional-cooldown-calf-stretch-cooldown-v1",
+          "role": "cooldown",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 75
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-cooldown-calf-stretch；原用量：补充建议：每侧保持 15–20 秒；依据 NHS 运动后小腿拉伸步骤。；课程来源：https://www.douyin.com/video/7688311849762979057；https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
+      "reason": "采用既有NHS补充拉伸建议15–20秒的下界，每侧一次；预计时长包含换侧，不代替逐步减速的活动。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "functional-cooldown-hamstring-stretch",
+      "name": "仰卧大腿后侧拉伸",
+      "roles": [
+        "cooldown"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [
+        {
+          "id": "functional-cooldown-hamstring-stretch-cooldown-v1",
+          "role": "cooldown",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 75
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-cooldown-hamstring-stretch；原用量：补充建议：每侧保持 15–20 秒；依据 NHS 运动后大腿后侧拉伸步骤。；课程来源：https://www.douyin.com/video/7688311849762979057；https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
+      "reason": "采用既有NHS补充拉伸建议15–20秒的下界，每侧一次；预计时长包含换侧，不代替逐步减速的活动。 此为 Steady 对既有内容的编排审查，不是临床验证或个人医疗处方；不从教学动画时长推导次数。"
+    },
+    {
+      "id": "legs-calf-raise",
+      "name": "站姿自重提踵",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [],
+      "trainingSlot": "calf",
+      "requiredConditions": [
+        "balance-standing"
+      ],
+      "replacementIDs": [
+        "supported-calf-raise"
+      ],
+      "templates": [
+        {
+          "id": "legs-calf-raise-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 154
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-calf-raise；原用量：初练先少做，再按恢复和动作质量增加。；课程来源：https://www.douyin.com/video/7655982129109198321；v2补充模板依据：https://www.nhs.uk/live-well/exercise/strength-exercises/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。 NHS示范是扶稳版本，本条仍是现有无扶变式；用量依据一般训练安排，且必须确认无扶平衡，不能把两者视作相同教学。"
+    },
+    {
+      "id": "legs-hip-adduction",
+      "name": "可调靠背髋内收",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "hip-adduction-machine"
+      ],
+      "trainingSlot": "hipAdduction",
+      "requiredConditions": [
+        "hip-adduction-setup"
+      ],
+      "replacementIDs": [],
+      "templates": [
+        {
+          "id": "legs-hip-adduction-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 214
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-hip-adduction；原用量：先用轻重量与小幅度熟悉动作，组次按训练计划安排。；课程来源：https://www.douyin.com/video/7655982129109198321；v2补充模板依据：Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-hip-adduction；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "legs-bulgarian-split-squat",
+      "name": "保加利亚分腿蹲",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "rear-foot-support"
+      ],
+      "trainingSlot": "kneeDominant",
+      "requiredConditions": [
+        "split-stance",
+        "rear-support-stable"
+      ],
+      "replacementIDs": [
+        "chair-sit-to-stand",
+        "bodyweight-squat",
+        "dumbbell-goblet-squat",
+        "seated-leg-press",
+        "supported-split-squat"
+      ],
+      "templates": [
+        {
+          "id": "legs-bulgarian-split-squat-main-v2",
+          "role": "main",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 278
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-bulgarian-split-squat；原用量：组次按训练计划安排，先掌握稳定站距和可控幅度。；课程来源：https://www.douyin.com/video/7655982129109198321；v2补充模板依据：https://www.nasm.org/resource-center/blog/squat-alternatives；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "legs-prone-leg-curl",
+      "name": "俯卧器械腿弯举",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "prone-leg-curl-machine"
+      ],
+      "trainingSlot": "kneeFlexion",
+      "requiredConditions": [
+        "prone-curl-setup"
+      ],
+      "replacementIDs": [
+        "seated-leg-curl"
+      ],
+      "templates": [
+        {
+          "id": "legs-prone-leg-curl-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 214
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-prone-leg-curl；原用量：次数和负重按训练计划安排。；课程来源：https://www.douyin.com/video/7655982129109198321；v2补充模板依据：Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-prone-leg-curl；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "seated-leg-press",
+      "name": "坐姿腿举",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "leg-press-machine"
+      ],
+      "trainingSlot": "kneeDominant",
+      "requiredConditions": [
+        "leg-press-setup"
+      ],
+      "replacementIDs": [
+        "chair-sit-to-stand",
+        "bodyweight-squat",
+        "dumbbell-goblet-squat",
+        "supported-split-squat",
+        "legs-bulgarian-split-squat"
+      ],
+      "templates": [
+        {
+          "id": "seated-leg-press-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 244
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#seated-leg-press；现有器材步骤和结构参考未提供完整训练用量。；v2补充模板依据：https://www.acefitness.org/resources/everyone/exercise-library/154/seated-leg-press/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "seated-leg-extension",
+      "name": "坐姿腿屈伸",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "leg-extension-machine"
+      ],
+      "trainingSlot": "kneeExtension",
+      "requiredConditions": [
+        "leg-extension-setup"
+      ],
+      "replacementIDs": [],
+      "templates": [
+        {
+          "id": "seated-leg-extension-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 214
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#seated-leg-extension；现有器材步骤和结构参考未提供完整训练用量。；v2补充模板依据：Sources/SteadyCore/EquipmentLessonDefinition.swift#seated-leg-extension；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "dumbbell-goblet-squat",
+      "name": "哑铃高脚杯深蹲",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells"
+      ],
+      "trainingSlot": "kneeDominant",
+      "requiredConditions": [
+        "basic-squat",
+        "dumbbell-control"
+      ],
+      "replacementIDs": [
+        "chair-sit-to-stand",
+        "bodyweight-squat",
+        "seated-leg-press",
+        "supported-split-squat",
+        "legs-bulgarian-split-squat"
+      ],
+      "templates": [
+        {
+          "id": "dumbbell-goblet-squat-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 214
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#dumbbell-goblet-squat；现有器材步骤和结构参考未提供完整训练用量。；v2补充模板依据：https://www.acefitness.org/resources/everyone/exercise-library/362/goblet-squat/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "seated-leg-curl",
+      "name": "坐姿腿弯举",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "leg-curl-machine"
+      ],
+      "trainingSlot": "kneeFlexion",
+      "requiredConditions": [
+        "seated-curl-setup"
+      ],
+      "replacementIDs": [
+        "legs-prone-leg-curl"
+      ],
+      "templates": [
+        {
+          "id": "seated-leg-curl-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 214
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#seated-leg-curl；现有器材步骤和结构参考未提供完整训练用量。；v2补充模板依据：https://www.nasm.org/resource-center/exercise-library/seated-leg-curl；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "chair-sit-to-stand",
+      "name": "椅子坐站",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "stable-chair"
+      ],
+      "trainingSlot": "kneeDominant",
+      "requiredConditions": [
+        "chair-rise",
+        "chair-stable"
+      ],
+      "replacementIDs": [
+        "bodyweight-squat",
+        "dumbbell-goblet-squat",
+        "seated-leg-press",
+        "supported-split-squat",
+        "legs-bulgarian-split-squat"
+      ],
+      "templates": [
+        {
+          "id": "chair-sit-to-stand-main-v2-beginner",
+          "role": "main",
+          "experiences": [
+            "初学者"
+          ],
+          "estimatedSeconds": 130
+        },
+        {
+          "id": "chair-sit-to-stand-main-v2-regular",
+          "role": "main",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 154
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Steady新补充教学；https://www.nhs.uk/live-well/exercise/strength-exercises/；v2补充模板依据：https://www.nhs.uk/live-well/exercise/strength-exercises/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：NHS为该基础动作给出从5次开始的建议；本产品给初学者2组×5次、其余2组×8次并补充60秒组间休息。组数、休息及经验分档为产品派生，不是NHS原文处方、专家亲审或临床验证。先确认物件稳定性与动作前提；预计时长不是训练节拍。"
+    },
+    {
+      "id": "floor-glute-bridge",
+      "name": "地面双腿臀桥",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [],
+      "trainingSlot": "hipDominant",
+      "requiredConditions": [
+        "floor-access"
+      ],
+      "replacementIDs": [
+        "functional-dumbbell-romanian-deadlift"
+      ],
+      "templates": [
+        {
+          "id": "floor-glute-bridge-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 154
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Steady新补充教学；https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/；v2补充模板依据：https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "supported-calf-raise",
+      "name": "扶稳双脚提踵",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "fixed-support"
+      ],
+      "trainingSlot": "calf",
+      "requiredConditions": [
+        "support-stable"
+      ],
+      "replacementIDs": [
+        "legs-calf-raise"
+      ],
+      "templates": [
+        {
+          "id": "supported-calf-raise-main-v2-beginner",
+          "role": "main",
+          "experiences": [
+            "初学者"
+          ],
+          "estimatedSeconds": 130
+        },
+        {
+          "id": "supported-calf-raise-main-v2-regular",
+          "role": "main",
+          "experiences": [
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 154
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Steady新补充教学；https://www.nhs.uk/live-well/exercise/strength-exercises/；v2补充模板依据：https://www.nhs.uk/live-well/exercise/strength-exercises/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：NHS为该基础动作给出从5次开始的建议；本产品给初学者2组×5次、其余2组×8次并补充60秒组间休息。组数、休息及经验分档为产品派生，不是NHS原文处方、专家亲审或临床验证。先确认物件稳定性与动作前提；预计时长不是训练节拍。"
+    },
+    {
+      "id": "bodyweight-squat",
+      "name": "自重深蹲",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [],
+      "trainingSlot": "kneeDominant",
+      "requiredConditions": [
+        "basic-squat"
+      ],
+      "replacementIDs": [
+        "chair-sit-to-stand",
+        "dumbbell-goblet-squat",
+        "seated-leg-press",
+        "supported-split-squat",
+        "legs-bulgarian-split-squat"
+      ],
+      "templates": [
+        {
+          "id": "bodyweight-squat-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 184
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Steady新补充教学；https://www.acefitness.org/resources/everyone/exercise-library/135/bodyweight-squat/；v2补充模板依据：https://www.acefitness.org/resources/everyone/exercise-library/135/bodyweight-squat/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "supported-split-squat",
+      "name": "扶稳分腿蹲",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "fixed-support"
+      ],
+      "trainingSlot": "kneeDominant",
+      "requiredConditions": [
+        "split-stance",
+        "support-stable"
+      ],
+      "replacementIDs": [
+        "chair-sit-to-stand",
+        "bodyweight-squat",
+        "dumbbell-goblet-squat",
+        "seated-leg-press",
+        "legs-bulgarian-split-squat"
+      ],
+      "templates": [
+        {
+          "id": "supported-split-squat-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 278
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Steady新补充教学；https://www.nasm.org/resource-center/blog/squat-alternatives；v2补充模板依据：https://www.nasm.org/resource-center/blog/squat-alternatives；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。 扶稳、双脚留在地面的版本是Steady基于分腿动作模式与稳固扶物原则制作的补充变式，不冒称NASM页面直接给出同一扶稳版本。"
+    },
+    {
+      "id": "side-lying-hip-abduction",
+      "name": "侧卧髋外展",
+      "roles": [
+        "main"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [],
+      "trainingSlot": "hipAbduction",
+      "requiredConditions": [
+        "floor-access"
+      ],
+      "replacementIDs": [],
+      "templates": [
+        {
+          "id": "side-lying-hip-abduction-main-v2",
+          "role": "main",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 248
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Steady新补充教学；https://www.acefitness.org/resources/everyone/exercise-library/38/side-lying-hip-abduction/；v2补充模板依据：https://www.acefitness.org/resources/everyone/exercise-library/38/side-lying-hip-abduction/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：把公开动作教学和一般训练指南转为可控起点，2组×8次及休息由产品编排派生；不是原视频新增口述、专家亲审或临床验证。具体器械与动作前提必须由用户逐项确认；经验不能替代动作准备度。预计时间为排程模型，不是动画速度或强制节拍。"
+    },
+    {
+      "id": "unloaded-hip-hinge",
+      "name": "徒手髋铰链",
+      "roles": [
+        "warmup"
+      ],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [],
+      "trainingSlot": "preparation",
+      "requiredConditions": [
+        "hip-hinge"
+      ],
+      "replacementIDs": [],
+      "templates": [
+        {
+          "id": "unloaded-hip-hinge-warmup-v2",
+          "role": "warmup",
+          "experiences": [
+            "初学者",
+            "偶尔运动",
+            "规律运动"
+          ],
+          "estimatedSeconds": 70
+        }
+      ],
+      "teachingCount": 1,
+      "basis": "Steady新补充教学；https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/；v2补充模板依据：https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/；一般训练安排：https://www.nasm.org/resource-center/blog/training/beginner-fitness-routine；个体化原则：https://acsm.org/resistance-training-guidelines-update-2026/；证据记录：docs/lower-body-evidence.md",
+      "reason": "Steady 补充模板（supplemental）：ACE建议先能完成10–15次受控徒手髋铰链再加外部阻力；取10次作1组准备活动，不能替代髋主导主练。不把来源变为个人技术验收，ready仅是用户自述。本条为公开教学的产品编排派生，不代表专家亲审或临床验证。"
+    }
+  ],
+  "learningOnly": [
+    {
+      "id": "abs-hanging-leg-raise",
+      "name": "悬垂举腿",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "pull-up-bar"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-hanging-leg-raise；原用量：先学习准备与回程，用自己能控制的范围练习。；课程来源：https://www.douyin.com/video/7657365167379023973",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "abs-sling-knee-raise",
+      "name": "吊带支撑举腿",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "pull-up-bar",
+        "ab-slings"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-sling-knee-raise；原用量：先确认吊带与握把的布置，再用可控范围学习动作。；课程来源：https://www.douyin.com/video/7657365167379023973",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "abs-supported-knee-raise",
+      "name": "罗马椅支撑举腿",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "captains-chair"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-supported-knee-raise；原用量：先确认支撑方式；用自己能稳定控制的膝角和幅度。；课程来源：https://www.douyin.com/video/7657365167379023973",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "abs-supine-crunch",
+      "name": "仰卧卷腹",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-supine-crunch；原用量：先学会短程卷起与控制还原，再决定练习量。；课程来源：https://www.douyin.com/video/7657365167379023973",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "abs-side-biased-crunch",
+      "name": "单侧偏向卷腹",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-side-biased-crunch；原用量：先比较短程卷起的方向；不用追求大幅转身。；课程来源：https://www.douyin.com/video/7657365167379023973",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "abs-kneeling-ab-wheel",
+      "name": "跪姿健腹轮",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "ab-wheel",
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-kneeling-ab-wheel；原用量：先用小幅度学习前滚与回收，不按最远距离衡量完成度。；课程来源：https://www.douyin.com/video/7657365167379023973",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "abs-prone-abdominal-stretch",
+      "name": "俯卧抬胸拉伸",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json#abs-prone-abdominal-stretch；原用量：轻柔拉伸，不强撑到疼痛。；课程来源：https://www.douyin.com/video/7657365167379023973",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "supported-single-cable-triceps-extension",
+      "name": "扶柱肩伸位单手绳索臂屈伸",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "cable-station",
+        "single-cable-handle"
+      ],
+      "templates": [],
+      "teachingCount": 2,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/tanchengyi-arms.json#arms-single-cable-extension；原用量：3组正式组；开始前先用轻负荷完成热身。；课程来源：https://v.douyin.com/f1exxCgsHOQ/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "floor-seated-cable-curl",
+      "name": "坐地反握直杆绳索弯举",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "cable-station",
+        "straight-cable-bar"
+      ],
+      "templates": [],
+      "teachingCount": 2,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/tanchengyi-arms.json#arms-seated-cable-curl；原用量：1组适应／热身＋3组正式；次数以保持动作质量为前提。；课程来源：https://v.douyin.com/f1exxCgsHOQ/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "arms-lying-barbell-extension",
+      "name": "小上斜曲杆仰卧臂屈伸",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "adjustable-bench",
+        "ez-bar"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/tanchengyi-arms.json#arms-lying-barbell-extension；原用量：1组适应／热身＋3组正式；次数以保持动作质量为前提。；课程来源：https://v.douyin.com/f1exxCgsHOQ/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "arms-incline-dumbbell-curl",
+      "name": "仰卧哑铃肩伸位弯举",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "adjustable-bench",
+        "dumbbells"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/tanchengyi-arms.json#arms-incline-dumbbell-curl；原用量：1组适应／热身＋3组正式；次数以保持动作质量为前提。；课程来源：https://v.douyin.com/f1exxCgsHOQ/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "arms-overhead-single-cable-extension",
+      "name": "单手绳索肩屈位臂屈伸",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "cable-station",
+        "single-cable-handle"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/tanchengyi-arms.json#arms-overhead-single-cable-extension；原用量：1组适应／热身＋3组正式；次数以保持动作质量为前提。；课程来源：https://v.douyin.com/f1exxCgsHOQ/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "arms-standing-rope-hammer-curl",
+      "name": "站姿绳索锤式弯举",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "cable-station",
+        "rope-cable-handle"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/tanchengyi-arms.json#arms-standing-rope-hammer-curl；原用量：选用能做约20次的负荷，重视顶端收缩与受控回程。；课程来源：https://v.douyin.com/f1exxCgsHOQ/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "arms-seated-internal-rotation-curl",
+      "name": "坐姿绳索内旋位弯举",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "cable-station",
+        "rope-cable-handle"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/tanchengyi-arms.json#arms-seated-internal-rotation-curl；原用量：组数按当前训练计划安排（补充建议）。；课程来源：https://v.douyin.com/f1exxCgsHOQ/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "arms-extra-cable-pushdown",
+      "name": "身侧单手绳索臂屈伸",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "cable-station",
+        "single-cable-handle"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/tanchengyi-arms-extra.json#arms-extra-cable-pushdown；原用量：以约能做 10 次的重量为参考，前提是能收紧目标肌肉并控制来回。；课程来源：https://v.douyin.com/0nDFk2AXhAA/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "arms-extra-lying-barbell-extension",
+      "name": "仰卧杠铃臂屈伸（握法比较）",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "adjustable-bench",
+        "barbell"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/tanchengyi-arms-extra.json#arms-extra-lying-barbell-extension；原用量：选用约能做 10–12 次的重量，与站姿杠铃弯举配对；先保证可控和目标肌肉张力。；课程来源：https://v.douyin.com/0nDFk2AXhAA/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "arms-extra-standing-barbell-curl",
+      "name": "站姿杠铃弯举",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "ez-bar"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/tanchengyi-arms-extra.json#arms-extra-standing-barbell-curl；原用量：与仰卧杠铃臂屈伸配对；重点是大臂位置和受控下放。；课程来源：https://v.douyin.com/0nDFk2AXhAA/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "chest-warmup-roller-support",
+      "name": "滚轴胸廓活动 · 支撑进阶",
+      "roles": [],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "mat",
+        "foam-roller"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-warmup-roller-support；原用量：可选补充起点：1组 × 3–5次小幅活动；休息30–45秒。；课程来源：https://www.douyin.com/video/7650309381392785073",
+      "reason": "可选支撑进阶；虽然课程有补充起点，前置控制能力未结构化确认，本轮仅学习。"
+    },
+    {
+      "id": "chest-warmup-roller-knee-lift",
+      "name": "滚轴膝离地支撑 · 可选进阶",
+      "roles": [],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "mat",
+        "foam-roller"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-warmup-roller-knee-lift；原用量：补充可选起点：1组 × 3–5次轻抬膝后放回，休息30–45秒。；课程来源：https://www.douyin.com/video/7650309381392785073",
+      "reason": "可选支撑进阶；虽然课程有补充起点，前置控制能力未结构化确认，本轮仅学习。"
+    },
+    {
+      "id": "chest-parallel-bar-dip",
+      "name": "双杠臂屈伸",
+      "roles": [],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "parallel-bars"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json#chest-parallel-bar-dip；原用量：共4组。补充入门可先2组 × 6–8次辅助版本，休息120–180秒。；课程来源：https://www.douyin.com/video/7650309381392785073",
+      "reason": "课程2组6–8次模板明确指辅助版本；现有教学身份未区分助力设备和完整自重版本，禁止把辅助剂量直接用于无辅助双杠。"
+    },
+    {
+      "id": "functional-warmup-frog",
+      "name": "青蛙式髋部前后活动",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-warmup-frog；原用量：组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。；课程来源：https://www.douyin.com/video/7688311849762979057",
+      "reason": "完整训练量或技能前提未审核；复合、跳起落地和特殊支撑版本不能仅凭部分次数或动画循环自动编排。"
+    },
+    {
+      "id": "functional-warmup-supported-frog",
+      "name": "支撑青蛙式髋内旋",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-warmup-supported-frog；原用量：组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。；课程来源：https://www.douyin.com/video/7688311849762979057",
+      "reason": "完整训练量或技能前提未审核；复合、跳起落地和特殊支撑版本不能仅凭部分次数或动画循环自动编排。"
+    },
+    {
+      "id": "functional-warmup-lunge-control",
+      "name": "分腿位侧走与摆臂",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-warmup-lunge-control；原用量：组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。；课程来源：https://www.douyin.com/video/7688311849762979057",
+      "reason": "完整训练量或技能前提未审核；复合、跳起落地和特殊支撑版本不能仅凭部分次数或动画循环自动编排。"
+    },
+    {
+      "id": "functional-warmup-supported-rotation",
+      "name": "扶架单腿髋旋转",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "fixed-support"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-warmup-supported-rotation；原用量：组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。；课程来源：https://www.douyin.com/video/7688311849762979057",
+      "reason": "完整训练量或技能前提未审核；复合、跳起落地和特殊支撑版本不能仅凭部分次数或动画循环自动编排。"
+    },
+    {
+      "id": "functional-single-leg-hip-thrust",
+      "name": "长凳单腿臀推 · 跳起落地",
+      "roles": [],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "flat-bench"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-single-leg-hip-thrust；原用量：一侧做 3 组、每组 12 次，然后换侧；可以跳得更低或不跳，组间充分休息。；课程来源：https://www.douyin.com/video/7688311849762979057",
+      "reason": "完整训练量或技能前提未审核；复合、跳起落地和特殊支撑版本不能仅凭部分次数或动画循环自动编排。"
+    },
+    {
+      "id": "functional-dumbbell-lunge-press",
+      "name": "双哑铃弓步蹲推",
+      "roles": [],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-dumbbell-lunge-press；原用量：本项共 12 次；两个动作连接算一轮、共 3 轮，轮间休息。负荷和休息按自己的情况调整。；课程来源：https://www.douyin.com/video/7688311849762979057",
+      "reason": "完整训练量或技能前提未审核；复合、跳起落地和特殊支撑版本不能仅凭部分次数或动画循环自动编排。"
+    },
+    {
+      "id": "functional-alternating-lunge",
+      "name": "交替弓步蹲 · 手臂变化",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-alternating-lunge；原用量：组数、次数和休息按自己的训练计划安排；教学动画的循环速度不代表训练节奏。；课程来源：https://www.douyin.com/video/7688311849762979057",
+      "reason": "完整训练量或技能前提未审核；复合、跳起落地和特殊支撑版本不能仅凭部分次数或动画循环自动编排。"
+    },
+    {
+      "id": "functional-seated-dumbbell-press",
+      "name": "后仰单臂推举与躯干旋转",
+      "roles": [],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells",
+        "lat-pulldown-machine"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json#functional-seated-dumbbell-press；原用量：每侧约 10–12 次、3 组；重量和休息按自己的情况调整。；课程来源：https://www.douyin.com/video/7688311849762979057",
+      "reason": "完整训练量或技能前提未审核；复合、跳起落地和特殊支撑版本不能仅凭部分次数或动画循环自动编排。"
+    },
+    {
+      "id": "legs-frog-rock",
+      "name": "青蛙式前后摇",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-frog-rock；原用量：建议约 10 次往返为一组，一般做 2 组。；课程来源：https://www.douyin.com/video/7655982129109198321",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "legs-frog-hip-rotation",
+      "name": "青蛙趴双侧髋内旋",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-frog-hip-rotation；原用量：做 2 组；重复次数按可控活动范围安排。；课程来源：https://www.douyin.com/video/7655982129109198321",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "legs-lunge-rotation",
+      "name": "伟大者伸展 · 弓步转体",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-lunge-rotation；原用量：约 10 次后换腿；按舒适范围控制次数。；课程来源：https://www.douyin.com/video/7655982129109198321",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "legs-90-90-switch",
+      "name": "90/90 坐姿髋转换",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-90-90-switch；原用量：按控制能力练习换边，组次按训练计划安排。；课程来源：https://www.douyin.com/video/7655982129109198321",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "legs-90-90-hip-rise",
+      "name": "90/90 顶髋 · 进阶",
+      "roles": [],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-90-90-hip-rise；原用量：进阶教学；基础换边稳定后按能力选择。；课程来源：https://www.douyin.com/video/7655982129109198321",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "legs-90-90-leg-extension",
+      "name": "顶髋后伸腿 · 进阶",
+      "roles": [],
+      "experiences": [
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-90-90-leg-extension；原用量：进阶教学；顶髋稳定后按能力选择。；课程来源：https://www.douyin.com/video/7655982129109198321",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "legs-dumbbell-deadlift",
+      "name": "哑铃直腿硬拉",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-dumbbell-deadlift；原用量：先选择能保持动作质量的负重，组次按训练计划安排。；课程来源：https://www.douyin.com/video/7655982129109198321",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "legs-hip-flexion",
+      "name": "坐姿屈髋抬腿",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "leg-extension-machine"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json#legs-hip-flexion；原用量：组次按训练计划安排，先用能稳定躯干的轻负重。；课程来源：https://www.douyin.com/video/7655982129109198321",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "shoulders-band-pass-through",
+      "name": "弹力带过顶绕环",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "light-resistance-band"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json#shoulders-band-pass-through；原用量：一组可做 20 次；本合集不规定必须完成的总组数，先学习持续张力与可控轨迹。；课程来源：https://v.douyin.com/sZcJIz3F-Mw/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "shoulders-trx-y",
+      "name": "TRX Y 字抬臂激活",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "suspension-trainer"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json#shoulders-trx-y；原用量：先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。；课程来源：https://v.douyin.com/sZcJIz3F-Mw/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "shoulders-prone-scapular-lift",
+      "name": "俯卧肩胛抬臂",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "mat"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json#shoulders-prone-scapular-lift；原用量：可替代悬吊带的激活方式；先少量、轻松试做，不需要和所有激活动作一起做完。；课程来源：https://v.douyin.com/sZcJIz3F-Mw/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "shoulders-trx-w",
+      "name": "TRX 屈肘 W 字保持",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "suspension-trainer"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json#shoulders-trx-w；原用量：可以通过保持姿势与调整脚位改变难度；本合集不规定必须保持多久。；课程来源：https://v.douyin.com/sZcJIz3F-Mw/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "shoulders-bent-extension",
+      "name": "俯身哑铃肩伸",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json#shoulders-bent-extension；原用量：可以先做两组对握、再做两组正手；你的正式组次与重量按个人训练计划安排。；课程来源：https://v.douyin.com/sZcJIz3F-Mw/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "shoulders-machine-reverse-fly",
+      "name": "坐姿器械反飞鸟",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "reverse-fly-machine"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json#shoulders-machine-reverse-fly；原用量：先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。；课程来源：https://v.douyin.com/sZcJIz3F-Mw/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "shoulders-dumbbell-press",
+      "name": "坐姿双铃推肩",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells",
+        "adjustable-bench"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json#shoulders-dumbbell-press；原用量：先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。；课程来源：https://v.douyin.com/sZcJIz3F-Mw/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "shoulders-lateral-raise",
+      "name": "哑铃侧平举",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json#shoulders-lateral-raise；原用量：先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。；课程来源：https://v.douyin.com/sZcJIz3F-Mw/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "shoulders-front-raise",
+      "name": "对握哑铃前平举",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json#shoulders-front-raise；原用量：先用能平稳控制的轻阻力熟悉姿势；正式组数、次数和重量按你的训练计划安排。；课程来源：https://v.douyin.com/sZcJIz3F-Mw/",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "lat-pulldown",
+      "name": "正握长杆高位下拉",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "lat-pulldown-machine"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#lat-pulldown；现有器材步骤和结构参考未提供完整训练用量。",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "seated-shoulder-press",
+      "name": "坐姿器械推肩",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "shoulder-press-machine"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#seated-shoulder-press；现有器材步骤和结构参考未提供完整训练用量。",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "seated-abdominal-crunch",
+      "name": "坐姿器械卷腹",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "abdominal-crunch-machine"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#seated-abdominal-crunch；现有器材步骤和结构参考未提供完整训练用量。",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "single-arm-dumbbell-row",
+      "name": "长凳支撑单臂哑铃划船",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells",
+        "flat-bench"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#single-arm-dumbbell-row；现有器材步骤和结构参考未提供完整训练用量。",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "seated-dumbbell-shoulder-press",
+      "name": "坐姿掌心朝前哑铃推肩",
+      "roles": [],
+      "experiences": [
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "dumbbells",
+        "adjustable-bench"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#seated-dumbbell-shoulder-press；现有器材步骤和结构参考未提供完整训练用量。",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "preacher-biceps-curl",
+      "name": "托臂式器械弯举",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "biceps-curl-machine"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#preacher-biceps-curl；现有器材步骤和结构参考未提供完整训练用量。",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "seated-pec-fly",
+      "name": "握把式蝴蝶机夹胸",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "pec-fly-machine"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#seated-pec-fly；现有器材步骤和结构参考未提供完整训练用量。",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    },
+    {
+      "id": "seated-hip-abduction",
+      "name": "坐姿髋外展",
+      "roles": [],
+      "experiences": [
+        "初学者",
+        "偶尔运动",
+        "规律运动"
+      ],
+      "equipment": [
+        "hip-abduction-machine"
+      ],
+      "templates": [],
+      "teachingCount": 1,
+      "basis": "Sources/SteadyCore/EquipmentLessonDefinition.swift#seated-hip-abduction；现有器材步骤和结构参考未提供完整训练用量。",
+      "reason": "已映射教学身份；尚无可独立采用的完整组次、休息或适用条件，保留学习，不自动编排。"
+    }
+  ],
+  "teachingOnly": [
+    {
+      "teaching": {
+        "kind": "collection",
+        "topic": "arms-extra",
+        "lessonID": "arms-extra-warmup-aerobic"
+      },
+      "reason": "课程包含步行或骑车等可选有氧方式，动画只示意踏步；未将整课等同单一处方。请用明确的原地踏步或步行条目编排。"
+    },
+    {
+      "teaching": {
+        "kind": "collection",
+        "topic": "arms-extra",
+        "lessonID": "arms-extra-warmup-mobility"
+      },
+      "reason": "肩、肘和手腕的多个活动组成教学流程，尚未拆成可独立计量动作。"
+    },
+    {
+      "teaching": {
+        "kind": "collection",
+        "topic": "arms-extra",
+        "lessonID": "arms-extra-warmup-rehearsal"
+      },
+      "reason": "包含多个主动作的轻阻力预演，尚未按动作和器械逐一拆分。"
+    },
+    {
+      "teaching": {
+        "kind": "collection",
+        "topic": "shoulders",
+        "lessonID": "shoulders-single-dumbbell-press"
+      },
+      "reason": "起铃、单侧推举和放回构成连续教学；先保留拿放与控制流程，不把整段当成重复推举的处方。"
+    }
+  ],
+  "sourceHashes": {
+    "Sources/SteadyCore/EquipmentLesson.swift": "cb2b5d2ffea39fa2a74fb4e299ff0564de465c720cbd0a31ef2524b679c8e6a0",
+    "Sources/SteadyCore/EquipmentLessonDefinition.swift": "f7807787fb56813266c207e5fd309ef6bc12e37bb4da50d5195fda26aa9062f7",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-animations.json": "ab3dbd60dc51981615cf3ae6632934f0c16ddba487d3b226ee4e6a5468e642a4",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-hanging-leg-raise.html": "d231c66dbdb71170b79430db042acacc4cacf9bc9e4af1567754848299df02eb",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-kneeling-ab-wheel.html": "75f58ecc4256062b2f1e04021ee3019f36ef4c4e6536c0355784c80f6be78e08",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-prone-abdominal-stretch.html": "e1c12418463f1bc39deb5b0c1d423032a9e0c64c06e6ac8982b252ee0b980a2d",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-side-biased-crunch.html": "af2d5755cc39297edc157c469cac2c70bad7a2c7ecfc25ecda31c0357af7df01",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-sling-knee-raise.html": "f44ec81e1bd4993387ffb942797abab933004c647215ff6de6b3f838d5431cd9",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-supine-crunch.html": "7f1870bdc75b0bb7dc2b618892da5af20bd6ad28ab8034d4ea01bc6e8c8b80fc",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-supported-knee-raise.html": "4045f2671c87e9bb0a8e58ba970975f168cf7e82532acb3ba53b044f9700f74e",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-warmup-cat-cow.html": "0857c36aaf7d15d487900e80bfb534015c452245925db6c4f32970791ff8d4df",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-warmup-marching.html": "14831c28b7a7d7d6235de7df2c8994cbf445dade9d7e86f75aac10274cefeb98",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/abs-warmup-pelvic-tilt.html": "ef436434fc702906b4489d5f00b0bcde7f52b14fd947a4bcd8b181aef84fb1c8",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/abs/tanchengyi-abs.json": "7b2d8973067cd787e869e0dfb9c760dbae8dfa07101d9c8bca12572acec720b1",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-cable-pushdown.html": "7260532b322eb1d977085755fdf201991415ff59c31608a4c07bbb9f81635944",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-complete-animations.json": "586fdeb2eef2a6d783e75e62ca7dd7379abf84e950da017460477cc80c45a477",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-lying-barbell-extension.html": "5d656805739a5f634df3ffdda16ef17f0b377889702722db845a465bc0608316",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-seated-cable-curl.html": "6c2eb18b227d8e1d25cb789be2428ee89da74efabc2ab37f481ab77e9cf9e9f6",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-standing-barbell-curl.html": "35d0c06f85bfc3423e4916086e3cb5739dc74e6bd630721ebba442d7731c8ba6",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-warmup-aerobic.html": "e4cb3f9ac9d82e8d78175150009eb8cdde3932fbb9d796e61623b1295c142906",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-warmup-mobility.html": "6f8937c343d7e1aa2ee2e8c0de96ecf2ac48f0222f6950faf6de18174e7c8823",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/arms-extra-warmup-rehearsal.html": "e0bfaff081e772f9047fe2ed05407f800c51089bc0f82fe0c82c60001ec35eb6",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms-extra/tanchengyi-arms-extra.json": "bc7dd5aa7d9e5798a3afecdc5625d17a89f97a56748a8b718c8045f5fbaf472a",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-animations.json": "f22f0b55e7fa82daaab712964d0b355cfb77473c63620a98e488b66e2a9b248a",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-incline-dumbbell-curl.html": "fd88dc9ce3e4261bf5a33ceec3ada323971495eb10898960daf6f389b0ba8a75",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-lying-barbell-extension.html": "d6ca4d84a8d4879f2674067e5238aaf0e969665d4ee74b5e0642269088dbbcb1",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-overhead-single-cable-extension.html": "e8e4b8ac3a21971586a182a4bccee6cb6e7cdb41384df0efe6a0cbe4827a2ddd",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-seated-cable-curl.html": "a1ed1470047ad08884d26d9033aeb3eec7fc4ce5799b6105eb4d9eb7f28220d4",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-seated-internal-rotation-curl.html": "569cac53ed5c5b82a9629309351621ed4497520e36b32dfdba6e902d0368f6af",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-single-cable-extension.html": "f6b4a3537df53b4df8c6cf23ee542c5f05a2a9c6eb65995817b1db02508359ef",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-standing-rope-hammer-curl.html": "fe330b099c39e63b13147b71923e60bb0e9d7ca7d59e74aba4f62819826209cf",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/tanchengyi-arms.json": "df649f5b4772c40c8a920ba598696a14e3edfa037f69cd3ffa3a59d00a31c68f",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-animations.json": "8996fa88f255137f99e9935bd6b83b6cea2f7aa88782aa2aa70e83aac1a317ab",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-bench-support-native.html": "df6edd3e803a676bb7386a84abf394462c8bc2553bd7bdec88d365b3d8cff50e",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-bent-arm-pulldown-native.html": "6af0b6d12b54007c7b9c3d9e7de04f2a5789f559517ebf9c16717856c61074da",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-neutral-pulldown-native.html": "e90621b35f5196c68d8b1ac2a1f3636c861e5d9e132db70858762a64b30858eb",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-one-arm-row-native.html": "c00bd63a80e5613f169b0e6b58d0653e7c5eb28a9959045eaff6db19a059a2db",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-roller-native.html": "55534595c0311bb0da7d080926ef79ccb6a8e3fb34ead2b84ebd8d49c29a338b",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-seated-row-native.html": "e15114a9c5d423aa3c58aaea3d6c575398a7dd9eef7e488474235c8eafc2cb4f",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-straight-arm-native.html": "14554cf58b24046ab61b0d9dd7b4228c96d58603864819677dc5c3ef1fe19749",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-supported-scapula-native.html": "7d8550aeae7af2e33b0e0d43aa04b7252229d13cf3d8a1cd4ee645b964802379",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/back-walking-native.html": "805b104831cca0b0c4a75cefa4356db8118af205b5bf2a3d6159a96c4bbf00af",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/back/tanchengyi-back.json": "2f4ec72ef1027be1e6228e830589fffe8ad515b758880bdc0106e2afaf823096",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-animations.json": "ffc0ded47e4fe4d378c25cdcaf60af05b4791b3c0aa2036b0c26e89c1fa12bf8",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-band-shoulder-circle.html": "298d62d8f08bfee9ccac5d8f48211a83bef04ed10e3bf7bc25714939c9cc231c",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-flat-press.html": "49bf1903a171c13621b876a48a486355c1d527a743a167ca867850cbee6b402e",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-incline-press.html": "1966a855e6432848d2576668cfeb808da8ae627bae74615e783034c887eda3ad",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-light-march.html": "561ee2cba7c1643c553d2cbacfd7307c612078298b56105587e89cdfa7377f13",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-parallel-bar-dip.html": "cba1a0fcb0366a2074ef57b8a4d3986246c476b2bfdd27b88db6e3a2bbe35f0d",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-knee-lift.html": "81fa775c1b078eea01aa7abd82c9209e064ab809fd8945aa64c5e51c89f9c5c9",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-supported-opening.html": "bad1259be5ba9ea16a50225f7aa96783ffdbc16580ae5c9f9f9fce357fd7a583",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-t-opening.html": "7edf9952a03885990c91038c238e62c060dcc4a271d79e5fa1ed0cbd35f6fdd0",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-y-press.html": "f60bc8c67f74e190ceb7297a9383d4c71a07132b059b6d174db943a9b28fed4d",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-roller-y-raise.html": "d1e26a86d80ea7ab42e1fe628a20fa3e548abd5ee419f3a3838bedc9bbba40b2",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-seated-cable-fly.html": "32797b83864081d7ad5bf9ee3956eafb7788b954d13e89cf55c9920237d9337c",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-wall-push-up.html": "88984cdf75cda40f8ad6777bfbc8e73f7ed2bb0bcfb8ca3a1b766ee0e6bf72ee",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/chest-warmup-press.html": "f9d86d55648752c1707564422522c07e90ec7068ded86d525fc5cf69eab30d4f",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/chest/tanchengyi-chest.json": "fa2cd1c19ba2da2283b2ee5716c7dd291b821759abde0d4d9838610b51a2a416",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-alternating-lunge.html": "e15011bedfca1d87fccb3260297144fccb24a047e25aa4fa6fa87060612508da",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-animations.json": "aed4bf572f1ba51a537d5f7de7bb5e661d89aa80a8844834b31e70e5460cab3d",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-cooldown-calf-stretch.html": "1f98f13637b510e5bfeb0ea7f8b4c45c6da00db72f064bebfd20c5ed7b973d61",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-cooldown-hamstring-stretch.html": "f29f1271c18976ec957c317bbdb118ea380e51b1de8a072260b5f1cf4098245d",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-cooldown-walk.html": "77be10431da468b8b343203db7d8c54bf63b4e0dfd9f26eca5d0746f6163c166",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-dumbbell-lunge-press.html": "139836056a587c96a000954c204afcf41da9bfc3cf1d638ff93a35f96cdc3712",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-dumbbell-romanian-deadlift.html": "6b4e424367cf2e46d33adf01c1c8b79045a743f5a79a1129db8899a57fdd017a",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-seated-dumbbell-press.html": "539ea0505016fa50dffd60b548b657319ff8805ff39c1f9e6e19c09dde2210cf",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-single-leg-hip-thrust.html": "3a19ca19072f3f39294778feaacd0d4a87c38e540859855a89ab28a4e76fc473",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-warmup-frog.html": "96bf9fb372612fddc443e35d64ebc58bf0e6a00894bf7999189412f26c2e10fd",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-warmup-lunge-control.html": "3183413f92a2b68d805a1811958a9a887ed2809f83c070ec26bed3650de70d7a",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-warmup-supported-frog.html": "df9e728962a02909cec99adbd2d999a2c940ecc2ed276d55bc096b99ea7631b5",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-warmup-supported-rotation.html": "3ba0542d282745b5cabb3ab64d7e534239a239a9692af8c7f8db71a20f597268",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/tanchengyi-functional-lower-limb.json": "a9f47f95f2658991ecb9b06ec46de8d626a8f4f1da812cf832221e340bbe50f2",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-animations.json": "aa15492b0441f704b568923190ad1b068bd91719ec1cddbaa941807e8435b376",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-basic-bodyweight-squat.html": "870cf862f4fc33f584179041f3d6852d0fec34b168ce1a45be6b35d2b032b11a",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-basic-chair-sit-to-stand.html": "ff01e95af08d25c03a7867149fd137c478de114e5e7c516d9a90d73235571eb9",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-basic-floor-glute-bridge.html": "94f84c40a58b2a30f7edcc172189d1d14ee3145c00a8dcd42cb734ef98a0d2c6",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-basic-renderer.js": "0be6d220e87740b28b176599a605ac4b25b3284c4152868375cd6ce7897cf5e7",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-basic-side-lying-hip-abduction.html": "aada9b4b17f5868b67eafbad0d2a8573bc521fc8a56bf5856f1eb504acb1eaa3",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-basic-supported-calf-raise.html": "87f4e0cde5d72e347aa71e533233455e38cac1285b7000f16167819e8d438b91",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-basic-supported-split-squat.html": "58ca85cd16a34066d28a3a6b6c977ceea958f5c2ee239fff2dd4e1ef8a6c9e7f",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-basic-unloaded-hip-hinge.html": "92949a141baebaaed3d80df5734d79a60552d2eb90a899fc8e35f1dd3625c0b0",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-bulgarian-split-squat.html": "076572056139dbc618256759ceedf94a563933c2efa30af5164cab48926690ea",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-calf-raise.html": "a96d459089b876031d61d0a34331a1a4dccf1f1fdc11fcd06ac9ae8cc351cb18",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-dumbbell-rdl.html": "77aca1c024e2df78524c6e4492e93162a8a48450436549afa95d91494280671c",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-hip-adduction.html": "418998c13e4d19e236d21ee5c72d20db715af0ad5d6a394361c1b28a8a0fd06e",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-hip-flexion.html": "c0ed3199387fccaebdaa17000f935fd67398b51e79ccf34d678d98eab1cd1b68",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-prone-leg-curl.html": "75c8073e2f1a8b1a7e98a59dd70e77979aba42dadfe7b44442205d58a5711a20",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-90-90-hip-rise.html": "53a6998d20b9480a021fb536b72117daf57485e3eedc4e3625f3973fb9e5e4f3",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-90-90-leg-extension.html": "5a0acda49af763869bd7730490e11d8d317cf7d43255e1956330595b1f0b4b8c",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-90-90-switch.html": "1c598c81e49614268299f31e9e202e038f18519d1048c01490e604a5d98a9ebf",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-frog-rock.html": "e868b6ff3004daeb9639ed7e614ac4548514ffff86d0fbe340999f27551303c1",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-general.html": "b67277200930cb1dd7c5adf7f2547e0201637946f56a6b2d31b63ef95acb8b27",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-hip-rotation.html": "764d7e6903ce35802366519e3cc7894f7f4bd12e953efe4d93c33c7c0dd38d1f",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-lunge-rotation.html": "0897953dc1340ec16403c00a5ffa3c2ef18288194928f649f49aa93a0563844f",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json": "c22a9ec24d1dd222b71acce283aadc575c86f73452f56921509d8ea9e0d68ec8",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-animations.json": "d916890c0af1ee66c03f34e23e65ca9dc850288f382224c7ac0d04ece7d7fa76",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-bandPassThrough.html": "43d76a5213958944e1902e968fa3d6de5a53a4c05ed8a62235bcfc080f5e63ed",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-bentOverExtension.html": "4187b166f27b31e98731afe16ca1286760686a28d51f0fcf67aae8e938d609d9",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-frontRaise.html": "c9c7a8919169f6413674ca7f87c0b1bdabfc465a35aee8f463dfccfebd37883a",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-lateralRaise.html": "1806b49de0e565259f7816df013bfbe490c514509b18157c98d52bcde15d035b",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-lightCardio.html": "39473d0120bc565d0d54cbab3118f5c43051ca69b6a930ebd949f87e160fccfa",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-proneScapularLift.html": "fb90aa5d34907bdda5a43dc7585839c4c145ac69c347f1df83abd2113a99d41f",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-seatedPress.html": "abdf77fd8a2144c4e5cb8be851b78ba49078b33e63437d2bdac35f3e2f55bf79",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-seatedReverseFly.html": "db9c1e708b94223aef075a9e6566ed25c4d38e7f6e37fbf64a08c4e64f6cd168",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-seatedSinglePress.html": "e6dac6f116626b0dfd348b9502ca18047cbf9ca0d81fc32688290aa42415ab60",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-trxW.html": "2df88b8fa7a8200326765e859cb958117db1eaa418ff6199cf9384fbf483b1c1",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/shoulders-trxY.html": "3f7515f90c9907bf6237345a21e7f059e744b61d30fbd79fa7b99b23a52b24f0",
+    "Sources/SteadyCore/Resources/TrainingCollections/Reviewed/shoulders/tanchengyi-shoulders.json": "bae7ab0da884c344e3a1ac9031b629f82253ae0aa471e9a80b8993be1f9d62a8",
+    "Steady/AbdominalCrunchArtwork.html": "6551b94f90c19ff55328bdcd0ac63e265967f5ba3e38ba7ff4dc8710dd0d8cbd",
+    "Steady/BicepsCurlArtwork.html": "90024ebb6a7d17464f8c7183d4ce4389653e9c7f380291853d83b2286b8eb3a8",
+    "Steady/CableRowArtwork.html": "3669a41d1f66f98c0e7e10d84642ce6831f10f1401978a184c5d0022b0648aff",
+    "Steady/ChestPressArtwork.html": "7a7423bb8adb557129c1cf3e04a4e44a6eaa1990fd913cdebef801fe223b5443",
+    "Steady/DumbbellRowArtwork.html": "ef8a7628683b91297ede2def174f4da13fb8eb09f43ec4ba81410dc488a9b148",
+    "Steady/DumbbellShoulderPressArtwork.html": "70147eeded7407d49261c1331c4681c79e7ca9e06f1988016092e61fedfb44aa",
+    "Steady/GobletSquatArtwork.html": "3e7e9078e20511b97dc0407b5926255a6cabcea47a8dc381839fc211da657dcf",
+    "Steady/HipAbductionArtwork.html": "b8139571d467403e5773c186e55f5c899228f7a5fb8612000241febfaec9de6d",
+    "Steady/LatPulldownArtwork.html": "3894ba77630b3f8ad2cc412f595ed6170edcde39743ac02dfd25f586aaeb4b52",
+    "Steady/LegCurlArtwork.html": "1357cd4105b0eeed0ec47d5de39caa09ed11a14c3b646d9218c94b3e3fa1ed50",
+    "Steady/LegExtensionArtwork.html": "b10361c6829e55ae7afb082e16859cd1c8a94b572737fffcd5ffac20fd1af35e",
+    "Steady/LegPressArtwork.html": "3271906d73066cc2ce505d8c1c3cf64cf1d784275f6c9fd011c15acc56c06cbf",
+    "Steady/PecFlyArtwork.html": "dd59cfa13171f7e9354dd03f3cdac62bd5667bcbe16a4fde3b0790186d5bec37",
+    "Steady/ShoulderPressArtwork.html": "502f3c460e4fcda6159efb205026b68a3e25880259c22afde2be3402c330e62a"
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/content/tanchengyi-arms.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/tanchengyi-arms.json",
+    "sha256": "351b00f0287b0b65a1b63eacf1513886b8122e2ab7da53c13d98b9547971817c"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-incline-dumbbell-curl.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-incline-dumbbell-curl.html",
+    "sha256": "91517a2631bfbeafd5a2ac88e2d483ddc0962421cdc11399896f1da6d6b18a10"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-lying-barbell-extension.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-lying-barbell-extension.html",
+    "sha256": "55c12ef8e2c55ec60d69fd760c88b2d170f0c1bfbb283f856edbf8839bf3245d"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-overhead-single-cable-extension.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-overhead-single-cable-extension.html",
+    "sha256": "fd8fddd515bde432ca79b1adb924d5547e1d5d9dddff133ea47a89513ece7999"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-seated-cable-curl.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-seated-cable-curl.html",
+    "sha256": "da49e2afe17e8323af161b2ba336a72ffbbac492b819a07ad9d5d626d98e1b05"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-seated-internal-rotation-curl.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-seated-internal-rotation-curl.html",
+    "sha256": "cf093cc48cd1c92e38632a574ce9740727acfb516dbda7f82f5f071a49224414"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-single-cable-extension.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-single-cable-extension.html",
+    "sha256": "861a50b6c653913b1503592cd45531c1cb98982aa64671023d81589dd6b8ae95"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-standing-rope-hammer-curl.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-standing-rope-hammer-curl.html",
+    "sha256": "b4e24ed49126856da38e65a6166227659d9a47cb6c43def92d3630bbe39e1a18"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-animations.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/arms/arms-animations.json",
+    "normalization": "Array wrapped in collectionID/timeUnit; explicit timing copied from frozen arms-runtime.js; steps/evidence unchanged",
+    "sourceSHA256": "bb603ea1d6eae5ffc413854a39f76ceef4063cc9ed15500f4698f2918428e269",
+    "sha256": "47abb4aefaa0098755d2b4426505806440f306324b767c48d5ed6bcef3a33311",
+    "panelDescriptionsSource": "/Volumes/Developer/Projects/steady/docs/verification/training-arms/animations/arms-panel-descriptions.json",
+    "panelDescriptionsSHA256": "1291175c574b7a863f9c9db4c849b7485891d4a514822dd33b568b7a25f37848"
+  }
+]

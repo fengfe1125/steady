@@ -1,0 +1,144 @@
+{
+  "sourceID": "5d280b81e3810873f59b873e",
+  "sourceName": "健腹轮婴儿式",
+  "part": "back",
+  "title": "健腹轮婴儿式",
+  "variant": "跪姿，臀部坐向脚跟，手臂搭在轮上 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    0.56,
+    2.2,
+    4.4,
+    6.1,
+    6.9,
+    7.6
+  ],
+  "levels": [
+    0,
+    0.25,
+    0.7,
+    1,
+    0.4,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 82,
+      "lumbar": 12,
+      "thorax": 6,
+      "neck": 14,
+      "head": 8,
+      "arms": {
+        "near": {
+          "sh": 158,
+          "el": 4
+        },
+        "far": {
+          "sh": 154,
+          "el": 6
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 146,
+          "knee": 156,
+          "ankle": 12
+        },
+        "far": {
+          "hip": 150,
+          "knee": 152,
+          "ankle": 14
+        }
+      }
+    },
+    "1": {
+      "pelvis": 84,
+      "lumbar": 14,
+      "thorax": 8,
+      "neck": 16,
+      "head": 8,
+      "arms": {
+        "near": {
+          "sh": 164,
+          "el": 2
+        },
+        "far": {
+          "sh": 160,
+          "el": 4
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 148,
+          "knee": 156,
+          "ankle": 12
+        },
+        "far": {
+          "hip": 152,
+          "knee": 152,
+          "ankle": 14
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": -48,
+      "y": -18
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "x": 168,
+        "y": -34,
+        "bend": 1
+      },
+      "far": {
+        "x": 163,
+        "y": -34,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -130,
+      "length": 360
+    },
+    {
+      "type": "roller",
+      "x": 168,
+      "r": 14
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "erectors"
+    ],
+    "secondary": [
+      "lats",
+      "glute.max"
+    ]
+  },
+  "primaryNames": [
+    "竖脊肌"
+  ],
+  "cue": "双膝跪开，臀部向后坐到脚跟上方，手臂伸长搭在轮上，额头放松、朝垫面落下。",
+  "mistake": {
+    "title": "脖子缩进肩膀里",
+    "fix": "肩放松下沉，后颈留长；坐不满就把两膝再分开一点。",
+    "basis": "资料提到容易耸肩缩脖，臀也坐不到脚跟上。",
+    "level": 1,
+    "override": {
+      "neck": 22,
+      "head": 6,
+      "thorax": 6
+    }
+  },
+  "observation": "侧面，头在画面左侧。从 0.56 秒到约 7 秒几乎是同一个跪姿：臀靠近脚跟，手臂向前搭在轮上，额头低。后面几帧只是画面略放大，人没有再做一次。动画只表现很轻的下沉。健腹轮没有模型，用半径 14 的滚筒放在手下近似，轮轴被画成手下方的圆筒。"
+}

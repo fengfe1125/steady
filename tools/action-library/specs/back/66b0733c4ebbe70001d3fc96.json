@@ -1,0 +1,134 @@
+{
+  "sourceID": "66b0733c4ebbe70001d3fc96",
+  "sourceName": "哑铃反手卧推",
+  "part": "back",
+  "title": "哑铃反手卧推",
+  "variant": "仰卧平凳，反手握铃，肘贴身侧推起 · 侧面",
+  "view": "side",
+  "mirror": true,
+  "times": [
+    1.51,
+    1.9,
+    2.25,
+    2.52,
+    3.0,
+    3.53
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.82,
+    1,
+    0.42,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": -6,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 86,
+          "el": 16,
+          "f": 1
+        },
+        "far": {
+          "sh": 86,
+          "el": 16,
+          "f": 1
+        }
+      }
+    },
+    "1": {
+      "pelvis": -90,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 8,
+          "el": 90,
+          "f": 1
+        },
+        "far": {
+          "sh": 8,
+          "el": 90,
+          "f": 1
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 20,
+      "y": -119
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 130,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 118,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -120,
+      "length": 190,
+      "top": -88
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "erectors",
+      "pec.lower"
+    ],
+    "secondary": [
+      "triceps.long",
+      "rhomboid",
+      "pec.upper"
+    ]
+  },
+  "primaryNames": [
+    "竖脊肌",
+    "胸大肌中下部"
+  ],
+  "cue": "仰卧平凳，掌心朝向肩膀握住哑铃，肘贴在身侧。落到大臂与小臂大约成直角，推起时两肘向中间夹，到顶时肘仍留一点弯。",
+  "mistake": {
+    "title": "推起时肩往耳朵缩",
+    "fix": "肩胛先沉住并夹向中间，胸口留在凳面上，只让前臂把铃推上去。",
+    "basis": "资料指出的问题是过程中耸肩。侧面没有耸肩参数，用头颈前探、上背变圆来表示肩抬起来了。",
+    "level": 0.35,
+    "override": {
+      "neck": 8,
+      "head": 12,
+      "thorax": 10
+    }
+  },
+  "observation": "侧面仰卧，头在画面右侧，屈膝，脚踩地，上背贴平凳。反手是握法，主动作是上下推，侧面能看清行程；掌心朝向侧面画不出来，用肘贴着躯干来表现推起时大臂向内夹，和同组宽距杠铃卧推的肘外翻区分开。取 1.51 秒手臂在上方，2.52 秒落到大约屈肘直角，3.53 秒推回。角度是示意拟合。"
+}

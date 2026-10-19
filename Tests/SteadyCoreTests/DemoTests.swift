@@ -65,7 +65,7 @@ struct DemoTests {
     }
 
     @Test func draftRequiresConfirmationAndEditsRoundTrip() async throws {
-        var plan = try await coach.planDraft(preferences: UserPreferences(), scenario: .normal)
+        var plan = try await coach.planDraft(preferences: { var p = UserPreferences(); p.availableEquipmentIDs = ["wall"]; return p }(), scenario: .normal)
         #expect(plan.status == .draft)
         var workout = plan.sessions[0]
         workout.exercises[1].name = "坐站练习"

@@ -1,0 +1,134 @@
+{
+  "sourceName": "跪姿招财猫",
+  "part": "back",
+  "title": "跪姿招财猫",
+  "variant": "跪姿 · 前臂从斜上翻到竖直 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.6,
+    1.4,
+    2.4,
+    3.2,
+    4.2,
+    5.0
+  ],
+  "levels": [
+    0,
+    0.32,
+    0.78,
+    1,
+    0.4,
+    0
+  ],
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "poses": {
+    "0": {
+      "pelvis": 8,
+      "lumbar": 0,
+      "thorax": -2,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 78,
+          "el": 54
+        },
+        "far": {
+          "sh": 78,
+          "el": 54
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 100
+        },
+        "far": {
+          "hip": 0,
+          "knee": 104
+        }
+      }
+    },
+    "1": {
+      "pelvis": 8,
+      "lumbar": 0,
+      "thorax": -6,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 78,
+          "el": 102
+        },
+        "far": {
+          "sh": 78,
+          "el": 102
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 100
+        },
+        "far": {
+          "hip": 0,
+          "knee": 104
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -15,
+      "y": -8
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -180,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "infraspinatus",
+      "deltoid.post"
+    ],
+    "secondary": [
+      "trap.mid",
+      "teres"
+    ]
+  },
+  "primaryNames": [
+    "冈下肌",
+    "三角肌后束"
+  ],
+  "cue": "跪直收腹，上臂抬到肩高，前臂先停在斜向上，再绕上臂翻到竖直，停一下再放下。",
+  "mistake": {
+    "title": "前臂还没翻直肘就掉了",
+    "fix": "先把肘固定在肩高，前臂翻到朝上再停一拍。",
+    "basis": "资料要求翻上去以后要停住。赶节奏时常见的样子是前臂没到顶、肘也沉下来。",
+    "level": 1,
+    "override": {
+      "arms": {
+        "near": {
+          "sh": 58,
+          "el": 62
+        },
+        "far": {
+          "sh": 58,
+          "el": 62
+        }
+      }
+    }
+  },
+  "observation": "全身很窄，肘如果向两侧打开轮廓会宽很多，所以用侧面看前臂从斜上翻到竖直。前 6 秒和后半段都几乎是同一姿势的重复，幅度在画面上很小；动画把一次上翻画清楚。跪姿、上臂抬平，和站姿、坐姿那两条区分开。约 6.8 秒后换机位。",
+  "sourceID": "643696b0531cdf0001ee47e7"
+}

@@ -1,0 +1,334 @@
+[
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-warmup-marching"
+  },
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-warmup-cat-cow"
+  },
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-warmup-pelvic-tilt"
+  },
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-hanging-leg-raise"
+  },
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-sling-knee-raise"
+  },
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-supported-knee-raise"
+  },
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-supine-crunch"
+  },
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-side-biased-crunch"
+  },
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-kneeling-ab-wheel"
+  },
+  {
+    "route": "abs-collection",
+    "lessonID": "abs-prone-abdominal-stretch"
+  },
+  {
+    "route": "arms-animation-collection",
+    "lessonID": "arms-warmup-triceps"
+  },
+  {
+    "route": "arms-animation-collection",
+    "lessonID": "arms-single-cable-extension"
+  },
+  {
+    "route": "arms-animation-collection",
+    "lessonID": "arms-lying-barbell-extension"
+  },
+  {
+    "route": "arms-animation-collection",
+    "lessonID": "arms-seated-cable-curl"
+  },
+  {
+    "route": "arms-animation-collection",
+    "lessonID": "arms-incline-dumbbell-curl"
+  },
+  {
+    "route": "arms-animation-collection",
+    "lessonID": "arms-overhead-single-cable-extension"
+  },
+  {
+    "route": "arms-animation-collection",
+    "lessonID": "arms-standing-rope-hammer-curl"
+  },
+  {
+    "route": "arms-animation-collection",
+    "lessonID": "arms-seated-internal-rotation-curl"
+  },
+  {
+    "route": "arms-extra-animation-collection",
+    "lessonID": "arms-extra-warmup-aerobic"
+  },
+  {
+    "route": "arms-extra-animation-collection",
+    "lessonID": "arms-extra-warmup-mobility"
+  },
+  {
+    "route": "arms-extra-animation-collection",
+    "lessonID": "arms-extra-warmup-rehearsal"
+  },
+  {
+    "route": "arms-extra-animation-collection",
+    "lessonID": "arms-extra-cable-pushdown"
+  },
+  {
+    "route": "arms-extra-animation-collection",
+    "lessonID": "arms-extra-seated-cable-curl"
+  },
+  {
+    "route": "arms-extra-animation-collection",
+    "lessonID": "arms-extra-lying-barbell-extension"
+  },
+  {
+    "route": "arms-extra-animation-collection",
+    "lessonID": "arms-extra-standing-barbell-curl"
+  },
+  {
+    "route": "back-animation-collection",
+    "lessonID": "back-walking"
+  },
+  {
+    "route": "back-animation-collection",
+    "lessonID": "back-roller"
+  },
+  {
+    "route": "back-animation-collection",
+    "lessonID": "back-bench-support"
+  },
+  {
+    "route": "back-animation-collection",
+    "lessonID": "back-straight-arm"
+  },
+  {
+    "route": "back-animation-collection",
+    "lessonID": "back-one-arm-row"
+  },
+  {
+    "route": "back-animation-collection",
+    "lessonID": "back-neutral-pulldown"
+  },
+  {
+    "route": "back-animation-collection",
+    "lessonID": "back-seated-row"
+  },
+  {
+    "route": "back-animation-collection",
+    "lessonID": "back-bent-arm-pulldown"
+  },
+  {
+    "route": "back-animation-collection",
+    "lessonID": "back-supported-scapula"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-warmup-march"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-warmup-roller-t"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-warmup-roller-y"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-warmup-roller-support"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-warmup-roller-knee-lift"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-warmup-roller-y-press"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-warmup-band"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-warmup-press"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-parallel-bar-dip"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-flat-press"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-incline-machine-press"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-seated-cable-fly"
+  },
+  {
+    "route": "chest-animation-collection",
+    "lessonID": "chest-wall-push-up"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-warmup-frog"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-warmup-supported-frog"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-warmup-lunge-control"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-warmup-supported-rotation"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-single-leg-hip-thrust"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-dumbbell-lunge-press"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-seated-dumbbell-press"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-dumbbell-romanian-deadlift"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-alternating-lunge"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-cooldown-walk"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-cooldown-calf-stretch"
+  },
+  {
+    "route": "functional-animation-collection",
+    "lessonID": "functional-cooldown-hamstring-stretch"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-general-warmup"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-frog-rock"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-frog-hip-rotation"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-lunge-rotation"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-90-90-switch"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-90-90-hip-rise"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-90-90-leg-extension"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-calf-raise"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-hip-adduction"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-bulgarian-split-squat"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-dumbbell-deadlift"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-hip-flexion"
+  },
+  {
+    "route": "legs-animation-collection",
+    "lessonID": "legs-prone-leg-curl"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-light-warmup"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-band-pass-through"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-trx-y"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-prone-scapular-lift"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-trx-w"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-bent-extension"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-machine-reverse-fly"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-dumbbell-press"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-single-dumbbell-press"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-lateral-raise"
+  },
+  {
+    "route": "shoulders-animation-collection",
+    "lessonID": "shoulders-front-raise"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-renderer.js",
+    "beforeSHA256": "925097ae54177d6bec1a56b2d2d864c6a00a490ed1c799e5477e347975198ab8",
+    "afterSHA256": "99b00057525400815eaa4ddbf78abb598554a908de212cd08817e0585d078616",
+    "before": "双手握铃并置于肩前；向前弓步时同时推举，稳定后回到架位。",
+    "after": "双铃由体侧提至肩前，配合弓步向上推举，再收步降铃回位。"
+  },
+  {
+    "path": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/functional/functional-dumbbell-lunge-press.html",
+    "beforeSHA256": "b39e1136fe68fb718cd28999aa694ef81dc3047af260a29b1cf783131a948018",
+    "afterSHA256": "a12e8c0bcd3e712a01395b92213d51a55154c0660d67153566770bf950b3d146",
+    "before": "双手握铃并置于肩前；向前弓步时同时推举，稳定后回到架位。",
+    "after": "双铃由体侧提至肩前，配合弓步向上推举，再收步降铃回位。"
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "sourceID": "669e780dd835de0001900fbb",
+  "sourceName": "绳索右侧抗旋前推",
+  "part": "chest",
+  "title": "绳索右侧抗旋前推",
+  "variant": "站姿 · 双手握单把抗旋前推 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    4.5,
+    5.0,
+    5.7,
+    6.2,
+    7.0,
+    7.45
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 35,
+          "el": 115
+        },
+        "far": {
+          "sh": 35,
+          "el": 115,
+          "f": 0.85
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      }
+    },
+    "1": {
+      "pelvis": 0,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -8,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 85,
+          "el": 8
+        },
+        "far": {
+          "sh": 85,
+          "el": 8,
+          "f": 0.9
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "heel",
+    "side": "near",
+    "at": {
+      "x": -10,
+      "y": 0
+    }
+  },
+  "equipment": [
+    {
+      "type": "cable",
+      "anchor": {
+        "x": -170,
+        "y": -230
+      },
+      "hands": [
+        "near"
+      ],
+      "column": true
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "abs",
+      "obliques",
+      "deltoid.ant",
+      "triceps.long"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上束"
+  ],
+  "cue": "侧对龙门架站稳，双手把握把收在胸前，先绷紧腹部抗住绳索的侧向拉力，再向正前方匀速推直手臂，收回时躯干同样不许转动。",
+  "mistake": {
+    "title": "身体被绳索拉得向后旋转",
+    "fix": "推出前先收紧腹部和臀部，肩胛微微下沉，把躯干钉在原地，再慢慢把手推出去。",
+    "basis": "源资料常见错误：身体被绳索拉转；解决是用力收紧腹部对抗绳索拉力。",
+    "level": 0.9,
+    "override": {
+      "lumbar": -12,
+      "thorax": -10,
+      "arms": {
+        "near": {
+          "sh": 68,
+          "el": 30
+        }
+      }
+    }
+  },
+  "observation": "视频前 7 秒为正面偏斜视角，约 8.4 秒切到正对镜头视角，人物站姿、绳索从其右侧胸部高度连到双手。重复次数未标注，选取 4.5~7.5 秒一次循环：4.5 秒握把收在胸前，5.7~6.2 秒向前推直并短暂保持，7.4 秒收回。视频未给纯正侧面，选 side 视角以呈现前推动作；绳索侧面按一条画到近侧手。角度为人工示意拟合。"
+}

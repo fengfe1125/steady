@@ -1,0 +1,119 @@
+[
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/content/tanchengyi-legs.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/tanchengyi-legs.json",
+    "sha256": "6c59273e52f62a25619088c5f801a70f54fc9ec7dd5120daded677a7314d712b",
+    "revisionNote": "hip-flexion only source-grounded knee extension revision"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-warmup-general.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-general.html",
+    "sha256": "9f345bd084e265fd8d01bf47f250cfcacf1b636cdf17d54fd567a9746c560419",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-warmup-frog-rock.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-frog-rock.html",
+    "sha256": "3758fad3da4dac30bc69d52509f0ffdaf0368bbc6a7eaf6e1846d3ad6582d157",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-warmup-hip-rotation.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-hip-rotation.html",
+    "sha256": "10f997332e8692e003c6b12c8967faa6348ef0e0928b234f9fd2e5d243b46625",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-warmup-lunge-rotation.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-lunge-rotation.html",
+    "sha256": "0707f20551e9d0964b404932953d03589e552620cf6f4a38a66ae22bb86e60e4",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-warmup-90-90-switch.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-90-90-switch.html",
+    "sha256": "5f1e30baf77f7da0f5eac2ab998ea1b1aef7a74e299a9e3c3d107b50d087313d",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-warmup-90-90-hip-rise.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-90-90-hip-rise.html",
+    "sha256": "69742d72e2960e4db72bb1f64ecf9ffdb40ae059f5e3757d4338e408b9175e25",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-warmup-90-90-leg-extension.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-90-90-leg-extension.html",
+    "sha256": "7885942bb3efd650e36f12af8524504a4422dfd3937e10218b36be64547ad527",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-main-calf-raise.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-calf-raise.html",
+    "sha256": "c5a2b728e7bdf0aaf66c966a828795f85c59d33baba2c307c4db7ab55c28e632",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-main-hip-adduction.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-hip-adduction.html",
+    "sha256": "b2bd16e0d0e586e35b263fd42f6e4ddb668ce3a62d96e8039a2f677352da1ca2",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-main-bulgarian-split-squat.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-bulgarian-split-squat.html",
+    "sha256": "eb18b71c0d00769c6dbe5f3498afe175084a0ea097d119ede17c6f23205365f5",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-main-dumbbell-rdl.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-dumbbell-rdl.html",
+    "sha256": "500fcab17d166a667239b067ba6dedd49c1c46534b812f8a5ab2e4349d699ba7",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-dark-revision/resources/animations/legs-main-hip-flexion.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-hip-flexion.html",
+    "sha256": "66473e20f6b54e4088f7cf1861827c6d57453f74df4b9fc53382ca03a52dff48",
+    "revisionNote": "dark-only paint CSS; native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-prone-label-revision/resources/animations/legs-main-prone-leg-curl.html",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-prone-leg-curl.html",
+    "sha256": "74775d965b0e5758269cdef4e43e3104505dcb2c9b9bcb4132e5c3523be1ac51",
+    "revisionNote": "prone label-only after dark CSS; native pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/native-prone-leader-v2/resources/animations/legs-main-renderer.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-main-renderer.js",
+    "sha256": "ce0aaa88fb36901f43395aa5a6787080965452981d26b08f08ef3a94603b4daa",
+    "revisionNote": "prone v2 removes fixed floating leader only; native retest pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/final-acceptance/copyable/candidate/legs-warmup-renderer.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-warmup-renderer.js",
+    "sha256": "b505c51d905cce1c5c0f48649078bd94bd32144e4baa63f9033b5838e209fdcb",
+    "revisionNote": "Final scoped repair; batch 2 native six tests passed; owner viewed motion PNG at second step."
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/evidence/final-acceptance/copyable/candidate/legs-playback.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-playback.js",
+    "sha256": "a3af5924f49a889df4293284ba3194a9f460bb78e4f95fd78c76c4fb40fcfee3",
+    "revisionNote": "Final scoped repair; batch 2 native six tests passed; owner viewed motion PNG at second step."
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/animations/legs-animations.json",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-animations.json",
+    "sourceSHA256": "91e20f58432c8d9da0416ca33120aa0cc5bcfd72eba2bbdc6cd6222a03cf4bb8",
+    "sha256": "7a78bd36bcdb75369a168464a365f90dff680811f3ce2a92ef41d844cd1fba57",
+    "normalization": "Preserve timingMilliseconds/documentLayout/previewTimeSeconds; add teachingDiagrams only",
+    "normalizationNote": "Update hip-flexion entry only; preserve native timingMilliseconds/documentLayout and other12 entries.",
+    "revisionNote": "LEG-NATIVE-02 diagrams, native revalidation pending"
+  },
+  {
+    "source": "/Volumes/Developer/Projects/steady/docs/verification/training-legs/animations/legs-teaching-mode.js",
+    "destination": "/Volumes/Developer/Projects/steady/Sources/SteadyCore/Resources/TrainingCollections/Reviewed/legs/legs-teaching-mode.js",
+    "sha256": "f1fea924c2bd3001fbc1357e488679f95adc40c1e9bb721bf4e0f94596c2499d",
+    "revisionNote": "LEG-NATIVE-02 diagrams, native revalidation pending"
+  }
+]

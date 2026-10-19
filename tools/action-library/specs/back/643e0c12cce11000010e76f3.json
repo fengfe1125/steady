@@ -1,0 +1,166 @@
+{
+  "sourceID": "643e0c12cce11000010e76f3",
+  "sourceName": "俯撑右侧哑铃划船保持",
+  "part": "back",
+  "title": "俯撑右侧哑铃划船保持",
+  "variant": "单臂收到髋旁后持续夹紧 · 双脚并排 · 侧面",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    0.5,
+    1.8,
+    3.2,
+    4.6,
+    6.4,
+    7.6
+  ],
+  "levels": [
+    0,
+    0.28,
+    0.7,
+    1,
+    0.82,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -30,
+          "el": 100,
+          "f": 1
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    },
+    "1": {
+      "pelvis": 64,
+      "lumbar": 0,
+      "thorax": -4,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": -34,
+          "el": 110,
+          "f": 1
+        },
+        "far": {
+          "sh": 12,
+          "el": 4,
+          "f": 1
+        }
+      },
+      "legs": {
+        "near": {
+          "hip": 62,
+          "knee": 14
+        },
+        "far": {
+          "hip": 60,
+          "knee": 16
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 18,
+      "y": -168
+    }
+  },
+  "contacts": {
+    "hand": {
+      "far": {
+        "x": 104,
+        "y": -100,
+        "flat": true,
+        "bend": 1
+      }
+    },
+    "ankle": {
+      "near": {
+        "x": 8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": -8,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "hands": {
+    "far": "open"
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": 94,
+      "length": 72,
+      "top": -100,
+      "back": {
+        "x": 160,
+        "angle": -4,
+        "length": 105
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "trap.mid",
+      "trap.lower",
+      "lats"
+    ],
+    "secondary": [
+      "rhomboid",
+      "biceps",
+      "deltoid.post"
+    ]
+  },
+  "primaryNames": [
+    "斜方肌中下束",
+    "背阔肌"
+  ],
+  "cue": "撑在凳上的手不要挪。提铃肘贴着身侧收到髋旁，高于后背后再多夹一下，停在这个高度。",
+  "mistake": {
+    "title": "后背拱成弧，胸口塌向地面",
+    "fix": "先把肚子和臀部收住，让后脑到骨盆接近直线，再在这个高度上收肘。",
+    "basis": "资料把核心松掉、上背变圆列为常见问题，这里放大成看得见的拱背。",
+    "level": 0.8,
+    "override": {
+      "lumbar": 16,
+      "thorax": 10,
+      "neck": 4
+    }
+  },
+  "observation": "侧面，头朝右，头是最高点。躯干只比水平高约二十五度，不是折平。双脚基本并排。撑凳的手臂在肩膀正下方。整段画面停在铃已到髋旁的位置，约 5 秒只换了机位，所以两端都画在收紧的姿势上，只再夹一点。"
+}

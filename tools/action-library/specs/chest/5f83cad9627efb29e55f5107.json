@@ -1,0 +1,140 @@
+{
+  "sourceID": "5f83cad9627efb29e55f5107",
+  "sourceName": "右侧弓箭俯卧撑",
+  "part": "chest",
+  "title": "弓箭俯卧撑",
+  "variant": "宽距 · 一臂屈一臂伸 · 连续推起 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.26,
+    0.77,
+    1.15,
+    1.28,
+    1.8,
+    2.29
+  ],
+  "levels": [
+    0,
+    0.5,
+    0.9,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 80,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -20
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -20
+        }
+      }
+    },
+    "1": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -1
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -1
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "toe",
+    "side": "near",
+    "at": {
+      "x": -150,
+      "y": -5
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 50,
+        "y": -5,
+        "flat": true,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "serratus"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "两手撑得比两个肩宽还多、手指指向斜外；身体压向屈臂那一侧，用这条手臂把胸口送到贴近垫面，另一条手臂全程伸直，再推回顶端。",
+  "mistake": {
+    "title": "塌腰撅臀，躯干没绷成一条直线",
+    "fix": "下沉前先收紧腹部和臀部，让肩、髋、支撑脚连成一条直线；推起时肘部留一点弯曲，不要向后锁死。",
+    "basis": "源资料常见错误：伸臂时肘关节超伸锁死，训练过程中塌腰或撅臀。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 87,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "视频 6.12 秒，侧面固定机位，人物头朝画面左侧，因此镜像，共 3 次，约 2 秒一次。取第 1 次：0.26 秒撑到最高位，1.28 秒胸口贴到垫面附近的最低点，2.29 秒推回最高位。手掌全程平按垫面、位置不移动，两手摆得比两倍肩宽还宽。侧面机位下重心横向压向屈臂一侧的位移看不出来，屈臂与伸臂的差别用两个撑点的前后距离近似表达。"
+}

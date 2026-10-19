@@ -1,0 +1,147 @@
+{
+  "sourceID": "595f4f2fff247f33e297eb9a",
+  "sourceName": "下斜钻石俯卧撑",
+  "part": "chest",
+  "title": "下斜钻石俯卧撑",
+  "variant": "下斜 · 双脚搭高凳 · 双手在胸口正下方并成菱形 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    0.45,
+    0.78,
+    1.15,
+    1.34,
+    1.72,
+    2.23
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 90,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -50
+        }
+      }
+    },
+    "1": {
+      "pelvis": 97,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        },
+        "far": {
+          "hip": 0,
+          "knee": 0,
+          "ankle": -64
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "ankle",
+    "side": "near",
+    "at": {
+      "x": -155,
+      "y": -95
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": -8,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    },
+    {
+      "type": "bench",
+      "x": -250,
+      "length": 165,
+      "top": -88
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper",
+      "triceps.long"
+    ],
+    "secondary": [
+      "triceps.lat",
+      "pec.lower",
+      "deltoid.ant",
+      "serratus",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部",
+    "肱三头肌"
+  ],
+  "cue": "双手拇指食指相触成菱形压在胸口正下方，双脚搭高凳、髋略高于肩，肘贴身体两侧下沉再推起。",
+  "mistake": {
+    "title": "推起时肘关节锁死、腰部塌下去",
+    "fix": "手臂推到接近伸直就停，保持微曲；先把臀部和腹部收紧再发力，让肩、髋、踝连成一条直线。",
+    "basis": "依据源 detail.description 的常见错误条目：推起时把肘部锁死，以及过程中腰部下塌、臀部抬高。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 94,
+      "lumbar": -22,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频 512×512 正方形，侧面机位、机头偏低位，人物头朝画面左侧（因此 mirror 取 true）；中段开始镜头拉近，同一动作有两个景别。0.45 秒手臂撑起为顶上位置，1.34 秒胸口落到垫面附近，2.23 秒回到撑起位，取这一整次重复（全片 3 次）。垫子是深灰绿色长条，双手在胸口下方并拢，指尖相对，双肘向体侧外翻；身后是一张白色软垫凳，双脚脚尖搭在凳面上，脚踝高于肩，身体从头到脚成一条下斜直线。手撑垫面、脚搭凳面两个接触点全程不移位。下斜高度与角度为人工示意拟合。"
+}

@@ -1,0 +1,132 @@
+{
+  "sourceID": "5763d3b011fc5077c3acf58b",
+  "sourceName": "上斜哑铃卧推",
+  "part": "chest",
+  "title": "上斜哑铃卧推",
+  "variant": "约45度上斜凳 · 哑铃 · 侧面示范",
+  "view": "side",
+  "mirror": false,
+  "times": [
+    9.53,
+    10.1,
+    10.7,
+    11.0,
+    11.7,
+    12.47
+  ],
+  "levels": [
+    0,
+    0.3,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": -50,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 128,
+          "el": 10
+        },
+        "far": {
+          "sh": 128,
+          "el": 10
+        }
+      }
+    },
+    "1": {
+      "pelvis": -50,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -14,
+      "head": 0,
+      "arms": {
+        "near": {
+          "sh": 55,
+          "el": 100
+        },
+        "far": {
+          "sh": 55,
+          "el": 100
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "hip",
+    "at": {
+      "x": 10,
+      "y": -119
+    }
+  },
+  "contacts": {
+    "ankle": {
+      "near": {
+        "x": 120,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      },
+      "far": {
+        "x": 108,
+        "y": -19,
+        "foot": 0,
+        "bend": -1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "bench",
+      "x": -20,
+      "length": 110,
+      "top": -88,
+      "back": {
+        "x": -10,
+        "angle": 50,
+        "length": 170
+      }
+    },
+    {
+      "type": "dumbbell",
+      "hand": "near",
+      "axis": "z"
+    },
+    {
+      "type": "dumbbell",
+      "hand": "far",
+      "axis": "z"
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "pec.upper"
+    ],
+    "secondary": [
+      "deltoid.ant",
+      "triceps.long",
+      "triceps.lat"
+    ]
+  },
+  "primaryNames": [
+    "胸大肌上部"
+  ],
+  "cue": "仰卧在约45度斜凳上，双脚踩实、肩胛后缩贴紧凳面；小臂始终垂直地面，把哑铃落到上胸两侧，再向中间合拢推起，顶端肘部微屈停一拍。",
+  "mistake": {
+    "title": "推起时肩膀前引，上背离开凳面",
+    "fix": "全程肩胛骨后缩下沉，胸推到顶也不要探肩，让上背始终平贴凳面。",
+    "basis": "来源资料常见错误：推起时肩膀前引，上背部没有平贴凳面。",
+    "level": 0.5,
+    "override": {
+      "thorax": 12,
+      "lumbar": 5
+    }
+  },
+  "observation": "主视频约 8 秒后为纯正侧面，人物头朝画面左，共 5 次，取第 4 次：9.53 秒双臂伸直、哑铃在上胸正上方，11.00 秒哑铃落到上胸两侧、肘约 100 度，12.47 秒推回顶端。上背贴斜凳靠背，双脚踩地。凳背角度约 45 度，哑铃为六角中哑铃。角度为人工示意拟合。"
+}

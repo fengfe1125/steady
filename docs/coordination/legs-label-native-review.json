@@ -1,0 +1,27 @@
+{
+  "tests": {
+    "executed": 5,
+    "failures": 0,
+    "seconds": 139.804
+  },
+  "exportedImages": 15,
+  "coordinatorActuallyViewed": [
+    {
+      "file": "46898FBD-AA6F-471E-A61F-6FF9C3312B06.png",
+      "sha256": "85d7b2ece95d50fdf0e7034dfabc87bfbd19f4932afdc731463cdc17510ceddf"
+    },
+    {
+      "file": "2022E406-EE34-49A1-8E11-37B68B2E8938.png",
+      "sha256": "0d8adbad2172be78bbf9547ed09a0050df8f0639a05b895216a779f34f1d3160"
+    },
+    {
+      "file": "01715007-0F1A-457E-886B-339D8BCBD1E8.png",
+      "sha256": "2efbfdb8971f2c57085318ef057f270bcfb2bab9b4e39fa06864fd6e97f78eea"
+    },
+    {
+      "file": "DB1FE5BD-B293-410E-B722-A79267732AE8.png",
+      "sha256": "d2886e67cdddb983f749f8f8bf9e26db67476d0437fa534151e672d5fd405aef"
+    }
+  ],
+  "result": "NR01-04 fixed in these default light native snapshots: calf supplemental heading, frog side/top view clarification, RDL 2-second labels, hip-flexion returned 0-second label. Not whole-cycle, dark, large-font or whole-product acceptance."
+}

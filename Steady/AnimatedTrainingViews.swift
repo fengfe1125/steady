@@ -139,15 +139,18 @@ struct AnimatedTrainingLessonView: View {
     }
     @Environment(\.scenePhase) private var scenePhase
 
-    init(lesson: TrainingLesson, animation: TrainingAnimation, resourceURL: URL, runtime: TrainingAnimationRuntime = .hostInjected) {
+    init(lesson: TrainingLesson, animation: TrainingAnimation, resourceURL: URL, runtime: TrainingAnimationRuntime = .hostInjected, initialMode: EquipmentViewMode = .motion) {
         self.lesson = lesson
-        _player = State(initialValue: TrainingAnimationPlayer(animation: animation, resourceURL: resourceURL, runtime: runtime))
+        let player = TrainingAnimationPlayer(animation: animation, resourceURL: resourceURL, runtime: runtime)
+        player.mode = initialMode
+        _player = State(initialValue: player)
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 Text(lesson.summary).foregroundStyle(SteadyTheme.secondary)
+                VideoReferenceTeachingLink(existingLessonID: lesson.id)
                 Picker("图解", selection: $player.mode) {
                     ForEach(EquipmentViewMode.allCases) { Text($0.title).tag($0) }
                 }.pickerStyle(.segmented).onChange(of: player.mode) { _, mode in
@@ -282,4 +285,31 @@ func trainingMuscleSummary(primary: [String]?, stretch: [String]?, secondary: [S
     let parts = [("主要发力", primary), ("拉伸", stretch), ("协同", secondary)]
         .compactMap { title, names in names.flatMap { $0.isEmpty ? nil : "\(title)：\($0.joined(separator: "、"))" } }
     return parts.isEmpty ? nil : parts.joined(separator: " · ")
+}
+
+
+/// A separately attributed example keeps original course narration and video timestamps intact.
+struct VideoReferenceTeachingLink: View {
+    let existingLessonID: String
+    var body: some View {
+        if let reference = VideoReferenceLesson.matching(lessonID: existingLessonID) {
+            NavigationLink {
+                VideoReferenceTeachingView(reference: reference)
+            } label: {
+                Label("变体示范：\(reference.variant)", systemImage: "figure.strengthtraining.traditional")
+            }.accessibilityIdentifier("videoReference_\(reference.id)")
+        }
+    }
+}
+
+struct VideoReferenceTeachingView: View {
+    let reference: VideoReferenceLesson
+    var initialMode: EquipmentViewMode = .motion
+    var body: some View {
+        if let url = reference.artworkURL {
+            AnimatedTrainingLessonView(lesson: reference.lesson, animation: reference.animation, resourceURL: url, runtime: .bundled, initialMode: initialMode)
+        } else {
+            ContentUnavailableView("示范暂时无法打开", systemImage: "book.closed", description: Text("请返回原动作教学。"))
+        }
+    }
 }

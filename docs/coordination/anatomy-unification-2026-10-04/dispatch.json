@@ -1,0 +1,90 @@
+{
+  "reference": "http://127.0.0.1:8777/tools/anatomy/preview/index.html?topic=shoulders",
+  "scope": {
+    "training": 83,
+    "equipment": 14,
+    "total": 97
+  },
+  "threads": [
+    {
+      "topic": "arms",
+      "label": "手臂",
+      "threadId": "01a1076a-f19d-71b2-a77b-ccafa97cbddf",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    },
+    {
+      "topic": "arms-extra",
+      "label": "手臂补充",
+      "threadId": "01a1076a-f388-7381-b978-ece17d7ddef2",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    },
+    {
+      "topic": "chest",
+      "label": "胸部",
+      "threadId": "01a1076a-f60d-7b41-81c4-1d8db4601280",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    },
+    {
+      "topic": "back",
+      "label": "背部",
+      "threadId": "01a1076a-f915-7b70-b669-8f98603fb68c",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    },
+    {
+      "topic": "abs",
+      "label": "腹部",
+      "threadId": "01a1076a-fc36-7612-aa0e-cb25ae73bade",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    },
+    {
+      "topic": "legs",
+      "label": "腿部",
+      "threadId": "01a1076a-ffdd-7d30-a82b-1ab729ffe08a",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    },
+    {
+      "topic": "functional",
+      "label": "功能性",
+      "threadId": "01a1076b-0483-7020-9c69-59cd1d287008",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    },
+    {
+      "topic": "shoulders",
+      "label": "肩部",
+      "threadId": "01a1076b-07b4-7d82-b28f-ff07a12cad26",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    },
+    {
+      "topic": "equipment",
+      "label": "equipment",
+      "threadId": "01a1076b-9fa6-7e33-a3b8-c8aa8736ce83",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    },
+    {
+      "topic": "integration",
+      "label": "integration",
+      "threadId": "01a1076b-a31e-75e0-abc1-412314626179",
+      "hostId": "local",
+      "model": "gpt-6.1-sol",
+      "thinking": "max"
+    }
+  ]
+}

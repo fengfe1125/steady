@@ -1,0 +1,140 @@
+{
+  "sourceID": "55cc42cc58f2655537c68809",
+  "sourceName": "跪姿半程俯卧撑",
+  "part": "chest",
+  "title": "跪姿半程俯卧撑",
+  "variant": "跪姿半程 · 膝关节撑垫、屈肘约 90° 即起身 · 侧面示范",
+  "view": "side",
+  "mirror": true,
+  "hands": {
+    "near": "open",
+    "far": "open"
+  },
+  "times": [
+    5.46,
+    5.9,
+    6.3,
+    6.9,
+    7.5,
+    8.4
+  ],
+  "levels": [
+    0,
+    0.4,
+    0.85,
+    1,
+    0.5,
+    0
+  ],
+  "poses": {
+    "0": {
+      "pelvis": 62,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 80,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 85,
+          "ankle": 25
+        }
+      }
+    },
+    "1": {
+      "pelvis": 78,
+      "lumbar": 0,
+      "thorax": 0,
+      "neck": -10,
+      "head": 0,
+      "legs": {
+        "near": {
+          "hip": 0,
+          "knee": 68,
+          "ankle": 25
+        },
+        "far": {
+          "hip": 0,
+          "knee": 73,
+          "ankle": 25
+        }
+      }
+    }
+  },
+  "anchor": {
+    "point": "knee",
+    "side": "near",
+    "at": {
+      "x": -60,
+      "y": -8
+    }
+  },
+  "contacts": {
+    "hand": {
+      "near": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      },
+      "far": {
+        "from": "shoulder",
+        "atLevel": 0,
+        "dx": 6,
+        "y": -5,
+        "flat": true,
+        "bend": 1
+      }
+    }
+  },
+  "equipment": [
+    {
+      "type": "mat",
+      "x": -175,
+      "length": 360
+    }
+  ],
+  "muscles": {
+    "primary": [
+      "triceps.long",
+      "triceps.lat",
+      "pec.lower"
+    ],
+    "secondary": [
+      "pec.upper",
+      "deltoid.ant",
+      "abs"
+    ]
+  },
+  "primaryNames": [
+    "肱三头肌",
+    "胸大肌中下部"
+  ],
+  "cue": "膝盖跪在垫上、小腿向后抬起，双手撑在肩下略比肩宽处，收腹让肩到膝保持一条斜线，屈肘沉到肘约九十度就推起，不必贴地。",
+  "mistake": {
+    "title": "塌腰，髋部下沉脱离肩—髋—膝斜线",
+    "fix": "先收腹、把肋骨往回收紧，让肩、髋、膝连成一条斜线再屈肘；下沉深度以腰背不下陷为准，宁可做半程。",
+    "basis": "源 detail.description 常见错误：整个过程塌腰或撅臀；跪姿支撑时髋部更容易往下掉。",
+    "level": 0.5,
+    "override": {
+      "pelvis": 74,
+      "lumbar": -24,
+      "legs": {
+        "near": {
+          "hip": -18
+        },
+        "far": {
+          "hip": -18
+        }
+      }
+    }
+  },
+  "observation": "主视频为侧面固定机位，人物头朝画面左侧，因此 mirror 置 true；全长 8.74 秒，前 5.5 秒为全身景，之后切近景。视频里共 3 次重复，节奏接近：顶部略作停顿后 0.7 秒左右下放、再 0.7 秒左右撑起。取第 3 次：5.46 秒顶部（两臂撑直）、6.9 秒最低点（肘约 90°、胸口离垫还有一段距离，即半程）、8.4 秒回到顶部。支撑为双手撑垫 + 膝关节跪垫，小腿向后上方抬起、脚离地，全程膝盖与手掌不移动。近景帧证实下放不到贴地，属半程；躯干角度为人工示意拟合。"
+}

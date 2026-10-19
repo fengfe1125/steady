@@ -116,11 +116,29 @@ public struct Exercise: Codable, Equatable, Identifiable, Sendable {
     public var id: UUID
     public var name: String
     public var prescription: String
+    public var catalogID: String? { didSet { catalogIDWasMissing = false } }
+    public var catalogVersion: Int? { didSet { catalogVersionWasMissing = false } }
+    public var templateID: String? { didSet { templateIDWasMissing = false } }
+    public var role: String? { didSet { roleWasMissing = false } }
+
+    // Encoding state only: an untouched field missing from legacy storage must stay
+    // missing on sync. Assigning even nil means an explicit update. New values use
+    // the current format, including explicit nulls, by default.
+    var catalogIDWasMissing = false
+    var catalogVersionWasMissing = false
+    var templateIDWasMissing = false
+    var roleWasMissing = false
 
     public init(name: String, prescription: String) {
         id = UUID()
         self.name = name
         self.prescription = prescription
+    }
+
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.id == rhs.id && lhs.name == rhs.name && lhs.prescription == rhs.prescription
+            && lhs.catalogID == rhs.catalogID && lhs.catalogVersion == rhs.catalogVersion
+            && lhs.templateID == rhs.templateID && lhs.role == rhs.role
     }
 }
 
@@ -164,6 +182,8 @@ public struct TrainingPlan: Codable, Equatable, Identifiable, Sendable {
     public var title: String
     public var status: PlanStatus
     public var sessions: [WorkoutSession]
+    public var generationContext: PlanGenerationContext? { didSet { generationContextWasMissing = false } }
+    var generationContextWasMissing = false
     public var id: UUID { metadata.id }
 
     public init(title: String, sessions: [WorkoutSession]) {
@@ -171,6 +191,11 @@ public struct TrainingPlan: Codable, Equatable, Identifiable, Sendable {
         self.title = title
         status = .draft
         self.sessions = sessions
+    }
+
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.metadata == rhs.metadata && lhs.title == rhs.title && lhs.status == rhs.status
+            && lhs.sessions == rhs.sessions && lhs.generationContext == rhs.generationContext
     }
 
     public mutating func confirm(at date: Date = Date()) throws {
@@ -195,6 +220,11 @@ public struct UserPreferences: Codable, Equatable, Sendable {
     public var goal = "建立运动习惯"
     public var experience = "初学者"
     public var equipment = "自重"
+    /// nil requires confirmation; [] explicitly confirms no additional equipment.
+    public var availableEquipmentIDs: [String]? { didSet { availableEquipmentIDsWasMissing = false } }
+    var availableEquipmentIDsWasMissing = false
+    public var movementConditions: [MovementConditionAnswer]? { didSet { movementConditionsWasMissing = false } }
+    var movementConditionsWasMissing = false
     public var availableMinutes = 25
     public var limitations = ""
     public var healthRead = false
@@ -202,6 +232,15 @@ public struct UserPreferences: Codable, Equatable, Sendable {
     public var aiProcessing = false
     public var onboardingComplete = false
     public init() {}
+
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.metadata == rhs.metadata && lhs.goal == rhs.goal && lhs.experience == rhs.experience
+            && lhs.equipment == rhs.equipment && lhs.availableEquipmentIDs == rhs.availableEquipmentIDs
+            && lhs.movementConditions == rhs.movementConditions
+            && lhs.availableMinutes == rhs.availableMinutes && lhs.limitations == rhs.limitations
+            && lhs.healthRead == rhs.healthRead && lhs.cloudSync == rhs.cloudSync
+            && lhs.aiProcessing == rhs.aiProcessing && lhs.onboardingComplete == rhs.onboardingComplete
+    }
 }
 
 public enum DemoScenario: String, CaseIterable, Codable, Sendable {
