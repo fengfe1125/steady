@@ -296,7 +296,7 @@ struct VideoReferenceTeachingLink: View {
             NavigationLink {
                 VideoReferenceTeachingView(reference: reference)
             } label: {
-                Label("视频还原示范：\(reference.variant)", systemImage: "figure.strengthtraining.traditional")
+                Label("变体示范：\(reference.variant)", systemImage: "figure.strengthtraining.traditional")
             }.accessibilityIdentifier("videoReference_\(reference.id)")
         }
     }

@@ -34,4 +34,21 @@ struct VideoReferenceLessonTests {
         #expect(catalog.exercises.count == 92)
         #expect(catalog.exercises.filter { $0.status == "approved" }.count == 39)
     }
+
+    @Test func shippedCopyNeverCitesTheSourceVideo() throws {
+        let cites = { (text: String) in text.contains("原片") || text.contains("视频") || text.contains("Keep") }
+        for example in try VideoReferenceLesson.loadAll() {
+            let lesson = example.lesson, animation = example.animation
+            let notes = [lesson.preparation, lesson.steps, lesson.cues, lesson.mistakes, lesson.supplements].flatMap { $0 }
+            let visible = [lesson.title, lesson.summary, lesson.equipment, lesson.dosage, example.variant] + lesson.checks
+                + notes.flatMap { [$0.title, $0.detail] } + animation.steps.flatMap { [$0.title, $0.instruction] }
+                + [animation.detailExplanation, animation.mistakeExplanation].compactMap { $0 }
+            #expect(!visible.contains(where: cites), "\(example.id) mentions the source video")
+            let page = try #require(example.artworkURL)
+            let html = try String(contentsOf: page, encoding: .utf8)
+            #expect(!html.contains("原片") && !html.contains("视频") && !html.contains("sourceSeconds"), "\(example.id) page mentions the source video")
+            let script = try String(contentsOf: page.deletingLastPathComponent().appendingPathComponent("video-reference-runtime.js"), encoding: .utf8)
+            #expect(!script.contains("原片") && !script.contains("视频"), "the shared runtime captions frames with source times")
+        }
+    }
 }

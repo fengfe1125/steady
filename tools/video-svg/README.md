@@ -18,7 +18,7 @@
 
 `browser-check.mjs` 是 Ego 验收脚本，运行前把 taskSpace 的数值改为当前明确授权的工作区 ID；不要自行新建或复用无关工作区。浏览器 RAF 停滞时保留失败结果，不能用命令已发送声称播放成功。
 
-App 中在原动作教学页选择“视频还原示范”。旧计划、目录、教学和用量不变。六个新例子独立归属本地来源，不沿用原课视频时间段。运行资源由 Swift Package 复制，完全不依赖 source-root 或网络。
+App 中在原动作教学页选择“变体示范”。App 内文案不提来源视频或原片时间：`build.mjs` 遇到“原片”“视频”“Keep”会直接报错，源片段时间只留在 `lessons.json` 的 `keyframeSeconds` 和 dossier 里。旧计划、目录、教学和用量不变。六个新例子独立归属本地来源，不沿用原课视频时间段。运行资源由 Swift Package 复制，完全不依赖 source-root 或网络。
 
 构建 Debug 模拟器 App 后运行：
 
